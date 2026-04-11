@@ -1,0 +1,33 @@
+{
+    "name": "michaelmeneses/moodle-stubs",
+    "description": "PHP stubs for Moodle LMS — classes, functions, constants, and global variables for IDE and static analysis support",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Michael Meneses",
+            "homepage": "https://github.com/michaelmeneses",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "autoload": {
+        "files": []
+    },
+    "extra": {
+        "phpstan": {
+            "scan-dirs": ["stubs"]
+        }
+    },
+    "keywords": [
+        "moodle",
+        "stubs",
+        "phpstan",
+        "psalm",
+        "ide",
+        "static-analysis",
+        "autocomplete"
+    ]
+}
