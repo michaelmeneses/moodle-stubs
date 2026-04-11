@@ -1,0 +1,200 @@
+name: Update Moodle Stubs
+
+on:
+  schedule:
+    # Run every Sunday at midnight UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+    inputs:
+      branches:
+        description: 'Branch filter pattern (e.g., MOODLE_405* or * for all)'
+        required: false
+        default: '*'
+      force:
+        description: 'Force regeneration (ignore SHA tracking)'
+        required: false
+        type: boolean
+        default: false
+      skip_tags:
+        description: 'Skip tag sync'
+        required: false
+        type: boolean
+        default: false
+
+env:
+  STUBS_REPO_SLUG: michaelmeneses/moodle-stubs
+  MOODLE_REPO: git://git.moodle.org/moodle.git
+
+jobs:
+  # ──────────────────────────────────────────────────
+  # Phase 1: Discover what needs updating
+  # ──────────────────────────────────────────────────
+  discover:
+    name: Discover updates
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      branches: ${{ steps.discover.outputs.branches }}
+      tags: ${{ steps.discover.outputs.tags }}
+      has_branches: ${{ steps.discover.outputs.has_branches }}
+      has_tags: ${{ steps.discover.outputs.has_tags }}
+
+    steps:
+      - name: Checkout moodle-stubs
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: composer:v2
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-interaction
+
+      - name: Discover branches and tags
+        id: discover
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          STUBS_REPO="https://x-access-token:${GH_TOKEN}@github.com/${STUBS_REPO_SLUG}.git"
+
+          FORCE_FLAG=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+
+          JSON=$(vendor/bin/bimoo discover:updates \
+            --moodle-repo="${MOODLE_REPO}" \
+            --stubs-repo="${STUBS_REPO}" \
+            --stubs-repo-slug="${STUBS_REPO_SLUG}" \
+            --branches="${{ inputs.branches || '*' }}" \
+            $FORCE_FLAG)
+
+          BRANCHES=$(echo "$JSON" | jq -c '.branches')
+          TAGS=$(echo "$JSON" | jq -c '.tags')
+
+          echo "branches=${BRANCHES}" >> "$GITHUB_OUTPUT"
+          echo "tags=${TAGS}" >> "$GITHUB_OUTPUT"
+
+          HAS_BRANCHES=$(echo "$BRANCHES" | jq 'length > 0')
+          HAS_TAGS=$(echo "$TAGS" | jq 'length > 0')
+          echo "has_branches=${HAS_BRANCHES}" >> "$GITHUB_OUTPUT"
+          echo "has_tags=${HAS_TAGS}" >> "$GITHUB_OUTPUT"
+
+          echo "Branches to update: $(echo "$BRANCHES" | jq length)"
+          echo "Tags to create: $(echo "$TAGS" | jq length)"
+
+  # ──────────────────────────────────────────────────
+  # Phase 2a: Sync branches (parallel matrix)
+  # ──────────────────────────────────────────────────
+  sync-branch:
+    name: "Branch: ${{ matrix.item.branch }}"
+    needs: discover
+    if: needs.discover.outputs.has_branches == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        item: ${{ fromJson(needs.discover.outputs.branches) }}
+
+    steps:
+      - name: Checkout moodle-stubs
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: composer:v2
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-interaction
+
+      - name: Configure git
+        run: |
+          git config --global user.name "Bimoo Bot"
+          git config --global user.email "bimoo-bot@users.noreply.github.com"
+
+      - name: Sync branch ${{ matrix.item.branch }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          STUBS_REPO="https://x-access-token:${GH_TOKEN}@github.com/${STUBS_REPO_SLUG}.git"
+
+          vendor/bin/bimoo sync:branches \
+            --stubs-repo="${STUBS_REPO}" \
+            --moodle-repo="${MOODLE_REPO}" \
+            --branches="${{ matrix.item.branch }}" \
+            --force
+
+  # ──────────────────────────────────────────────────
+  # Phase 2b: Sync tags (sequential per branch group)
+  # ──────────────────────────────────────────────────
+  sync-tags:
+    name: Sync new tags
+    needs: [discover, sync-branch]
+    if: |
+      always() &&
+      needs.discover.outputs.has_tags == 'true' &&
+      inputs.skip_tags != true
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout moodle-stubs
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: composer:v2
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-interaction
+
+      - name: Configure git
+        run: |
+          git config --global user.name "Bimoo Bot"
+          git config --global user.email "bimoo-bot@users.noreply.github.com"
+
+      - name: Extract tag list
+        id: tags
+        run: |
+          TAGS='${{ needs.discover.outputs.tags }}'
+          TAG_LIST=$(echo "$TAGS" | jq -r '.[].tag' | paste -sd ',' -)
+          echo "list=${TAG_LIST}" >> "$GITHUB_OUTPUT"
+          echo "Tags to process: ${TAG_LIST}"
+
+      - name: Sync tags
+        if: steps.tags.outputs.list != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          STUBS_REPO="https://x-access-token:${GH_TOKEN}@github.com/${STUBS_REPO_SLUG}.git"
+
+          vendor/bin/bimoo sync:tags \
+            --stubs-repo="${STUBS_REPO}" \
+            --moodle-repo="${MOODLE_REPO}" \
+            --tags="${{ steps.tags.outputs.list }}"
+
+  # ──────────────────────────────────────────────────
+  # Phase 3: Summary
+  # ──────────────────────────────────────────────────
+  summary:
+    name: Summary
+    needs: [discover, sync-branch, sync-tags]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report
+        run: |
+          echo "## Stubs Update Summary" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Branches updated: $(echo '${{ needs.discover.outputs.branches }}' | jq length)" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Tags created: $(echo '${{ needs.discover.outputs.tags }}' | jq length)" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Branch sync: ${{ needs.sync-branch.result }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Tag sync: ${{ needs.sync-tags.result }}" >> "$GITHUB_STEP_SUMMARY"
