@@ -44,12 +44,8 @@ class get_users_in_report extends external_api
      *
      * @param int $courseid Course ID to fetch the grader report for.
      * @return array Users and warnings to pass back to the calling widget.
-     * @throws coding_exception
-     * @throws invalid_parameter_exception
-     * @throws moodle_exception
-     * @throws restricted_context_exception
      */
-    protected static function execute(int $courseid): array
+    public static function execute(int $courseid): array
     {
     }
     /**

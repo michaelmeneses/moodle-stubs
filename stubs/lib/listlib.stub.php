@@ -46,6 +46,8 @@ abstract class moodle_list
     //------------------------------------------------------
     public $pageurl;
     public $pageparamname;
+    /** @var int no of top level items. */
+    private $itemsperpage;
     /**
      * Constructor.
      *

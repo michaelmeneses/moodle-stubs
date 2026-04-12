@@ -509,9 +509,25 @@ class assign_files implements renderable
      * @param array $dir
      * @param string $filearea
      * @param string $component
-     * @return void
      */
     public function preprocess($dir, $filearea, $component)
+    {
+    }
+    /**
+     * Get the modified time of the specified file.
+     * @param stored_file $file
+     * @return string
+     */
+    public function get_modified_time(stored_file $file): string
+    {
+    }
+    /**
+     * Get the URL used to view the file.
+     *
+     * @param stored_file
+     * @return moodle_url
+     */
+    public function get_file_url(stored_file $file): moodle_url
     {
     }
 }

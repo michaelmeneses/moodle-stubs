@@ -41,14 +41,6 @@ class ADODB_db2 extends ADOConnection
      */
     public $nameQuote = '"';
     /*
-     * Executed after successful connection
-     */
-    public $connectStmt = '';
-    /*
-     * Holds the current database name
-     */
-    private $databaseName = '';
-    /*
      * Holds information about the stored procedure request
      * currently being built
      */

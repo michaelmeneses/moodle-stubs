@@ -236,6 +236,16 @@ function grade_get_plugin_info($courseid, $active_type, $active_plugin)
 {
 }
 /**
+ * Load a valid list of gradable users in a course.
+ *
+ * @param int $courseid The course ID.
+ * @param int|null $groupid The group ID (optional).
+ * @return array $users A list of enrolled gradable users.
+ */
+function get_gradable_users(int $courseid, ?int $groupid = null): array
+{
+}
+/**
  * A simple class containing info about grade plugins.
  * Can be subclassed for special rules
  *

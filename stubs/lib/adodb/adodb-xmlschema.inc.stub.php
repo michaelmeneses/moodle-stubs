@@ -135,6 +135,13 @@ class dbTable extends dbObject
      */
     var $drop_field = array();
     /**
+     * @var array Platform-specific options
+     * @access private
+     */
+    var $currentPlatform = true;
+    /** @var dbData Stores information about table data. */
+    var $data;
+    /**
      * Iniitializes a new table object.
      *
      * @param string $prefix DB Object prefix
@@ -376,6 +383,8 @@ class dbData extends dbObject
 {
     var $data = array();
     var $row;
+    /** @var string Field name */
+    var $current_field;
     /**
      * Initializes the new dbIndex object.
      *
@@ -626,6 +635,8 @@ class adoSchema
      * @var bool	Continue SQL execution if errors occur
      */
     var $continueOnError;
+    /** @var dbTable A table object. */
+    var $obj;
     /**
      * Creates an adoSchema object
      *

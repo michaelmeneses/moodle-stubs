@@ -17,6 +17,7 @@ namespace IMSGlobal\LTI\ToolProvider\MediaType;
  * @version  3.0.0
  * @license  GNU Lesser General Public License, version 3 (<http://www.gnu.org/licenses/lgpl.html>)
  */
+#[\AllowDynamicProperties]
 class ToolProfile
 {
     public $product_instance;

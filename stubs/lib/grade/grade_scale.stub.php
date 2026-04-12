@@ -59,6 +59,16 @@ class grade_scale extends grade_object
      */
     public $description;
     /**
+     * Standard event.
+     * @var bool $standard
+     */
+    public $standard;
+    /**
+     * Identifier of the text format to be used.
+     * @var int $descriptionformat
+     */
+    public int $descriptionformat;
+    /**
      * Finds and returns a grade_scale instance based on params.
      *
      * @static

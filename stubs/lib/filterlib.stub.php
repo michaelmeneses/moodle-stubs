@@ -308,11 +308,61 @@ abstract class moodle_text_filter
     /**
      * Override this function to actually implement the filtering.
      *
+     * Filter developers must make sure that filtering done after text cleaning
+     * does not introduce security vulnerabilities.
+     *
      * @param string $text some HTML content to process.
      * @param array $options options passed to the filters
      * @return string the HTML content after the filtering has been applied.
      */
     abstract public function filter($text, array $options = array());
+    /**
+     * Filter text before changing format to HTML.
+     *
+     * @param string $text
+     * @param array $options
+     * @return string
+     */
+    public function filter_stage_pre_format(string $text, array $options): string
+    {
+    }
+    /**
+     * Filter HTML text before sanitising text.
+     *
+     * NOTE: this is called even if $options['noclean'] is true and text is not cleaned.
+     *
+     * @param string $text
+     * @param array $options
+     * @return string
+     */
+    public function filter_stage_pre_clean(string $text, array $options): string
+    {
+    }
+    /**
+     * Filter HTML text at the very end after text is sanitised.
+     *
+     * NOTE: this is called even if $options['noclean'] is true and text is not cleaned.
+     *
+     * @param string $text
+     * @param array $options
+     * @return string
+     */
+    public function filter_stage_post_clean(string $text, array $options): string
+    {
+    }
+    /**
+     * Filter simple text coming from format_string().
+     *
+     * Note that unless $CFG->formatstringstriptags is disabled
+     * HTML tags are not expected in returned value.
+     *
+     * @param string $text
+     * @param array $options
+     * @return string
+     */
+    public function filter_stage_string(string $text, array $options): string
+    {
+    }
 }
 /**
  * This is just a little object to define a phrase and some instructions
@@ -346,6 +396,10 @@ class filterobject
     public $workregexp = null;
     /** @var null|string once initialised, holds the mangled HTML to replace the regexp with. */
     public $workreplacementphrase = null;
+    /** @var null|callable hold a replacement function to be called. */
+    public $replacementcallback;
+    /** @var null|array data to be passed to $replacementcallback. */
+    public $replacementcallbackdata;
     /**
      * Constructor.
      *

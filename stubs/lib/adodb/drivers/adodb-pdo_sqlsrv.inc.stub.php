@@ -35,7 +35,7 @@ class ADODB_pdo_sqlsrv extends ADODB_pdo
     function _init(ADODB_pdo $parentDriver)
     {
     }
-    function BeginTrans()
+    function setTransactionMode($transaction_mode)
     {
     }
     function MetaColumns($table, $normalize = true)
@@ -77,9 +77,6 @@ class ADORecordSet_array_pdo_sqlsrv extends ADORecordSet_array_pdo
      * @return object The ADOfieldobject describing the field
      */
     public function fetchField($fieldOffset = 0)
-    {
-    }
-    function SetTransactionMode($transaction_mode)
     {
     }
 }

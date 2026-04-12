@@ -57,6 +57,8 @@ class ADODB_postgres64 extends ADOConnection
     // set to true to disable blob checking, resulting in 2-5% improvement in performance.
     /** @var int $_pnum Number of the last assigned query parameter {@see param()} */
     var $_pnum = 0;
+    var $version;
+    var $_nestedSQL = false;
     // The last (fmtTimeStamp is not entirely correct:
     // PostgreSQL also has support for time zones,
     // and writes these time in this format: "2001-03-01 18:59:26+02".

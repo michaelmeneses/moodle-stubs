@@ -105,15 +105,4 @@ class custom_fields
     private function get_filter_class_type(data_controller $datacontroller): string
     {
     }
-    /**
-     * Format for custom fields value. We get the correct custom field value using export_value method.
-     *
-     * @param mixed $value Current value.
-     * @param stdClass $row Full row.
-     * @param field_controller $field Field controller object.
-     * @return mixed|null
-     */
-    public function customfield_value($value, stdClass $row, field_controller $field)
-    {
-    }
 }

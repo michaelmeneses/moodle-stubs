@@ -1738,6 +1738,11 @@ class section_info implements IteratorAggregate
      */
     private $modinfo;
     /**
+     * True if has activities, otherwise false.
+     * @var bool
+     */
+    public $hasactivites;
+    /**
      * Constructs object from database information plus extra required data.
      * @param object $data Array entry from cached sectioncache
      * @param int $number Section number (array key)

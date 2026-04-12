@@ -40,6 +40,15 @@ class qtype_calculated extends question_type
     public function import_datasets($question)
     {
     }
+    /**
+     * Initializes calculated answers for a given question.
+     *
+     * @param question_definition $question The question definition object.
+     * @param stdClass $questiondata The question data object.
+     */
+    protected function initialise_calculated_answers(question_definition $question, stdClass $questiondata)
+    {
+    }
     protected function initialise_question_instance(question_definition $question, $questiondata)
     {
     }

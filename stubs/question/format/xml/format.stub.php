@@ -16,6 +16,10 @@
  */
 class qformat_xml extends qformat_default
 {
+    /** @var array Array of files for question answers. */
+    protected $answerfiles = [];
+    /** @var array Array of files for feedback to question answers. */
+    protected $feedbackfiles = [];
     public function provide_import()
     {
     }

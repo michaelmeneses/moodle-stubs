@@ -17,6 +17,7 @@ namespace IMSGlobal\LTI\ToolProvider\DataConnector;
  * @version 3.0.0
  * @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
  */
+#[\AllowDynamicProperties]
 class DataConnector_pdo_sqlite extends DataConnector_pdo
 {
     ###

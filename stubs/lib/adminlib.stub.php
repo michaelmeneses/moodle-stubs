@@ -728,6 +728,8 @@ abstract class admin_setting
     private $dependenton = [];
     /** @var bool Whether this setting uses a custom form control */
     protected $customcontrol = false;
+    /** @var mixed int means PARAM_XXX type, string is a allowed format in regex */
+    public $paramtype;
     /**
      * Constructor
      * @param string $name unique ascii name, either 'mysetting' for settings that in config,
@@ -984,6 +986,17 @@ abstract class admin_setting
     public function has_custom_form_control(): bool
     {
     }
+    /**
+     * Whether the setting can be overridden in config.php.
+     *
+     * Returning true will allow the setting to be defined and overridden in config.php.
+     * Returning false will prevent the config setting from being overridden even when it gets defined in config.php.
+     *
+     * @return bool
+     */
+    public function is_forceable(): bool
+    {
+    }
 }
 /**
  * An additional option that can be applied to an admin setting.
@@ -1188,8 +1201,6 @@ class admin_setting_description extends admin_setting
  */
 class admin_setting_configtext extends admin_setting
 {
-    /** @var mixed int means PARAM_XXX type, string is a allowed format in regex */
-    public $paramtype;
     /** @var int default field size */
     public $size;
     /**
@@ -1588,10 +1599,10 @@ class admin_setting_configcheckbox extends admin_setting
  */
 class admin_setting_configmulticheckbox extends admin_setting
 {
-    /** @var array Array of choices value=>label */
-    public $choices;
     /** @var callable|null Loader function for choices */
     protected $choiceloader = null;
+    /** @var array Array of choices value=>label. */
+    public $choices;
     /**
      * Constructor: uses parent::__construct
      *
@@ -2305,6 +2316,14 @@ class admin_setting_sitesetselect extends admin_setting_configselect
     public function write_setting($data)
     {
     }
+    /**
+     * admin_setting_sitesetselect is not meant to be overridden in config.php.
+     *
+     * @return bool
+     */
+    public function is_forceable(): bool
+    {
+    }
 }
 /**
  * Select for blog's bloglevel setting: if set to 0, will set blog_menu
@@ -2331,7 +2350,7 @@ class admin_setting_bloglevel extends admin_setting_configselect
  */
 class admin_setting_courselist_frontpage extends admin_setting
 {
-    /** @var array Array of choices value=>label */
+    /** @var array Array of choices value=>label. */
     public $choices;
     /**
      * Construct override, requires one param
@@ -2401,6 +2420,14 @@ class admin_setting_sitesetcheckbox extends admin_setting_configcheckbox
     public function write_setting($data)
     {
     }
+    /**
+     * admin_setting_sitesetcheckbox is not meant to be overridden in config.php.
+     *
+     * @return bool
+     */
+    public function is_forceable(): bool
+    {
+    }
 }
 /**
  * Special text for frontpage - stores data in course table.
@@ -2440,6 +2467,14 @@ class admin_setting_sitesettext extends admin_setting_configtext
      * @return string empty or error message
      */
     public function write_setting($data)
+    {
+    }
+    /**
+     * admin_setting_sitesettext is not meant to be overridden in config.php.
+     *
+     * @return bool
+     */
+    public function is_forceable(): bool
     {
     }
 }
@@ -2487,6 +2522,14 @@ class admin_setting_special_frontpagedesc extends admin_setting_confightmleditor
      * @return string empty or error message
      */
     public function write_setting($data)
+    {
+    }
+    /**
+     * admin_setting_special_frontpagedesc is not meant to be overridden in config.php.
+     *
+     * @return bool
+     */
+    public function is_forceable(): bool
     {
     }
 }
@@ -3217,7 +3260,7 @@ class admin_setting_special_gradepointmax extends admin_setting_configtext
  */
 class admin_setting_gradecat_combo extends admin_setting
 {
-    /** @var array Array of choices */
+    /** @var array Array of choices value=>label. */
     public $choices;
     /**
      * Sets choices and calls parent::__construct with passed arguments

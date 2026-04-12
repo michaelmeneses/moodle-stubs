@@ -133,6 +133,12 @@ class navigation_node implements renderable
     public $showinsecondarynavigation = true;
     /** @var bool If set to true the children of this node will be displayed within a submenu when applicable */
     public $showchildreninsubmenu = false;
+    /** @var string tab element ID. */
+    public $tab;
+    /** @var string unique identifier. */
+    public $moremenuid;
+    /** @var bool node that have children. */
+    public $haschildren;
     /**
      * Constructs a new navigation_node
      *

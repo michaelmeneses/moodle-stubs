@@ -70,6 +70,18 @@ class qtype_numerical_question extends question_graded_automatically
     public function get_matching_answer($value, $multiplier)
     {
     }
+    /**
+     * Checks if the provided $multiplier is appropriate for the unit of the given $value,
+     * ensuring that multiplying $value by the $multiplier yields the expected $answer.
+     *
+     * @param qtype_numerical_answer $answer The expected result when multiplying $value by the appropriate $multiplier.
+     * @param float $value The provided value
+     * @param float|null $multiplier The multiplier value for the unit of $value.
+     * @return bool Returns true if the $multiplier is correct for the unit of $value, false otherwise.
+     */
+    public function is_unit_right(qtype_numerical_answer $answer, float $value, ?float $multiplier): bool
+    {
+    }
     public function get_correct_answer()
     {
     }

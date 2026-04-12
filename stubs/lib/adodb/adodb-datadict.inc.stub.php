@@ -66,6 +66,10 @@ class ADODB_DataDict
      * explicitly set the value in the driver to switch the behaviour on
      */
     public $blobAllowsDefaultValue;
+    /**
+     * @var string String to use to quote identifiers and names
+     */
+    public $quote;
     function getCommentSQL($table, $col)
     {
     }

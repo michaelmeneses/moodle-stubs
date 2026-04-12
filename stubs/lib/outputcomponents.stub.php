@@ -616,6 +616,8 @@ class single_select implements renderable, templatable
      * @var help_icon The help icon for this element.
      */
     var $helpicon = null;
+    /** @var component_action[] component action. */
+    public $actions = [];
     /**
      * Constructor
      * @param moodle_url $url form action target, includes hidden fields
@@ -1465,6 +1467,8 @@ class html_table
     public $captionhide = false;
     /** @var bool Whether to make the table to be scrolled horizontally with ease. Make table responsive across all viewports. */
     public $responsive = true;
+    /** @var string class name to add to this html table. */
+    public $class;
     /**
      * Constructor
      */
@@ -2382,6 +2386,11 @@ class action_menu implements renderable, templatable
      */
     public $menutrigger = '';
     /**
+     * An array of attributes added to the trigger element of the secondary menu.
+     * @var array
+     */
+    public $triggerattributes = [];
+    /**
      * Any extra classes for toggling to the secondary menu.
      * @var string
      */
@@ -2539,6 +2548,16 @@ class action_menu implements renderable, templatable
      * @param string $ancestorselector A snippet of CSS used to identify the ancestor to contrain the dialogue to.
      */
     public function set_constraint($ancestorselector)
+    {
+    }
+    /**
+     * Set the overflow constraint boundary of the dropdown menu.
+     * @see https://getbootstrap.com/docs/4.6/components/dropdowns/#options The 'boundary' option in the Bootstrap documentation
+     *
+     * @param string $boundary Accepts the values of 'viewport', 'window', or 'scrollParent'.
+     * @throws coding_exception
+     */
+    public function set_boundary(string $boundary)
     {
     }
     /**

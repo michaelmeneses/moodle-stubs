@@ -38,6 +38,8 @@ namespace core\analytics\indicator;
  */
 class any_course_access extends \core_analytics\local\indicator\binary
 {
+    /** @var array user last access. */
+    protected $lastaccesses = [];
     /**
      * Returns the name.
      *

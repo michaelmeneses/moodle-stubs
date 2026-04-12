@@ -40,7 +40,7 @@ abstract class question_definition
     public $generalfeedback;
     /** @var integer question test format. */
     public $generalfeedbackformat;
-    /** @var number what this quetsion is marked out of, by default. */
+    /** @var float what this quetsion is marked out of, by default. */
     public $defaultmark = 1;
     /** @var integer How many question numbers this question consumes. */
     public $length = 1;

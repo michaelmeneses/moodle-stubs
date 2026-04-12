@@ -74,6 +74,12 @@ abstract class base
     public const MOVE_UP = -1;
     /** @var int Move a plugin down in the plugin order */
     public const MOVE_DOWN = 1;
+    /** @var array hold $plugin->supported in version.php */
+    public $supported;
+    /** @var int hold $plugin->incompatible in version.php  */
+    public $incompatible;
+    /** @var string Name of the plugin */
+    public $component;
     /**
      * Whether this plugintype supports its plugins being disabled.
      *

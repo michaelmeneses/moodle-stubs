@@ -46,6 +46,10 @@ namespace core\check\access;
  */
 class riskxss_result extends \core\check\result
 {
+    /** @var array SQL parameters. */
+    protected $params = [];
+    /** @var string SQL statement. */
+    protected $sqlfrom;
     /**
      * Constructor
      */

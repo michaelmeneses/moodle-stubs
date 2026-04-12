@@ -248,6 +248,16 @@ class renderer extends \plugin_renderer_base
     {
     }
     /**
+     * Get the portfolio button content for the specified file.
+     *
+     * @param assign_files $tree
+     * @param stored_file $file
+     * @return string
+     */
+    protected function get_portfolio_button(assign_files $tree, stored_file $file): string
+    {
+    }
+    /**
      * Helper method dealing with the fact we can not just fetch the output of flexible_table
      *
      * @param \flexible_table $table The table to render

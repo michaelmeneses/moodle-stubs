@@ -133,6 +133,14 @@ class manager
     {
     }
     /**
+     * Return if the database has records.
+     *
+     * @return bool true if the database has records
+     */
+    public function has_records(): bool
+    {
+    }
+    /**
      * Return if the database has fields.
      *
      * @return bool true if the database has fields
