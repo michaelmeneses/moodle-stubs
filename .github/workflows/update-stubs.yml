@@ -26,6 +26,7 @@ env:
   STUBS_REPO_SLUG: michaelmeneses/moodle-stubs
   MOODLE_REPO: https://github.com/moodle/moodle.git
   MOODLE_CACHE_DIR: /tmp/bimoo-moodle-cache
+  BIMOO_WORK_DIR: /tmp/bimoo-work
 
 jobs:
   # ──────────────────────────────────────────────────
@@ -39,7 +40,7 @@ jobs:
     steps:
       - name: Restore Moodle bare cache
         id: cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ${{ env.MOODLE_CACHE_DIR }}
           key: moodle-bare-${{ github.run_id }}
@@ -84,7 +85,7 @@ jobs:
           tools: composer:v2
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-interaction
+        run: composer update --prefer-dist --no-interaction
 
       - name: Discover branches and tags
         id: discover
@@ -145,7 +146,7 @@ jobs:
           tools: composer:v2
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-interaction
+        run: composer update --prefer-dist --no-interaction
 
       - name: Restore Moodle bare cache
         uses: actions/cache/restore@v4
@@ -163,18 +164,23 @@ jobs:
           git config --global user.email "bimoo-bot@users.noreply.github.com"
           git config --global url."https://x-access-token:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
 
-      - name: Sync branch ${{ matrix.item.branch }}
+      - name: Prepare Moodle source
         run: |
-          # Pre-populate work-dir with cached Moodle bare repo
-          mkdir -p /tmp/bimoo-work
+          mkdir -p "${BIMOO_WORK_DIR}"
           if [ -f "${MOODLE_CACHE_DIR}/HEAD" ]; then
-            cp -r "${MOODLE_CACHE_DIR}" /tmp/bimoo-work/moodle
+            ln -s "${MOODLE_CACHE_DIR}" "${BIMOO_WORK_DIR}/moodle"
+            echo "Using cached Moodle bare repo via symlink"
+          else
+            echo "No cache — bimoo will clone fresh"
           fi
 
+      - name: Sync branch ${{ matrix.item.branch }}
+        run: |
           vendor/bin/bimoo sync:branches \
             --stubs-repo="https://github.com/${STUBS_REPO_SLUG}.git" \
             --moodle-repo="${MOODLE_REPO}" \
             --branches="${{ matrix.item.branch }}" \
+            --work-dir="${BIMOO_WORK_DIR}" \
             --force
 
   # ──────────────────────────────────────────────────
@@ -201,7 +207,7 @@ jobs:
           tools: composer:v2
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-interaction
+        run: composer update --prefer-dist --no-interaction
 
       - name: Restore Moodle bare cache
         uses: actions/cache/restore@v4
@@ -227,18 +233,23 @@ jobs:
           echo "list=${TAG_LIST}" >> "$GITHUB_OUTPUT"
           echo "Tags to process: ${TAG_LIST}"
 
+      - name: Prepare Moodle source
+        run: |
+          mkdir -p "${BIMOO_WORK_DIR}"
+          if [ -f "${MOODLE_CACHE_DIR}/HEAD" ]; then
+            ln -s "${MOODLE_CACHE_DIR}" "${BIMOO_WORK_DIR}/moodle"
+            echo "Using cached Moodle bare repo via symlink"
+          else
+            echo "No cache — bimoo will clone fresh"
+          fi
+
       - name: Sync tags
         if: steps.tags.outputs.list != ''
         run: |
-          # Pre-populate work-dir with cached Moodle bare repo
-          mkdir -p /tmp/bimoo-work
-          if [ -f "${MOODLE_CACHE_DIR}/HEAD" ]; then
-            cp -r "${MOODLE_CACHE_DIR}" /tmp/bimoo-work/moodle
-          fi
-
           vendor/bin/bimoo sync:tags \
             --stubs-repo="https://github.com/${STUBS_REPO_SLUG}.git" \
             --moodle-repo="${MOODLE_REPO}" \
+            --work-dir="${BIMOO_WORK_DIR}" \
             --tags="${{ steps.tags.outputs.list }}"
 
   # ──────────────────────────────────────────────────
