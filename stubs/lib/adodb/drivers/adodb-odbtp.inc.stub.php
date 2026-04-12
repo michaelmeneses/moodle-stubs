@@ -26,12 +26,6 @@ class ADODB_odbtp extends ADOConnection
     var $_useUnicodeSQL = false;
     var $_canPrepareSP = false;
     var $_dontPoolDBC = true;
-    /** @var string DBMS name. */
-    var $odbc_name;
-    /** @var bool */
-    var $_canSelectDb = false;
-    /** @var mixed */
-    var $_lastAffectedRows;
     function ServerInfo()
     {
     }

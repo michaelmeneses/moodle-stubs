@@ -90,6 +90,8 @@ class core_course_renderer extends plugin_renderer_base
      *
      * @deprecated since 2.5
      *
+     * Please see http://docs.moodle.org/dev/Courses_lists_upgrade_to_2.5
+     *
      * @param array $ignored argument ignored
      * @return string
      */
@@ -100,6 +102,8 @@ class core_course_renderer extends plugin_renderer_base
      * Renderers a category for use with course_category_tree
      *
      * @deprecated since 2.5
+     *
+     * Please see http://docs.moodle.org/dev/Courses_lists_upgrade_to_2.5
      *
      * @param array $category
      * @param int $depth

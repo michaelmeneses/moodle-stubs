@@ -92,10 +92,9 @@ class visibility
      * @param string $groupsalias The SQL alias being used for the groups table.
      * @param string $groupsmembersalias The SQL alias being used for the groups_members table.
      * @param string $useralias The SQL alias being used for the user table.
-     * @param string $paramprefix Prefix for the parameter names.
      * @return array [$where, $params]
      */
-    public static function sql_member_visibility_where(string $groupsalias = 'g', string $groupsmembersalias = 'gm', string $useralias = 'u', string $paramprefix = ''): array
+    public static function sql_member_visibility_where(string $groupsalias = 'g', string $groupsmembersalias = 'gm', string $useralias = 'u'): array
     {
     }
     /**
@@ -103,10 +102,9 @@ class visibility
      *
      * @param string $groupsalias The SQL alias being used for the groups table.
      * @param string $groupsmembersalias The SQL alias being used for the groups_members table.
-     * @param string $paramprefix Prefix for the parameter names.
      * @return array [$sql, $params]
      */
-    protected static function sql_members_visibility_condition(string $groupsalias = 'g', string $groupsmembersalias = 'gm', string $paramprefix = ''): array
+    protected static function sql_members_visibility_condition(string $groupsalias = 'g', string $groupsmembersalias = 'gm'): array
     {
     }
 }

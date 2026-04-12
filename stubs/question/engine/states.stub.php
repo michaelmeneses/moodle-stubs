@@ -67,12 +67,10 @@ abstract class question_state
     {
     }
     /**
-     * Get the instance of this class for a given state name.
-     *
      * @param string $name a state name.
-     * @return question_state|null the state with that name. (Null only in an exceptional case.)
+     * @return question_state the state with that name.
      */
-    public static function get(string $name): ?question_state
+    public static function get($name)
     {
     }
     /**

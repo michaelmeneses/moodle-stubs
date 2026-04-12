@@ -199,8 +199,6 @@ class moodle_xhprofrun implements iXHProfRuns
     protected $totalcalls = 0;
     protected $totalmemory = 0;
     protected $timecreated = 0;
-    /** @var bool Decide if we want to reduce profiling data or no */
-    protected bool $reducedata = false;
     public function __construct()
     {
     }
@@ -225,46 +223,8 @@ class moodle_xhprofrun implements iXHProfRuns
     public function prepare_run($url)
     {
     }
-    /**
-     * Enable or disable reducing profiling data.
-     *
-     * @param bool $reducedata Decide if we want to reduce profiling data (true) or no (false).
-     */
-    public function set_reducedata(bool $reducedata): void
-    {
-    }
-    // Private API starts here.
+    // Private API starts here
     protected function sum_calls($sum, $data)
-    {
-    }
-    /**
-     * Reduce the run data to a more manageable size.
-     *
-     * This removes from the run data all the entries that
-     * are matching a group of regular expressions.
-     *
-     * The main use is to remove all the calls between "__Mustache"
-     * functions, which don't provide any useful information and
-     * make the call-graph too complex to be handled.
-     *
-     * @param array $info The xhprof run data, original array.
-     * @return array The xhprof run data, reduced array.
-     */
-    protected function reduce_run_data(array $info): array
-    {
-    }
-    /**
-     * Sort the xhprof run pseudo-topologically, so all parents are always before their children.
-     *
-     * Note that this is not a proper, complex, recursive topological sorting algorithm, returning
-     * nodes that later have to be converted back to xhprof "pairs" but, instead, does the specific
-     * work to get those parent==>child (2 levels only) "pairs" sorted (parents always before children).
-     *
-     * @param array $info The xhprof run data, original array.
-     *
-     * @return array The xhprof run data, sorted array.
-     */
-    protected function xhprof_topo_sort(array $info): array
     {
     }
 }

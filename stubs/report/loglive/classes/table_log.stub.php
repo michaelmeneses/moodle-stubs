@@ -24,8 +24,6 @@ class report_loglive_table_log extends table_sql
     protected $contextname = array();
     /** @var stdClass filters parameters */
     protected $filterparams;
-    /** @var int[] A list of users to filter by */
-    private ?array $lateuseridfilter = null;
     /**
      * Sets up the table_log parameters.
      *

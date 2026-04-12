@@ -58,7 +58,7 @@ class tool_uploadcourse_course
     /** @var int update mode. Matches tool_uploadcourse_processor::UPDATE_* */
     protected $updatemode;
     /** @var array fields allowed as course data. */
-    protected static $validfields = array('fullname', 'shortname', 'idnumber', 'category', 'visible', 'startdate', 'enddate', 'summary', 'format', 'theme', 'lang', 'newsitems', 'showgrades', 'showreports', 'legacyfiles', 'maxbytes', 'groupmode', 'groupmodeforce', 'enablecompletion', 'downloadcontent', 'showactivitydates');
+    protected static $validfields = array('fullname', 'shortname', 'idnumber', 'category', 'visible', 'startdate', 'enddate', 'summary', 'format', 'theme', 'lang', 'newsitems', 'showgrades', 'showreports', 'legacyfiles', 'maxbytes', 'groupmode', 'groupmodeforce', 'enablecompletion', 'downloadcontent');
     /** @var array fields required on course creation. */
     protected static $mandatoryfields = array('fullname', 'category');
     /** @var array fields which are considered as options. */

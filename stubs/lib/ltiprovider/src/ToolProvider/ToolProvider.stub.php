@@ -17,7 +17,6 @@ namespace IMSGlobal\LTI\ToolProvider;
  * @version  3.0.2
  * @license  GNU Lesser General Public License, version 3 (<http://www.gnu.org/licenses/lgpl.html>)
  */
-#[\AllowDynamicProperties]
 class ToolProvider
 {
     /**

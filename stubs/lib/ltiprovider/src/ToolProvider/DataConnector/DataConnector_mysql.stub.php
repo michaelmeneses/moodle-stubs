@@ -20,7 +20,6 @@ namespace IMSGlobal\LTI\ToolProvider\DataConnector;
 ###
 #    NB This class assumes that a MySQL connection has already been opened to the appropriate schema
 ###
-#[\AllowDynamicProperties]
 class DataConnector_mysql extends DataConnector
 {
     ###

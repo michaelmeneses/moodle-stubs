@@ -290,7 +290,7 @@ class stateactions
     {
     }
     /**
-     * Update the course content section state to collapse.
+     * Update the course content section collapsed value.
      *
      * @param stateupdates $updates the affected course elements track
      * @param stdClass $course the course object
@@ -302,19 +302,7 @@ class stateactions
     {
     }
     /**
-     * Update the course content section state to expand.
-     *
-     * @param stateupdates $updates the affected course elements track
-     * @param stdClass $course the course object
-     * @param int[] $ids the collapsed section ids
-     * @param int|null $targetsectionid not used
-     * @param int|null $targetcmid not used
-     */
-    public function section_content_expanded(stateupdates $updates, stdClass $course, array $ids = [], ?int $targetsectionid = null, ?int $targetcmid = null): void
-    {
-    }
-    /**
-     * Update the course index section state to collapse.
+     * Update the course index section collapsed value.
      *
      * @param stateupdates $updates the affected course elements track
      * @param stdClass $course the course object
@@ -323,18 +311,6 @@ class stateactions
      * @param int $targetcmid not used
      */
     public function section_index_collapsed(stateupdates $updates, stdClass $course, array $ids = [], ?int $targetsectionid = null, ?int $targetcmid = null): void
-    {
-    }
-    /**
-     * Update the course index section state to expand.
-     *
-     * @param stateupdates $updates the affected course elements track
-     * @param stdClass $course the course object
-     * @param int[] $ids the collapsed section ids
-     * @param int $targetsectionid not used
-     * @param int $targetcmid not used
-     */
-    public function section_index_expanded(stateupdates $updates, stdClass $course, array $ids = [], ?int $targetsectionid = null, ?int $targetcmid = null): void
     {
     }
     /**

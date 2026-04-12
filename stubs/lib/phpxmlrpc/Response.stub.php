@@ -13,45 +13,42 @@ namespace PhpXmlRpc;
  * Server-side, a server method handler will construct a Response and pass it as its return value.
  * An identical Response object will be returned by the result of an invocation of the send() method of the Client class.
  *
- * @property Value|string|mixed $val deprecated - public access left in purely for BC. Access via value()/__construct()
- * @property string $valtyp deprecated - public access left in purely for BC. Access via valueType()/__construct()
- * @property int $errno deprecated - public access left in purely for BC. Access via faultCode()/__construct()
- * @property string $errstr deprecated - public access left in purely for BC. Access faultString()/__construct()
- * @property string $payload deprecated - public access left in purely for BC. Access via getPayload()/setPayload()
- * @property string $content_type deprecated - public access left in purely for BC. Access via getContentType()/setPayload()
- * @property array $hdrs deprecated. Access via httpResponse()['headers'], set via $httpResponse['headers']
- * @property array _cookies deprecated. Access via httpResponse()['cookies'], set via $httpResponse['cookies']
- * @property string $raw_data deprecated. Access via httpResponse()['raw_data'], set via $httpResponse['raw_data']
+ * @property array $hdrs deprecated, use $httpResponse['headers']
+ * @property array _cookies deprecated, use $httpResponse['cookies']
+ * @property string $raw_data deprecated, use $httpResponse['raw_data']
  */
 class Response
 {
-    use CharsetEncoderAware;
-    use DeprecationLogger;
-    use PayloadBearer;
-    /** @var Value|string|mixed */
-    protected $val = 0;
-    /** @var string */
-    protected $valtyp;
-    /** @var int */
-    protected $errno = 0;
-    /** @var string */
-    protected $errstr = '';
+    protected static $charsetEncoder;
+    /// @todo: do these need to be public?
+    /** @internal */
+    public $val = 0;
+    /** @internal */
+    public $valtyp;
+    /** @internal */
+    public $errno = 0;
+    /** @internal */
+    public $errstr = '';
+    public $payload;
+    public $content_type = 'text/xml';
     protected $httpResponse = array('headers' => array(), 'cookies' => array(), 'raw_data' => '', 'status_code' => null);
+    public function getCharsetEncoder()
+    {
+    }
+    public function setCharsetEncoder($charsetEncoder)
+    {
+    }
     /**
-     * @param Value|string|mixed $val either a Value object, a php value or the xml serialization of an xml-rpc value (a string).
-     *                                Note that using anything other than a Value object wll have an impact on serialization.
+     * @param Value|string|mixed $val either a Value object, a php value or the xml serialization of an xmlrpc value (a string)
      * @param integer $fCode set it to anything but 0 to create an error response. In that case, $val is discarded
      * @param string $fString the error string, in case of an error response
      * @param string $valType The type of $val passed in. Either 'xmlrpcvals', 'phpvals' or 'xml'. Leave empty to let
-     *                        the code guess the correct type by looking at $val - in which case strings are assumed
-     *                        to be serialized xml
-     * @param array|null $httpResponse this should be set when the response is being built out of data received from
-     *                                 http (i.e. not when programmatically building a Response server-side). Array
-     *                                 keys should include, if known: headers, cookies, raw_data, status_code
+     *                        the code guess the correct type.
+     * @param array|null $httpResponse
      *
-     * @todo add check that $val / $fCode / $fString is of correct type? We could at least log a warning for fishy cases...
-     *       NB: as of now we do not do it, since it might be either an xml-rpc value or a plain php val, or a complete
-     *       xml chunk, depending on usage of Client::send() inside which the constructor is called.
+     * @todo add check that $val / $fCode / $fString is of correct type???
+     *       NB: as of now we do not do it, since it might be either an xmlrpc value or a plain php val, or a complete
+     *       xml chunk, depending on usage of Client::send() inside which creator is called...
      */
     public function __construct($val, $fCode = 0, $fString = '', $valType = '', $httpResponse = null)
     {
@@ -83,19 +80,12 @@ class Response
     {
     }
     /**
-     * @return string
-     */
-    public function valueType()
-    {
-    }
-    /**
      * Returns an array with the cookies received from the server.
      * Array has the form: $cookiename => array ('value' => $val, $attr1 => $val1, $attr2 => $val2, ...)
      * with attributes being e.g. 'expires', 'path', domain'.
      * NB: cookies sent as 'expired' by the server (i.e. with an expiry date in the past) are still present in the array.
      * It is up to the user-defined code to decide how to use the received cookies, and whether they have to be sent back
-     * with the next request to the server (using $client->setCookie) or not.
-     * The values are filled in at constructor time, and might not be set for specific debug values used.
+     * with the next request to the server (using Client::setCookie) or not.
      *
      * @return array[] array of cookies received from the server
      */
@@ -103,34 +93,25 @@ class Response
     {
     }
     /**
-     * Returns an array with info about the http response received from the server.
-     * The values are filled in at constructor time, and might not be set for specific debug values used.
-     *
-     * @return array array with keys 'headers', 'cookies', 'raw_data' and 'status_code'.
+     * @return array array with keys 'headers', 'cookies', 'raw_data' and 'status_code'
      */
     public function httpResponse()
     {
     }
     /**
-     * Returns xml representation of the response, XML prologue _not_ included. Sets `payload` and `content_type` properties
+     * Returns xml representation of the response. XML prologue not included.
      *
      * @param string $charsetEncoding the charset to be used for serialization. If null, US-ASCII is assumed
+     *
      * @return string the xml representation of the response
-     * @throws StateErrorException if the response was built out of a value of an unsupported type
+     *
+     * @throws \Exception
      */
     public function serialize($charsetEncoding = '')
     {
     }
-    /**
-     * @param string $charsetEncoding
-     * @return string
-     */
-    public function xml_header($charsetEncoding = '')
-    {
-    }
-    // *** BC layer ***
-    // we have to make this return by ref in order to allow calls such as `$resp->_cookies['name'] = ['value' => 'something'];`
-    public function &__get($name)
+    // BC layer
+    public function __get($name)
     {
     }
     public function __set($name, $value)

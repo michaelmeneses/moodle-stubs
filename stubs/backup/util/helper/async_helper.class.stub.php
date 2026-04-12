@@ -137,20 +137,11 @@ class async_helper
      * Get markup for in progress async backups,
      * to use in backup table UI.
      *
-     * @param string $filearea The filearea to get backup data for.
+     * @param \core_backup_renderer $renderer The backup renderer object.
      * @param integer $instanceid The context id to get backup data for.
      * @return array $tabledata the rows of table data.
      */
-    public static function get_async_backups($filearea, $instanceid)
-    {
-    }
-    /**
-     * Get the user data settings for backups.
-     *
-     * @param \backup_controller $backupcontroller The backup controller object.
-     * @return array Array of user data settings.
-     */
-    public static function get_userdata_backup_settings(\backup_controller $backupcontroller): array
+    public static function get_async_backups($renderer, $instanceid)
     {
     }
     /**

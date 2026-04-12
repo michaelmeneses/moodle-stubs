@@ -31,6 +31,8 @@ class portfolio_format_leap2a_writer
     private $feed;
     /** @var stdClass the user exporting data */
     private $user;
+    /** @var string the id of the feed - this is unique to the user and date and used for portfolio ns as well as feed id */
+    private $id;
     /** @var array the entries for the feed - keyed on id */
     private $entries = array();
     /**

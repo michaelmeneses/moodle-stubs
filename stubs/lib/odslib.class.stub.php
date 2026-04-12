@@ -83,10 +83,6 @@ class MoodleODSWorksheet
     public $rows = array();
     public $showgrid = true;
     public $name;
-    /** @var int Max number of rows in the sheet. */
-    public $maxr = 0;
-    /** @var int Max number of cols in the sheet. */
-    public $maxc = 0;
     /**
      * Constructs one Moodle Worksheet.
      *

@@ -16,66 +16,27 @@ class Logger
 {
     protected static $instance = null;
     /**
-     * This class can be used as singleton, so that later we can move to DI patterns (ish...)
+     * This class can be used as singleton, so that later we can move to DI patterns.
      *
      * @return Logger
      */
     public static function instance()
     {
     }
-    // *** Implement the same interface as PSR/LOG, for the sake of interoperability ***
-    /**
-     * NB: unlike other "traditional" loggers, this one echoes to screen the debug messages instead of logging them.
-     *
-     * @param string $message
-     * @param array $context known key: 'encoding'
-     * @return void
-     */
-    public function debug($message, $context = array())
-    {
-    }
-    /**
-     * Following the general principle of 'never break stdout', the default behaviour
-     *
-     * @param string $message
-     * @param $context
-     * @return void
-     */
-    public function warning($message, $context = array())
-    {
-    }
-    /**
-     * Triggers the writing of a message to php's error log
-     *
-     * @param string $message
-     * @param array $context
-     * @return void
-     */
-    public function error($message, $context = array())
-    {
-    }
-    // BC interface
     /**
      * Echoes a debug message, taking care of escaping it when not in console mode.
      * NB: if the encoding of the message is not known or wrong, and we are working in web mode, there is no guarantee
      *     of 100% accuracy, which kind of defeats the purpose of debugging
      *
      * @param string $message
-     * @param string $encoding deprecated
-     * @return void
-     *
-     * @internal left in purely for BC
+     * @param string $encoding
      */
     public function debugMessage($message, $encoding = null)
     {
     }
     /**
-     * Writes a message to the error log.
-     *
+     * Writes a message to the error log
      * @param string $message
-     * @return void
-     *
-     * @internal left in purely for BC
      */
     public function errorLog($message)
     {

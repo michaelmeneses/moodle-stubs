@@ -15,15 +15,15 @@
 class qtype_calculated extends question_type
 {
     /**
-     * @var string a placeholder is a letter, followed by zero or more alphanum chars (as well as space, - and _ for readability).
+     * @const string a placeholder is a letter, followed by almost any characters. (This should probably be restricted more.)
      */
-    const PLACEHOLDER_REGEX_PART = '[[:alpha:]][[:alpha:][:digit:]\-_\s]*';
+    const PLACEHOLDER_REGEX_PART = '[[:alpha:]][^>} <`{"\']*';
     /**
-     * @var string REGEXP for a placeholder, wrapped in its {...} delimiters, with capturing brackets around the name.
+     * @const string REGEXP for a placeholder, wrapped in its {...} delimiters, with capturing brackets around the name.
      */
     const PLACEHODLER_REGEX = '~\{(' . self::PLACEHOLDER_REGEX_PART . ')\}~';
     /**
-     * @var string Regular expression that finds the formulas in content, with capturing brackets to get the forumlas.
+     * @const string Regular expression that finds the formulas in content, with capturing brackets to get the forumlas.
      */
     const FORMULAS_IN_TEXT_REGEX = '~\{=([^{}]*(?:\{' . self::PLACEHOLDER_REGEX_PART . '\}[^{}]*)*)\}~';
     const MAX_DATASET_ITEMS = 100;
@@ -38,15 +38,6 @@ class qtype_calculated extends question_type
     {
     }
     public function import_datasets($question)
-    {
-    }
-    /**
-     * Initializes calculated answers for a given question.
-     *
-     * @param question_definition $question The question definition object.
-     * @param stdClass $questiondata The question data object.
-     */
-    protected function initialise_calculated_answers(question_definition $question, stdClass $questiondata)
     {
     }
     protected function initialise_question_instance(question_definition $question, $questiondata)

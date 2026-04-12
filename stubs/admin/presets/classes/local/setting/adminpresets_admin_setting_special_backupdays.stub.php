@@ -34,8 +34,6 @@ namespace core_adminpresets\local\setting;
  */
 class adminpresets_admin_setting_special_backupdays extends adminpresets_setting
 {
-    /** @var \admin_setting_special_backupdays $settingdata */
-    protected $settingdata;
     protected function set_value($value)
     {
     }

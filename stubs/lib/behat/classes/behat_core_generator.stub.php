@@ -160,14 +160,6 @@ class behat_core_generator extends behat_generator_base
     {
     }
     /**
-     * Assign capabilities to a role.
-     *
-     * @param array $data
-     */
-    protected function process_role_capability($data): void
-    {
-    }
-    /**
      * Adds members to cohorts
      *
      * @param array $data
@@ -291,15 +283,6 @@ class behat_core_generator extends behat_generator_base
      * @return void
      */
     protected function process_contentbank_content(array $data)
-    {
-    }
-    /**
-     * Create content in the given user's private files.
-     *
-     * @param array $data
-     * @return void
-     */
-    protected function process_user_private_files(array $data)
     {
     }
     /**

@@ -52,7 +52,7 @@
  *      course table. (Also available as $COURSE global.) If we are not inside
  *      an actual course, this will be the site course.
  * @property-read string $devicetypeinuse The name of the device type in use
- * @property-read string $docspath The path to the Documentation for this page.
+ * @property-read string $docspath The path to the Help and documentation.
  * @property-read string $focuscontrol The id of the HTML element to be focused when the page has loaded.
  * @property-read bool $headerprinted True if the page header has already been printed.
  * @property-read string $heading The main heading that should be displayed at the top of the <body>.
@@ -94,10 +94,6 @@ class moodle_page
      * complete.
      */
     const STATE_DONE = 3;
-    /**
-     * The separator used for separating page title elements.
-     */
-    const TITLE_SEPARATOR = ' | ';
     /**
      * @var int The current state of the page. The state a page is within
      * determines what actions are possible for it.
@@ -170,7 +166,7 @@ class moodle_page
      */
     protected $_subpage = '';
     /**
-     * @var string Set a different path to use for the 'Documentation for this page' link.
+     * @var string Set a different path to use for the 'Help and documentation' link.
      * By default, it uses the path of the file for instance mod/quiz/attempt.
      */
     protected $_docspath = null;
@@ -515,7 +511,7 @@ class moodle_page
     }
     /**
      * Please do not call this method directly, use the ->docspath syntax. {@link moodle_page::__get()}.
-     * @return string the path to the Documentation for this page.
+     * @return string the path to the Help and documentation.
      */
     protected function magic_get_docspath()
     {
@@ -864,7 +860,7 @@ class moodle_page
      * in the standard theme.
      *
      * For an idea of the common page layouts see
-     * {@link https://docs.moodle.org/dev/Themes_overview#Layouts}
+     * {@link http://docs.moodle.org/dev/Themes_2.0#The_different_layouts_as_of_August_17th.2C_2010}
      * But please keep in mind that it may be (and normally is) out of date.
      * The only place to find an accurate up-to-date list of the page layouts
      * available for your version of Moodle is {@link theme/base/config.php}
@@ -910,26 +906,11 @@ class moodle_page
     }
     /**
      * Sets the title for the page.
-     *
      * This is normally used within the title tag in the head of the page.
      *
-     * Some tips for providing a meaningful page title:
-     * - The page title must be accurate and informative.
-     * - If the page causes a change of context (e.g. a search functionality), it should describe the result or change of context
-     *   to the user.
-     * - It should be concise.
-     * - If possible, it should uniquely identify the page.
-     * - The most identifying information should come first. (e.g. Submit assignment | Assignment | Moodle)
-     *
-     * For more information, see
-     * {@link https://www.w3.org/WAI/WCAG21/Understanding/page-titled Understanding Success Criterion 2.4.2: Page Titled}
-     *
      * @param string $title the title that should go in the <head> section of the HTML of this page.
-     * @param bool $appendsitename Appends site name at the end of the given title. It is encouraged to append the site name as this
-     *                              especially helps with accessibility. If it's necessary to override this, please keep in mind
-     *                              to ensure that the title provides a concise summary of the page being displayed.
      */
-    public function set_title($title, bool $appendsitename = true)
+    public function set_title($title)
     {
     }
     /**
@@ -965,7 +946,7 @@ class moodle_page
     {
     }
     /**
-     * Set a different path to use for the 'Documentation for this page' link.
+     * Set a different path to use for the 'Help and documentation' link.
      *
      * By default, it uses the pagetype, which is normally the same as the
      * script name. So, for example, for mod/quiz/attempt.php, pagetype is

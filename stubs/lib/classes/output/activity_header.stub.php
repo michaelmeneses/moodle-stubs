@@ -136,14 +136,4 @@ class activity_header implements \renderable, \templatable
     public function export_for_template(renderer_base $output): array
     {
     }
-    /**
-     * Get the heading level for a given heading depending on whether the theme's activity header displays a heading
-     * (usually the activity name).
-     *
-     * @param int $defaultlevel The default heading level when the activity header does not display a heading.
-     * @return int
-     */
-    public function get_heading_level(int $defaultlevel = 2): int
-    {
-    }
 }

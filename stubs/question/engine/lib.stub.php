@@ -270,19 +270,19 @@ abstract class question_engine
 class question_display_options
 {
     /**#@+
-     * @var int named constants for the values that most of the options take.
+     * @var integer named constants for the values that most of the options take.
      */
     const SHOW_ALL = -1;
     const HIDDEN = 0;
     const VISIBLE = 1;
     const EDITABLE = 2;
     /**#@-*/
-    /**#@+ @var int named constants for the {@see $marks} option. */
+    /**#@+ @var integer named constants for the {@link $marks} option. */
     const MAX_ONLY = 1;
     const MARK_AND_MAX = 2;
     /**#@-*/
     /**
-     * @var int maximum value for the {@see $markpd} option. This is
+     * @var integer maximum value for the {@link $markpd} option. This is
      * effectively set by the database structure, which uses NUMBER(12,7) columns
      * for question marks/fractions.
      */
@@ -302,68 +302,57 @@ class question_display_options
      * This includes the green/red hilighting of the bits of their response,
      * whether the one-line summary of the current state of the question says
      * correct/incorrect or just answered.
-     * @var int {@see question_display_options::HIDDEN} or
-     * {@see question_display_options::VISIBLE}
+     * @var integer {@link question_display_options::HIDDEN} or
+     * {@link question_display_options::VISIBLE}
      */
     public $correctness = self::VISIBLE;
     /**
      * The the mark and/or the maximum available mark for this question be visible?
-     * @var int {@see question_display_options::HIDDEN},
-     * {@see question_display_options::MAX_ONLY} or {@see question_display_options::MARK_AND_MAX}
+     * @var integer {@link question_display_options::HIDDEN},
+     * {@link question_display_options::MAX_ONLY} or {@link question_display_options::MARK_AND_MAX}
      */
     public $marks = self::MARK_AND_MAX;
-    /** @var int of decimal places to use when formatting marks for output. */
+    /** @var number of decimal places to use when formatting marks for output. */
     public $markdp = 2;
     /**
      * Should the flag this question UI element be visible, and if so, should the
-     * flag state be changeable?
-     *
-     * @var int {@see question_display_options::HIDDEN},
-     * {@see question_display_options::VISIBLE} or {@see question_display_options::EDITABLE}
+     * flag state be changable?
+     * @var integer {@link question_display_options::HIDDEN},
+     * {@link question_display_options::VISIBLE} or {@link question_display_options::EDITABLE}
      */
     public $flags = self::VISIBLE;
     /**
      * Should the specific feedback be visible.
-     *
-     * Specific feedback is typically the part of the feedback that changes based on the
-     * answer that the student gave. For example the feedback shown if a particular choice
-     * has been chosen in a multi-choice question. It also includes the combined feedback
-     * that a lost of question types have (e.g. feedback for any correct/incorrect response.)
-     *
-     * @var int {@see question_display_options::HIDDEN} or
-     * {@see question_display_options::VISIBLE}
+     * @var integer {@link question_display_options::HIDDEN} or
+     * {@link question_display_options::VISIBLE}
      */
     public $feedback = self::VISIBLE;
     /**
      * For questions with a number of sub-parts (like matching, or
      * multiple-choice, multiple-reponse) display the number of sub-parts that
      * were correct.
-     * @var int {@see question_display_options::HIDDEN} or
-     * {@see question_display_options::VISIBLE}
+     * @var integer {@link question_display_options::HIDDEN} or
+     * {@link question_display_options::VISIBLE}
      */
     public $numpartscorrect = self::VISIBLE;
     /**
      * Should the general feedback be visible?
-     *
-     * This is typically feedback shown to all students after the question
-     * is finished, irrespective of which answer they gave.
-     *
-     * @var int {@see question_display_options::HIDDEN} or
-     * {@see question_display_options::VISIBLE}
+     * @var integer {@link question_display_options::HIDDEN} or
+     * {@link question_display_options::VISIBLE}
      */
     public $generalfeedback = self::VISIBLE;
     /**
-     * Should the automatically generated display of what the correct answer be visible?
-     *
-     * @var int {@see question_display_options::HIDDEN} or
-     * {@see question_display_options::VISIBLE}
+     * Should the automatically generated display of what the correct answer is
+     * be visible?
+     * @var integer {@link question_display_options::HIDDEN} or
+     * {@link question_display_options::VISIBLE}
      */
     public $rightanswer = self::VISIBLE;
     /**
      * Should the manually added marker's comment be visible. Should the link for
      * adding/editing the comment be there.
-     * @var int {@see question_display_options::HIDDEN},
-     * {@see question_display_options::VISIBLE}, or {@see question_display_options::EDITABLE}.
+     * @var integer {@link question_display_options::HIDDEN},
+     * {@link question_display_options::VISIBLE}, or {@link question_display_options::EDITABLE}.
      * Editable means that form fields are displayed inline.
      */
     public $manualcomment = self::VISIBLE;
@@ -381,8 +370,8 @@ class question_display_options
     public $questionreviewlink = null;
     /**
      * Should the history of previous question states table be visible?
-     * @var int {@see question_display_options::HIDDEN} or
-     * {@see question_display_options::VISIBLE}
+     * @var integer {@link question_display_options::HIDDEN} or
+     * {@link question_display_options::VISIBLE}
      */
     public $history = self::HIDDEN;
     /**
@@ -435,8 +424,9 @@ class question_display_options
      */
     public $questionidentifier = null;
     /**
-     * Set all the feedback-related fields, feedback, numpartscorrect, generalfeedback,
-     * rightanswer, manualcomment} and correctness to {@see question_display_options::HIDDEN}.
+     * Set all the feedback-related fields {@link $feedback}, {@link generalfeedback},
+     * {@link rightanswer} and {@link manualcomment} to
+     * {@link question_display_options::HIDDEN}.
      */
     public function hide_all_feedback()
     {
@@ -445,10 +435,10 @@ class question_display_options
      * Returns the valid choices for the number of decimal places for showing
      * question marks. For use in the user interface.
      *
-     * Calling code should probably use {@see question_engine::get_dp_options()}
+     * Calling code should probably use {@link question_engine::get_dp_options()}
      * rather than calling this method directly.
      *
-     * @return array suitable for passing to {@see html_writer::select()} or similar.
+     * @return array suitable for passing to {@link html_writer::select()} or similar.
      */
     public static function get_dp_options()
     {

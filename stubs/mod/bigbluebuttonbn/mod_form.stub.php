@@ -198,4 +198,13 @@ class mod_bigbluebuttonbn_mod_form extends moodleform_mod
     private function bigbluebuttonbn_mform_add_element(MoodleQuickForm &$mform, string $type, string $name, ?string $datatype, ?string $descriptionkey = "", $defaultvalue = null, ?array $options = null, ?array $rule = null): void
     {
     }
+    /**
+     * Definition after data
+     *
+     * Here just to tweak form group in completion that should not be frozen. This avoid
+     * unwanted warnings.
+     */
+    public function definition_after_data()
+    {
+    }
 }

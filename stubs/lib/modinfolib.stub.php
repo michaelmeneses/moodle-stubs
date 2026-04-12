@@ -367,16 +367,6 @@ class course_modinfo
     {
     }
     /**
-     * Purge the cache of multiple course modules.
-     *
-     * @param int $courseid Course id
-     * @param int[] $cmids List of course module ids
-     * @return void
-     */
-    public static function purge_course_modules_cache(int $courseid, array $cmids): void
-    {
-    }
-    /**
      * For a given course, returns an array of course activity objects
      *
      * @param stdClass $course Course object
@@ -1747,11 +1737,6 @@ class section_info implements IteratorAggregate
      * @var course_modinfo
      */
     private $modinfo;
-    /**
-     * True if has activities, otherwise false.
-     * @var bool
-     */
-    public $hasactivites;
     /**
      * Constructs object from database information plus extra required data.
      * @param object $data Array entry from cached sectioncache

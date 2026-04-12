@@ -158,16 +158,6 @@ abstract class question_bank
     {
     }
     /**
-     * Get all the versions of questions.
-     *
-     * @param array $questionids Array of question ids.
-     * @return array two dimensional array question_bank_entries.id => version number => question.id.
-     *      Versions in descending order.
-     */
-    public static function get_all_versions_of_questions(array $questionids): array
-    {
-    }
-    /**
      * @return question_finder a question finder.
      */
     public static function get_finder()
@@ -267,8 +257,8 @@ class question_finder implements cache_data_source
     }
     /**
      * Get the ids of all the questions in a list of categories.
-     * @param array $categoryids either a category id, or a comma-separated list
-     *      of category ids, or an array of them.
+     * @param array $categoryids either a categoryid, or a comma-separated list
+     *      category ids, or an array of them.
      * @param string $extraconditions extra conditions to AND with the rest of
      *      the where clause. Must use named parameters.
      * @param array $extraparams any parameters used by $extraconditions.

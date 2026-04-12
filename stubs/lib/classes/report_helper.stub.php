@@ -59,17 +59,4 @@ class report_helper
     public static function save_selected_report(int $id, moodle_url $url): void
     {
     }
-    /**
-     * Retrieve the right SQL / params for the group filter depending on the filterparams, course and group settings.
-     *
-     * Addionnaly, it will return the list of users visible by the current user so
-     * it can be used to filter out records that are not visible. This is mainly
-     * because we cannot use joins as the log tables can be in two different databases.
-     *
-     * @param stdClass $filterparams
-     * @return array
-     */
-    public static function get_group_filter(stdClass $filterparams): array
-    {
-    }
 }

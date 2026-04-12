@@ -38,8 +38,6 @@ class block_glossary_random extends block_base
      *     (whether the glossary is visible to the current user)
      */
     protected $glossarycm = null;
-    /** @var stdClass course data. */
-    public $course;
     function init()
     {
     }

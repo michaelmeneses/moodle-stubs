@@ -11,32 +11,41 @@ namespace PhpXmlRpc;
 /**
  * This class provides the representation of a request to an XML-RPC server.
  * A client sends a PhpXmlrpc\Request to a server, and receives back an PhpXmlrpc\Response.
- *
- * @todo feature creep - add a protected $httpRequest member, in the same way the Response has one
- *
- * @property string $methodname deprecated - public access left in purely for BC. Access via method()/__construct()
- * @property Value[] $params deprecated - public access left in purely for BC. Access via getParam()/__construct()
- * @property int $debug deprecated - public access left in purely for BC. Access via .../setDebug()
- * @property string $payload deprecated - public access left in purely for BC. Access via getPayload()/setPayload()
- * @property string $content_type deprecated - public access left in purely for BC. Access via getContentType()/setPayload()
  */
 class Request
 {
-    use CharsetEncoderAware;
-    use DeprecationLogger;
-    use ParserAware;
-    use PayloadBearer;
-    /** @var string */
-    protected $methodname;
-    /** @var Value[] */
-    protected $params = array();
-    /** @var int */
-    protected $debug = 0;
-    /**
-     * holds data while parsing the response. NB: Not a full Response object
-     * @deprecated will be removed in a future release; still accessible by subclasses for the moment
-     */
-    private $httpResponse = array();
+    protected static $logger;
+    protected static $parser;
+    protected static $charsetEncoder;
+    /// @todo: do these need to be public?
+    public $payload;
+    /** @internal */
+    public $methodname;
+    /** @internal */
+    public $params = array();
+    public $debug = 0;
+    public $content_type = 'text/xml';
+    // holds data while parsing the response. NB: Not a full Response object
+    /** @deprecated will be removed in a future release */
+    protected $httpResponse = array();
+    public function getLogger()
+    {
+    }
+    public static function setLogger($logger)
+    {
+    }
+    public function getParser()
+    {
+    }
+    public static function setParser($parser)
+    {
+    }
+    public function getCharsetEncoder()
+    {
+    }
+    public function setCharsetEncoder($charsetEncoder)
+    {
+    }
     /**
      * @param string $methodName the name of the method to invoke
      * @param Value[] $params array of parameters to be passed to the method (NB: Value objects, not plain php values)
@@ -45,19 +54,54 @@ class Request
     {
     }
     /**
-     * Gets/sets the xml-rpc method to be invoked.
+     * @internal this function will become protected in the future
+     * @param string $charsetEncoding
+     * @return string
+     */
+    public function xml_header($charsetEncoding = '')
+    {
+    }
+    /**
+     * @internal this function will become protected in the future
+     * @return string
+     */
+    public function xml_footer()
+    {
+    }
+    /**
+     * @internal this function will become protected in the future
+     * @param string $charsetEncoding
+     */
+    public function createPayload($charsetEncoding = '')
+    {
+    }
+    /**
+     * Gets/sets the xmlrpc method to be invoked.
      *
      * @param string $methodName the method to be set (leave empty not to set it)
+     *
      * @return string the method that will be invoked
      */
     public function method($methodName = '')
     {
     }
     /**
+     * Returns xml representation of the message. XML prologue included.
+     *
+     * @param string $charsetEncoding
+     *
+     * @return string the xml representation of the message, xml prologue included
+     */
+    public function serialize($charsetEncoding = '')
+    {
+    }
+    /**
      * Add a parameter to the list of parameters to be used upon method invocation.
+     *
      * Checks that $params is actually a Value object and not a plain php value.
      *
      * @param Value $param
+     *
      * @return boolean false on failure
      */
     public function addParam($param)
@@ -67,6 +111,7 @@ class Request
      * Returns the nth parameter in the request. The index zero-based.
      *
      * @param integer $i the index of the parameter to fetch (zero based)
+     *
      * @return Value the i-th parameter
      */
     public function getParam($i)
@@ -81,42 +126,7 @@ class Request
     {
     }
     /**
-     * Returns xml representation of the message, XML prologue included. Sets `payload` and `content_type` properties
-     *
-     * @param string $charsetEncoding
-     * @return string the xml representation of the message, xml prologue included
-     */
-    public function serialize($charsetEncoding = '')
-    {
-    }
-    /**
-     * @internal this function will become protected in the future (and be folded into serialize)
-     *
-     * @param string $charsetEncoding
-     * @return void
-     */
-    public function createPayload($charsetEncoding = '')
-    {
-    }
-    /**
-     * @internal this function will become protected in the future (and be folded into serialize)
-     *
-     * @param string $charsetEncoding
-     * @return string
-     */
-    public function xml_header($charsetEncoding = '')
-    {
-    }
-    /**
-     * @internal this function will become protected in the future (and be folded into serialize)
-     *
-     * @return string
-     */
-    public function xml_footer()
-    {
-    }
-    /**
-     * Given an open file handle, read all data available and parse it as an xml-rpc response.
+     * Given an open file handle, read all data available and parse it as an xmlrpc response.
      *
      * NB: the file handle is not closed by this function.
      * NNB: might have trouble in rare cases to work on network streams, as we check for a read of 0 bytes instead of
@@ -126,37 +136,32 @@ class Request
      * @param resource $fp stream pointer
      * @param bool $headersProcessed
      * @param string $returnType
-     * @return Response
      *
-     * @todo arsing Responses is not really the responsibility of the Request class. Maybe of the Client...
-     * @todo feature creep - add a flag to disable trying to parse the http headers
+     * @return Response
      */
     public function parseResponseFile($fp, $headersProcessed = false, $returnType = 'xmlrpcvals')
     {
     }
     /**
-     * Parse the xml-rpc response contained in the string $data and return a Response object.
+     * Parse the xmlrpc response contained in the string $data and return a Response object.
      *
      * When $this->debug has been set to a value greater than 0, will echo debug messages to screen while decoding.
      *
-     * @param string $data the xml-rpc response, possibly including http headers
+     * @param string $data the xmlrpc response, possibly including http headers
      * @param bool $headersProcessed when true prevents parsing HTTP headers for interpretation of content-encoding and
      *                               consequent decoding
      * @param string $returnType decides return type, i.e. content of response->value(). Either 'xmlrpcvals', 'xml' or
      *                           'phpvals'
+     *
      * @return Response
      *
      * @todo parsing Responses is not really the responsibility of the Request class. Maybe of the Client...
-     * @todo what about only populating 'raw_data' in httpResponse when debug mode is > 0?
-     * @todo feature creep - allow parsing data gotten from a stream pointer instead of a string: read it piecewise,
-     *       looking first for separation between headers and body, then for charset indicators, server debug info and
-     *       </methodResponse>. That would require a notable increase in code complexity...
      */
     public function parseResponse($data = '', $headersProcessed = false, $returnType = XMLParser::RETURN_XMLRPCVALS)
     {
     }
     /**
-     * Kept the old name even if Request class was renamed, for BC.
+     * Kept the old name even if Request class was renamed, for compatibility.
      *
      * @return string
      */
@@ -164,26 +169,11 @@ class Request
     {
     }
     /**
-     * Enables/disables the echoing to screen of the xml-rpc responses received.
+     * Enables/disables the echoing to screen of the xmlrpc responses received.
      *
-     * @param integer $level values <0, 0, 1, >1 are supported
-     * @return $this
+     * @param integer $level values 0, 1, 2 are supported
      */
     public function setDebug($level)
-    {
-    }
-    // *** BC layer ***
-    // we have to make this return by ref in order to allow calls such as `$resp->_cookies['name'] = ['value' => 'something'];`
-    public function &__get($name)
-    {
-    }
-    public function __set($name, $value)
-    {
-    }
-    public function __isset($name)
-    {
-    }
-    public function __unset($name)
     {
     }
 }

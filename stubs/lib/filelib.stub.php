@@ -985,7 +985,7 @@ class curl
     public $rawresponse = array();
     /** @var array http header */
     public $header = array();
-    /** @var array cURL information */
+    /** @var string cURL information */
     public $info;
     /** @var string error */
     public $error;
@@ -1013,8 +1013,6 @@ class curl
     private $ignoresecurity;
     /** @var array $mockresponses For unit testing only - return the head of this list instead of making the next request. */
     private static $mockresponses = [];
-    /** @var array temporary params value if the value is not belongs to class stored_file. */
-    public $_tmp_file_post_params = [];
     /**
      * Curl constructor.
      *
@@ -1356,7 +1354,7 @@ class curl
     /**
      * Get curl information
      *
-     * @return array
+     * @return string
      */
     public function get_info()
     {
@@ -1410,8 +1408,6 @@ class curl_cache
 {
     /** @var string Path to cache directory */
     public $dir = '';
-    /** @var int the repositorycacheexpire config value. */
-    private $ttl;
     /**
      * Constructor
      *

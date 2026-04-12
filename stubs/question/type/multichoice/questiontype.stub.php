@@ -14,24 +14,6 @@
  */
 class qtype_multichoice extends question_type
 {
-    /**
-     * @var int a special value that can be set for {@see question_display_options::$feedback}.
-     *
-     * This is not used by the core question type, but is used by some variants of this question
-     * types in the plugins database, including qtype_oumultiresponse and qtype_answersselect.
-     *
-     * If ->feedback is set to this value, then the renderer will display the combined feebdack,
-     * but not the feedback for each specific choice.
-     */
-    const COMBINED_BUT_NOT_CHOICE_FEEDBACK = 0x100;
-    /**
-     * Helper to catch and update if a plugin is using the old version of the COMBINED_BUT_NOT_CHOICE_FEEDBACK thing.
-     *
-     * @param question_display_options $options to be updated before being used.
-     */
-    public static function support_legacy_review_options_hack(question_display_options $options): void
-    {
-    }
     public function get_question_options($question)
     {
     }

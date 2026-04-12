@@ -10,15 +10,9 @@ namespace PhpXmlRpc;
 
 /**
  * This class enables the creation of values for XML-RPC, by encapsulating plain php values.
- *
- * @property Value[]|mixed $me deprecated - public access left in purely for BC. Access via scalarVal()/__construct()
- * @property int $params $mytype - public access left in purely for BC. Access via kindOf()/__construct()
- * @property string|null $_php_class deprecated - public access left in purely for BC.
  */
 class Value implements \Countable, \IteratorAggregate, \ArrayAccess
 {
-    use CharsetEncoderAware;
-    use DeprecationLogger;
     public static $xmlrpcI4 = "i4";
     public static $xmlrpcI8 = "i8";
     public static $xmlrpcInt = "int";
@@ -32,112 +26,97 @@ class Value implements \Countable, \IteratorAggregate, \ArrayAccess
     public static $xmlrpcValue = "undefined";
     public static $xmlrpcNull = "null";
     public static $xmlrpcTypes = array("i4" => 1, "i8" => 1, "int" => 1, "boolean" => 1, "double" => 1, "string" => 1, "dateTime.iso8601" => 1, "base64" => 1, "array" => 2, "struct" => 3, "null" => 1);
+    protected static $logger;
+    protected static $charsetEncoder;
+    /// @todo: do these need to be public?
     /** @var Value[]|mixed */
-    protected $me = array();
+    public $me = array();
     /**
-     * @var int 0 for undef, 1 for scalar, 2 for array, 3 for struct
+     * @var int $mytype
+     * @internal
      */
-    protected $mytype = 0;
-    /** @var string|null */
-    protected $_php_class = null;
+    public $mytype = 0;
+    /** @var string|null $_php_class */
+    public $_php_class = null;
+    public function getLogger()
+    {
+    }
+    public static function setLogger($logger)
+    {
+    }
+    public function getCharsetEncoder()
+    {
+    }
+    public function setCharsetEncoder($charsetEncoder)
+    {
+    }
     /**
-     * Build an xml-rpc value.
+     * Build an xmlrpc value.
      *
      * When no value or type is passed in, the value is left uninitialized, and the value can be added later.
      *
      * @param Value[]|mixed $val if passing in an array, all array elements should be PhpXmlRpc\Value themselves
-     * @param string $type any valid xml-rpc type name (lowercase): i4, int, boolean, string, double, dateTime.iso8601,
+     * @param string $type any valid xmlrpc type name (lowercase): i4, int, boolean, string, double, dateTime.iso8601,
      *                     base64, array, struct, null.
      *                     If null, 'string' is assumed.
-     *                     You should refer to http://xmlrpc.com/spec.md for more information on what each of these mean.
+     *                     You should refer to http://www.xmlrpc.com/spec for more information on what each of these mean.
      */
     public function __construct($val = -1, $type = '')
     {
     }
     /**
-     * Add a single php value to an xml-rpc value.
+     * Add a single php value to an xmlrpc value.
      *
-     * If the xml-rpc value is an array, the php value is added as its last element.
-     * If the xml-rpc value is empty (uninitialized), this method makes it a scalar value, and sets that value.
-     * Fails if the xml-rpc value is not an array (i.e. a struct or a scalar) and already initialized.
+     * If the xmlrpc value is an array, the php value is added as its last element.
+     * If the xmlrpc value is empty (uninitialized), this method makes it a scalar value, and sets that value.
+     * Fails if the xmlrpc value is not an array and already initialized.
      *
      * @param mixed $val
      * @param string $type allowed values: i4, i8, int, boolean, string, double, dateTime.iso8601, base64, null.
-     * @return int 1 or 0 on failure
      *
-     * @todo arguably, as we have addArray to add elements to an Array value, and addStruct to add elements to a Struct
-     *       value, we should not allow this method to add values to an Array. The 'scalar' in the method name refers to
-     *       the expected state of the target object, not to the type of $val. Also, this works differently from
-     *       addScalar/addStruct in that, when adding an element to an array, it wraps it into a new Value
-     * @todo rename?
+     * @return int 1 or 0 on failure
      */
     public function addScalar($val, $type = 'string')
     {
     }
     /**
-     * Add an array of xml-rpc value objects to an xml-rpc value.
+     * Add an array of xmlrpc value objects to an xmlrpc value.
      *
-     * If the xml-rpc value is an array, the elements are appended to the existing ones.
-     * If the xml-rpc value is empty (uninitialized), this method makes it an array value, and sets that value.
+     * If the xmlrpc value is an array, the elements are appended to the existing ones.
+     * If the xmlrpc value is empty (uninitialized), this method makes it an array value, and sets that value.
      * Fails otherwise.
      *
      * @param Value[] $values
+     *
      * @return int 1 or 0 on failure
      *
-     * @todo add some checking for $values to be an array of xml-rpc values?
-     * @todo rename to addToArray?
+     * @todo add some checking for $values to be an array of xmlrpc values?
      */
     public function addArray($values)
     {
     }
     /**
-     * Merges an array of named xml-rpc value objects into an xml-rpc value.
+     * Merges an array of named xmlrpc value objects into an xmlrpc value.
      *
-     * If the xml-rpc value is a struct, the elements are merged with the existing ones (overwriting existing ones).
-     * If the xml-rpc value is empty (uninitialized), this method makes it a struct value, and sets that value.
+     * If the xmlrpc value is a struct, the elements are merged with the existing ones (overwriting existing ones).
+     * If the xmlrpc value is empty (uninitialized), this method makes it a struct value, and sets that value.
      * Fails otherwise.
      *
      * @param Value[] $values
+     *
      * @return int 1 or 0 on failure
      *
-     * @todo add some checking for $values to be an array of xml-rpc values?
-     * @todo rename to addToStruct?
+     * @todo add some checking for $values to be an array?
      */
     public function addStruct($values)
     {
     }
     /**
-     * Returns a string describing the base type of the value.
+     * Returns a string containing either "struct", "array", "scalar" or "undef", describing the base type of the value.
      *
-     * @return string either "struct", "array", "scalar" or "undef"
-     */
-    public function kindOf()
-    {
-    }
-    /**
-     * Returns the value of a scalar xml-rpc value (base 64 decoding is automatically handled here)
-     *
-     * @return mixed
-     */
-    public function scalarVal()
-    {
-    }
-    /**
-     * Returns the type of the xml-rpc value.
-     *
-     * @return string For integers, 'int' is always returned in place of 'i4'. 'i8' is considered a separate type and
-     *                returned as such
-     */
-    public function scalarTyp()
-    {
-    }
-    /**
-     * Returns the xml representation of the value. XML prologue not included.
-     *
-     * @param string $charsetEncoding the charset to be used for serialization. If null, US-ASCII is assumed
      * @return string
      */
-    public function serialize($charsetEncoding = '')
+    public function kindOf()
     {
     }
     /**
@@ -145,14 +124,117 @@ class Value implements \Countable, \IteratorAggregate, \ArrayAccess
      * @param Value[]|mixed $val
      * @param string $charsetEncoding
      * @return string
-     *
-     * @deprecated this should be folded back into serialize()
      */
-    protected function serializeData($typ, $val, $charsetEncoding = '')
+    protected function serializedata($typ, $val, $charsetEncoding = '')
     {
     }
     /**
-     * Returns the number of members in an xml-rpc value:
+     * Returns the xml representation of the value. XML prologue not included.
+     *
+     * @param string $charsetEncoding the charset to be used for serialization. if null, US-ASCII is assumed
+     *
+     * @return string
+     */
+    public function serialize($charsetEncoding = '')
+    {
+    }
+    /**
+     * Checks whether a struct member with a given name is present.
+     *
+     * Works only on xmlrpc values of type struct.
+     *
+     * @param string $key the name of the struct member to be looked up
+     *
+     * @return boolean
+     *
+     * @deprecated use array access, e.g. isset($val[$key])
+     */
+    public function structmemexists($key)
+    {
+    }
+    /**
+     * Returns the value of a given struct member (an xmlrpc value object in itself).
+     * Will raise a php warning if struct member of given name does not exist.
+     *
+     * @param string $key the name of the struct member to be looked up
+     *
+     * @return Value
+     *
+     * @deprecated use array access, e.g. $val[$key]
+     */
+    public function structmem($key)
+    {
+    }
+    /**
+     * Reset internal pointer for xmlrpc values of type struct.
+     * @deprecated iterate directly over the object using foreach instead
+     */
+    public function structreset()
+    {
+    }
+    /**
+     * Return next member element for xmlrpc values of type struct.
+     *
+     * @return Value
+     * @throws \Error starting with php 8.0, this function should not be used, as it will always throw
+     *
+     * @deprecated iterate directly over the object using foreach instead
+     */
+    public function structeach()
+    {
+    }
+    /**
+     * Returns the value of a scalar xmlrpc value (base 64 decoding is automatically handled here)
+     *
+     * @return mixed
+     */
+    public function scalarval()
+    {
+    }
+    /**
+     * Returns the type of the xmlrpc value.
+     *
+     * For integers, 'int' is always returned in place of 'i4'. 'i8' is considered a separate type and returned as such
+     *
+     * @return string
+     */
+    public function scalartyp()
+    {
+    }
+    /**
+     * Returns the m-th member of an xmlrpc value of array type.
+     *
+     * @param integer $key the index of the value to be retrieved (zero based)
+     *
+     * @return Value
+     *
+     * @deprecated use array access, e.g. $val[$key]
+     */
+    public function arraymem($key)
+    {
+    }
+    /**
+     * Returns the number of members in an xmlrpc value of array type.
+     *
+     * @return integer
+     *
+     * @deprecated use count() instead
+     */
+    public function arraysize()
+    {
+    }
+    /**
+     * Returns the number of members in an xmlrpc value of struct type.
+     *
+     * @return integer
+     *
+     * @deprecated use count() instead
+     */
+    public function structsize()
+    {
+    }
+    /**
+     * Returns the number of members in an xmlrpc value:
      * - 0 for uninitialized values
      * - 1 for scalar values
      * - the number of elements for struct and array values
@@ -165,9 +247,9 @@ class Value implements \Countable, \IteratorAggregate, \ArrayAccess
     }
     /**
      * Implements the IteratorAggregate interface
-     * @internal required to be public to implement an Interface
      *
      * @return \ArrayIterator
+     * @internal required to be public to implement an Interface
      */
     #[\ReturnTypeWillChange]
     public function getIterator()
@@ -175,12 +257,9 @@ class Value implements \Countable, \IteratorAggregate, \ArrayAccess
     }
     /**
      * @internal required to be public to implement an Interface
-     *
      * @param mixed $offset
      * @param mixed $value
-     * @return void
-     *
-     * @throws ValueErrorException|TypeErrorException
+     * @throws \Exception
      */
     #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
@@ -188,7 +267,6 @@ class Value implements \Countable, \IteratorAggregate, \ArrayAccess
     }
     /**
      * @internal required to be public to implement an Interface
-     *
      * @param mixed $offset
      * @return bool
      */
@@ -198,11 +276,8 @@ class Value implements \Countable, \IteratorAggregate, \ArrayAccess
     }
     /**
      * @internal required to be public to implement an Interface
-     *
      * @param mixed $offset
-     * @return void
-     *
-     * @throws ValueErrorException|StateErrorException
+     * @throws \Exception
      */
     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
@@ -210,103 +285,12 @@ class Value implements \Countable, \IteratorAggregate, \ArrayAccess
     }
     /**
      * @internal required to be public to implement an Interface
-     *
      * @param mixed $offset
      * @return mixed|Value|null
-     * @throws StateErrorException
+     * @throws \Exception
      */
     #[\ReturnTypeWillChange]
     public function offsetGet($offset)
-    {
-    }
-    // *** BC layer ***
-    /**
-     * Checks whether a struct member with a given name is present.
-     *
-     * Works only on xml-rpc values of type struct.
-     *
-     * @param string $key the name of the struct member to be looked up
-     * @return boolean
-     *
-     * @deprecated use array access, e.g. isset($val[$key])
-     */
-    public function structMemExists($key)
-    {
-    }
-    /**
-     * Returns the value of a given struct member (an xml-rpc value object in itself).
-     * Will raise a php warning if struct member of given name does not exist.
-     *
-     * @param string $key the name of the struct member to be looked up
-     * @return Value
-     *
-     * @deprecated use array access, e.g. $val[$key]
-     */
-    public function structMem($key)
-    {
-    }
-    /**
-     * Reset internal pointer for xml-rpc values of type struct.
-     * @return void
-     *
-     * @deprecated iterate directly over the object using foreach instead
-     */
-    public function structReset()
-    {
-    }
-    /**
-     * Return next member element for xml-rpc values of type struct.
-     *
-     * @return array having the same format as PHP's `each` method
-     *
-     * @deprecated iterate directly over the object using foreach instead
-     */
-    public function structEach()
-    {
-    }
-    /**
-     * Returns the n-th member of an xml-rpc value of array type.
-     *
-     * @param integer $key the index of the value to be retrieved (zero based)
-     *
-     * @return Value
-     *
-     * @deprecated use array access, e.g. $val[$key]
-     */
-    public function arrayMem($key)
-    {
-    }
-    /**
-     * Returns the number of members in an xml-rpc value of array type.
-     *
-     * @return integer
-     *
-     * @deprecated use count() instead
-     */
-    public function arraySize()
-    {
-    }
-    /**
-     * Returns the number of members in an xml-rpc value of struct type.
-     *
-     * @return integer
-     *
-     * @deprecated use count() instead
-     */
-    public function structSize()
-    {
-    }
-    // we have to make this return by ref in order to allow calls such as `$resp->_cookies['name'] = ['value' => 'something'];`
-    public function &__get($name)
-    {
-    }
-    public function __set($name, $value)
-    {
-    }
-    public function __isset($name)
-    {
-    }
-    public function __unset($name)
     {
     }
 }

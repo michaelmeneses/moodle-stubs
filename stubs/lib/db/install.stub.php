@@ -20,7 +20,7 @@
  *
  * All plugins within Moodle (modules, blocks, reports...) support the existence of
  * their own install.php file, using the "Frankenstyle" component name as
- * defined at {@link https://moodledev.io/general/development/policies/codingstyle/frankenstyle}, for example:
+ * defined at {@link http://docs.moodle.org/dev/Frankenstyle}, for example:
  *     - {@link xmldb_page_install()}. (modules don't require the plugintype ("mod_") to be used.
  *     - {@link xmldb_enrol_meta_install()}.
  *     - {@link xmldb_workshopform_accumulative_install()}.

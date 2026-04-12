@@ -415,8 +415,6 @@ class ADORecordset_oci8 extends ADORecordSet
     var $databaseType = 'oci8';
     var $bind = false;
     var $_fieldobjs;
-    /** @var resource Cursor reference */
-    var $_refcursor;
     function __construct($queryID, $mode = false)
     {
     }

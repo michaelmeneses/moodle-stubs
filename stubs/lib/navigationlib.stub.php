@@ -133,12 +133,6 @@ class navigation_node implements renderable
     public $showinsecondarynavigation = true;
     /** @var bool If set to true the children of this node will be displayed within a submenu when applicable */
     public $showchildreninsubmenu = false;
-    /** @var string tab element ID. */
-    public $tab;
-    /** @var string unique identifier. */
-    public $moremenuid;
-    /** @var bool node that have children. */
-    public $haschildren;
     /**
      * Constructs a new navigation_node
      *
@@ -343,15 +337,9 @@ class navigation_node implements renderable
     }
     /**
      * Sets the title for this node and forces Moodle to utilise it.
-     *
-     * Note that this method is named identically to the public "title" property of the class, which unfortunately confuses
-     * our Mustache renderer, because it will see the method and try and call it without any arguments (hence must be nullable)
-     * before trying to access the public property
-     *
-     * @param string|null $title
-     * @return string
+     * @param string $title
      */
-    public function title(?string $title = null): string
+    public function title($title)
     {
     }
     /**

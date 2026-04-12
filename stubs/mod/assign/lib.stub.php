@@ -484,11 +484,9 @@ function mod_assign_core_calendar_event_timestart_updated(\calendar_event $event
 /**
  * Return a list of all the user preferences used by mod_assign.
  *
- * @uses core_user::is_current_user
- *
- * @return array[]
+ * @return array
  */
-function mod_assign_user_preferences(): array
+function mod_assign_user_preferences()
 {
 }
 /**

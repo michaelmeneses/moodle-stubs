@@ -396,14 +396,6 @@ class calendar_information
     public $context = null;
     /** @var string The calendar's view mode. */
     protected $viewmode;
-    /** @var \stdClass course data. */
-    public $course;
-    /** @var int day. */
-    protected $day;
-    /** @var int month. */
-    protected $month;
-    /** @var int year. */
-    protected $year;
     /**
      * Creates a new instance
      *

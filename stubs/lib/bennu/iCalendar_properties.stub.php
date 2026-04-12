@@ -28,10 +28,6 @@ class iCalendar_property
     // These are common for 95% of properties, so define them here and override as necessary
     var $val_multi = false;
     var $val_default = NULL;
-    /** @var int|null RFC2445_TYPE value. */
-    protected $val_type;
-    /** @var string property name. */
-    protected $name;
     function __construct()
     {
     }

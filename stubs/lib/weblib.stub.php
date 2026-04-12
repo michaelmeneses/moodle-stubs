@@ -149,6 +149,7 @@ function get_local_referer($stripquery = true)
  *     - and output the params as hidden fields to be output within a form
  *
  * @copyright 2007 jamiesensei
+ * @link http://docs.moodle.org/dev/lib/weblib.php_moodle_url See short write up here
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @package core
  */
@@ -326,14 +327,6 @@ class moodle_url
      * @return string Resulting URL
      */
     public function raw_out($escaped = true, array $overrideparams = null)
-    {
-    }
-    /**
-     * Encode the anchor according to RFC 3986.
-     *
-     * @return string The encoded anchor
-     */
-    public function get_encoded_anchor(): string
     {
     }
     /**

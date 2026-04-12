@@ -125,14 +125,6 @@ class flexible_table
     /** @var bool $resetting Whether the table preferences is resetting. */
     protected $resetting;
     /**
-     * @var string $caption The caption of table
-     */
-    public $caption;
-    /**
-     * @var array $captionattributes The caption attributes of table
-     */
-    public $captionattributes;
-    /**
      * @var filterset The currently applied filerset
      * This is required for dynamic tables, but can be used by other tables too if desired.
      */
@@ -153,10 +145,10 @@ class flexible_table
      * for you (even if the param is '', which means no download this time.
      * Also you can call this method with no params to get the current set
      * download type.
-     * @param string|null $download type of dataformat for export.
+     * @param string $download dataformat type. One of csv, xhtml, ods, etc
      * @param string $filename filename for downloads without file extension.
      * @param string $sheettitle title for downloaded data.
-     * @return string download dataformat type.
+     * @return string download dataformat type. One of csv, xhtml, ods, etc
      */
     function is_downloading($download = null, $filename = '', $sheettitle = '')
     {
@@ -865,23 +857,6 @@ class flexible_table
     {
     }
     /**
-     * This function set caption for table.
-     *
-     * @param string $caption Caption of table.
-     * @param array|null $captionattributes Caption attributes of table.
-     */
-    public function set_caption(string $caption, ?array $captionattributes): void
-    {
-    }
-    /**
-     * This function renders a table caption.
-     *
-     * @return string $output Caption of table.
-     */
-    public function render_caption(): string
-    {
-    }
-    /**
      * This function is not part of the public api.
      * @param array $styles CSS-property => value
      * @return string values suitably to go in a style="" attribute in HTML.
@@ -984,8 +959,6 @@ class table_sql extends flexible_table
     {
     }
     /**
-     * Build the table from the fetched data.
-     *
      * Take the data returned from the db_query and go through all the rows
      * processing each col using either col_{columnname} method or other_cols
      * method or if other_cols returns NULL then put the data straight into the

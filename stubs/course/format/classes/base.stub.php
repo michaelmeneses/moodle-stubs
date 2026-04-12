@@ -235,7 +235,7 @@ abstract class base
      * This method ensures that 3rd party course format plugins that still use 'numsections' continue to
      * work but at the same time we no longer expect formats to have 'numsections' property.
      *
-     * @return int The last section number, or -1 if sections are entirely missing
+     * @return int
      */
     public function get_last_section_number()
     {
@@ -406,32 +406,6 @@ abstract class base
     {
     }
     /**
-     * Add section preference ids.
-     *
-     * @param string $preferencename preference name
-     * @param array $sectionids affected section ids
-     */
-    public function add_section_preference_ids(string $preferencename, array $sectionids): void
-    {
-    }
-    /**
-     * Remove section preference ids.
-     *
-     * @param string $preferencename preference name
-     * @param array $sectionids affected section ids
-     */
-    public function remove_section_preference_ids(string $preferencename, array $sectionids): void
-    {
-    }
-    /**
-     * Persist the section preferences to the user preferences.
-     *
-     * @param array $sectionpreferences the section preferences
-     */
-    private function persist_to_user_preference(array $sectionpreferences): void
-    {
-    }
-    /**
      * Returns the information about the ajax support in the given source format
      *
      * The returned object's property (boolean)capable indicates that
@@ -544,10 +518,11 @@ abstract class base
      * core_courseformat will be user as the component.
      *
      * @param string $key the string key
-     * @param string|object|array|int $data extra data that can be used within translation strings
+     * @param string|object|array $data extra data that can be used within translation strings
+     * @param string|null $lang moodle translation language, null means use current
      * @return string the get_string result
      */
-    public function get_format_string(string $key, $data = null): string
+    public function get_format_string(string $key, $data = null, $lang = null): string
     {
     }
     /**

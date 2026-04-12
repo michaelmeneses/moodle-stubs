@@ -21,9 +21,15 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 /**
+ * Strings for component 'profilefield_checkbox', language 'en', branch 'MOODLE_20_STABLE'
+ *
+ * @package   profilefield_checkbox
+ * @copyright  2008 onwards Shane Elliot {@link http://pukunui.com}
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+/**
  * Class profile_field_checkbox
  *
- * @package    profilefield_checkbox
  * @copyright  2008 onwards Shane Elliot {@link http://pukunui.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -34,29 +40,6 @@ class profile_field_checkbox extends profile_field_base
      * @param moodleform $mform
      */
     public function edit_field_add($mform)
-    {
-    }
-    /**
-     * Override parent {@see profile_field_base::is_empty} check
-     *
-     * We can't check the "data" property, because if not set by the user then it's populated by "defaultdata" of the field,
-     * which can also be 0 (false) therefore ensuring the parent class check could never return true for this comparison
-     *
-     * @return bool
-     */
-    public function is_empty()
-    {
-    }
-    /**
-     * Override parent {@see profile_field_base::show_field_content} check
-     *
-     * We only need to determine whether the field is visible, because we also want to show the "defaultdata" of the field,
-     * even if the user hasn't explicitly filled it in
-     *
-     * @param context|null $context
-     * @return bool
-     */
-    public function show_field_content(?context $context = null): bool
     {
     }
     /**

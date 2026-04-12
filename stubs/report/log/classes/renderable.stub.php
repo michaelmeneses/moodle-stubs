@@ -56,12 +56,6 @@ class report_log_renderable implements renderable
     /** @var table_log table log which will be used for rendering logs */
     public $tablelog;
     /**
-     * @var array group ids
-     * @deprecated since Moodle 4.4 - please do not use this public property
-     * @todo MDL-81155 remove this property as it is not used anymore.
-     */
-    public $grouplist;
-    /**
      * Constructor.
      *
      * @param string $logreader (optional)reader pluginname from which logs will be fetched.
@@ -136,11 +130,7 @@ class report_log_renderable implements renderable
     {
     }
     /**
-     * Return list of groups that are used in this course. This is done when groups are used in the course
-     * and the user is allowed to see all groups or groups are visible anyway. If groups are used but the
-     * mode is separate groups and the user is not allowed to see all groups, the list contains the groups
-     * only, where the user is member.
-     * If the course uses no groups, the list is empty.
+     * Return list of groups.
      *
      * @return array list of groups.
      */

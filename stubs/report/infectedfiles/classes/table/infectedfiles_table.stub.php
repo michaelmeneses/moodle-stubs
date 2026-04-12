@@ -40,8 +40,6 @@ namespace report_infectedfiles\table;
  */
 class infectedfiles_table extends \table_sql implements \renderable
 {
-    /** @var int current page. */
-    protected $page;
     /**
      * Table constructor
      *

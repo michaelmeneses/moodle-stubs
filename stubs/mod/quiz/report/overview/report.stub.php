@@ -14,6 +14,16 @@
  */
 class quiz_overview_report extends attempts_report
 {
+    /**
+     * @var array|null cached copy of qbank_helper::get_question_structure for use during regrades.
+     */
+    protected $structureforregrade = null;
+    /**
+     * @var array|null used during regrades, to cache which new questionid to use for each old on.
+     *      for random questions, stores oldquestionid => newquestionid.
+     *      See get_new_question_for_regrade.
+     */
+    protected $newquestionidsforold = null;
     public function display($quiz, $cm, $course)
     {
     }
@@ -67,6 +77,23 @@ class quiz_overview_report extends attempts_report
      * @return array messages array with keys slot number, and values reasons why that slot cannot be regraded.
      */
     public function regrade_attempt($attempt, $dryrun = false, $slots = null): array
+    {
+    }
+    /**
+     * For use in tests only. Clear the cached regrade data.
+     */
+    public function clear_regrade_date_cache(): void
+    {
+    }
+    /**
+     * Work out of we should be using a new question version for a particular slot in a regrade.
+     *
+     * @param stdClass $attempt the attempt being regraded.
+     * @param question_usage_by_activity $quba the question_usage corresponding to that.
+     * @param int $slot which slot is currently being regraded.
+     * @return question_definition other question version to use for this slot.
+     */
+    protected function get_new_question_for_regrade(stdClass $attempt, question_usage_by_activity $quba, int $slot): question_definition
     {
     }
     /**

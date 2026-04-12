@@ -20,26 +20,26 @@ class assignfeedback_file_zip_importer
      *
      * @param assign $assignment - The assignment instance
      * @param stored_file $fileinfo - The fileinfo
-     * @param array $participants - A list of valid participants for this module indexed by unique_id or group id.
-     * @param array $users - Set to array with the user(s) that matches by participant id
+     * @param array $participants - A list of valid participants for this module indexed by unique_id
+     * @param stdClass $user - Set to the user that matches by participant id
      * @param assign_plugin $plugin - Set to the plugin that exported the file
      * @param string $filename - Set to truncated filename (prefix stripped)
-     * @return bool If the participant Id can be extracted and this is a valid user
+     * @return true If the participant Id can be extracted and this is a valid user
      */
-    public function is_valid_filename_for_import($assignment, $fileinfo, $participants, &$users, &$plugin, &$filename)
+    public function is_valid_filename_for_import($assignment, $fileinfo, $participants, &$user, &$plugin, &$filename)
     {
     }
     /**
      * Does this file exist in any of the current files supported by this plugin for this user?
      *
      * @param assign $assignment - The assignment instance
-     * @param array $users The user matching this uploaded file
+     * @param stdClass $user The user matching this uploaded file
      * @param assign_plugin $plugin The matching plugin from the filename
      * @param string $filename The parsed filename from the zip
      * @param stored_file $fileinfo The info about the extracted file from the zip
      * @return bool - True if the file has been modified or is new
      */
-    public function is_file_modified($assignment, $users, $plugin, $filename, $fileinfo)
+    public function is_file_modified($assignment, $user, $plugin, $filename, $fileinfo)
     {
     }
     /**
@@ -68,15 +68,6 @@ class assignfeedback_file_zip_importer
      * @return array of stored_files
      */
     public function get_import_files($contextid)
-    {
-    }
-    /**
-     * Returns a mapping from unique user / group ids in folder names to array of moodle users.
-     *
-     * @param assign $assignment  - The assignment instance
-     * @return array the mapping.
-     */
-    public function get_participant_mapping(assign $assignment): array
     {
     }
     /**

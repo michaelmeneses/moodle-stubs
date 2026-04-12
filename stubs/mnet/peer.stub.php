@@ -33,20 +33,6 @@ class mnet_peer
     // set when the object is populated
     /** @var int $sslverification The level of SSL verification to apply. */
     public $sslverification = self::SSL_HOST_AND_PEER;
-    /** @var int deleted status. */
-    public $deleted;
-    /** @var stdClass data from mnet_application table in DB. */
-    public $application;
-    /**
-     * Current SSL public key
-     *
-     * MNet need to compare the remote machine's SSL Cert and the public key to warn users of any mismatch.
-     * The property is the remote machine's SSL Cert.
-     *
-     * @see admin/mnet/peers.php
-     * @var string
-     */
-    public $currentkey;
     /*
      * Fetch information about a peer identified by wwwroot
      * If information does not preexist in db, collect it together based on
@@ -118,12 +104,6 @@ class mnet_peer
     function populate($hostinfo)
     {
     }
-    /**
-     * Get public key.
-     *
-     * @deprecated since Moodle 4.3
-     * @todo MDL-78304 Final deprecation.
-     */
     function get_public_key()
     {
     }

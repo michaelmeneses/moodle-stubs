@@ -54,6 +54,8 @@ class webdav_client
     private $_socket = '';
     private $_path = '/';
     private $_auth = false;
+    private $_user;
+    private $_pass;
     private $_socket_timeout = 5;
     private $_errno;
     private $_errstr;
@@ -87,16 +89,6 @@ class webdav_client
      * @var string
      */
     private $oauthtoken;
-    /** @var string Username (for basic/digest auth, see $auth). */
-    private $_user;
-    /** @var string Password (for basic/digest auth, see $auth). */
-    private $_pass;
-    /** @var mixed to store xml data that need to be handled. */
-    private $_lock_ref_cdata;
-    /** @var mixed to store the deleted xml data. */
-    private $_delete_cdata;
-    /** @var string to store the locked xml data. */
-    private $_lock_cdata;
     /**#@-*/
     /**
      * Constructor - Initialise class variables

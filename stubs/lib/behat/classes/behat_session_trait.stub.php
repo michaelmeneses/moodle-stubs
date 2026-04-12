@@ -390,10 +390,9 @@ trait behat_session_trait
      *
      * @param string $windowsize size of window.
      * @param bool $viewport If true, changes viewport rather than window size
-     * @param bool $scalesize Whether to scale the size by the WINDOWSCALE environment variable
      * @throws ExpectationException
      */
-    protected function resize_window(string $windowsize, bool $viewport = false, bool $scalesize = true): void
+    protected function resize_window($windowsize, $viewport = false)
     {
     }
     /**

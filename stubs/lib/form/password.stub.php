@@ -21,8 +21,6 @@ class MoodleQuickForm_password extends HTML_QuickForm_password implements templa
     use templatable_form_element;
     /** @var string, html for help button, if empty then no help */
     var $_helpbutton = '';
-    /** @var bool if true label will be hidden. */
-    protected $_hiddenLabel = false;
     /**
      * constructor
      *
@@ -48,14 +46,6 @@ class MoodleQuickForm_password extends HTML_QuickForm_password implements templa
      * @return string html for help button
      */
     function getHelpButton()
-    {
-    }
-    /**
-     * Sets label to be hidden
-     *
-     * @param bool $hiddenLabel sets if label should be hidden
-     */
-    public function setHiddenLabel($hiddenLabel)
     {
     }
 }

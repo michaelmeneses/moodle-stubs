@@ -40,7 +40,7 @@ class matching extends result
     /**
      * Return the options data structure.
      *
-     * @return array|null of options
+     * @return array of options
      */
     protected function export_options(): ?array
     {

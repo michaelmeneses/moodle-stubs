@@ -48,19 +48,4 @@ abstract class component_generator_base
     protected function set_user(?stdClass $user = null): void
     {
     }
-    /**
-     * Update the instance record, inserting any files that are referenced.
-     *
-     * @param stdClass $instance The instance record of the already-created record
-     * @param stdClass $record The data passed in to create the instance
-     * @param string $table The table that the data exists in
-     * @param context $context The context of the instance
-     * @param string $component The component of the owning plugin
-     * @param string $filearea The name of the file area
-     * @param int $targetitemid The itemid to use when saving the files
-     * @return stdClass The updated instance record
-     */
-    protected function insert_files(stdClass $instance, stdClass $record, string $table, context $context, string $component, string $filearea, int $targetitemid): stdClass
-    {
-    }
 }

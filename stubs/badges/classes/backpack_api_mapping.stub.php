@@ -61,10 +61,6 @@ class backpack_api_mapping
     private $isuserbackpack;
     /** @var string Error string from authentication request. */
     private static $authenticationerror = '';
-    /** @var mixed List of parameters for this method. */
-    protected $postparams;
-    /** @var int OpenBadges version 1 or 2. */
-    protected $backpackapiversion;
     /**
      * Create a mapping.
      *

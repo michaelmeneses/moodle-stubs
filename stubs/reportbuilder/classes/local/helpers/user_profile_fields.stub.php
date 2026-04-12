@@ -114,4 +114,15 @@ class user_profile_fields
     protected function get_user_field_type(string $userfield): int
     {
     }
+    /**
+     * Formatter for a profile field. It formats the field according to its type.
+     *
+     * @param mixed $value
+     * @param stdClass $row
+     * @param profile_field_base $field
+     * @return string
+     */
+    public static function format_profile_field($value, stdClass $row, profile_field_base $field): string
+    {
+    }
 }

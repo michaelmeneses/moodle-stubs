@@ -32,14 +32,3 @@
 define('NO_DEBUG_DISPLAY', true);
 // We need just the values from config.php and minlib.php.
 define('ABORT_AFTER_CONFIG', true);
-/**
- * Helper function to fix missing module names in JavaScript.
- *
- * TODO Remove this function when we find a reliable way to do this in the Grunt task.
- * @param string $modulename
- * @param string $js
- * @return string The modified JavaScript.
- */
-function requirejs_fix_define(string $modulename, string $js): string
-{
-}

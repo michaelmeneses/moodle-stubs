@@ -53,8 +53,6 @@ class adodb_perf
     var $helpurl = '<a href="https://adodb.org/dokuwiki/doku.php?id=v5:performance:logsql">LogSQL help</a>';
     var $createTableSQL = false;
     var $maxLength = 2000;
-    /** @var array Settings data. */
-    var $settings = [];
     // Sets the tablename to be used
     static function table($newtable = false)
     {

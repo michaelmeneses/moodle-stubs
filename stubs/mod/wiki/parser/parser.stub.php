@@ -16,19 +16,9 @@
  */
 class wiki_parser_proxy
 {
-    /**
-     * @var array $parsers Array of parser instances
-     */
-    private static $parsers = [];
-    /**
-     * Parse a string using a specific parser
-     *
-     * @param string $string The string to parse
-     * @param string $type The parser type
-     * @param array $options The parser options
-     * @return mixed The parsed string or false if the parser type is not found
-     */
-    public static function parse(&$string, $type, $options = [])
+    private static $parsers = array();
+    private static $basepath = "";
+    public static function parse(&$string, $type, $options = array())
     {
     }
     public static function get_token($name, $type)

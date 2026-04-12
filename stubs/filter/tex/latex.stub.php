@@ -15,8 +15,6 @@ class latex
 {
     var $temp_dir;
     var $error;
-    /** @var bool To store value of supported_platform. */
-    protected $supported_platform;
     /**
      * Constructor - create temporary directories and build paths to
      * external 'helper' binaries.
@@ -69,6 +67,14 @@ class latex
      * @return bool true if successful
      */
     function render($formula, $filename, $fontsize = 12, $density = 240, $background = '', $log = null)
+    {
+    }
+    /**
+     * Delete files created in temporary area
+     * Don't forget to copy the final gif/png before calling this
+     * @param string $filename file base (no extension)
+     */
+    function clean_up($filename)
     {
     }
 }

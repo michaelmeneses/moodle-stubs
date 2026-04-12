@@ -98,9 +98,8 @@ class analysis_for_actual_response
      * @param int               $variantno  which variant.
      * @param string            $subpartid which sub part is this actual response in?
      * @param string            $responseclassid which response class is this actual response in?
-     * @param int|null          $calculationtime time when the analysis was done. (Defaults to time()).
      */
-    public function cache($qubaids, $whichtries, $questionid, $variantno, $subpartid, $responseclassid, $calculationtime = null)
+    public function cache($qubaids, $whichtries, $questionid, $variantno, $subpartid, $responseclassid)
     {
     }
     /**

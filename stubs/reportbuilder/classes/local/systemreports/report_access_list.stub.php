@@ -43,4 +43,14 @@ class report_access_list extends system_report
     protected function add_filters(): void
     {
     }
+    /**
+     * Find users who can access this report based on the audience and add them to the report.
+     *
+     * @param int $reportid
+     * @param string $usertablealias
+     * @return array
+     */
+    protected static function get_users_by_audience_sql(int $reportid, string $usertablealias): array
+    {
+    }
 }

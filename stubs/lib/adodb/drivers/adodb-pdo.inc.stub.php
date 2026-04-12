@@ -56,13 +56,8 @@ class ADODB_pdo extends ADOConnection
     var $_lastAffectedRows = 0;
     var $_errormsg = false;
     var $_errorno = false;
-    var $_stmt = false;
-    /** @var ADODB_pdo_base */
+    var $stmt = false;
     var $_driver;
-    /** @var PDO */
-    var $_connectionID;
-    /** @var PDOStatement */
-    var $_queryID;
     /*
      * Describe parameters passed directly to the PDO driver
      *
@@ -297,8 +292,6 @@ class ADORecordSet_pdo extends ADORecordSet
     var $bind = false;
     var $databaseType = "pdo";
     var $dataProvider = "pdo";
-    /** @var PDOStatement */
-    var $_queryID;
     function __construct($id, $mode = false)
     {
     }

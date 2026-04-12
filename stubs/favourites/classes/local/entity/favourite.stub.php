@@ -55,8 +55,6 @@ class favourite
     public $timecreated;
     /** @var int $timemodified the time at which the last modification of the favourite took place.*/
     public $timemodified;
-    /** @var string $uniquekey favourite unique key.*/
-    public $uniquekey;
     /**
      * Favourite constructor.
      * @param string $component the frankenstyle name of the component containing the favourited item. E.g. 'core_course'.

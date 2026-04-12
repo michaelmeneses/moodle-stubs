@@ -25,22 +25,14 @@ namespace core\oauth2\service;
 /**
  * Class linkedin.
  *
- * OAuth 2 issuer for linkedin which is mostly OIDC compliant, with a few notable exceptions which require working around:
- *
- * 1. LinkedIn don't provide their OIDC discovery doc at {ISSUER}/.well-known/openid-configuration as the spec requires.
- * i.e. https://www.linkedin.com/.well-known/openid-configuration isn't present.
- * Instead, they make the configuration available at https://www.linkedin.com/oauth/.well-known/openid-configuration.
- * See: https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig
- *
- * 2. LinkedIn don't return 'locale' as a string in the userinfo but instead return an object with 'language' and 'country' props.
- * See: https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims
- * This is resolved in {@see \core\oauth2\client\linkedin::get_userinfo()}
+ * Custom oauth2 issuer for linkedin as it doesn't support OIDC and has a different way to get
+ * key information for users - firstname, lastname, email.
  *
  * @copyright  2021 Peter Dias
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @package    core
  */
-class linkedin extends openidconnect
+class linkedin implements issuer_interface
 {
     /**
      * Build an OAuth2 issuer, with all the default values for this service.
@@ -48,6 +40,23 @@ class linkedin extends openidconnect
      * @return issuer The issuer initialised with proper default values.
      */
     public static function init(): issuer
+    {
+    }
+    /**
+     * Create endpoints for this issuer.
+     *
+     * @param issuer $issuer Issuer the endpoints should be created for.
+     * @return issuer
+     */
+    public static function create_endpoints(issuer $issuer): issuer
+    {
+    }
+    /**
+     * Linkedin does not have a discovery url that could be found. Return empty.
+     * @param issuer $issuer
+     * @return int
+     */
+    public static function discover_endpoints($issuer): int
     {
     }
 }

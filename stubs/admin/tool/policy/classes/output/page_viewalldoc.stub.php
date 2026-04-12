@@ -38,8 +38,8 @@ namespace tool_policy\output;
  */
 class page_viewalldoc implements renderable, templatable
 {
-    /** @var ?moodle_url Return url */
-    private $returnurl = null;
+    /** @var string Return url */
+    private $returnurl;
     /** @var array List current (active) policy versions. */
     private array $policies = [];
     /**

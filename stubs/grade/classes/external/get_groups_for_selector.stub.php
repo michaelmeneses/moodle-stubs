@@ -45,8 +45,12 @@ class get_groups_for_selector extends external_api
      *
      * @param int $courseid
      * @return array Groups and warnings to pass back to the calling widget.
+     * @throws coding_exception
+     * @throws invalid_parameter_exception
+     * @throws moodle_exception
+     * @throws restricted_context_exception
      */
-    public static function execute(int $courseid): array
+    protected static function execute(int $courseid): array
     {
     }
     /**

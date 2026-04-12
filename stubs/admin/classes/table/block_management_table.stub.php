@@ -35,8 +35,6 @@ class block_management_table extends \core_admin\table\plugin_management_table
     protected array $undeletableblocktypes;
     /** @var stdClass[] A list of basic block data */
     protected array $blockdata;
-    /** @var array<string,int> A list of course counts */
-    protected array $courseblocks;
     public function __construct()
     {
     }

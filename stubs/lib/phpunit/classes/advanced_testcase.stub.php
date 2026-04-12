@@ -57,6 +57,14 @@ abstract class advanced_testcase extends base_testcase
     {
     }
     /**
+     * Hook into the setInIsolation method to define an optional constant.
+     *
+     * @param bool $inisolation
+     */
+    public function setInIsolation(bool $inisolation): void
+    {
+    }
+    /**
      * Runs the bare test sequence.
      * @return void
      */
@@ -220,8 +228,7 @@ abstract class advanced_testcase extends base_testcase
     {
     }
     /**
-     * Assert that various event methods are not using event->context
-     *
+     * Assert that an event is not using event->contxet.
      * While restoring context might not be valid and it should not be used by event url
      * or description methods.
      *
@@ -390,16 +397,6 @@ abstract class advanced_testcase extends base_testcase
      * @param   int     $matchuserid The userid to match.
      */
     protected function runAdhocTasks($matchclass = '', $matchuserid = null)
-    {
-    }
-    /**
-     * Convenience method to load a fixture from a component's fixture directory.
-     *
-     * @param string $component
-     * @param string $path
-     * @throws coding_exception
-     */
-    protected static function load_fixture(string $component, string $path): void
     {
     }
 }

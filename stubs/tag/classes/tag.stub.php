@@ -51,12 +51,6 @@ class core_tag_tag
     const NOT_STANDARD_ONLY = -1;
     /** @var int option to hide standard tags when editing item tags */
     const HIDE_STANDARD = 2;
-    /** @var int|null tag context ID. */
-    public $taginstancecontextid;
-    /** @var int|null time modification. */
-    public $timemodified;
-    /** @var int|null 0 if not flagged or positive integer if flagged. */
-    public $flag;
     /**
      * Constructor. Use functions get(), get_by_name(), etc.
      *

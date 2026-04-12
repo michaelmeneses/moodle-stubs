@@ -26,8 +26,6 @@ class phpFlickr
     var $error_msg;
     var $token;
     var $php_version;
-    /** @var curl cURL class. */
-    private $curl;
     /**
      * When your database cache table hits this many rows, a cleanup
      * will occur to get rid of all of the old rows and cleanup the

@@ -23,8 +23,6 @@ class MoodleQuickForm_group extends HTML_QuickForm_group implements templatable
     }
     /** @var string html for help button, if empty then no help */
     var $_helpbutton = '';
-    /** @var bool if true label will be hidden. */
-    protected $_hiddenLabel = false;
     /** @var MoodleQuickForm */
     protected $_mform = null;
     protected $_renderedfromtemplate = false;
@@ -65,14 +63,6 @@ class MoodleQuickForm_group extends HTML_QuickForm_group implements templatable
     {
     }
     /**
-     * Sets label to be hidden
-     *
-     * @param bool $hiddenLabel sets if label should be hidden
-     */
-    public function setHiddenLabel($hiddenLabel)
-    {
-    }
-    /**
      * Sets the grouped elements and hides label
      *
      * @param array $elements
@@ -106,15 +96,6 @@ class MoodleQuickForm_group extends HTML_QuickForm_group implements templatable
      * Expects the same arguments as MoodleQuickForm::createElement()
      */
     public function createFormElement()
-    {
-    }
-    /**
-     * Return attributes suitable for passing to {@see createFormElement}, comprised of all group attributes without ID in
-     * order to ensure uniqueness of that value within the group
-     *
-     * @return array
-     */
-    public function getAttributesForFormElement(): array
     {
     }
     public function export_for_template(renderer_base $output)

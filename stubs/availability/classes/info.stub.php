@@ -48,8 +48,6 @@ abstract class info
     protected $availability;
     /** @var tree Availability configuration, decoded from JSON; null if unset */
     protected $availabilitytree;
-    /** @var array The groups the current user belongs to. */
-    protected $groups;
     /** @var array|null Array of information about current restore if any */
     protected static $restoreinfo = null;
     /**
@@ -407,19 +405,6 @@ abstract class info
      * @return bool True if this is used in a condition, false otherwise
      */
     public static function completion_value_used($course, $cmid)
-    {
-    }
-    /**
-     * Returns groups that the current user belongs to on the course. Note: If not already
-     * available, this may make a database query.
-     *
-     * This will include groups the user is not allowed to see themselves, so check visibility
-     * before displaying groups to the user.
-     *
-     * @param int $groupingid Grouping ID or 0 (default) for all groups
-     * @return int[] Array of int (group id) => int (same group id again); empty array if none
-     */
-    public function get_groups(int $groupingid = 0): array
     {
     }
 }
