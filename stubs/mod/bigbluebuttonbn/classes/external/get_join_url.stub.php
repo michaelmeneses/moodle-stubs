@@ -48,6 +48,8 @@ class get_join_url extends external_api
      * @param int $cmid the bigbluebuttonbn course module id
      * @param null|int $groupid
      * @return array (empty array for now)
+     *
+     * @throws restricted_context_exception
      */
     public static function execute(int $cmid, ?int $groupid = 0): array
     {
