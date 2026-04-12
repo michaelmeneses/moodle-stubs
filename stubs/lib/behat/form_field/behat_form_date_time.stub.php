@@ -20,6 +20,14 @@
 class behat_form_date_time extends behat_form_date
 {
     /**
+     * Returns the current value of the field
+     *
+     * @return string
+     */
+    public function get_value()
+    {
+    }
+    /**
      * Returns the date field identifiers and the values that should be assigned to them.
      *
      * @param int $timestamp The UNIX timestamp
