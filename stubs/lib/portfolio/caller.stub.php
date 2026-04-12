@@ -9,7 +9,6 @@
 /**
  * Base class for callers
  *
- * @link See http://docs.moodle.org/dev/Adding_a_Portfolio_Button_to_a_page
  * @see also portfolio_module_caller_base
  *
  * @package core_portfolio
@@ -310,7 +309,6 @@ abstract class portfolio_caller_base
  * This just implements a few of the abstract functions
  * from portfolio_caller_base so that caller authors
  * don't need to.
- * {@link http://docs.moodle.org/dev/Adding_a_Portfolio_Button_to_a_page}
  * @see also portfolio_caller_base
  *
  * @package core_portfolio

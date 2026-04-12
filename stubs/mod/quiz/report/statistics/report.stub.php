@@ -113,11 +113,13 @@ class quiz_statistics_report extends quiz_default_report
      * @param \core\progress\base|null   $progress
      * @param bool $calculateifrequired  if true (the default) the stats will be calculated if not already stored.
      *                                   If false, [null, null] will be returned if the stats are not already available.
+     * @param bool $performanalysis      if true (the default) and there are calculated stats, analysis will be performed
+     *                                   for each question.
      * @return array with 2 elements:    - $quizstats The statistics for overall attempt scores.
      *                                   - $questionstats \core_question\statistics\questions\all_calculated_for_qubaid_condition
      *                                   Both may be null, if $calculateifrequired is false.
      */
-    public function get_all_stats_and_analysis($quiz, $whichattempts, $whichtries, \core\dml\sql_join $groupstudentsjoins, $questions, $progress = null, bool $calculateifrequired = true)
+    public function get_all_stats_and_analysis($quiz, $whichattempts, $whichtries, \core\dml\sql_join $groupstudentsjoins, $questions, $progress = null, bool $calculateifrequired = true, bool $performanalysis = true)
     {
     }
     /**
@@ -215,9 +217,11 @@ class quiz_statistics_report extends quiz_default_report
      * @param int $quizid question usage
      * @param bool $calculateifrequired if true (the default) the stats will be calculated if not already stored.
      *     If false, null will be returned if the stats are not already available.
+     * @param bool $performanalysis if true (the default) and there are calculated stats, analysis will be performed
+     *     for each question.
      * @return ?all_calculated_for_qubaid_condition question stats
      */
-    public function calculate_questions_stats_for_question_bank(int $quizid, bool $calculateifrequired = true): ?all_calculated_for_qubaid_condition
+    public function calculate_questions_stats_for_question_bank(int $quizid, bool $calculateifrequired = true, bool $performanalysis = true): ?all_calculated_for_qubaid_condition
     {
     }
 }

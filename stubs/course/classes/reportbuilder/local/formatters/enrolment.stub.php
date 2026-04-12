@@ -38,11 +38,10 @@ class enrolment
     /**
      * Return enrolment status for user
      *
-     * @param string $value
-     * @param stdClass $row
+     * @param string|null $value
      * @return string|null
      */
-    public static function enrolment_status(string $value, stdClass $row): ?string
+    public static function enrolment_status(?string $value): ?string
     {
     }
 }

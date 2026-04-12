@@ -30,10 +30,19 @@ namespace quiz_statistics\task;
  * @author     Nathan Nguyen <nathannguyen@catalyst-au.net>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class recalculate extends \core\task\scheduled_task
+class recalculate extends \core\task\adhoc_task
 {
-    /** @var int the maximum length of time one instance of this task will run. */
-    const TIME_LIMIT = 3600;
+    /**
+     * Create a new instance of the task.
+     *
+     * This sets the properties so that only one task will be queued at a time for a given quiz.
+     *
+     * @param int $quizid
+     * @return recalculate
+     */
+    public static function instance(int $quizid): recalculate
+    {
+    }
     public function get_name(): string
     {
     }

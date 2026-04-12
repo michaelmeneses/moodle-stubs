@@ -225,7 +225,7 @@ abstract class base
      * This method ensures that 3rd party course format plugins that still use 'numsections' continue to
      * work but at the same time we no longer expect formats to have 'numsections' property.
      *
-     * @return int
+     * @return int The last section number, or -1 if sections are entirely missing
      */
     public function get_last_section_number()
     {

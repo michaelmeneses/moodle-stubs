@@ -462,6 +462,15 @@ class sqlsrv_native_moodle_database extends moodle_database
     public function delete_records_select($table, $select, array $params = null)
     {
     }
+    /**
+     * Return SQL for casting to char of given field/expression
+     *
+     * @param string $field Table field or SQL expression to be cast
+     * @return string
+     */
+    public function sql_cast_to_char(string $field): string
+    {
+    }
     public function sql_cast_char2int($fieldname, $text = false)
     {
     }
