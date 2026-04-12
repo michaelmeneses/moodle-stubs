@@ -41,7 +41,7 @@ namespace core_question\statistics\questions;
  */
 class all_calculated_for_qubaid_condition
 {
-    /** @var int Time after which statistics are automatically recomputed. */
+    /** @var int No longer used. Previously, the time after which statistics are automatically recomputed. */
     const TIME_TO_CACHE = 900;
     // 15 minutes.
     /**
@@ -156,7 +156,7 @@ class all_calculated_for_qubaid_condition
     {
     }
     /**
-     * Save stats to db.
+     * Save stats to db, first cleaning up any old ones.
      *
      * @param \qubaid_condition $qubaids Which question usages are we caching the stats of?
      */

@@ -280,10 +280,11 @@ class core_user_external extends external_api
      * @param string $version The device version 6.1.2 or 4.2.2 etc.
      * @param string $pushid The device PUSH token/key/identifier/registration id.
      * @param string $uuid The device UUID.
+     * @param string $publickey The app generated public key
      * @return array List of possible warnings.
      * @since Moodle 2.6
      */
-    public static function add_user_device($appid, $name, $model, $platform, $version, $pushid, $uuid)
+    public static function add_user_device($appid, $name, $model, $platform, $version, $pushid, $uuid, $publickey = null)
     {
     }
     /**

@@ -48,6 +48,8 @@ class lang
     protected $rev;
     /** @var bool Whether Moodle is fully loaded or not */
     protected $fullyloaded = false;
+    /** @var string The complete path to the candidate file */
+    protected $candidatefile;
     /**
      * Constructor to load and serve the langfile.
      */

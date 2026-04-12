@@ -14,7 +14,7 @@ namespace Box\Spout\Reader\CSV;
  */
 class SheetIterator implements IteratorInterface
 {
-    /** @var \Box\Spout\Reader\CSV\Sheet The CSV unique "sheet" */
+    /** @var Sheet The CSV unique "sheet" */
     protected $sheet;
     /** @var bool Whether the unique "sheet" has already been read */
     protected $hasReadUniqueSheet = false;
@@ -30,8 +30,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return void
      */
-    #[\ReturnTypeWillChange]
-    public function rewind()
+    public function rewind(): void
     {
     }
     /**
@@ -40,8 +39,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return bool
      */
-    #[\ReturnTypeWillChange]
-    public function valid()
+    public function valid(): bool
     {
     }
     /**
@@ -50,18 +48,16 @@ class SheetIterator implements IteratorInterface
      *
      * @return void
      */
-    #[\ReturnTypeWillChange]
-    public function next()
+    public function next(): void
     {
     }
     /**
      * Return the current element
      * @see http://php.net/manual/en/iterator.current.php
      *
-     * @return \Box\Spout\Reader\CSV\Sheet
+     * @return Sheet
      */
-    #[\ReturnTypeWillChange]
-    public function current()
+    public function current(): Sheet
     {
     }
     /**
@@ -70,8 +66,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return int
      */
-    #[\ReturnTypeWillChange]
-    public function key()
+    public function key(): int
     {
     }
     /**
@@ -79,7 +74,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return void
      */
-    public function end()
+    public function end(): void
     {
     }
 }

@@ -88,8 +88,7 @@ class RowIterator implements IteratorInterface
      * @throws \Box\Spout\Common\Exception\IOException If the sheet data XML cannot be read
      * @return void
      */
-    #[\ReturnTypeWillChange]
-    public function rewind()
+    public function rewind(): void
     {
     }
     /**
@@ -98,8 +97,7 @@ class RowIterator implements IteratorInterface
      *
      * @return bool
      */
-    #[\ReturnTypeWillChange]
-    public function valid()
+    public function valid(): bool
     {
     }
     /**
@@ -110,8 +108,7 @@ class RowIterator implements IteratorInterface
      * @throws \Box\Spout\Common\Exception\IOException If unable to read the sheet data XML
      * @return void
      */
-    #[\ReturnTypeWillChange]
-    public function next()
+    public function next(): void
     {
     }
     /**
@@ -201,8 +198,7 @@ class RowIterator implements IteratorInterface
      *
      * @return Row|null
      */
-    #[\ReturnTypeWillChange]
-    public function current()
+    public function current(): ?Row
     {
     }
     /**
@@ -211,8 +207,7 @@ class RowIterator implements IteratorInterface
      *
      * @return int
      */
-    #[\ReturnTypeWillChange]
-    public function key()
+    public function key(): int
     {
     }
     /**
@@ -220,8 +215,7 @@ class RowIterator implements IteratorInterface
      *
      * @return void
      */
-    #[\ReturnTypeWillChange]
-    public function end()
+    public function end(): void
     {
     }
 }

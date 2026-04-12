@@ -167,8 +167,9 @@ class calculated
      * Cache calculated stats stored in this object in 'question_statistics' table.
      *
      * @param \qubaid_condition $qubaids
+     * @param int|null $timemodified the modified time to store. Defaults to the current time.
      */
-    public function cache($qubaids)
+    public function cache($qubaids, $timemodified = null)
     {
     }
     /**

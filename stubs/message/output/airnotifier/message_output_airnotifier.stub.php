@@ -25,6 +25,16 @@ class message_output_airnotifier extends message_output
     {
     }
     /**
+     * Encrypt the notification payload.
+     *
+     * @param stdClass $payload The notification payload.
+     * @param stdClass $devicetoken The device token record
+     * @return stdClass
+     */
+    protected function encrypt_payload(stdClass $payload, stdClass $devicetoken): stdClass
+    {
+    }
+    /**
      * Creates necessary fields in the messaging config form.
      *
      * @param array $preferences An array of user preferences

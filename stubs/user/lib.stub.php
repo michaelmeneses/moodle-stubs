@@ -365,3 +365,15 @@ function core_user_inplace_editable($itemtype, $itemid, $newvalue)
 function user_edit_map_field_purpose($userid, $fieldname)
 {
 }
+/**
+ * Update the users public key for the specified device and app.
+ *
+ * @param string $uuid The device UUID.
+ * @param string $appid The app id, usually something like com.moodle.moodlemobile.
+ * @param string $publickey The app generated public key.
+ * @return bool
+ * @since Moodle 4.2
+ */
+function user_update_device_public_key(string $uuid, string $appid, string $publickey): bool
+{
+}

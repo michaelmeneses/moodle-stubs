@@ -30,3 +30,5 @@
 // Disable moodle specific debug messages and any errors in output,
 // comment out when debugging or better look into error log!
 define('NO_DEBUG_DISPLAY', true);
+// We need just the values from config.php and minlib.php.
+define('ABORT_AFTER_CONFIG', true);
