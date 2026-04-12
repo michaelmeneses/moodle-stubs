@@ -559,6 +559,14 @@ class navigation_node implements renderable
     protected function add_context_locking_node(\navigation_node $node, \context $context)
     {
     }
+    /**
+     * Reset all static data.
+     *
+     * @throws coding_exception if called outside of a unit test
+     */
+    public static function reset_all_data(): void
+    {
+    }
 }
 /**
  * Navigation node collection
