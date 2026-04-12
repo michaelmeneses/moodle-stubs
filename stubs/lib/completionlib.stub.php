@@ -51,6 +51,10 @@ define('COMPLETION_COMPLETE_PASS', 2);
  */
 define('COMPLETION_COMPLETE_FAIL', 3);
 /**
+ * Indicates that the user has received a failing grade for a hidden grade item.
+ */
+define('COMPLETION_COMPLETE_FAIL_HIDDEN', 4);
+/**
  * The effect of this change to completion status is unknown.
  * A completion effect changes (used only in update_state)
  */
@@ -594,9 +598,10 @@ class completion_info
      *
      * @param grade_item $item an instance of grade_item
      * @param grade_grade $grade an instance of grade_grade
+     * @param bool $returnpassfail If course module has pass grade completion criteria
      * @return int Completion state e.g. COMPLETION_INCOMPLETE
      */
-    public static function internal_get_grade_state($item, $grade)
+    public static function internal_get_grade_state($item, $grade, bool $returnpassfail = false)
     {
     }
     /**

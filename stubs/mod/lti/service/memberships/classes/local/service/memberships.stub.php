@@ -206,4 +206,13 @@ class memberships extends \mod_lti\local\ltiservice\service_base
     public function get_launch_parameters($messagetype, $courseid, $user, $typeid, $modlti = null)
     {
     }
+    /**
+     * Return an array of key/claim mapping allowing LTI 1.1 custom parameters
+     * to be transformed to LTI 1.3 claims.
+     *
+     * @return array Key/value pairs of params to claim mapping.
+     */
+    public function get_jwt_claim_mappings(): array
+    {
+    }
 }

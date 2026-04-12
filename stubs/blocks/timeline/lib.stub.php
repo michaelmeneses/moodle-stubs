@@ -24,8 +24,10 @@ define('BLOCK_TIMELINE_ACTIVITIES_LIMIT_DEFAULT', 5);
 /**
  * Returns the name of the user preferences as well as the details this plugin uses.
  *
- * @return array
+ * @uses core_user::is_current_user
+ *
+ * @return array[]
  */
-function block_timeline_user_preferences()
+function block_timeline_user_preferences(): array
 {
 }

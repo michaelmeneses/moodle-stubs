@@ -138,8 +138,10 @@ class quiz_grading_report extends quiz_default_report
     }
     /**
      * Save all submitted marks to the database.
+     *
+     * @return bool returns true if some attempts or all are graded. False, if none of the attempts are graded.
      */
-    protected function process_submitted_data()
+    protected function process_submitted_data(): bool
     {
     }
     /**

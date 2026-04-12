@@ -39,9 +39,11 @@ namespace tool_task\check;
 class cronrunning extends check
 {
     /**
-     * Constructor
+     * A link the running tasks report
+     *
+     * @return action_link|null
      */
-    public function __construct()
+    public function get_action_link(): ?\action_link
     {
     }
     /**

@@ -1896,6 +1896,7 @@ class assign
      *
      * @param int $userid
      * @return boolean
+     * @throws coding_exception
      */
     public function remove_submission($userid)
     {

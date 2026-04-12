@@ -37,7 +37,6 @@ namespace mod_quiz\event;
  *
  *      - int quizid: the id of the quiz.
  *      - bool shuffle: shuffle option value.
- *      - int firstslotid: id of the slot which is right after the section break.
  *      - int firstslotnumber: slot number of the slot which is right after the section break.
  * }
  *

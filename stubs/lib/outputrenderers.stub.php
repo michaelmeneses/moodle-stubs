@@ -38,6 +38,10 @@ class renderer_base
      */
     private $mustache;
     /**
+     * @var array $templatecache The mustache template cache.
+     */
+    protected $templatecache = [];
+    /**
      * Return an instance of the mustache class.
      *
      * @since 2.9

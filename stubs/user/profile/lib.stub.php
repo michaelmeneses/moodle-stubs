@@ -261,9 +261,11 @@ class profile_field_base
     /**
      * Check if the field data is visible to the current user
      * @internal This method should not generally be overwritten by child classes.
+     *
+     * @param context|null $context
      * @return bool
      */
-    public function is_visible()
+    public function is_visible(?context $context = null): bool
     {
     }
     /**
@@ -342,6 +344,18 @@ class profile_field_base
     public function is_transform_supported(): bool
     {
     }
+}
+/**
+ * Return profile field instance for given type
+ *
+ * @param string $type
+ * @param int $fieldid
+ * @param int $userid
+ * @param stdClass|null $fielddata
+ * @return profile_field_base
+ */
+function profile_get_user_field(string $type, int $fieldid = 0, int $userid = 0, ?stdClass $fielddata = null): profile_field_base
+{
 }
 /**
  * Returns an array of all custom field records with any defined data (or empty data), for the specified user id.

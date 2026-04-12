@@ -22,7 +22,7 @@ class manager
     /**
      * Return an instance of a report class from the given report persistent
      *
-     * We statically cache the list of loaded reports during request lifecycle, to allow this method to be called
+     * We statically cache the list of loaded reports per user during request lifecycle, to allow this method to be called
      * repeatedly without potential performance problems initialising the same report multiple times
      *
      * @param report $report

@@ -21,9 +21,10 @@ class schedule
      * Create report schedule, calculate when it should be next sent
      *
      * @param stdClass $data
+     * @param int|null $timenow Time to use as comparison against current date (defaults to current time)
      * @return model
      */
-    public static function create_schedule(stdClass $data): model
+    public static function create_schedule(stdClass $data, ?int $timenow = null): model
     {
     }
     /**
@@ -89,7 +90,7 @@ class schedule
      * returned value is after the current date
      *
      * @param model $schedule
-     * @param int|null $timenow Time to use for calculation (defaults to current time)
+     * @param int|null $timenow Time to use as comparison against current date (defaults to current time)
      * @return int
      */
     public static function calculate_next_send_time(model $schedule, ?int $timenow = null): int

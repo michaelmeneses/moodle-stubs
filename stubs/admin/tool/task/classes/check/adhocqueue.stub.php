@@ -39,12 +39,6 @@ namespace tool_task\check;
 class adhocqueue extends check
 {
     /**
-     * Constructor
-     */
-    public function __construct()
-    {
-    }
-    /**
      * Return result
      * @return result
      */
