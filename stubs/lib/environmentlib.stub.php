@@ -310,7 +310,7 @@ class environment_results
      */
     var $error_code;
     /**
-     * @var string required/optional
+     * @var string required/optional/recommended.
      */
     var $level;
     /**
