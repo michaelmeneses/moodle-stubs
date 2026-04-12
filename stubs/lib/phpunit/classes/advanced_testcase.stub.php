@@ -133,7 +133,7 @@ abstract class advanced_testcase extends base_testcase
      * @param array $files full paths to CSV or XML files to load.
      * @return phpunit_dataset
      */
-    protected function dataset_from_files(array $files)
+    protected static function dataset_from_files(array $files)
     {
     }
     /**
@@ -146,7 +146,7 @@ abstract class advanced_testcase extends base_testcase
      * @param string $table name of the table which the file belongs to (only for CSV files).
      * @return phpunit_dataset
      */
-    protected function dataset_from_string(string $content, string $type, ?string $table = null)
+    protected static function dataset_from_string(string $content, string $type, ?string $table = null)
     {
     }
     /**
@@ -157,7 +157,7 @@ abstract class advanced_testcase extends base_testcase
      * @param array $data array of tables, see {@see phpunit_dataset::from_array()} for supported formats.
      * @return phpunit_dataset
      */
-    protected function dataset_from_array(array $data)
+    protected static function dataset_from_array(array $data)
     {
     }
     /**
@@ -384,7 +384,7 @@ abstract class advanced_testcase extends base_testcase
      * @param bool $https true if https required
      * @return string url
      */
-    public function getExternalTestFileUrl($path, $https = false)
+    public static function getExternalTestFileUrl(string $path, bool $https = false): string
     {
     }
     /**
@@ -418,6 +418,16 @@ abstract class advanced_testcase extends base_testcase
      * @param   int     $matchuserid The userid to match.
      */
     protected function runAdhocTasks($matchclass = '', $matchuserid = null)
+    {
+    }
+    /**
+     * Convenience method to get the path to a fixture.
+     *
+     * @param string $component
+     * @param string $path
+     * @throws coding_exception
+     */
+    protected static function get_fixture_path(string $component, string $path): string
     {
     }
     /**
