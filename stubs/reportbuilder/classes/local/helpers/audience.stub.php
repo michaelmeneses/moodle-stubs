@@ -90,6 +90,17 @@ class audience
     {
     }
     /**
+     * Delete given audience from report
+     *
+     * @param int $reportid
+     * @param int $audienceid
+     * @return bool
+     * @throws invalid_parameter_exception
+     */
+    public static function delete_report_audience(int $reportid, int $audienceid): bool
+    {
+    }
+    /**
      * Returns the list of audiences types in the system.
      *
      * @return array
