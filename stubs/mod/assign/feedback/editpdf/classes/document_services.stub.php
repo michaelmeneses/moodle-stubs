@@ -300,7 +300,7 @@ class document_services
      * @param int $attemptnumber Attempt Number
      * @param \stored_file $file file to save
      * @param null|array $size size of image
-     * @return \stored_file
+     * @return null|\stored_file
      * @throws \file_exception
      * @throws \stored_file_creation_exception
      */

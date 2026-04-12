@@ -100,9 +100,9 @@ class redis extends handler implements SessionHandlerInterface
     /** @var bool $clustermode Redis in cluster mode. */
     protected bool $clustermode = false;
     /** @var int Maximum number of retries for cache store operations. */
-    const MAX_RETRIES = 5;
-    /** @var int The number of seconds to wait for a connection or response from the Redis server. */
-    const CONNECTION_TIMEOUT = 10;
+    protected int $maxretries = 3;
+    /** @var int $connectiontimeout The number of seconds to wait for a connection or response from the Redis server. */
+    protected int $connectiontimeout = 3;
     /**
      * Create new instance of handler.
      */
