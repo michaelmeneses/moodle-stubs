@@ -308,9 +308,9 @@ trait behat_session_trait
      * @throws ExpectationException
      * @param string $locator
      * @param string $selectortype
-     * @param NodeElement $container Restrict the search to just children of the specified container
+     * @return void
      */
-    protected function ensure_element_exists($locator, $selectortype, $container = false)
+    protected function ensure_element_exists($locator, $selectortype)
     {
     }
     /**
@@ -319,9 +319,9 @@ trait behat_session_trait
      * @throws ExpectationException
      * @param string $locator
      * @param string $selectortype
-     * @param NodeElement $container Restrict the search to just children of the specified container
+     * @return void
      */
-    protected function ensure_element_does_not_exist($locator, $selectortype, $container = false)
+    protected function ensure_element_does_not_exist($locator, $selectortype)
     {
     }
     /**

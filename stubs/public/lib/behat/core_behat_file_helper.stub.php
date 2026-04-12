@@ -7,10 +7,10 @@
  * @link https://github.com/michaelmeneses/moodle-stubs
  */
 /**
- * Files interactions with behat.
+ * Files-related actions.
  *
- * Note that steps definitions files can not extend other steps definitions files, so steps definitions which makes use
- * of file attachments or filepicker should use this behat_file_helper trait.
+ * Steps definitions related with filepicker or repositories should extend use this trait as it provides useful methods
+ * to deal with the common filepicker issues.
  *
  * @package    core
  * @category   test
@@ -66,6 +66,7 @@ trait core_behat_file_helper
      * @throws ExpectationException Thrown by behat_base::find
      * @param NodeElement $filemanagernode The filemanager or filepicker form element DOM node.
      * @param mixed $repositoryname The repo name.
+     * @return void
      */
     protected function open_add_file_window($filemanagernode, $repositoryname)
     {

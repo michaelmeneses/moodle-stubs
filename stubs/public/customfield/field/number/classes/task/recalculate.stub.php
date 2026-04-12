@@ -50,12 +50,9 @@ class recalculate extends adhoc_task
      *
      * @param int $fieldid in of the custom field
      * @param int|null $instanceid if specified, only recalculates for the given instance id
-     * @param string|null $component the component related to the instance
-     * @param string|null $area the area related to the instance
-     * @param int $itemid
      * @return void
      */
-    public static function schedule_for_field(int $fieldid, ?int $instanceid = null, ?string $component = null, ?string $area = null, int $itemid = 0)
+    public static function schedule_for_field(int $fieldid, ?int $instanceid = null)
     {
     }
     /**
@@ -65,10 +62,9 @@ class recalculate extends adhoc_task
      * @param string|null $component
      * @param string|null $area
      * @param int|null $instanceid
-     * @param int $itemid
      * @return void
      */
-    public static function schedule_for_fieldtype(string $fieldtype, ?string $component = null, ?string $area = null, ?int $instanceid = null, int $itemid = 0)
+    public static function schedule_for_fieldtype(string $fieldtype, ?string $component = null, ?string $area = null, ?int $instanceid = null)
     {
     }
 }

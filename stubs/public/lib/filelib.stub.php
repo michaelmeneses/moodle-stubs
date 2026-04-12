@@ -1061,14 +1061,6 @@ class curl
     {
     }
     /**
-     * Remove options previously set with setopt.
-     *
-     * @param array $options List of options to remove.
-     */
-    public function removeopt(array $options = []): void
-    {
-    }
-    /**
      * Reset http method
      */
     public function cleanopt()
@@ -1332,7 +1324,7 @@ class curl
      * @param array $options
      * @return ?string
      */
-    public function put($url, $params = [], $options = [])
+    public function put($url, $params = array(), $options = array())
     {
     }
     /**

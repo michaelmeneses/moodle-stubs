@@ -77,8 +77,4 @@ class tag_condition extends condition
     public function get_initial_values()
     {
     }
-    #[\Override]
-    public function restore_filtercondition(array $filtercondition, stdClass $setreference, restore_questions_activity_structure_step $restorestep, bool $originalbankinbackup = false): array
-    {
-    }
 }

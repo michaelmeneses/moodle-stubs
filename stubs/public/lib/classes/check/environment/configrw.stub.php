@@ -20,8 +20,6 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\check\environment;
-
 /**
  * Verifies config.php is not writable anymore after installation
  *
@@ -31,13 +29,29 @@ namespace core\check\environment;
  * @copyright  2008 petr Skoda
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-final class configrw extends check
+namespace core\check\environment;
+
+/**
+ * Verifies config.php is not writable anymore after installation
+ *
+ * @copyright  2020 Brendan Heywood <brendan@catalyst-au.net>
+ * @copyright  2008 petr Skoda
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class configrw extends check
 {
-    #[\Override]
+    /**
+     * Get the short check name
+     *
+     * @return string
+     */
     public function get_name(): string
     {
     }
-    #[\Override]
+    /**
+     * Return result
+     * @return result
+     */
     public function get_result(): result
     {
     }

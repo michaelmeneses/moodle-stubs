@@ -57,25 +57,9 @@ class question_reference_manager
      * pre-4.3 filter condition structure to the new one.
      *
      * @param array $filtercondition Pre-4.3 filter condition.
-     * @param bool $maptags Map tags to tags with the same name, creating them if necessary. If not, just convert existing IDs to
-     *     the new structure.
      * @return array Post-4.3 filter condition.
      */
-    public static function convert_legacy_set_reference_filter_condition(array $filtercondition, bool $maptags = true): array
-    {
-    }
-    /**
-     * Ensure consistency of filter 'cat' parameter and questioncontextid in all set references.
-     *
-     * Some set references may have been moved to a different context, but the filter condition not updated with the context ID.
-     * Since the filter condition is JSON-encoded, we have to check each set reference record for inconsistencies.
-     *
-     * This is used in a CLI script to fix bad data due to MDL-86691.
-     *
-     * @return int The number of records that were updated.
-     * @todo Deprecate in Moodle 6.0 (MDL-87844) for removal in 7.0 (MDL-87845).
-     */
-    public static function fix_set_references_category_context(): int
+    public static function convert_legacy_set_reference_filter_condition(array $filtercondition): array
     {
     }
 }

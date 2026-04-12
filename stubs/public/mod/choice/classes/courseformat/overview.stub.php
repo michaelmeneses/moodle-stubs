@@ -57,6 +57,10 @@ class overview extends \core_courseformat\activityoverviewbase
     {
     }
     #[\Override]
+    public function get_completion_overview(): ?overviewitem
+    {
+    }
+    #[\Override]
     public function get_extra_overview_items(): array
     {
     }

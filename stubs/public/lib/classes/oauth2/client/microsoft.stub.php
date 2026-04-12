@@ -35,8 +35,4 @@ class microsoft extends client
     public function get_additional_upgrade_token_parameters(): array
     {
     }
-    #[\Override]
-    protected function map_userinfo_to_fields(stdClass $userinfo): array
-    {
-    }
 }

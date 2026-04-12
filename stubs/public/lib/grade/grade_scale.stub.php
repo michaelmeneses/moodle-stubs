@@ -172,7 +172,7 @@ class grade_scale extends grade_object
     /**
      * Static function returning all global scales
      *
-     * @return grade_scale[]|false
+     * @return object
      */
     public static function fetch_all_global()
     {

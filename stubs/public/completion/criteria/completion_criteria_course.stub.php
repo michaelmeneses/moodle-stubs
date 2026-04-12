@@ -43,7 +43,7 @@ class completion_criteria_course extends completion_criteria
     /**
      * Update the criteria information stored in the database
      *
-     * @param stdClass $data Form data
+     * @param array $data Form data
      */
     public function update_config(&$data)
     {

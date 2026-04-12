@@ -173,32 +173,4 @@ class category_manager
     public function get_max_sortorder(int $parentid): int
     {
     }
-    /**
-     * Upgrade step to find question categories with the wrong parent category.
-     *
-     * This will find question categories that have a parent in a different context, and set the parent to the top category
-     * of the current context. GROUP BY is to ensure we only get one result for each category, just in case we somehow end up
-     * with multiple top-level categories in a context.
-     *
-     * This could occur before the fix for MDL-86300, where a course restore left question categories that were the child of a top
-     * category with the original top category as the parent, rather than the new top category.
-     *
-     * This only needs to one once on upgrade, so is deprecated for removal in 6.0.
-     */
-    public static function fix_restored_category_parents(): void
-    {
-    }
-    /**
-     * Upgrade step to find questions with no category and delete them.
-     *
-     * Due to MDL-86154, there may be questions left in the database after a restore, whose category has been deleted. This will
-     * find any questions like that and delete them. These questions will always be unused.
-     *
-     * Now that we have prevented this occurring, this function is used by the upgrade process to clean up these questions.
-     *
-     * @return int A count of deleted questions.
-     */
-    public static function cleanup_questions_without_categories(): int
-    {
-    }
 }

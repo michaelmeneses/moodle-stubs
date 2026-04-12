@@ -89,16 +89,4 @@ class dataformat
     public static function write_data_to_filearea(array $filerecord, string $dataformat, array $columns, iterable $iterator, ?callable $callback = null): stored_file
     {
     }
-    /**
-     * Escape formula spreadsheet values.
-     *
-     * Check values being used in spreadsheets and make them safe for inclusion.
-     * Following OWASP recommendations {@link https://owasp.org/www-community/attacks/CSV_Injection}.
-     *
-     * @param mixed $value Value to check.
-     * @return string|null Return escaped formula if detected.
-     */
-    public static function escape_spreadsheet_formula(mixed $value): ?string
-    {
-    }
 }

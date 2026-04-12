@@ -139,7 +139,7 @@ class core_admin_renderer extends plugin_renderer_base
      *
      * @return string HTML to output.
      */
-    public function admin_notifications_page($maturity, $insecuredataroot, $errorsdisplayed, $cronoverdue, $dbproblems, $maintenancemode, $availableupdates, $availableupdatesfetch, $buggyiconvnomb, $registered, array $cachewarnings = [], $eventshandlers = 0, $themedesignermode = false, $devlibdir = false, $mobileconfigured = false, $overridetossl = false, $invalidforgottenpasswordurl = false, $croninfrequent = false, $showcampaigncontent = false, bool $showfeedbackencouragement = false, bool $showservicesandsupport = false, $xmlrpcwarning = '')
+    public function admin_notifications_page($maturity, $insecuredataroot, $errorsdisplayed, $cronoverdue, $dbproblems, $maintenancemode, $availableupdates, $availableupdatesfetch, $buggyiconvnomb, $registered, array $cachewarnings = array(), $eventshandlers = 0, $themedesignermode = false, $devlibdir = false, $mobileconfigured = false, $overridetossl = false, $invalidforgottenpasswordurl = false, $croninfrequent = false, $showcampaigncontent = false, bool $showfeedbackencouragement = false, bool $showservicesandsupport = false, $xmlrpcwarning = '')
     {
     }
     /**
@@ -583,22 +583,6 @@ class core_admin_renderer extends plugin_renderer_base
      * @return string HTML to output.
      */
     protected function mnet_deprecation_warning($xmlrpcwarning)
-    {
-    }
-    /**
-     * Display a warning about the removal of MoodleNet integration.
-     *
-     * @return string HTML to output.
-     */
-    protected function moodlenet_removal_warning(): string
-    {
-    }
-    /**
-     * Display a notice about Moodle Marketplace integration.
-     *
-     * @return string HTML to output.
-     */
-    protected function marketplace_integration_notice(): string
     {
     }
     /**

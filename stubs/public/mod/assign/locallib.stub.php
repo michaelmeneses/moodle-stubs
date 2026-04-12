@@ -1739,12 +1739,9 @@ class assign
     /**
      * A students submission is submitted for grading by a teacher.
      *
-     * @param moodleform|null $mform If validation failed when submitting this form - this is the moodleform.
-     *               It can be null.
-     * @param array $notices Receives error messages to display on an error condition.
      * @return bool
      */
-    protected function process_submit_other_for_grading($mform, &$notices)
+    protected function process_submit_other_for_grading($mform, $notices)
     {
     }
     /**
@@ -1752,10 +1749,9 @@ class assign
      *
      * @param moodleform|null $mform If validation failed when submitting this form - this is the moodleform.
      *               It can be null.
-     * @param array $notices Receives error messages to display on an error condition.
      * @return bool Return false if the validation fails. This affects which page is displayed next.
      */
-    protected function process_submit_for_grading($mform, &$notices)
+    protected function process_submit_for_grading($mform, $notices)
     {
     }
     /**

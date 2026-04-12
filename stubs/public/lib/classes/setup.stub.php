@@ -41,6 +41,14 @@ class setup
     {
     }
     /**
+     * Whether the wwwroot is allowed to end in public.
+     *
+     * @return bool
+     */
+    protected function can_wwwroot_end_in_public(): bool
+    {
+    }
+    /**
      * Detect whether the wwwroot ends in /public.
      *
      * @return bool
