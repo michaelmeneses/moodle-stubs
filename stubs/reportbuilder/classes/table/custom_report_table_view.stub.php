@@ -41,4 +41,12 @@ class custom_report_table_view extends custom_report_table
     public function download_buttons(): string
     {
     }
+    /**
+     * Check if the user has the capability to access this table.
+     *
+     * @return bool Return true if capability check passed.
+     */
+    public function has_capability(): bool
+    {
+    }
 }
