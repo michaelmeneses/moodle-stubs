@@ -136,11 +136,10 @@ class core_admin_renderer extends plugin_renderer_base
      * @param bool $showfeedbackencouragement Whether the feedback encouragement content should be displayed or not.
      * @param bool $showservicesandsupport Whether the services and support content should be displayed or not.
      * @param string $xmlrpcwarning XML-RPC deprecation warning message.
-     * @param string $moodlenetwarning MoodleNet removal warning message.
      *
      * @return string HTML to output.
      */
-    public function admin_notifications_page($maturity, $insecuredataroot, $errorsdisplayed, $cronoverdue, $dbproblems, $maintenancemode, $availableupdates, $availableupdatesfetch, $buggyiconvnomb, $registered, array $cachewarnings = array(), $eventshandlers = 0, $themedesignermode = false, $devlibdir = false, $mobileconfigured = false, $overridetossl = false, $invalidforgottenpasswordurl = false, $croninfrequent = false, $showcampaigncontent = false, bool $showfeedbackencouragement = false, bool $showservicesandsupport = false, $xmlrpcwarning = '', $moodlenetwarning = '')
+    public function admin_notifications_page($maturity, $insecuredataroot, $errorsdisplayed, $cronoverdue, $dbproblems, $maintenancemode, $availableupdates, $availableupdatesfetch, $buggyiconvnomb, $registered, array $cachewarnings = [], $eventshandlers = 0, $themedesignermode = false, $devlibdir = false, $mobileconfigured = false, $overridetossl = false, $invalidforgottenpasswordurl = false, $croninfrequent = false, $showcampaigncontent = false, bool $showfeedbackencouragement = false, bool $showservicesandsupport = false, $xmlrpcwarning = '')
     {
     }
     /**
@@ -589,10 +588,9 @@ class core_admin_renderer extends plugin_renderer_base
     /**
      * Display a warning about the removal of MoodleNet integration.
      *
-     * @param string $moodlenetwarning The warning message
      * @return string HTML to output.
      */
-    protected function moodlenet_removal_warning($moodlenetwarning)
+    protected function moodlenet_removal_warning(): string
     {
     }
     /**
