@@ -53,6 +53,22 @@ class exifremover_service extends service implements file_redactor_service_inter
     const DEFAULT_JPEG_COMPRESSION = 90;
     /** @var bool $useexiftool Flag indicating whether to use ExifTool. */
     private bool $useexiftool = false;
+    /** @var int Normal orientation (no rotation). */
+    private const TOP_LEFT = 1;
+    /** @var int Mirrored horizontally. */
+    private const TOP_RIGHT = 2;
+    /** @var int Rotated 180° (upside down). */
+    private const BOTTOM_RIGHT = 3;
+    /** @var int Mirrored vertically. */
+    private const BOTTOM_LEFT = 4;
+    /** @var int Mirrored horizontally and rotated 270° clockwise. */
+    private const LEFT_TOP = 5;
+    /** @var int Rotated 90° clockwise. */
+    private const RIGHT_TOP = 6;
+    /** @var int Mirrored horizontally and rotated 90° clockwise. */
+    private const RIGHT_BOTTOM = 7;
+    /** @var int Rotated 270° clockwise. */
+    private const LEFT_BOTTOM = 8;
     /**
      * Initialise the EXIF remover service.
      */
@@ -136,10 +152,22 @@ class exifremover_service extends service implements file_redactor_service_inter
     /**
      * Recreate the image using PHP GD library to strip all EXIF data.
      *
-     * @param string $content The source file content
+     * @param string $content The source file content.
+     * @param int $orientation The orientation value. The default is 1, which means no rotation.
      * @return null|string The path to the recreated image, or null on failure.
      */
-    private function recreate_image_gd(string $content): ?string
+    private function recreate_image_gd(string $content, int $orientation = self::TOP_LEFT): ?string
+    {
+    }
+    /**
+     * Flips the given GD image resource based on the specified orientation.
+     *
+     * @param \GDImage $image The GD image resource to be flipped.
+     * @param int $orientation The orientation value indicating how the image should be flipped.
+     *
+     * @return void
+     */
+    private function flip_gd(\GDImage &$image, int $orientation): void
     {
     }
     /**

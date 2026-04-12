@@ -362,8 +362,9 @@ class manager
      * This function indicates that an adhoc task was not completed successfully and should be retried.
      *
      * @param \core\task\adhoc_task $task
+     * @param bool $finaliselog finalise the log of the current running task
      */
-    public static function adhoc_task_failed(adhoc_task $task)
+    public static function adhoc_task_failed(adhoc_task $task, bool $finaliselog = true)
     {
     }
     /**
@@ -389,8 +390,9 @@ class manager
      * This function indicates that a scheduled task was not completed successfully and should be retried.
      *
      * @param \core\task\scheduled_task $task
+     * @param bool $finaliselog finalise the log of the current running task
      */
-    public static function scheduled_task_failed(scheduled_task $task)
+    public static function scheduled_task_failed(scheduled_task $task, bool $finaliselog = true)
     {
     }
     /**

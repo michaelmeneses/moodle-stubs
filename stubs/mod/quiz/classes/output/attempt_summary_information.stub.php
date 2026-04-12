@@ -38,6 +38,8 @@ class attempt_summary_information implements renderable, named_templatable
 {
     /** @var array[] The rows of summary data. {@see add_item()} should make the structure clear. */
     protected array $summarydata = [];
+    /** @var string The caption for attempt summary table. */
+    protected string $caption = '';
     /**
      * Add an item to the summary.
      *
@@ -46,6 +48,14 @@ class attempt_summary_information implements renderable, named_templatable
      * @param string|renderable $content the content of this item.
      */
     public function add_item(string $shortname, string|renderable $title, string|renderable $content): void
+    {
+    }
+    /**
+     * Set the caption for the summary table.
+     *
+     * @param string $caption
+     */
+    public function set_caption(string $caption): void
     {
     }
     /**

@@ -211,7 +211,7 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
             or @data-fieldtype='date_selector' or @data-fieldtype='date_time_selector')
     ]
     XPATH, 'select_menu' => <<<XPATH
-    //*[@role='combobox'][@aria-labelledby = //label[contains(normalize-space(string(.)), %locator%)]/@id]
+    //*[@role='combobox'][@aria-labelledby = //span[contains(normalize-space(string(.)), %locator%)]/@id]
     XPATH]];
     /**
      * Mink comes with a number of named replacements.

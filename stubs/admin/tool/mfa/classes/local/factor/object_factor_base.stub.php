@@ -334,6 +334,17 @@ abstract class object_factor_base implements object_factor
     {
     }
     /**
+     * Returns true if a button should be shown to add factors of the same kind on the preferences page.
+     * For example, give user's the ability to set up multiple security keys.
+     *
+     * Override in child class if necessary.
+     *
+     * @return bool
+     */
+    public function show_additional_setup_button(): bool
+    {
+    }
+    /**
      * Returns true if a factor requires input from the user to verify.
      *
      * Override in child class if necessary
@@ -451,6 +462,17 @@ abstract class object_factor_base implements object_factor
      * @return string
      */
     public function get_setup_string(): string
+    {
+    }
+    /**
+     * Gets the string for additional setup button on preferences page.
+     * If the user has the ability to set up multiple security keys.
+     *
+     * Override in child class if necessary.
+     *
+     * @return string
+     */
+    public function get_additional_setup_string(): string
     {
     }
     /**

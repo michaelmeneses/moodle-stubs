@@ -57,4 +57,8 @@ class repository_user extends repository
     public function contains_private_data()
     {
     }
+    #[\Override]
+    public function send_file($storedfile, $lifetime = null, $filter = 0, $forcedownload = false, ?array $options = null)
+    {
+    }
 }

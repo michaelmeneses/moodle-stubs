@@ -63,4 +63,8 @@ class aiprovider extends base
     public static function get_provider_actions(): array
     {
     }
+    #[\Override]
+    public function uninstall_cleanup(): void
+    {
+    }
 }

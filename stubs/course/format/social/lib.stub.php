@@ -103,10 +103,6 @@ class format_social extends core_courseformat\base
     public function get_sectionnum(): int
     {
     }
-    #[\Override]
-    public function get_max_sections()
-    {
-    }
     /**
      * Returns if a specific section is visible to the current user.
      *

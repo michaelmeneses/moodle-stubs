@@ -111,6 +111,14 @@ class api
     {
     }
     /**
+     * Checks if current site is registered in hub.
+     *
+     * @return bool
+     */
+    public static function is_site_registered_in_hub(): bool
+    {
+    }
+    /**
      * Calls WS function hub_get_courses
      *
      * @deprecated since Moodle 3.8. Moodle.net has been sunsetted making this function useless.
