@@ -31,9 +31,12 @@ class recalculate extends external_api
      *
      * @param int $fieldid
      * @param int $instanceid
+     * @param string $component
+     * @param string $area
+     * @param int $itemid
      * @return array
      */
-    public static function execute(int $fieldid, int $instanceid): array
+    public static function execute(int $fieldid, int $instanceid, string $component = 'core_course', string $area = 'course', int $itemid = 0): array
     {
     }
     /**

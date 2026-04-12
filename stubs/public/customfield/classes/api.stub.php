@@ -183,4 +183,15 @@ class api
     public static function is_shared_category_enabled(int $categoryid, string $component, string $area, int $itemid): bool
     {
     }
+    /**
+     * Checks if the given shortname is unique for the handler's component-area-itemid combination and shared fields.
+     *
+     * @param handler $handler
+     * @param string $shortname
+     * @param int $fieldid
+     * @return bool
+     */
+    public static function is_shortname_unique(handler $handler, string $shortname, int $fieldid): bool
+    {
+    }
 }

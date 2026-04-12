@@ -84,9 +84,10 @@ class editquestion_helper
     /**
      * Get the array of status of the questions.
      *
+     * @param bool $includehidden Include QUESTION_STATUS_HIDDEN in the returned list?
      * @return array
      */
-    public static function get_question_status_list(): array
+    public static function get_question_status_list(bool $includehidden = false): array
     {
     }
 }
