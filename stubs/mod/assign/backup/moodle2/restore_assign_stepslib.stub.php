@@ -97,6 +97,7 @@ class restore_assign_activity_structure_step extends restore_activity_structure_
     }
     /**
      * Once the database tables have been fully restored, restore the files
+     * @return void
      */
     protected function after_execute()
     {

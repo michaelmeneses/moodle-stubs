@@ -53,8 +53,6 @@ class file_storage implements H5PFileStorage
     public const CSS_FILEAREA = 'css';
     /** The icon filename */
     public const ICON_FILENAME = 'icon.svg';
-    /** The custom CSS filename */
-    private const CUSTOM_CSS_FILENAME = 'custom_h5p.css';
     /**
      * @var \context $context Currently we use the system context everywhere.
      * Don't feel forced to keep it this way in the future.
@@ -412,42 +410,6 @@ class file_storage implements H5PFileStorage
      * @return void
      */
     private function move_file(string $sourcefile, int $contentid): void
-    {
-    }
-    /**
-     * Generate H5P custom styles if any.
-     */
-    public static function generate_custom_styles(): void
-    {
-    }
-    /**
-     * Get H5P custom styles if any.
-     *
-     * @throws \moodle_exception If the CSS setting is empty but there is a file to serve
-     * or there is no file but the CSS setting is not empty.
-     * @return array|null If there is CSS then an array with the keys 'cssurl'
-     * and 'cssversion' is returned otherwise null.  'cssurl' is a link to the
-     * generated 'custom_h5p.css' file and 'cssversion' the md5 hash of its contents.
-     */
-    public static function get_custom_styles(): ?array
-    {
-    }
-    /**
-     * Get H5P custom styles file record.
-     *
-     * @return array File record for the CSS custom styles.
-     */
-    private static function get_custom_styles_file_record(): array
-    {
-    }
-    /**
-     * Get H5P custom styles file.
-     *
-     * @param array $record The H5P custom styles file record.
-     *
-     * @return stored_file|bool stored_file instance if exists, false if not.
-     */
-    private static function get_custom_styles_file($record): stored_file|bool
     {
     }
 }

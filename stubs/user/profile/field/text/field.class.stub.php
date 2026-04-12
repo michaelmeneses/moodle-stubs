@@ -49,25 +49,6 @@ class profile_field_text extends profile_field_base
     {
     }
     /**
-     * Process the data before it gets saved in database
-     *
-     * @param string|null $data
-     * @param stdClass $datarecord
-     * @return string|null
-     */
-    public function edit_save_data_preprocess($data, $datarecord)
-    {
-    }
-    /**
-     * Convert external data (csv file) from value to key for processing later by edit_save_data_preprocess
-     *
-     * @param string $data
-     * @return string|null
-     */
-    public function convert_external_data($data)
-    {
-    }
-    /**
      * Return the field type and null properties.
      * This will be used for validating the data submitted by a user.
      *

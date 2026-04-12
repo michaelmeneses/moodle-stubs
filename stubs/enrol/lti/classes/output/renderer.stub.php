@@ -92,12 +92,4 @@ class renderer extends plugin_renderer_base
     public function render_registration_view(int $registrationid, string $activetab = '')
     {
     }
-    /**
-     * Render a warning, indicating to the user that cookies are require but couldn't be set.
-     *
-     * @return string the html.
-     */
-    public function render_cookies_required_notice(): string
-    {
-    }
 }

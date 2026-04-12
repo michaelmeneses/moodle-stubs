@@ -52,24 +52,8 @@ class core_component
     protected static $filestomap = array('lib.php', 'settings.php');
     /** @var array associative array of PSR-0 namespaces and corresponding paths. */
     protected static $psr0namespaces = array('Horde' => 'lib/horde/framework/Horde', 'Mustache' => 'lib/mustache/src/Mustache', 'CFPropertyList' => 'lib/plist/classes/CFPropertyList');
-    /** @var array<string|array<string>> associative array of PRS-4 namespaces and corresponding paths. */
-    protected static $psr4namespaces = ['MaxMind' => 'lib/maxmind/MaxMind', 'GeoIp2' => 'lib/maxmind/GeoIp2', 'Sabberworm\CSS' => 'lib/php-css-parser', 'MoodleHQ\RTLCSS' => 'lib/rtlcss', 'ScssPhp\ScssPhp' => 'lib/scssphp', 'OpenSpout' => 'lib/openspout/src', 'MatthiasMullie\Minify' => 'lib/minify/matthiasmullie-minify/src/', 'MatthiasMullie\PathConverter' => 'lib/minify/matthiasmullie-pathconverter/src/', 'IMSGlobal\LTI' => 'lib/ltiprovider/src', 'Packback\Lti1p3' => 'lib/lti1p3/src', 'Phpml' => 'lib/mlbackend/php/phpml/src/Phpml', 'PHPMailer\PHPMailer' => 'lib/phpmailer/src', 'RedeyeVentures\GeoPattern' => 'lib/geopattern-php/GeoPattern', 'Firebase\JWT' => 'lib/php-jwt/src', 'ZipStream' => 'lib/zipstream/src/', 'MyCLabs\Enum' => 'lib/php-enum/src', 'PhpXmlRpc' => 'lib/phpxmlrpc', 'Psr\Http\Client' => 'lib/psr/http-client/src', 'Psr\Http\Message' => ['lib/psr/http-message/src', 'lib/psr/http-factory/src'], 'Psr\EventDispatcher' => 'lib/psr/event-dispatcher/src', 'GuzzleHttp\Psr7' => 'lib/guzzlehttp/psr7/src', 'GuzzleHttp\Promise' => 'lib/guzzlehttp/promises/src', 'GuzzleHttp' => 'lib/guzzlehttp/guzzle/src', 'Kevinrob\GuzzleCache' => 'lib/guzzlehttp/kevinrob/guzzlecache/src'];
-    /**
-     *  An array containing files which are normally in a package's composer/autoload.files section.
-     *
-     * PHP does not provide a mechanism for automatically including the files that methods are in.
-     *
-     * The Composer autoloader includes all files in this section of the composer.json file during the instantiation of the loader.
-     *
-     * @var array<string>
-     */
-    protected static $composerautoloadfiles = ['lib/guzzlehttp/guzzle/src/functions_include.php', 'lib/guzzlehttp/promises/src/functions_include.php', 'lib/jmespath/src/JmesPath.php', 'lib/php-di/php-di/src/functions.php', 'lib/ralouphi/getallheaders/src/getallheaders.php', 'lib/symfony/deprecation-contracts/function.php'];
-    /**
-     * Register the Moodle class autoloader.
-     */
-    public static function register_autoloader(): void
-    {
-    }
+    /** @var array associative array of PRS-4 namespaces and corresponding paths. */
+    protected static $psr4namespaces = array('MaxMind' => 'lib/maxmind/MaxMind', 'GeoIp2' => 'lib/maxmind/GeoIp2', 'Sabberworm\CSS' => 'lib/php-css-parser', 'MoodleHQ\RTLCSS' => 'lib/rtlcss', 'ScssPhp\ScssPhp' => 'lib/scssphp', 'OpenSpout' => 'lib/openspout/src', 'MatthiasMullie\Minify' => 'lib/minify/matthiasmullie-minify/src/', 'MatthiasMullie\PathConverter' => 'lib/minify/matthiasmullie-pathconverter/src/', 'IMSGlobal\LTI' => 'lib/ltiprovider/src', 'Packback\Lti1p3' => 'lib/lti1p3/src', 'Phpml' => 'lib/mlbackend/php/phpml/src/Phpml', 'PHPMailer\PHPMailer' => 'lib/phpmailer/src', 'RedeyeVentures\GeoPattern' => 'lib/geopattern-php/GeoPattern', 'Firebase\JWT' => 'lib/php-jwt/src', 'ZipStream' => 'lib/zipstream/src/', 'MyCLabs\Enum' => 'lib/php-enum/src', 'PhpXmlRpc' => 'lib/phpxmlrpc', 'Psr\Http\Client' => 'lib/psr/http-client/src', 'Psr\Http\Factory' => 'lib/psr/http-factory/src', 'Psr\Http\Message' => 'lib/psr/http-message/src', 'Psr\EventDispatcher' => 'lib/psr/event-dispatcher/src', 'GuzzleHttp\Psr7' => 'lib/guzzlehttp/psr7/src', 'GuzzleHttp\Promise' => 'lib/guzzlehttp/promises/src', 'GuzzleHttp' => 'lib/guzzlehttp/guzzle/src', 'Kevinrob\GuzzleCache' => 'lib/guzzlehttp/kevinrob/guzzlecache/src');
     /**
      * Class loader for Frankenstyle named classes in standard locations.
      * Frankenstyle namespaces are supported.
@@ -120,15 +104,6 @@ class core_component
      * Initialise caches, always call before accessing self:: caches.
      */
     protected static function init()
-    {
-    }
-    /**
-     * Reset the initialisation of the component utility.
-     *
-     * Note: It should not be necessary to call this in regular code.
-     * Please only use it where strictly required.
-     */
-    public static function reset(): void
     {
     }
     /**
@@ -383,17 +358,6 @@ class core_component
     {
     }
     /**
-     * Fetch the component name from a Moodle PSR-like namespace.
-     *
-     * Note: Classnames in the flat underscore_class_name_format are not supported.
-     *
-     * @param string $classname
-     * @return null|string The component name, or null if a matching component was not found
-     */
-    public static function get_component_from_classname(string $classname): ?string
-    {
-    }
-    /**
      * Return exact absolute path to a plugin directory.
      *
      * @param string $component name such as 'moodle', 'mod_forum'
@@ -535,14 +499,18 @@ class core_component
     {
     }
     /**
-     * Returns a list of frankenstyle component names, including all plugins, subplugins, and subsystems.
+     * Returns a list of frankenstyle component names.
      *
-     * Note: By default the 'core' subsystem is not included.
-     *
-     * @param bool $includecore Whether to include the 'core' subsystem
-     * @return string[] the list of frankenstyle component names.
+     * E.g.
+     *  [
+     *      'core_course',
+     *      'core_message',
+     *      'mod_assign',
+     *      ...
+     *  ]
+     * @return array the list of frankenstyle component names.
      */
-    public static function get_component_names(bool $includecore = false): array
+    public static function get_component_names(): array
     {
     }
     /**

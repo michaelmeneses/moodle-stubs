@@ -17,8 +17,6 @@ namespace core_badges\reportbuilder\local\systemreports;
  */
 class badges extends system_report
 {
-    /** @var int $badgeid The ID of the current badge row */
-    private int $badgeid;
     /**
      * Initialise report, we need to set the main table, load our entities and set columns/filters
      */
@@ -70,14 +68,6 @@ class badges extends system_report
      * @throws \coding_exception
      */
     private static function get_badge_context(int $type, int $courseid): \core\context
-    {
-    }
-    /**
-     * Store the ID of the badge within each row
-     *
-     * @param stdClass $row
-     */
-    public function row_callback(stdClass $row): void
     {
     }
     /**

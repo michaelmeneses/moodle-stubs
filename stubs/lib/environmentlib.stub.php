@@ -310,7 +310,7 @@ class environment_results
      */
     var $error_code;
     /**
-     * @var string required/optional/recommended.
+     * @var string required/optional
      */
     var $level;
     /**
@@ -654,15 +654,5 @@ function restrict_php_version_81($result)
  * @return bool result of version check
  */
 function restrict_php_version_82($result)
-{
-}
-/**
- * Check if the current PHP version is greater than or equal to
- * PHP version 8.3
- *
- * @param object $result an environment_results instance
- * @return bool result of version check
- */
-function restrict_php_version_83($result)
 {
 }

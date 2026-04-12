@@ -379,10 +379,9 @@ trait behat_session_trait
      *
      * @param string $windowsize size of window.
      * @param bool $viewport If true, changes viewport rather than window size
-     * @param bool $scalesize Whether to scale the size by the WINDOWSCALE environment variable
      * @throws ExpectationException
      */
-    protected function resize_window(string $windowsize, bool $viewport = false, bool $scalesize = true): void
+    protected function resize_window($windowsize, $viewport = false)
     {
     }
     /**
@@ -793,15 +792,6 @@ trait behat_session_trait
      * @return int|null The user id or null if not found.
      */
     protected function get_user_id_by_identifier(string $identifier): ?int
-    {
-    }
-    /**
-     * Prepare an xpath for insertion into Selenium JavaScript.
-     *
-     * @param string $xpath
-     * @return string
-     */
-    protected function prepare_xpath_for_javascript(string $xpath): string
     {
     }
 }

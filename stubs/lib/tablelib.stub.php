@@ -157,10 +157,10 @@ class flexible_table
      * for you (even if the param is '', which means no download this time.
      * Also you can call this method with no params to get the current set
      * download type.
-     * @param string|null $download type of dataformat for export.
+     * @param string $download dataformat type. One of csv, xhtml, ods, etc
      * @param string $filename filename for downloads without file extension.
      * @param string $sheettitle title for downloaded data.
-     * @return string download dataformat type.
+     * @return string download dataformat type. One of csv, xhtml, ods, etc
      */
     function is_downloading($download = null, $filename = '', $sheettitle = '')
     {
@@ -996,8 +996,6 @@ class table_sql extends flexible_table
     {
     }
     /**
-     * Build the table from the fetched data.
-     *
      * Take the data returned from the db_query and go through all the rows
      * processing each col using either col_{columnname} method or other_cols
      * method or if other_cols returns NULL then put the data straight into the

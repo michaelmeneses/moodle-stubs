@@ -32,8 +32,6 @@ namespace core_question\local\bank;
  */
 abstract class view_component
 {
-    /** @var int value we return from get_menu_position here. Subclasses should override this. */
-    const MENU_POSITION_NOT_SET = 6666;
     /** @var view Question bank view. */
     protected $qbank;
     /**
@@ -48,27 +46,6 @@ abstract class view_component
      * without having to override the constructor.
      */
     protected function init(): void
-    {
-    }
-    /**
-     * Return an integer to indicate the desired position in the menu for this link, smaller at the top.
-     *
-     * The standard menu items in Moodle core return these numbers:
-     * 100 preview_action
-     * 200 edit_action
-     * 250 copy_action
-     * 300 tags_action
-     * 400 delete_action
-     * 500 history_action
-     * 600 export_xml_action
-     * (So, if you want your action at a particular place in the order, there should be space.)
-     *
-     * If two actions get the same order number, then the tie-break on the sort
-     * is plugin name, then the order returned by get_question_actions for that plugin.
-     *
-     * @return int desired position. Smallest at the top.
-     */
-    public function get_menu_position(): int
     {
     }
     /**

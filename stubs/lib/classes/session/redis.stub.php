@@ -54,14 +54,6 @@ class redis extends handler
      * Compressor: PHP Zstandard.
      */
     const COMPRESSION_ZSTD = 'zstd';
-    /**
-     * Minimum version of the Redis extension required.
-     */
-    public const REDIS_EXTENSION_MIN_VERSION = '2.2.4';
-    /**
-     * Minimum version of the Redis extension required.
-     */
-    private const REDIS_SERVER_MIN_VERSION = '2.6.12';
     /** @var string $host save_path string  */
     protected $host = '';
     /** @var int $port The port to connect to */
@@ -97,8 +89,6 @@ class redis extends handler
     protected $locks = array();
     /** @var int $timeout How long sessions live before expiring. */
     protected $timeout;
-    /** @var int The number of seconds to wait for a connection or response from the Redis server. */
-    const CONNECTION_TIMEOUT = 10;
     /**
      * Create new instance of handler.
      */

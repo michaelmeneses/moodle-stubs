@@ -329,14 +329,6 @@ class moodle_url
     {
     }
     /**
-     * Encode the anchor according to RFC 3986.
-     *
-     * @return string The encoded anchor
-     */
-    public function get_encoded_anchor(): string
-    {
-    }
-    /**
      * Returns url without parameters, everything before '?'.
      *
      * @param bool $includeanchor if {@link self::anchor} is defined, should it be returned?
@@ -536,16 +528,6 @@ class moodle_url
      * @return string Port of the URL.
      */
     public function get_port()
-    {
-    }
-    /**
-     * Returns the 'slashargument' portion of a URL. For example, if the URL is
-     * http://www.example.org.com/pluginfile.php/1/core_admin/logocompact/ then this will
-     * return '1/core_admin/logocompact/'.
-     *
-     * @return string Slash argument as string.
-     */
-    public function get_slashargument(): string
     {
     }
 }

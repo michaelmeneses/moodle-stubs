@@ -292,8 +292,15 @@ define('BLOG_GROUP_LEVEL', 2);
 define('BLOG_COURSE_LEVEL', 3);
 define('BLOG_SITE_LEVEL', 4);
 define('BLOG_GLOBAL_LEVEL', 5);
-/** The maximum length of a tag */
-define('TAG_MAX_LENGTH', 255);
+// Tag constants.
+/**
+ * To prevent problems with multibytes strings,Flag updating in nav not working on the review page. this should not exceed the
+ * length of "varchar(255) / 3 (bytes / utf-8 character) = 85".
+ * TODO: this is not correct, varchar(255) are 255 unicode chars ;-)
+ *
+ * @todo define(TAG_MAX_LENGTH) this is not correct, varchar(255) are 255 unicode chars ;-)
+ */
+define('TAG_MAX_LENGTH', 50);
 // Password policy constants.
 define('PASSWORD_LOWER', 'abcdefghijklmnopqrstuvwxyz');
 define('PASSWORD_UPPER', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
@@ -1668,7 +1675,7 @@ function hash_internal_user_password(
  * It will remove Web Services user tokens too.
  *
  * @param stdClass $user User object (password property may be updated).
- * @param string|null $password Plain text password.
+ * @param string $password Plain text password.
  * @param bool $fasthash If true, use a low cost factor when generating the hash
  *                       This is much faster to generate but makes the hash
  *                       less secure. It is used when lots of hashes need to
@@ -1678,7 +1685,7 @@ function hash_internal_user_password(
 function update_internal_user_password(
     stdClass $user,
     #[\SensitiveParameter]
-    ?string $password,
+    string $password,
     bool $fasthash = false
 ): bool
 {

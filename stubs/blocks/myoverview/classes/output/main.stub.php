@@ -229,7 +229,7 @@ class main implements renderable, templatable
      * Generate the state zero data.
      *
      * @param \moodle_url $imageurl The URL to the image to show
-     * @param string[] $buttons Exported {@see \single_button} instances
+     * @param \single_button[] $buttons
      * @param array $strings Title and intro strings for the zero state if needed.
      * @return array Context variables for the template
      */

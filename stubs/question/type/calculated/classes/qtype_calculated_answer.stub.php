@@ -21,8 +21,4 @@ class qtype_calculated_answer extends \qtype_numerical_answer
     public $correctanswerlength;
     /** @var int The format of the correct answer. */
     public $correctanswerformat;
-    /** @var int The max tolerance of the correct answer. */
-    public $max;
-    /** @var int The min tolerance of the correct answer. */
-    public $min;
 }

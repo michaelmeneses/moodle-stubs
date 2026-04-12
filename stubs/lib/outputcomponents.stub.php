@@ -1091,11 +1091,9 @@ class html_writer
      * @param int $currenttime A default timestamp in GMT
      * @param int $step minute spacing
      * @param array $attributes - html select element attributes
-     * @param float|int|string $timezone the timezone to use to calculate the time
-     *        {@link https://moodledev.io/docs/apis/subsystems/time#timezone}
-     * @return string HTML fragment
+     * @return HTML fragment
      */
-    public static function select_time($type, $name, $currenttime = 0, $step = 5, array $attributes = null, $timezone = 99)
+    public static function select_time($type, $name, $currenttime = 0, $step = 5, array $attributes = null)
     {
     }
     /**

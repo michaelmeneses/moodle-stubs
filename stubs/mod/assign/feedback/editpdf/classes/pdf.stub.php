@@ -284,7 +284,7 @@ class pdf extends TcpdfFpdi
     {
     }
     /**
-     * Flatten and convert file using ghostscript then load pdf.
+     * Check to see if PDF is version 1.4 (or below); if not: use ghostscript to convert it
      *
      * @param   string $tempsrc The path to the file on disk.
      * @return  string path to copy or converted pdf (false == fail)

@@ -403,8 +403,7 @@ function question_categorylist($categoryid): array
 {
 }
 /**
- * Get all parent categories of a given question category in descending order.
- *
+ * Get all parent categories of a given question category in decending order.
  * @param int $categoryid for which you want to find the parents.
  * @return array of question category ids of all parents categories.
  */

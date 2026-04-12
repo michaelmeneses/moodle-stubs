@@ -110,15 +110,6 @@ class profile_field_base
     {
     }
     /**
-     * Display the name of the profile field.
-     *
-     * @param bool $escape
-     * @return string
-     */
-    public function display_name(bool $escape = true): string
-    {
-    }
-    /**
      * Print out the form field in the edit profile page
      * @param MoodleQuickForm $mform instance of the moodleform class
      * @return bool
@@ -343,15 +334,6 @@ class profile_field_base
      * @since Moodle 3.2
      */
     public function get_field_properties()
-    {
-    }
-    /**
-     * Whether to display the field and content to the user
-     *
-     * @param context|null $context
-     * @return bool
-     */
-    public function show_field_content(?context $context = null): bool
     {
     }
     /**

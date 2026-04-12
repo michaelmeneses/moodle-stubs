@@ -68,17 +68,6 @@ class cm_completion_details
     {
     }
     /**
-     * Returns whether the overall completion state of this course module should be marked as complete or not.
-     * This is based on the completion settings of the course module, so when the course module requires a passing grade,
-     * it will only be marked as complete when the user has passed the course module. Otherwise, it will be marked as complete
-     * even when the user has failed the course module.
-     *
-     * @return bool True when the module can be marked as completed.
-     */
-    public function is_overall_complete(): bool
-    {
-    }
-    /**
      * Whether this activity module has completion enabled.
      *
      * @return bool

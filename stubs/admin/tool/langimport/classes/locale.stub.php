@@ -57,13 +57,4 @@ class locale
     protected function set_locale(int $category = LC_ALL, string $locale = '0')
     {
     }
-    /**
-     * Get the current locale.
-     *
-     * @param int $category
-     * @return string|false
-     */
-    protected function get_locale(int $category = LC_ALL): string|false
-    {
-    }
 }

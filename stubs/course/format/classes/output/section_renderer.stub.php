@@ -46,7 +46,9 @@ abstract class section_renderer extends core_course_renderer
     /**
      * Constructor method, calls the parent constructor.
      *
-     * Note: this method also helps for compatibilitiy with legacy course formats. Legacy formats
+     * @deprecated since 4.0
+     *
+     * Note: this method exists only for compatibilitiy with legacy course formats. Legacy formats
      * depends on $this->courserenderer to access the course renderer methods. Since Moodle 4.0
      * core_courseformat\output\section_renderer extends core_course_renderer and all metdhos can be used directly from $this.
      *

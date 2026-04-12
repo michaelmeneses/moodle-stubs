@@ -31,7 +31,7 @@ abstract class qtype_multichoice_renderer_base extends qtype_with_combined_feedb
     /**
      * Whether a choice should be considered right, wrong or partially right.
      * @param question_answer $ans representing one of the choices.
-     * @return float 1.0, 0.0 or something in between, respectively.
+     * @return fload 1.0, 0.0 or something in between, respectively.
      */
     abstract protected function is_right(question_answer $ans);
     abstract protected function prompt();

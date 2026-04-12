@@ -37,7 +37,7 @@ class qbank_helper
      * Get the available versions of a question where one of the version has the given question id.
      *
      * @param int $questionid id of a question.
-     * @return stdClass[] other versions of this question. Each object has fields versionid,
+     * @return \stdClass[] other versions of this question. Each object has fields versionid,
      *       version and questionid. Array is returned most recent version first.
      */
     public static function get_version_options(int $questionid): array
@@ -56,77 +56,41 @@ class qbank_helper
      *   randomtags, and note that these also have a ->name set and ->qtype set to 'random'.
      *
      * @param int $quizid the id of the quiz to load the data for.
-     * @param context_module $quizcontext the context of this quiz.
+     * @param \context_module $quizcontext the context of this quiz.
      * @param int|null $slotid optional, if passed only load the data for this one slot (if it is in this quiz).
      * @return array indexed by slot, with information about the content of each slot.
      */
-    public static function get_question_structure(int $quizid, context_module $quizcontext, int $slotid = null): array
+    public static function get_question_structure(int $quizid, \context_module $quizcontext, int $slotid = null): array
     {
     }
     /**
      * Get this list of random selection tag ids from one of the slots returned by get_question_structure.
      *
-     * @param stdClass $slotdata one of the array elements returned by get_question_structure.
+     * @param \stdClass $slotdata one of the array elements returned by get_question_structure.
      * @return array list of tag ids.
      */
-    public static function get_tag_ids_for_slot(stdClass $slotdata): array
+    public static function get_tag_ids_for_slot(\stdClass $slotdata): array
     {
     }
     /**
      * Given a slot from the array returned by get_question_structure, describe the random question it represents.
      *
-     * @param stdClass $slotdata one of the array elements returned by get_question_structure.
+     * @param \stdClass $slotdata one of the array elements returned by get_question_structure.
      * @return string that can be used to display the random slot.
      */
-    public static function describe_random_question(stdClass $slotdata): string
+    public static function describe_random_question(\stdClass $slotdata): string
     {
     }
     /**
      * Choose question for redo in a particular slot.
      *
      * @param int $quizid the id of the quiz to load the data for.
-     * @param context_module $quizcontext the context of this quiz.
+     * @param \context_module $quizcontext the context of this quiz.
      * @param int $slotid optional, if passed only load the data for this one slot (if it is in this quiz).
      * @param qubaid_condition $qubaids attempts to consider when avoiding picking repeats of random questions.
      * @return int the id of the question to use.
      */
-    public static function choose_question_for_redo(int $quizid, context_module $quizcontext, int $slotid, qubaid_condition $qubaids): int
-    {
-    }
-    /**
-     * Check all the questions in an attempt and return information about their versions.
-     *
-     * Once a quiz attempt has been started, it continues to use the version of each question
-     * it was started with. This checks the version used for each question, against the
-     * quiz settings for that slot, and returns which version would be used if the quiz
-     * attempt was being started now.
-     *
-     * There are several cases for each slot:
-     * - If this slot is currently set to use version 'Always latest' (which includes
-     *   random slots) and if there is now a newer version than the one in the attempt,
-     *   use that.
-     * - If the slot is currently set to use a fixed version of the question, and that
-     *   is different from the version currently in the attempt, use that.
-     * - Otherwise, use the same version.
-     *
-     * This is used in places like the re-grade code.
-     *
-     * The returned data probably contains a bit more information than is strictly needed,
-     * (see the SQL for details) but returning a few extra ints is fast, and this could
-     * prove invaluable when debugging. The key information is probably:
-     * - questionattemptslot <-- array key
-     * - questionattemptid
-     * - currentversion
-     * - currentquestionid
-     * - newversion
-     * - newquestionid
-     *
-     * @param stdClass $attempt a quiz_attempt database row.
-     * @param context_module $quizcontext the quiz context for the quiz the attempt belongs to.
-     * @return array for each question_attempt in the quiz attempt, information about whether it is using
-     *      the latest version of the question. Array indexed by questionattemptslot.
-     */
-    public static function get_version_information_for_questions_in_attempt(stdClass $attempt, context_module $quizcontext): array
+    public static function choose_question_for_redo(int $quizid, \context_module $quizcontext, int $slotid, qubaid_condition $qubaids): int
     {
     }
 }

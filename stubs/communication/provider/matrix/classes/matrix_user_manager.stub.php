@@ -32,10 +32,6 @@ namespace communication_matrix;
 class matrix_user_manager
 {
     /**
-     * Prefix for Matrix usernames when they are detected as numeric.
-     */
-    const MATRIX_USER_PREFIX = 'user';
-    /**
      * Gets matrix user id from moodle.
      *
      * @param int $userid Moodle user id

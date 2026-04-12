@@ -56,9 +56,6 @@ class edit_action extends question_action_base
     public function init(): void
     {
     }
-    public function get_menu_position(): int
-    {
-    }
     /**
      * Get the URL for editing a question as a link.
      *

@@ -689,7 +689,7 @@ function mod_quiz_core_calendar_get_event_action_string(string $eventtype): stri
 {
 }
 /**
- * Delete all question references for a quiz.
+ * Delete question reference data.
  *
  * @param int $quizid The id of quiz.
  */
@@ -724,15 +724,5 @@ function build_required_parameters_for_custom_view(array $params, array $extrapa
  * @return all_calculated_for_qubaid_condition|null The statistics for this quiz, if available, else null.
  */
 function mod_quiz_calculate_question_stats(context $context): ?all_calculated_for_qubaid_condition
-{
-}
-/**
- * Return a list of all the user preferences used by mod_quiz.
- *
- * @uses core_user::is_current_user
- *
- * @return array[]
- */
-function mod_quiz_user_preferences(): array
 {
 }

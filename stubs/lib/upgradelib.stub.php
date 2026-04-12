@@ -200,9 +200,10 @@ function upgrade_main_savepoint($result, $version, $allowabort = true)
  *
  * @category upgrade
  * @param bool $result false if upgrade step failed, true if completed
- * @param string|float $version main version
+ * @param string or float $version main version
  * @param string $modname name of module
  * @param bool $allowabort allow user to abort script execution here
+ * @return void
  */
 function upgrade_mod_savepoint($result, $version, $modname, $allowabort = true)
 {
@@ -214,24 +215,26 @@ function upgrade_mod_savepoint($result, $version, $modname, $allowabort = true)
  *
  * @category upgrade
  * @param bool $result false if upgrade step failed, true if completed
- * @param string|float $version main version
+ * @param string or float $version main version
  * @param string $blockname name of block
  * @param bool $allowabort allow user to abort script execution here
+ * @return void
  */
 function upgrade_block_savepoint($result, $version, $blockname, $allowabort = true)
 {
 }
 /**
- * Plugins upgrade savepoint, marks end of plugin upgrade blocks
+ * Plugins upgrade savepoint, marks end of blocks upgrade blocks
  * It stores plugin version, resets upgrade timeout
  * and abort upgrade if user cancels page loading.
  *
  * @category upgrade
  * @param bool $result false if upgrade step failed, true if completed
- * @param string|float $version main version
+ * @param string or float $version main version
  * @param string $type The type of the plugin.
  * @param string $plugin The name of the plugin.
  * @param bool $allowabort allow user to abort script execution here
+ * @return void
  */
 function upgrade_plugin_savepoint($result, $version, $type, $plugin, $allowabort = true)
 {
@@ -692,27 +695,5 @@ function check_xmlrpc_usage(environment_results $result): ?environment_results
  * @return environment_results|null
  */
 function check_mod_assignment(environment_results $result): ?environment_results
-{
-}
-/**
- * Check whether the Oracle database is currently being used and warn if so.
- *
- * The Oracle database support will be removed in a future version (4.5) as it is no longer supported by PHP.
- *
- * @param environment_results $result object to update, if relevant
- * @return environment_results|null updated results or null if the current database is not Oracle.
- *
- * @see https://tracker.moodle.org/browse/MDL-80166 for further information.
- */
-function check_oracle_usage(environment_results $result): ?environment_results
-{
-}
-/**
- * Check if asynchronous backups are enabled.
- *
- * @param environment_results $result
- * @return environment_results|null
- */
-function check_async_backup(environment_results $result): ?environment_results
 {
 }

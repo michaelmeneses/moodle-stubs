@@ -20,13 +20,20 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+/**
+ * Report plugins helper class
+ *
+ * @package core
+ * @subpackage report
+ * @copyright 2021 Sujith Haridasan
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 namespace core;
 
 /**
  * A helper class with static methods to help report plugins
  *
  * @package core
- * @subpackage report
  * @copyright 2021 Sujith Haridasan
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -36,9 +43,9 @@ class report_helper
      * Print the selector dropdown
      *
      * @param string $pluginname The report plugin where the header is modified
-     * @param string $additional Additional content to display aligned with the selector
+     * @return void
      */
-    public static function print_report_selector(string $pluginname, string $additional = ''): void
+    public static function print_report_selector(string $pluginname): void
     {
     }
     /**
@@ -50,19 +57,6 @@ class report_helper
      * @return void
      */
     public static function save_selected_report(int $id, moodle_url $url): void
-    {
-    }
-    /**
-     * Retrieve the right SQL / params for the group filter depending on the filterparams, course and group settings.
-     *
-     * Addionnaly, it will return the list of users visible by the current user so
-     * it can be used to filter out records that are not visible. This is mainly
-     * because we cannot use joins as the log tables can be in two different databases.
-     *
-     * @param stdClass $filterparams
-     * @return array
-     */
-    public static function get_group_filter(stdClass $filterparams): array
     {
     }
 }

@@ -347,6 +347,7 @@ function forum_count_discussion_replies($forumid, $forumsort = "", $limit = -1, 
  * @global object
  * @global object
  * @global object
+ * @staticvar array $cache
  * @param object $forum
  * @param object $cm
  * @param object $course

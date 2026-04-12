@@ -43,9 +43,6 @@ class tags_action extends question_action_base
     public function init(): void
     {
     }
-    public function get_menu_position(): int
-    {
-    }
     protected function check_tags_status(): void
     {
     }

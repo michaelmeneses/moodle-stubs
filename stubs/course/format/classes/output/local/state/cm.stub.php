@@ -25,27 +25,29 @@ namespace core_courseformat\output\local\state;
 /**
  * Contains the ajax update course module structure.
  *
- * @package   core_courseformat
+ * @package   core_course
  * @copyright 2021 Ferran Recio <ferran@moodle.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class cm implements renderable
 {
+    /** @var course_format the course format class */
+    protected $format;
+    /** @var section_info the course section class */
+    protected $section;
+    /** @var bool if cmitem HTML content must be exported as well */
+    protected $exportcontent;
+    /** @var cm_info the course module to display */
+    protected $cm;
     /**
      * Constructor.
+     *
+     * @param course_format $format the course format
+     * @param section_info $section the section data
+     * @param cm_info $cm the course module data
+     * @param bool $exportcontent = false if pre-rendered cmitem must be exported.
      */
-    public function __construct(
-        /** @var course_format $format The course format. */
-        protected course_format $format,
-        /** @var section_info $section The section data. */
-        protected section_info $section,
-        /** @var cm_info $cm The course module data. */
-        protected cm_info $cm,
-        /** @var bool $exportcontent False if pre-rendered cmitem HTML content must be exported. */
-        protected bool $exportcontent = false,
-        /** @var ?bool $istrackeduser If is_tracked_user is pre-computed for this CM's course, it can be provided here. */
-        protected ?bool $istrackeduser = null
-    )
+    public function __construct(course_format $format, section_info $section, cm_info $cm, bool $exportcontent = false)
     {
     }
     /**

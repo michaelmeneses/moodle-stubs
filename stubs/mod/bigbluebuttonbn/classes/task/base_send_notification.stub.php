@@ -60,9 +60,9 @@ abstract class base_send_notification extends adhoc_task
     /**
      * Get the bigbluebutton instance that this notification is for.
      *
-     * @return instance|null null if the instance could not be loaded.
+     * @return instance
      */
-    protected function get_instance(): ?instance
+    protected function get_instance(): instance
     {
     }
     /**

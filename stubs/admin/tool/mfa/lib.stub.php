@@ -57,8 +57,8 @@ function tool_mfa_bulk_user_actions(): array
 /**
  * Serves any files for the guidance page.
  *
- * @param stdClass|null $course
- * @param stdClass|null $cm
+ * @param stdClass $course
+ * @param stdClass $cm
  * @param context $context
  * @param string $filearea
  * @param array $args
@@ -66,6 +66,6 @@ function tool_mfa_bulk_user_actions(): array
  * @param array $options
  * @return bool
  */
-function tool_mfa_pluginfile(stdClass|null $course, stdClass|null $cm, context $context, string $filearea, array $args, bool $forcedownload, array $options = []): bool
+function tool_mfa_pluginfile(stdClass $course, stdClass $cm, context $context, string $filearea, array $args, bool $forcedownload, array $options = []): bool
 {
 }

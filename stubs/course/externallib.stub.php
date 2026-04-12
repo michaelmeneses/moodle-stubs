@@ -85,16 +85,6 @@ class core_course_external extends external_api
     {
     }
     /**
-     * Return array of all editable course custom fields indexed by their shortname
-     *
-     * @param \context $context
-     * @param int $courseid
-     * @return \core_customfield\field_controller[]
-     */
-    public static function get_editable_customfields(\context $context, int $courseid = 0): array
-    {
-    }
-    /**
      * Returns description of method parameters
      *
      * @return external_function_parameters
@@ -913,6 +903,7 @@ class core_course_external extends external_api
      * @param int $groupid Group id from which the users will be obtained
      * @param bool $onlyactive Whether to return only the active enrolled users or all enrolled users in the course.
      * @return array List of users
+     * @throws invalid_parameter_exception
      */
     public static function get_enrolled_users_by_cmid(int $cmid, int $groupid = 0, bool $onlyactive = false)
     {

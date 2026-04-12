@@ -1369,7 +1369,7 @@ function create_event_draft_file_deleted(context $context, stored_file $storedfi
  * @param string $filearea filearea
  * @param int $itemid the item id
  * @param array $files Array of files object with each item having filename/filepath as values
- * @return false|stdClass $return Object containing URL of zip archive and a file path
+ * @return array $return Array of strings matching up to the parent directory of the deleted files
  * @throws coding_exception
  */
 function repository_download_selected_files($context, string $component, string $filearea, $itemid, array $files)

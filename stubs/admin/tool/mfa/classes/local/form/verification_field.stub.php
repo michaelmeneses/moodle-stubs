@@ -45,16 +45,16 @@ class verification_field extends \MoodleQuickForm_text
     public function __construct($attributes = null, $auth = true)
     {
     }
+    // @codingStandardsIgnoreStart
     /**
      * Returns HTML for this form element.
-     *
-     * phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
      *
      * @return string
      */
     public function toHtml(): string
     {
     }
+    // @codingStandardsIgnoreEnd
     /**
      * Setup and return the script for autosubmission while inside the secure layout.
      *

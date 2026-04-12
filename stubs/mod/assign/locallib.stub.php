@@ -97,8 +97,6 @@ class assign
     private static $modulenameplural = null;
     /** @var array of marking workflow states for the current user */
     private $markingworkflowstates = null;
-    /** @var array of all marking workflow states */
-    private $allmarkingworkflowstates = null;
     /** @var bool whether to exclude users with inactive enrolment */
     private $showonlyactiveenrol = null;
     /** @var string A key used to identify userlists created by this object. */
@@ -2158,14 +2156,6 @@ class assign
      * @return array of state => description
      */
     public function get_marking_workflow_states_for_current_user()
-    {
-    }
-    /**
-     * Get the list of marking_workflow states.
-     *
-     * @return array Array of multiple state => description.
-     */
-    public function get_all_marking_workflow_states(): array
     {
     }
     /**

@@ -111,16 +111,6 @@ class recording_proxy extends proxy_base
     {
     }
     /**
-     * Helper function to retrieve recordings that failed to be fetched from a BigBlueButton server.
-     *
-     * @param array $keyids list of recordingids
-     * @return array array of recording recordingids not fetched from server
-     *  and sorted by {@see recording_proxy::sort_recordings}
-     */
-    public static function fetch_missing_recordings(array $keyids = []): array
-    {
-    }
-    /**
      * Helper function to fetch recordings from a BigBlueButton server.
      *
      * @param array $keyids list of meetingids

@@ -72,12 +72,6 @@ abstract class base
     {
     }
     /**
-     * Return user friendly name of the report
-     *
-     * @return string
-     */
-    abstract public static function get_name(): string;
-    /**
      * Initialise report. Specify which columns, filters, etc should be present
      *
      * To set the base query use:
@@ -480,9 +474,9 @@ abstract class base
      * Set if the report can be downloaded.
      *
      * @param bool $downloadable
-     * @param string|null $downloadfilename If downloadable, then the name of the file (defaults to the name of the current report)
+     * @param string $downloadfilename If the report is downloadable, then a filename should be provided here
      */
-    final public function set_downloadable(bool $downloadable, ?string $downloadfilename = null): void
+    final public function set_downloadable(bool $downloadable, string $downloadfilename = 'export'): void
     {
     }
     /**
@@ -520,9 +514,8 @@ abstract class base
     /**
      * Set the default lang string for the notice used when no results are found.
      *
-     * Note this should be called from within the report class instance itself (ideally it would be protected)
-     *
      * @param lang_string|null $notice string, or null to tell the report to omit the notice entirely.
+     * @return void
      */
     public function set_default_no_results_notice(?lang_string $notice): void
     {

@@ -15,9 +15,9 @@
 class qtype_calculated extends question_type
 {
     /**
-     * @var string a placeholder is a letter, followed by zero or more alphanum chars (as well as space, - and _ for readability).
+     * @var string a placeholder is a letter, followed by almost any characters. (This should probably be restricted more.)
      */
-    const PLACEHOLDER_REGEX_PART = '[[:alpha:]][[:alpha:][:digit:]\-_\s]*';
+    const PLACEHOLDER_REGEX_PART = '[[:alpha:]][^>} <`{"\']*';
     /**
      * @var string REGEXP for a placeholder, wrapped in its {...} delimiters, with capturing brackets around the name.
      */

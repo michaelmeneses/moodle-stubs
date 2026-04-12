@@ -20,6 +20,13 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+/**
+ * Class for exporting stored_file data.
+ *
+ * @package    core_files
+ * @copyright  2015 Frédéric Massart - FMCorz.net
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 namespace core_files\external;
 
 /**
@@ -31,8 +38,6 @@ namespace core_files\external;
  */
 class stored_file_exporter extends \core\external\exporter
 {
-    /** @var int Length of the shortened filename */
-    protected const FILENAMESHORT_LENGTH = 25;
     /** @var stored_file */
     protected $file;
     public function __construct(stored_file $file, $related = array())

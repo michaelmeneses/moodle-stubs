@@ -528,11 +528,9 @@ function data_numentries($data, $userid = null)
  * @param object $data
  * @param int $groupid
  * @param int $userid
- * @param bool $approved If specified, and the user has the capability to approve entries, then this value
- *      will be used as the approved status of the new record
  * @return bool
  */
-function data_add_record($data, $groupid = 0, $userid = null, bool $approved = true)
+function data_add_record($data, $groupid = 0, $userid = null)
 {
 }
 /**

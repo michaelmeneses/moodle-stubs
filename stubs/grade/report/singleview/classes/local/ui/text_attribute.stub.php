@@ -46,21 +46,6 @@ class text_attribute extends element
     /** @var bool If this is a read-only input. */
     private bool $isreadonly;
     /**
-     * @var string|null The input type to pass to the template.
-     *                  This defaults to text but can be overridden to number for grade inputs.
-     */
-    private $type = null;
-    /**
-     * @var string|null The value to set for the input's `min` attribute.
-     *                  This is set if a minimum grade is provided for the grade input field.
-     */
-    private $min = null;
-    /**
-     * @var string|null The value to set for the input's `max` attribute.
-     *                  This is set if a maximum grade is provided for the grade input field.
-     */
-    private $max = null;
-    /**
      * Constructor
      *
      * @param string $name The input name (the first bit)
@@ -84,33 +69,6 @@ class text_attribute extends element
      * @return string The HTML.
      */
     public function html(): string
-    {
-    }
-    /**
-     * Input type setter.
-     *
-     * @param string|null $type
-     * @return void
-     */
-    public function set_type(?string $type): void
-    {
-    }
-    /**
-     * Min attribute setter.
-     *
-     * @param string|null $min
-     * @return void
-     */
-    public function set_min(?string $min): void
-    {
-    }
-    /**
-     * Max attribute setter.
-     *
-     * @param string|null $max
-     * @return void
-     */
-    public function set_max(?string $max): void
     {
     }
 }

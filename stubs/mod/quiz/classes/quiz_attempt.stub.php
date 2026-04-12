@@ -41,8 +41,6 @@ class quiz_attempt
     const ABANDONED = 'abandoned';
     /** @var int maximum number of slots in the quiz for the review page to default to show all. */
     const MAX_SLOTS_FOR_DEFAULT_REVIEW_SHOW_ALL = 50;
-    /** @var int amount of time considered 'immedately after the attempt', in seconds. */
-    const IMMEDIATELY_AFTER_PERIOD = 2 * MINSECS;
     /** @var quiz_settings object containing the quiz settings. */
     protected $quizobj;
     /** @var stdClass the quiz_attempts row. */
@@ -1252,19 +1250,6 @@ class quiz_attempt
      * @return int
      */
     public function get_number_of_unanswered_questions(): int
-    {
-    }
-    /**
-     * If any questions in this attempt have changed, update the attempts.
-     *
-     * For now, this should only be done for previews.
-     *
-     * When we update the question, we keep the same question (in the case of random questions)
-     * and the same variant (if this question has variants). If possible, we use regrade to
-     * preserve any interaction that has been had with this question (e.g. a saved answer) but
-     * if that is not possible, we put in a newly started attempt.
-     */
-    public function update_questions_to_new_version_if_changed(): void
     {
     }
 }
