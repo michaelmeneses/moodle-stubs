@@ -148,5 +148,16 @@ abstract class base_testcase extends PHPUnit\Framework\TestCase
     protected static function getNodeText(DOMNode $node)
     {
     }
+    /**
+     * Helper to get the count of invocation.
+     *
+     * This is required because the method to use changed names in PHPUnit 10.0 in a breaking change.
+     *
+     * @param \PHPUnit\Framework\MockObject\Rule\InvocationOrder $counter
+     * @return int
+     */
+    protected static function getInvocationCount(InvocationOrder $counter): int
+    {
+    }
     // phpcs:enable
 }

@@ -78,12 +78,7 @@ class provider extends \core_ai\provider
     public function add_authentication_headers(RequestInterface $request): RequestInterface
     {
     }
-    /**
-     * Check if the request is allowed by the rate limiter.
-     *
-     * @param aiactions\base $action The action to check.
-     * @return array|bool True on success, array of error details on failure.
-     */
+    #[\Override]
     public function is_request_allowed(aiactions\base $action): array|bool
     {
     }
