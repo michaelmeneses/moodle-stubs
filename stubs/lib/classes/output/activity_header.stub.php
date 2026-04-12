@@ -63,6 +63,10 @@ class activity_header implements \renderable, \templatable
     /**
      * Checks if the theme has specified titles to be displayed.
      *
+     * First checks if the current layout has the notitle option set. If it is, uses that option to decide whether the title is
+     * displayed. If not, then checks whether the theme has the notitle option set and uses that. If neither is set, the title
+     * is allowed by default.
+     *
      * @return bool
      */
     public function is_title_allowed(): bool

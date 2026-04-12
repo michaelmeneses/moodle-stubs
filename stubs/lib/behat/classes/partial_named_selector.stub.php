@@ -200,7 +200,13 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
     XPATH, 'inplaceeditable' => <<<XPATH
     .//descendant::span[@data-inplaceeditable][descendant::a[%titleMatch%]]
     XPATH, 'date_time' => <<<XPATH
-    .//fieldset[(%idMatch% or ./legend[%exactTagTextMatch%]) and (@data-fieldtype='date' or @data-fieldtype='date_time')]
+    .//*[
+        (%idMatch% or ./legend[%exactTagTextMatch%]
+            or parent::div[@data-groupname=%locator% or ./label[contains(normalize-space(string(.)), %locator%)]]
+        ) and
+        (@data-fieldtype='date' or @data-fieldtype='date_time'
+            or @data-fieldtype='date_selector' or @data-fieldtype='date_time_selector')
+    ]
     XPATH, 'select_menu' => <<<XPATH
     //*[@role='combobox'][@aria-labelledby = //label[contains(normalize-space(string(.)), %locator%)]/@id]
     XPATH]];

@@ -36,15 +36,7 @@ class course extends base
     {
     }
     /**
-     * Get custom fields helper
-     *
-     * @return custom_fields
-     */
-    protected function get_custom_fields(): custom_fields
-    {
-    }
-    /**
-     * Initialise the entity, adding all course and custom course fields
+     * Initialise the entity
      *
      * @return base
      */

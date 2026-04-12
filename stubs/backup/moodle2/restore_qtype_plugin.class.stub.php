@@ -119,7 +119,8 @@ abstract class restore_qtype_plugin extends restore_plugin
      *
      * Only common stuff to all plugins, in this case:
      * - question: text and feedback
-     * - question_answers: text and feedbak
+     * - question_answers: text and feedback
+     * - question_hints: hint
      *
      * Note each qtype will have, if needed, its own define_decode_contents method
      */

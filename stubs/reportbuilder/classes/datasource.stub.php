@@ -154,9 +154,10 @@ abstract class datasource extends base
      * Override parent method, returning only those conditions specifically added to the custom report (rather than all that are
      * available)
      *
+     * @param bool $checkavailable
      * @return filter[]
      */
-    public function get_active_conditions(): array
+    public function get_active_conditions(bool $checkavailable = true): array
     {
     }
     /**
