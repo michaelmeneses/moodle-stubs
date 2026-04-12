@@ -84,6 +84,7 @@ class Horde_Mail_Rfc822_Group extends Horde_Mail_Rfc822_Object implements Counta
      *
      * @return integer  The number of addresses.
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
     }

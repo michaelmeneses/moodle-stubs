@@ -150,4 +150,17 @@ class Horde_Stream_TempString extends Horde_Stream_Temp
     public function unserialize($data)
     {
     }
+    /**
+     * @return array
+     */
+    public function __serialize()
+    {
+    }
+    /**
+     * @param array $data
+     * @return void
+     */
+    public function __unserialize($data)
+    {
+    }
 }

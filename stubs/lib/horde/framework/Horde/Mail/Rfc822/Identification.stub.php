@@ -47,7 +47,7 @@ class Horde_Mail_Rfc822_Identification extends Horde_Mail_Rfc822
     /**
      * Parse an identification header.
      *
-     * @param string $value  Identification field value to parse.
+     * @param string|null $value  Identification field value to parse.
      */
     public function parse($value)
     {

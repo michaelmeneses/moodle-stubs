@@ -109,12 +109,14 @@ class Horde_Imap_Client_Interaction_Pipeline implements Countable, IteratorAggre
     /* Countable methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function count()
     {
     }
     /* IteratorAggregate methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function getIterator()
     {
     }

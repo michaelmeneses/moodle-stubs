@@ -41,6 +41,18 @@ class data_field_picture extends data_field_base
     function display_add_field($recordid = 0, $formdata = null)
     {
     }
+    /**
+     * Validate the image field type parameters.
+     *
+     * This will check for valid numeric values in the width and height fields.
+     *
+     * @param stdClass $fieldinput the field input data
+     * @return array array of error messages if width or height parameters are not numeric
+     * @throws coding_exception
+     */
+    public function validate(stdClass $fieldinput): array
+    {
+    }
     // TODO delete this function and instead subclass data_field_file - see MDL-16493
     function get_file($recordid, $content = null)
     {

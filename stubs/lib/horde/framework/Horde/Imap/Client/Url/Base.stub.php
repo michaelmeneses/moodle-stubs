@@ -103,4 +103,13 @@ abstract class Horde_Imap_Client_Url_Base implements Serializable
     public function unserialize($data)
     {
     }
+    /**
+     * @return array
+     */
+    public function __serialize()
+    {
+    }
+    public function __unserialize(array $data)
+    {
+    }
 }

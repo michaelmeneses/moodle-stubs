@@ -39,9 +39,11 @@ namespace tool_task\check;
 class maxfaildelay extends check
 {
     /**
-     * Constructor
+     * Links to the task log report
+     *
+     * @return \action_link|null
      */
-    public function __construct()
+    public function get_action_link(): ?\action_link
     {
     }
     /**

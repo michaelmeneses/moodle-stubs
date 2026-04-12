@@ -36,12 +36,14 @@ class Horde_Imap_Client_Data_Format_Filter_Quote extends php_user_filter
     protected $_prepend;
     /**
      */
+    #[ReturnTypeWillChange]
     public function onCreate()
     {
     }
     /**
      * @see stream_filter_register()
      */
+    #[ReturnTypeWillChange]
     public function filter($in, $out, &$consumed, $closing)
     {
     }

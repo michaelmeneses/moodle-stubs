@@ -83,11 +83,13 @@ class Horde_Imap_Client_Data_SearchCharset implements Serializable, SplSubject
     /* SplSubject methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function attach(SplObserver $observer)
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function detach(SplObserver $observer)
     {
     }
@@ -95,6 +97,7 @@ class Horde_Imap_Client_Data_SearchCharset implements Serializable, SplSubject
      * Notification is triggered internally whenever the object's internal
      * data storage is altered.
      */
+    #[ReturnTypeWillChange]
     public function notify()
     {
     }
@@ -107,6 +110,15 @@ class Horde_Imap_Client_Data_SearchCharset implements Serializable, SplSubject
     /**
      */
     public function unserialize($data)
+    {
+    }
+    /**
+     * @return array
+     */
+    public function __serialize()
+    {
+    }
+    public function __unserialize(array $data)
     {
     }
 }

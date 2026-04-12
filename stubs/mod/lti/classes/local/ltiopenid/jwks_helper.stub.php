@@ -39,6 +39,12 @@ namespace mod_lti\local\ltiopenid;
 class jwks_helper
 {
     /**
+     *
+     * See https://www.imsglobal.org/spec/security/v1p1#approved-jwt-signing-algorithms.
+     * @var string[]
+     */
+    private static $ltisupportedalgs = ['RS256' => 'RSA', 'RS384' => 'RSA', 'RS512' => 'RSA', 'ES256' => 'EC', 'ES384' => 'EC', 'ES512' => 'EC'];
+    /**
      * Returns the private key to use to sign outgoing JWT.
      *
      * @return array keys are kid and key in PEM format.
@@ -51,6 +57,24 @@ class jwks_helper
      * @return array keyset exposting the site public key.
      */
     public static function get_jwks()
+    {
+    }
+    /**
+     * Take an array of JWKS keys and infer the 'alg' property for a single key, if missing, based on an input JWT.
+     *
+     * This only sets the 'alg' property for a single key when all the following conditions are met:
+     * - The key's 'kid' matches the 'kid' provided in the JWT's header.
+     * - The key's 'alg' is missing.
+     * - The JWT's header 'alg' matches the algorithm family of the key (the key's kty).
+     * - The JWT's header 'alg' matches one of the approved LTI asymmetric algorithms.
+     *
+     * Keys not matching the above are left unchanged.
+     *
+     * @param array $jwks the keyset array.
+     * @param string $jwt the JWT string.
+     * @return array the fixed keyset array.
+     */
+    public static function fix_jwks_alg(array $jwks, string $jwt): array
     {
     }
 }

@@ -67,47 +67,56 @@ class Horde_Imap_Client_Data_AclRights extends Horde_Imap_Client_Data_AclCommon 
     /* ArrayAccess methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetExists($offset)
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
     }
     /* Iterator methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function current()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function key()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function next()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function rewind()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function valid()
     {
     }
@@ -120,6 +129,15 @@ class Horde_Imap_Client_Data_AclRights extends Horde_Imap_Client_Data_AclCommon 
     /**
      */
     public function unserialize($data)
+    {
+    }
+    /**
+     * @return array
+     */
+    public function __serialize()
+    {
+    }
+    public function __unserialize(array $data)
     {
     }
 }

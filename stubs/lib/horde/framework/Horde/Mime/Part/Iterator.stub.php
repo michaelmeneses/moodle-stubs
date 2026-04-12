@@ -60,32 +60,38 @@ class Horde_Mime_Part_Iterator implements Countable, Iterator
      *
      * @return integer  Number of message parts.
      */
+    #[ReturnTypeWillChange]
     public function count()
     {
     }
     /* RecursiveIterator methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function current()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function key()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function next()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function rewind()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function valid()
     {
     }

@@ -92,7 +92,7 @@ function question_edit_setup($edittab, $baseurl, $requirecmid = false, $unused =
  *      'cpage' => PARAM_INT,
  *      'recurse' => PARAM_BOOL,
  *      'showhidden' => PARAM_BOOL,
- *      'qbshowtext' => PARAM_BOOL,
+ *      'qbshowtext' => PARAM_INT,
  *      'qtagids' => [PARAM_INT], (array of integers)
  *      'qbs1' => PARAM_TEXT,
  *      'qbs2' => PARAM_TEXT,

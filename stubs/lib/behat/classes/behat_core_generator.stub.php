@@ -99,6 +99,14 @@ class behat_core_generator extends behat_generator_base
     {
     }
     /**
+     * Imports a langpack.
+     *
+     * @param array $data
+     */
+    protected function process_langpack($data)
+    {
+    }
+    /**
      * Adapter to enrol_user() data generator.
      *
      * @throws Exception

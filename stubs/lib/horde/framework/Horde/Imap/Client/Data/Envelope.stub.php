@@ -89,4 +89,13 @@ class Horde_Imap_Client_Data_Envelope implements Serializable
     public function unserialize($data)
     {
     }
+    /**
+     * @return array
+     */
+    public function __serialize()
+    {
+    }
+    public function __unserialize(array $data)
+    {
+    }
 }

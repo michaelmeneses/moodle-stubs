@@ -331,4 +331,20 @@ class graph
     function draw_brush($x, $y, $size, $type, $colour)
     {
     }
+    /**
+     * Moodle.
+     *
+     * A replacement for deprecated ImageDashedLine function.
+     *
+     * @param resource|GdImage $image
+     * @param int $x1 — x-coordinate for first point.
+     * @param int $y1 — y-coordinate for first point.
+     * @param int $x2 — x-coordinate for second point.
+     * @param int $y2 — y-coordinate for second point.
+     * @param int $color
+     * @return void
+     */
+    private function image_dashed_line($image, $x1, $y1, $x2, $y2, $colour): void
+    {
+    }
 }

@@ -150,11 +150,13 @@ class Horde_Imap_Client_Tokenize implements Iterator
     /* Iterator methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function current()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function key()
     {
     }
@@ -162,6 +164,7 @@ class Horde_Imap_Client_Tokenize implements Iterator
      * @return mixed  Either a string, boolean (true for open paren, false for
      *                close paren/EOS), Horde_Stream object, or null.
      */
+    #[ReturnTypeWillChange]
     public function next()
     {
     }
@@ -175,11 +178,13 @@ class Horde_Imap_Client_Tokenize implements Iterator
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function rewind()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function valid()
     {
     }

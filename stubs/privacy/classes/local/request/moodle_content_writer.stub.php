@@ -20,13 +20,6 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-/**
- * This file contains the moodle format implementation of the content writer.
- *
- * @package core_privacy
- * @copyright 2018 Andrew Nicols <andrew@nicols.co.uk>
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 namespace core_privacy\local\request;
 
 /**
@@ -37,6 +30,7 @@ namespace core_privacy\local\request;
  *
  * Objects of data are stored as JSON.
  *
+ * @package core_privacy
  * @copyright 2018 Andrew Nicols <andrew@nicols.co.uk>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

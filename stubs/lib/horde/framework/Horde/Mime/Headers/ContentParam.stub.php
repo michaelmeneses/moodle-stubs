@@ -129,31 +129,57 @@ class Horde_Mime_Headers_ContentParam extends Horde_Mime_Headers_Element_Single 
     /* ArrayAccess methods */
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetExists($offset)
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
     }
     /* Serializable methods */
     /**
+     * Serialize (until PHP 7.3)
+     * 
+     * @return string serialized object state
      */
     public function serialize()
     {
     }
     /**
+     * Serialize (PHP 7.4+)
+     *
+     * @return array object state
+     */
+    public function __serialize(): array
+    {
+    }
+    /**
+     * Unserialize (PHP 7.4+)
+     * 
+     * @param array $data
+     */
+    public function __unserialize(array $data): void
+    {
+    }
+    /**
+     * Unserialize (until PHP 7.3)
+     * 
+     * @param string $data
      */
     public function unserialize($data)
     {

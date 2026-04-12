@@ -9,8 +9,10 @@
 /**
  * Get the current user preferences that are available
  *
- * @return Array preferences configuration
+ * @uses core_user::is_current_user
+ *
+ * @return array[] preferences configuration
  */
-function core_contentbank_user_preferences()
+function core_contentbank_user_preferences(): array
 {
 }

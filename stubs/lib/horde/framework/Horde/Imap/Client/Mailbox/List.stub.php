@@ -84,12 +84,14 @@ class Horde_Imap_Client_Mailbox_List implements Countable, IteratorAggregate
     /* Countable methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function count()
     {
     }
     /* IteratorAggregate methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function getIterator()
     {
     }

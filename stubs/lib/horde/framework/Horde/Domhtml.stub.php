@@ -124,26 +124,31 @@ class Horde_Domhtml implements Iterator
     /* Iterator methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function current()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function key()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function next()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function rewind()
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function valid()
     {
     }

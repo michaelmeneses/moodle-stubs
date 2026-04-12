@@ -794,4 +794,15 @@ trait behat_session_trait
     public static function scope_tags_match(HookScope $scope, callable $callback): bool
     {
     }
+    /**
+     * Get the user id from an identifier.
+     *
+     * The user username and email fields are checked.
+     *
+     * @param string $identifier The user's username or email.
+     * @return int|null The user id or null if not found.
+     */
+    protected function get_user_id_by_identifier(string $identifier): ?int
+    {
+    }
 }

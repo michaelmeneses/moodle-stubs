@@ -200,4 +200,10 @@ class Horde_Imap_Client_Cache_Backend_Cache extends Horde_Imap_Client_Cache_Back
     public function serialize()
     {
     }
+    /**
+     * @return array
+     */
+    public function __serialize()
+    {
+    }
 }

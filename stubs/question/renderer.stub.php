@@ -99,10 +99,12 @@ class core_question_bank_renderer extends plugin_renderer_base
     {
     }
     /**
-     * Render question showtext checkbox.
+     * Render the showtext option.
+     *
+     * It's not a checkbox any more! [Name your API after the purpose, not the implementation!]
      *
      * @param array $displaydata
-     * @return bool|string
+     * @return string
      */
     public function render_showtext_checkbox($displaydata)
     {

@@ -57,6 +57,7 @@ class Horde_Mime_Headers_ContentParam_ContentDisposition extends Horde_Mime_Head
     /* ArrayAccess methods */
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
     }

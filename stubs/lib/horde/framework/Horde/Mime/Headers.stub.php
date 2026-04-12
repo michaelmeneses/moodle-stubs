@@ -181,6 +181,24 @@ class Horde_Mime_Headers implements ArrayAccess, IteratorAggregate, Serializable
     {
     }
     /**
+     * Serialization.
+     *
+     * @return array  Serialized data.
+     */
+    public function __serialize(): array
+    {
+    }
+    /**
+     * Unserialization.
+     *
+     * @param array $data  Serialized data.
+     *
+     * @throws Horde_Mime_Exception
+     */
+    public function __unserialize(array $data): void
+    {
+    }
+    /**
      * Unserialization.
      *
      * @param string $data  Serialized data.
@@ -200,6 +218,7 @@ class Horde_Mime_Headers implements ArrayAccess, IteratorAggregate, Serializable
      *
      * @return boolean  True if header exists.
      */
+    #[ReturnTypeWillChange]
     public function offsetExists($offset)
     {
     }
@@ -213,6 +232,7 @@ class Horde_Mime_Headers implements ArrayAccess, IteratorAggregate, Serializable
      * @return Horde_Mime_Headers_Element  Element object, or null if not
      *                                     found.
      */
+    #[ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
@@ -224,6 +244,7 @@ class Horde_Mime_Headers implements ArrayAccess, IteratorAggregate, Serializable
      * @param string $offset                   Not used.
      * @param Horde_Mime_Headers_Element $elt  Header element.
      */
+    #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
     }
@@ -234,6 +255,7 @@ class Horde_Mime_Headers implements ArrayAccess, IteratorAggregate, Serializable
      *
      * @param string $offset  Header name.
      */
+    #[ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
     }
@@ -241,6 +263,7 @@ class Horde_Mime_Headers implements ArrayAccess, IteratorAggregate, Serializable
     /**
      * @since 2.5.0
      */
+    #[ReturnTypeWillChange]
     public function getIterator()
     {
     }

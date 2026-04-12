@@ -52,6 +52,10 @@ class tablelog extends \table_sql implements \renderable
      */
     protected $filters;
     /**
+     * @var \stdClass[] List of users included in the report (if userids are specified as filters)
+     */
+    protected $users = [];
+    /**
      * @var array A list of grade items present in the course.
      */
     protected $gradeitems = array();
@@ -91,6 +95,14 @@ class tablelog extends \table_sql implements \renderable
      * @param \moodle_url $url url of the page where this table would be displayed.
      */
     protected function define_table_configs(\moodle_url $url)
+    {
+    }
+    /**
+     * Define table filters
+     *
+     * @param \stdClass $filters
+     */
+    protected function define_table_filters(\stdClass $filters): void
     {
     }
     /**
@@ -230,9 +242,9 @@ class tablelog extends \table_sql implements \renderable
     /**
      * Returns a list of selected users.
      *
-     * @return array returns an array in the format $userid => $userid
+     * @return \stdClass[] List of user objects
      */
-    public function get_selected_users()
+    public function get_selected_users(): array
     {
     }
 }

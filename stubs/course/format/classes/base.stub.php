@@ -129,6 +129,17 @@ abstract class base
     {
     }
     /**
+     * Reset the current user for all courses.
+     *
+     * The course format cache resets every time the course cache resets but
+     * also when the user changes their language, all course editors
+     *
+     * @return void
+     */
+    public static function session_cache_reset_all(): void
+    {
+    }
+    /**
      * Reset the current user course format cache.
      *
      * The course format cache resets every time the course cache resets but

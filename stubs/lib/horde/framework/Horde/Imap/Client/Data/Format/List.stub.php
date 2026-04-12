@@ -59,6 +59,7 @@ class Horde_Imap_Client_Data_Format_List extends Horde_Imap_Client_Data_Format i
     /* Countable methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function count()
     {
     }
@@ -66,6 +67,7 @@ class Horde_Imap_Client_Data_Format_List extends Horde_Imap_Client_Data_Format i
     /**
      * Iterator loops through the data elements contained in this list.
      */
+    #[ReturnTypeWillChange]
     public function getIterator()
     {
     }

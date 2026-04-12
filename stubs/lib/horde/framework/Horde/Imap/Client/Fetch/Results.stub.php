@@ -108,33 +108,39 @@ class Horde_Imap_Client_Fetch_Results implements ArrayAccess, Countable, Iterato
     /* ArrayAccess methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetExists($offset)
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
     }
     /**
      */
+    #[ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
     }
     /* Countable methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function count()
     {
     }
     /* IteratorAggregate methods. */
     /**
      */
+    #[ReturnTypeWillChange]
     public function getIterator()
     {
     }
