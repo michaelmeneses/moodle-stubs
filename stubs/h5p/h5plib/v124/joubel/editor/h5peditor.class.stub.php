@@ -14,7 +14,7 @@ class H5peditor
     public static $styles = array('libs/darkroom.css', 'styles/css/h5p-hub-client.css', 'styles/css/fonts.css', 'styles/css/application.css', 'styles/css/libs/zebra_datepicker.min.css');
     public static $scripts = array('scripts/h5p-hub-client.js', 'scripts/h5peditor.js', 'scripts/h5peditor-semantic-structure.js', 'scripts/h5peditor-editor.js', 'scripts/h5peditor-library-selector.js', 'scripts/h5peditor-fullscreen-bar.js', 'scripts/h5peditor-form.js', 'scripts/h5peditor-text.js', 'scripts/h5peditor-html.js', 'scripts/h5peditor-number.js', 'scripts/h5peditor-textarea.js', 'scripts/h5peditor-file-uploader.js', 'scripts/h5peditor-file.js', 'scripts/h5peditor-image.js', 'scripts/h5peditor-image-popup.js', 'scripts/h5peditor-av.js', 'scripts/h5peditor-group.js', 'scripts/h5peditor-boolean.js', 'scripts/h5peditor-list.js', 'scripts/h5peditor-list-editor.js', 'scripts/h5peditor-library.js', 'scripts/h5peditor-library-list-cache.js', 'scripts/h5peditor-select.js', 'scripts/h5peditor-selector-hub.js', 'scripts/h5peditor-selector-legacy.js', 'scripts/h5peditor-dimensions.js', 'scripts/h5peditor-coordinates.js', 'scripts/h5peditor-none.js', 'scripts/h5peditor-metadata.js', 'scripts/h5peditor-metadata-author-widget.js', 'scripts/h5peditor-metadata-changelog-widget.js', 'scripts/h5peditor-pre-save.js', 'ckeditor/ckeditor.js');
     private $h5p, $storage;
-    public $ajax, $ajaxInterface;
+    public $ajax, $ajaxInterface, $content;
     /**
      * Constructor for the core editor library.
      *

@@ -9,81 +9,90 @@
 namespace PhpXmlRpc;
 
 /**
- * A helper class to easily convert between Value objects and php native values
+ * A helper class to easily convert between Value objects and php native values.
+ *
  * @todo implement an interface
  * @todo add class constants for the options values
  */
 class Encoder
 {
-    protected static $logger;
-    protected static $parser;
-    public function getLogger()
-    {
-    }
-    public static function setLogger($logger)
-    {
-    }
-    public function getParser()
-    {
-    }
-    public static function setParser($parser)
-    {
-    }
+    use LoggerAware;
+    use ParserAware;
     /**
-     * Takes an xmlrpc value in object format and translates it into native PHP types.
-     *
-     * Works with xmlrpc requests objects as input, too.
-     *
+     * Takes an xml-rpc Value in object instance and translates it into native PHP types, recursively.
+     * Works with xml-rpc Request objects as input, too.
+     * Xmlrpc dateTime values will be converted to strings or DateTime objects depending on an $options parameter
+     * Supports i8 and NIL xml-rpc values without the need for specific options.
+     * Both xml-rpc arrays and structs are decoded into PHP arrays, with the exception described below:
      * Given proper options parameter, can rebuild generic php object instances (provided those have been encoded to
-     * xmlrpc format using a corresponding option in php_xmlrpc_encode())
+     * xml-rpc format using a corresponding option in php_xmlrpc_encode()).
      * PLEASE NOTE that rebuilding php objects involves calling their constructor function.
      * This means that the remote communication end can decide which php code will get executed on your server, leaving
      * the door possibly open to 'php-injection' style of attacks (provided you have some classes defined on your server
      * that might wreak havoc if instances are built outside an appropriate context).
      * Make sure you trust the remote server/client before enabling this!
      *
-     * @author Dan Libby (dan@libby.com)
+     * @author Dan Libby
      *
      * @param Value|Request $xmlrpcVal
-     * @param array $options if 'decode_php_objs' is set in the options array, xmlrpc structs can be decoded into php
-     *                       objects; if 'dates_as_objects' is set xmlrpc datetimes are decoded as php DateTime objects
-     *
+     * @param array $options accepted elements:
+     *                      - 'decode_php_objs': if set in the options array, xml-rpc structs can be decoded into php
+     *                         objects, see the details above;
+     *                      - 'dates_as_objects': when set xml-rpc dateTimes are decoded as php DateTime objects
+     *                      - 'extension_api': reserved for usage by phpxmlrpc-polyfill
      * @return mixed
+     *
+     * Feature creep -- add an option to allow converting xml-rpc dateTime values to unix timestamps (integers)
      */
     public function decode($xmlrpcVal, $options = array())
     {
     }
     /**
-     * Takes native php types and encodes them into xmlrpc PHP object format.
-     * It will not re-encode xmlrpc value objects.
+     * Takes native php types and encodes them into xml-rpc Value objects, recursively.
+     * PHP strings, integers, floats and booleans have a straightforward encoding - note that integers will _not_ be
+     * converted to xml-rpc <i8> elements, even if they exceed the 32-bit range.
+     * PHP arrays will be encoded to either xml-rpc structs or arrays, depending on whether they are hashes
+     * or plain 0..N integer indexed.
+     * PHP objects will be encoded into xml-rpc structs, except if they implement DateTimeInterface, in which case they
+     * will be encoded as dateTime values.
+     * PhpXmlRpc\Value objects will not be double-encoded - which makes it possible to pass in a pre-created base64 Value
+     * as part of a php array.
+     * If given a proper $options parameter, php object instances will be encoded into 'special' xml-rpc values, that can
+     * later be decoded into php object instances by calling php_xmlrpc_decode() with a corresponding option.
+     * PHP resource and NULL variables will be converted into uninitialized Value objects (which will lead to invalid
+     * xml-rpc when later serialized); to support encoding of the latter use the appropriate $options parameter.
      *
-     * Feature creep -- could support more types via optional type argument
-     * (string => datetime support has been added, ??? => base64 not yet)
+     * @author Dan Libby
      *
-     * If given a proper options parameter, php object instances will be encoded into 'special' xmlrpc values, that can
-     * later be decoded into php objects by calling php_xmlrpc_decode() with a corresponding option
-     *
-     * @author Dan Libby (dan@libby.com)
-     *
-     * @param mixed $phpVal the value to be converted into an xmlrpc value object
-     * @param array $options can include 'encode_php_objs', 'auto_dates', 'null_extension' or 'extension_api'
-     *
+     * @param mixed $phpVal the value to be converted into an xml-rpc value object
+     * @param array $options can include:
+     *                       - 'encode_php_objs' when set, some out-of-band info will be added to the xml produced by
+     *                         serializing the built Value, which can later be decoced by this library to rebuild an
+     *                         instance of the same php object
+     *                       - 'auto_dates': when set, any string which respects the xml-rpc datetime format will be converted to a dateTime Value
+     *                       - 'null_extension': when set, php NULL values will be converted to an xml-rpc <NIL> (or <EX:NIL>) Value
+     *                       - 'extension_api': reserved for usage by phpxmlrpc-polyfill
      * @return Value
+     *
+     * Feature creep -- could support more types via optional type argument (string => datetime support has been added,
+     * ??? => base64 not yet). Also: allow auto-encoding of integers to i8 when too-big to fit into i4
      */
     public function encode($phpVal, $options = array())
     {
     }
     /**
      * Convert the xml representation of a method response, method request or single
-     * xmlrpc value into the appropriate object (a.k.a. deserialize).
-     *
-     * @todo is this a good name/class for this method? It does something quite different from 'decode' after all
-     *       (returning objects vs returns plain php values)... In fact it belongs rather to a Parser class
+     * xml-rpc value into the appropriate object (a.k.a. deserialize).
      *
      * @param string $xmlVal
-     * @param array $options
-     *
+     * @param array $options unused atm
      * @return Value|Request|Response|false false on error, or an instance of either Value, Request or Response
+     *
+     * @todo is this a good name/class for this method? It does something quite different from 'decode' after all
+     *       (returning objects vs returns plain php values)... In fact, it belongs rather to a Parser class
+     * @todo feature creep -- we should allow an option to return php native types instead of PhpXmlRpc objects instances
+     * @todo feature creep -- allow source charset to be passed in as an option, in case the xml misses its declaration
+     * @todo feature creep -- allow expected type (val/req/resp) to be passed in as an option
      */
     public function decodeXml($xmlVal, $options = array())
     {

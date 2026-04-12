@@ -48,8 +48,10 @@ class backpack_api2p1
     private $clientid = null;
     /** @var null version api of the backpack. */
     protected $backpackapiversion;
-    /** @var null api URL of the backpack. */
-    protected $backpackapiurl = '';
+    /** @var issuer The OAuth2 Issuer for this backpack */
+    protected issuer $issuer;
+    /** @var endpoint The apiBase endpoint */
+    protected endpoint $apibase;
     /**
      * backpack_api2p1 constructor.
      *
@@ -57,6 +59,22 @@ class backpack_api2p1
      * @throws coding_exception error message
      */
     public function __construct($externalbackpack)
+    {
+    }
+    /**
+     * Initialises or returns the OAuth2 issuer associated to this backpack.
+     *
+     * @return issuer
+     */
+    protected function get_issuer(): issuer
+    {
+    }
+    /**
+     * Gets the apiBase url associated to this backpack.
+     *
+     * @return string
+     */
+    protected function get_api_base_url(): string
     {
     }
     /**

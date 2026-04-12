@@ -20,13 +20,6 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-/**
- * Event documentation
- *
- * @package    tool_monitor
- * @copyright  2014 onwards Ankit Agarwal <ankit.agrr@gmail.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 namespace tool_monitor;
 
 /**
@@ -39,33 +32,6 @@ namespace tool_monitor;
  */
 class eventlist
 {
-    /**
-     * Return all of the core event files.
-     *
-     * @return array Core events.
-     */
-    protected static function get_core_eventlist()
-    {
-    }
-    /**
-     * This function returns an array of all events for the plugins of the system.
-     *
-     * @param bool $withoutcomponent Return an eventlist without associated components.
-     *
-     * @return array A list of events from all plug-ins.
-     */
-    protected static function get_non_core_eventlist($withoutcomponent = false)
-    {
-    }
-    /**
-     * Returns a list of files with a full directory path in a specified directory.
-     *
-     * @param string $directory location of files.
-     * @return array full location of files from the specified directory.
-     */
-    protected static function get_file_list($directory)
-    {
-    }
     /**
      * Get a list of events present in the system.
      *

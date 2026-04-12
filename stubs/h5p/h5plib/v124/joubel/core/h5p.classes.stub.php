@@ -624,6 +624,7 @@ class H5PValidator
 {
     public $h5pF;
     public $h5pC;
+    public $h5pCV;
     // Schemas used to validate the h5p files
     private $h5pRequired = array('title' => '/^.{1,255}$/', 'language' => '/^[-a-zA-Z]{1,10}$/', 'preloadedDependencies' => array('machineName' => '/^[\w0-9\-\.]{1,255}$/i', 'majorVersion' => '/^[0-9]{1,5}$/', 'minorVersion' => '/^[0-9]{1,5}$/'), 'mainLibrary' => '/^[$a-z_][0-9a-z_\.$]{1,254}$/i', 'embedTypes' => array('iframe', 'div'));
     private $h5pOptional = array(
@@ -1082,6 +1083,16 @@ class H5PCore
     const DISPLAY_OPTION_COPY = 'copy';
     // Map flags to string
     public static $disable = array(self::DISABLE_FRAME => self::DISPLAY_OPTION_FRAME, self::DISABLE_DOWNLOAD => self::DISPLAY_OPTION_DOWNLOAD, self::DISABLE_EMBED => self::DISPLAY_OPTION_EMBED, self::DISABLE_COPYRIGHT => self::DISPLAY_OPTION_COPYRIGHT);
+    /** @var string To file storage directory. */
+    public $url;
+    /** @var int evelopment mode. */
+    public $development_mode;
+    /** @var bool aggregated files for assets. */
+    public $aggregateAssets;
+    /** @var string full path of plugin. */
+    protected $fullPluginPath;
+    /** @var string regex for converting copied files paths. */
+    public $relativePathRegExp;
     /**
      * Constructor for the H5PCore
      *
@@ -1688,6 +1699,8 @@ class H5PContentValidator
     public $h5pC;
     private $typeMap, $libraries, $dependencies, $nextWeight;
     private static $allowed_styleable_tags = array('span', 'p', 'div', 'h1', 'h2', 'h3', 'td');
+    /** @var bool Allowed styles status. */
+    protected $allowedStyles;
     /**
      * Constructor for the H5PContentValidator
      *

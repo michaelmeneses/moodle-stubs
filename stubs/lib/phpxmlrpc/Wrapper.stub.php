@@ -8,46 +8,45 @@
  */
 /**
  * @author Gaetano Giunta
- * @copyright (C) 2006-2021 G. Giunta
+ * @copyright (C) 2006-2023 G. Giunta
  * @license code licensed under the BSD License: see file license.txt
  */
 namespace PhpXmlRpc;
 
 /**
- * PHP-XMLRPC "wrapper" class - generate stubs to transparently access xmlrpc methods as php functions and vice-versa.
+ * PHPXMLRPC "wrapper" class - generate stubs to transparently access xml-rpc methods as php functions and vice-versa.
  * Note: this class implements the PROXY pattern, but it is not named so to avoid confusion with http proxies.
  *
  * @todo use some better templating system for code generation?
  * @todo implement method wrapping with preservation of php objs in calls
- * @todo when wrapping methods without obj rebuilding, use return_type = 'phpvals' (faster)
  * @todo add support for 'epivals' mode
  * @todo allow setting custom namespace for generated wrapping code
  */
 class Wrapper
 {
-    /// used to hold a reference to object instances whose methods get wrapped by wrapPhpFunction(), in 'create source' mode
+    use LoggerAware;
+    /**
+     * @var object[]
+     * Used to hold a reference to object instances whose methods get wrapped by wrapPhpFunction(), in 'create source' mode
+     * @internal this property will become protected in the future
+     */
     public static $objHolder = array();
-    protected static $logger;
-    public function getLogger()
-    {
-    }
-    public static function setLogger($logger)
-    {
-    }
+    /** @var string */
+    protected static $namespace = '\PhpXmlRpc\\';
     /**
      * Given a string defining a php type or phpxmlrpc type (loosely defined: strings
      * accepted come from javadoc blocks), return corresponding phpxmlrpc type.
      * Notes:
      * - for php 'resource' types returns empty string, since resources cannot be serialized;
-     * - for php class names returns 'struct', since php objects can be serialized as xmlrpc structs
+     * - for php class names returns 'struct', since php objects can be serialized as xml-rpc structs
      * - for php arrays always return array, even though arrays sometimes serialize as structs...
      * - for 'void' and 'null' returns 'undefined'
      *
      * @param string $phpType
-     *
      * @return string
      *
      * @todo support notation `something[]` as 'array'
+     * @todo check if nil support is enabled when finding null
      */
     public function php2XmlrpcType($phpType)
     {
@@ -56,54 +55,50 @@ class Wrapper
      * Given a string defining a phpxmlrpc type return the corresponding php type.
      *
      * @param string $xmlrpcType
-     *
      * @return string
      */
     public function xmlrpc2PhpType($xmlrpcType)
     {
     }
     /**
-     * Given a user-defined PHP function, create a PHP 'wrapper' function that can
-     * be exposed as xmlrpc method from an xmlrpc server object and called from remote
-     * clients (as well as its corresponding signature info).
+     * Given a user-defined PHP function, create a PHP 'wrapper' function that can be exposed as xml-rpc method from an
+     * xml-rpc server object and called from remote clients (as well as its corresponding signature info).
      *
-     * Since php is a typeless language, to infer types of input and output parameters,
-     * it relies on parsing the javadoc-style comment block associated with the given
-     * function. Usage of xmlrpc native types (such as datetime.dateTime.iso8601 and base64)
-     * in the '@param' tag is also allowed, if you need the php function to receive/send
-     * data in that particular format (note that base64 encoding/decoding is transparently
-     * carried out by the lib, while datetime vals are passed around as strings)
+     * Since php is a typeless language, to infer types of input and output parameters, it relies on parsing the
+     * javadoc-style comment block associated with the given function. Usage of xml-rpc native types (such as
+     * datetime.dateTime.iso8601 and base64) in the '@param' tag is also allowed, if you need the php function to
+     * receive/send data in that particular format (note that base64 encoding/decoding is transparently carried out by
+     * the lib, while datetime values are passed around as strings)
      *
      * Known limitations:
-     * - only works for user-defined functions, not for PHP internal functions
-     *   (reflection does not support retrieving number/type of params for those)
-     * - functions returning php objects will generate special structs in xmlrpc responses:
-     *   when the xmlrpc decoding of those responses is carried out by this same lib, using
-     *   the appropriate param in php_xmlrpc_decode, the php objects will be rebuilt.
-     *   In short: php objects can be serialized, too (except for their resource members),
-     *   using this function.
-     *   Other libs might choke on the very same xml that will be generated in this case
-     *   (i.e. it has a nonstandard attribute on struct element tags)
+     * - only works for user-defined functions, not for PHP internal functions (reflection does not support retrieving
+     *   number/type of params for those)
+     * - functions returning php objects will generate special structs in xml-rpc responses: when the xml-rpc decoding of
+     *   those responses is carried out by this same lib, using the appropriate param in php_xmlrpc_decode, the php
+     *   objects will be rebuilt.
+     *   In short: php objects can be serialized, too (except for their resource members), using this function.
+     *   Other libs might choke on the very same xml that will be generated in this case (i.e. it has a nonstandard
+     *   attribute on struct element tags)
      *
-     * Note that since rel. 2.0RC3 the preferred method to have the server call 'standard'
-     * php functions (ie. functions not expecting a single Request obj as parameter)
-     * is by making use of the functions_parameters_type class member.
+     * Note that since rel. 2.0RC3 the preferred method to have the server call 'standard' php functions (i.e. functions
+     * not expecting a single Request obj as parameter) is by making use of the $functions_parameters_type and
+     * $exception_handling properties.
      *
-     * @param callable $callable the PHP user function to be exposed as xmlrpc method/ a closure, function name, array($obj, 'methodname') or array('class', 'methodname') are ok
+     * @param \Callable $callable the PHP user function to be exposed as xml-rpc method: a closure, function name, array($obj, 'methodname') or array('class', 'methodname') are ok
      * @param string $newFuncName (optional) name for function to be created. Used only when return_source in $extraOptions is true
      * @param array $extraOptions (optional) array of options for conversion. valid values include:
      *                            - bool return_source     when true, php code w. function definition will be returned, instead of a closure
-     *                            - bool encode_php_objs   let php objects be sent to server using the 'improved' xmlrpc notation, so server can deserialize them as php objects
+     *                            - bool encode_nulls      let php objects be sent to server using <nil> elements instead of empty strings
+     *                            - bool encode_php_objs   let php objects be sent to server using the 'improved' xml-rpc notation, so server can deserialize them as php objects
      *                            - bool decode_php_objs   --- WARNING !!! possible security hazard. only use it with trusted servers ---
      *                            - bool suppress_warnings remove from produced xml any warnings generated at runtime by the php function being invoked
-     *
      * @return array|false false on error, or an array containing the name of the new php function,
      *                     its signature and docs, to be used in the server dispatch map
      *
      * @todo decide how to deal with params passed by ref in function definition: bomb out or allow?
      * @todo finish using phpdoc info to build method sig if all params are named but out of order
      * @todo add a check for params of 'resource' type
-     * @todo add some trigger_errors / error_log when returning false?
+     * @todo add some error logging when returning false?
      * @todo what to do when the PHP function returns NULL? We are currently returning an empty string value...
      * @todo add an option to suppress php warnings in invocation of user function, similar to server debug level 3?
      * @todo add a verbatim_object_copy parameter to allow avoiding usage the same obj instance?
@@ -125,33 +120,33 @@ class Wrapper
     /**
      * Given the method description given by introspection, create method signature data
      *
+     * @param array $funcDesc as generated by self::introspectFunction()
+     * @return array
+     *
      * @todo support better docs with multiple types separated by pipes by creating multiple signatures
      *       (this is questionable, as it might produce a big matrix of possible signatures with many such occurrences)
-     *
-     * @param array $funcDesc as generated by self::introspectFunction()
-     *
-     * @return array
      */
     protected function buildMethodSignatures($funcDesc)
     {
     }
     /**
      * Creates a closure that will execute $callable
-     * @todo validate params? In theory all validation is left to the dispatch map...
-     * @todo add support for $catchWarnings
      *
      * @param $callable
      * @param array $extraOptions
      * @param string $plainFuncName
      * @param array $funcDesc
      * @return \Closure
+     *
+     * @todo validate params? In theory all validation is left to the dispatch map...
+     * @todo add support for $catchWarnings
      */
     protected function buildWrapFunctionClosure($callable, $extraOptions, $plainFuncName, $funcDesc)
     {
     }
     /**
      * Return a name for a new function, based on $callable, insuring its uniqueness
-     * @param mixed $callable a php callable, or the name of an xmlrpc method
+     * @param mixed $callable a php callable, or the name of an xml-rpc method
      * @param string $newFuncName when not empty, it is used instead of the calculated version
      * @return string
      */
@@ -165,24 +160,25 @@ class Wrapper
      * @param string $plainFuncName
      * @param array $funcDesc
      * @return string
-     *
-     * @todo add a nice phpdoc block in the generated source
      */
     protected function buildWrapFunctionSource($callable, $newFuncName, $extraOptions, $plainFuncName, $funcDesc)
     {
     }
     /**
      * Given a user-defined PHP class or php object, map its methods onto a list of
-     * PHP 'wrapper' functions that can be exposed as xmlrpc methods from an xmlrpc server
+     * PHP 'wrapper' functions that can be exposed as xml-rpc methods from an xml-rpc server
      * object and called from remote clients (as well as their corresponding signature info).
      *
-     * @param string|object $className the name of the class whose methods are to be exposed as xmlrpc methods, or an object instance of that class
-     * @param array $extraOptions see the docs for wrapPhpMethod for basic options, plus
+     * @param string|object $className the name of the class whose methods are to be exposed as xml-rpc methods, or an object instance of that class
+     * @param array $extraOptions see the docs for wrapPhpFunction for basic options, plus
      *                            - string method_type    'static', 'nonstatic', 'all' and 'auto' (default); the latter will switch between static and non-static depending on whether $className is a class name or object instance
      *                            - string method_filter  a regexp used to filter methods to wrap based on their names
-     *                            - string prefix         used for the names of the xmlrpc methods created.
+     *                            - string prefix         used for the names of the xml-rpc methods created.
      *                            - string replace_class_name use to completely replace the class name with the prefix in the generated method names. e.g. instead of \Some\Namespace\Class.method use prefixmethod
-     * @return array|false false on failure
+     * @return array|false false on failure, or on array useable for the dispatch map
+     *
+     * @todo allow the generated function to be able to reuse an external Encoder instance instead of creating one on
+     *       each invocation, for the case where all the generated functions will be saved as methods of a class
      */
     public function wrapPhpClass($className, $extraOptions = array())
     {
@@ -192,60 +188,74 @@ class Wrapper
      * @param string $classMethod
      * @param array $extraOptions
      * @return string
+     *
+     * @todo php allows many more characters in identifiers than the xml-rpc spec does. We should make sure to
+     *       replace those (while trying to make sure we are not running in collisions)
      */
     protected function generateMethodNameForClassMethod($className, $classMethod, $extraOptions = array())
     {
     }
     /**
-     * Given an xmlrpc client and a method name, register a php wrapper function
-     * that will call it and return results using native php types for both
-     * params and results. The generated php function will return a Response
-     * object for failed xmlrpc calls.
+     * Given an xml-rpc client and a method name, register a php wrapper function that will call it and return results
+     * using native php types for both arguments and results. The generated php function will return a Response
+     * object for failed xml-rpc calls.
      *
      * Known limitations:
-     * - server must support system.methodsignature for the wanted xmlrpc method
-     * - for methods that expose many signatures, only one can be picked (we
-     *   could in principle check if signatures differ only by number of params
-     *   and not by type, but it would be more complication than we can spare time)
-     * - nested xmlrpc params: the caller of the generated php function has to
-     *   encode on its own the params passed to the php function if these are structs
-     *   or arrays whose (sub)members include values of type datetime or base64
+     * - server must support system.methodSignature for the target xml-rpc method
+     * - for methods that expose many signatures, only one can be picked (we could in principle check if signatures
+     *   differ only by number of params and not by type, but it would be more complication than we can spare time for)
+     * - nested xml-rpc params: the caller of the generated php function has to encode on its own the params passed to
+     *   the php function if these are structs or arrays whose (sub)members include values of type base64
      *
-     * Notes: the connection properties of the given client will be copied
-     * and reused for the connection used during the call to the generated
-     * php function.
-     * Calling the generated php function 'might' be slow: a new xmlrpc client
-     * is created on every invocation and an xmlrpc-connection opened+closed.
-     * An extra 'debug' param is appended to param list of xmlrpc method, useful
+     * Notes: the connection properties of the given client will be copied and reused for the connection used during
+     * the call to the generated php function.
+     * Calling the generated php function 'might' be slightly slow: a new xml-rpc client is created on every invocation
+     * and an xmlrpc-connection opened+closed.
+     * An extra 'debug' argument, defaulting to 0, is appended to the argument list of the generated function, useful
      * for debugging purposes.
+     *
+     * @param Client $client an xml-rpc client set up correctly to communicate with target server
+     * @param string $methodName the xml-rpc method to be mapped to a php function
+     * @param array $extraOptions array of options that specify conversion details. Valid options include
+     *                            - integer signum              the index of the method signature to use in mapping (if
+     *                                                          method exposes many sigs)
+     *                            - integer timeout             timeout (in secs) to be used when executing function/calling remote method
+     *                            - string  protocol            'http' (default), 'http11', 'https', 'h2' or 'h2c'
+     *                            - string  new_function_name   the name of php function to create, when return_source is used.
+     *                                                          If unspecified, lib will pick an appropriate name
+     *                            - string  return_source       if true return php code w. function definition instead of
+     *                                                          the function itself (closure)
+     *                            - bool    encode_nulls        if true, use `<nil/>` elements instead of empty string xml-rpc
+     *                                                          values for php null values
+     *                            - bool    encode_php_objs     let php objects be sent to server using the 'improved' xml-rpc
+     *                                                          notation, so server can deserialize them as php objects
+     *                            - bool    decode_php_objs     --- WARNING !!! possible security hazard. only use it with
+     *                                                          trusted servers ---
+     *                            - mixed   return_on_fault     a php value to be returned when the xml-rpc call fails/returns
+     *                                                          a fault response (by default the Response object is returned
+     *                                                          in this case).  If a string is used, '%faultCode%' and
+     *                                                          '%faultString%' tokens  will be substituted with actual error values
+     *                            - bool    throw_on_fault      if true, throw an exception instead of returning a Response
+     *                                                          in case of errors/faults;
+     *                                                          if a string, do the same and assume it is the exception class to throw
+     *                            - bool    debug               set it to 1 or 2 to see debug results of querying server for
+     *                                                          method synopsis
+     *                            - int     simple_client_copy  set it to 1 to have a lightweight copy of the $client object
+     *                                                          made in the generated code (only used when return_source = true)
+     * @return \Closure|string[]|false false on failure, closure by default and array for return_source = true
      *
      * @todo allow caller to give us the method signature instead of querying for it, or just say 'skip it'
      * @todo if we can not retrieve method signature, create a php function with varargs
-     * @todo allow the created function to throw exceptions on method calls failures
      * @todo if caller did not specify a specific sig, shall we support all of them?
      *       It might be hard (hence slow) to match based on type and number of arguments...
-     *
-     * @param Client $client an xmlrpc client set up correctly to communicate with target server
-     * @param string $methodName the xmlrpc method to be mapped to a php function
-     * @param array $extraOptions array of options that specify conversion details. Valid options include
-     *                            - integer signum              the index of the method signature to use in mapping (if method exposes many sigs)
-     *                            - integer timeout             timeout (in secs) to be used when executing function/calling remote method
-     *                            - string  protocol            'http' (default), 'http11' or 'https'
-     *                            - string  new_function_name   the name of php function to create, when return_source is used. If unspecified, lib will pick an appropriate name
-     *                            - string  return_source       if true return php code w. function definition instead of function itself (closure)
-     *                            - bool    encode_php_objs     let php objects be sent to server using the 'improved' xmlrpc notation, so server can deserialize them as php objects
-     *                            - bool    decode_php_objs     --- WARNING !!! possible security hazard. only use it with trusted servers ---
-     *                            - mixed   return_on_fault     a php value to be returned when the xmlrpc call fails/returns a fault response (by default the Response object is returned in this case). If a string is used, '%faultCode%' and '%faultString%' tokens will be substituted with actual error values
-     *                            - bool    debug               set it to 1 or 2 to see debug results of querying server for method synopsis
-     *                            - int     simple_client_copy  set it to 1 to have a lightweight copy of the $client object made in the generated code (only used when return_source = true)
-     *
-     * @return \closure|string[]|false false on failure, closure by default and array for return_source = true
+     * @todo when wrapping methods without obj rebuilding, use return_type = 'phpvals' (faster)
+     * @todo allow creating functions which have an extra `$debug=0` parameter
      */
     public function wrapXmlrpcMethod($client, $methodName, $extraOptions = array())
     {
     }
     /**
-     * Retrieves an xmlrpc method signature from a server which supports system.methodSignature
+     * Retrieves an xml-rpc method signature from a server which supports system.methodSignature
      * @param Client $client
      * @param string $methodName
      * @param array $extraOptions
@@ -266,7 +276,7 @@ class Wrapper
     /**
      * @param Client $client
      * @param string $methodName
-     * @param array $extraOptions
+     * @param array $extraOptions @see wrapXmlrpcMethod
      * @param array $mSig
      * @return \Closure
      *
@@ -276,9 +286,11 @@ class Wrapper
     {
     }
     /**
+     * @internal made public just for Debugger usage
+     *
      * @param Client $client
      * @param string $methodName
-     * @param array $extraOptions
+     * @param array $extraOptions @see wrapXmlrpcMethod
      * @param string $newFuncName
      * @param array $mSig
      * @param string $mDesc
@@ -288,38 +300,56 @@ class Wrapper
     {
     }
     /**
-     * Similar to wrapXmlrpcMethod, but will generate a php class that wraps
-     * all xmlrpc methods exposed by the remote server as own methods.
-     * For more details see wrapXmlrpcMethod.
+     * Similar to wrapXmlrpcMethod, but will generate a php class that wraps all xml-rpc methods exposed by the remote
+     * server as own methods.
+     * For a slimmer alternative, see the code in demo/client/proxy.php.
+     * Note that unlike wrapXmlrpcMethod, we always have to generate php code here. Since php 7 anon classes exist, but
+     * we do not support them yet...
      *
-     * For a slimmer alternative, see the code in demo/client/proxy.php
-     *
-     * Note that unlike wrapXmlrpcMethod, we always have to generate php code here. It seems that php 7 will have anon classes...
+     * @see wrapXmlrpcMethod for more details.
      *
      * @param Client $client the client obj all set to query the desired server
-     * @param array $extraOptions list of options for wrapped code. See the ones from wrapXmlrpcMethod plus
-     *              - string method_filter      regular expression
-     *              - string new_class_name
-     *              - string prefix
-     *              - bool   simple_client_copy set it to true to avoid copying all properties of $client into the copy made in the new class
+     * @param array $extraOptions list of options for wrapped code. See the ones from wrapXmlrpcMethod, plus
+     *                            - string method_filter      regular expression
+     *                            - string new_class_name
+     *                            - string prefix
+     *                            - bool   simple_client_copy set it to true to avoid copying all properties of $client into the copy made in the new class
+     * @return string|array|false false on error, the name of the created class if all ok or an array with code, class name and comments (if the appropriate option is set in extra_options)
      *
-     * @return mixed false on error, the name of the created class if all ok or an array with code, class name and comments (if the appropriate option is set in extra_options)
+     * @todo add support for anonymous classes in the 'buildIt' case for php > 7
+     * @todo add method setDebug() to new class, to enable/disable debugging
+     * @todo optimization - move the generated Encoder instance to be a property of the created class, instead of creating
+     *                      it on every generated method invocation
      */
     public function wrapXmlrpcServer($client, $extraOptions = array())
     {
     }
     /**
      * Given necessary info, generate php code that will build a client object just like the given one.
-     * Take care that no full checking of input parameters is done to ensure that
-     * valid php code is emitted.
+     * Take care that no full checking of input parameters is done to ensure that valid php code is emitted.
      * @param Client $client
-     * @param bool $verbatimClientCopy when true, copy all of the state of the client, except for 'debug' and 'return_type'
+     * @param bool $verbatimClientCopy when true, copy the whole options of the client, except for 'debug' and 'return_type'
      * @param string $prefix used for the return_type of the created client
      * @param string $namespace
-     *
      * @return string
      */
     protected function buildClientWrapperCode($client, $verbatimClientCopy, $prefix = 'xmlrpc', $namespace = '\PhpXmlRpc\\')
+    {
+    }
+    /**
+     * @param string $index
+     * @param object $object
+     * @return void
+     */
+    public static function holdObject($index, $object)
+    {
+    }
+    /**
+     * @param string $index
+     * @return object
+     * @throws ValueErrorException
+     */
+    public static function getHeldObject($index)
     {
     }
 }

@@ -13,6 +13,7 @@ namespace PhpXmlRpc\Helper;
  */
 class Charset
 {
+    use DeprecationLogger;
     // tables used for transcoding different charsets into us-ascii xml
     protected $xml_iso88591_Entities = array("in" => array(), "out" => array());
     //protected $xml_cp1252_Entities = array('in' => array(), out' => array());
@@ -21,22 +22,26 @@ class Charset
     protected static $instance = null;
     /**
      * This class is singleton for performance reasons.
-     * @todo should we just make $xml_iso88591_Entities a static variable instead ?
      *
      * @return Charset
+     *
+     * @todo should we just make $xml_iso88591_Entities a static variable instead ?
      */
     public static function instance()
     {
     }
     /**
-     * Force usage as singleton
+     * Force usage as singleton.
      */
     protected function __construct()
     {
     }
     /**
      * @param string $tableName
-     * @throws \Exception for unsupported $tableName
+     * @return void
+     *
+     * @throws ValueErrorException for unsupported $tableName
+     *
      * @todo add support for cp1252 as well as latin-2 .. latin-10
      *       Optimization creep: instead of building all those tables on load, keep them ready-made php files
      *       which are not even included until needed
@@ -45,8 +50,8 @@ class Charset
      *       (though no luck when receiving them...)
      *       Note also that, apparently, while 'ISO/IEC 8859-1' has no characters defined for bytes 128 to 159,
      *       IANA ISO-8859-1 does have well-defined 'C1' control codes for those - wikipedia's page on latin-1 says:
-     *       "ISO-8859-1 is the IANA preferred name for this standard when supplemented with the C0 and C1 control codes from ISO/IEC 6429."
-     *       Check what mbstring/iconv do by default with those?
+     *       "ISO-8859-1 is the IANA preferred name for this standard when supplemented with the C0 and C1 control codes
+     *       from ISO/IEC 6429." Check what mbstring/iconv do by default with those?
      */
     protected function buildConversionTable($tableName)
     {
@@ -55,7 +60,7 @@ class Charset
      * Convert a string to the correct XML representation in a target charset.
      * This involves:
      * - character transformation for all characters which have a different representation in source and dest charsets
-     * - using 'charset entity' representation for all characters which are outside of the target charset
+     * - using 'charset entity' representation for all characters which are outside the target charset
      *
      * To help correct communication of non-ascii chars inside strings, regardless of the charset used when sending
      * requests, parsing them, sending responses and parsing responses, an option is to convert all non-ascii chars
@@ -65,44 +70,49 @@ class Charset
      * Note that when not sending a charset encoding mime type along with http headers, we are bound by RFC 3023 to emit
      * strict us-ascii for 'text/xml' payloads (but we should review RFC 7303, which seems to have changed the rules...)
      *
-     * @todo do a bit of basic benchmarking (strtr vs. str_replace)
-     * @todo make usage of iconv() or mb_string() where available
-     * @todo support aliases for charset names, eg ASCII, LATIN1, ISO-88591 (see f.e. polyfill-iconv for a list),
-     *       but then take those into account as well in other methods, ie.isValidCharset)
-     * @todo when converting to ASCII, allow to choose whether to escape the range 0-31,127 (non-print chars) or not
-     * @todo allow picking different strategies to deal w. invalid chars? eg. source in latin-1 and chars 128-159
-     * @todo add support for escaping using CDATA sections? (add cdata start and end tokens, replace only ']]>' with ']]]]><![CDATA[>')
-     *
      * @param string $data
      * @param string $srcEncoding
      * @param string $destEncoding
-     *
      * @return string
+     *
+     * @todo do a bit of basic benchmarking: strtr vs. str_replace, str_replace vs htmlspecialchars, hand-coded conversion
+     *       vs mbstring when that is enabled
+     * @todo make use of iconv when it is available and mbstring is not
+     * @todo support aliases for charset names, eg ASCII, LATIN1, ISO-88591 (see f.e. polyfill-iconv for a list),
+     *       but then take those into account as well in other methods, ie. isValidCharset)
+     * @todo when converting to ASCII, allow to choose whether to escape the range 0-31,127 (non-print chars) or not
+     * @todo allow picking different strategies to deal w. invalid chars? eg. source in latin-1 and chars 128-159
+     * @todo add support for escaping using CDATA sections? (add cdata start and end tokens, replace only ']]>' with ']]]]><![CDATA[>')
      */
     public function encodeEntities($data, $srcEncoding = '', $destEncoding = '')
     {
     }
     /**
+     * @return string[]
+     */
+    public function knownCharsets()
+    {
+    }
+    // *** BC layer ***
+    /**
      * Checks if a given charset encoding is present in a list of encodings or if it is a valid subset of any encoding
      * in the list.
+     * @deprecated kept around for BC, as it is not in use by the lib
      *
      * @param string $encoding charset to be tested
      * @param string|array $validList comma separated list of valid charsets (or array of charsets)
-     *
      * @return bool
      */
     public function isValidCharset($encoding, $validList)
     {
     }
     /**
-     * Used only for backwards compatibility
+     * Used only for backwards compatibility (the .inc shims).
      * @deprecated
      *
      * @param string $charset
-     *
      * @return array
-     *
-     * @throws \Exception for unknown/unsupported charsets
+     * @throws ValueErrorException for unknown/unsupported charsets
      */
     public function getEntities($charset)
     {

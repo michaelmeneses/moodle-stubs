@@ -23,6 +23,9 @@
 /**
  * Task to cleanup old question statistics cache.
  *
+ * This task is no longer required. It has been kept on stable branches for backwards-compatibility,
+ * and will be removed completely in Moodle 4.3.
+ *
  * @package    core
  * @copyright  2019 Simey Lameze <simey@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -31,6 +34,9 @@ namespace core\task;
 
 /**
  * A task to cleanup old question statistics cache.
+ *
+ * This task is no longer required. It has been kept on stable branches for backwards-compatibility,
+ * and will be removed completely in Moodle 4.3.
  *
  * @copyright  2019 Simey Lameze <simey@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later

@@ -10,28 +10,41 @@ namespace PhpXmlRpc\Helper;
 
 class Http
 {
+    use LoggerAware;
     /**
-     * Decode a string that is encoded with "chunked" transfer encoding as defined in rfc2068 par. 19.4.6
+     * Decode a string that is encoded with "chunked" transfer encoding as defined in rfc2068 par. 19.4.6.
      * Code shamelessly stolen from nusoap library by Dietrich Ayala.
+     * @internal this function will become protected in the future
      *
      * @param string $buffer the string to be decoded
-     *
      * @return string
-     * @internal this function will become protected in the future
      */
     public static function decodeChunked($buffer)
     {
     }
     /**
-     * Parses HTTP an http response headers and separates them from the body.
+     * Parses HTTP an http response's headers and separates them from the body.
      *
      * @param string $data the http response, headers and body. It will be stripped of headers
      * @param bool $headersProcessed when true, we assume that response inflating and dechunking has been already carried out
-     *
+     * @param int $debug when > 0, logs to screen messages detailing info about the parsed data
      * @return array with keys 'headers', 'cookies', 'raw_data' and 'status_code'
      * @throws HttpException
+     *
+     * @todo if $debug is < 0, we could avoid populating 'raw_data' and 'headers' in the returned value - but that would
+     *       be a weird API...
      */
     public function parseResponseHeaders(&$data, $headersProcessed = false, $debug = 0)
+    {
+    }
+    /**
+     * Parses one of the http headers which can have a list of values with quality param.
+     * @see https://www.rfc-editor.org/rfc/rfc7231#section-5.3.1
+     *
+     * @param string $header
+     * @return string[]
+     */
+    public function parseAcceptHeader($header)
     {
     }
 }

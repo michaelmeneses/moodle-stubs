@@ -160,11 +160,14 @@ class analysis_for_question
     {
     }
     /**
+     * Save the analysis to the DB, first cleaning up any old ones.
+     *
      * @param \qubaid_condition $qubaids    which question usages have been analysed.
      * @param string            $whichtries which tries have been analysed?
      * @param int               $questionid which question.
+     * @param int|null          $calculationtime time when the analysis was done. (Defaults to time()).
      */
-    public function cache($qubaids, $whichtries, $questionid)
+    public function cache($qubaids, $whichtries, $questionid, $calculationtime = null)
     {
     }
     /**

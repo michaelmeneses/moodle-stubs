@@ -10,52 +10,188 @@ namespace PhpXmlRpc;
 
 /**
  * Used to represent a client of an XML-RPC server.
+ *
+ * @property int $errno deprecated - public access left in purely for BC.
+ * @property string $errstr deprecated - public access left in purely for BC.
+ * @property string $method deprecated - public access left in purely for BC. Access via getUrl()/__construct()
+ * @property string $server deprecated - public access left in purely for BC. Access via getUrl()/__construct()
+ * @property int $port deprecated - public access left in purely for BC. Access via getUrl()/__construct()
+ * @property string $path deprecated - public access left in purely for BC. Access via getUrl()/__construct()
  */
 class Client
 {
+    use DeprecationLogger;
+    //use CharsetEncoderAware;
     const USE_CURL_NEVER = 0;
     const USE_CURL_ALWAYS = 1;
     const USE_CURL_AUTO = 2;
-    protected static $logger;
-    /// @todo: do these need to be public?
-    public $method = 'http';
-    public $server;
-    public $port = 0;
-    public $path;
-    public $errno;
-    public $errstr;
-    public $debug = 0;
-    public $username = '';
-    public $password = '';
-    public $authtype = 1;
-    public $cert = '';
-    public $certpass = '';
-    public $cacert = '';
-    public $cacertdir = '';
-    public $key = '';
-    public $keypass = '';
-    public $verifypeer = true;
-    public $verifyhost = 2;
-    public $sslversion = 0;
-    // corresponds to CURL_SSLVERSION_DEFAULT
-    public $proxy = '';
-    public $proxyport = 0;
-    public $proxy_user = '';
-    public $proxy_pass = '';
-    public $proxy_authtype = 1;
-    public $cookies = array();
-    public $extracurlopts = array();
-    public $use_curl = self::USE_CURL_AUTO;
+    const OPT_ACCEPTED_CHARSET_ENCODINGS = 'accepted_charset_encodings';
+    const OPT_ACCEPTED_COMPRESSION = 'accepted_compression';
+    const OPT_AUTH_TYPE = 'authtype';
+    const OPT_CA_CERT = 'cacert';
+    const OPT_CA_CERT_DIR = 'cacertdir';
+    const OPT_CERT = 'cert';
+    const OPT_CERT_PASS = 'certpass';
+    const OPT_COOKIES = 'cookies';
+    const OPT_DEBUG = 'debug';
+    const OPT_EXTRA_CURL_OPTS = 'extracurlopts';
+    const OPT_EXTRA_SOCKET_OPTS = 'extrasockopts';
+    const OPT_KEEPALIVE = 'keepalive';
+    const OPT_KEY = 'key';
+    const OPT_KEY_PASS = 'keypass';
+    const OPT_NO_MULTICALL = 'no_multicall';
+    const OPT_PASSWORD = 'password';
+    const OPT_PROXY = 'proxy';
+    const OPT_PROXY_AUTH_TYPE = 'proxy_authtype';
+    const OPT_PROXY_PASS = 'proxy_pass';
+    const OPT_PROXY_PORT = 'proxyport';
+    const OPT_PROXY_USER = 'proxy_user';
+    const OPT_REQUEST_CHARSET_ENCODING = 'request_charset_encoding';
+    const OPT_REQUEST_COMPRESSION = 'request_compression';
+    const OPT_RETURN_TYPE = 'return_type';
+    const OPT_SSL_VERSION = 'sslversion';
+    const OPT_TIMEOUT = 'timeout';
+    const OPT_USERNAME = 'username';
+    const OPT_USER_AGENT = 'user_agent';
+    const OPT_USE_CURL = 'use_curl';
+    const OPT_VERIFY_HOST = 'verifyhost';
+    const OPT_VERIFY_PEER = 'verifypeer';
+    /** @var string */
+    protected static $requestClass = '\PhpXmlRpc\Request';
+    /** @var string */
+    protected static $responseClass = '\PhpXmlRpc\Response';
+    /**
+     * @var int
+     * @deprecated will be removed in the future
+     */
+    protected $errno;
+    /**
+     * @var string
+     * @deprecated will be removed in the future
+     */
+    protected $errstr;
+    /// @todo: do all the ones below need to be public?
+    /**
+     * @var string
+     */
+    protected $method = 'http';
+    /**
+     * @var string
+     */
+    protected $server;
+    /**
+     * @var int
+     */
+    protected $port = 0;
+    /**
+     * @var string
+     */
+    protected $path;
+    /**
+     * @var int
+     */
+    protected $debug = 0;
+    /**
+     * @var string
+     */
+    protected $username = '';
+    /**
+     * @var string
+     */
+    protected $password = '';
+    /**
+     * @var int
+     */
+    protected $authtype = 1;
+    /**
+     * @var string
+     */
+    protected $cert = '';
+    /**
+     * @var string
+     */
+    protected $certpass = '';
+    /**
+     * @var string
+     */
+    protected $cacert = '';
+    /**
+     * @var string
+     */
+    protected $cacertdir = '';
+    /**
+     * @var string
+     */
+    protected $key = '';
+    /**
+     * @var string
+     */
+    protected $keypass = '';
+    /**
+     * @var bool
+     */
+    protected $verifypeer = true;
+    /**
+     * @var int
+     */
+    protected $verifyhost = 2;
+    /**
+     * @var int
+     */
+    protected $sslversion = 0;
+    // corresponds to CURL_SSLVERSION_DEFAULT. Other  CURL_SSLVERSION_ values are supported
+    /**
+     * @var string
+     */
+    protected $proxy = '';
+    /**
+     * @var int
+     */
+    protected $proxyport = 0;
+    /**
+     * @var string
+     */
+    protected $proxy_user = '';
+    /**
+     * @var string
+     */
+    protected $proxy_pass = '';
+    /**
+     * @var int
+     */
+    protected $proxy_authtype = 1;
+    /**
+     * @var array
+     */
+    protected $cookies = array();
+    /**
+     * @var array
+     */
+    protected $extrasockopts = array();
+    /**
+     * @var array
+     */
+    protected $extracurlopts = array();
+    /**
+     * @var int
+     */
+    protected $timeout = 0;
+    /**
+     * @var int
+     */
+    protected $use_curl = self::USE_CURL_AUTO;
     /**
      * @var bool
      *
-     * This determines whether the multicall() method will try to take advantage of the system.multicall xmlrpc method
+     * This determines whether the multicall() method will try to take advantage of the system.multicall xml-rpc method
      * to dispatch to the server an array of requests in a single http roundtrip or simply execute many consecutive http
      * calls. Defaults to FALSE, but it will be enabled automatically on the first failure of execution of
      * system.multicall.
      */
-    public $no_multicall = false;
+    protected $no_multicall = false;
     /**
+     * @var array
+     *
      * List of http compression methods accepted by the client for responses.
      * NB: PHP supports deflate, gzip compressions out of the box if compiled w. zlib.
      *
@@ -63,58 +199,71 @@ class Client
      * decide the compression methods it supports. You might check for the presence of 'zlib' in the output of
      * curl_version() to determine whether compression is supported or not
      */
-    public $accepted_compression = array();
+    protected $accepted_compression = array();
     /**
+     * @var string|null
+     *
      * Name of compression scheme to be used for sending requests.
-     * Either null, gzip or deflate.
+     * Either null, 'gzip' or 'deflate'.
      */
-    public $request_compression = '';
+    protected $request_compression = '';
     /**
-     * CURL handle: used for keep-alive connections (PHP 4.3.8 up, see:
-     * http://curl.haxx.se/docs/faq.html#7.3).
-     * @internal
+     * @var bool
+     *
+     * Whether to use persistent connections for http 1.1 and https. Value set at constructor time.
      */
-    public $xmlrpc_curl_handle = null;
-    /// Whether to use persistent connections for http 1.1 and https
-    public $keepalive = false;
-    /// Charset encodings that can be decoded without problems by the client
-    public $accepted_charset_encodings = array();
+    protected $keepalive = false;
     /**
+     * @var string[]
+     *
+     * Charset encodings that can be decoded without problems by the client. Value set at constructor time
+     */
+    protected $accepted_charset_encodings = array();
+    /**
+     * @var string
+     *
      * The charset encoding that will be used for serializing request sent by the client.
-     * It defaults to NULL, which means using US-ASCII and encoding all characters outside of the ASCII printable range
+     * It defaults to NULL, which means using US-ASCII and encoding all characters outside the ASCII printable range
      * using their xml character entity representation (this has the benefit that line end characters will not be mangled
      * in the transfer, a CR-LF will be preserved as well as a singe LF).
      * Valid values are 'US-ASCII', 'UTF-8' and 'ISO-8859-1'.
-     * For the fastest mode of operation, set your both your app internal encoding as well as this to UTF-8.
+     * For the fastest mode of operation, set your both your app internal encoding and this to UTF-8.
      */
-    public $request_charset_encoding = '';
+    protected $request_charset_encoding = '';
     /**
+     * @var string
+     *
      * Decides the content of Response objects returned by calls to send() and multicall().
      * Valid values are 'xmlrpcvals', 'phpvals' or 'xml'.
      *
-     * Determines whether the value returned inside an Response object as results of calls to the send() and multicall()
+     * Determines whether the value returned inside a Response object as results of calls to the send() and multicall()
      * methods will be a Value object, a plain php value or a raw xml string.
      * Allowed values are 'xmlrpcvals' (the default), 'phpvals' and 'xml'.
      * To allow the user to differentiate between a correct and a faulty response, fault responses will be returned as
      * Response objects in any case.
      * Note that the 'phpvals' setting will yield faster execution times, but some of the information from the original
      * response will be lost. It will be e.g. impossible to tell whether a particular php string value was sent by the
-     * server as an xmlrpc string or base64 value.
+     * server as an xml-rpc string or base64 value.
      */
-    public $return_type = XMLParser::RETURN_XMLRPCVALS;
+    protected $return_type = XMLParser::RETURN_XMLRPCVALS;
     /**
-     * Sent to servers in http headers.
+     * @var string
+     *
+     * Sent to servers in http headers. Value set at constructor time.
      */
-    public $user_agent;
-    public function getLogger()
-    {
-    }
-    public static function setLogger($logger)
-    {
-    }
+    protected $user_agent;
     /**
-     * @param string $path either the PATH part of the xmlrpc server URL, or complete server URL (in which case you
-     *                     should use and empty string for all other parameters)
+     * CURL handle: used for keep-alive
+     * @internal
+     */
+    public $xmlrpc_curl_handle = null;
+    /**
+     * @var array
+     */
+    protected static $options = array(self::OPT_ACCEPTED_CHARSET_ENCODINGS, self::OPT_ACCEPTED_COMPRESSION, self::OPT_AUTH_TYPE, self::OPT_CA_CERT, self::OPT_CA_CERT_DIR, self::OPT_CERT, self::OPT_CERT_PASS, self::OPT_COOKIES, self::OPT_DEBUG, self::OPT_EXTRA_CURL_OPTS, self::OPT_EXTRA_SOCKET_OPTS, self::OPT_KEEPALIVE, self::OPT_KEY, self::OPT_KEY_PASS, self::OPT_NO_MULTICALL, self::OPT_PASSWORD, self::OPT_PROXY, self::OPT_PROXY_AUTH_TYPE, self::OPT_PROXY_PASS, self::OPT_PROXY_USER, self::OPT_PROXY_PORT, self::OPT_REQUEST_CHARSET_ENCODING, self::OPT_REQUEST_COMPRESSION, self::OPT_RETURN_TYPE, self::OPT_SSL_VERSION, self::OPT_TIMEOUT, self::OPT_USE_CURL, self::OPT_USER_AGENT, self::OPT_USERNAME, self::OPT_VERIFY_HOST, self::OPT_VERIFY_PEER);
+    /**
+     * @param string $path either the PATH part of the xml-rpc server URL, or complete server URL (in which case you
+     *                     should use an empty string for all other parameters)
      *                     e.g. /xmlrpc/server.php
      *                     e.g. http://phpxmlrpc.sourceforge.net/server.php
      *                     e.g. https://james:bond@secret.service.com:444/xmlrpcserver?agent=007
@@ -133,17 +282,52 @@ class Client
     {
     }
     /**
-     * Enable/disable the echoing to screen of the xmlrpc responses received. The default is not no output anything.
+     * @param string $name see all the OPT_ constants
+     * @param mixed $value
+     * @return $this
+     * @throws ValueErrorException on unsupported option
+     */
+    public function setOption($name, $value)
+    {
+    }
+    /**
+     * @param string $name see all the OPT_ constants
+     * @return mixed
+     * @throws ValueErrorException on unsupported option
+     */
+    public function getOption($name)
+    {
+    }
+    /**
+     * Returns the complete list of Client options, with their value.
+     * @return array
+     */
+    public function getOptions()
+    {
+    }
+    /**
+     * @param array $options key: any valid option (see all the OPT_ constants)
+     * @return $this
+     * @throws ValueErrorException on unsupported option
+     */
+    public function setOptions($options)
+    {
+    }
+    /**
+     * Enable/disable the echoing to screen of the xml-rpc responses received. The default is not to output anything.
      *
      * The debugging information at level 1 includes the raw data returned from the XML-RPC server it was querying
      * (including bot HTTP headers and the full XML payload), and the PHP value the client attempts to create to
-     * represent the value returned by the server
-     * At level2, the complete payload of the xmlrpc request is also printed, before being sent t the server.
+     * represent the value returned by the server.
+     * At level 2, the complete payload of the xml-rpc request is also printed, before being sent to the server.
+     * At level -1, the Response objects returned by send() calls will not carry information about the http response's
+     * cookies, headers and body, which might save some memory
      *
      * This option can be very useful when debugging servers as it allows you to see exactly what the client sends and
-     * the server returns.
+     * the server returns. Never leave it enabled for production!
      *
-     * @param integer $level values 0, 1 and 2 are supported (2 = echo sent msg too, before received response)
+     * @param integer $level values -1, 0, 1 and 2 are supported
+     * @return $this
      */
     public function setDebug($level)
     {
@@ -161,6 +345,7 @@ class Client
      * @param integer $authType auth type. See curl_setopt man page for supported auth types. Defaults to CURLAUTH_BASIC
      *                          (basic auth). Note that auth types NTLM and Digest will only work if the Curl php
      *                          extension is enabled.
+     * @return $this
      */
     public function setCredentials($user, $password, $authType = 1)
     {
@@ -174,6 +359,7 @@ class Client
      *
      * @param string $cert the name of a file containing a PEM formatted certificate
      * @param string $certPass the password required to use it
+     * @return $this
      */
     public function setCertificate($cert, $certPass = '')
     {
@@ -185,6 +371,7 @@ class Client
      *
      * @param string $caCert certificate file name (or dir holding certificates)
      * @param bool $isDir set to true to indicate cacert is a dir. defaults to false
+     * @return $this
      */
     public function setCaCertificate($caCert, $isDir = false)
     {
@@ -197,6 +384,7 @@ class Client
      *
      * @param string $key The name of a file containing a private SSL key
      * @param string $keyPass The secret password needed to use the private SSL key
+     * @return $this
      */
     public function setKey($key, $keyPass)
     {
@@ -209,6 +397,8 @@ class Client
      * To specify custom SSL certificates to validate the server with, use the setCaCertificate method.
      *
      * @param bool $i enable/disable verification of peer certificate
+     * @return $this
+     * @deprecated use setOption
      */
     public function setSSLVerifyPeer($i)
     {
@@ -219,6 +409,8 @@ class Client
      * Note that support for value 1 has been removed in cURL 7.28.1
      *
      * @param int $i Set to 1 to only the existence of a CN, not that it matches
+     * @return $this
+     * @deprecated use setOption
      */
     public function setSSLVerifyHost($i)
     {
@@ -226,7 +418,9 @@ class Client
     /**
      * Set attributes for SSL communication: SSL version to use. Best left at 0 (default value): let cURL decide
      *
-     * @param int $i
+     * @param int $i see  CURL_SSLVERSION_ constants
+     * @return $this
+     * @deprecated use setOption
      */
     public function setSSLVersion($i)
     {
@@ -242,53 +436,60 @@ class Client
      * @param string $proxyPassword Leave blank if proxy has public access
      * @param int $proxyAuthType defaults to CURLAUTH_BASIC (Basic authentication protocol); set to constant CURLAUTH_NTLM
      *                           to use NTLM auth with proxy (has effect only when the client uses the HTTP 1.1 protocol)
+     * @return $this
      */
     public function setProxy($proxyHost, $proxyPort, $proxyUsername = '', $proxyPassword = '', $proxyAuthType = 1)
     {
     }
     /**
-     * Enables/disables reception of compressed xmlrpc responses.
+     * Enables/disables reception of compressed xml-rpc responses.
      *
      * This requires the "zlib" extension to be enabled in your php install. If it is, by default xmlrpc_client
      * instances will enable reception of compressed content.
-     * Note that enabling reception of compressed responses merely adds some standard http headers to xmlrpc requests.
-     * It is up to the xmlrpc server to return compressed responses when receiving such requests.
+     * Note that enabling reception of compressed responses merely adds some standard http headers to xml-rpc requests.
+     * It is up to the xml-rpc server to return compressed responses when receiving such requests.
      *
      * @param string $compMethod either 'gzip', 'deflate', 'any' or ''
+     * @return $this
      */
     public function setAcceptedCompression($compMethod)
     {
     }
     /**
-     * Enables/disables http compression of xmlrpc request.
+     * Enables/disables http compression of xml-rpc request.
      *
      * This requires the "zlib" extension to be enabled in your php install.
      * Take care when sending compressed requests: servers might not support them (and automatic fallback to
      * uncompressed requests is not yet implemented).
      *
      * @param string $compMethod either 'gzip', 'deflate' or ''
+     * @return $this
+     * @deprecated use setOption
      */
     public function setRequestCompression($compMethod)
     {
     }
     /**
      * Adds a cookie to list of cookies that will be sent to server with every further request (useful e.g. for keeping
-     * session info outside of the xml-rpc payload).
+     * session info outside the xml-rpc payload).
      *
-     * NB: By default cookies are sent using the 'original/netscape' format, which is also the same as the RFC 2965;
-     * setting any param but name and value will turn the cookie into a 'version 1' cookie (i.e. RFC 2109 cookie) that
-     * might not be fully supported by the server. Note that RFC 2109 has currently 'historic' status...
+     * NB: by default all cookies set via this method are sent to the server, regardless of path/domain/port. Taking
+     * advantage of those values is left to the single developer.
      *
      * @param string $name nb: will not be escaped in the request's http headers. Take care not to use CTL chars or
      *                     separators!
      * @param string $value
-     * @param string $path leave this empty unless the xml-rpc server only accepts RFC 2109 cookies
-     * @param string $domain leave this empty unless the xml-rpc server only accepts RFC 2109 cookies
-     * @param int $port leave this empty unless the xml-rpc server only accepts RFC 2109 cookies
+     * @param string $path
+     * @param string $domain
+     * @param int $port do not use! Cookies are not separated by port
+     * @return $this
      *
      * @todo check correctness of urlencoding cookie value (copied from php way of doing it, but php is generally sending
      *       response not requests. We do the opposite...)
      * @todo strip invalid chars from cookie name? As per RFC6265, we should follow RFC2616, Section 2.2
+     * @todo drop/rename $port parameter. Cookies are not isolated by port!
+     * @todo feature-creep allow storing 'expires', 'secure', 'httponly' and 'samesite' cookie attributes (we could do
+     *       as php, and allow $path to be an array of attributes...)
      */
     public function setCookie($name, $value = '', $path = '', $domain = '', $port = null)
     {
@@ -296,15 +497,19 @@ class Client
     /**
      * Directly set cURL options, for extra flexibility (when in cURL mode).
      *
-     * It allows eg. to bind client to a specific IP interface / address.
+     * It allows e.g. to bind client to a specific IP interface / address.
      *
      * @param array $options
+     * @return $this
+     * @deprecated use setOption
      */
     public function setCurlOptions($options)
     {
     }
     /**
      * @param int $useCurlMode self::USE_CURL_ALWAYS, self::USE_CURL_AUTO or self::USE_CURL_NEVER
+     * @return $this
+     * @deprecated use setOption
      */
     public function setUseCurl($useCurlMode)
     {
@@ -315,12 +520,23 @@ class Client
      * The default user agent string includes the name of this library and the version number.
      *
      * @param string $agentString
+     * @return $this
+     * @deprecated use setOption
      */
     public function setUserAgent($agentString)
     {
     }
     /**
-     * Send an xmlrpc request to the server.
+     * @param null|int $component allowed values: PHP_URL_SCHEME, PHP_URL_HOST, PHP_URL_PORT, PHP_URL_PATH
+     * @return string|int Notes: the path component will include query string and fragment; NULL is a valid value for port
+     *                    (in which case the default port for http/https will be used);
+     * @throws ValueErrorException on unsupported component
+     */
+    public function getUrl($component = null)
+    {
+    }
+    /**
+     * Send an xml-rpc request to the server.
      *
      * @param Request|Request[]|string $req The Request object, or an array of requests for using multicall, or the
      *                                      complete xml representation of a request.
@@ -328,25 +544,27 @@ class Client
      *                                      a single 'system.multicall' xml-rpc method call to forward to the server all
      *                                      the requests in a single HTTP round trip, unless $this->no_multicall has
      *                                      been previously set to TRUE (see the multicall method below), in which case
-     *                                      many consecutive xmlrpc requests will be sent. The method will return an
+     *                                      many consecutive xml-rpc requests will be sent. The method will return an
      *                                      array of Response objects in both cases.
      *                                      The third variant allows to build by hand (or any other means) a complete
-     *                                      xmlrpc request message, and send it to the server. $req should be a string
+     *                                      xml-rpc request message, and send it to the server. $req should be a string
      *                                      containing the complete xml representation of the request. It is e.g. useful
      *                                      when, for maximal speed of execution, the request is serialized into a
-     *                                      string using the native php xmlrpc functions (see http://www.php.net/xmlrpc)
-     * @param integer $timeout Connection timeout, in seconds, If unspecified, a platform specific timeout will apply.
+     *                                      string using the native php xml-rpc functions (see http://www.php.net/xmlrpc)
+     * @param integer $timeout deprecated. Connection timeout, in seconds, If unspecified, the timeout set with setOption
+     *                         will be used. If that is 0, a platform specific timeout will apply.
      *                         This timeout value is passed to fsockopen(). It is also used for detecting server
      *                         timeouts during communication (i.e. if the server does not send anything to the client
      *                         for $timeout seconds, the connection will be closed).
-     * @param string $method valid values are 'http', 'http11', 'https', 'h2' and 'h2c'. If left unspecified,
+     * @param string $method deprecated. Use the same value in the constructor instead.
+     *                       Valid values are 'http', 'http11', 'https', 'h2' and 'h2c'. If left empty,
      *                       the http protocol chosen during creation of the object will be used.
      *                       Use 'h2' to make the lib attempt to use http/2 over a secure connection, and 'h2c'
      *                       for http/2 without tls. Note that 'h2c' will not use the h2c 'upgrade' method, and be
      *                       thus incompatible with any server/proxy not supporting http/2. This is because POST
      *                       request are not compatible with h2c upgrade.
-     *
      * @return Response|Response[] Note that the client will always return a Response object, even if the call fails
+     *
      * @todo allow throwing exceptions instead of returning responses in case of failed calls and/or Fault responses
      * @todo refactor: we now support many options besides connection timeout and http version to use. Why only privilege those?
      */
@@ -354,7 +572,93 @@ class Client
     {
     }
     /**
+     * @param Request $req
+     * @param string $method
+     * @param string $server
+     * @param int $port
+     * @param string $path
+     * @param array $opts
+     * @return Response
+     */
+    protected function sendViaSocket($req, $method, $server, $port, $path, $opts)
+    {
+    }
+    /**
+     * Contributed by Justin Miller
+     * Requires curl to be built into PHP
+     * NB: CURL versions before 7.11.10 cannot use proxy to talk to https servers!
+     *
+     * @param Request $req
+     * @param string $method
+     * @param string $server
+     * @param int $port
+     * @param string $path
+     * @param array $opts the keys/values match self::getOptions
+     * @return Response
+     *
+     * @todo the $path arg atm is ignored. What to do if it is != $this->path?
+     */
+    protected function sendViaCURL($req, $method, $server, $port, $path, $opts)
+    {
+    }
+    /**
+     * @param Request $req
+     * @param string $method
+     * @param string $server
+     * @param int $port
+     * @param string $path
+     * @param array $opts the keys/values match self::getOptions
+     * @return \CurlHandle|resource|false
+     *
+     * @todo allow this method to either throw or return a Response, so that we can pass back to caller more info on errors
+     */
+    protected function createCURLHandle($req, $method, $server, $port, $path, $opts)
+    {
+    }
+    /**
+     * Send an array of requests and return an array of responses.
+     *
+     * Unless $this->no_multicall has been set to true, it will try first to use one single xml-rpc call to server method
+     * system.multicall, and revert to sending many successive calls in case of failure.
+     * This failure is also stored in $this->no_multicall for subsequent calls.
+     * Unfortunately, there is no server error code universally used to denote the fact that multicall is unsupported,
+     * so there is no way to reliably distinguish between that and a temporary failure.
+     * If you are sure that server supports multicall and do not want to fallback to using many single calls, set the
+     * 2np parameter to FALSE.
+     *
+     * NB: trying to shoehorn extra functionality into existing syntax has resulted
+     * in pretty much convoluted code...
+     *
+     * @param Request[] $reqs an array of Request objects
+     * @param bool $noFallback When true, upon receiving an error during multicall, multiple single calls will not be
+     *                         attempted.
+     *                         Deprecated alternative, was: int - "connection timeout (in seconds). See the details in the
+     *                         docs for the send() method". Please use setOption instead to set a timeout
+     * @param string $method deprecated. Was: "the http protocol variant to be used. See the details in the docs for the send() method."
+     *                       Please use the constructor to set an http protocol variant.
+     * @param boolean $fallback deprecated. Was: "w"hen true, upon receiving an error during multicall, multiple single
+     *                          calls will be attempted"
+     * @return Response[]
+     */
+    public function multicall($reqs, $timeout = 0, $method = '', $fallback = true)
+    {
+    }
+    /**
+     * Attempt to boxcar $reqs via system.multicall.
+     *
+     * @param Request[] $reqs
+     * @param int $timeout
+     * @param string $method
+     * @return Response[]|Response a single Response when the call returned a fault / does not conform to what we expect
+     *                             from a multicall response
+     */
+    private function _try_multicall($reqs, $timeout, $method)
+    {
+    }
+    // *** BC layer ***
+    /**
      * @deprecated
+     *
      * @param Request $req
      * @param string $server
      * @param int $port
@@ -375,6 +679,7 @@ class Client
     }
     /**
      * @deprecated
+     *
      * @param Request $req
      * @param string $server
      * @param int $port
@@ -401,6 +706,8 @@ class Client
     {
     }
     /**
+     * @deprecated
+     *
      * @param Request $req
      * @param string $server
      * @param int $port
@@ -422,16 +729,12 @@ class Client
      * @param string $keyPass @todo not implemented yet.
      * @param int $sslVersion @todo not implemented yet. See http://php.net/manual/en/migration56.openssl.php
      * @return Response
-     *
-     * @todo refactor: we get many options for the call passed in, but some we use from $this. We should clean that up
      */
     protected function sendPayloadSocket($req, $server, $port, $timeout = 0, $username = '', $password = '', $authType = 1, $cert = '', $certPass = '', $caCert = '', $caCertDir = '', $proxyHost = '', $proxyPort = 0, $proxyUsername = '', $proxyPassword = '', $proxyAuthType = 1, $method = 'http', $key = '', $keyPass = '', $sslVersion = 0)
     {
     }
     /**
-     * Contributed by Justin Miller <justin@voxel.net>
-     * Requires curl to be built into PHP
-     * NB: CURL versions before 7.11.10 cannot use proxy to talk to https servers!
+     * @deprecated
      *
      * @param Request $req
      * @param string $server
@@ -455,52 +758,50 @@ class Client
      * @param string $keyPass
      * @param int $sslVersion
      * @return Response
-     *
-     * @todo refactor: we get many options for the call passed in, but some we use from $this. We should clean that up
      */
     protected function sendPayloadCURL($req, $server, $port, $timeout = 0, $username = '', $password = '', $authType = 1, $cert = '', $certPass = '', $caCert = '', $caCertDir = '', $proxyHost = '', $proxyPort = 0, $proxyUsername = '', $proxyPassword = '', $proxyAuthType = 1, $method = 'https', $keepAlive = false, $key = '', $keyPass = '', $sslVersion = 0)
     {
     }
+    /**
+     * @deprecated
+     *
+     * @param $req
+     * @param $server
+     * @param $port
+     * @param $timeout
+     * @param $username
+     * @param $password
+     * @param $authType
+     * @param $cert
+     * @param $certPass
+     * @param $caCert
+     * @param $caCertDir
+     * @param $proxyHost
+     * @param $proxyPort
+     * @param $proxyUsername
+     * @param $proxyPassword
+     * @param $proxyAuthType
+     * @param $method
+     * @param $keepAlive
+     * @param $key
+     * @param $keyPass
+     * @param $sslVersion
+     * @return false|\CurlHandle|resource
+     */
     protected function prepareCurlHandle($req, $server, $port, $timeout = 0, $username = '', $password = '', $authType = 1, $cert = '', $certPass = '', $caCert = '', $caCertDir = '', $proxyHost = '', $proxyPort = 0, $proxyUsername = '', $proxyPassword = '', $proxyAuthType = 1, $method = 'https', $keepAlive = false, $key = '', $keyPass = '', $sslVersion = 0)
     {
     }
-    /**
-     * Send an array of requests and return an array of responses.
-     *
-     * Unless $this->no_multicall has been set to true, it will try first to use one single xmlrpc call to server method
-     * system.multicall, and revert to sending many successive calls in case of failure.
-     * This failure is also stored in $this->no_multicall for subsequent calls.
-     * Unfortunately, there is no server error code universally used to denote the fact that multicall is unsupported,
-     * so there is no way to reliably distinguish between that and a temporary failure.
-     * If you are sure that server supports multicall and do not want to fallback to using many single calls, set the
-     * fourth parameter to FALSE.
-     *
-     * NB: trying to shoehorn extra functionality into existing syntax has resulted
-     * in pretty much convoluted code...
-     *
-     * @param Request[] $reqs an array of Request objects
-     * @param integer $timeout connection timeout (in seconds). See the details in the docs for the send() method
-     * @param string $method the http protocol variant to be used. See the details in the docs for the send() method
-     * @param boolean fallback When true, upon receiving an error during multicall, multiple single calls will be
-     *                         attempted
-     *
-     * @return Response[]
-     */
-    public function multicall($reqs, $timeout = 0, $method = '', $fallback = true)
+    // we have to make this return by ref in order to allow calls such as `$resp->_cookies['name'] = ['value' => 'something'];`
+    public function &__get($name)
     {
     }
-    /**
-     * Attempt to boxcar $reqs via system.multicall.
-     *
-     * Returns either an array of Response, a single error Response or false (when received response does not respect
-     * valid multicall syntax).
-     *
-     * @param Request[] $reqs
-     * @param int $timeout
-     * @param string $method
-     * @return Response[]|false|mixed|Response
-     */
-    private function _try_multicall($reqs, $timeout, $method)
+    public function __set($name, $value)
+    {
+    }
+    public function __isset($name)
+    {
+    }
+    public function __unset($name)
     {
     }
 }

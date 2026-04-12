@@ -68,9 +68,11 @@ class mnet_xmlrpc_client
      *
      * @param  object   $mnet_peer      A mnet_peer object with details of the
      *                                  remote host we're connecting to
+     * @param  bool     $rekey         The rekey attribute stops us from
+     *                                  getting into a loop.
      * @return mixed                    A PHP variable, as returned by the
      */
-    public function send($mnet_peer)
+    public function send($mnet_peer, bool $rekey = false)
     {
     }
     /**

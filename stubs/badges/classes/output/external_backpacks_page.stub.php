@@ -38,6 +38,10 @@ namespace core_badges\output;
  */
 class external_backpacks_page implements \renderable
 {
+    /** @var \moodle_url Badges backpacks URL. */
+    protected $url;
+    /** @var array List the backpacks at site level. */
+    protected $backpacks = [];
     /**
      * Constructor.
      * @param \moodle_url $url

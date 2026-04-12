@@ -10,73 +10,111 @@ namespace PhpXmlRpc;
 
 /**
  * Allows effortless implementation of XML-RPC servers
+ *
+ * @property string[] $accepted_compression deprecated - public access left in purely for BC. Access via getOption()/setOption()
+ * @property bool $allow_system_funcs deprecated - public access left in purely for BC. Access via getOption()/setOption()
+ * @property bool $compress_response deprecated - public access left in purely for BC. Access via getOption()/setOption()
+ * @property int $debug deprecated - public access left in purely for BC. Access via getOption()/setOption()
+ * @property int $exception_handling deprecated - public access left in purely for BC. Access via getOption()/setOption()
+ * @property string $functions_parameters_type deprecated - public access left in purely for BC. Access via getOption()/setOption()
+ * @property array $phpvals_encoding_options deprecated - public access left in purely for BC. Access via getOption()/setOption()
+ * @property string $response_charset_encoding deprecated - public access left in purely for BC. Access via getOption()/setOption()
  */
 class Server
 {
-    protected static $logger;
-    protected static $parser;
-    protected static $charsetEncoder;
+    use CharsetEncoderAware;
+    use DeprecationLogger;
+    use ParserAware;
+    const OPT_ACCEPTED_COMPRESSION = 'accepted_compression';
+    const OPT_ALLOW_SYSTEM_FUNCS = 'allow_system_funcs';
+    const OPT_COMPRESS_RESPONSE = 'compress_response';
+    const OPT_DEBUG = 'debug';
+    const OPT_EXCEPTION_HANDLING = 'exception_handling';
+    const OPT_FUNCTIONS_PARAMETERS_TYPE = 'functions_parameters_type';
+    const OPT_PHPVALS_ENCODING_OPTIONS = 'phpvals_encoding_options';
+    const OPT_RESPONSE_CHARSET_ENCODING = 'response_charset_encoding';
+    /** @var string */
+    protected static $responseClass = '\PhpXmlRpc\Response';
     /**
-     * Defines how functions in dmap will be invoked: either using an xmlrpc request object
-     * or plain php values.
-     * Valid strings are 'xmlrpcvals', 'phpvals' or 'epivals'
+     * @var string
+     * Defines how functions in $dmap will be invoked: either using an xml-rpc Request object or plain php values.
+     * Valid strings are 'xmlrpcvals', 'phpvals' or 'epivals' (only for use by polyfill-xmlrpc).
+     *
      * @todo create class constants for these
      */
-    public $functions_parameters_type = 'xmlrpcvals';
+    protected $functions_parameters_type = 'xmlrpcvals';
     /**
-     * Option used for fine-tuning the encoding the php values returned from
-     * functions registered in the dispatch map when the functions_parameters_types
-     * member is set to 'phpvals'
+     * @var array
+     * Option used for fine-tuning the encoding the php values returned from functions registered in the dispatch map
+     * when the functions_parameters_type member is set to 'phpvals'.
      * @see Encoder::encode for a list of values
      */
-    public $phpvals_encoding_options = array('auto_dates');
+    protected $phpvals_encoding_options = array('auto_dates');
     /**
+     * @var int
      * Controls whether the server is going to echo debugging messages back to the client as comments in response body.
-     * Valid values: 0,1,2,3
+     * SECURITY SENSITIVE!
+     * Valid values:
+     * 0 =
+     * 1 =
+     * 2 =
+     * 3 =
      */
-    public $debug = 1;
+    protected $debug = 1;
     /**
-     * Controls behaviour of server when the invoked user function throws an exception:
-     * 0 = catch it and return an 'internal error' xmlrpc response (default)
-     * 1 = catch it and return an xmlrpc response with the error corresponding to the exception
+     * @var int
+     * Controls behaviour of server when the invoked method-handler function throws an exception (within the `execute` method):
+     * 0 = catch it and return an 'internal error' xml-rpc response (default)
+     * 1 = SECURITY SENSITIVE DO NOT ENABLE ON PUBLIC SERVERS!!! catch it and return an xml-rpc response with the error
+     *     corresponding to the exception, both its code and message.
      * 2 = allow the exception to float to the upper layers
+     * Can be overridden per-method-handler in the dispatch map
      */
-    public $exception_handling = 0;
+    protected $exception_handling = 0;
     /**
-     * When set to true, it will enable HTTP compression of the response, in case
-     * the client has declared its support for compression in the request.
-     * Set at constructor time.
+     * @var bool
+     * When set to true, it will enable HTTP compression of the response, in case the client has declared its support
+     * for compression in the request.
+     * Automatically set at constructor time.
      */
-    public $compress_response = false;
+    protected $compress_response = false;
     /**
-     * List of http compression methods accepted by the server for requests. Set at constructor time.
+     * @var string[]
+     * List of http compression methods accepted by the server for requests. Automatically set at constructor time.
      * NB: PHP supports deflate, gzip compressions out of the box if compiled w. zlib
      */
-    public $accepted_compression = array();
-    /// Shall we serve calls to system.* methods?
-    public $allow_system_funcs = true;
+    protected $accepted_compression = array();
+    /**
+     * @var bool
+     * Shall we serve calls to system.* methods?
+     */
+    protected $allow_system_funcs = true;
     /**
      * List of charset encodings natively accepted for requests.
      * Set at constructor time.
-     * UNUSED so far...
+     * @deprecated UNUSED so far by this library. It is still accessible by subclasses but will be dropped in the future.
      */
-    public $accepted_charset_encodings = array();
+    private $accepted_charset_encodings = array();
     /**
+     * @var string
      * Charset encoding to be used for response.
      * NB: if we can, we will convert the generated response from internal_encoding to the intended one.
-     * Can be: a supported xml encoding (only UTF-8 and ISO-8859-1 at present, unless mbstring is enabled),
-     * null (leave unspecified in response, convert output stream to US_ASCII),
-     * 'default' (use xmlrpc library default as specified in xmlrpc.inc, convert output stream if needed),
-     * or 'auto' (use client-specified charset encoding or same as request if request headers do not specify it (unless request is US-ASCII: then use library default anyway).
+     * Can be:
+     * - a supported xml encoding (only UTF-8 and ISO-8859-1, unless mbstring is enabled),
+     * - null (leave unspecified in response, convert output stream to US_ASCII),
+     * - 'auto' (use client-specified charset encoding or same as request if request headers do not specify it (unless request is US-ASCII: then use library default anyway).
      * NB: pretty dangerous if you accept every charset and do not have mbstring enabled)
      */
-    public $response_charset_encoding = '';
+    protected $response_charset_encoding = '';
+    protected static $options = array(self::OPT_ACCEPTED_COMPRESSION, self::OPT_ALLOW_SYSTEM_FUNCS, self::OPT_COMPRESS_RESPONSE, self::OPT_DEBUG, self::OPT_EXCEPTION_HANDLING, self::OPT_FUNCTIONS_PARAMETERS_TYPE, self::OPT_PHPVALS_ENCODING_OPTIONS, self::OPT_RESPONSE_CHARSET_ENCODING);
     /**
+     * @var mixed
      * Extra data passed at runtime to method handling functions. Used only by EPI layer
+     * @internal
      */
     public $user_data = null;
     /**
-     * Array defining php functions exposed as xmlrpc methods by this server.
+     * Array defining php functions exposed as xml-rpc methods by this server.
      * @var array[] $dmap
      */
     protected $dmap = array();
@@ -87,24 +125,6 @@ class Server
     protected static $_xmlrpc_debuginfo = '';
     protected static $_xmlrpcs_occurred_errors = '';
     protected static $_xmlrpcs_prev_ehandler = '';
-    public function getLogger()
-    {
-    }
-    public static function setLogger($logger)
-    {
-    }
-    public function getParser()
-    {
-    }
-    public static function setParser($parser)
-    {
-    }
-    public function getCharsetEncoder()
-    {
-    }
-    public function setCharsetEncoder($charsetEncoder)
-    {
-    }
     /**
      * @param array[] $dispatchMap the dispatch map with definition of exposed services
      *                             Array keys are the names of the method names.
@@ -114,24 +134,58 @@ class Server
      *                             - signature (array, optional)
      *                             - signature_docs (array, optional)
      *                             - parameters_type (string, optional)
-     * @param boolean $serviceNow set to false to prevent the server from running upon construction
+     *                             - exception_handling (int, optional)
+     * @param boolean $serviceNow set to false in order to prevent the server from running upon construction
      */
     public function __construct($dispatchMap = null, $serviceNow = true)
     {
     }
     /**
+     * @param string $name see all the OPT_ constants
+     * @param mixed $value
+     * @return $this
+     * @throws ValueErrorException on unsupported option
+     */
+    public function setOption($name, $value)
+    {
+    }
+    /**
+     * @param string $name see all the OPT_ constants
+     * @return mixed
+     * @throws ValueErrorException on unsupported option
+     */
+    public function getOption($name)
+    {
+    }
+    /**
+     * Returns the complete list of Server options.
+     * @return array
+     */
+    public function getOptions()
+    {
+    }
+    /**
+     * @param array $options key:  see all the OPT_ constants
+     * @return $this
+     * @throws ValueErrorException on unsupported option
+     */
+    public function setOptions($options)
+    {
+    }
+    /**
      * Set debug level of server.
      *
-     * @param integer $level debug lvl: determines info added to xmlrpc responses (as xml comments)
+     * @param integer $level debug lvl: determines info added to xml-rpc responses (as xml comments)
      *                    0 = no debug info,
      *                    1 = msgs set from user with debugmsg(),
-     *                    2 = add complete xmlrpc request (headers and body),
+     *                    2 = add complete xml-rpc request (headers and body),
      *                    3 = add also all processing warnings happened during method processing
      *                    (NB: this involves setting a custom error handler, and might interfere
      *                    with the standard processing of the php function exposed as method. In
-     *                    particular, triggering an USER_ERROR level error will not halt script
-     *                    execution anymore, but just end up logged in the xmlrpc response)
+     *                    particular, triggering a USER_ERROR level error will not halt script
+     *                    execution anymore, but just end up logged in the xml-rpc response)
      *                    Note that info added at level 2 and 3 will be base64 encoded
+     * @return $this
      */
     public function setDebug($level)
     {
@@ -142,22 +196,25 @@ class Server
      * character set.
      *
      * @param string $msg
+     * @return void
      */
     public static function xmlrpc_debugmsg($msg)
     {
     }
     /**
      * Add a string to the debug info that will be later serialized by the server as part of the response message
-     * (base64 encoded, only when debug level >= 2)
+     * (base64 encoded) when debug level >= 2
      *
-     * character set.
      * @param string $msg
+     * @return void
      */
     public static function error_occurred($msg)
     {
     }
     /**
      * Return a string with the serialized representation of all debug info.
+     *
+     * @internal this function will become protected in the future
      *
      * @param string $charsetEncoding the target charset encoding for the serialization
      *
@@ -167,13 +224,12 @@ class Server
     {
     }
     /**
-     * Execute the xmlrpc request, printing the response.
+     * Execute the xml-rpc request, printing the response.
      *
      * @param string $data the request body. If null, the http POST request will be examined
      * @param bool $returnPayload When true, return the response but do not echo it or any http header
      *
      * @return Response|string the response object (usually not used by caller...) or its xml serialization
-     *
      * @throws \Exception in case the executed method does throw an exception (and depending on server configuration)
      */
     public function service($data = null, $returnPayload = false)
@@ -190,26 +246,48 @@ class Server
      * @param string $doc method documentation
      * @param array[] $sigDoc the array of valid method signatures docs, following the format of $sig but with
      *                        descriptions instead of types (one string for return type, one per param)
+     * @param string $parametersType to allow single method handlers to receive php values instead of a Request, or vice-versa
+     * @param int $exceptionHandling @see $this->exception_handling
+     * @return void
      *
      * @todo raise a warning if the user tries to register a 'system.' method
-     * @todo allow setting parameters_type
      */
-    public function add_to_map($methodName, $function, $sig = null, $doc = false, $sigDoc = false)
+    public function addToMap($methodName, $function, $sig = null, $doc = false, $sigDoc = false, $parametersType = false, $exceptionHandling = false)
+    {
+    }
+    /**
+     * Add a method to the dispatch map.
+     *
+     * @param string $methodName the name with which the method will be made available
+     * @param callable $function the php function that will get invoked
+     * @param array[] $sig the array of valid method signatures.
+     *                     Each element is one signature: an array of strings with at least one element
+     *                     First element = type of returned value. Elements 2..N = types of parameters 1..N
+     * @param string $doc method documentation
+     * @param array[] $sigDoc the array of valid method signatures docs, following the format of $sig but with
+     *                        descriptions instead of types (one string for return type, one per param)
+     * @param string $parametersType to allow single method handlers to receive php values instead of a Request, or vice-versa
+     * @param int $exceptionHandling @see $this->exception_handling
+     * @return void
+     *
+     * @todo raise a warning if the user tries to register a 'system.' method
+     * @deprecated use addToMap instead
+     */
+    public function add_to_map($methodName, $function, $sig = null, $doc = false, $sigDoc = false, $parametersType = false, $exceptionHandling = false)
     {
     }
     /**
      * Verify type and number of parameters received against a list of known signatures.
      *
-     * @param array|Request $in array of either xmlrpc value objects or xmlrpc type definitions
+     * @param array|Request $in array of either xml-rpc value objects or xml-rpc type definitions
      * @param array $sigs array of known signatures to match against
-     *
      * @return array int, string
      */
     protected function verifySignature($in, $sigs)
     {
     }
     /**
-     * Parse http headers received along with xmlrpc request. If needed, inflate request.
+     * Parse http headers received along with xml-rpc request. If needed, inflate request.
      *
      * @return Response|null null on success or an error Response
      */
@@ -217,17 +295,15 @@ class Server
     {
     }
     /**
-     * Parse an xml chunk containing an xmlrpc request and execute the corresponding
-     * php function registered with the server.
+     * Parse an xml chunk containing an xml-rpc request and execute the corresponding php function registered with the
+     * server.
+     * @internal this function will become protected in the future
      *
      * @param string $data the xml request
      * @param string $reqEncoding (optional) the charset encoding of the xml request
-     *
      * @return Response
-     *
      * @throws \Exception in case the executed method does throw an exception (and depending on server configuration)
      *
-     * @internal this function will become protected in the future
      * @todo either rename this function or move the 'execute' part out of it...
      */
     public function parseRequest($data, $reqEncoding = '')
@@ -237,9 +313,8 @@ class Server
      * Execute a method invoked by the client, checking parameters used.
      *
      * @param Request|string $req either a Request obj or a method name
-     * @param mixed[] $params array with method parameters as php types (only if m is method name)
-     * @param string[] $paramTypes array with xmlrpc types of method parameters (only if m is method name)
-     *
+     * @param mixed[] $params array with method parameters as php types (only if $req is method name)
+     * @param string[] $paramTypes array with xml-rpc types of method parameters (only if $req is method name)
      * @return Response
      *
      * @throws \Exception in case the executed method does throw an exception (and depending on server configuration)
@@ -248,18 +323,31 @@ class Server
     {
     }
     /**
-     * Add a string to the 'internal debug message' (separate from 'user debug message').
+     * Registered as callback for when the XMLParser has found the name of the method to execute.
+     * Handling that early allows to 1. stop parsing the rest of the xml if there is no such method registered, and
+     * 2. tweak the type of data that the parser will return, in case the server uses mixed-calling-convention
      *
-     * @param string $string
+     * @internal
+     * @param $methodName
+     * @param XMLParser $xmlParser
+     * @param resource $parser
+     * @return void
+     * @throws NoSuchMethodException
+     *
+     * @todo feature creep - we could validate here that the method in the dispatch map is valid, but that would mean
+     *       dirtying a lot the logic, as we would have back to both parseRequest() and execute() methods the info
+     *       about the matched method handler, in order to avoid doing the work twice...
      */
-    protected function debugmsg($string)
+    public function methodNameCallback($methodName, $xmlParser, $parser)
     {
     }
     /**
-     * @param string $charsetEncoding
-     * @return string
+     * Add a string to the 'internal debug message' (separate from 'user debug message').
+     *
+     * @param string $string
+     * @return void
      */
-    protected function xml_header($charsetEncoding = '')
+    protected function debugMsg($string)
     {
     }
     /**
@@ -267,6 +355,13 @@ class Server
      * @return bool
      */
     protected function isSyscall($methName)
+    {
+    }
+    /**
+     * @param array $dmap
+     * @return $this
+     */
+    public function setDispatchMap($dmap)
     {
     }
     /**
@@ -281,7 +376,6 @@ class Server
     public function getSystemDispatchMap()
     {
     }
-    /* Functions that implement system.XXX methods of xmlrpc servers */
     /**
      * @return array[]
      */
@@ -289,6 +383,8 @@ class Server
     {
     }
     /**
+     * @internal handler of a system. method
+     *
      * @param Server $server
      * @param Request $req
      * @return Response
@@ -297,6 +393,8 @@ class Server
     {
     }
     /**
+     * @internal handler of a system. method
+     *
      * @param Server $server
      * @param Request $req if called in plain php values mode, second param is missing
      * @return Response
@@ -305,6 +403,8 @@ class Server
     {
     }
     /**
+     * @internal handler of a system. method
+     *
      * @param Server $server
      * @param Request $req
      * @return Response
@@ -313,6 +413,8 @@ class Server
     {
     }
     /**
+     * @internal handler of a system. method
+     *
      * @param Server $server
      * @param Request $req
      * @return Response
@@ -320,10 +422,18 @@ class Server
     public static function _xmlrpcs_methodHelp($server, $req)
     {
     }
+    /**
+     * @internal this function will become protected in the future
+     *
+     * @param $err
+     * @return Value
+     */
     public static function _xmlrpcs_multicall_error($err)
     {
     }
     /**
+     * @internal this function will become protected in the future
+     *
      * @param Server $server
      * @param Value $call
      * @return Value
@@ -332,6 +442,8 @@ class Server
     {
     }
     /**
+     * @internal this function will become protected in the future
+     *
      * @param Server $server
      * @param Value $call
      * @return Value
@@ -340,6 +452,8 @@ class Server
     {
     }
     /**
+     * @internal handler of a system. method
+     *
      * @param Server $server
      * @param Request|array $req
      * @return Response
@@ -350,12 +464,37 @@ class Server
     /**
      * Error handler used to track errors that occur during server-side execution of PHP code.
      * This allows to report back to the client whether an internal error has occurred or not
-     * using an xmlrpc response object, instead of letting the client deal with the html junk
+     * using an xml-rpc response object, instead of letting the client deal with the html junk
      * that a PHP execution error on the server generally entails.
      *
      * NB: in fact a user defined error handler can only handle WARNING, NOTICE and USER_* errors.
+     *
+     * @internal
      */
     public static function _xmlrpcs_errorHandler($errCode, $errString, $filename = null, $lineNo = null, $context = null)
+    {
+    }
+    // *** BC layer ***
+    /**
+     * @param string $charsetEncoding
+     * @return string
+     *
+     * @deprecated this method was moved to the Response class
+     */
+    protected function xml_header($charsetEncoding = '')
+    {
+    }
+    // we have to make this return by ref in order to allow calls such as `$resp->_cookies['name'] = ['value' => 'something'];`
+    public function &__get($name)
+    {
+    }
+    public function __set($name, $value)
+    {
+    }
+    public function __isset($name)
+    {
+    }
+    public function __unset($name)
     {
     }
 }
