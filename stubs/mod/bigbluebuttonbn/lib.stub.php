@@ -268,3 +268,11 @@ function bigbluebuttonbn_print_recent_mod_activity(stdClass $activity, int $cour
 function bigbluebuttonbn_print_recent_activity(object $course, bool $viewfullnames, int $timestart): bool
 {
 }
+/**
+ * Callback method executed prior to enabling the activity module.
+ *
+ * @return bool Whether to proceed and enable the plugin or not.
+ */
+function bigbluebuttonbn_pre_enable_plugin_actions(): bool
+{
+}

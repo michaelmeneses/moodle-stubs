@@ -40,6 +40,15 @@ class flickr_client extends oauth_helper
     {
     }
     /**
+     * Return User-Agent string suitable for calls to Flickr endpoint, avoiding problems caused by the string returned by
+     * the {@see core_useragent::get_moodlebot_useragent} helper, which is often rejected due to presence of "Bot" within
+     *
+     * @return string
+     */
+    public static function user_agent(): string
+    {
+    }
+    /**
      * Temporarily store the request token secret in the session.
      *
      * The request token secret is returned by the oauth request_token method.

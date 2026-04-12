@@ -8,8 +8,10 @@
  */
 /**
  * Create the default category for custom profile fields if it does not exist yet.
+ *
+ * @return int Category ID for social user profile category.
  */
-function user_profile_social_create_info_category()
+function user_profile_social_create_info_category(): int
 {
 }
 /**

@@ -7,38 +7,6 @@
  * @link https://github.com/michaelmeneses/moodle-stubs
  */
 /**
- * phpFlickr Class 2.2.0
- * Written by Dan Coulter (dan@dancoulter.com)
- * Sourceforge Project Page: {@link http://www.sourceforge.net/projects/phpflickr/}
- * Released under GNU Lesser General Public License ({@link http://www.gnu.org/copyleft/lgpl.html})
- * For more information about the class and upcoming tools and toys using it,
- * visit {@link http://www.phpflickr.com/} or {@link http://phpflickr.sourceforge.net}
- *
- *   For installation instructions, open the README.txt file packaged with this
- *   class. If you don't have a copy, you can see it at:
- *    {@link http://www.phpflickr.com/README.txt}
- *
- *   Please submit all problems or questions to the Help Forum on my project page:
- *     {@link http://sourceforge.net/forum/forum.php?forum_id=469652}
- *
- * Modified by Dongsheng Cai <dongsheng@moodle.com>
- * ChangeLog:
- *   1. Remove PEAR HTTP LIB, use curl.class.php (created by myself)
- *   2. Remove PEAR DB LIB
- *   3. Remove all cache code, it will implement in curl class.
- *   4. Clean up session code
- *
- * Modified by David Mudrak <david@moodle.com>
- * ChangeLog:
- *   1. upload() method uses Moodle stored_file
- *   2. upload() method supports all params provided by http://www.flickr.com/services/api/upload.api.html
- *   3. auth() method shows debugging warning as this library cannot be used any
- *      more for calling Flickr API that requires authentication.
- *
- * @package moodlecore
- * @subpackage 3rd-party
- */
-/**
  * Flickr Class
  * @package moodlecore
  * @subpackage 3rd-party

@@ -569,6 +569,7 @@ function login_attempt_valid($user)
 /**
  * To be called after failed user login.
  * @param stdClass $user
+ * @throws moodle_exception
  */
 function login_attempt_failed($user)
 {

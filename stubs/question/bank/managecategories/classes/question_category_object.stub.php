@@ -218,4 +218,16 @@ class question_category_object
     public function update_category($updateid, $newparent, $newname, $newinfo, $newinfoformat = FORMAT_HTML, $idnumber = null, $redirect = true): void
     {
     }
+    /**
+     * Returns ids of the question in the given question category.
+     *
+     * This method only returns the real question. It does not include
+     * subquestions of question types like multianswer.
+     *
+     * @param int $categoryid id of the category.
+     * @return int[] array of question ids.
+     */
+    public function get_real_question_ids_in_category(int $categoryid): array
+    {
+    }
 }

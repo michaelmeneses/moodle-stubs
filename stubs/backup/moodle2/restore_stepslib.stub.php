@@ -500,6 +500,16 @@ class restore_course_structure_step extends restore_structure_step
     public function process_customfield($data)
     {
     }
+    /**
+     * Processes a course format option.
+     *
+     * @param array $data The record being restored.
+     * @throws base_step_exception
+     * @throws dml_exception
+     */
+    public function process_course_format_option(array $data): void
+    {
+    }
     public function process_allowed_module($data)
     {
     }
