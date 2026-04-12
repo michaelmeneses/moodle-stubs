@@ -74,6 +74,12 @@ class grade_report_grader extends grade_report
     public $canviewhidden;
     /** @var int Maximum number of students that can be shown on one page */
     public const MAX_STUDENTS_PER_PAGE = 5000;
+    /**
+     * @var int The maximum number of grades that can be shown on one page.
+     *
+     * More than this causes issues for the browser due to the size of the page.
+     */
+    public const MAX_GRADES_PER_PAGE = 200000;
     /** @var int[] List of available options on the pagination dropdown */
     public const PAGINATION_OPTIONS = [20, 100];
     /**
@@ -125,6 +131,17 @@ class grade_report_grader extends grade_report
      * Load all grade items.
      */
     protected function get_allgradeitems()
+    {
+    }
+    /**
+     * Return the maximum number of students we can display per page.
+     *
+     * This is based on the number of grade items on the course, to limit the overall number of grades displayed on a single page.
+     * Trying to display too many grades causes browser issues.
+     *
+     * @return int
+     */
+    public function get_max_students_per_page(): int
     {
     }
     /**

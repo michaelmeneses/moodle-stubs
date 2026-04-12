@@ -36,10 +36,8 @@ class course_badges extends system_report
      *
      * They are provided by the entities we previously added in the {@see initialise} method, referencing each by their
      * unique identifier. If custom columns are needed just for this report, they can be defined here.
-     *
-     * @param string $badgeissuedalias
      */
-    public function add_columns(string $badgeissuedalias): void
+    protected function add_columns(): void
     {
     }
     /**

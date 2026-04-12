@@ -40,6 +40,8 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * @var int Number of items to delete from cache in one batch when expiring old TTL data.
      */
     const TTL_EXPIRE_BATCH = 10000;
+    /** @var int The number of seconds to wait for a connection or response from the Redis server. */
+    const CONNECTION_TIMEOUT = 10;
     /**
      * Name of this store.
      *

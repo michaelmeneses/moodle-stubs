@@ -198,9 +198,10 @@ abstract class field_controller
     /**
      * Returns the field name formatted according to configuration context.
      *
+     * @param bool $escape
      * @return string
      */
-    public function get_formatted_name(): string
+    public function get_formatted_name(bool $escape = true): string
     {
     }
     /**

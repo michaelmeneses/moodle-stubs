@@ -20,19 +20,12 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-/**
- * Field persistent class
- *
- * @package   core_customfield
- * @copyright 2018 Toni Barbera <toni@moodle.com>
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 namespace core_customfield;
 
 /**
- * Class field
+ * Customfield field persistent class
  *
- * @package core_customfield
+ * @package   core_customfield
  * @copyright 2018 Toni Barbera <toni@moodle.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

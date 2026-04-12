@@ -1321,6 +1321,10 @@ class restore_create_categories_and_questions extends restore_structure_step
 {
     /** @var array $cachedcategory store a question category */
     protected $cachedcategory = null;
+    /** @var stdClass the last question_bank_entry seen during the restore. Processed when we get to a question. */
+    protected $latestqbe;
+    /** @var stdClass the last question_version seen during the restore. Processed when we get to a question. */
+    protected $latestversion;
     protected function define_structure()
     {
     }
@@ -1333,9 +1337,9 @@ class restore_create_categories_and_questions extends restore_structure_step
     {
     }
     /**
-     * Process pre 4.0 question data where in creates the record for version and entry table.
+     * Set up date to allow restore of questions from pre-4.0 backups.
      *
-     * @param array $data the data from the XML file.
+     * @param stdClass $data the data from the XML file.
      */
     protected function process_question_legacy_data($data)
     {
