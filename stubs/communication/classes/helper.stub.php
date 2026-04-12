@@ -103,9 +103,10 @@ class helper
      * Get the enrolled users for course.
      *
      * @param stdClass $course The course object.
+     * @param bool $onlyactive Only enrolments that are active (e.g. not suspended).
      * @return array
      */
-    public static function get_enrolled_users_for_course(stdClass $course): array
+    public static function get_enrolled_users_for_course(stdClass $course, bool $onlyactive = true): array
     {
     }
     /**

@@ -1843,6 +1843,15 @@ class core_renderer extends renderer_base
     {
     }
     /**
+     * Renders the header bar.
+     *
+     * @param context_header $contextheader Header bar object.
+     * @return string HTML for the header bar.
+     */
+    protected function render_context_header(context_header $contextheader)
+    {
+    }
+    /**
      * Renders the skip links for the page.
      *
      * @param array $links List of skip links.

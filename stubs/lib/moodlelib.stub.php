@@ -763,6 +763,7 @@ function purge_all_caches()
  *
  * @param bool[] $options Specific parts of the cache to purge. Valid options are:
  *        'muc'    Purge MUC caches?
+ *        'courses' Purge all course caches, or specific course caches (CLI only)
  *        'theme'  Purge theme cache?
  *        'lang'   Purge language string cache?
  *        'js'     Purge javascript cache?
@@ -1693,7 +1694,7 @@ function hash_internal_user_password(
  * It will remove Web Services user tokens too.
  *
  * @param stdClass $user User object (password property may be updated).
- * @param string $password Plain text password.
+ * @param string|null $password Plain text password.
  * @param bool $fasthash If true, use a low cost factor when generating the hash
  *                       This is much faster to generate but makes the hash
  *                       less secure. It is used when lots of hashes need to
@@ -1703,7 +1704,7 @@ function hash_internal_user_password(
 function update_internal_user_password(
     stdClass $user,
     #[\SensitiveParameter]
-    string $password,
+    ?string $password,
     bool $fasthash = false
 ): bool
 {

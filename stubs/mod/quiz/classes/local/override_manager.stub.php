@@ -115,7 +115,7 @@ class override_manager
     }
     /**
      * Deletes overrides given just their ID.
-     * Note, the given IDs must exist otherwise an exception will be thrown.
+     * Note, the given IDs must exist and user must have access to them otherwise an exception will be thrown.
      * Also note, capabilities are not checked, {@see require_manage_capability()}
      *
      * @param array $ids IDs of overrides to delete
@@ -173,6 +173,17 @@ class override_manager
      * Requires the user has the override viewing capability
      */
     public function require_read_capability(): void
+    {
+    }
+    /**
+     * Determine whether user can view a given override record
+     *
+     * @param \stdClass $override
+     * @param \stdClass $course
+     * @param \cm_info $cm
+     * @return bool
+     */
+    public function can_view_override(\stdClass $override, \stdClass $course, \cm_info $cm): bool
     {
     }
     /**

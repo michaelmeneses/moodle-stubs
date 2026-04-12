@@ -132,6 +132,15 @@ class core_component
     {
     }
     /**
+     * Reset the initialisation of the component utility.
+     *
+     * Note: It should not be necessary to call this in regular code.
+     * Please only use it where strictly required.
+     */
+    public static function reset(): void
+    {
+    }
+    /**
      * Are we in developer debug mode?
      *
      * Note: You need to set "$CFG->debug = (E_ALL | E_STRICT);" in config.php,
