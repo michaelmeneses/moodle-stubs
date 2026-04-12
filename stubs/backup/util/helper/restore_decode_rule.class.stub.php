@@ -31,7 +31,17 @@ class restore_decode_rule
     // The targer wwwroot of the restore operation
     protected $cregexp;
     // Calculated regular expresion we'll be looking for matches
-    public function __construct($linkname, $urltemplate, $mappings)
+    /** @var bool $urlencoded Whether to use urlencode() on the final URL. */
+    protected bool $urlencoded;
+    /**
+     * Constructor
+     *
+     * @param string $linkname How the link has been encoded in backup (CHOICEVIEWBYID, COURSEVIEWBYID...)
+     * @param string $urltemplate How the original URL looks like, with dollar placeholders
+     * @param array|string $mappings Which backup_ids mappings do we need to apply for replacing the placeholders
+     * @param bool $urlencoded Whether to use urlencode() on the final URL (defaults to false)
+     */
+    public function __construct(string $linkname, string $urltemplate, $mappings, bool $urlencoded = false)
     {
     }
     public function set_restoreid($restoreid)

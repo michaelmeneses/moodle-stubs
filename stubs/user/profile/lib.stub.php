@@ -110,6 +110,14 @@ class profile_field_base
     {
     }
     /**
+     * Display the name of the profile field.
+     *
+     * @return string
+     */
+    public function display_name(): string
+    {
+    }
+    /**
      * Print out the form field in the edit profile page
      * @param MoodleQuickForm $mform instance of the moodleform class
      * @return bool

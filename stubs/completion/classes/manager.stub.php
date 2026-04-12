@@ -183,4 +183,16 @@ class manager
     public static function get_default_completion($course, $module, $flatten = true, string $suffix = '')
     {
     }
+    /**
+     * Return a mod_form of the given module.
+     *
+     * @param string $modname   Module to get the form from.
+     * @param stdClass $course  Course object.
+     * @param ?cm_info $cm      cm_info object to use.
+     * @param string $suffix    The suffix to add to the name of the completion rules.
+     * @return ?\moodleform_mod The moodleform_mod object if everything goes fine. Null otherwise.
+     */
+    public static function get_module_form(string $modname, stdClass $course, ?cm_info $cm = null, string $suffix = ''): ?\moodleform_mod
+    {
+    }
 }

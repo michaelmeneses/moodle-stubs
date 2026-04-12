@@ -197,9 +197,12 @@ function groups_get_my_groups()
  * @category group
  * @param int $courseid
  * @param int $userid $USER if not specified
+ * @param bool $includehidden Include groups with GROUP_VISIBILITY_NONE that the user is a member of, but is not allowed to see
+ *    themselves. Use this parameter with care - it is the responsibility of the calling code to ensure these groups are not exposed
+ *    to the user, as this could have privacy implications.
  * @return array Array[groupingid][groupid] including grouping id 0 which means all groups
  */
-function groups_get_user_groups($courseid, $userid = 0)
+function groups_get_user_groups(int $courseid, int $userid = 0, bool $includehidden = false): array
 {
 }
 /**

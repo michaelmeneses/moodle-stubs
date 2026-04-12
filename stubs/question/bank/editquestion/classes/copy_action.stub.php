@@ -48,6 +48,9 @@ class copy_action extends question_action_base
     public function init(): void
     {
     }
+    public function get_menu_position(): int
+    {
+    }
     /**
      * Get the URL for duplicating a question as a moodle_url.
      *

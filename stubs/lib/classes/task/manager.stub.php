@@ -51,6 +51,14 @@ class manager
      */
     const ADHOC_TASK_QUEUE_MODE_FILLING = 1;
     /**
+     * @var ?task_base $runningtask Used to tell what is the current running task in this process.
+     */
+    public static ?task_base $runningtask = null;
+    /**
+     * @var bool Used to tell if the manager's shutdown callback has been registered.
+     */
+    public static bool $registeredshutdownhandler = false;
+    /**
      * @var array A cached queue of adhoc tasks
      */
     public static $miniqueue;
@@ -62,6 +70,12 @@ class manager
      * @var string Used to determine if the adhoc task queue is distributing or filling capacity.
      */
     public static $mode;
+    /**
+     * Reset the state of the task manager.
+     */
+    public static function reset_state(): void
+    {
+    }
     /**
      * Given a component name, will load the list of tasks in the db/tasks.php file for that component.
      *
@@ -314,6 +328,19 @@ class manager
      * @throws \moodle_exception
      */
     public static function get_next_scheduled_task($timestart)
+    {
+    }
+    /**
+     * This function will fail the currently running task, if there is one.
+     */
+    public static function fail_running_task(): void
+    {
+    }
+    /**
+     * This function set's the $runningtask variable and ensures that the shutdown handler is registered.
+     * @param task_base $task
+     */
+    private static function task_starting(task_base $task): void
     {
     }
     /**

@@ -24,6 +24,8 @@ class report_loglive_table_log extends table_sql
     protected $contextname = array();
     /** @var stdClass filters parameters */
     protected $filterparams;
+    /** @var int[] A list of users to filter by */
+    private ?array $lateuseridfilter = null;
     /**
      * Sets up the table_log parameters.
      *
@@ -33,7 +35,6 @@ class report_loglive_table_log extends table_sql
      *     - int userid: user id
      *     - int|string modid: Module id or "site_errors" to view site errors
      *     - int groupid: Group id
-     *     - array groups: List of group ids
      *     - \core\log\sql_reader logreader: reader from which data will be fetched.
      *     - int edulevel: educational level.
      *     - string action: view action

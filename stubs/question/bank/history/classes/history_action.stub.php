@@ -37,6 +37,9 @@ class history_action extends question_action_base
     public function init(): void
     {
     }
+    public function get_menu_position(): int
+    {
+    }
     protected function get_url_icon_and_label(\stdClass $question): array
     {
     }

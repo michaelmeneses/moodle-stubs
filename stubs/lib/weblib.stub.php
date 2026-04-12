@@ -329,6 +329,14 @@ class moodle_url
     {
     }
     /**
+     * Encode the anchor according to RFC 3986.
+     *
+     * @return string The encoded anchor
+     */
+    public function get_encoded_anchor(): string
+    {
+    }
+    /**
      * Returns url without parameters, everything before '?'.
      *
      * @param bool $includeanchor if {@link self::anchor} is defined, should it be returned?
