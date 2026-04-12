@@ -191,17 +191,22 @@ jobs:
             --force
 
   # ──────────────────────────────────────────────────
-  # Phase 2b: Sync tags (sequential per branch group)
+  # Phase 2b: Sync tags (parallel matrix per branch)
   # ──────────────────────────────────────────────────
   sync-tags:
-    name: Sync new tags
+    name: "Tags: ${{ matrix.item.branch }}"
     needs: [prepare, discover, sync-branch]
     if: |
       always() &&
       needs.discover.outputs.has_tags == 'true' &&
       inputs.skip_tags != true
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        item: ${{ fromJson(needs.discover.outputs.tags) }}
 
     steps:
       - name: Checkout moodle-stubs
@@ -232,14 +237,6 @@ jobs:
           git config --global user.email "bimoo-bot@users.noreply.github.com"
           git config --global url."https://x-access-token:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
 
-      - name: Extract tag list
-        id: tags
-        run: |
-          TAGS='${{ needs.discover.outputs.tags }}'
-          TAG_LIST=$(echo "$TAGS" | jq -r '.[].tag' | paste -sd ',' -)
-          echo "list=${TAG_LIST}" >> "$GITHUB_OUTPUT"
-          echo "Tags to process: ${TAG_LIST}"
-
       - name: Prepare Moodle source
         run: |
           mkdir -p "${BIMOO_WORK_DIR}"
@@ -250,14 +247,13 @@ jobs:
             echo "No cache — bimoo will clone fresh"
           fi
 
-      - name: Sync tags
-        if: steps.tags.outputs.list != ''
+      - name: "Sync tags for ${{ matrix.item.branch }}"
         run: |
           vendor/bin/bimoo sync:tags \
             --stubs-repo="https://github.com/${STUBS_REPO_SLUG}.git" \
             --moodle-repo="${MOODLE_REPO}" \
             --work-dir="${BIMOO_WORK_DIR}" \
-            --tags="${{ steps.tags.outputs.list }}"
+            --tags="${{ matrix.item.tags }}"
 
   # ──────────────────────────────────────────────────
   # Phase 3: Summary
