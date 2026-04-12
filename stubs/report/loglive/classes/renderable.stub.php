@@ -36,6 +36,8 @@ class report_loglive_renderable implements renderable
     public $order;
     /** @var int group id */
     public $groupid;
+    /** @var int forces the use of a course filter in site context */
+    public $sitecoursefilter;
     /** @var report_loglive_table_log table log which will be used for rendering logs */
     public $tablelog;
     /** @var  int refresh rate in seconds */
@@ -50,8 +52,9 @@ class report_loglive_renderable implements renderable
      * @param int $page (optional) page number.
      * @param int $perpage (optional) number of records to show per page.
      * @param string $order (optional) sortorder of fetched records
+     * @param int $sitecoursefilter (optional) use a course filter in site context.
      */
-    public function __construct($logreader = "", $course = 0, $url = "", $date = 0, $page = 0, $perpage = 100, $order = "timecreated DESC")
+    public function __construct($logreader = "", $course = 0, $url = "", $date = 0, $page = 0, $perpage = 100, $order = "timecreated DESC", $sitecoursefilter = 0)
     {
     }
     /**

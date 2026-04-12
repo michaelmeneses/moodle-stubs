@@ -32,6 +32,8 @@ class incrementing_clock implements \core\clock
 {
     /** @var int The next time of the clock */
     public int $time;
+    /** @var DateTimeZone The system timezone. */
+    protected DateTimeZone $timezone;
     /**
      * Create a new instance of the incrementing clock.
      *

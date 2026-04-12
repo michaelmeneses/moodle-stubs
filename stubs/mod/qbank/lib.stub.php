@@ -73,3 +73,16 @@ function qbank_update_instance(stdClass $moduleinstance, ?mod_qbank_mod_form $mf
 function qbank_delete_instance(int $id): bool
 {
 }
+/**
+ * Callback for tool_generator so we can add qbanks to generated courses.
+ *
+ * @param tool_generator_course_backend $backend
+ * @param testing_data_generator $generator
+ * @param int $courseid
+ * @param int $number
+ * @return void
+ * @throws coding_exception
+ */
+function qbank_course_backend_generator_create_activity(tool_generator_course_backend $backend, testing_data_generator $generator, int $courseid, int $number)
+{
+}

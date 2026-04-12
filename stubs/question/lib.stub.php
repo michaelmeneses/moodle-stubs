@@ -23,3 +23,12 @@
 function core_question_output_fragment_question_data(array $args): string
 {
 }
+/**
+ * Render and return a category selector for the categories in a given question bank.
+ *
+ * @param array $args ['bankcmid' => Course module ID of the question bank]
+ * @return string The rendered selector.
+ */
+function core_question_output_fragment_category_selector(array $args): string
+{
+}

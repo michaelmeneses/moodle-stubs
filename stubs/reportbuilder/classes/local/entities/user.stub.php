@@ -36,19 +36,11 @@ class user extends base
     {
     }
     /**
-     * Initialise the entity, add all user fields and all 'visible' user profile fields
+     * Initialise the entity
      *
      * @return base
      */
     public function initialise(): base
-    {
-    }
-    /**
-     * Get user profile fields helper instance
-     *
-     * @return user_profile_fields
-     */
-    protected function get_user_profile_fields(): user_profile_fields
     {
     }
     /**

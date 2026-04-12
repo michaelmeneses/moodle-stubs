@@ -66,7 +66,23 @@ abstract class backup_controller_dbops extends backup_dbops
     public static function create_backup_files_temp_table($backupid)
     {
     }
+    /**
+     * Create temporary tables to store a partial copies of question category data from the backup_ids_temp table.
+     *
+     * This is to work around MySQL's restruction on joining the same temporary table multiple times in the same query. It isn't
+     * necessary on PostgreSQL (which can join temporary tables multiple times) or MSSQL (which doesn't really use temporary tables)
+     * but doing it this way keeps things database-agnostic.
+     */
+    public static function create_question_category_temp_tables(): void
+    {
+    }
     public static function drop_backup_ids_temp_table($backupid)
+    {
+    }
+    /**
+     * Dispose of the additional temporary tables.
+     */
+    public static function drop_question_category_temp_tables(): void
     {
     }
     /**

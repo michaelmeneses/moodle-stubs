@@ -55,4 +55,8 @@ class restore_qtype_multichoice_plugin extends restore_qtype_plugin
     public static function define_decode_contents()
     {
     }
+    #[\Override]
+    public static function convert_backup_to_questiondata(array $backupdata): \stdClass
+    {
+    }
 }

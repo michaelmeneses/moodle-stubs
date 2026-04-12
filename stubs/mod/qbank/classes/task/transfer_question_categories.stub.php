@@ -69,10 +69,21 @@ class transfer_question_categories extends adhoc_task
      * Create a new 'Top' category in our new context and move the old categories descendents beneath it.
      *
      * @param stdClass $oldtopcategory The old 'Top' category that we are moving.
-     * @param \context $newcontext The context we are moving our category to.
-     * @return void
+     * @param context\module $newcontext The context we are moving our category to.
+     * @return int[] The IDs of all categories moved to the new context.
      */
-    protected function move_question_category(stdClass $oldtopcategory, \context $newcontext): void
+    protected function move_question_category(stdClass $oldtopcategory, context\module $newcontext): array
+    {
+    }
+    /**
+     * Recursively update the contextid for all subcategories of the given category.
+     *
+     * @param int $categoryid The ID of the category to update subcategories for. When calling directly,
+     *                        this should be a top category.
+     * @param context\module $newcontext The new context for the subcategories.
+     * @return int[] The IDs of all categories moved to the new context.
+     */
+    protected function move_subcategories_to_context(int $categoryid, context\module $newcontext): array
     {
     }
     /**

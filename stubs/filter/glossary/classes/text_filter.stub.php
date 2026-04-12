@@ -69,4 +69,13 @@ class text_filter extends \core_filters\text_filter
     private function sort_entries_by_length($filterobject0, $filterobject1)
     {
     }
+    /**
+     * Format text while temporarily disabling the glossary filter to prevent recursion.
+     *
+     * @param string $text The text to format.
+     * @return string The formatted string.
+     */
+    private function glossary_format_string(string $text): string
+    {
+    }
 }

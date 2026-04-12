@@ -361,7 +361,7 @@ function feedback_get_viewreports_users($cmid, $groups = false)
  * @uses CONTEXT_MODULE
  * @param int $cmid
  * @param mixed $groups single groupid or array of groupids - group(s) user is in
- * @return object the userrecords
+ * @return stdClass[] the userrecords
  */
 function feedback_get_receivemail_users($cmid, $groups = false)
 {
