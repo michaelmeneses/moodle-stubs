@@ -225,9 +225,10 @@ class completion_info
     /**
      * Get course completion criteria
      *
-     * @param int $criteriatype Specific criteria type to return (optional)
+     * @param int|null $criteriatype Specific criteria type to return (optional)
+     * @return array
      */
-    public function get_criteria($criteriatype = null)
+    public function get_criteria(?int $criteriatype = null): array
     {
     }
     /**
@@ -484,6 +485,19 @@ class completion_info
      *   empty array if none
      */
     public function get_activities()
+    {
+    }
+    /**
+     * Return a list of activities that are visible on the course page and have completion enabled.
+     *
+     * This includes activities that the user can see on the course page (visible or restricted),
+     * but only those with completion tracking enabled. Activities hidden from
+     * the user, located in hidden sections or restricted by group/grouping are excluded.
+     *
+     * @param int $userid User id
+     * @return array Array of user visible activities with completion enabled.
+     */
+    public function get_user_activities_with_completion($userid): array
     {
     }
     /**

@@ -186,6 +186,15 @@ abstract class restore_dbops
     {
     }
     /**
+     * Store ids associated with any activity in the backup that supports FEATURE_PUBLISHES_QUESTIONS.
+     *
+     * @param string $restoreid The restore ID.
+     * @param string $activitiespath The path to the `activities` folder in the backup being restored.
+     */
+    public static function load_questionbanks_to_tempids(string $restoreid, string $activitiespath): void
+    {
+    }
+    /**
      * Check all the included categories and questions, deciding the action to perform
      * for each one (mapping / creation) and returning one array of problems in case
      * something is wrong.

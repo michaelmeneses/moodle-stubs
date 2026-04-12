@@ -1338,9 +1338,10 @@ class curl
      * @param string $url
      * @param array $params
      * @param array $options
+     * @param bool $includeuserpwd Whether to include CURLOPT_USERPWD if not already set
      * @return ?string
      */
-    public function put($url, $params = array(), $options = array())
+    public function put($url, $params = [], $options = [], $includeuserpwd = true)
     {
     }
     /**
