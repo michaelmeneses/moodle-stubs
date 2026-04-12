@@ -1822,10 +1822,9 @@ class navigation_json
     }
 }
 /**
- * The cache class used by global navigation and settings navigation.
+ * The navigation_cache class is used for global and settings navigation data.
  *
- * It is basically an easy access point to session with a bit of smarts to make
- * sure that the information that is cached is valid still.
+ * It provides an easy access to the session cache with TTL of 1800 seconds.
  *
  * Example use:
  * <code php>
@@ -1845,13 +1844,13 @@ class navigation_cache
 {
     /** @var int represents the time created */
     protected $creation;
-    /** @var array An array of session keys */
-    protected $session;
+    /** @var cache_session The session cache instance */
+    protected $cache;
+    /** @var array The current cache area data */
+    protected $session = [];
     /**
-     * The string to use to segregate this particular cache. It can either be
-     * unique to start a fresh cache or if you want to share a cache then make
-     * it the string used in the original cache.
-     * @var string
+     * @var string A unique string to segregate this particular cache.
+     * It can either be unique to start a fresh cache or shared to use an existing cache.
      */
     protected $area;
     /** @var int a time that the information will time out */
@@ -1864,49 +1863,45 @@ class navigation_cache
     const CACHEUSERID = 1;
     /** @var int cache value */
     const CACHEVALUE = 2;
-    /** @var null|array An array of navigation cache areas to expire on shutdown */
-    public static $volatilecaches;
+    /** @var null|array An array of cache areas to expire on shutdown */
+    public static $volatilecaches = null;
     /**
-     * Contructor for the cache. Requires two arguments
+     * Contructor for the cache. Requires a area string be passed in.
      *
-     * @param string $area The string to use to segregate this particular cache
-     *                it can either be unique to start a fresh cache or if you want
-     *                to share a cache then make it the string used in the original
-     *                cache
+     * @param string $area The unique string to segregate this particular cache.
      * @param int $timeout The number of seconds to time the information out after
      */
     public function __construct($area, $timeout = 1800)
     {
     }
     /**
-     * Used to set up the cache within the SESSION.
+     * Ensure the navigation cache is initialised
      *
-     * This is called for each access and ensure that we don't put anything into the session before
-     * it is required.
+     * This is called for each access and ensures that no data is put into the cache before it is required.
      */
-    protected function ensure_session_cache_initialised()
+    protected function ensure_navigation_cache_initialised()
     {
     }
     /**
-     * Magic Method to retrieve something by simply calling using = cache->key
+     * Magic Method to retrieve a cached item by simply calling using = cache->key
      *
-     * @param mixed $key The identifier for the information you want out again
-     * @return void|mixed Either void or what ever was put in
+     * @param mixed $key The identifier for the cached information
+     * @return mixed|void The cached information or void if not found
      */
     public function __get($key)
     {
     }
     /**
-     * Magic method that simply uses {@link set();} to store something in the cache
+     * Magic method that simply uses {@see navigation_cache::set()} to store an item in the cache
      *
-     * @param string|int $key
-     * @param mixed $information
+     * @param string|int $key The key to store the information against
+     * @param mixed $information The information to cache
      */
     public function __set($key, $information)
     {
     }
     /**
-     * Sets some information against the cache (session) for later retrieval
+     * Sets some information in the session cache for later retrieval
      *
      * @param string|int $key
      * @param mixed $information
@@ -1917,8 +1912,8 @@ class navigation_cache
     /**
      * Check the existence of the identifier in the cache
      *
-     * @param string|int $key
-     * @return bool
+     * @param string|int $key The identifier to check
+     * @return bool True if the item exists in the cache, false otherwise
      */
     public function cached($key)
     {
@@ -1926,36 +1921,28 @@ class navigation_cache
     /**
      * Compare something to it's equivilant in the cache
      *
-     * @param string $key
-     * @param mixed $value
+     * @param string $key  The key to check
+     * @param mixed $value The value to compare
      * @param bool $serialise Whether to serialise the value before comparison
      *              this should only be set to false if the value is already
      *              serialised
-     * @return bool If the value is the same false if it is not set or doesn't match
+     * @return bool True if the value is the same as the cached one, false otherwise
      */
     public function compare($key, $value, $serialise = true)
     {
     }
     /**
-     * Wipes the entire cache, good to force regeneration
+     * Deletes the entire cache area, forcing a fresh cache to be created
      */
     public function clear()
     {
     }
     /**
-     * Checks all cache entries and removes any that have expired, good ole cleanup
-     */
-    protected function garbage_collection()
-    {
-    }
-    /**
-     * Marks the cache as being volatile (likely to change)
+     * Marks the cache as volatile (likely to change)
      *
-     * Any caches marked as volatile will be destroyed at the on shutdown by
-     * {@link navigation_node::destroy_volatile_caches()} which is registered
-     * as a shutdown function if any caches are marked as volatile.
+     * Any caches marked as volatile will be destroyed on shutdown by {@see navigation_node::destroy_volatile_caches()}
      *
-     * @param bool $setting True to destroy the cache false not too
+     * @param bool $setting True to mark the cache as volatile, false to remove the volatile flag
      */
     public function volatile($setting = true)
     {
@@ -1963,10 +1950,8 @@ class navigation_cache
     /**
      * Destroys all caches marked as volatile
      *
-     * This function is static and works in conjunction with the static volatilecaches
-     * property of navigation cache.
-     * Because this function is static it manually resets the cached areas back to an
-     * empty array.
+     * This function is static and works with the static volatilecaches property of navigation cache.
+     * It manually resets the cached areas back to an empty array.
      */
     public static function destroy_volatile_caches()
     {

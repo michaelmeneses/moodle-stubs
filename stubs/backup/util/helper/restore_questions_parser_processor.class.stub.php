@@ -18,8 +18,16 @@
  */
 class restore_questions_parser_processor extends grouped_parser_processor
 {
-    protected $restoreid;
-    protected $lastcatid;
+    /** @var string XML path in the questions.xml backup file to question categories. */
+    protected const CATEGORY_PATH = '/question_categories/question_category';
+    /** @var string XML path in the questions.xml to question elements within question_category (Moodle 4.0+). */
+    protected const QUESTION_SUBPATH = '/question_bank_entries/question_bank_entry/question_version/question_versions/questions/question';
+    /** @var string XML path in the questions.xml to question elements within question_category (before Moodle 4.0). */
+    protected const LEGACY_QUESTION_SUBPATH = '/questions/question';
+    /** @var string identifies the current restore. */
+    protected string $restoreid;
+    /** @var int during the restore, this tracks the last category we saw. Any questions we see will be in here. */
+    protected int $lastcatid;
     public function __construct($restoreid)
     {
     }

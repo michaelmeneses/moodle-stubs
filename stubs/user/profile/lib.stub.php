@@ -112,9 +112,10 @@ class profile_field_base
     /**
      * Display the name of the profile field.
      *
+     * @param bool $escape
      * @return string
      */
-    public function display_name(): string
+    public function display_name(bool $escape = true): string
     {
     }
     /**

@@ -97,6 +97,8 @@ class redis extends handler
     protected $locks = array();
     /** @var int $timeout How long sessions live before expiring. */
     protected $timeout;
+    /** @var int The number of seconds to wait for a connection or response from the Redis server. */
+    const CONNECTION_TIMEOUT = 10;
     /**
      * Create new instance of handler.
      */
