@@ -87,7 +87,6 @@ function url_display_frame($url, $cm, $course)
  * @param object $url
  * @param object $cm
  * @param object $course
- * @return does not return
  */
 function url_print_workaround($url, $cm, $course)
 {

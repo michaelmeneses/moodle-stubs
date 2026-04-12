@@ -39,6 +39,9 @@ class qformat_aiken extends qformat_default
     public function provide_export()
     {
     }
+    public function validate_file(stored_file $file): string
+    {
+    }
     public function readquestions($lines)
     {
     }

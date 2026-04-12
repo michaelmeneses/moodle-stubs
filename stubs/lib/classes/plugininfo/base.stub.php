@@ -79,7 +79,7 @@ abstract class base
     /** @var int hold $plugin->incompatible in version.php  */
     public $incompatible;
     /** @var string Name of the plugin */
-    public $component;
+    public $component = '';
     /**
      * Whether this plugintype supports its plugins being disabled.
      *

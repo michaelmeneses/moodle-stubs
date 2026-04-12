@@ -592,6 +592,15 @@ function check_igbinary322_version(environment_results $result)
 {
 }
 /**
+ * This function checks that the database prefix ($CFG->prefix) is <= 10
+ *
+ * @param environment_results $result
+ * @return environment_results|null updated results object, or null if the prefix check is passing ok.
+ */
+function check_db_prefix_length(environment_results $result)
+{
+}
+/**
  * Assert the upgrade key is provided, if it is defined.
  *
  * The upgrade key can be defined in the main config.php as $CFG->upgradekey. If

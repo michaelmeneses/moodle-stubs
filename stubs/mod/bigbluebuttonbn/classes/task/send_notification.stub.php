@@ -23,18 +23,14 @@
 namespace mod_bigbluebuttonbn\task;
 
 /**
- * Class containing the abstract class for notification processes in BBB.
+ * Class containing the deprecated class for send_notification event in BBB.
  *
  * @package   mod_bigbluebuttonbn
  * @copyright 2021 Andrew Lyons <andrew@nicols.co.uk>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-abstract class send_notification extends adhoc_task
+class send_notification extends adhoc_task
 {
-    /** @var instance */
-    protected $instance = null;
-    /** @var object */
-    protected $coursecontact = null;
     /**
      * Execute the task.
      */
@@ -42,95 +38,11 @@ abstract class send_notification extends adhoc_task
     {
     }
     /**
-     * Append additional elements of custom data
+     * Output the debug log message.
      *
-     * @param array $newdata
+     * @return string The debug log message.
      */
-    protected function append_custom_data(array $newdata): void
-    {
-    }
-    /**
-     * Set the instanceid in the custom data.
-     *
-     * @param int $instanceid
-     */
-    public function set_instance_id(int $instanceid): void
-    {
-    }
-    /**
-     * Get the bigbluebutton instance that this notification is for.
-     *
-     * @return instance
-     */
-    protected function get_instance(): instance
-    {
-    }
-    /**
-     * Get the preferred course contact for this notification.
-     *
-     * @return stdClass
-     */
-    protected function get_course_contact(): stdClass
-    {
-    }
-    /**
-     * Get the list of recipients for the notification.
-     *
-     * @return stdClass[]
-     */
-    protected function get_recipients(): array
-    {
-    }
-    /**
-     * Get the HTML message content.
-     *
-     * @return string
-     */
-    abstract protected function get_html_message(): string;
-    /**
-     * Get the plain text message content.
-     *
-     * @return string
-     */
-    protected function get_message(): string
-    {
-    }
-    /**
-     * Get the short summary message.
-     *
-     * @return string
-     */
-    abstract protected function get_small_message(): string;
-    /**
-     * Get the preferred message format
-     *
-     * @return string
-     */
-    protected function get_message_format(): string
-    {
-    }
-    /**
-     * Get the notification type.
-     *
-     * @return string
-     */
-    abstract protected function get_notification_type(): string;
-    /**
-     * Get the subject of the notification.
-     *
-     * @return string
-     */
-    abstract protected function get_subject(): string;
-    /**
-     * Send all of the notifications
-     */
-    protected function send_all_notifications(): void
-    {
-    }
-    /**
-     * Send the notificiation to the current user.
-     */
-    protected function send_notification_to_current_user(): void
+    public function generate_message()
     {
     }
 }

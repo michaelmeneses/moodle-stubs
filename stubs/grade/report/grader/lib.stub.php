@@ -374,6 +374,15 @@ class grade_report_grader extends grade_report
     public function get_default_sortable(): string
     {
     }
+    /**
+     * Return class used for text alignment.
+     *
+     * @param grade_item $item Can be grade item or grade
+     * @return string class name used for text alignment
+     */
+    public function get_cell_display_class(grade_item $item): string
+    {
+    }
 }
 /**
  * Adds report specific context variable

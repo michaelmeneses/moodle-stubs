@@ -34,15 +34,6 @@ class adminpresets_admin_setting_configmultiselect extends adminpresets_setting
 {
     /** @var \admin_setting_configmultiselect $settingdata */
     protected $settingdata;
-    /**
-     * Ensure that the $value values are setting choices.
-     *
-     * @param mixed $value Setting value
-     * @return mixed Returns false if wrong param value
-     */
-    protected function set_value($value)
-    {
-    }
     protected function set_visiblevalue()
     {
     }
