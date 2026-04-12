@@ -20,18 +20,12 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-/**
- * core_contentbank specific renderers
- *
- * @package   core_contentbank
- * @copyright  2020 Ferran Recio <ferran@moodle.com>
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 namespace core_contentbank\output;
 
 /**
  * Class containing data for bank content
  *
+ * @package    core_contentbank
  * @copyright  2020 Ferran Recio <ferran@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

@@ -461,4 +461,17 @@ class core_component
     public static function get_component_names(): array
     {
     }
+    /**
+     * Checks for the presence of monologo icons within a plugin.
+     *
+     * Only checks monologo icons in PNG and SVG formats as they are
+     * formats that can have transparent background.
+     *
+     * @param string $plugintype The plugin type.
+     * @param string $pluginname The plugin name.
+     * @return bool True if the plugin has a monologo icon
+     */
+    public static function has_monologo_icon(string $plugintype, string $pluginname): bool
+    {
+    }
 }

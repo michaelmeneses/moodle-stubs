@@ -583,4 +583,12 @@ class view
     public function get_visiblecolumns(): array
     {
     }
+    /**
+     * Is this view showing separate versions of a question?
+     *
+     * @return bool
+     */
+    public function is_listing_specific_versions(): bool
+    {
+    }
 }

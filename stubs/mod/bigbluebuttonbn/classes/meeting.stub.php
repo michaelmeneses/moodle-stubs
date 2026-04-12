@@ -114,7 +114,7 @@ class meeting
     {
     }
     /**
-     * Number of participants
+     * Total number of moderators and viewers.
      *
      * @return int
      */

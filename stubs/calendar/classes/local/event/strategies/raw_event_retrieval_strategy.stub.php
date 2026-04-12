@@ -59,4 +59,15 @@ class raw_event_retrieval_strategy implements raw_event_retrieval_strategy_inter
     protected function get_raw_events_legacy_implementation($users, $groups, $courses, $categories, $whereconditions, $whereparams, $ordersql, $offset, $limitnum, $ignorehidden)
     {
     }
+    /**
+     * Returns a query fragment and params, with time constraints applied
+     *
+     * @param  string $prefix
+     * @param  array $conditions
+     * @param  array $params
+     * @return array [<where>, <params>]
+     */
+    protected function subquerytimeconditions(string $prefix, array $conditions, array $params): array
+    {
+    }
 }

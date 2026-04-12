@@ -243,6 +243,7 @@ class core_user_external extends external_api
      * Copy files from a draft area to users private files area.
      *
      * @throws invalid_parameter_exception
+     * @throws moodle_exception
      * @param int $draftid Id of a draft area containing files.
      * @return array An array of warnings
      * @since Moodle 2.6
