@@ -379,6 +379,16 @@ class manager
     {
     }
     /**
+     * This behaves similar to passthru but filters every line via
+     * the mtrace function so it can be post processed.
+     *
+     * @param string $command to run
+     * @return void
+     */
+    public static function passthru_via_mtrace(string $command)
+    {
+    }
+    /**
      * For a given scheduled task record, this method will check to see if any overrides have
      * been applied in config and return a copy of the record with any overridden values.
      *
