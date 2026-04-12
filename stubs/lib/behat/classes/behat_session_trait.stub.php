@@ -819,4 +819,13 @@ trait behat_session_trait
     protected function get_user_id_by_identifier(string $identifier): ?int
     {
     }
+    /**
+     * Prepare an xpath for insertion into Selenium JavaScript.
+     *
+     * @param string $xpath
+     * @return string
+     */
+    protected function prepare_xpath_for_javascript(string $xpath): string
+    {
+    }
 }

@@ -33,4 +33,12 @@ class restore_qtype_calculated_plugin extends restore_qtype_plugin
     public function process_calculated_option($data)
     {
     }
+    #[\Override]
+    public static function convert_backup_to_questiondata(array $backupdata): \stdClass
+    {
+    }
+    #[\Override]
+    protected function define_excluded_identity_hash_fields(): array
+    {
+    }
 }

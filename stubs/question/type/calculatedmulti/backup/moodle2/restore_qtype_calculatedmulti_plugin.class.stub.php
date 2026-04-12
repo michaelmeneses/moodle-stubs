@@ -33,4 +33,8 @@ class restore_qtype_calculatedmulti_plugin extends restore_qtype_calculated_plug
     public function recode_legacy_state_answer($state)
     {
     }
+    #[\Override]
+    protected function define_excluded_identity_hash_fields(): array
+    {
+    }
 }
