@@ -75,7 +75,7 @@ class format_weeks extends core_courseformat\base
      *     'sr' (int) used by course formats to specify to which section to return
      * @return moodle_url
      */
-    public function get_view_url($section, $options = array())
+    public function get_view_url($section, $options = [])
     {
     }
     /**

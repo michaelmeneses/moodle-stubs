@@ -42,6 +42,23 @@ class tool_installaddon_installer
     {
     }
     /**
+     * Returns URL to Moodle Marketplace.
+     *
+     * @return moodle_url
+     */
+    public function get_marketplace_url(): moodle_url
+    {
+    }
+    /**
+     * Returns URL to external service with optional encoded site information.
+     *
+     * @param string $url The external service base URL.
+     * @return moodle_url
+     */
+    protected function get_external_service_url(string $url): moodle_url
+    {
+    }
+    /**
      * @return tool_installaddon_installfromzip_form
      */
     public function get_installfromzip_form()

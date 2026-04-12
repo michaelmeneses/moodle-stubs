@@ -92,10 +92,11 @@ class qtype_essay_question extends question_with_responses
          * Check the input word count and return a message to user
          * when the number of words are outside the boundary settings.
          *
-         * @param string $responsestring
-         * @return string|null
+         * @param string $responsestring the student's response to count the words in.
+         * @param int $responseformat the FORMAT_... constant for what format $responsestring is.
+         * @return string|null null if the word-count is in range, otherwise a string message about how it is not.
          .*/
-    private function check_input_word_count($responsestring)
+    private function check_input_word_count(string $responsestring, int $responseformat)
     {
     }
     /**

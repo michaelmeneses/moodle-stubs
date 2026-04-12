@@ -632,9 +632,10 @@ class completion_info
      * Return the number of modules completed by a user in one specific course.
      *
      * @param int $userid The User ID.
+     * @param array $moduleids The course modules to check.
      * @return int Total number of modules completed by a user
      */
-    public function count_modules_completed(int $userid): int
+    public function count_modules_completed(int $userid, array $moduleids = []): int
     {
     }
 }

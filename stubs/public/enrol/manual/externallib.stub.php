@@ -59,7 +59,7 @@ class enrol_manual_external extends external_api
     /**
      * Unenrolment of users.
      *
-     * @param array $enrolments an array of course user and role ids
+     * @param array $enrolments an array of course users
      * @throws coding_exception
      * @throws dml_transaction_exception
      * @throws invalid_parameter_exception

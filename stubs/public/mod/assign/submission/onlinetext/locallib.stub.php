@@ -122,7 +122,7 @@ class assign_submission_onlinetext extends assign_submission_plugin
      * Display onlinetext word count in the submission status table
      *
      * @param stdClass $submission
-     * @param bool $showviewlink - If the summary has been truncated set this to true
+     * @param bool $showviewlink - If the summary has been truncated, this should be set to true
      * @return string
      */
     public function view_summary(stdClass $submission, &$showviewlink)
