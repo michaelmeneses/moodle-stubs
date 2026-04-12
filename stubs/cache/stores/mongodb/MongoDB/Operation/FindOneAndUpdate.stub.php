@@ -96,13 +96,14 @@ class FindOneAndUpdate implements Executable, Explainable
      * @param array        $options        Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct(string $databaseName, string $collectionName, $filter, $update, array $options = [])
+    public function __construct($databaseName, $collectionName, $filter, $update, array $options = [])
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
+     * @param Server $server
      * @return array|object|null
      * @throws UnsupportedException if collation or write concern is used and unsupported
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
@@ -114,6 +115,7 @@ class FindOneAndUpdate implements Executable, Explainable
      * Returns the command document for this operation.
      *
      * @see Explainable::getCommandDocument()
+     * @param Server $server
      * @return array
      */
     public function getCommandDocument(Server $server)

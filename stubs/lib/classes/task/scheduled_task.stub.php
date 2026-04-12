@@ -57,8 +57,6 @@ abstract class scheduled_task extends task_base
     const DAYOFWEEKMIN = 0;
     /** Maximum dayofweek value. */
     const DAYOFWEEKMAX = 6;
-    /** Maximum dayofweek value allowed in input (7 = 0). */
-    const DAYOFWEEKMAXINPUT = 7;
     /**
      * Minute field identifier.
      */
@@ -79,11 +77,6 @@ abstract class scheduled_task extends task_base
      * Day-of-week field identifier.
      */
     const FIELD_DAYOFWEEK = 'dayofweek';
-    /**
-     * Time used for the next scheduled time when a task should never run. This is 2222-01-01 00:00 GMT
-     * which is a large time that still fits in 10 digits.
-     */
-    const NEVER_RUN_TIME = 7952342400;
     /** @var string $hour - Pattern to work out the valid hours */
     private $hour = '*';
     /** @var string $minute - Pattern to work out the valid minutes */
@@ -312,25 +305,9 @@ abstract class scheduled_task extends task_base
     /**
      * Calculate when this task should next be run based on the schedule.
      *
-     * @param int $now Current time, for testing (leave 0 to use default time)
      * @return int $nextruntime.
      */
-    public function get_next_scheduled_time(int $now = 0): int
-    {
-    }
-    /**
-     * Recursively calculate the next valid time for this task.
-     *
-     * @param int $now Start time
-     * @param array $validminutes Valid minutes
-     * @param array $validhours Valid hours
-     * @param array $validdays Valid days
-     * @param array $validdaysofweek Valid days of week
-     * @param array $validmonths Valid months
-     * @param int $originalyear Zero for first call, original year for recursive calls
-     * @return int Next run time
-     */
-    protected function get_next_scheduled_time_inner(int $now, array $validminutes, array $validhours, array $validdays, array $validdaysofweek, array $validmonths, int $originalyear = 0)
+    public function get_next_scheduled_time()
     {
     }
     /**

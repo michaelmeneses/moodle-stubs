@@ -66,18 +66,6 @@ class database
     {
     }
     /**
-     * Replace parameter names within given SQL expression, allowing caller to specify callback to handle their replacement
-     * primarily to ensure uniqueness when the expression is to be used as part of a larger query
-     *
-     * @param string $sql
-     * @param array $params
-     * @param callable $callback Method that takes a single string parameter, and returns another string
-     * @return string
-     */
-    public static function sql_replace_parameter_names(string $sql, array $params, callable $callback): string
-    {
-    }
-    /**
      * Generate SQL expression for sorting group concatenated fields
      *
      * @param string $field The original field or SQL expression

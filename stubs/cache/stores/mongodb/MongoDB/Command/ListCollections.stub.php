@@ -64,22 +64,26 @@ class ListCollections implements Executable
      * @param array  $options      Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct(string $databaseName, array $options = [])
+    public function __construct($databaseName, array $options = [])
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
+     * @param Server $server
+     * @return CachingIterator
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
      */
-    public function execute(Server $server): CachingIterator
+    public function execute(Server $server)
     {
     }
     /**
      * Create the listCollections command.
+     *
+     * @return Command
      */
-    private function createCommand(): Command
+    private function createCommand()
     {
     }
     /**
@@ -89,8 +93,9 @@ class ListCollections implements Executable
      * the command be executed on the primary.
      *
      * @see https://php.net/manual/en/mongodb-driver-server.executecommand.php
+     * @return array
      */
-    private function createOptions(): array
+    private function createOptions()
     {
     }
 }

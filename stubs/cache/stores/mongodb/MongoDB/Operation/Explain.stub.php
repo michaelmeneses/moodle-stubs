@@ -66,13 +66,14 @@ class Explain implements Executable
      * @param array       $options      Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct(string $databaseName, Explainable $explainable, array $options = [])
+    public function __construct($databaseName, Explainable $explainable, array $options = [])
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
+     * @param Server $server
      * @return array|object
      * @throws UnsupportedException if the server does not support explaining the operation
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
@@ -82,16 +83,20 @@ class Explain implements Executable
     }
     /**
      * Create the explain command.
+     *
+     * @param Server $server
+     * @return Command
      */
-    private function createCommand(Server $server): Command
+    private function createCommand(Server $server)
     {
     }
     /**
      * Create options for executing the command.
      *
      * @see https://php.net/manual/en/mongodb-driver-server.executecommand.php
+     * @return array
      */
-    private function createOptions(): array
+    private function createOptions()
     {
     }
     private function isFindAndModify(Explainable $explainable): bool

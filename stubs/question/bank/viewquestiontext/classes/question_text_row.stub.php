@@ -32,9 +32,10 @@ namespace qbank_viewquestiontext;
  */
 class question_text_row extends row_base
 {
-    /** @var bool if true, we will show the question text reduced to plain text, else it is fully rendered. */
-    protected $plain;
-    /** @var \stdClass $formatoptions options used when displaying the question text as HTML. */
+    /**
+     * To initialise subclasses
+     * @var $formatoptions
+     */
     protected $formatoptions;
     protected function init(): void
     {

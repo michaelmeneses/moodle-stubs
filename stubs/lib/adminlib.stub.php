@@ -984,17 +984,6 @@ abstract class admin_setting
     public function has_custom_form_control(): bool
     {
     }
-    /**
-     * Whether the setting can be overridden in config.php.
-     *
-     * Returning true will allow the setting to be defined and overridden in config.php.
-     * Returning false will prevent the config setting from being overridden even when it gets defined in config.php.
-     *
-     * @return bool
-     */
-    public function is_forceable(): bool
-    {
-    }
 }
 /**
  * An additional option that can be applied to an admin setting.
@@ -2292,14 +2281,6 @@ class admin_setting_sitesetselect extends admin_setting_configselect
     public function write_setting($data)
     {
     }
-    /**
-     * admin_setting_sitesetselect is not meant to be overridden in config.php.
-     *
-     * @return bool
-     */
-    public function is_forceable(): bool
-    {
-    }
 }
 /**
  * Select for blog's bloglevel setting: if set to 0, will set blog_menu
@@ -2396,14 +2377,6 @@ class admin_setting_sitesetcheckbox extends admin_setting_configcheckbox
     public function write_setting($data)
     {
     }
-    /**
-     * admin_setting_sitesetcheckbox is not meant to be overridden in config.php.
-     *
-     * @return bool
-     */
-    public function is_forceable(): bool
-    {
-    }
 }
 /**
  * Special text for frontpage - stores data in course table.
@@ -2443,14 +2416,6 @@ class admin_setting_sitesettext extends admin_setting_configtext
      * @return string empty or error message
      */
     public function write_setting($data)
-    {
-    }
-    /**
-     * admin_setting_sitesettext is not meant to be overridden in config.php.
-     *
-     * @return bool
-     */
-    public function is_forceable(): bool
     {
     }
 }
@@ -2498,14 +2463,6 @@ class admin_setting_special_frontpagedesc extends admin_setting_confightmleditor
      * @return string empty or error message
      */
     public function write_setting($data)
-    {
-    }
-    /**
-     * admin_setting_special_frontpagedesc is not meant to be overridden in config.php.
-     *
-     * @return bool
-     */
-    public function is_forceable(): bool
     {
     }
 }

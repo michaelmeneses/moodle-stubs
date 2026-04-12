@@ -21,9 +21,15 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 /**
+ * Strings for component 'profilefield_checkbox', language 'en', branch 'MOODLE_20_STABLE'
+ *
+ * @package   profilefield_checkbox
+ * @copyright  2008 onwards Shane Elliot {@link http://pukunui.com}
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+/**
  * Class profile_field_checkbox
  *
- * @package    profilefield_checkbox
  * @copyright  2008 onwards Shane Elliot {@link http://pukunui.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

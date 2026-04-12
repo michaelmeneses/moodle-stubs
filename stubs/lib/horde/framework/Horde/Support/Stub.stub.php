@@ -90,39 +90,33 @@ class Horde_Support_Stub implements ArrayAccess, Countable, IteratorAggregate
     /* ArrayAccess methods. */
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetExists($offset)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
     }
     /* Countable methods. */
     /**
      */
-    #[ReturnTypeWillChange]
     public function count()
     {
     }
     /* IteratorAggregate method. */
     /**
      */
-    #[ReturnTypeWillChange]
     public function getIterator()
     {
     }

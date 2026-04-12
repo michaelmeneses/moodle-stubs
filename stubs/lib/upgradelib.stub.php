@@ -592,15 +592,6 @@ function check_igbinary322_version(environment_results $result)
 {
 }
 /**
- * This function checks that the database prefix ($CFG->prefix) is <= 10
- *
- * @param environment_results $result
- * @return environment_results|null updated results object, or null if the prefix check is passing ok.
- */
-function check_db_prefix_length(environment_results $result)
-{
-}
-/**
  * Assert the upgrade key is provided, if it is defined.
  *
  * The upgrade key can be defined in the main config.php as $CFG->upgradekey. If
@@ -686,47 +677,5 @@ function check_admin_dir_usage(environment_results $result): ?environment_result
  * @return null|environment_results
  */
 function check_xmlrpc_usage(environment_results $result): ?environment_results
-{
-}
-/**
- * Check whether the mod_assignment is currently being used.
- *
- * @param environment_results $result
- * @return environment_results|null
- */
-function check_mod_assignment(environment_results $result): ?environment_results
-{
-}
-/**
- * Check whether the Oracle database is currently being used and warn if so.
- *
- * The Oracle database support will be removed in a future version (4.5) as it is no longer supported by PHP.
- *
- * @param environment_results $result object to update, if relevant
- * @return environment_results|null updated results or null if the current database is not Oracle.
- *
- * @see https://tracker.moodle.org/browse/MDL-80166 for further information.
- */
-function check_oracle_usage(environment_results $result): ?environment_results
-{
-}
-/**
- * Check if asynchronous backups are enabled.
- *
- * @param environment_results $result
- * @return environment_results|null
- */
-function check_async_backup(environment_results $result): ?environment_results
-{
-}
-/**
- * Checks if the current database vendor is Aurora MySQL.
- *
- * If the database vendor is 'auroramysql', this function sets additional information.
- *
- * @param environment_results $result The environment results object to update.
- * @return environment_results|null The updated environment results object if Aurora is detected, or null otherwise.
- */
-function check_aurora_version(environment_results $result): ?environment_results
 {
 }

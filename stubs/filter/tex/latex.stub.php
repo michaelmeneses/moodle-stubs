@@ -69,4 +69,12 @@ class latex
     function render($formula, $filename, $fontsize = 12, $density = 240, $background = '', $log = null)
     {
     }
+    /**
+     * Delete files created in temporary area
+     * Don't forget to copy the final gif/png before calling this
+     * @param string $filename file base (no extension)
+     */
+    function clean_up($filename)
+    {
+    }
 }

@@ -173,41 +173,6 @@ class stateactions
     {
     }
     /**
-     * Move course cms to the right. Indent = 1.
-     *
-     * @param stateupdates $updates the affected course elements track
-     * @param stdClass $course the course object
-     * @param int[] $ids cm ids
-     * @param int $targetsectionid not used
-     * @param int $targetcmid not used
-     */
-    public function cm_moveright(stateupdates $updates, stdClass $course, array $ids = [], ?int $targetsectionid = null, ?int $targetcmid = null): void
-    {
-    }
-    /**
-     * Move course cms to the left. Indent = 0.
-     *
-     * @param stateupdates $updates the affected course elements track
-     * @param stdClass $course the course object
-     * @param int[] $ids cm ids
-     * @param int $targetsectionid not used
-     * @param int $targetcmid not used
-     */
-    public function cm_moveleft(stateupdates $updates, stdClass $course, array $ids = [], ?int $targetsectionid = null, ?int $targetcmid = null): void
-    {
-    }
-    /**
-     * Internal method to define the cm indentation level.
-     *
-     * @param stateupdates $updates the affected course elements track
-     * @param stdClass $course the course object
-     * @param int[] $ids cm ids
-     * @param int $indent new value for indentation
-     */
-    protected function set_cm_indentation(stateupdates $updates, stdClass $course, array $ids, int $indent): void
-    {
-    }
-    /**
      * Extract several cm_info from the course_modinfo.
      *
      * @param course_modinfo $modinfo the course modinfo.
@@ -228,7 +193,7 @@ class stateactions
     {
     }
     /**
-     * Update the course content section state to collapse.
+     * Update the course content section collapsed value.
      *
      * @param stateupdates $updates the affected course elements track
      * @param stdClass $course the course object
@@ -240,19 +205,7 @@ class stateactions
     {
     }
     /**
-     * Update the course content section state to expand.
-     *
-     * @param stateupdates $updates the affected course elements track
-     * @param stdClass $course the course object
-     * @param int[] $ids the collapsed section ids
-     * @param int|null $targetsectionid not used
-     * @param int|null $targetcmid not used
-     */
-    public function section_content_expanded(stateupdates $updates, stdClass $course, array $ids = [], ?int $targetsectionid = null, ?int $targetcmid = null): void
-    {
-    }
-    /**
-     * Update the course index section state to collapse.
+     * Update the course index section collapsed value.
      *
      * @param stateupdates $updates the affected course elements track
      * @param stdClass $course the course object
@@ -261,18 +214,6 @@ class stateactions
      * @param int $targetcmid not used
      */
     public function section_index_collapsed(stateupdates $updates, stdClass $course, array $ids = [], ?int $targetsectionid = null, ?int $targetcmid = null): void
-    {
-    }
-    /**
-     * Update the course index section state to expand.
-     *
-     * @param stateupdates $updates the affected course elements track
-     * @param stdClass $course the course object
-     * @param int[] $ids the collapsed section ids
-     * @param int $targetsectionid not used
-     * @param int $targetcmid not used
-     */
-    public function section_index_expanded(stateupdates $updates, stdClass $course, array $ids = [], ?int $targetsectionid = null, ?int $targetcmid = null): void
     {
     }
     /**

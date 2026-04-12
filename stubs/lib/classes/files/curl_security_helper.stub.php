@@ -54,18 +54,6 @@ class curl_security_helper extends curl_security_helper_base
      */
     protected $transportschemes = ['http' => 80, 'https' => 443];
     /**
-     * @var string the host of the URL being checked by the helper.
-     */
-    protected $host;
-    /**
-     * @var array IP address or addresses the URL is allowed to be requested from (passed the blocked hosts check).
-     */
-    protected $allowedips = [];
-    /**
-     * @var ?int The port the URL is allowed to be requested from (passed the allowed port check).
-     */
-    protected $allowedport;
-    /**
      * Checks whether the given URL is blocked by checking its address and port number against the allow/block lists.
      * The behaviour of this function can be classified as strict, as it returns true for URLs which are invalid or
      * could not be parsed, as well as those valid URLs which were found in the blocklist.
@@ -176,19 +164,6 @@ class curl_security_helper extends curl_security_helper_base
      * @return array the array of blocked host entries.
      */
     protected function get_blocked_hosts()
-    {
-    }
-    /**
-     * Helper that returns host, IP and port information for the URL that has passed the blocked hosts/allowed ports checks.
-     *
-     * This data is in a format compatible with CURLOPT_RESOLVE, so it can be passed directly into that option.
-     * Doing so will prevent cURL re-fetching the info from DNS, preventing subsequent requests to the remote host from
-     * modifying the IP/port to ones that haven't been validated.
-     *
-     * @return array of strings in the format hostname:port:ip_address.
-     * @throws \coding_exception
-     */
-    public function get_resolve_info(): array
     {
     }
 }

@@ -63,25 +63,21 @@ class Horde_Mail_Mbox_Parse implements ArrayAccess, Countable, Iterator
     /* ArrayAccess methods. */
     /**
      */
-    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
     }
     /**
      */
-    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
     /**
      */
-    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
     }
     /**
      */
-    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
     }
@@ -91,7 +87,6 @@ class Horde_Mail_Mbox_Parse implements ArrayAccess, Countable, Iterator
      *
      * @return integer  The number of messages.
      */
-    #[\ReturnTypeWillChange]
     public function count()
     {
     }
@@ -105,23 +100,18 @@ class Horde_Mail_Mbox_Parse implements ArrayAccess, Countable, Iterator
     {
     }
     /* Iterator methods. */
-    #[\ReturnTypeWillChange]
     public function current()
     {
     }
-    #[\ReturnTypeWillChange]
     public function key()
     {
     }
-    #[\ReturnTypeWillChange]
     public function next()
     {
     }
-    #[\ReturnTypeWillChange]
     public function rewind()
     {
     }
-    #[\ReturnTypeWillChange]
     public function valid()
     {
     }

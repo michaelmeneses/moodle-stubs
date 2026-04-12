@@ -31,7 +31,7 @@ class BadMethodCallException extends BaseBadMethodCallException implements Excep
      * @param string $class Class name
      * @return self
      */
-    public static function classIsImmutable(string $class)
+    public static function classIsImmutable($class)
     {
     }
     /**
@@ -40,7 +40,7 @@ class BadMethodCallException extends BaseBadMethodCallException implements Excep
      * @param string $method Method name
      * @return self
      */
-    public static function unacknowledgedWriteResultAccess(string $method)
+    public static function unacknowledgedWriteResultAccess($method)
     {
     }
 }

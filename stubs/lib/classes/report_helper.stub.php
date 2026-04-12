@@ -59,15 +59,4 @@ class report_helper
     public static function save_selected_report(int $id, moodle_url $url): void
     {
     }
-    /**
-     * Check if the user is in a valid group for the course (i.e. if the user is in a group in SEPARATEGROUPS mode)
-     *
-     * @param context $context context for the course or module: if context is a course context, the course group mode is used,
-     * if it is a module context, the module effective group mode is used (combined with the current user).
-     * @param int|null $userid user id to check, if null the current user is used
-     * @return bool true if the user is in a valid group (i.e. belongs to a group in SEPARATEGROUPS MODE), false otherwise
-     */
-    public static function has_valid_group(\context $context, ?int $userid = null): bool
-    {
-    }
 }

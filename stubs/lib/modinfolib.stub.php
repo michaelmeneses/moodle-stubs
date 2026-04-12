@@ -367,16 +367,6 @@ class course_modinfo
     {
     }
     /**
-     * Purge the cache of multiple course modules.
-     *
-     * @param int $courseid Course id
-     * @param int[] $cmids List of course module ids
-     * @return void
-     */
-    public static function purge_course_modules_cache(int $courseid, array $cmids): void
-    {
-    }
-    /**
      * For a given course, returns an array of course activity objects
      *
      * @param stdClass $course Course object
@@ -1010,15 +1000,7 @@ class cm_info implements IteratorAggregate
     {
     }
     /**
-     * Fetch the module's icon URL.
-     *
-     * This function fetches the course module instance's icon URL.
-     * This method adds a `filtericon` parameter in the URL when rendering the monologo version of the course module icon or when
-     * the plugin declares, via its `filtericon` custom data, that the icon needs to be filtered.
-     * This additional information can be used by plugins when rendering the module icon to determine whether to apply
-     * CSS filtering to the icon.
-     *
-     * @param core_renderer $output Output render to use, or null for default (global)
+     * @param moodle_core_renderer $output Output render to use, or null for default (global)
      * @return moodle_url Icon URL for a suitable icon to put beside this cm
      */
     public function get_icon_url($output = null)

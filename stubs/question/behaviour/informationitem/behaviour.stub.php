@@ -42,21 +42,9 @@ class qbehaviour_informationitem extends question_behaviour
     public function process_comment(question_attempt_pending_step $pendingstep)
     {
     }
-    /**
-     * Handle the 'finish' case of {@see process_action()}.
-     *
-     * @param question_attempt_pending_step $pendingstep step representing the action.
-     * @return bool either {@see question_attempt::KEEP} or {@see question_attempt::DISCARD}.
-     */
     public function process_finish(question_attempt_pending_step $pendingstep)
     {
     }
-    /**
-     * Handle the 'seen' case of {@see process_action()}.
-     *
-     * @param question_attempt_pending_step $pendingstep step representing the action.
-     * @return bool either {@see question_attempt::KEEP} or {@see question_attempt::DISCARD}.
-     */
     public function process_seen(question_attempt_pending_step $pendingstep)
     {
     }

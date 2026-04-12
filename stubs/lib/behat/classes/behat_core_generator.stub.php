@@ -99,14 +99,6 @@ class behat_core_generator extends behat_generator_base
     {
     }
     /**
-     * Imports a langpack.
-     *
-     * @param array $data
-     */
-    protected function process_langpack($data)
-    {
-    }
-    /**
      * Adapter to enrol_user() data generator.
      *
      * @throws Exception
@@ -157,14 +149,6 @@ class behat_core_generator extends behat_generator_base
      * @return void
      */
     protected function process_role($data)
-    {
-    }
-    /**
-     * Assign capabilities to a role.
-     *
-     * @param array $data
-     */
-    protected function process_role_capability($data): void
     {
     }
     /**
@@ -291,15 +275,6 @@ class behat_core_generator extends behat_generator_base
      * @return void
      */
     protected function process_contentbank_content(array $data)
-    {
-    }
-    /**
-     * Create content in the given user's private files.
-     *
-     * @param array $data
-     * @return void
-     */
-    protected function process_user_private_files(array $data)
     {
     }
     /**

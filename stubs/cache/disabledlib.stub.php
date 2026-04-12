@@ -12,7 +12,7 @@
  * @copyright  2012 Sam Hemelryk
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class cache_disabled extends cache implements cache_loader_with_locking
+class cache_disabled extends cache
 {
     /**
      * Constructs the cache.
@@ -125,28 +125,19 @@ class cache_disabled extends cache implements cache_loader_with_locking
     /**
      * Pretend that we got a lock to avoid errors.
      *
-     * @param int|string $key
+     * @param string $key
      * @return bool
      */
-    public function acquire_lock($key): bool
+    public function acquire_lock(string $key): bool
     {
     }
     /**
      * Pretend that we released a lock to avoid errors.
      *
-     * @param int|string $key
-     * @return bool
+     * @param string $key
+     * @return void
      */
-    public function release_lock($key): bool
-    {
-    }
-    /**
-     * Pretend that we have a lock to avoid errors.
-     *
-     * @param int|string $key
-     * @return bool
-     */
-    public function check_lock_state($key): bool
+    public function release_lock(string $key): bool
     {
     }
 }

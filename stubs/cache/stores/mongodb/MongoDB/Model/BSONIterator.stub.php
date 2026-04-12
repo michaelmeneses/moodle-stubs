@@ -55,7 +55,7 @@ class BSONIterator implements Iterator
      * @param array  $options Iterator options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct(string $data, array $options = [])
+    public function __construct($data, array $options = [])
     {
     }
     /**
@@ -92,12 +92,13 @@ class BSONIterator implements Iterator
     }
     /**
      * @see https://php.net/iterator.valid
+     * @return boolean
      */
     #[ReturnTypeWillChange]
-    public function valid(): bool
+    public function valid()
     {
     }
-    private function advance(): void
+    private function advance()
     {
     }
 }

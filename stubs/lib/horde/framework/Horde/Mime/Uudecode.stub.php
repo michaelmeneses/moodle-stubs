@@ -78,12 +78,10 @@ class Horde_Mime_Uudecode implements Countable, IteratorAggregate
     {
     }
     /* Countable method. */
-    #[ReturnTypeWillChange]
     public function count()
     {
     }
     /* IteratorAggregate method. */
-    #[ReturnTypeWillChange]
     public function getIterator()
     {
     }

@@ -129,17 +129,6 @@ abstract class base
     {
     }
     /**
-     * Reset the current user for all courses.
-     *
-     * The course format cache resets every time the course cache resets but
-     * also when the user changes their language, all course editors
-     *
-     * @return void
-     */
-    public static function session_cache_reset_all(): void
-    {
-    }
-    /**
      * Reset the current user course format cache.
      *
      * The course format cache resets every time the course cache resets but
@@ -225,7 +214,7 @@ abstract class base
      * This method ensures that 3rd party course format plugins that still use 'numsections' continue to
      * work but at the same time we no longer expect formats to have 'numsections' property.
      *
-     * @return int The last section number, or -1 if sections are entirely missing
+     * @return int
      */
     public function get_last_section_number()
     {
@@ -292,6 +281,14 @@ abstract class base
     }
     /**
      * Returns true if this course format uses activity indentation.
+     *
+     * Indentation is not supported by core formats anymore and may be deprecated in the future.
+     * This method will keep a default return "true" for legacy reasons but new formats should override
+     * it with a return false to prevent future deprecations.
+     *
+     * A message in a bottle: if indentation is finally deprecated, both behat steps i_indent_right_activity
+     * and i_indent_left_activity should be removed as well. Right now no core behat uses them but indentation
+     * is not officially deprecated so they are still available for the contrib formats.
      *
      * @return bool if the course format uses indentation.
      */
@@ -393,32 +390,6 @@ abstract class base
      *
      */
     public function set_sections_preference(string $preferencename, array $sectionids)
-    {
-    }
-    /**
-     * Add section preference ids.
-     *
-     * @param string $preferencename preference name
-     * @param array $sectionids affected section ids
-     */
-    public function add_section_preference_ids(string $preferencename, array $sectionids): void
-    {
-    }
-    /**
-     * Remove section preference ids.
-     *
-     * @param string $preferencename preference name
-     * @param array $sectionids affected section ids
-     */
-    public function remove_section_preference_ids(string $preferencename, array $sectionids): void
-    {
-    }
-    /**
-     * Persist the section preferences to the user preferences.
-     *
-     * @param array $sectionpreferences the section preferences
-     */
-    private function persist_to_user_preference(array $sectionpreferences): void
     {
     }
     /**

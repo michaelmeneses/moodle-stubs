@@ -28,12 +28,11 @@ class PdfType
      * @param PdfType $value
      * @param PdfParser $parser
      * @param bool $stopAtIndirectObject
-     * @param array $ensuredObjectsList A list of all ensured indirect objects to prevent recursion
      * @return PdfType
      * @throws CrossReferenceException
      * @throws PdfParserException
      */
-    public static function resolve(PdfType $value, PdfParser $parser, $stopAtIndirectObject = false, array &$ensuredObjectsList = [])
+    public static function resolve(PdfType $value, PdfParser $parser, $stopAtIndirectObject = false)
     {
     }
     /**

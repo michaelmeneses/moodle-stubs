@@ -142,13 +142,14 @@ class Find implements Executable, Explainable
      * @param array        $options        Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct(string $databaseName, string $collectionName, $filter, array $options = [])
+    public function __construct($databaseName, $collectionName, $filter, array $options = [])
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
+     * @param Server $server
      * @return Cursor
      * @throws UnsupportedException if read concern is used and unsupported
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
@@ -160,6 +161,7 @@ class Find implements Executable, Explainable
      * Returns the command document for this operation.
      *
      * @see Explainable::getCommandDocument()
+     * @param Server $server
      * @return array
      */
     public function getCommandDocument(Server $server)
@@ -175,8 +177,9 @@ class Find implements Executable, Explainable
      * Create options for executing the command.
      *
      * @see https://php.net/manual/en/mongodb-driver-server.executequery.php
+     * @return array
      */
-    private function createExecuteOptions(): array
+    private function createExecuteOptions()
     {
     }
     /**
@@ -184,8 +187,10 @@ class Find implements Executable, Explainable
      *
      * Note that these are separate from the options for executing the command,
      * which are created in createExecuteOptions().
+     *
+     * @return array
      */
-    private function createQueryOptions(): array
+    private function createQueryOptions()
     {
     }
 }

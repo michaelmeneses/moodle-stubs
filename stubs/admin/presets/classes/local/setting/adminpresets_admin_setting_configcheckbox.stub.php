@@ -32,9 +32,9 @@ namespace core_adminpresets\local\setting;
  */
 class adminpresets_admin_setting_configcheckbox extends adminpresets_setting
 {
-    /**
-     * Sets the visible name for the setting selected value
-     */
+    protected function set_value($value)
+    {
+    }
     protected function set_visiblevalue()
     {
     }

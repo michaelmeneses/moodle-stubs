@@ -55,20 +55,26 @@ class CallbackIterator implements Iterator
     }
     /**
      * @see https://php.net/iterator.next
+     * @return void
      */
-    public function next(): void
+    #[ReturnTypeWillChange]
+    public function next()
     {
     }
     /**
      * @see https://php.net/iterator.rewind
+     * @return void
      */
-    public function rewind(): void
+    #[ReturnTypeWillChange]
+    public function rewind()
     {
     }
     /**
      * @see https://php.net/iterator.valid
+     * @return boolean
      */
-    public function valid(): bool
+    #[ReturnTypeWillChange]
+    public function valid()
     {
     }
 }

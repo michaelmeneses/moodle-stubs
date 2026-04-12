@@ -201,16 +201,6 @@ class core_user
     {
     }
     /**
-     * Determine whether the given user ID is that of the current user. Useful for components implementing permission callbacks
-     * for preferences consumed by {@see fill_preferences_cache}
-     *
-     * @param stdClass $user
-     * @return bool
-     */
-    public static function is_current_user(stdClass $user): bool
-    {
-    }
-    /**
      * Check if the given user is an active user in the site.
      *
      * @param  stdClass  $user         user object
@@ -425,15 +415,6 @@ class core_user
      * @return lang_string welcome message
      */
     public static function welcome_message(): ?lang_string
-    {
-    }
-    /**
-     * Get initials for users
-     *
-     * @param stdClass $user
-     * @return string
-     */
-    public static function get_initials(stdClass $user): string
     {
     }
 }

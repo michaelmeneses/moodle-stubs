@@ -88,12 +88,6 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * @var int
      */
     protected $lastiobytes = 0;
-    /** @var int Maximum number of seconds to wait for a lock before giving up. */
-    protected $lockwait = 60;
-    /** @var int Timeout before lock is automatically released (in case of crashes) */
-    protected $locktimeout = 600;
-    /** @var ?array Array of current locks, or null if we haven't registered shutdown function */
-    protected $currentlocks = null;
     /**
      * Determines if the requirements for this type of store are met.
      *
@@ -314,15 +308,6 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * @return bool True if the lock was acquired, false if it was not.
      */
     public function acquire_lock($key, $ownerid)
-    {
-    }
-    /**
-     * Releases any locks when the system shuts down, in case there is a crash or somebody forgets
-     * to use 'try-finally'.
-     *
-     * Do not call this function manually (except from unit test).
-     */
-    public function shutdown_release_locks()
     {
     }
     /**

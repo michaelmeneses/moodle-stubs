@@ -54,7 +54,7 @@ class Watch implements Executable, CommandSubscriber
     private $collectionName;
     /** @var string */
     private $databaseName;
-    /** @var integer */
+    /** @var integer|null */
     private $firstBatchSize;
     /** @var boolean */
     private $hasResumed = false;
@@ -164,25 +164,26 @@ class Watch implements Executable, CommandSubscriber
      * @param array       $options        Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct(Manager $manager, ?string $databaseName, ?string $collectionName, array $pipeline, array $options = [])
+    public function __construct(Manager $manager, $databaseName, $collectionName, array $pipeline, array $options = [])
     {
     }
     /** @internal */
-    final public function commandFailed(CommandFailedEvent $event): void
+    final public function commandFailed(CommandFailedEvent $event)
     {
     }
     /** @internal */
-    final public function commandStarted(CommandStartedEvent $event): void
+    final public function commandStarted(CommandStartedEvent $event)
     {
     }
     /** @internal */
-    final public function commandSucceeded(CommandSucceededEvent $event): void
+    final public function commandSucceeded(CommandSucceededEvent $event)
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
+     * @param Server $server
      * @return ChangeStream
      * @throws UnsupportedException if collation or read concern is used and unsupported
      * @throws RuntimeException for other driver errors (e.g. connection errors)
@@ -194,14 +195,19 @@ class Watch implements Executable, CommandSubscriber
      * Create the aggregate command for a change stream.
      *
      * This method is also used to recreate the aggregate command when resuming.
+     *
+     * @return Aggregate
      */
-    private function createAggregate(): Aggregate
+    private function createAggregate()
     {
     }
     /**
      * Create a ChangeStreamIterator by executing the aggregate command.
+     *
+     * @param Server $server
+     * @return ChangeStreamIterator
      */
-    private function createChangeStreamIterator(Server $server): ChangeStreamIterator
+    private function createChangeStreamIterator(Server $server)
     {
     }
     /**
@@ -209,8 +215,11 @@ class Watch implements Executable, CommandSubscriber
      *
      * The command will be executed using APM so that we can capture data from
      * its response (e.g. firstBatch size, postBatchResumeToken).
+     *
+     * @param Server $server
+     * @return Cursor
      */
-    private function executeAggregate(Server $server): Cursor
+    private function executeAggregate(Server $server)
     {
     }
     /**
@@ -227,17 +236,21 @@ class Watch implements Executable, CommandSubscriber
      *
      * @see https://github.com/mongodb/specifications/blob/master/source/change-streams/change-streams.rst#resume-process
      * @param array|object|null $resumeToken
+     * @param bool              $hasAdvanced
+     * @return ChangeStreamIterator
      * @throws InvalidArgumentException
      */
-    private function resume($resumeToken = null, bool $hasAdvanced = false): ChangeStreamIterator
+    private function resume($resumeToken = null, $hasAdvanced = false)
     {
     }
     /**
      * Determine whether to capture operation time from an aggregate response.
      *
      * @see https://github.com/mongodb/specifications/blob/master/source/change-streams/change-streams.rst#startatoperationtime
+     * @param Server $server
+     * @return boolean
      */
-    private function shouldCaptureOperationTime(Server $server): bool
+    private function shouldCaptureOperationTime(Server $server)
     {
     }
 }

@@ -37,6 +37,9 @@ class DatabaseInfoLegacyIterator implements DatabaseInfoIterator
 {
     /** @var array */
     private $databases;
+    /**
+     * @param array $databases
+     */
     public function __construct(array $databases)
     {
     }
@@ -45,40 +48,49 @@ class DatabaseInfoLegacyIterator implements DatabaseInfoIterator
      *
      * @see DatabaseInfoIterator::current()
      * @see https://php.net/iterator.current
+     * @return DatabaseInfo
      */
-    public function current(): DatabaseInfo
+    public function current()
     {
     }
     /**
      * Return the key of the current element.
      *
      * @see https://php.net/iterator.key
+     * @return integer
      */
-    public function key(): int
+    #[ReturnTypeWillChange]
+    public function key()
     {
     }
     /**
      * Move forward to next element.
      *
      * @see https://php.net/iterator.next
+     * @return void
      */
-    public function next(): void
+    #[ReturnTypeWillChange]
+    public function next()
     {
     }
     /**
      * Rewind the Iterator to the first element.
      *
      * @see https://php.net/iterator.rewind
+     * @return void
      */
-    public function rewind(): void
+    #[ReturnTypeWillChange]
+    public function rewind()
     {
     }
     /**
      * Checks if current position is valid.
      *
      * @see https://php.net/iterator.valid
+     * @return boolean
      */
-    public function valid(): bool
+    #[ReturnTypeWillChange]
+    public function valid()
     {
     }
 }

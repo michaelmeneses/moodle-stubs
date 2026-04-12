@@ -189,7 +189,7 @@ class page_requirements_manager
      *
      * NOTE: this should not be used in official Moodle distribution!
      *
-     * {@link https://moodledev.io/docs/guides/javascript/jquery}
+     * {@see http://docs.moodle.org/dev/jQuery}
      */
     public function jquery()
     {
@@ -236,7 +236,7 @@ class page_requirements_manager
      *   }
      * </code>
      *
-     * {@link https://moodledev.io/docs/guides/javascript/jquery}
+     * {@see http://docs.moodle.org/dev/jQuery}
      *
      * @param string $plugin name of the jQuery plugin as defined in jquery/plugins.php
      * @param string $component name of the component
@@ -267,7 +267,7 @@ class page_requirements_manager
      * This code prevents loading of standard 'ui-css' which my be requested by other plugins,
      * the 'yourtheme-ui-css' gets loaded only if some other code requires jquery.
      *
-     * {@link https://moodledev.io/docs/guides/javascript/jquery}
+     * {@see http://docs.moodle.org/dev/jQuery}
      *
      * @param string $oldplugin original plugin
      * @param string $newplugin the replacement

@@ -363,10 +363,8 @@ class recording extends persistent
      * Synchronise pending recordings from the server.
      *
      * This function should be called by the check_pending_recordings scheduled task.
-     *
-     * @param bool $dismissedonly fetch dismissed recording only
      */
-    public static function sync_pending_recordings_from_server(bool $dismissedonly = false): void
+    public static function sync_pending_recordings_from_server(): void
     {
     }
 }

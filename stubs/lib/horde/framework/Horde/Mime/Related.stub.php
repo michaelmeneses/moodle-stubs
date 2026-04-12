@@ -90,7 +90,6 @@ class Horde_Mime_Related implements IteratorAggregate
     {
     }
     /* IteratorAggregate method. */
-    #[ReturnTypeWillChange]
     public function getIterator()
     {
     }

@@ -75,13 +75,14 @@ class Count implements Executable, Explainable
      * @param array        $options        Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct(string $databaseName, string $collectionName, $filter = [], array $options = [])
+    public function __construct($databaseName, $collectionName, $filter = [], array $options = [])
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
+     * @param Server $server
      * @return integer
      * @throws UnexpectedValueException if the command response was malformed
      * @throws UnsupportedException if read concern is used and unsupported
@@ -94,6 +95,7 @@ class Count implements Executable, Explainable
      * Returns the command document for this operation.
      *
      * @see Explainable::getCommandDocument()
+     * @param Server $server
      * @return array
      */
     public function getCommandDocument(Server $server)
@@ -101,16 +103,19 @@ class Count implements Executable, Explainable
     }
     /**
      * Create the count command document.
+     *
+     * @return array
      */
-    private function createCommandDocument(): array
+    private function createCommandDocument()
     {
     }
     /**
      * Create options for executing the command.
      *
      * @see https://php.net/manual/en/mongodb-driver-server.executereadcommand.php
+     * @return array
      */
-    private function createOptions(): array
+    private function createOptions()
     {
     }
 }

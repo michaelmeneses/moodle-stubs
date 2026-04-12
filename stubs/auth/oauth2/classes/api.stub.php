@@ -127,7 +127,7 @@ class api
     {
     }
     /**
-     * Delete a users own linked login
+     * Delete linked login
      *
      * Requires auth/oauth2:managelinkedlogins capability at the user context.
      *
@@ -152,16 +152,6 @@ class api
      * @return bool
      */
     public static function is_enabled()
-    {
-    }
-    /**
-     * Create a new user & update the profile fields
-     *
-     * @param array $userinfo
-     * @param object $user
-     * @return object
-     */
-    private static function save_user(array $userinfo, object $user): object
     {
     }
 }

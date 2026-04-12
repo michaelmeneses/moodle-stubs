@@ -57,13 +57,4 @@ class Horde_Imap_Client_Data_SearchCharset_Utf8 extends Horde_Imap_Client_Data_S
     public function unserialize($data)
     {
     }
-    /**
-     * @return array
-     */
-    public function __serialize()
-    {
-    }
-    public function __unserialize(array $data)
-    {
-    }
 }

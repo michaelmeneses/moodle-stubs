@@ -105,15 +105,6 @@ class core_component
     {
     }
     /**
-     * Reset the initialisation of the component utility.
-     *
-     * Note: It should not be necessary to call this in regular code.
-     * Please only use it where strictly required.
-     */
-    public static function reset(): void
-    {
-    }
-    /**
      * Are we in developer debug mode?
      *
      * Note: You need to set "$CFG->debug = (E_ALL | E_STRICT);" in config.php,
@@ -344,17 +335,6 @@ class core_component
     {
     }
     /**
-     * Fetch the component name from a Moodle PSR-like namespace.
-     *
-     * Note: Classnames in the flat underscore_class_name_format are not supported.
-     *
-     * @param string $classname
-     * @return null|string The component name, or null if a matching component was not found
-     */
-    public static function get_component_from_classname(string $classname): ?string
-    {
-    }
-    /**
      * Return exact absolute path to a plugin directory.
      *
      * @param string $component name such as 'moodle', 'mod_forum'
@@ -467,27 +447,18 @@ class core_component
     {
     }
     /**
-     * Returns a list of frankenstyle component names, including all plugins, subplugins, and subsystems.
+     * Returns a list of frankenstyle component names.
      *
-     * Note: By default the 'core' subsystem is not included.
-     *
-     * @param bool $includecore Whether to include the 'core' subsystem
-     * @return string[] the list of frankenstyle component names.
+     * E.g.
+     *  [
+     *      'core_course',
+     *      'core_message',
+     *      'mod_assign',
+     *      ...
+     *  ]
+     * @return array the list of frankenstyle component names.
      */
-    public static function get_component_names(bool $includecore = false): array
-    {
-    }
-    /**
-     * Checks for the presence of monologo icons within a plugin.
-     *
-     * Only checks monologo icons in PNG and SVG formats as they are
-     * formats that can have transparent background.
-     *
-     * @param string $plugintype The plugin type.
-     * @param string $pluginname The plugin name.
-     * @return bool True if the plugin has a monologo icon
-     */
-    public static function has_monologo_icon(string $plugintype, string $pluginname): bool
+    public static function get_component_names(): array
     {
     }
 }

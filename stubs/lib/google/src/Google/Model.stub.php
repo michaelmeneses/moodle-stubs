@@ -124,17 +124,16 @@ class Google_Model implements ArrayAccess
     public function assertIsArray($obj, $method)
     {
     }
-    public function offsetExists($offset): bool
+    public function offsetExists($offset)
     {
     }
-    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
-    public function offsetSet($offset, $value): void
+    public function offsetSet($offset, $value)
     {
     }
-    public function offsetUnset($offset): void
+    public function offsetUnset($offset)
     {
     }
     protected function keyType($key)

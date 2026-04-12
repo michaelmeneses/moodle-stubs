@@ -19,7 +19,7 @@ class behat_command
     /**
      * Docs url
      */
-    const DOCS_URL = 'https://moodledev.io/general/development/tools/behat';
+    const DOCS_URL = 'https://docs.moodle.org/dev/Running_acceptance_test';
     /**
      * Ensures the behat dir exists in moodledata
      *

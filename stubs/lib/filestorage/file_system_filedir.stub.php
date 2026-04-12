@@ -191,17 +191,6 @@ class file_system_filedir extends file_system
     {
     }
     /**
-     * Checks if the file exists and gets its size. This function avoids a specific issue with
-     * networked file systems if they incorrectly report the file exists, but then decide it doesn't
-     * as soon as you try to get the file size.
-     *
-     * @param string $hashfile File to check
-     * @return int|null Null if the file does not exist, or the result of filesize(), or -1 if error
-     */
-    protected static function check_file_exists_and_get_size(string $hashfile): ?int
-    {
-    }
-    /**
      * Add a file with the supplied content to the file system.
      *
      * Note: If overriding this function, it is advisable to store the file

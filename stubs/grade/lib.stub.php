@@ -236,17 +236,6 @@ function grade_get_plugin_info($courseid, $active_type, $active_plugin)
 {
 }
 /**
- * Load a valid list of gradable users in a course.
- *
- * @param int $courseid The course ID.
- * @param int|null $groupid The group ID (optional).
- * @param bool $onlyactiveenrol Include only active enrolments.
- * @return array $users A list of enrolled gradable users.
- */
-function get_gradable_users(int $courseid, ?int $groupid = null, bool $onlyactiveenrol = false): array
-{
-}
-/**
  * A simple class containing info about grade plugins.
  * Can be subclassed for special rules
  *
@@ -310,7 +299,7 @@ class grade_plugin_info
  * @param string|null $headerhelpidentifier The help string identifier if required.
  * @param string|null $headerhelpcomponent The component for the help string.
  * @param stdClass|null $user The user object for use with the user context header.
- * @param action_bar|null $actionbar The actions bar which will be displayed on the page if $shownavigation is set
+ * @param actionbar|null $actionbar The actions bar which will be displayed on the page if $shownavigation is set
  *                                  to true. If $actionbar is not explicitly defined, the general action bar
  *                                  (\core_grades\output\general_action_bar) will be used by default.
  * @param boolean $showtitle If set to false just show course full name as a title.
@@ -419,9 +408,10 @@ class grade_plugin_return
      * Add return tracking params into url
      *
      * @param moodle_url $url A URL
-     * @return moodle_url with return tracking params
+     *
+     * @return string $url with return tracking params
      */
-    public function add_url_params(moodle_url $url): moodle_url
+    public function add_url_params(moodle_url $url)
     {
     }
 }

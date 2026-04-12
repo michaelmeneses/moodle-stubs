@@ -243,7 +243,6 @@ class core_user_external extends external_api
      * Copy files from a draft area to users private files area.
      *
      * @throws invalid_parameter_exception
-     * @throws moodle_exception
      * @param int $draftid Id of a draft area containing files.
      * @return array An array of warnings
      * @since Moodle 2.6
@@ -280,11 +279,10 @@ class core_user_external extends external_api
      * @param string $version The device version 6.1.2 or 4.2.2 etc.
      * @param string $pushid The device PUSH token/key/identifier/registration id.
      * @param string $uuid The device UUID.
-     * @param string $publickey The app generated public key
      * @return array List of possible warnings.
      * @since Moodle 2.6
      */
-    public static function add_user_device($appid, $name, $model, $platform, $version, $pushid, $uuid, $publickey = null)
+    public static function add_user_device($appid, $name, $model, $platform, $version, $pushid, $uuid)
     {
     }
     /**

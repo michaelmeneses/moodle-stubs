@@ -65,13 +65,11 @@ class Horde_Imap_Client_Base_Alerts implements SplSubject
     /* SplSubject methods. */
     /**
      */
-    #[ReturnTypeWillChange]
     public function attach(SplObserver $observer)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function detach(SplObserver $observer)
     {
     }
@@ -79,7 +77,6 @@ class Horde_Imap_Client_Base_Alerts implements SplSubject
      * Notification is triggered internally whenever the object's internal
      * data storage is altered.
      */
-    #[ReturnTypeWillChange]
     public function notify()
     {
     }

@@ -95,32 +95,24 @@ class Horde_Imap_Client_Ids_Map implements Countable, IteratorAggregate, Seriali
     /* Countable methods. */
     /**
      */
-    #[ReturnTypeWillChange]
     public function count()
     {
     }
     /* IteratorAggregate method. */
     /**
      */
-    #[ReturnTypeWillChange]
     public function getIterator()
     {
     }
     /* Serializable methods. */
+    /**
+     */
     public function serialize()
     {
     }
+    /**
+     */
     public function unserialize($data)
-    {
-    }
-    /**
-     */
-    public function __serialize()
-    {
-    }
-    /**
-     */
-    public function __unserialize($data)
     {
     }
 }

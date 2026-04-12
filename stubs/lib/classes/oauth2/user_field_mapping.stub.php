@@ -63,17 +63,6 @@ class user_field_mapping extends persistent
     {
     }
     /**
-     * Return the list of internal fields with flat array
-     *
-     * Profile fields element has its array based on profile category.
-     * These elements need to be turned flat to make it easier to read.
-     *
-     * @return array
-     */
-    public function get_internalfields()
-    {
-    }
-    /**
      * Ensures that no HTML is saved to externalfield field
      * but preserves all special characters that can be a part of the claim
      * @return boolean true if validation is successful, string error if externalfield is not validated

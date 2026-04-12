@@ -100,9 +100,9 @@ class meeting
     /**
      * Get meeting attendees
      *
-     * @return array[]
+     * @return mixed
      */
-    public function get_attendees(): array
+    public function get_attendees()
     {
     }
     /**
@@ -114,7 +114,7 @@ class meeting
     {
     }
     /**
-     * Total number of moderators and viewers.
+     * Number of participants
      *
      * @return int
      */

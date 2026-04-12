@@ -110,14 +110,6 @@ class condition extends \core_availability\condition
     {
     }
     /**
-     * Return list of standard user profile fields used by the condition
-     *
-     * @return string[]
-     */
-    public static function get_standard_profile_fields(): array
-    {
-    }
-    /**
      * Gets data about custom profile fields. Cached statically in current
      * request.
      *

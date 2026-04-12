@@ -58,10 +58,9 @@ class helper
      * @param question_preview_options $options the options in use
      * @param context $context context for the question preview
      * @param moodle_url $returnurl url of the page to return to
-     * @param int|null $restartversion version of the question to use when next restarting the preview.
      * @return moodle_url
      */
-    public static function question_preview_action_url($questionid, $qubaid, question_preview_options $options, $context, $returnurl = null, $restartversion = null): moodle_url
+    public static function question_preview_action_url($questionid, $qubaid, question_preview_options $options, $context, $returnurl = null): moodle_url
     {
     }
     /**
@@ -84,10 +83,9 @@ class helper
      * @param object $displayoptions display options for the question in preview
      * @param object $context context of the question for preview
      * @param moodle_url $returnurl url of the page to return to
-     * @param int|null $restartversion version of the question to use when next restarting the preview.
-     * @return void
+     * @param int|null $version version of the question in preview
      */
-    public static function restart_preview($previewid, $questionid, $displayoptions, $context, $returnurl = null, $restartversion = null): void
+    public static function restart_preview($previewid, $questionid, $displayoptions, $context, $returnurl = null, $version = null): void
     {
     }
     /**
@@ -102,10 +100,10 @@ class helper
      * @param object $context context to run the preview in (affects things like
      *      filter settings, theme, lang, etc.) Defaults to $PAGE->context
      * @param moodle_url $returnurl url of the page to return to
-     * @param int $restartversion The version of the question to use when restarting the preview.
+     * @param int $version version of the question
      * @return moodle_url the URL
      */
-    public static function question_preview_url($questionid, $preferredbehaviour = null, $maxmark = null, $displayoptions = null, $variant = null, $context = null, $returnurl = null, $restartversion = null): moodle_url
+    public static function question_preview_url($questionid, $preferredbehaviour = null, $maxmark = null, $displayoptions = null, $variant = null, $context = null, $returnurl = null, $version = null): moodle_url
     {
     }
     /**
@@ -143,18 +141,6 @@ class helper
      * @return array  $questionids Array containing question id as key and version as value.
      */
     public static function load_versions(string $questionbankentryid): array
-    {
-    }
-    /**
-     * Return the question ID from the array of id => version that corresponds to the requested version.
-     *
-     * If the requested version is question_preview_options::ALWAYS_LATEST, this will return the latest version.
-     *
-     * @param array $versions
-     * @param int $restartversion
-     * @return ?int
-     */
-    public static function get_restart_id(array $versions, int $restartversion): ?int
     {
     }
 }

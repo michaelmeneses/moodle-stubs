@@ -14,37 +14,34 @@
 class Google_Collection extends Google_Model implements Iterator, Countable
 {
     protected $collection_key = 'items';
-    public function rewind(): void
+    public function rewind()
     {
     }
-    #[\ReturnTypeWillChange]
     public function current()
     {
     }
-    #[\ReturnTypeWillChange]
     public function key()
     {
     }
-    public function next(): void
+    public function next()
     {
     }
-    public function valid(): bool
+    public function valid()
     {
     }
-    public function count(): int
+    public function count()
     {
     }
-    public function offsetExists($offset): bool
+    public function offsetExists($offset)
     {
     }
-    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
-    public function offsetSet($offset, $value): void
+    public function offsetSet($offset, $value)
     {
     }
-    public function offsetUnset($offset): void
+    public function offsetUnset($offset)
     {
     }
     private function coerceType($offset)

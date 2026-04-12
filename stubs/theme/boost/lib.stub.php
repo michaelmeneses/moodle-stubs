@@ -60,7 +60,7 @@ function theme_boost_get_precompiled_css()
  * Get SCSS to prepend.
  *
  * @param theme_config $theme The theme config object.
- * @return string
+ * @return array
  */
 function theme_boost_get_pre_scss($theme)
 {

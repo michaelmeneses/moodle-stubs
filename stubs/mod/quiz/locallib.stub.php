@@ -390,10 +390,9 @@ function quiz_question_edit_button($cmid, $question, $returnurl, $contentafteric
  * @param object $quiz the quiz settings
  * @param object $question the question
  * @param int $variant which question variant to preview (optional).
- * @param int $restartversion version of the question to use when restarting the preview.
  * @return moodle_url to preview this question with the options from this quiz.
  */
-function quiz_question_preview_url($quiz, $question, $variant = null, $restartversion = null)
+function quiz_question_preview_url($quiz, $question, $variant = null)
 {
 }
 /**
@@ -402,7 +401,7 @@ function quiz_question_preview_url($quiz, $question, $variant = null, $restartve
  * @param bool $label if true, show the preview question label after the icon
  * @param int $variant which question variant to preview (optional).
  * @param bool $random if question is random, true.
- * @return string the HTML for a preview question icon.
+ * @return the HTML for a preview question icon.
  */
 function quiz_question_preview_button($quiz, $question, $label = false, $variant = null, $random = null)
 {

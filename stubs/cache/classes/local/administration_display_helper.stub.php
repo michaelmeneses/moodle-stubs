@@ -197,8 +197,9 @@ class administration_display_helper extends \core_cache\administration_helper
      * Performs the deletestore action.
      *
      * @param string $action the action calling to this function.
+     * @return void
      */
-    public function action_deletestore(string $action): void
+    public function action_deletestore(string $action)
     {
     }
     /**
@@ -254,8 +255,9 @@ class administration_display_helper extends \core_cache\administration_helper
      * Performs the delete lock action.
      *
      * @param string $action the action calling this function.
+     * @return void
      */
-    public function action_deletelock(string $action): void
+    public function action_deletelock(string $action)
     {
     }
     /**

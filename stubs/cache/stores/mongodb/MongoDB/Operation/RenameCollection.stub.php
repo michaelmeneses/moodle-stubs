@@ -72,6 +72,7 @@ class RenameCollection implements Executable
      * Execute the operation.
      *
      * @see Executable::execute()
+     * @param Server $server
      * @return array|object Command result document
      * @throws UnsupportedException if write concern is used and unsupported
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
@@ -81,16 +82,19 @@ class RenameCollection implements Executable
     }
     /**
      * Create the renameCollection command.
+     *
+     * @return Command
      */
-    private function createCommand(): Command
+    private function createCommand()
     {
     }
     /**
      * Create options for executing the command.
      *
      * @see https://php.net/manual/en/mongodb-driver-server.executewritecommand.php
+     * @return array
      */
-    private function createOptions(): array
+    private function createOptions()
     {
     }
 }

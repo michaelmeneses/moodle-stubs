@@ -35,11 +35,19 @@ namespace core\oauth2\client;
 class linkedin extends client
 {
     /**
-     * Override to handle LinkedIn's non-spec-compliant 'locale' field, which isn't a string (e.g. 'en-US') but an object.
+     * Fetch the user info from the userinfo and email endpoint and map fields back
      *
      * @return array|false
      */
     public function get_userinfo()
+    {
+    }
+    /**
+     * Get the email address of the user from the email endpoint
+     *
+     * @return array|false
+     */
+    private function get_useremail()
     {
     }
 }

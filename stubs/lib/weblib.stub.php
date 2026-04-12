@@ -150,6 +150,7 @@ function get_local_referer($stripquery = true)
  *     - and output the params as hidden fields to be output within a form
  *
  * @copyright 2007 jamiesensei
+ * @link http://docs.moodle.org/dev/lib/weblib.php_moodle_url See short write up here
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @package core
  */
@@ -284,16 +285,6 @@ class moodle_url
      * @return string query string that can be added to a url.
      */
     public function get_query_string($escaped = true, array $overrideparams = null)
-    {
-    }
-    /**
-     * Get the url params as an array of key => value pairs.
-     *
-     * This helps in handling cases where url params contain arrays.
-     *
-     * @return array params array for templates.
-     */
-    public function export_params_for_template(): array
     {
     }
     /**

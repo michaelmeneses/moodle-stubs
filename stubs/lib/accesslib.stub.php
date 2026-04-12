@@ -30,17 +30,17 @@ define('CONTEXT_MODULE', 70);
  * Any other context level instance can be parent of block context.
  */
 define('CONTEXT_BLOCK', 80);
-/** Capability allow management of trusts - NOT IMPLEMENTED YET - see {@link https://moodledev.io/docs/apis/subsystems/roles} */
+/** Capability allow management of trusts - NOT IMPLEMENTED YET - see {@link http://docs.moodle.org/dev/Hardening_new_Roles_system} */
 define('RISK_MANAGETRUST', 0x1);
-/** Capability allows changes in system configuration - see {@link https://moodledev.io/docs/apis/subsystems/roles} */
+/** Capability allows changes in system configuration - see {@link http://docs.moodle.org/dev/Hardening_new_Roles_system} */
 define('RISK_CONFIG', 0x2);
-/** Capability allows user to add scripted content - see {@link https://moodledev.io/docs/apis/subsystems/roles} */
+/** Capability allows user to add scripted content - see {@link http://docs.moodle.org/dev/Hardening_new_Roles_system} */
 define('RISK_XSS', 0x4);
-/** Capability allows access to personal user information - see {@link https://moodledev.io/docs/apis/subsystems/roles} */
+/** Capability allows access to personal user information - see {@link http://docs.moodle.org/dev/Hardening_new_Roles_system} */
 define('RISK_PERSONAL', 0x8);
-/** Capability allows users to add content others may see - see {@link https://moodledev.io/docs/apis/subsystems/roles} */
+/** Capability allows users to add content others may see - see {@link http://docs.moodle.org/dev/Hardening_new_Roles_system} */
 define('RISK_SPAM', 0x10);
-/** capability allows mass delete of data belonging to other users - see {@link https://moodledev.io/docs/apis/subsystems/roles} */
+/** capability allows mass delete of data belonging to other users - see {@link http://docs.moodle.org/dev/Hardening_new_Roles_system} */
 define('RISK_DATALOSS', 0x20);
 /** rolename displays - the name as defined in the role definition, localised if name empty */
 define('ROLENAME_ORIGINAL', 0);
@@ -2060,14 +2060,13 @@ class context_helper extends context
     {
     }
     /**
-     * Preloads context cache with information from db record and strips the cached info.
+     * Preloads context information from db record and strips the cached info.
      *
      * The db request has to contain all columns from context_helper::get_preload_record_columns().
      *
      * @static
      * @param stdClass $rec
-     * @return void This is intentional. See MDL-37115. You will need to get the context
-     *      in the normal way, but it is now cached, so that will be fast.
+     * @return void (modifies $rec)
      */
     public static function preload_from_record(stdClass $rec)
     {

@@ -41,7 +41,7 @@ class DeleteResult
      * This method should only be called if the write was acknowledged.
      *
      * @see DeleteResult::isAcknowledged()
-     * @return integer|null
+     * @return integer
      * @throws BadMethodCallException is the write result is unacknowledged
      */
     public function getDeletedCount()

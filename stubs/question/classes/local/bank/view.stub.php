@@ -80,17 +80,17 @@ class view
      */
     public $course;
     /**
-     * @var column_base[] these are all the 'columns' that are
+     * @var \question_bank_column_base[] these are all the 'columns' that are
      * part of the display. Array keys are the class name.
      */
     protected $requiredcolumns;
     /**
-     * @var column_base[] these are the 'columns' that are
+     * @var \question_bank_column_base[] these are the 'columns' that are
      * actually displayed as a column, in order. Array keys are the class name.
      */
     protected $visiblecolumns;
     /**
-     * @var column_base[] these are the 'columns' that are
+     * @var \question_bank_column_base[] these are the 'columns' that are
      * actually displayed as an additional row (e.g. question text), in order.
      * Array keys are the class name.
      */
@@ -120,14 +120,6 @@ class view
      * @var array params used by $countsql and $loadsql (which currently must be the same).
      */
     protected $sqlparams;
-    /**
-     * @var ?array Stores all the average statistics that this question bank view needs.
-     *
-     * This field gets initialised in {@see display_question_list()}. It is a two dimensional
-     * $this->loadedstatistics[$questionid][$fieldname] = $average value of that statistics for that question.
-     * Column classes in qbank plugins can access these values using {@see get_aggregate_statistic()}.
-     */
-    protected $loadedstatistics = null;
     /**
      * @var condition[] search conditions.
      */
@@ -477,39 +469,6 @@ class view
     {
     }
     /**
-     * Work out the list of all the required statistics fields for this question bank view.
-     *
-     * This gathers all the required fields from all columns, so they can all be loaded at once.
-     *
-     * @return string[] the names of all the required fields for this question bank view.
-     */
-    protected function determine_required_statistics(): array
-    {
-    }
-    /**
-     * Load the aggregate statistics that all the columns require.
-     *
-     * @param \stdClass[] $questions the questions that will be displayed indexed by question id.
-     */
-    protected function load_required_statistics(array $questions): void
-    {
-    }
-    /**
-     * Get the aggregated value of a particular statistic for a particular question.
-     *
-     * You can only get values for the questions on the current page of the question bank view,
-     * and only if you declared the need for this statistic in the get_required_statistics_fields()
-     * method of your question bank column.
-     *
-     * @param int $questionid the id of a question
-     * @param string $fieldname the name of a statistics field, e.g. 'facility'.
-     * @return float|null the average (across all users) of this statistic for this question.
-     *      Null if the value is not available right now.
-     */
-    public function get_aggregate_statistic(int $questionid, string $fieldname): ?float
-    {
-    }
-    /**
      * Display the top pagination bar.
      *
      * @param object $pagination
@@ -626,14 +585,6 @@ class view
      * @return array Visible columns.
      */
     public function get_visiblecolumns(): array
-    {
-    }
-    /**
-     * Is this view showing separate versions of a question?
-     *
-     * @return bool
-     */
-    public function is_listing_specific_versions(): bool
     {
     }
 }

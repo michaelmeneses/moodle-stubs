@@ -49,7 +49,7 @@ class result implements renderable, templatable
     const PASS = 5;
     /** Pass answer state. */
     const FAIL = 6;
-    /** Unknown answer state. */
+    /** Unkown answer state. */
     const UNKNOWN = 7;
     /** Text answer state. */
     const TEXT = 8;

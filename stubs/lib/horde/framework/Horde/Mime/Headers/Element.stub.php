@@ -121,7 +121,6 @@ abstract class Horde_Mime_Headers_Element implements IteratorAggregate
     /* IteratorAggregate method */
     /**
      */
-    #[ReturnTypeWillChange]
     public function getIterator()
     {
     }

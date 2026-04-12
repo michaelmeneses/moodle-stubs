@@ -159,25 +159,21 @@ class Horde_Mail_Rfc822_List extends Horde_Mail_Rfc822_Object implements ArrayAc
     /* ArrayAccess methods. */
     /**
      */
-    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
     }
     /**
      */
-    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
     /**
      */
-    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
     }
     /**
      */
-    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
     }
@@ -187,32 +183,25 @@ class Horde_Mail_Rfc822_List extends Horde_Mail_Rfc822_Object implements ArrayAc
      *
      * @return integer  The number of addresses.
      */
-    #[\ReturnTypeWillChange]
     public function count()
     {
     }
     /* Iterator methods. */
-    #[\ReturnTypeWillChange]
     public function current()
     {
     }
-    #[\ReturnTypeWillChange]
     public function key()
     {
     }
-    #[\ReturnTypeWillChange]
     public function next()
     {
     }
-    #[\ReturnTypeWillChange]
     public function rewind()
     {
     }
-    #[\ReturnTypeWillChange]
     public function valid()
     {
     }
-    #[\ReturnTypeWillChange]
     public function seek($position)
     {
     }
@@ -224,12 +213,6 @@ class Horde_Mail_Rfc822_List extends Horde_Mail_Rfc822_Object implements ArrayAc
     {
     }
     public function unserialize($data)
-    {
-    }
-    public function __serialize()
-    {
-    }
-    public function __unserialize(array $data)
     {
     }
 }

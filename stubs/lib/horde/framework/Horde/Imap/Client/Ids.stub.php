@@ -195,55 +195,44 @@ class Horde_Imap_Client_Ids implements Countable, Iterator, Serializable
     /* Countable methods. */
     /**
      */
-    #[ReturnTypeWillChange]
     public function count()
     {
     }
     /* Iterator methods. */
     /**
      */
-    #[ReturnTypeWillChange]
     public function current()
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function key()
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function next()
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function rewind()
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function valid()
     {
     }
+    /* Serializable methods. */
+    /**
+     */
     public function serialize()
     {
     }
+    /**
+     */
     public function unserialize($data)
-    {
-    }
-    /**
-     */
-    public function __serialize()
-    {
-    }
-    /**
-     */
-    public function __unserialize($data)
     {
     }
 }

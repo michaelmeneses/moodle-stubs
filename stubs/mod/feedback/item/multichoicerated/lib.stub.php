@@ -31,7 +31,7 @@ class feedback_item_multichoicerated extends feedback_item_base
      * @param stdClass $item the db-object from feedback_item
      * @param int $groupid
      * @param int $courseid
-     * @return array|null
+     * @return array
      */
     protected function get_analysed($item, $groupid = false, $courseid = false)
     {

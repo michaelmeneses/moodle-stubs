@@ -212,7 +212,7 @@ abstract class Horde_Imap_Client_Base implements Serializable, SplObserver
      *            DEFAULT: 30 seconds
      * - username: (string) [REQUIRED] The username.
      * - authusername (string) The username used for SASL authentication.
-     * 	 If specified this is the user name whose password is used
+     * 	 If specified this is the user name whose password is used 
      * 	 (e.g. administrator).
      * 	 Only valid for RFC 2595/4616 - PLAIN SASL mechanism.
      * 	 DEFAULT: the same value provided in the username parameter.
@@ -251,7 +251,6 @@ abstract class Horde_Imap_Client_Base implements Serializable, SplObserver
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function update(SplSubject $subject)
     {
     }
@@ -263,15 +262,6 @@ abstract class Horde_Imap_Client_Base implements Serializable, SplObserver
     /**
      */
     public function unserialize($data)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function __serialize()
-    {
-    }
-    public function __unserialize(array $data)
     {
     }
     /**

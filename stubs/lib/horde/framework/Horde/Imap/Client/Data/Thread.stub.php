@@ -98,7 +98,6 @@ class Horde_Imap_Client_Data_Thread implements Countable, Serializable
     /* Countable methods. */
     /**
      */
-    #[ReturnTypeWillChange]
     public function count()
     {
     }
@@ -111,15 +110,6 @@ class Horde_Imap_Client_Data_Thread implements Countable, Serializable
     /**
      */
     public function unserialize($data)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function __serialize()
-    {
-    }
-    public function __unserialize(array $data)
     {
     }
     /* Protected methods. */

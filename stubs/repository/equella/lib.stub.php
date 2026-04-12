@@ -72,15 +72,6 @@ class repository_equella extends repository
     {
     }
     /**
-     * Returned unserialized object from base64 encoded file reference data
-     *
-     * @param string $reference
-     * @return stdClass
-     */
-    private function unserialize_reference(string $reference): stdClass
-    {
-    }
-    /**
      * Download a file, this function can be overridden by subclass. {@link curl}
      *
      * @param string $reference the source of the file

@@ -59,14 +59,14 @@ class calculator
     public function calculate($quizid, $whichattempts, \core\dml\sql_join $groupstudentsjoins, $p, $sumofmarkvariance)
     {
     }
-    /** @var int No longer used. Previously the time after which statistics are automatically recomputed. */
+    /** @var integer Time after which statistics are automatically recomputed. */
     const TIME_TO_CACHE = 900;
     // 15 minutes.
     /**
      * Load cached statistics from the database.
      *
-     * @param \qubaid_condition $qubaids
-     * @return calculated|false The statistics for overall attempt scores or false if not cached.
+     * @param $qubaids \qubaid_condition
+     * @return calculated The statistics for overall attempt scores or false if not cached.
      */
     public function get_cached($qubaids)
     {
@@ -75,7 +75,7 @@ class calculator
      * Find time of non-expired statistics in the database.
      *
      * @param $qubaids \qubaid_condition
-     * @return int|bool Time of cached record that matches this qubaid_condition or false is non found.
+     * @return integer|boolean Time of cached record that matches this qubaid_condition or false is non found.
      */
     public function get_last_calculated_time($qubaids)
     {

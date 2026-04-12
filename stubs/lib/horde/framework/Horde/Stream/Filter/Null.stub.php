@@ -46,14 +46,12 @@ class Horde_Stream_Filter_Null extends php_user_filter
     /**
      * @see stream_filter_register()
      */
-    #[ReturnTypeWillChange]
     public function onCreate()
     {
     }
     /**
      * @see stream_filter_register()
      */
-    #[ReturnTypeWillChange]
     public function filter($in, $out, &$consumed, $closing)
     {
     }

@@ -444,10 +444,9 @@ function question_has_capability_on($questionorid, $cap, $notused = -1): bool
 /**
  * Require capability on question.
  *
- * @param int|stdClass|question_definition $question object or id.
- *      If an object is passed, it should include ->contextid and ->createdby.
- * @param string $cap 'add', 'edit', 'view', 'use', 'move' or 'tag'.
- * @return bool true if the user has the capability. Throws exception if not.
+ * @param object $question
+ * @param string $cap
+ * @return bool
  */
 function question_require_capability_on($question, $cap): bool
 {

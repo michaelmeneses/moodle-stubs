@@ -53,14 +53,6 @@ class controller
     {
     }
     /**
-     * Redirect to the specified url, outputting any required messages.
-     *
-     * @param moodle_url $url
-     */
-    public function redirect(moodle_url $url): void
-    {
-    }
-    /**
      * Install language packs provided
      *
      * @param string|array $langs array of langcodes or individual langcodes

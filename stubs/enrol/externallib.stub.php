@@ -119,11 +119,10 @@ class core_enrol_external extends external_api
      * @param bool $searchanywhere Match anywhere in the string
      * @param int $page Page number
      * @param int $perpage Max per page
-     * @param ?int $contextid Context ID we are in - we might use search on activity level and its group mode can be different from course group mode.
      * @return array An array of users
      * @throws moodle_exception
      */
-    public static function search_users(int $courseid, string $search, bool $searchanywhere, int $page, int $perpage, ?int $contextid = null): array
+    public static function search_users(int $courseid, string $search, bool $searchanywhere, int $page, int $perpage): array
     {
     }
     /**

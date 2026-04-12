@@ -916,25 +916,21 @@ class Horde_Mime_Part implements ArrayAccess, Countable, RecursiveIterator, Seri
     /* ArrayAccess methods. */
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetExists($offset)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
     }
@@ -945,7 +941,6 @@ class Horde_Mime_Part implements ArrayAccess, Countable, RecursiveIterator, Seri
      *
      * @return integer  Number of message parts.
      */
-    #[ReturnTypeWillChange]
     public function count()
     {
     }
@@ -953,49 +948,42 @@ class Horde_Mime_Part implements ArrayAccess, Countable, RecursiveIterator, Seri
     /**
      * @since 2.8.0
      */
-    #[ReturnTypeWillChange]
     public function current()
     {
     }
     /**
      * @since 2.8.0
      */
-    #[ReturnTypeWillChange]
     public function key()
     {
     }
     /**
      * @since 2.8.0
      */
-    #[ReturnTypeWillChange]
     public function next()
     {
     }
     /**
      * @since 2.8.0
      */
-    #[ReturnTypeWillChange]
     public function rewind()
     {
     }
     /**
      * @since 2.8.0
      */
-    #[ReturnTypeWillChange]
     public function valid()
     {
     }
     /**
      * @since 2.8.0
      */
-    #[ReturnTypeWillChange]
     public function hasChildren()
     {
     }
     /**
      * @since 2.8.0
      */
-    #[ReturnTypeWillChange]
     public function getChildren()
     {
     }
@@ -1006,12 +994,6 @@ class Horde_Mime_Part implements ArrayAccess, Countable, RecursiveIterator, Seri
      * @return string  Serialized data.
      */
     public function serialize()
-    {
-    }
-    public function __serialize(): array
-    {
-    }
-    public function __unserialize(array $data): void
     {
     }
     /**

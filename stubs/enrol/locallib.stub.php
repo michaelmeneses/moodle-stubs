@@ -267,13 +267,12 @@ class course_enrolment_manager
      * @param int $page Starting at 0.
      * @param int $perpage Number of users returned per page.
      * @param bool $returnexactcount Return the exact total users using count_record or not.
-     * @param ?int $contextid Context ID we are in - we might use search on activity level and its group mode can be different from course group mode.
      * @return array with two or three elements:
      *      int totalusers Number users matching the search. (This element only exist if $returnexactcount was set to true)
      *      array users List of user objects returned by the query.
      *      boolean moreusers True if there are still more users, otherwise is False.
      */
-    public function search_users(string $search = '', bool $searchanywhere = false, int $page = 0, int $perpage = 25, bool $returnexactcount = false, ?int $contextid = null)
+    public function search_users(string $search = '', bool $searchanywhere = false, int $page = 0, int $perpage = 25, bool $returnexactcount = false)
     {
     }
     /**

@@ -49,16 +49,6 @@ class qtype_essay_renderer extends qtype_renderer
  */
 abstract class qtype_essay_format_renderer_base extends plugin_renderer_base
 {
-    /** @var question_display_options Question display options instance for any necessary information for rendering the question. */
-    protected $displayoptions;
-    /**
-     * Question number setter.
-     *
-     * @param question_display_options $displayoptions
-     */
-    public function set_displayoptions(question_display_options $displayoptions): void
-    {
-    }
     /**
      * Render the students respone when the question is in read-only mode.
      * @param string $name the variable name this input edits.
@@ -91,7 +81,7 @@ abstract class qtype_essay_format_renderer_base extends plugin_renderer_base
  * @copyright  2013 Binghamton University
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class qtype_essay_format_noinline_renderer extends qtype_essay_format_renderer_base
+class qtype_essay_format_noinline_renderer extends plugin_renderer_base
 {
     protected function class_name()
     {
@@ -110,7 +100,7 @@ class qtype_essay_format_noinline_renderer extends qtype_essay_format_renderer_b
  * @copyright  2011 The Open University
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class qtype_essay_format_editor_renderer extends qtype_essay_format_renderer_base
+class qtype_essay_format_editor_renderer extends plugin_renderer_base
 {
     protected function class_name()
     {
@@ -223,7 +213,7 @@ class qtype_essay_format_editorfilepicker_renderer extends qtype_essay_format_ed
  * @copyright  2011 The Open University
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class qtype_essay_format_plain_renderer extends qtype_essay_format_renderer_base
+class qtype_essay_format_plain_renderer extends plugin_renderer_base
 {
     /**
      * @return string the HTML for the textarea.

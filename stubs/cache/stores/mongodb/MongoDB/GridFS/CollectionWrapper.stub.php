@@ -50,7 +50,7 @@ class CollectionWrapper
      * @param array   $collectionOptions Collection options
      * @throws InvalidArgumentException
      */
-    public function __construct(Manager $manager, string $databaseName, string $bucketName, array $collectionOptions = [])
+    public function __construct(Manager $manager, $databaseName, $bucketName, array $collectionOptions = [])
     {
     }
     /**
@@ -58,7 +58,7 @@ class CollectionWrapper
      *
      * @param mixed $id
      */
-    public function deleteChunksByFilesId($id): void
+    public function deleteChunksByFilesId($id)
     {
     }
     /**
@@ -66,13 +66,13 @@ class CollectionWrapper
      *
      * @param mixed $id
      */
-    public function deleteFileAndChunksById($id): void
+    public function deleteFileAndChunksById($id)
     {
     }
     /**
      * Drops the GridFS files and chunks collections.
      */
-    public function dropCollections(): void
+    public function dropCollections()
     {
     }
     /**
@@ -80,8 +80,9 @@ class CollectionWrapper
      *
      * @param mixed   $id        File ID
      * @param integer $fromChunk Starting chunk (inclusive)
+     * @return Cursor
      */
-    public function findChunksByFileId($id, int $fromChunk = 0): Cursor
+    public function findChunksByFileId($id, $fromChunk = 0)
     {
     }
     /**
@@ -98,16 +99,20 @@ class CollectionWrapper
      *
      * @see Bucket::downloadToStreamByName()
      * @see Bucket::openDownloadStreamByName()
+     * @param string  $filename
+     * @param integer $revision
+     * @return stdClass|null
      */
-    public function findFileByFilenameAndRevision(string $filename, int $revision): ?object
+    public function findFileByFilenameAndRevision($filename, $revision)
     {
     }
     /**
      * Finds a GridFS file document for a given ID.
      *
      * @param mixed $id
+     * @return stdClass|null
      */
-    public function findFileById($id): ?object
+    public function findFileById($id)
     {
     }
     /**
@@ -131,16 +136,36 @@ class CollectionWrapper
     public function findOneFile($filter, array $options = [])
     {
     }
-    public function getBucketName(): string
+    /**
+     * Return the bucket name.
+     *
+     * @return string
+     */
+    public function getBucketName()
     {
     }
-    public function getChunksCollection(): Collection
+    /**
+     * Return the chunks collection.
+     *
+     * @return Collection
+     */
+    public function getChunksCollection()
     {
     }
-    public function getDatabaseName(): string
+    /**
+     * Return the database name.
+     *
+     * @return string
+     */
+    public function getDatabaseName()
     {
     }
-    public function getFilesCollection(): Collection
+    /**
+     * Return the files collection.
+     *
+     * @return Collection
+     */
+    public function getFilesCollection()
     {
     }
     /**
@@ -148,7 +173,7 @@ class CollectionWrapper
      *
      * @param array|object $chunk Chunk document
      */
-    public function insertChunk($chunk): void
+    public function insertChunk($chunk)
     {
     }
     /**
@@ -158,27 +183,29 @@ class CollectionWrapper
      *
      * @param array|object $file File document
      */
-    public function insertFile($file): void
+    public function insertFile($file)
     {
     }
     /**
      * Updates the filename field in the file document for a given ID.
      *
-     * @param mixed $id
+     * @param mixed  $id
+     * @param string $filename
+     * @return UpdateResult
      */
-    public function updateFilenameForId($id, string $filename): UpdateResult
+    public function updateFilenameForId($id, $filename)
     {
     }
     /**
      * Create an index on the chunks collection if it does not already exist.
      */
-    private function ensureChunksIndex(): void
+    private function ensureChunksIndex()
     {
     }
     /**
      * Create an index on the files collection if it does not already exist.
      */
-    private function ensureFilesIndex(): void
+    private function ensureFilesIndex()
     {
     }
     /**
@@ -187,7 +214,7 @@ class CollectionWrapper
      * This method is called once before the first write operation on a GridFS
      * bucket. Indexes are only be created if the files collection is empty.
      */
-    private function ensureIndexes(): void
+    private function ensureIndexes()
     {
     }
     private function indexKeysMatch(array $expectedKeys, array $actualKeys): bool
@@ -195,8 +222,10 @@ class CollectionWrapper
     }
     /**
      * Returns whether the files collection is empty.
+     *
+     * @return boolean
      */
-    private function isFilesCollectionEmpty(): bool
+    private function isFilesCollectionEmpty()
     {
     }
 }

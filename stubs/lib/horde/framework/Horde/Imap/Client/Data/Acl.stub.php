@@ -70,30 +70,25 @@ class Horde_Imap_Client_Data_Acl extends Horde_Imap_Client_Data_AclCommon implem
     /* ArrayAccess methods. */
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetExists($offset)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
     }
     /* IteratorAggregate method. */
-    #[ReturnTypeWillChange]
     public function getIterator()
     {
     }
@@ -106,15 +101,6 @@ class Horde_Imap_Client_Data_Acl extends Horde_Imap_Client_Data_AclCommon implem
     /**
      */
     public function unserialize($data)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function __serialize()
-    {
-    }
-    public function __unserialize(array $data)
     {
     }
 }

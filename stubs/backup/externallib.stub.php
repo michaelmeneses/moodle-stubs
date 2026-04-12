@@ -61,10 +61,9 @@ class core_backup_external extends external_api
      *
      * @param string $filename The file name of the backup file.
      * @param int $contextid The context the backup relates to.
-     * @param string $backupid The backup ID to get the backup settings.
      * @since Moodle 3.7
      */
-    public static function get_async_backup_links_backup($filename, $contextid, $backupid)
+    public static function get_async_backup_links_backup($filename, $contextid)
     {
     }
     /**

@@ -46,8 +46,10 @@ class IndexInput implements Serializable
     }
     /**
      * Return the index name.
+     *
+     * @return string
      */
-    public function __toString(): string
+    public function __toString()
     {
     }
     /**
@@ -55,8 +57,9 @@ class IndexInput implements Serializable
      *
      * @see \MongoDB\Collection::createIndexes()
      * @see https://php.net/mongodb-bson-serializable.bsonserialize
+     * @return array
      */
-    public function bsonSerialize(): array
+    public function bsonSerialize()
     {
     }
 }

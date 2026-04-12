@@ -57,8 +57,10 @@ class CachingIterator implements Countable, Iterator
     }
     /**
      * @see https://php.net/countable.count
+     * @return integer
      */
-    public function count(): int
+    #[ReturnTypeWillChange]
+    public function count()
     {
     }
     /**
@@ -79,32 +81,38 @@ class CachingIterator implements Countable, Iterator
     }
     /**
      * @see https://php.net/iterator.next
+     * @return void
      */
-    public function next(): void
+    #[ReturnTypeWillChange]
+    public function next()
     {
     }
     /**
      * @see https://php.net/iterator.rewind
+     * @return void
      */
-    public function rewind(): void
+    #[ReturnTypeWillChange]
+    public function rewind()
     {
     }
     /**
      * @see https://php.net/iterator.valid
+     * @return boolean
      */
-    public function valid(): bool
+    #[ReturnTypeWillChange]
+    public function valid()
     {
     }
     /**
      * Ensures that the inner iterator is fully consumed and cached.
      */
-    private function exhaustIterator(): void
+    private function exhaustIterator()
     {
     }
     /**
      * Stores the current item in the cache.
      */
-    private function storeCurrentItem(): void
+    private function storeCurrentItem()
     {
     }
 }

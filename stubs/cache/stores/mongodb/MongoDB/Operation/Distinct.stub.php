@@ -71,14 +71,15 @@ class Distinct implements Executable, Explainable
      * @param array        $options        Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct(string $databaseName, string $collectionName, string $fieldName, $filter = [], array $options = [])
+    public function __construct($databaseName, $collectionName, $fieldName, $filter = [], array $options = [])
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
-     * @return array
+     * @param Server $server
+     * @return mixed[]
      * @throws UnexpectedValueException if the command response was malformed
      * @throws UnsupportedException if read concern is used and unsupported
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
@@ -90,6 +91,7 @@ class Distinct implements Executable, Explainable
      * Returns the command document for this operation.
      *
      * @see Explainable::getCommandDocument()
+     * @param Server $server
      * @return array
      */
     public function getCommandDocument(Server $server)
@@ -97,16 +99,19 @@ class Distinct implements Executable, Explainable
     }
     /**
      * Create the distinct command document.
+     *
+     * @return array
      */
-    private function createCommandDocument(): array
+    private function createCommandDocument()
     {
     }
     /**
      * Create options for executing the command.
      *
      * @see https://php.net/manual/en/mongodb-driver-server.executereadcommand.php
+     * @return array
      */
-    private function createOptions(): array
+    private function createOptions()
     {
     }
 }

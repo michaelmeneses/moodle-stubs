@@ -310,11 +310,10 @@ function is_early_init($backtrace)
 }
 /**
  * Returns detailed information about specified exception.
- *
- * @param Throwable $ex any sort of exception or throwable.
- * @return stdClass standardised info to display. Fields are clear if you look at the end of this function.
+ * @param exception $ex
+ * @return object
  */
-function get_exception_info($ex): stdClass
+function get_exception_info($ex)
 {
 }
 /**
@@ -548,7 +547,7 @@ function redirect_if_major_upgrade_required()
  *
  * To be inserted in the core functions that can not be called by pluigns during upgrade.
  * Core upgrade should not use any API functions at all.
- * See {@link https://moodledev.io/docs/guides/upgrade#upgrade-code-restrictions}
+ * See {@link http://docs.moodle.org/dev/Upgrade_API#Upgrade_code_restrictions}
  *
  * @throws moodle_exception if executed from inside of upgrade script and $warningonly is false
  * @param bool $warningonly if true displays a warning instead of throwing an exception

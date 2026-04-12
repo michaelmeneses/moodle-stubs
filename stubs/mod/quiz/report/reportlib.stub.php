@@ -35,8 +35,8 @@ function quiz_has_questions($quizid)
 /**
  * Get the slots of real questions (not descriptions) in this quiz, in order.
  * @param object $quiz the quiz.
- * @return array of slot => objects with fields
- *      ->slot, ->id, ->qtype, ->length, ->number, ->maxmark, ->category (for random questions).
+ * @return array of slot => $question object with fields
+ *      ->slot, ->id, ->maxmark, ->number, ->length.
  */
 function quiz_report_get_significant_questions($quiz)
 {

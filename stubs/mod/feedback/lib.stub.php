@@ -382,7 +382,7 @@ function feedback_get_viewreports_users($cmid, $groups = false)
  * @uses CONTEXT_MODULE
  * @param int $cmid
  * @param mixed $groups single groupid or array of groupids - group(s) user is in
- * @return stdClass[] the userrecords
+ * @return object the userrecords
  */
 function feedback_get_receivemail_users($cmid, $groups = false)
 {
@@ -467,7 +467,6 @@ function feedback_get_template_list($course, $onlyownorpublic = '')
  *
  * @param string $typ
  * @return feedback_item_base the instance of itemclass
- * @throws moodle_exception For invalid type
  */
 function feedback_get_item_class($typ)
 {

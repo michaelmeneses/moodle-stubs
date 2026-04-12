@@ -40,7 +40,10 @@ class IndexInfoIteratorIterator extends IteratorIterator implements IndexInfoIte
 {
     /** @var string|null $ns */
     private $ns;
-    public function __construct(Traversable $iterator, ?string $ns = null)
+    /**
+     * @param string|null $ns
+     */
+    public function __construct(Traversable $iterator, $ns = null)
     {
     }
     /**
@@ -48,8 +51,10 @@ class IndexInfoIteratorIterator extends IteratorIterator implements IndexInfoIte
      *
      * @see IndexInfoIterator::current()
      * @see https://php.net/iterator.current
+     * @return IndexInfo
      */
-    public function current(): IndexInfo
+    #[ReturnTypeWillChange]
+    public function current()
     {
     }
 }

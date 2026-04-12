@@ -83,7 +83,4 @@ class question_history_view extends view
     public function display_question_bank_header(): void
     {
     }
-    public function is_listing_specific_versions(): bool
-    {
-    }
 }

@@ -20,13 +20,20 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\check\access;
-
 /**
  * Verifies sanity of default user role.
  *
  * @package    core
  * @category   check
+ * @copyright  2020 Brendan Heywood <brendan@catalyst-au.net>
+ * @copyright  2008 petr Skoda
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+namespace core\check\access;
+
+/**
+ * Verifies sanity of default user role.
+ *
  * @copyright  2020 Brendan Heywood <brendan@catalyst-au.net>
  * @copyright  2008 petr Skoda
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later

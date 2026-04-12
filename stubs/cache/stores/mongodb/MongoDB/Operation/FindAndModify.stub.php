@@ -109,13 +109,14 @@ class FindAndModify implements Executable, Explainable
      * @param array  $options        Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct(string $databaseName, string $collectionName, array $options)
+    public function __construct($databaseName, $collectionName, array $options)
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
+     * @param Server $server
      * @return array|object|null
      * @throws UnexpectedValueException if the command response was malformed
      * @throws UnsupportedException if hint or write concern is used and unsupported
@@ -128,6 +129,7 @@ class FindAndModify implements Executable, Explainable
      * Returns the command document for this operation.
      *
      * @see Explainable::getCommandDocument()
+     * @param Server $server
      * @return array
      */
     public function getCommandDocument(Server $server)
@@ -135,16 +137,19 @@ class FindAndModify implements Executable, Explainable
     }
     /**
      * Create the findAndModify command document.
+     *
+     * @return array
      */
-    private function createCommandDocument(): array
+    private function createCommandDocument()
     {
     }
     /**
      * Create options for executing the command.
      *
      * @see https://php.net/manual/en/mongodb-driver-server.executewritecommand.php
+     * @return array
      */
-    private function createOptions(): array
+    private function createOptions()
     {
     }
 }

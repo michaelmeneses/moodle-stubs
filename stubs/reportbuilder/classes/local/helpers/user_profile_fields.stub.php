@@ -71,9 +71,6 @@ class user_profile_fields
     /**
      * Generate table alias for given profile field
      *
-     * The entity name is used to ensure the alias differs when the entity is used multiple times within the same report, each
-     * having their own table alias/join
-     *
      * @param profile_field_base $profilefield
      * @return string
      */
@@ -112,6 +109,17 @@ class user_profile_fields
      * @return int the constant equivalent to this custom field type.
      */
     protected function get_user_field_type(string $userfield): int
+    {
+    }
+    /**
+     * Formatter for a profile field. It formats the field according to its type.
+     *
+     * @param mixed $value
+     * @param stdClass $row
+     * @param profile_field_base $field
+     * @return string
+     */
+    public static function format_profile_field($value, stdClass $row, profile_field_base $field): string
     {
     }
 }

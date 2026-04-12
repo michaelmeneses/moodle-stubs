@@ -21,8 +21,6 @@ class core_shutdown_manager
     protected static $signalcallbacks = [];
     /** @var bool is this manager already registered? */
     protected static $registered = false;
-    /** @var array A list of pcntl handlers */
-    protected static array $pcntlhandlers = [];
     /**
      * Register self as main shutdown handler.
      *

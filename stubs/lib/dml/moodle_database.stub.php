@@ -27,7 +27,7 @@ define('SQL_QUERY_AUX', 5);
 define('SQL_QUERY_AUX_READONLY', 6);
 /**
  * Abstract class representing moodle database interface.
- * @link https://moodledev.io/docs/apis/core/dml/ddl
+ * @link http://docs.moodle.org/dev/DML_functions
  *
  * @package    core_dml
  * @copyright  2008 Petr Skoda (http://skodak.org)

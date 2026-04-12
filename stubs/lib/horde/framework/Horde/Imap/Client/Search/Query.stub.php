@@ -332,18 +332,12 @@ class Horde_Imap_Client_Search_Query implements Serializable
     {
     }
     /* Serializable methods. */
-    public function serialize()
-    {
-    }
-    public function unserialize($data)
-    {
-    }
     /**
      * Serialization.
      *
      * @return string  Serialized data.
      */
-    public function __serialize()
+    public function serialize()
     {
     }
     /**
@@ -353,7 +347,7 @@ class Horde_Imap_Client_Search_Query implements Serializable
      *
      * @throws Exception
      */
-    public function __unserialize($data)
+    public function unserialize($data)
     {
     }
 }

@@ -78,12 +78,6 @@ class settings
     {
     }
     /**
-     * Helper function renders default messages settings if the feature is enabled.
-     */
-    protected function add_defaultmessages_settings(): void
-    {
-    }
-    /**
      * Helper function renders record settings if the feature is enabled.
      */
     protected function add_record_settings(): void

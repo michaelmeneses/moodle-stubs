@@ -29,7 +29,6 @@ class Horde_Stream_Filter_Bin2hex extends php_user_filter
     /**
      * @see stream_filter_register()
      */
-    #[ReturnTypeWillChange]
     public function filter($in, $out, &$consumed, $closing)
     {
     }

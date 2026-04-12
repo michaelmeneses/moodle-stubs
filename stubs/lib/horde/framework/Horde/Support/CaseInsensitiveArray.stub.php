@@ -30,25 +30,21 @@ class Horde_Support_CaseInsensitiveArray extends ArrayIterator
 {
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetGet($offset)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetExists($offset)
     {
     }
     /**
      */
-    #[ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
     }

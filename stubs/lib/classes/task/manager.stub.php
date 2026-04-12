@@ -63,12 +63,6 @@ class manager
      */
     public static $mode;
     /**
-     * Reset the state of the task manager.
-     */
-    public static function reset_state(): void
-    {
-    }
-    /**
      * Given a component name, will load the list of tasks in the db/tasks.php file for that component.
      *
      * @param string $componentname - The name of the component to fetch the tasks for.
@@ -423,16 +417,6 @@ class manager
      * @throws \moodle_exception
      */
     public static function run_from_cli(\core\task\task_base $task): bool
-    {
-    }
-    /**
-     * This behaves similar to passthru but filters every line via
-     * the mtrace function so it can be post processed.
-     *
-     * @param string $command to run
-     * @return void
-     */
-    public static function passthru_via_mtrace(string $command)
     {
     }
     /**

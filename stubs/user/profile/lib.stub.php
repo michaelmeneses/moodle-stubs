@@ -261,11 +261,9 @@ class profile_field_base
     /**
      * Check if the field data is visible to the current user
      * @internal This method should not generally be overwritten by child classes.
-     *
-     * @param context|null $context
      * @return bool
      */
-    public function is_visible(?context $context = null): bool
+    public function is_visible()
     {
     }
     /**
@@ -336,26 +334,6 @@ class profile_field_base
     public function get_field_properties()
     {
     }
-    /**
-     * Check if the field should convert the raw data into user-friendly data when exporting
-     *
-     * @return bool
-     */
-    public function is_transform_supported(): bool
-    {
-    }
-}
-/**
- * Return profile field instance for given type
- *
- * @param string $type
- * @param int $fieldid
- * @param int $userid
- * @param stdClass|null $fielddata
- * @return profile_field_base
- */
-function profile_get_user_field(string $type, int $fieldid = 0, int $userid = 0, ?stdClass $fielddata = null): profile_field_base
-{
 }
 /**
  * Returns an array of all custom field records with any defined data (or empty data), for the specified user id.
@@ -521,22 +499,5 @@ function profile_view($user, $context, $course = null)
  * @return bool
  */
 function profile_has_required_custom_fields_set($userid)
-{
-}
-/**
- * Return the list of valid custom profile user fields.
- *
- * @return array array of profile field names
- */
-function get_profile_field_names(): array
-{
-}
-/**
- * Return the list of profile fields
- * in a format they can be used for choices in a group select menu.
- *
- * @return array array of category name with its profile fields
- */
-function get_profile_field_list(): array
 {
 }

@@ -293,14 +293,4 @@ class core_text
     public static function strtotitle($text)
     {
     }
-    /**
-     * Trims control characters out of a string.
-     * Example: (\x00-\x1f) and (\x7f)
-     *
-     * @param string $text Input string
-     * @return string Cleaned string value
-     */
-    public static function trim_ctrl_chars(string $text): string
-    {
-    }
 }

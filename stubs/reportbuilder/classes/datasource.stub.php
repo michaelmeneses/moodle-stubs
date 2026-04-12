@@ -17,14 +17,6 @@ namespace core_reportbuilder;
  */
 abstract class datasource extends base
 {
-    /** @var float[] $elementsmodified Track the time elements of specific reports have been added, updated, removed */
-    private static $elementsmodified = [];
-    /** @var array $activecolumns */
-    private $activecolumns;
-    /** @var array $activefilters */
-    private $activefilters;
-    /** @var array $activeconditions */
-    private $activeconditions;
     /**
      * Return user friendly name of the datasource
      *
@@ -164,14 +156,6 @@ abstract class datasource extends base
      * Adds all columns/filters/conditions from all the entities added to the report at once
      */
     final protected function add_all_from_entities(): void
-    {
-    }
-    /**
-     * Indicate that report elements have been modified, e.g. columns/filters/conditions have been added, removed or updated
-     *
-     * @param int $reportid
-     */
-    final public static function report_elements_modified(int $reportid): void
     {
     }
 }

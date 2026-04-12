@@ -54,6 +54,7 @@ function apply_type_map_to_document($document, array $typeMap)
  * @internal
  * @param array|object $document Document containing fields mapped to values,
  *                               which denote order or an index type
+ * @return string
  * @throws InvalidArgumentException
  */
 function generate_index_name($document): string
@@ -92,6 +93,7 @@ function get_encrypted_fields_from_server(string $databaseName, string $collecti
  *
  * @internal
  * @param array|object $document Update or replacement document
+ * @return boolean
  * @throws InvalidArgumentException
  */
 function is_first_key_operator($document): bool
@@ -102,6 +104,7 @@ function is_first_key_operator($document): bool
  *
  * @internal
  * @param mixed $pipeline
+ * @return boolean
  */
 function is_pipeline($pipeline): bool
 {
@@ -111,6 +114,7 @@ function is_pipeline($pipeline): bool
  *
  * @internal
  * @param array $options Command options
+ * @return boolean
  */
 function is_in_transaction(array $options): bool
 {
@@ -123,6 +127,7 @@ function is_in_transaction(array $options): bool
  *
  * @internal
  * @param array $pipeline List of pipeline operations
+ * @return boolean
  */
 function is_last_pipeline_operator_write(array $pipeline): bool
 {
@@ -135,6 +140,7 @@ function is_last_pipeline_operator_write(array $pipeline): bool
  * @internal
  * @see https://mongodb.com/docs/manual/reference/command/mapReduce/#output-inline
  * @param string|array|object $out Output specification
+ * @return boolean
  * @throws InvalidArgumentException
  */
 function is_mapreduce_output_inline($out): bool
@@ -148,6 +154,8 @@ function is_mapreduce_output_inline($out): bool
  *
  * @internal
  * @see https://mongodb.com/docs/manual/reference/write-concern/
+ * @param WriteConcern $writeConcern
+ * @return boolean
  */
 function is_write_concern_acknowledged(WriteConcern $writeConcern): bool
 {
@@ -158,6 +166,7 @@ function is_write_concern_acknowledged(WriteConcern $writeConcern): bool
  * @internal
  * @param Server  $server  Server to check
  * @param integer $feature Feature constant (i.e. wire protocol version)
+ * @return boolean
  */
 function server_supports_feature(Server $server, int $feature): bool
 {
@@ -167,6 +176,7 @@ function server_supports_feature(Server $server, int $feature): bool
  *
  * @internal
  * @param mixed $input
+ * @return boolean
  */
 function is_string_array($input): bool
 {
@@ -197,6 +207,7 @@ function recursive_copy($element)
  * @internal
  * @param array  $typeMap   The existing typeMap
  * @param string $fieldPath The field path to apply the root type to
+ * @return array
  */
 function create_field_path_type_map(array $typeMap, string $fieldPath): array
 {
@@ -223,16 +234,19 @@ function create_field_path_type_map(array $typeMap, string $fieldPath): array
  * @param Session  $session            A session object as retrieved by Client::startSession
  * @param callable $callback           A callback that will be invoked within the transaction
  * @param array    $transactionOptions Additional options that are passed to Session::startTransaction
+ * @return void
  * @throws RuntimeException for driver errors while committing the transaction
  * @throws Exception for any other errors, including those thrown in the callback
  */
-function with_transaction(Session $session, callable $callback, array $transactionOptions = []): void
+function with_transaction(Session $session, callable $callback, array $transactionOptions = [])
 {
 }
 /**
  * Returns the session option if it is set and valid.
  *
  * @internal
+ * @param array $options
+ * @return Session|null
  */
 function extract_session_from_options(array $options): ?Session
 {
@@ -241,6 +255,8 @@ function extract_session_from_options(array $options): ?Session
  * Returns the readPreference option if it is set and valid.
  *
  * @internal
+ * @param array $options
+ * @return ReadPreference|null
  */
 function extract_read_preference_from_options(array $options): ?ReadPreference
 {
@@ -250,6 +266,7 @@ function extract_read_preference_from_options(array $options): ?ReadPreference
  * (if given)
  *
  * @internal
+ * @return Server
  */
 function select_server(Manager $manager, array $options): Server
 {
