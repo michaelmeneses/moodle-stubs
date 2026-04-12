@@ -2217,7 +2217,7 @@ class tabobject implements renderable, templatable
  * @copyright 2015 Adrian Greeve <adrian@moodle.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class context_header implements renderable
+class context_header implements renderable, templatable
 {
     /**
      * @var string $heading Main heading.
@@ -2260,6 +2260,15 @@ class context_header implements renderable
      * Adds an array element for a formatted image.
      */
     protected function format_button_images()
+    {
+    }
+    /**
+     * Export for template.
+     *
+     * @param renderer_base $output Renderer.
+     * @return array
+     */
+    public function export_for_template(renderer_base $output): array
     {
     }
 }

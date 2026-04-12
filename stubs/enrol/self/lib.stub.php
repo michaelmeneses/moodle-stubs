@@ -405,6 +405,27 @@ class enrol_self_plugin extends enrol_plugin
     public function fill_enrol_custom_fields(array $enrolmentdata, int $courseid): array
     {
     }
+    /**
+     * Updates enrol plugin instance with provided data.
+     * @param int $courseid Course ID.
+     * @param array $enrolmentdata enrolment data.
+     * @param stdClass $instance Instance to update.
+     *
+     * @return stdClass updated instance
+     */
+    public function update_enrol_plugin_data(int $courseid, array $enrolmentdata, stdClass $instance): stdClass
+    {
+    }
+    /**
+     * Check if data is valid for a given enrolment plugin
+     *
+     * @param array $enrolmentdata enrolment data to validate.
+     * @param int|null $courseid Course ID.
+     * @return array Errors
+     */
+    public function validate_enrol_plugin_data(array $enrolmentdata, ?int $courseid = null): array
+    {
+    }
 }
 /**
  * Get icon mapping for font-awesome.

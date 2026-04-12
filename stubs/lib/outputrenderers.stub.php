@@ -205,6 +205,14 @@ class renderer_base
     public function should_display_main_logo($headinglevel = 1)
     {
     }
+    /**
+     * Returns the moodle page object.
+     *
+     * @return moodle_page
+     */
+    public function get_page(): moodle_page
+    {
+    }
 }
 /**
  * Basis for all plugin renderers.
@@ -1841,15 +1849,6 @@ class core_renderer extends renderer_base
      * @return string HTML for the skip links.
      */
     public function render_skip_links($links)
-    {
-    }
-    /**
-     * Renders the header bar.
-     *
-     * @param context_header $contextheader Header bar object.
-     * @return string HTML for the header bar.
-     */
-    protected function render_context_header(context_header $contextheader)
     {
     }
     /**

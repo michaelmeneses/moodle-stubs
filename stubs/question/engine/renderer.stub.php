@@ -16,9 +16,6 @@
  */
 class core_question_renderer extends plugin_renderer_base
 {
-    public function get_page()
-    {
-    }
     /**
      * @deprecated since Moodle 4.0
      */

@@ -31,9 +31,11 @@ namespace core;
  */
 class system_clock implements clock
 {
+    #[\Override]
     public function now(): \DateTimeImmutable
     {
     }
+    #[\Override]
     public function time(): int
     {
     }

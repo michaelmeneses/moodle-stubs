@@ -669,7 +669,7 @@ function mod_quiz_core_calendar_get_event_action_string(string $eventtype): stri
 {
 }
 /**
- * Delete question reference data.
+ * Delete all question references for a quiz.
  *
  * @param int $quizid The id of quiz.
  */

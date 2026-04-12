@@ -1727,12 +1727,24 @@ function get_complete_user_data($field, $value, $mnethostid = null, $throwexcept
  * Validate a password against the configured password policy
  *
  * @param string $password the password to be checked against the password policy
- * @param string $errmsg the error message to display when the password doesn't comply with the policy.
- * @param stdClass $user the user object to perform password validation against. Defaults to null if not provided.
+ * @param string|null $errmsg the error message to display when the password doesn't comply with the policy.
+ * @param stdClass|null $user the user object to perform password validation against. Defaults to null if not provided.
  *
  * @return bool true if the password is valid according to the policy. false otherwise.
  */
-function check_password_policy($password, &$errmsg, $user = null)
+function check_password_policy(string $password, ?string &$errmsg, ?stdClass $user = null)
+{
+}
+/**
+ * Validate a password against the configured password policy.
+ * Note: This function is unaffected by whether the password policy is enabled or not.
+ *
+ * @param string $password the password to be checked against the password policy
+ * @param stdClass|null $user the user object to perform password validation against. Defaults to null if not provided.
+ *
+ * @return string[] Array of error messages.
+ */
+function get_password_policy_errors(string $password, ?stdClass $user = null): array
 {
 }
 /**

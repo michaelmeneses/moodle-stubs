@@ -55,9 +55,9 @@ abstract class matrix_client
      *
      * @param string $serverurl The URL of the API server
      * @param string $accesstoken The admin access token to use
-     * @return matrix_client
+     * @return matrix_client|null
      */
-    public static function instance(string $serverurl, string $accesstoken): matrix_client
+    public static function instance(string $serverurl, string $accesstoken): ?matrix_client
     {
     }
     /**
@@ -129,9 +129,9 @@ abstract class matrix_client
      * - https://spec.matrix.org/latest/client-server-api/#get_matrixclientversions
      *
      * @param string $serverurl The server base
-     * @return \stdClass The list of supported versions and a list of enabled unstable features
+     * @return null|\stdClass The list of supported versions and a list of enabled unstable features
      */
-    protected static function query_server_supports(string $serverurl): \stdClass
+    protected static function query_server_supports(string $serverurl): ?\stdClass
     {
     }
     /**
