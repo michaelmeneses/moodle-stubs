@@ -89,3 +89,34 @@ function min_enable_zlib_compression()
 function min_get_slash_argument($clean = true)
 {
 }
+/**
+ * Get the lowest possible currently valid revision number.
+ *
+ * This is based on the current Moodle version.
+ *
+ * @return int Unix timestamp
+ */
+function min_get_minimum_revision(): int
+{
+}
+/**
+ * Get the highest possible currently valid revision number.
+ *
+ * This is based on the current time, allowing for a small amount of clock skew between servers.
+ *
+ * Future values beyond the clock skew are not allowed to avoid the possibility of cache poisoning.
+ *
+ * @return int
+ */
+function min_get_maximum_revision(): int
+{
+}
+/**
+ * Helper function to determine if the given revision number is valid.
+ *
+ * @param int $revision A numeric revision to check for validity
+ * @return bool Whether the revision is valid
+ */
+function min_is_revision_valid_and_current(int $revision): bool
+{
+}

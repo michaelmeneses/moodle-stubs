@@ -3086,8 +3086,6 @@ function get_course_display_name_for_list($course)
  * Safe analogue of unserialize() that can only parse arrays
  *
  * Arrays may contain only integers or strings as both keys and values. Nested arrays are allowed.
- * Note: If any string (key or value) has semicolon (;) as part of the string parsing will fail.
- * This is a simple method to substitute unnecessary unserialize() in code and not intended to cover all possible cases.
  *
  * @param string $expression
  * @return array|bool either parsed array or false if parsing was impossible.
