@@ -318,10 +318,10 @@ class cachestore_file extends cache_store implements cache_is_key_aware, cache_i
      * Prepares the data it has been read from the cache. Undoing what was done in prep_data_before_save.
      *
      * @param string $data
+     * @param string $path
      * @return mixed
-     * @throws coding_exception
      */
-    protected function prep_data_after_read($data)
+    protected function prep_data_after_read($data, $path)
     {
     }
     /**

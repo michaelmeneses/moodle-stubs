@@ -33,6 +33,10 @@ namespace quiz_statistics\task;
 class recalculate extends \core\task\adhoc_task
 {
     /**
+     * The time to delay queued runs by, to prevent repeated recalculations.
+     */
+    const DELAY = HOURSECS;
+    /**
      * Create a new instance of the task.
      *
      * This sets the properties so that only one task will be queued at a time for a given quiz.
@@ -47,6 +51,19 @@ class recalculate extends \core\task\adhoc_task
     {
     }
     public function execute(): void
+    {
+    }
+    /**
+     * Queue an instance of this task to happen after a delay.
+     *
+     * Multiple events may happen over a short period that require a recalculation. Rather than
+     * run the recalculation each time, this will queue a single run of the task for a given quiz,
+     * within the delay period.
+     *
+     * @param int $quizid The quiz to run the recalculation for.
+     * @return bool true of the task was queued.
+     */
+    public static function queue_future_run(int $quizid): bool
     {
     }
 }

@@ -305,4 +305,14 @@ abstract class grade_report
     public function item_types(): array
     {
     }
+    /**
+     * Load a valid list of gradable users in a course.
+     *
+     * @param int $courseid The course ID.
+     * @param int|null $groupid The group ID (optional).
+     * @return array A list of enrolled gradable users.
+     */
+    public static function get_gradable_users(int $courseid, ?int $groupid = null): array
+    {
+    }
 }

@@ -54,6 +54,7 @@ class question_engine_data_mapper
     }
     /**
      * Helper method used by insert_question_attempt_step and update_question_attempt_step
+     *
      * @param question_attempt_step $step the step to store.
      * @param int $questionattemptid the question attept id this step belongs to.
      * @param int $seq the sequence number of this stop.

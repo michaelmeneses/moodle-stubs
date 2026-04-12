@@ -33,6 +33,7 @@ class report_loglive_table_log extends table_sql
      *     - int userid: user id
      *     - int|string modid: Module id or "site_errors" to view site errors
      *     - int groupid: Group id
+     *     - array groups: List of group ids
      *     - \core\log\sql_reader logreader: reader from which data will be fetched.
      *     - int edulevel: educational level.
      *     - string action: view action

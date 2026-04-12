@@ -246,8 +246,7 @@ function groups_has_membership($cm, $userid = null)
  * @param int $groupid The groupid to get the users for
  * @param int $fields The fields to return
  * @param int $sort optional sorting of returned users
- * @return array|bool Returns an array of the users for the specified
- * group or false if no users or an error returned.
+ * @return array Returns an array of the users for the specified group
  */
 function groups_get_members($groupid, $fields = 'u.*', $sort = 'lastname ASC')
 {
