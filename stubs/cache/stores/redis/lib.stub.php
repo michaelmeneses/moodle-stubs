@@ -42,7 +42,7 @@ class cachestore_redis extends store implements key_aware_cache_interface, confi
      */
     const TTL_EXPIRE_BATCH = 10000;
     /** @var int The number of seconds to wait for a connection or response from the Redis server. */
-    const CONNECTION_TIMEOUT = 10;
+    const CONNECTION_TIMEOUT = 3;
     /**
      * Name of this store.
      *
@@ -85,6 +85,12 @@ class cachestore_redis extends store implements key_aware_cache_interface, confi
      * @var int
      */
     protected $compressor = self::COMPRESSOR_NONE;
+    /**
+     * The number of seconds to wait for a connection or response from the Redis server.
+     *
+     * @var int
+     */
+    protected $connectiontimeout = self::CONNECTION_TIMEOUT;
     /**
      * Bytes read or written by last call to set()/get() or set_many()/get_many().
      *

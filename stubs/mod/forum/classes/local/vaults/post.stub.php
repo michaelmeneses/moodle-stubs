@@ -88,7 +88,7 @@ class post extends db_table_vault
      * @param string $orderby Order the results
      * @return post_entity[]
      */
-    public function get_from_discussion_id(stdClass $user, int $discussionid, bool $canseeprivatereplies, string $orderby = 'created ASC'): array
+    public function get_from_discussion_id(stdClass $user, int $discussionid, bool $canseeprivatereplies, string $orderby = 'created ASC, id ASC'): array
     {
     }
     /**
@@ -133,7 +133,7 @@ class post extends db_table_vault
      * @param string $orderby How to order the replies
      * @return post_entity[]
      */
-    public function get_replies_to_post(stdClass $user, post_entity $post, bool $canseeprivatereplies, string $orderby = 'created ASC'): array
+    public function get_replies_to_post(stdClass $user, post_entity $post, bool $canseeprivatereplies, string $orderby = 'created ASC, id ASC'): array
     {
     }
     /**
@@ -221,7 +221,7 @@ class post extends db_table_vault
      * @param string $orderby Order the results
      * @return post_entity[]
      */
-    public function get_posts_in_discussion_for_user_id(int $discussionid, int $userid, bool $canseeprivatereplies, string $orderby = 'created ASC'): array
+    public function get_posts_in_discussion_for_user_id(int $discussionid, int $userid, bool $canseeprivatereplies, string $orderby = 'created ASC, id ASC'): array
     {
     }
 }
