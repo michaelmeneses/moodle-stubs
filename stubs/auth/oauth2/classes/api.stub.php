@@ -154,4 +154,14 @@ class api
     public static function is_enabled()
     {
     }
+    /**
+     * Create a new user & update the profile fields
+     *
+     * @param array $userinfo
+     * @param object $user
+     * @return object
+     */
+    private static function save_user(array $userinfo, object $user): object
+    {
+    }
 }

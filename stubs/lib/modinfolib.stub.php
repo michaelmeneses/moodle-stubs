@@ -1000,7 +1000,15 @@ class cm_info implements IteratorAggregate
     {
     }
     /**
-     * @param moodle_core_renderer $output Output render to use, or null for default (global)
+     * Fetch the module's icon URL.
+     *
+     * This function fetches the course module instance's icon URL.
+     * This method adds a `filtericon` parameter in the URL when rendering the monologo version of the course module icon or when
+     * the plugin declares, via its `filtericon` custom data, that the icon needs to be filtered.
+     * This additional information can be used by plugins when rendering the module icon to determine whether to apply
+     * CSS filtering to the icon.
+     *
+     * @param core_renderer $output Output render to use, or null for default (global)
      * @return moodle_url Icon URL for a suitable icon to put beside this cm
      */
     public function get_icon_url($output = null)

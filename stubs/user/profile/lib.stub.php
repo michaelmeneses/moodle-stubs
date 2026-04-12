@@ -523,3 +523,20 @@ function profile_view($user, $context, $course = null)
 function profile_has_required_custom_fields_set($userid)
 {
 }
+/**
+ * Return the list of valid custom profile user fields.
+ *
+ * @return array array of profile field names
+ */
+function get_profile_field_names(): array
+{
+}
+/**
+ * Return the list of profile fields
+ * in a format they can be used for choices in a group select menu.
+ *
+ * @return array array of category name with its profile fields
+ */
+function get_profile_field_list(): array
+{
+}

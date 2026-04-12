@@ -71,6 +71,9 @@ class user_profile_fields
     /**
      * Generate table alias for given profile field
      *
+     * The entity name is used to ensure the alias differs when the entity is used multiple times within the same report, each
+     * having their own table alias/join
+     *
      * @param profile_field_base $profilefield
      * @return string
      */

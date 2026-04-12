@@ -65,6 +65,18 @@ class lesson_page_type_numerical extends lesson_page
     public function update_form_data(stdClass $data): stdClass
     {
     }
+    /**
+     * Custom formats the answer to display
+     *
+     * @param string $answer
+     * @param context $context
+     * @param int $answerformat
+     * @param array $options Optional param for additional options.
+     * @return string Returns formatted string
+     */
+    public function format_answer($answer, $context, $answerformat, $options = [])
+    {
+    }
 }
 class lesson_add_page_form_numerical extends lesson_add_page_form_base
 {

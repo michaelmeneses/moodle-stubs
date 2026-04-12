@@ -679,3 +679,12 @@ function check_admin_dir_usage(environment_results $result): ?environment_result
 function check_xmlrpc_usage(environment_results $result): ?environment_results
 {
 }
+/**
+ * Check whether the mod_assignment is currently being used.
+ *
+ * @param environment_results $result
+ * @return environment_results|null
+ */
+function check_mod_assignment(environment_results $result): ?environment_results
+{
+}

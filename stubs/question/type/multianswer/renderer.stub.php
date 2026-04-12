@@ -56,6 +56,16 @@ abstract class qtype_multianswer_subq_renderer_base extends qtype_renderer
     {
     }
     /**
+     * Render the feedback icon for a sub-question which is also the trigger for the feedback popover.
+     *
+     * @param string $icon The feedback icon
+     * @param string $feedbackcontents The feedback contents to be shown on the popover.
+     * @return string
+     */
+    protected function get_feedback_image(string $icon, string $feedbackcontents): string
+    {
+    }
+    /**
      * Generates a label for an answer field.
      *
      * If the question number is set ({@see qtype_renderer::$questionnumber}), the label will
