@@ -46,9 +46,11 @@ class access_prevented extends base
      *
      * @param access_manager $accessmanager Access manager.
      * @param string $reason Reason that access was prevented.
+     * @param string|null $configkey A Safe Exam Browser config key.
+     * @param string|null $browserexamkey A Safe Exam Browser browser exam key.
      * @return base
      */
-    public static function create_strict(access_manager $accessmanager, string $reason): base
+    public static function create_strict(access_manager $accessmanager, string $reason, ?string $configkey = null, ?string $browserexamkey = null): base
     {
     }
     /**

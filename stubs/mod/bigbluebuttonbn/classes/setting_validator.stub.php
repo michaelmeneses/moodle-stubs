@@ -40,6 +40,14 @@ class setting_validator
     {
     }
     /**
+     * Validate if default messages section will be shown.
+     *
+     * @return bool
+     */
+    public static function section_default_messages_shown()
+    {
+    }
+    /**
      * Validate if record meeting section  will be shown.
      *
      * @return bool

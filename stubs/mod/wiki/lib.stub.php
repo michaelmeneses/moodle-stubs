@@ -147,7 +147,17 @@ function wiki_pluginfile($course, $cm, $context, $filearea, $args, $forcedownloa
 function wiki_search_form($cm, $search = '', $subwiki = null)
 {
 }
-function wiki_extend_navigation(navigation_node $navref, $course, $module, $cm)
+/**
+ * Extends the global navigation tree by adding wiki nodes if there is a relevant content
+ *
+ * This can be called by an AJAX request so do not rely on $PAGE as it might not be set up properly.
+ *
+ * @param navigation_node $navref An object representing the navigation tree node of the workshop module instance
+ * @param stdClass $course the course object
+ * @param stdClass $instance the activity record object
+ * @param cm_info $cm the course module object
+ */
+function wiki_extend_navigation(navigation_node $navref, stdClass $course, stdClass $instance, cm_info $cm)
 {
 }
 /**

@@ -78,4 +78,12 @@ class profile_field_datetime extends profile_field_base
     public function get_field_properties()
     {
     }
+    /**
+     * Check if the field should convert the raw data into user-friendly data when exporting
+     *
+     * @return bool
+     */
+    public function is_transform_supported(): bool
+    {
+    }
 }

@@ -590,4 +590,13 @@ class webdav_client
     private function _error_log($err_string)
     {
     }
+    /**
+     * Helper method to get the parser id for both PHP 7 and 8.
+     *
+     * @param resource|object $parser
+     * @return int
+     */
+    private function get_parser_id($parser): int
+    {
+    }
 }

@@ -162,6 +162,14 @@ class MoodleQuickForm_editor extends HTML_QuickForm_element implements templatab
     {
     }
     /**
+     * Returns editor text content
+     *
+     * @return string Text content
+     */
+    public function get_text(): string
+    {
+    }
+    /**
      * Returns editor format
      *
      * @return int.
@@ -211,11 +219,11 @@ class MoodleQuickForm_editor extends HTML_QuickForm_element implements templatab
     {
     }
     /**
-     * What to display when element is frozen.
+     * Returns the formatted value. The return from parent class is not acceptable.
      *
-     * @return empty string
+     * @return string
      */
-    function getFrozenHtml()
+    public function getFrozenHtml(): string
     {
     }
     /**

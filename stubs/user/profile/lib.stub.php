@@ -334,6 +334,14 @@ class profile_field_base
     public function get_field_properties()
     {
     }
+    /**
+     * Check if the field should convert the raw data into user-friendly data when exporting
+     *
+     * @return bool
+     */
+    public function is_transform_supported(): bool
+    {
+    }
 }
 /**
  * Returns an array of all custom field records with any defined data (or empty data), for the specified user id.

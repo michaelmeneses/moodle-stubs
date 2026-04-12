@@ -60,6 +60,14 @@ class async_helper
     {
     }
     /**
+     * Return appropriate description for current async operation {@see async_helper::type}
+     *
+     * @return string
+     */
+    private function get_operation_description(): string
+    {
+    }
+    /**
      * Callback for preg_replace_callback.
      * Replaces message placeholders with real values.
      *

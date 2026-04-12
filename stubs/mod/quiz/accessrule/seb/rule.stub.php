@@ -183,6 +183,12 @@ class quizaccess_seb extends quiz_access_rule_base
     {
     }
     /**
+     * This is called when the current attempt at the quiz is finished.
+     */
+    public function current_attempt_finished()
+    {
+    }
+    /**
      * Prepare buttons HTML code for being displayed on the screen.
      *
      * @param string $buttonshtml Html string of the buttons.
@@ -240,19 +246,6 @@ class quizaccess_seb extends quiz_access_rule_base
      * @return bool
      */
     private function should_display_download_seb_link(): bool
-    {
-    }
-    /**
-     * Redirect to SEB config link. This will force Safe Exam Browser to be reconfigured.
-     */
-    private function redirect_to_seb_config_link()
-    {
-    }
-    /**
-     * Check if we need to redirect to SEB config link.
-     * @return bool
-     */
-    private function should_redirect_to_seb_config_link(): bool
     {
     }
 }
