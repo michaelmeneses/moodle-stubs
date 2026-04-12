@@ -40,8 +40,6 @@ class sync_members extends scheduled_task
 {
     /** @var array Array of user photos. */
     protected $userphotos = [];
-    /** @var array Array of current LTI users. */
-    protected $currentusers = [];
     /** @var data_connector $dataconnector A data_connector instance. */
     protected $dataconnector;
     /**
@@ -91,7 +89,7 @@ class sync_members extends scheduled_task
      * @param stdClass $tool
      * @param ToolConsumer $consumer
      * @param User[] $members
-     * @return array An array containing the number of members that were processed and the number of members that were enrolled.
+     * @return array An array of users from processed members and the number that were enrolled.
      */
     protected function sync_member_information(stdClass $tool, ToolConsumer $consumer, $members)
     {
@@ -100,9 +98,11 @@ class sync_members extends scheduled_task
      * Performs unenrolment of users that are no longer enrolled in the consumer side.
      *
      * @param stdClass $tool The tool record object.
+     * @param string $consumerkey ensure we only unenrol users from this tool consumer.
+     * @param array $currentusers The list of current users.
      * @return int The number of users that have been unenrolled.
      */
-    protected function sync_unenrol(stdClass $tool)
+    protected function sync_unenrol(stdClass $tool, string $consumerkey, array $currentusers)
     {
     }
     /**

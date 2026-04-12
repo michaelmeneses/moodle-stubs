@@ -19,6 +19,7 @@ class pgsql_native_moodle_database extends moodle_database
         select_db_handle as read_slave_select_db_handle;
         can_use_readonly as read_slave_can_use_readonly;
         query_start as read_slave_query_start;
+        query_end as read_slave_query_end;
     }
     /** @var array $dbhcursor keep track of open cursors */
     private $dbhcursor = [];

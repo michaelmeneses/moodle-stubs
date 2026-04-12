@@ -151,3 +151,11 @@ function enrol_lti_extend_navigation_course($navigation, $course, $context)
 function enrol_lti_get_fontawesome_icon_map()
 {
 }
+/**
+ * Pre-delete course module hook which disables any methods referring to the deleted module, preventing launches and allowing remap.
+ *
+ * @param stdClass $cm The deleted course module record.
+ */
+function enrol_lti_pre_course_module_delete(stdClass $cm)
+{
+}

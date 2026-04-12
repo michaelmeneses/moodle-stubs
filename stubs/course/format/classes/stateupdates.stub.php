@@ -100,6 +100,14 @@ class stateupdates implements JsonSerializable
     {
     }
     /**
+     * Add track about a section removed.
+     *
+     * @param int $sectionid The affected section id.
+     */
+    public function add_section_remove(int $sectionid): void
+    {
+    }
+    /**
      * Add track about a course module state update.
      *
      * @param int $cmid the affected course module id
@@ -133,10 +141,18 @@ class stateupdates implements JsonSerializable
     {
     }
     /**
+     * Add track about a course module removed.
+     *
+     * @param int $cmid the affected course module id
+     */
+    public function add_cm_remove(int $cmid): void
+    {
+    }
+    /**
      * Add a valid update message to the update list.
      *
      * @param string $name the update name
-     * @param string $action the update action (usually update, create, delete)
+     * @param string $action the update action (usually update, create, remove)
      * @param stdClass $fields the object fields
      */
     protected function add_update(string $name, string $action, stdClass $fields): void

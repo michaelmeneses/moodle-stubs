@@ -161,6 +161,15 @@ trait moodle_read_slave_trait
     {
     }
     /**
+     * This should be called immediately after each db query. It does a clean up of resources.
+     *
+     * @param mixed $result The db specific result obtained from running a query.
+     * @return void
+     */
+    protected function query_end($result)
+    {
+    }
+    /**
      * Select appropriate db handle - readwrite or readonly
      * @param int $type type of query
      * @param string $sql

@@ -171,7 +171,6 @@ class Mustache_Compiler
     {
     }
     const SECTION_CALL = '
-        // %s section
         $value = $context->%s(%s);%s
         $buffer .= $this->section%s($context, $indent, $value);
     ';
@@ -182,12 +181,12 @@ class Mustache_Compiler
 
             if (%s) {
                 $source = %s;
-                $result = call_user_func($value, $source, %s);
+                $result = (string) call_user_func($value, $source, %s);
                 if (strpos($result, \'{{\') === false) {
                     $buffer .= $result;
                 } else {
                     $buffer .= $this->mustache
-                        ->loadLambda((string) $result%s)
+                        ->loadLambda($result%s)
                         ->renderInternal($context);
                 }
             } elseif (!empty($value)) {
@@ -220,7 +219,6 @@ class Mustache_Compiler
     {
     }
     const INVERTED_SECTION = '
-        // %s inverted section
         $value = $context->%s(%s);%s
         if (empty($value)) {
             %s
@@ -295,7 +293,7 @@ class Mustache_Compiler
     }
     const VARIABLE = '
         $value = $this->resolveValue($context->%s(%s), $context);%s
-        $buffer .= %s%s;
+        $buffer .= %s($value === null ? \'\' : %s);
     ';
     /**
      * Generate Mustache Template variable interpolation PHP source.

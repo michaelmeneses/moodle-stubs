@@ -29,9 +29,11 @@ class reset extends external_api
      * External method execution
      *
      * @param int $reportid
+     * @param string $parameters JSON encoded parameters used to re-create the report, for instance for those reports that
+     *      require parameters as part of their {@see \core_reportbuilder\system_report::can_view} implementation
      * @return bool
      */
-    public static function execute(int $reportid): bool
+    public static function execute(int $reportid, string $parameters = ''): bool
     {
     }
     /**

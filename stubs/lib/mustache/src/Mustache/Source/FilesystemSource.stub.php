@@ -39,7 +39,7 @@ class Mustache_Source_FilesystemSource implements Mustache_Source
     /**
      * Get the Source key (used to generate the compiled class name).
      *
-     * @throws RuntimeException when a source file cannot be read
+     * @throws Mustache_Exception_RuntimeException when a source file cannot be read
      *
      * @return string
      */
