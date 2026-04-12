@@ -92,13 +92,13 @@ class redis extends handler implements SessionHandlerInterface
     /** @var bool $clustermode Redis in cluster mode. */
     protected bool $clustermode = false;
     /** @var int Maximum number of retries for cache store operations. */
-    protected int $maxretries = 3;
+    const MAX_RETRIES = 5;
     /** @var int $firstaccesstimeout The initial timeout (seconds) for the first browser access without login. */
     protected int $firstaccesstimeout = 180;
     /** @var clock A clock instance */
     protected clock $clock;
-    /** @var int $connectiontimeout The number of seconds to wait for a connection or response from the Redis server. */
-    protected int $connectiontimeout = 3;
+    /** @var int The number of seconds to wait for a connection or response from the Redis server. */
+    const CONNECTION_TIMEOUT = 10;
     /**
      * Create new instance of handler.
      */
@@ -107,17 +107,6 @@ class redis extends handler implements SessionHandlerInterface
     }
     #[\Override]
     public function init(): bool
-    {
-    }
-    /**
-     * Initiates a new connection to a Redis instance or RedisCluster
-     *
-     * @return bool True, if the connection was successfully established
-     * @throws RedisException If the connection to a Redis instance failed
-     * @throws RedisClusterException If the connection to a RedisCluster failed
-     * @throws exception If a session handler error occurred
-     */
-    protected function connect_to_redis(): bool
     {
     }
     /**
@@ -224,12 +213,11 @@ class redis extends handler implements SessionHandlerInterface
     }
     /**
      * Connection will be null if these methods are called from cli or where NO_MOODLE_COOKIES is used.
-     * We need to check for this and create a new connection if required.
+     * We need to check for this and initialize the connection if required.
      *
      * @return void
-     * @throws exception|RedisException|RedisClusterException If connection to Redis failed
      */
-    private function connect_to_redis_if_required(): void
+    private function init_redis_if_required(): void
     {
     }
     /**

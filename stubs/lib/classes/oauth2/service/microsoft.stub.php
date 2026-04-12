@@ -39,8 +39,13 @@ class microsoft extends openidconnect implements issuer_interface
     public static function init(): issuer
     {
     }
-    #[\Override]
-    protected static function create_field_mappings(issuer $issuer): void
+    /**
+     * Create endpoints for this issuer.
+     *
+     * @param issuer $issuer Issuer the endpoints should be created for.
+     * @return issuer
+     */
+    public static function create_endpoints(issuer $issuer): issuer
     {
     }
 }

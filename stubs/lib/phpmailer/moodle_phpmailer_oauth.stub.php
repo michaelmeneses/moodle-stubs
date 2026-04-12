@@ -29,12 +29,7 @@
  */
 class moodle_phpmailer_oauth extends \PHPMailer\PHPMailer\OAuth
 {
-    #[\Override]
     protected function getToken()
-    {
-    }
-    #[\Override]
-    public function getOauth64()
     {
     }
 }

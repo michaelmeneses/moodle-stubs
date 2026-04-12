@@ -630,15 +630,6 @@ class completion_info
     public function get_completion_data(int $coursemoduleid, int $userid, array $defaultdata): array
     {
     }
-    /**
-     * Return the number of modules completed by a user in one specific course.
-     *
-     * @param int $userid The User ID.
-     * @return int Total number of modules completed by a user
-     */
-    public function count_modules_completed(int $userid): int
-    {
-    }
 }
 /**
  * Aggregate criteria status's as per configured aggregation method.

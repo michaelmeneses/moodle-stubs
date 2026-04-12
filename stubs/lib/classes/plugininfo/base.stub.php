@@ -31,6 +31,8 @@ namespace core\plugininfo;
 
 /**
  * Base class providing access to the information about a plugin
+ *
+ * @property-read string component the component name, type_name
  */
 abstract class base
 {

@@ -23,7 +23,7 @@
 namespace core_ai\table;
 
 /**
- * Table to manage AI provider plugins.
+ * Table to manage AI Provider plugins.
  *
  * @package core_ai
  * @copyright 2024 Matt Porritt <matt.porritt@moodle.com>

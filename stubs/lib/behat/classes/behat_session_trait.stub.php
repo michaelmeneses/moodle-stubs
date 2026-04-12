@@ -308,9 +308,9 @@ trait behat_session_trait
      * @throws ExpectationException
      * @param string $locator
      * @param string $selectortype
-     * @param NodeElement $container Restrict the search to just children of the specified container
+     * @return void
      */
-    protected function ensure_element_exists($locator, $selectortype, $container = false)
+    protected function ensure_element_exists($locator, $selectortype)
     {
     }
     /**
@@ -319,9 +319,9 @@ trait behat_session_trait
      * @throws ExpectationException
      * @param string $locator
      * @param string $selectortype
-     * @param NodeElement $container Restrict the search to just children of the specified container
+     * @return void
      */
-    protected function ensure_element_does_not_exist($locator, $selectortype, $container = false)
+    protected function ensure_element_does_not_exist($locator, $selectortype)
     {
     }
     /**
@@ -450,14 +450,11 @@ trait behat_session_trait
     /**
      * Helper function to execute api in a given context.
      *
-     * Note: The contextapi does not support a callback.
-     *
-     * @param string|array $contextapi context in which api is defined.
+     * @param string $contextapi context in which api is defined.
      * @param array|mixed $params list of params to pass or a single parameter
      * @throws Exception
-     * @throws DriverException
      */
-    protected function execute(string|array $contextapi, mixed $params = []): void
+    protected function execute($contextapi, $params = array())
     {
     }
     /**
@@ -812,17 +809,6 @@ trait behat_session_trait
     {
     }
     /**
-     * Get the user object from an identifier.
-     *
-     * The user username and email fields are checked.
-     *
-     * @param string $identifier The user's username or email.
-     * @return stdClass|null The user id or null if not found.
-     */
-    protected function get_user_by_identifier(string $identifier): ?stdClass
-    {
-    }
-    /**
      * Get the user id from an identifier.
      *
      * The user username and email fields are checked.
@@ -831,15 +817,6 @@ trait behat_session_trait
      * @return int|null The user id or null if not found.
      */
     protected function get_user_id_by_identifier(string $identifier): ?int
-    {
-    }
-    /**
-     * Prepare an xpath for insertion into Selenium JavaScript.
-     *
-     * @param string $xpath
-     * @return string
-     */
-    protected function prepare_xpath_for_javascript(string $xpath): string
     {
     }
 }

@@ -1217,7 +1217,7 @@ function forum_reset_gradebook($courseid, $type = '')
  *
  * @global object
  * @global object
- * @param stdClass $data the data submitted from the reset course.
+ * @param $data the data submitted from the reset course.
  * @return array status array
  */
 function forum_reset_userdata($data)

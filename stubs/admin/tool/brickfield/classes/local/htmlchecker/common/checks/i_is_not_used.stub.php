@@ -32,17 +32,10 @@ namespace tool_brickfield\local\htmlchecker\common\checks;
  * @copyright  2020 onward: Brickfield Education Labs, www.brickfield.ie
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class i_is_not_used extends brickfield_accessibility_test
+class i_is_not_used extends brickfield_accessibility_tag_test
 {
     /** @var int The default severity code for this test. */
     public $defaultseverity = \tool_brickfield\local\htmlchecker\brickfield_accessibility::BA_TEST_SEVERE;
     /** @var string The tag this test will fire on. */
     public $tag = 'i';
-    /**
-     * Check for any i elements and flag them as errors
-     * while allowing font awesome icons to be used.
-     */
-    public function check(): void
-    {
-    }
 }

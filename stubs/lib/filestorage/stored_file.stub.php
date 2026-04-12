@@ -496,7 +496,7 @@ class stored_file
     /**
      * Returns the source of the file, usually it is a url.
      *
-     * @return string|null
+     * @return string
      */
     public function get_source()
     {

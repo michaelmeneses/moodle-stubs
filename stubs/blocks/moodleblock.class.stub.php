@@ -470,14 +470,15 @@ class block_base
      * a landmark child.
      *
      * Options are as follows:
-     *    - application
      *    - landmark
+     *      - application
+     *      - banner
+     *      - complementary
+     *      - contentinfo
      *      - form
+     *      - main
      *      - navigation
      *      - search
-     *
-     * Please do not use top-level landmark roles such as 'banner', 'complementary', 'contentinfo', or 'main'. Read more at
-     * {@link https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/ ARIA Authoring Practices Guide - Landmark Regions}
      *
      * @return string
      */

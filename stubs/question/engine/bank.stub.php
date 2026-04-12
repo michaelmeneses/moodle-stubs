@@ -168,15 +168,6 @@ abstract class question_bank
     {
     }
     /**
-     * Retrieves version information for a list of questions.
-     *
-     * @param array $questionids Array of question ids.
-     * @return array An array question_bank_entries.id => version number => question.id.
-     */
-    public static function get_version_of_questions(array $questionids): array
-    {
-    }
-    /**
      * @return question_finder a question finder.
      */
     public static function get_finder()

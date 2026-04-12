@@ -96,14 +96,6 @@ class factor extends object_factor_base
     {
     }
     /**
-     * Returns true if an additional setup button should be shown on the preferences page.
-     *
-     * @return bool
-     */
-    public function show_additional_setup_button(): bool
-    {
-    }
-    /**
      * WebAuthn factor implementation.
      *
      * @param stdClass $user
@@ -126,14 +118,6 @@ class factor extends object_factor_base
      * @return string
      */
     public function get_setup_string(): string
-    {
-    }
-    /**
-     * Gets the string for additional setup button on preferences page.
-     *
-     * @return string
-     */
-    public function get_additional_setup_string(): string
     {
     }
     /**

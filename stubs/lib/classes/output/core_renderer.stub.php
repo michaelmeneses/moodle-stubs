@@ -608,17 +608,9 @@ class core_renderer extends renderer_base
      * If a string or moodle_url is given instead of a single_button, method defaults to post.
      *
      * @param string $message The question to ask the user
-     * @param single_button|moodle_url|string $continue The single_button component representing the Continue answer.
-     *      Can also be a moodle_url or string URL
-     * @param single_button|moodle_url|string $cancel The single_button component representing the Cancel answer.
-     *      Can also be a moodle_url or string URL
-     * @param array $displayoptions Display options (Optional).
-     *      Possible options:
-     *      - confirmtitle: The title to display above the message
-     *      - continuestr: The label to use for the continue button (if $continue is not a single_button)
-     *      - cancelstr: The label to use for the cancel button (if $cancel is not a single_button)
-     *      - headinglevel: The heading level to use for the title (1-6). Default is 4.
-     *      - type: The button type to use for the continue button (if $continue is not a single_button). Default is BUTTON_PRIMARY.
+     * @param single_button|moodle_url|string $continue The single_button component representing the Continue answer. Can also be a moodle_url or string URL
+     * @param single_button|moodle_url|string $cancel The single_button component representing the Cancel answer. Can also be a moodle_url or string URL
+     * @param array $displayoptions optional extra display options
      * @return string HTML fragment
      */
     public function confirm($message, $continue, $cancel, array $displayoptions = [])
@@ -1717,10 +1709,9 @@ class core_renderer extends renderer_base
      *               will be appended to the end, JS will toggle the rest of the tags
      * @param context $pagecontext specify if needed to overwrite the current page context for the view tag link
      * @param bool $accesshidelabel if true, the label should have class="accesshide" added.
-     * @param bool $displaylink Indicates whether the tag should be displayed as a link.
      * @return string
      */
-    public function tag_list($tags, $label = null, $classes = '', $limit = 10, $pagecontext = null, $accesshidelabel = false, $displaylink = true)
+    public function tag_list($tags, $label = null, $classes = '', $limit = 10, $pagecontext = null, $accesshidelabel = false)
     {
     }
     /**

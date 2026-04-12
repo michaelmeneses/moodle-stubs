@@ -195,16 +195,6 @@ abstract class backup_controller_dbops extends backup_dbops
     {
     }
     /**
-     * Set these settings to the given $value. No defaults from admin settings.
-     *
-     * @param backup_controller $controller The backup controller.
-     * @param array $settings a map from admin config names to setting names (Config name => Setting name).
-     * @param mixed $value the value to set the settings to.
-     */
-    private static function force_settings(backup_controller $controller, array $settings, $value)
-    {
-    }
-    /**
      * Sets the controller settings default values from the admin config.
      *
      * @param backup_controller $controller

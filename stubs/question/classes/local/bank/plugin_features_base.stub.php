@@ -71,10 +71,9 @@ class plugin_features_base
     /**
      * This method will return the array objects for the bulk actions ui.
      *
-     * @param view|null $qbank Question bank object or null if not needed
      * @return bulk_action_base[]
      */
-    public function get_bulk_actions(?view $qbank = null)
+    public function get_bulk_actions()
     {
     }
     /**

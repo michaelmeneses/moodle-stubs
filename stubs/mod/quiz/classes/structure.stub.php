@@ -37,10 +37,6 @@ namespace mod_quiz;
  */
 class structure
 {
-    /**
-     * Placeholder string used when a question category is missing.
-     */
-    const MISSING_QUESTION_CATEGORY_PLACEHOLDER = 'missing_question_category';
     /** @var quiz_settings the quiz this is the structure of. */
     protected $quizobj = null;
     /**

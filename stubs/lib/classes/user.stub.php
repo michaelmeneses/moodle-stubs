@@ -471,16 +471,6 @@ class user
     {
     }
     /**
-     * Return fullname of a dummy user comprised of configured name fields only
-     *
-     * @param context|null $context
-     * @param array $options
-     * @return string
-     */
-    public static function get_dummy_fullname(?context $context = null, array $options = []): string
-    {
-    }
-    /**
      * Return profile url depending on context.
      *
      * @param stdClass $user the person to get details of.

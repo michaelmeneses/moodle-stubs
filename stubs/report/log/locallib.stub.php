@@ -15,10 +15,9 @@
  * @param  string $typeormode type of logs graph needed (usercourse.png/userday.png) or the mode (today, all).
  * @param  int $date timestamp in GMT (seconds since epoch)
  * @param  string $logreader Log reader.
- * @param  int $sitecoursefilter use a course filter in site context.
  * @return void
  */
-function report_log_print_graph($course, $user, $typeormode, $date = 0, $logreader = '', $sitecoursefilter = 0)
+function report_log_print_graph($course, $user, $typeormode, $date = 0, $logreader = '')
 {
 }
 /**
@@ -80,10 +79,9 @@ function report_log_print_mnet_selector_form($hostid, $course, $selecteduser = 0
  * @param stdClass $course the course object
  * @param stdClass $user user object
  * @param string $logreader the log reader where the logs are.
- * @param int $sitecoursefilter use a course filter in site context.
  * @return array structured array to be sent to chart API, split in two indexes (series and labels).
  */
-function report_log_userall_data($course, $user, $logreader, $sitecoursefilter = 0)
+function report_log_userall_data($course, $user, $logreader)
 {
 }
 /**
@@ -93,9 +91,8 @@ function report_log_userall_data($course, $user, $logreader, $sitecoursefilter =
  * @param stdClass $user user object
  * @param int $date A time of a day (in GMT).
  * @param string $logreader the log reader where the logs are.
- * @param int $sitecoursefilter use a course filter in site context.
  * @return array $logs structured array to be sent to chart API, split in two indexes (series and labels).
  */
-function report_log_usertoday_data($course, $user, $date, $logreader, $sitecoursefilter = 0)
+function report_log_usertoday_data($course, $user, $date, $logreader)
 {
 }

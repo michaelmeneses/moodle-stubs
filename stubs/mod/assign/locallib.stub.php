@@ -748,9 +748,8 @@ class assign
      * @param bool $idsonly
      * @param bool $tablesort
      * @return array List of user records
-     * @param bool|null $onlyactive Whether to show only active users.
      */
-    public function list_participants($currentgroup, $idsonly, $tablesort = false, ?bool $onlyactive = null)
+    public function list_participants($currentgroup, $idsonly, $tablesort = false)
     {
     }
     /**
@@ -2358,14 +2357,6 @@ class assign
      * @return bool
      */
     public function is_attempt_in_progress(?int $userid = null, int $groupid = 0, int $attemptnumber = -1): bool
-    {
-    }
-    /**
-     * Is "Allow partial release of grades while marking anonymously" enabled?
-     *
-     * @return bool
-     */
-    public function is_marking_anonymous(): bool
     {
     }
 }

@@ -290,10 +290,10 @@ function glossary_get_entries_search($concept, $courseid)
 {
 }
 /**
- * Print the glossary entry.
- *
+ * @global object
+ * @global object
  * @param object $course
- * @param stdClass $cm
+ * @param object $course
  * @param object $glossary
  * @param object $entry
  * @param string $mode
@@ -301,11 +301,9 @@ function glossary_get_entries_search($concept, $courseid)
  * @param int $printicons
  * @param int $displayformat
  * @param bool $printview
- * @param int $conceptheadinglevel The heading level to use for rendering the concept within the heading element.
  * @return mixed
- * @package mod_glossary
  */
-function glossary_print_entry($course, $cm, $glossary, $entry, $mode = '', $hook = '', $printicons = 1, $displayformat = -1, $printview = false, $conceptheadinglevel = 3)
+function glossary_print_entry($course, $cm, $glossary, $entry, $mode = '', $hook = '', $printicons = 1, $displayformat = -1, $printview = false)
 {
 }
 /**
@@ -320,15 +318,10 @@ function glossary_print_entry_default($entry, $glossary, $cm)
 {
 }
 /**
- * Print glossary concept/term as a heading.
- *
- * @param object $entry The glossary entry object.
- * @param bool $return Whether to return the text instead of echoing it.
- * @param int $headinglevel What heading level to use.
- * @return string|void
- * @package mod_glossary
+ * Print glossary concept/term as a heading &lt;h4>
+ * @param object $entry
  */
-function glossary_print_entry_concept($entry, $return = false, int $headinglevel = 3)
+function glossary_print_entry_concept($entry, $return = false)
 {
 }
 /**
@@ -1312,18 +1305,5 @@ function mod_glossary_can_update_entry(stdClass $entry, stdClass $glossary, stdC
  * @return stdClass the entry with the additional data
  */
 function mod_glossary_prepare_entry_for_edition(stdClass $entry): stdClass
-{
-}
-/**
- * Checks whether the current user can see ratings for a given itemid.
- *
- * @param array $params submitted data
- *            contextid => int contextid [required]
- *            component => The component for this module - should always be mod_glossary [required]
- *            ratingarea => Should always be entry (the only rating area in glossary) [required]
- *            itemid => int the ID of the entry being rated [required]
- * @return bool
- */
-function mod_glossary_rating_can_see_item_ratings(array $params): bool
 {
 }

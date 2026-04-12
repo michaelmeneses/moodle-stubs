@@ -794,12 +794,4 @@ class framework implements H5PFrameworkInterface
     public function setContentHubMetadataChecked($time, $lang = 'en')
     {
     }
-    /**
-     * Callback for reset hub data
-     *
-     * @return void
-     */
-    public function resetHubOrganizationData()
-    {
-    }
 }

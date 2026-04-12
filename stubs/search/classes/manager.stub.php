@@ -107,10 +107,6 @@ class manager
      */
     const SEARCH_AREA_CATEGORY_OTHER = 'core-other';
     /**
-     * @var int To avoid race conditions, do not index documents newer than this many seconds.
-     */
-    const INDEXING_DELAY = 5;
-    /**
      * @var \core_search\base[] Enabled search areas.
      */
     protected static $enabledsearchareas = null;

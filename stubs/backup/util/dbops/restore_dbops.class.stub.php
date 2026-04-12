@@ -516,18 +516,6 @@ abstract class restore_dbops
     ): bool
     {
     }
-    /**
-     * Load required classes and return a backup XML transformer for the specified course.
-     *
-     * These classes may not have been loaded if we're only doing a restore in the current process,
-     * so make sure we have them here.
-     *
-     * @param int $courseid
-     * @return backup_xml_transformer
-     */
-    protected static function get_backup_xml_transformer(int $courseid): backup_xml_transformer
-    {
-    }
 }
 /*
  * Exception class used by all the @dbops stuff

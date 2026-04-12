@@ -73,14 +73,4 @@ class filter_condition_manager
     public static function unpack_filteroptions_param(array $filters): array
     {
     }
-    /**
-     * Filter out invalid values from the filterconditions array,
-     *
-     * @param array $filterconditions
-     * @return array
-     * @throws \dml_exception
-     */
-    public static function filter_invalid_values(array $filterconditions): array
-    {
-    }
 }

@@ -53,7 +53,7 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
     /**
      * @var array Allowed types when using selector arguments.
      */
-    protected static $allowedselectors = array('activity' => 'activity', 'actionmenu' => 'actionmenu', 'badge' => 'badge', 'block' => 'block', 'button' => 'button', 'checkbox' => 'checkbox', 'combobox' => 'combobox', 'css_element' => 'css_element', 'dialogue' => 'dialogue', 'dropdown' => 'dropdown', 'dropdown_item' => 'dropdown_item', 'field' => 'field', 'fieldset' => 'fieldset', 'file' => 'file', 'filemanager' => 'filemanager', 'group_message' => 'group_message', 'group_message_conversation' => 'group_message_conversation', 'group_message_header' => 'group_message_header', 'group_message_member' => 'group_message_member', 'group_message_tab' => 'group_message_tab', 'group_message_list_area' => 'group_message_list_area', 'group_message_message_content' => 'group_message_message_content', 'heading' => 'heading', 'icon_container' => 'icon_container', 'icon' => 'icon', 'link' => 'link', 'link_or_button' => 'link_or_button', 'list_item' => 'list_item', 'menuitem' => 'menuitem', 'optgroup' => 'optgroup', 'option' => 'option', 'option_role' => 'option_role', 'question' => 'question', 'radio' => 'radio', 'region' => 'region', 'section' => 'section', 'select' => 'select', 'table' => 'table', 'table_row' => 'table_row', 'text' => 'text', 'toast_message' => 'toast_message', 'xpath_element' => 'xpath_element', 'form_row' => 'form_row', 'autocomplete_selection' => 'autocomplete_selection', 'autocomplete_suggestions' => 'autocomplete_suggestions', 'autocomplete' => 'autocomplete', 'iframe' => 'iframe');
+    protected static $allowedselectors = array('activity' => 'activity', 'actionmenu' => 'actionmenu', 'badge' => 'badge', 'block' => 'block', 'button' => 'button', 'checkbox' => 'checkbox', 'combobox' => 'combobox', 'css_element' => 'css_element', 'dialogue' => 'dialogue', 'dropdown' => 'dropdown', 'dropdown_item' => 'dropdown_item', 'field' => 'field', 'fieldset' => 'fieldset', 'file' => 'file', 'filemanager' => 'filemanager', 'group_message' => 'group_message', 'group_message_conversation' => 'group_message_conversation', 'group_message_header' => 'group_message_header', 'group_message_member' => 'group_message_member', 'group_message_tab' => 'group_message_tab', 'group_message_list_area' => 'group_message_list_area', 'group_message_message_content' => 'group_message_message_content', 'heading' => 'heading', 'icon_container' => 'icon_container', 'icon' => 'icon', 'link' => 'link', 'link_or_button' => 'link_or_button', 'list_item' => 'list_item', 'menuitem' => 'menuitem', 'optgroup' => 'optgroup', 'option' => 'option', 'option_role' => 'option_role', 'question' => 'question', 'radio' => 'radio', 'region' => 'region', 'section' => 'section', 'select' => 'select', 'table' => 'table', 'table_row' => 'table_row', 'text' => 'text', 'xpath_element' => 'xpath_element', 'form_row' => 'form_row', 'autocomplete_selection' => 'autocomplete_selection', 'autocomplete_suggestions' => 'autocomplete_suggestions', 'autocomplete' => 'autocomplete', 'iframe' => 'iframe');
     /**
      * Behat by default comes with XPath, CSS and named selectors,
      * named selectors are a mapping between names (like button) and
@@ -71,7 +71,7 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
         descendant::*[
             contains(concat(' ', normalize-space(@class), ' '), ' dropdown-toggle ')
                 and
-            (contains(normalize-space(.), %locator%) or descendant::*[%titleMatch%] or %ariaLabelMatch%)
+            (contains(normalize-space(.), %locator%) or descendant::*[%titleMatch%])
         ]
     ]
     XPATH, 'badge' => <<<XPATH
@@ -171,8 +171,6 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
     .//tr[contains(normalize-space(.), %locator%) and not(.//tr[contains(normalize-space(.), %locator%)])]
     XPATH, 'text' => <<<XPATH
     .//*[contains(., %locator%) and not(.//*[contains(., %locator%)])]
-    XPATH, 'toast_message' => <<<XPATH
-            .//*[contains(concat(' ', normalize-space(@class), ' '), ' toast-message ') and %exactTagTextMatch%]
     XPATH, 'form_row' => <<<XPATH
     .//*[contains(concat(' ', @class, ' '), ' col-form-label ')]
         [normalize-space(.)= %locator%]
@@ -205,15 +203,9 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
     XPATH, 'inplaceeditable' => <<<XPATH
     .//descendant::span[@data-inplaceeditable][descendant::a[%titleMatch%]]
     XPATH, 'date_time' => <<<XPATH
-    .//*[
-        (%idMatch% or ./legend[%exactTagTextMatch%]
-            or parent::div[@data-groupname=%locator% or ./label[contains(normalize-space(string(.)), %locator%)]]
-        ) and
-        (@data-fieldtype='date' or @data-fieldtype='date_time'
-            or @data-fieldtype='date_selector' or @data-fieldtype='date_time_selector')
-    ]
+    .//fieldset[(%idMatch% or ./legend[%exactTagTextMatch%]) and (@data-fieldtype='date' or @data-fieldtype='date_time')]
     XPATH, 'select_menu' => <<<XPATH
-    //*[@role='combobox'][@aria-labelledby = //span[contains(normalize-space(string(.)), %locator%)]/@id]
+    //*[@role='combobox'][@aria-labelledby = //label[contains(normalize-space(string(.)), %locator%)]/@id]
     XPATH]];
     /**
      * Mink comes with a number of named replacements.
