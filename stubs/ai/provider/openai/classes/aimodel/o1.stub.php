@@ -44,10 +44,6 @@ class o1 extends gpt4o
     {
     }
     #[\Override]
-    public function add_model_settings(MoodleQuickForm $mform): void
-    {
-    }
-    #[\Override]
     public function model_type(): array
     {
     }

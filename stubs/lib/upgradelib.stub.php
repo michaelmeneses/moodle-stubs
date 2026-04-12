@@ -681,14 +681,3 @@ function check_mod_assignment(environment_results $result): ?environment_results
 function check_async_backup(environment_results $result): ?environment_results
 {
 }
-/**
- * Checks if the current database vendor is Aurora MySQL.
- *
- * If the database vendor is 'auroramysql', this function sets additional information.
- *
- * @param environment_results $result The environment results object to update.
- * @return environment_results|null The updated environment results object if Aurora is detected, or null otherwise.
- */
-function check_aurora_version(environment_results $result): ?environment_results
-{
-}

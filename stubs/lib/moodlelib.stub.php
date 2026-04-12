@@ -695,10 +695,9 @@ function html_is_blank($string)
  * @param string|int|bool|null $value the value to set (without magic quotes),
  *               null to unset the value
  * @param string $plugin (optional) the plugin scope, default null
- * @param boolean $log (optional) should this emit to the config log
  * @return bool true or exception
  */
-function set_config($name, $value, $plugin = null, bool $log = false)
+function set_config($name, $value, $plugin = null)
 {
 }
 /**
@@ -728,10 +727,9 @@ function get_config($plugin, $name = null)
  *
  * @param string $name the key to set
  * @param string $plugin (optional) the plugin scope
- * @param boolean $log (optional) should this emit to the config log
  * @return boolean whether the operation succeeded.
  */
-function unset_config($name, $plugin = null, bool $log = false)
+function unset_config($name, $plugin = null)
 {
 }
 /**
@@ -2484,14 +2482,11 @@ function moodle_setlocale($locale = '')
 /**
  * Count words in a string.
  *
- * Words are defined as things between whitespace. Developments have tried to ensure that this
- * method gives the same results as Libre Office, MS Word, etc. However, word-counting rules are
- * subtle, and not identical between languages, so there may be differences in non-English languages.
+ * Words are defined as things between whitespace.
  *
  * @category string
  * @param string $string The text to be searched for words. May be HTML.
- * @param int|null $format a FORMAT_... constant. In the API this is optional,
- *      but really, it is required to get accurate results, so should be passed.
+ * @param int|null $format
  * @return int The count of words in the specified string
  */
 function count_words($string, $format = null)

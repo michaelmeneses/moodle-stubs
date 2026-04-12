@@ -915,12 +915,6 @@ class quiz_attempt
     {
     }
     /**
-     * Set up the page layout for an attempt, summary or review page.
-     */
-    public function setup_attempt_layout(): void
-    {
-    }
-    /**
      * Generate the HTML that displays the question in its current state, with
      * the appropriate display options.
      *
@@ -1338,12 +1332,6 @@ class quiz_attempt
      * if that is not possible, we put in a newly started attempt.
      */
     public function update_questions_to_new_version_if_changed(): void
-    {
-    }
-    /**
-     * Handle the case where a question in an attempt has been deleted.
-     */
-    private function handle_missing_question_attempt(): void
     {
     }
 }

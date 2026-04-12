@@ -1022,8 +1022,6 @@ class curl
     private $ignoresecurity;
     /** @var array $mockresponses For unit testing only - return the head of this list instead of making the next request. */
     private static $mockresponses = [];
-    /** @var array $curlresolveinfo Resolve addresses for the URL that have passed cuRL security checks, in a CURLOPT_RESOLVE compatible format. */
-    private $curlresolveinfo = [];
     /** @var array temporary params value if the value is not belongs to class stored_file. */
     public $_tmp_file_post_params = [];
     /**
@@ -1074,14 +1072,6 @@ class curl
      * @throws coding_exception If an option uses constant value instead of option name.
      */
     public function setopt($options = array())
-    {
-    }
-    /**
-     * Remove options previously set with setopt.
-     *
-     * @param array $options List of options to remove.
-     */
-    public function removeopt(array $options = []): void
     {
     }
     /**
@@ -1348,7 +1338,7 @@ class curl
      * @param array $options
      * @return ?string
      */
-    public function put($url, $params = [], $options = [])
+    public function put($url, $params = array(), $options = array())
     {
     }
     /**

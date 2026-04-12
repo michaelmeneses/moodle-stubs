@@ -62,17 +62,6 @@ class util
     {
     }
     /**
-     * Throw a specialized HTTP exception based on the response status code.
-     *
-     * @param ServerRequestInterface $request
-     * @param ResponseInterface $response
-     * @param string|null $message
-     * @param \Throwable|null $previous
-     */
-    public static function throw_specialized_exception(ServerRequestInterface $request, ResponseInterface $response, ?string $message = null, ?\Throwable $previous = null): void
-    {
-    }
-    /**
      * Generate a Page Not Found result.
      *
      * @param ServerRequestInterface $request

@@ -416,12 +416,4 @@ abstract class oauth2_client extends curl
     protected function use_http_get()
     {
     }
-    /**
-     * An additional array of url params to pass with upgrade token request.
-     *
-     * @return array of name value pairs.
-     */
-    public function get_additional_upgrade_token_parameters(): array
-    {
-    }
 }

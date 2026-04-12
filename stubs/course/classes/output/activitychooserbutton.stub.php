@@ -44,7 +44,7 @@ class activitychooserbutton implements templatable, renderable
         protected section_info $section,
         /** @var cm_info|null the course module instance */
         protected ?cm_info $mod = null,
-        /** @var int|null the section to return to */
+        /** @var sectionreturn|null the section to return to */
         protected ?int $sectionreturn = null,
         /** @var array|null action_link[] the action links */
         protected ?array $actionlinks = []

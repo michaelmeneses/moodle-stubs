@@ -24,26 +24,10 @@ class behat_form_date extends behat_form_group
      *
      * @param string $value The value to be assigned to the date selector field. The string value must be either
      *                      parsable into a UNIX timestamp or equal to 'disabled' (if disabling the date selector).
+     * @return void
      * @throws ExpectationException If the value is invalid.
      */
     public function set_value($value)
-    {
-    }
-    /**
-     * Returns the current value of the field
-     *
-     * @return int
-     */
-    public function get_value()
-    {
-    }
-    /**
-     * Matches the provided value against the current field value
-     *
-     * @param mixed $expectedvalue
-     * @return bool
-     */
-    public function matches($expectedvalue)
     {
     }
     /**
@@ -62,15 +46,6 @@ class behat_form_date extends behat_form_group
      * @param string|bool $childvalue The value
      */
     private function set_child_field_value(string $childname, $childvalue)
-    {
-    }
-    /**
-     * Gets a value of a child element in the date form field
-     *
-     * @param string $childname
-     * @return string
-     */
-    protected function get_child_field_value(string $childname): string
     {
     }
 }

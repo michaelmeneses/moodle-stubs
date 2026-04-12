@@ -37,18 +37,8 @@ class group_selector extends comboboxsearch
      * The class constructor.
      *
      * @param stdClass $context The context object.
-     * @param bool $participationonly Only include participation groups?
      */
-    public function __construct(
-        /**
-         * @var stdClass The context object.
-         */
-        private stdClass $context,
-        /**
-         * @var bool Only include participation groups?
-         */
-        protected bool $participationonly = true
-    )
+    public function __construct(private stdClass $context)
     {
     }
     /**

@@ -145,7 +145,7 @@ class question_bank_helper
      *       parameters that will get banks across multiple contexts.
      * @return cm_info[]
      */
-    public static function get_recently_used_open_banks(int $userid, int $notincourseid = 0, ?context $filtercontext = null, array $havingcap = []): array
+    public static function get_recently_used_open_banks(int $userid, int $notincourseid = 0, ?context $filtercontext = null): array
     {
     }
     /**

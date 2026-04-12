@@ -9,8 +9,7 @@
 /**
  * Filemanager form element
  *
- * Contains HTML class for a filemanager form element
- *
+ * FilemaneManager lets user to upload/manage multiple files
  * @package   core_form
  * @category  form
  * @copyright 2009 Dongsheng Cai <dongsheng@moodle.com>
@@ -177,14 +176,6 @@ class MoodleQuickForm_filemanager extends HTML_QuickForm_element implements temp
      * @return string
      */
     function toHtml()
-    {
-    }
-    /**
-     * What to display when element is frozen
-     *
-     * @return string
-     */
-    public function getFrozenHtml(): string
     {
     }
     public function export_for_template(renderer_base $output)

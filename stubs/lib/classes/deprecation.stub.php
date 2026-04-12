@@ -73,17 +73,6 @@ class deprecation
     {
     }
     /**
-     * Emit a deprecation notice for a reference.
-     *
-     * This will emit a deprecation notice if the reference is deprecated.
-     * If the reference is not deprecated, the function will emit debugging information.
-     *
-     * @param array|string|object $reference
-     */
-    public static function emit_deprecation(array|string|object $reference): void
-    {
-    }
-    /**
      * Fetch a referenced deprecation attribute from a reflected object.
      *
      * @param \ReflectionClass $rc The reflected object

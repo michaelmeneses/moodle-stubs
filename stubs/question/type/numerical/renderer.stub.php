@@ -28,7 +28,7 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 /**
- * Generates the output for numeric questions.
+ * Generates the output for short answer questions.
  *
  * @copyright 2009 The Open University
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later

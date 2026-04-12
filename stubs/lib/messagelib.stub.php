@@ -24,8 +24,7 @@
  *
  * Optional parameters of the $eventdata object:
  *  notification bool should the message be considered as a notification rather than a personal message
- *  contexturl string|url if this is a notification then you can specify a url to view the event.
- *                    For example the forum post the user is being notified of.
+ *  contexturl string if this is a notification then you can specify a url to view the event. For example the forum post the user is being notified of.
  *  contexturlname string the display text for contexturl
  *
  * Note: processor failure will not reported as false return value in all scenarios,

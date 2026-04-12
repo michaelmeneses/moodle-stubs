@@ -234,11 +234,10 @@ function user_is_previously_used_password($userid, $password)
  *
  * @param string $uuid The device UUID.
  * @param string $appid The app id. If empty all the devices matching the UUID for the user will be removed.
- * @param int|null $userid The user id. If null, the current user will be used.
  * @return bool true if removed, false if the device didn't exists in the database
  * @since Moodle 2.9
  */
-function user_remove_user_device($uuid, $appid = "", $userid = null)
+function user_remove_user_device($uuid, $appid = "")
 {
 }
 /**
@@ -275,17 +274,6 @@ function user_mygrades_url($userid = null, $courseid = SITEID)
  * @return bool true for ability to view this user, else false.
  */
 function user_can_view_profile($user, $course = null, $usercontext = null)
-{
-}
-/**
- * Process plugin callbacks for profile visibility.
- *
- * @param stdClass $user The user whose profile is being checked.
- * @param stdClass|null $course The course context, if applicable.
- * @param context|null $usercontext The user context, if applicable.
- * @return int One of the core_user::VIEWPROFILE_* constants.
- */
-function user_process_profile_callbacks(stdClass $user, ?stdClass $course = null, ?stdClass $usercontext = null): int
 {
 }
 /**

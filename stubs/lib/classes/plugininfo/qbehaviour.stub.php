@@ -68,12 +68,4 @@ class qbehaviour extends base
     public static function get_manage_url()
     {
     }
-    #[\Override]
-    public function get_settings_section_name()
-    {
-    }
-    #[\Override]
-    public function load_settings(\part_of_admin_tree $adminroot, $parentnodename, $hassiteconfig)
-    {
-    }
 }

@@ -57,4 +57,14 @@ class bulk_move implements \renderable, \templatable
     public function export_for_template(renderer_base $output)
     {
     }
+    /**
+     * Wrapped usort to move the currentcategoryid to the top of the list of question categories.
+     *
+     * @param array $categories categories to sort
+     * @param int $currentcategoryid the category to be sorted to the top of the list
+     * @return void
+     */
+    protected function sort_categories(array &$categories, int $currentcategoryid): void
+    {
+    }
 }

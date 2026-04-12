@@ -494,7 +494,7 @@ function move_courses($courseids, $categoryid)
  * @see core_courseformat\base::get_section_name()
  *
  * @param int|stdClass $courseorid The course to get the section name for (object or just course id)
- * @param int|stdClass|section_info $section Section object from database or just field course_sections.section
+ * @param int|stdClass $section Section object from database or just field course_sections.section
  * @return string Display name that the course format prefers, e.g. "Week 2"
  */
 function get_section_name($courseorid, $section)
@@ -859,7 +859,7 @@ function get_sorted_course_formats($enabledonly = false)
  * @param array $options options for view URL. At the moment core uses:
  *     'navigation' (bool) if true and section has no separate page, the function returns null
  *     'sr' (int) used by multipage formats to specify to which section to return
- * @return moodle_url|null The url of course
+ * @return moodle_url The url of course
  */
 function course_get_url($courseorid, $section = null, $options = array())
 {
@@ -1085,7 +1085,7 @@ function course_get_user_navigation_options($context, $course = null)
  * This function also handles the frontpage settings.
  *
  * @param  stdClass $course  course object (for frontpage it should be a clone of $SITE)
- * @param  context_course $context context object (course context)
+ * @param  stdClass $context context object (course context)
  * @return stdClass          the administration options in a course and their availability status
  * @since  Moodle 3.2
  */
@@ -1402,8 +1402,6 @@ function course_output_fragment_new_base_form($args)
  *
  * @param array $args the fragment arguments
  * @return string the course overview fragment
- *
- * @throws require_login_exception
  */
 function course_output_fragment_course_overview($args)
 {

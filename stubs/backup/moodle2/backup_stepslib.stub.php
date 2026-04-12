@@ -118,17 +118,6 @@ trait backup_question_set_reference_trait
     protected function add_question_set_references($element, $component, $questionarea)
     {
     }
-    /**
-     * Find all questions that match set reference conditions used by the activity, and record the question bank entry IDs.
-     *
-     * @param int $contextid The context ID of the activity being backed up
-     * @param string $component The component of the activity
-     * @param string $questionarea The question area for finding set references
-     * @param string $backupid The backup ID to annotate question bank entries against
-     */
-    protected function annotate_set_reference_bank_entries(int $contextid, string $component, string $questionarea, string $backupid): void
-    {
-    }
 }
 /**
  * Abstract structure step to help activities that store question attempt data, reference data and set reference data.
@@ -663,10 +652,6 @@ class backup_annotate_all_question_files extends backup_execution_step
  */
 class backup_questions_structure_step extends backup_structure_step
 {
-    #[\Override]
-    public function execute()
-    {
-    }
     protected function define_structure()
     {
     }

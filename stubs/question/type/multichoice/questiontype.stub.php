@@ -41,7 +41,7 @@ class qtype_multichoice extends question_type
      * @param object $question The queston we are working with.
      * @return object The options object.
      */
-    public function create_default_options($question)
+    protected function create_default_options($question)
     {
     }
     public function save_defaults_for_new_questions(stdClass $fromform): void

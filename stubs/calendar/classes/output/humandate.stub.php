@@ -140,27 +140,11 @@ class humandate implements renderable, templatable
     {
     }
     /**
-     * Returns the default user date format.
-     *
-     * @return string The formatted date.
-     */
-    private function default_userdate(): string
-    {
-    }
-    /**
      * Checks if the date is near.
      *
      * @return bool Whether the date is near.
      */
     private function is_near(): bool
-    {
-    }
-    /**
-     * Checks if the datetime is from the current year.
-     *
-     * @return bool True if the datetime is from the current year, false otherwise.
-     */
-    private function is_current_year(): bool
     {
     }
     /**

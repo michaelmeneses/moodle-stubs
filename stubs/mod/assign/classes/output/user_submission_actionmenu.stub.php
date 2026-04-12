@@ -72,14 +72,6 @@ class user_submission_actionmenu implements templatable, renderable
     {
     }
     /**
-     * Has the submission started.
-     *
-     * @return bool The status of the submission; true if started, otherwise false.
-     */
-    protected function is_submission_started(): bool
-    {
-    }
-    /**
      * Export the submission buttons for the page.
      *
      * @param  \renderer_base $output renderer base output.

@@ -45,15 +45,6 @@ abstract class backup_question_dbops extends backup_dbops
     {
     }
     /**
-     * Recursively find the parents and ancestors of the given category
-     *
-     * @param int $categoryid The category we want to find parents for.
-     * @return array id => parentid for each category
-     */
-    protected static function get_parent_categories(int $categoryid): array
-    {
-    }
-    /**
      * Delete all the annotated questions present in backup_ids_temp
      */
     public static function delete_temp_questions($backupid)

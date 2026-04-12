@@ -37,14 +37,6 @@ define('BADGE_EXPIRES_TOKEN', 'expires');
  */
 class backpack_api
 {
-    /** @var int Canvas Credentials backpack provider */
-    public const PROVIDER_CANVAS_CREDENTIALS = 0;
-    /** @var int Other backpack provider */
-    public const PROVIDER_OTHER = 1;
-    /** @var int Empty provider */
-    public const PROVIDER_EMPTY = -1;
-    /** @var int Empty region */
-    public const REGION_EMPTY = -1;
     /** @var string The email address of the issuer or the backpack owner. */
     private $email;
     /** @var string The base url used for api requests to this backpack. */
@@ -236,14 +228,6 @@ class backpack_api
     {
     }
     /**
-     * List all errors occurred during the requests to the backpack.
-     *
-     * @return array The list of errors.
-     */
-    public function get_errors(): array
-    {
-    }
-    /**
      * Get the list of badges in a collection.
      *
      * @param stdClass $collection The collection to deal with.
@@ -251,67 +235,6 @@ class backpack_api
      * @return stdClass[]
      */
     public function get_badges($collection, $expanded = false)
-    {
-    }
-    /**
-     *  Get list of backpack providers for OBv2.0.
-     *
-     * @return string[] Array with the OBv2.0 backpack providers.
-     */
-    public static function get_providers(): array
-    {
-    }
-    /**
-     * Get list of regions for backpack providers.
-     *
-     * @return array Regions with the following information: name, url and apiurl.
-     */
-    public static function get_regions()
-    {
-    }
-    /**
-     * Whether the Canvas Credentials fields should be displayed or not in the backpack form.
-     *
-     * @return bool True if the fields should be displayed; false otherwise.
-     */
-    public static function display_canvas_credentials_fields(): bool
-    {
-    }
-    /**
-     * Get backpack URL for a given regionid.
-     *
-     * @param int $regionid The region identifier.
-     * @return string|null The backpack URL.
-     */
-    public static function get_region_url(int $regionid): ?string
-    {
-    }
-    /**
-     * Get backpack API URL for a given regionid.
-     *
-     * @param int $regionid The region identifier.
-     * @return string|null The backpack API URL.
-     */
-    public static function get_region_api_url(int $regionid): ?string
-    {
-    }
-    /**
-     * Get region identifier from a given backpack URL.
-     * When the URL is not found, the last region index is returned.
-     *
-     * @param string $url The backpack URL.
-     * @return int The region identifier associated to the given backpack URL or the last region index if not found.
-     */
-    public static function get_regionid_from_url(string $url): int
-    {
-    }
-    /**
-     * Check whether the given URL is a Canvas Credentials one.
-     *
-     * @param string $url The backpack URL.
-     * @return bool True is the given URL is a Canvas Credentials region; false otherwise.
-     */
-    public static function is_canvas_credentials_region(string $url): bool
     {
     }
 }

@@ -760,9 +760,8 @@ class assign
      * @param bool $idsonly
      * @param bool $tablesort
      * @return array List of user records
-     * @param bool|null $onlyactive Whether to show only active users.
      */
-    public function list_participants($currentgroup, $idsonly, $tablesort = false, ?bool $onlyactive = null)
+    public function list_participants($currentgroup, $idsonly, $tablesort = false)
     {
     }
     /**
@@ -1688,12 +1687,9 @@ class assign
     /**
      * A students submission is submitted for grading by a teacher.
      *
-     * @param moodleform|null $mform If validation failed when submitting this form - this is the moodleform.
-     *               It can be null.
-     * @param array $notices Receives error messages to display on an error condition.
      * @return bool
      */
-    protected function process_submit_other_for_grading($mform, &$notices)
+    protected function process_submit_other_for_grading($mform, $notices)
     {
     }
     /**
@@ -1701,10 +1697,9 @@ class assign
      *
      * @param moodleform|null $mform If validation failed when submitting this form - this is the moodleform.
      *               It can be null.
-     * @param array $notices Receives error messages to display on an error condition.
      * @return bool Return false if the validation fails. This affects which page is displayed next.
      */
-    protected function process_submit_for_grading($mform, &$notices)
+    protected function process_submit_for_grading($mform, $notices)
     {
     }
     /**
@@ -2347,14 +2342,6 @@ class assign
      * @return bool
      */
     public function is_attempt_in_progress(?int $userid = null, int $groupid = 0, int $attemptnumber = -1): bool
-    {
-    }
-    /**
-     * Is "Allow partial release of grades while marking anonymously" enabled?
-     *
-     * @return bool
-     */
-    public function is_marking_anonymous(): bool
     {
     }
 }

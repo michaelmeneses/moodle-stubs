@@ -74,7 +74,7 @@ abstract class screen
      */
     protected $items;
     /** @var int Maximum number of students that can be shown on one page */
-    protected static $maxperpage = 1000;
+    protected static $maxperpage = 5000;
     /**
      * List of allowed values for 'perpage' setting
      * @var array $validperpage

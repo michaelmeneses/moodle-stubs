@@ -53,13 +53,11 @@ class require_login
     {
     }
     /**
-     * Get the attribute name used for the course.
+     * Get the course attribute name.
      *
-     * A null value is returned if the course attribute name is not set.
-     *
-     * @return null|string
+     * @return string
      */
-    public function get_course_attribute_name(): ?string
+    public function get_course_attribute_name(): string
     {
     }
     /**

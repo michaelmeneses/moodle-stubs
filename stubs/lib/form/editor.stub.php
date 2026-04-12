@@ -15,6 +15,7 @@
  * @category  form
  * @copyright 2009 Petr Skoda {@link http://skodak.org}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @todo      MDL-29421 element Freezing
  * @todo      MDL-29426 ajax format conversion
  */
 class MoodleQuickForm_editor extends HTML_QuickForm_element implements templatable
@@ -209,14 +210,6 @@ class MoodleQuickForm_editor extends HTML_QuickForm_element implements templatab
     {
     }
     public function export_for_template(renderer_base $output)
-    {
-    }
-    /**
-     * Used by getFrozenHtml() to pass the element's value if _persistantFreeze is on
-     *
-     * @return string
-     */
-    public function _getPersistantData()
     {
     }
     /**

@@ -112,15 +112,6 @@ class tablelog extends \table_sql implements \renderable
     {
     }
     /**
-     * Display name of country
-     *
-     * @param \stdClass $history
-     * @return string
-     */
-    public function col_country(\stdClass $history): string
-    {
-    }
-    /**
      * Method to display the final grade.
      *
      * @param \stdClass $history an entry of history record.

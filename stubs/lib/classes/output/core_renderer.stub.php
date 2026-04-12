@@ -601,17 +601,9 @@ class core_renderer extends renderer_base
      * If a string or moodle_url is given instead of a single_button, method defaults to post.
      *
      * @param string $message The question to ask the user
-     * @param single_button|moodle_url|string $continue The single_button component representing the Continue answer.
-     *      Can also be a moodle_url or string URL
-     * @param single_button|moodle_url|string $cancel The single_button component representing the Cancel answer.
-     *      Can also be a moodle_url or string URL
-     * @param array $displayoptions Display options (Optional).
-     *      Possible options:
-     *      - confirmtitle: The title to display above the message
-     *      - continuestr: The label to use for the continue button (if $continue is not a single_button)
-     *      - cancelstr: The label to use for the cancel button (if $cancel is not a single_button)
-     *      - headinglevel: The heading level to use for the title (1-6). Default is 4.
-     *      - type: The button type to use for the continue button (if $continue is not a single_button). Default is BUTTON_PRIMARY.
+     * @param single_button|moodle_url|string $continue The single_button component representing the Continue answer. Can also be a moodle_url or string URL
+     * @param single_button|moodle_url|string $cancel The single_button component representing the Cancel answer. Can also be a moodle_url or string URL
+     * @param array $displayoptions optional extra display options
      * @return string HTML fragment
      */
     public function confirm($message, $continue, $cancel, array $displayoptions = [])

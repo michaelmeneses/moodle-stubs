@@ -110,17 +110,6 @@ class redis extends handler implements SessionHandlerInterface
     {
     }
     /**
-     * Initiates a new connection to a Redis instance or RedisCluster
-     *
-     * @return bool True, if the connection was successfully established
-     * @throws RedisException If the connection to a Redis instance failed
-     * @throws RedisClusterException If the connection to a RedisCluster failed
-     * @throws exception If a session handler error occurred
-     */
-    protected function connect_to_redis(): bool
-    {
-    }
-    /**
      * Update our session search path to include session name when opened.
      *
      * @param string $path  unused session save path. (ignored)
@@ -224,12 +213,11 @@ class redis extends handler implements SessionHandlerInterface
     }
     /**
      * Connection will be null if these methods are called from cli or where NO_MOODLE_COOKIES is used.
-     * We need to check for this and create a new connection if required.
+     * We need to check for this and initialize the connection if required.
      *
      * @return void
-     * @throws exception|RedisException|RedisClusterException If connection to Redis failed
      */
-    private function connect_to_redis_if_required(): void
+    private function init_redis_if_required(): void
     {
     }
     /**

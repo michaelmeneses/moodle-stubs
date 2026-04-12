@@ -16,7 +16,7 @@ class assign_override_form extends moodleform
 {
     /** @var object course module object. */
     protected $cm;
-    /** @var assign the assign settings object. */
+    /** @var object the assign settings object. */
     protected $assign;
     /** @var context the assign context. */
     protected $context;

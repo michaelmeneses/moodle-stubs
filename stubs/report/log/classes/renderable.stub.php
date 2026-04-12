@@ -53,8 +53,6 @@ class report_log_renderable implements renderable
     public $origin;
     /** @var int group id */
     public $groupid;
-    /** @var int forces the use of a course filter in site context */
-    public $sitecoursefilter;
     /** @var table_log table log which will be used for rendering logs */
     public $tablelog;
     /** @var array Index of delegated sections (indexed by component and itemid) */
@@ -83,9 +81,8 @@ class report_log_renderable implements renderable
      * @param string $order (optional) sortorder of fetched records
      * @param string $origin (optional) origin of the event.
      * @param bool $isactivitypage (optional) if the page is activity page.
-     * @param int $sitecoursefilter (optional) use a course filter in site context.
      */
-    public function __construct($logreader = "", $course = 0, $userid = 0, $modid = 0, $action = "", $groupid = 0, $edulevel = -1, $showcourses = false, $showusers = false, $showreport = true, $showselectorform = true, $url = "", $date = 0, $logformat = 'showashtml', $page = 0, $perpage = 100, $order = "timecreated ASC", $origin = '', bool $isactivitypage = false, $sitecoursefilter = 0)
+    public function __construct($logreader = "", $course = 0, $userid = 0, $modid = 0, $action = "", $groupid = 0, $edulevel = -1, $showcourses = false, $showusers = false, $showreport = true, $showselectorform = true, $url = "", $date = 0, $logformat = 'showashtml', $page = 0, $perpage = 100, $order = "timecreated ASC", $origin = '', bool $isactivitypage = false)
     {
     }
     /**

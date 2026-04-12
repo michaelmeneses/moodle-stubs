@@ -47,28 +47,13 @@ class search_shared_banks extends external_api
     {
     }
     /**
-     * Expand a list of abbreviated capaibilities into an array of full capability strings.
-     *
-     * Each abbreviation must match a capability with the 'moodle/question:' prefix. Capabilities that have an "all" and "mine"
-     * variant will have both variants included in the returned array.
-     *
-     * These abbreviations are copied from {@see question_has_capability_on()}
-     *
-     * @param array $abbreviations Abbreviated capabilities. Must match capabilities with the 'moodle/question:' prefix.
-     * @return array The expanded capabilities
-     */
-    protected static function expand_capabilities(array $abbreviations): array
-    {
-    }
-    /**
      * Return ID and formatted name of question banks accessible by the user, in courses other than the one $contextid is in.
      *
      * @param int $contextid Context ID of the current activity
      * @param string $search String to filter results by question bank name
-     * @param array $requiredcapabilities List of abbreviated capabilities to check, {@see self::expand_capabilities()}
      * @return array
      */
-    public static function execute(int $contextid, string $search = '', array $requiredcapabilities = ['use']): array
+    public static function execute(int $contextid, string $search = ''): array
     {
     }
     /**

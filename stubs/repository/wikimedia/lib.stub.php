@@ -80,25 +80,6 @@ class repository_wikimedia extends repository
     {
     }
     /**
-     * Downloads a file from external repository and saves it in temp dir
-     *
-     * Overrides the base implementation to handle HTTP 429 rate limiting errors
-     * from Wikimedia servers with a user-friendly error message.
-     *
-     * @param string $url the URL of file to download
-     * @param string $filename filename (without path) to save the downloaded file in the
-     *     temporary directory, if omitted or file already exists the new filename will be generated
-     * @return array with elements:
-     *   path: internal location of the file
-     *   url: URL to the source (from parameters)
-     * @throws \repository_exception if rate limited by the Wikimedia server
-     * @throws \moodle_exception if download fails
-     */
-    #[\Override]
-    public function get_file($url, $filename = '')
-    {
-    }
-    /**
      * Is this repository accessing private data?
      *
      * @return bool

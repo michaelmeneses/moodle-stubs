@@ -40,13 +40,4 @@ class manager
     public static function get_template_record(int $templateid): stdClass
     {
     }
-    /**
-     * Check if the current user can see other users if in groups
-     *
-     * @param cm_info $cm
-     * @return bool
-     */
-    public static function can_see_others_in_groups(cm_info $cm): bool
-    {
-    }
 }

@@ -41,11 +41,8 @@ abstract class basic_testcase extends base_testcase
     final public function __construct($name = null)
     {
     }
-    /**
-     * Teardown method to reset data after tests.
-     */
     #[After]
-    final public function teardown_after_test(): void
+    final public function test_teardown(): void
     {
     }
     /**

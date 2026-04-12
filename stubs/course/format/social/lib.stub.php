@@ -23,7 +23,7 @@ class format_social extends core_courseformat\base
      * @param array $options options for view URL. At the moment core uses:
      *     'navigation' (bool) ignored by this format
      *     'sr' (int) ignored by this format
-     * @return moodle_url
+     * @return null|moodle_url
      */
     public function get_view_url($section, $options = array())
     {
@@ -101,6 +101,10 @@ class format_social extends core_courseformat\base
      */
     #[\Override]
     public function get_sectionnum(): int
+    {
+    }
+    #[\Override]
+    public function get_max_sections()
     {
     }
     /**

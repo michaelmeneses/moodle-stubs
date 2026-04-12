@@ -225,10 +225,9 @@ class completion_info
     /**
      * Get course completion criteria
      *
-     * @param int|null $criteriatype Specific criteria type to return (optional)
-     * @return array
+     * @param int $criteriatype Specific criteria type to return (optional)
      */
-    public function get_criteria(?int $criteriatype = null): array
+    public function get_criteria($criteriatype = null)
     {
     }
     /**
@@ -242,10 +241,8 @@ class completion_info
     }
     /**
      * Clear old course completion criteria
-     *
-     * @param bool $removetypecriteria Also remove course type criteria from other courses that refer to the current course
      */
-    public function clear_criteria(bool $removetypecriteria = true): void
+    public function clear_criteria()
     {
     }
     /**
@@ -488,19 +485,6 @@ class completion_info
     {
     }
     /**
-     * Return a list of activities that are visible on the course page and have completion enabled.
-     *
-     * This includes activities that the user can see on the course page (visible or restricted),
-     * but only those with completion tracking enabled. Activities hidden from
-     * the user, located in hidden sections or restricted by group/grouping are excluded.
-     *
-     * @param int $userid User id
-     * @return array Array of user visible activities with completion enabled.
-     */
-    public function get_user_activities_with_completion($userid): array
-    {
-    }
-    /**
      * Checks to see if the userid supplied has a tracked role in
      * this course
      *
@@ -632,10 +616,9 @@ class completion_info
      * Return the number of modules completed by a user in one specific course.
      *
      * @param int $userid The User ID.
-     * @param array $moduleids The course modules to check.
      * @return int Total number of modules completed by a user
      */
-    public function count_modules_completed(int $userid, array $moduleids = []): int
+    public function count_modules_completed(int $userid): int
     {
     }
 }
