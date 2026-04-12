@@ -75,7 +75,8 @@ function install_generate_configphp($database, $cfg)
 {
 }
 /**
- * Prints installation page header, we can not use weblib yet in installer.
+ * Prints installation page header, we can not use weblib yet in installer nor reference any file serving scripts
+ * directly (images, styles, etc. files must all be referenced by direct URL)
  *
  * @global object
  * @param stdClass $config
@@ -83,9 +84,10 @@ function install_generate_configphp($database, $cfg)
  * @param string $heading
  * @param string $stagetext
  * @param string $stageclass
+ * @param string $warning Additional information that is a warning
  * @return void
  */
-function install_print_header($config, $stagename, $heading, $stagetext, $stageclass = "alert-info")
+function install_print_header($config, $stagename, $heading, $stagetext, $stageclass = "alert-info", $warning = '')
 {
 }
 /**

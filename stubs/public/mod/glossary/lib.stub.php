@@ -1321,3 +1321,16 @@ function mod_glossary_prepare_entry_for_edition(stdClass $entry): stdClass
 function mod_glossary_get_comments(cm_info $cm): array
 {
 }
+/**
+ * Checks whether the current user can see ratings for a given itemid.
+ *
+ * @param array $params submitted data
+ *            contextid => int contextid [required]
+ *            component => The component for this module - should always be mod_glossary [required]
+ *            ratingarea => Should always be entry (the only rating area in glossary) [required]
+ *            itemid => int the ID of the entry being rated [required]
+ * @return bool
+ */
+function mod_glossary_rating_can_see_item_ratings(array $params): bool
+{
+}

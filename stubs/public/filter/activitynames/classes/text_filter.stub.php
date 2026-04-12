@@ -38,6 +38,15 @@ class text_filter extends \core_filters\text_filter
     {
     }
     /**
+     * Replace literal spaces in a regex with general whitespace match.
+     *
+     * @param string $regex The regex pattern containing literal spaces.
+     * @return string The regex pattern with spaces replaced.
+     */
+    protected static function replace_spaces_with_whitespace($regex): string
+    {
+    }
+    /**
      * Get all the cached activity list for a course
      *
      * @param int $courseid id of the course

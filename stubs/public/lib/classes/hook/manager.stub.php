@@ -278,4 +278,48 @@ final class manager implements EventDispatcherInterface, ListenerProviderInterfa
     public static function discover_known_hooks(): array
     {
     }
+    /**
+     * Get the path to the hook cache.
+     *
+     * @return string
+     */
+    protected function get_cache_path(): string
+    {
+    }
+    /**
+     * Whether we should enable caching of hook data.
+     *
+     * The cache is disabled during unit tests, when CACHE_DISABLE_ALL is set, and during upgrades.
+     *
+     * @return bool
+     */
+    protected function should_cache(): bool
+    {
+    }
+    /**
+     * Fetch and decode the hook cache.
+     *
+     * @return array|null
+     */
+    protected function get_cache(): ?array
+    {
+    }
+    /**
+     * Store all relevant data in the cache.
+     *
+     * @param array $callbacks
+     * @param array $deprecations
+     * @param string|null $hash
+     */
+    protected function set_cache(array $callbacks, array $deprecations, ?string $hash): void
+    {
+    }
+    /**
+     * Check whether upgrade is currently running.
+     *
+     * @return bool
+     */
+    protected function is_upgrade_running(): bool
+    {
+    }
 }

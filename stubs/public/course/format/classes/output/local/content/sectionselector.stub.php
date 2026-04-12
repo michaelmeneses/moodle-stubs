@@ -84,9 +84,9 @@ class sectionselector implements named_templatable, renderable
      * Get the section url.
      * @param stdClass $course
      * @param section_info $section
-     * @return string
+     * @return string|null
      */
-    private function get_section_url(stdClass $course, section_info $section): string
+    private function get_section_url(stdClass $course, section_info $section): ?string
     {
     }
 }

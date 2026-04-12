@@ -127,6 +127,8 @@ class transfer_question_categories extends adhoc_task
     /**
      * Set the contextid of category $categoryid and all its children to $newcontextid.
      *
+     * We may need to modify the category before moving it to avoid unique key violations {@see move_subcategories_to_context()}.
+     *
      * @param int $categoryid a question_category id.
      * @param int $newcontextid the place to move to.
      */

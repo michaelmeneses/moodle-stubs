@@ -20,19 +20,13 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-/**
- * Provides {@link tool_policy\output\renderer} class.
- *
- * @package     tool_policy
- * @category    output
- * @copyright   2018 David Mudrák <david@moodle.com>
- * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 namespace tool_policy;
 
 /**
  * Provides the API of the policies plugin.
  *
+ * @package   tool_policy
+ * @category  output
  * @copyright 2018 David Mudrak <david@moodle.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

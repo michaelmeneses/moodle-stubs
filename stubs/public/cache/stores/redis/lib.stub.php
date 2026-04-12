@@ -346,6 +346,16 @@ class cachestore_redis extends store implements key_aware_cache_interface, confi
     {
     }
     /**
+     * Finds all of the keys being used by this cache store instance using a scan.
+     * This is preferred over keys to avoid blocking the server for a long time.
+     *
+     * @param string $prefix
+     * @return array of all matching keys in the hash as a numbered array.
+     */
+    protected function scan_keys($prefix = '')
+    {
+    }
+    /**
      * Finds all of the keys being used by this cache store instance.
      *
      * @return array of all keys in the hash as a numbered array.

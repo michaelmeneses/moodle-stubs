@@ -20,17 +20,10 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-/**
- * myprofile renderer.
- *
- * @package    core_user
- * @copyright  2015 onwards Ankit Agarwal <ankit.agrr@gmail.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 namespace core_user\output\myprofile;
 
 /**
- * Report log renderer's for printing reports.
+ * Users' my profile renderer
  *
  * @since      Moodle 2.9
  * @package    core_user
@@ -43,7 +36,6 @@ class renderer extends \plugin_renderer_base
      * Render the whole tree.
      *
      * @param tree $tree
-     *
      * @return string
      */
     public function render_tree(tree $tree)
@@ -53,7 +45,6 @@ class renderer extends \plugin_renderer_base
      * Render a category.
      *
      * @param category $category
-     *
      * @return string
      */
     public function render_category(category $category)
@@ -63,7 +54,6 @@ class renderer extends \plugin_renderer_base
      * Render a node.
      *
      * @param node $node
-     *
      * @return string
      */
     public function render_node(node $node)

@@ -282,6 +282,19 @@ function format_string($string, $striplinks = true, $options = null)
 {
 }
 /**
+ * Encode all dangerous characters and named html entities as
+ * numeric html entities.
+ *
+ * The result of this function can be used safely in both {{ }} and {{{ }}} tags in Mustache templates
+ * because it is not modified by s() function and it is equivalent to htmlentities() escaping.
+ *
+ * @param string|null $string
+ * @return string|null html string without any tags or dangerous characters
+ */
+function clean_string(?string $string): ?string
+{
+}
+/**
  * Given a string, performs a negative lookahead looking for any ampersand character
  * that is not followed by a proper HTML entity. If any is found, it is replaced
  * by &amp;. The string is then returned.

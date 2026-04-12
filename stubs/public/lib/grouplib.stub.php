@@ -317,9 +317,19 @@ function groups_list_to_menu($groups)
  * Own groups are removed from allowed groups
  * @param array $allowedgroups All groups user is allowed to see
  * @param array $usergroups Groups user belongs to
+ * @param bool $splitparticipation If true, split each optgroup into "Participation" and "Non-participation" optgroups.
  * @return array
  */
-function groups_sort_menu_options($allowedgroups, $usergroups)
+function groups_sort_menu_options($allowedgroups, $usergroups, bool $splitparticipation = false)
+{
+}
+/**
+ * Split the list of groups into participation and non-participation groups.
+ *
+ * @param array $groups List of group records
+ * @return array[] Menu options for the records, split into "Participation" and "Non-participation" optgroups.
+ */
+function groups_split_participation_groups(array $groups): array
 {
 }
 /**
@@ -350,9 +360,14 @@ function groups_allgroups_course_menu($course, $urlroot, $update = false, $activ
  *   selecting this option does not prevent groups_get_activity_group from
  *   returning 0; it will still do that if the user has chosen 'all participants'
  *   in another activity, or not chosen anything.)
+ * @param bool $participationonly By default, this menu will only contain groups with the "participation"
+ *   flag set true. Setting this argument to false will return all groups that the user is allowed to see.
+ *   This should only be used for cases such as a teacher wanting to filter submissions by group, not for
+ *   students choosing a group to submit their work under, otherwise it negates the point of the participation
+ *   flag.
  * @return mixed void or string depending on $return param
  */
-function groups_print_activity_menu($cm, $urlroot, $return = false, $hideallparticipants = false)
+function groups_print_activity_menu($cm, $urlroot, $return = false, $hideallparticipants = false, bool $participationonly = true)
 {
 }
 /**
@@ -370,13 +385,16 @@ function groups_get_course_group($course, $update = false, $allowedgroups = null
 /**
  * Returns group active in activity, changes the group by default if 'group' page param present
  *
- * @category group
  * @param stdClass|cm_info $cm course module object
  * @param bool $update change active group if group param submitted
  * @param array $allowedgroups list of groups user may access (INTERNAL, to be used only from groups_print_activity_menu())
+ * @param bool $participationonly By default, only allow groups with the "participation"
+ *   flag set true. Setting this argument to false will allow setting a non-participation group as the active group.
+ *   This should be used with care, and only for users who should be able to see non-participation groups within an activity.
  * @return mixed false if groups not used, int if groups used, 0 means all groups (access must be verified in SEPARATE mode)
+ * @category group
  */
-function groups_get_activity_group($cm, $update = false, $allowedgroups = null)
+function groups_get_activity_group($cm, $update = false, $allowedgroups = null, bool $participationonly = true)
 {
 }
 /**
