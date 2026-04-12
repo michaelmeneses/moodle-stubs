@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/michaelmeneses/bimoo.git",
-                "reference": "d3d05e61a0832096cbc0404328506111bfa5770f"
+                "reference": "4945aa0427eb870aa19ad0dbcbba617295ca2527"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michaelmeneses/bimoo/zipball/d3d05e61a0832096cbc0404328506111bfa5770f",
-                "reference": "d3d05e61a0832096cbc0404328506111bfa5770f",
+                "url": "https://api.github.com/repos/michaelmeneses/bimoo/zipball/4945aa0427eb870aa19ad0dbcbba617295ca2527",
+                "reference": "4945aa0427eb870aa19ad0dbcbba617295ca2527",
                 "shasum": ""
             },
             "require": {
@@ -91,7 +91,7 @@
             "support": {
                 "source": "https://github.com/michaelmeneses/bimoo/tree/master"
             },
-            "time": "2026-04-12T00:09:55+00:00"
+            "time": "2026-04-12T00:29:38+00:00"
         },
         {
             "name": "nikic/php-parser",
