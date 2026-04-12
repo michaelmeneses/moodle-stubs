@@ -1279,7 +1279,7 @@ class MoodleQuickForm_Renderer extends HTML_QuickForm_Renderer_Tableless
     /** @var string Template used when closing a fieldset */
     var $_closeFieldsetTemplate = "\n\t\t</div></fieldset>";
     /** @var string Required Note template string */
-    var $_requiredNoteTemplate = "\n\t\t<div class=\"fdescription required\">{requiredNote}</div>";
+    var $_requiredNoteTemplate = "\n\t\t<div class=\"fdescription required\" aria-hidden=\"true\">{requiredNote}</div>";
     /**
      * Collapsible buttons string template.
      *

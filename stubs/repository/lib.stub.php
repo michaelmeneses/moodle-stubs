@@ -262,6 +262,8 @@ abstract class repository implements cacheable_object
     public $name;
     /** @var bool true if the super construct is called, otherwise false. */
     public $super_called;
+    /** @var array List of file ids currently being synced, to avoid endless recursion */
+    protected static $syncfileids = [];
     /**
      * Constructor
      *

@@ -522,9 +522,10 @@ function assign_capability($capability, $permission, $roleid, $contextid, $overw
  * @param string $capability the name of the capability
  * @param int $roleid the role id
  * @param int|context $contextid null means all contexts
+ * @param bool $showdebug if true, will show debugging messages
  * @return boolean true or exception
  */
-function unassign_capability($capability, $roleid, $contextid = null)
+function unassign_capability($capability, $roleid, $contextid = null, bool $showdebug = true)
 {
 }
 /**
@@ -806,10 +807,11 @@ function is_inside_frontpage(context $context)
 /**
  * Returns capability information (cached)
  *
- * @param string $capabilityname
+ * @param string $capabilityname the capability name.
+ * @param bool $showdebug if true, will show debugging messages.
  * @return ?stdClass object or null if capability not found
  */
-function get_capability_info($capabilityname)
+function get_capability_info(string $capabilityname, bool $showdebug = true): ?stdClass
 {
 }
 /**

@@ -16,7 +16,7 @@ define('CHOICE_DISPLAY_HORIZONTAL', '0');
 define('CHOICE_DISPLAY_VERTICAL', '1');
 define('CHOICE_EVENT_TYPE_OPEN', 'open');
 define('CHOICE_EVENT_TYPE_CLOSE', 'close');
-/// Standard functions /////////////////////////////////////////////////////////
+// Standard functions.
 /**
  * @global object
  * @param object $course
