@@ -375,6 +375,17 @@ class helper
     {
     }
     /**
+     * Filters a sorted list of keys by a sorted list of prefixes.
+     * This relies on the sorting to reduce the number of comparisons.
+     *
+     * @param array $keys a sorted array of keys
+     * @param array $prefixes a sorted array of prefixes
+     * @return array of keys containing any of the prefixes
+     */
+    public static function filter_sorted_keys_by_prefixes(array $keys, array $prefixes): array
+    {
+    }
+    /**
      * Returns an array of stores that would meet the requirements for every definition.
      *
      * These stores would be 100% suitable to map as defaults for cache modes.

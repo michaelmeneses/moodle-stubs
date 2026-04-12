@@ -241,8 +241,10 @@ class completion_info
     }
     /**
      * Clear old course completion criteria
+     *
+     * @param bool $removetypecriteria Also remove course type criteria from other courses that refer to the current course
      */
-    public function clear_criteria()
+    public function clear_criteria(bool $removetypecriteria = true): void
     {
     }
     /**

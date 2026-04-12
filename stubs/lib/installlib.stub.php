@@ -75,7 +75,8 @@ function install_generate_configphp($database, $cfg)
 {
 }
 /**
- * Prints installation page header, we can not use weblib yet in installer.
+ * Prints installation page header, we can not use weblib yet in installer nor reference any file serving scripts
+ * directly (images, styles, etc. files must all be referenced by direct URL)
  *
  * @global object
  * @param stdClass $config

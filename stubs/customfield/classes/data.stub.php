@@ -20,19 +20,12 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+namespace core_customfield;
+
 /**
  * Data persistent class
  *
  * @package   core_customfield
- * @copyright 2018 Toni Barbera <toni@moodle.com>
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-namespace core_customfield;
-
-/**
- * Class data
- *
- * @package core_customfield
  * @copyright 2018 Toni Barbera <toni@moodle.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -48,6 +41,33 @@ class data extends persistent
      * @return array
      */
     protected static function define_properties(): array
+    {
+    }
+    /**
+     * For integer data field, persistent won't allow empty string, swap for null
+     *
+     * @param string|null $value
+     * @return self
+     */
+    protected function set_intvalue(?string $value): self
+    {
+    }
+    /**
+     * For decimal data field, persistent won't allow empty string, swap for null
+     *
+     * @param string|null $value
+     * @return self
+     */
+    protected function set_decvalue(?string $value): self
+    {
+    }
+    /**
+     * Ensure value field observes non-nullability
+     *
+     * @param string|null $value
+     * @return self
+     */
+    protected function set_value(?string $value): self
     {
     }
 }

@@ -90,9 +90,10 @@ class notification_helper
      * Update user's recorded date based on the overrides.
      *
      * @param array $overrides The overrides to check.
+     * @param int $courseid The course id of the overrides.
      * @param stdClass $user The user records we will be updating.
      */
-    protected static function update_user_with_date_overrides(array $overrides, stdClass $user): void
+    protected static function update_user_with_date_overrides(array $overrides, int $courseid, stdClass $user): void
     {
     }
     /**

@@ -118,12 +118,7 @@ class repository_flickr extends repository
     public function get_link($photoid)
     {
     }
-    /**
-     *
-     * @param string $photoid
-     * @param string $file
-     * @return string
-     */
+    #[\Override]
     public function get_file($photoid, $file = '')
     {
     }

@@ -65,11 +65,11 @@ class roles
     /**
      * Returns an array containing all the users in a context wrapped for html select element.
      *
-     * @param context_course $context
+     * @param course $context
      * @param null $bbactivity
      * @return array $users
      */
-    public static function get_users_array(context_course $context, $bbactivity = null)
+    public static function get_users_array(course $context, $bbactivity = null)
     {
     }
     /**

@@ -9,7 +9,7 @@
 /**
  * displays the similarity score and provides a link to the full report if allowed.
  *
- * @param object  $linkarray contains all relevant information for the plugin to generate a link
+ * @param array  $linkarray contains all relevant information for the plugin to generate a link
  * @return string - url to allow login/viewing of a similarity report
  */
 function plagiarism_get_links($linkarray)

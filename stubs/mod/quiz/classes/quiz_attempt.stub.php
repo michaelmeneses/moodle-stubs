@@ -1334,4 +1334,10 @@ class quiz_attempt
     public function update_questions_to_new_version_if_changed(): void
     {
     }
+    /**
+     * Handle the case where a question in an attempt has been deleted.
+     */
+    private function handle_missing_question_attempt(): void
+    {
+    }
 }
