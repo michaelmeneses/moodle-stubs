@@ -204,10 +204,35 @@ class brickfield_accessibility_test
     {
     }
     /**
+     * Returns an array of the newwindowphrases for all enabled language packs.
+     * @return array of the newwindowphrases for all enabled language packs.
+     */
+    public static function get_all_newwindowphrases(): array
+    {
+    }
+    /**
      * Returns an array of the invalidlinkphrases for all enabled language packs.
      * @return array of the invalidlinkphrases for all enabled language packs.
      */
     public static function get_all_invalidlinkphrases(): array
+    {
+    }
+    /**
+     * Returns an array of the relevant phrases for all enabled language packs.
+     * @param string $stringname the language string identifier you want get the phrases for.
+     * @return array of the invalidlinkphrases for all enabled language packs.
+     */
+    protected static function get_all_phrases(string $stringname): array
+    {
+    }
+    /**
+     * Assesses whether a string contains any readable text, which is text that
+     * contains any characters other than whitespace characters.
+     *
+     * @param string $text
+     * @return bool
+     */
+    public static function is_text_readable(string $text): bool
     {
     }
 }

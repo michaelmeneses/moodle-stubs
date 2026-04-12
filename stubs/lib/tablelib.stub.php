@@ -124,6 +124,14 @@ class flexible_table
     /** @var $resetting bool Whether the table preferences is resetting. */
     protected $resetting;
     /**
+     * @var string $caption The caption of table
+     */
+    public $caption;
+    /**
+     * @var array $captionattributes The caption attributes of table
+     */
+    public $captionattributes;
+    /**
      * @var filterset The currently applied filerset
      * This is required for dynamic tables, but can be used by other tables too if desired.
      */
@@ -854,6 +862,23 @@ class flexible_table
      * This function is not part of the public api.
      */
     function start_html()
+    {
+    }
+    /**
+     * This function set caption for table.
+     *
+     * @param string $caption Caption of table.
+     * @param array|null $captionattributes Caption attributes of table.
+     */
+    public function set_caption(string $caption, ?array $captionattributes): void
+    {
+    }
+    /**
+     * This function renders a table caption.
+     *
+     * @return string $output Caption of table.
+     */
+    public function render_caption(): string
     {
     }
     /**

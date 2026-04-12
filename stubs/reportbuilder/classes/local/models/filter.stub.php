@@ -37,6 +37,28 @@ class filter extends persistent
     {
     }
     /**
+     * Ensure report source is notified of new filter
+     */
+    protected function after_create(): void
+    {
+    }
+    /**
+     * Ensure report source is notified of updated filter
+     *
+     * @param bool $result
+     */
+    protected function after_update($result): void
+    {
+    }
+    /**
+     * Ensure report source is notified of deleted filter
+     *
+     * @param bool $result
+     */
+    protected function after_delete($result): void
+    {
+    }
+    /**
      * Return the report this filter belongs to
      *
      * @return report

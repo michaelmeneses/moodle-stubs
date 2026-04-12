@@ -158,6 +158,16 @@ abstract class question_bank
     {
     }
     /**
+     * Get all the versions of questions.
+     *
+     * @param array $questionids Array of question ids.
+     * @return array two dimensional array question_bank_entries.id => version number => question.id.
+     *      Versions in descending order.
+     */
+    public static function get_all_versions_of_questions(array $questionids): array
+    {
+    }
+    /**
      * @return question_finder a question finder.
      */
     public static function get_finder()

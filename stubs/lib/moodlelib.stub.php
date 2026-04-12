@@ -2508,9 +2508,10 @@ function moodle_setlocale($locale = '')
  *
  * @category string
  * @param string $string The text to be searched for words. May be HTML.
+ * @param int|null $format
  * @return int The count of words in the specified string
  */
-function count_words($string)
+function count_words($string, $format = null)
 {
 }
 /**
@@ -2520,9 +2521,10 @@ function count_words($string)
  *
  * @category string
  * @param string $string The text to be searched for letters. May be HTML.
+ * @param int|null $format
  * @return int The count of letters in the specified text.
  */
-function count_letters($string)
+function count_letters($string, $format = null)
 {
 }
 /**

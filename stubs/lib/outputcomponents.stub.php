@@ -2321,6 +2321,11 @@ class action_menu implements renderable, templatable
      */
     public $menutrigger = '';
     /**
+     * An array of attributes added to the trigger element of the secondary menu.
+     * @var array
+     */
+    public $triggerattributes = [];
+    /**
      * Any extra classes for toggling to the secondary menu.
      * @var string
      */
@@ -2463,6 +2468,16 @@ class action_menu implements renderable, templatable
      * @param string $ancestorselector A snippet of CSS used to identify the ancestor to contrain the dialogue to.
      */
     public function set_constraint($ancestorselector)
+    {
+    }
+    /**
+     * Set the overflow constraint boundary of the dropdown menu.
+     * @see https://getbootstrap.com/docs/4.6/components/dropdowns/#options The 'boundary' option in the Bootstrap documentation
+     *
+     * @param string $boundary Accepts the values of 'viewport', 'window', or 'scrollParent'.
+     * @throws coding_exception
+     */
+    public function set_boundary(string $boundary)
     {
     }
     /**

@@ -45,6 +45,28 @@ class column extends persistent
     {
     }
     /**
+     * Ensure report source is notified of new column
+     */
+    protected function after_create(): void
+    {
+    }
+    /**
+     * Ensure report source is notified of updated column
+     *
+     * @param bool $result
+     */
+    protected function after_update($result): void
+    {
+    }
+    /**
+     * Ensure report source is notified of deleted column
+     *
+     * @param bool $result
+     */
+    protected function after_delete($result): void
+    {
+    }
+    /**
      * Helper method to return the current maximum column order value for a report
      *
      * @param int $reportid
