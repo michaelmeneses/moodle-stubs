@@ -195,4 +195,12 @@ class participants extends \table_sql implements dynamic_table
     public function get_context(): context
     {
     }
+    /**
+     * Check if the user has the capability to access this table.
+     *
+     * @return bool Return true if capability check passed.
+     */
+    public function has_capability(): bool
+    {
+    }
 }
