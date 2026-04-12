@@ -54,12 +54,4 @@ class restore_qtype_multianswer_plugin extends restore_qtype_plugin
     public function recode_legacy_state_answer($state)
     {
     }
-    #[\Override]
-    public function define_excluded_identity_hash_fields(): array
-    {
-    }
-    #[\Override]
-    public static function remove_excluded_question_data(stdClass $questiondata, array $excludefields = []): stdClass
-    {
-    }
 }

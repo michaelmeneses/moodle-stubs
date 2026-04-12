@@ -52,10 +52,9 @@ abstract class base_report_table extends table_sql implements dynamic, renderabl
      *
      * @param filter $filter
      * @param array $filtervalues
-     * @param string $paramprefix
      * @return array [$sql, $params]
      */
-    private function get_filter_sql(filter $filter, array $filtervalues, string $paramprefix): array
+    private function get_filter_sql(filter $filter, array $filtervalues): array
     {
     }
     /**

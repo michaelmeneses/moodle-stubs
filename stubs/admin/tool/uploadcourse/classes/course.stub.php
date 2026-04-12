@@ -145,10 +145,10 @@ class tool_uploadcourse_course
      * Log an error
      *
      * @param string $code error code.
-     * @param string $message error message.
+     * @param lang_string $message error message.
      * @return void
      */
-    protected function error($code, string $message)
+    protected function error($code, lang_string $message)
     {
     }
     /**

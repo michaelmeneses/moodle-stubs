@@ -48,8 +48,6 @@ class taglist implements templatable
     protected $classes;
     /** @var int */
     protected $limit;
-    /** @var bool */
-    protected $displaylink;
     /**
      * Constructor
      *
@@ -61,9 +59,8 @@ class taglist implements templatable
      *               will be appended to the end, JS will toggle the rest of the tags. 0 means no limit.
      * @param context $pagecontext specify if needed to overwrite the current page context for the view tag link
      * @param bool $accesshidelabel if true, the label should have class="accesshide" added.
-     * @param bool $displaylink Indicates whether the tag should be displayed as a link.
      */
-    public function __construct($tags, $label = null, $classes = '', $limit = 10, $pagecontext = null, $accesshidelabel = false, $displaylink = true)
+    public function __construct($tags, $label = null, $classes = '', $limit = 10, $pagecontext = null, $accesshidelabel = false)
     {
     }
     /**

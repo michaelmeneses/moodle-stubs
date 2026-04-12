@@ -32,11 +32,18 @@ namespace mod_quiz\question\bank;
  */
 class random_question_view extends custom_view
 {
-    #[\Override]
-    protected function get_question_bank_plugins(): array
+    /**
+     * Init required columns.
+     *
+     * @return void
+     */
+    protected function init_required_columns(): void
     {
     }
-    #[\Override]
+    /**
+     * Prints the table of questions in a category with interactions
+     *
+     * @param \context $catcontext*/
     protected function display_bottom_controls(\context $catcontext): void
     {
     }

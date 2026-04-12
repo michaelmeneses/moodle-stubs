@@ -291,8 +291,15 @@ define('BLOG_GROUP_LEVEL', 2);
 define('BLOG_COURSE_LEVEL', 3);
 define('BLOG_SITE_LEVEL', 4);
 define('BLOG_GLOBAL_LEVEL', 5);
-/** The maximum length of a tag */
-define('TAG_MAX_LENGTH', 255);
+// Tag constants.
+/**
+ * To prevent problems with multibytes strings,Flag updating in nav not working on the review page. this should not exceed the
+ * length of "varchar(255) / 3 (bytes / utf-8 character) = 85".
+ * TODO: this is not correct, varchar(255) are 255 unicode chars ;-)
+ *
+ * @todo define(TAG_MAX_LENGTH) this is not correct, varchar(255) are 255 unicode chars ;-)
+ */
+define('TAG_MAX_LENGTH', 50);
 // Password policy constants.
 define('PASSWORD_LOWER', 'abcdefghijklmnopqrstuvwxyz');
 define('PASSWORD_UPPER', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
@@ -756,7 +763,6 @@ function purge_all_caches()
  *
  * @param bool[] $options Specific parts of the cache to purge. Valid options are:
  *        'muc'    Purge MUC caches?
- *        'courses' Purge all course caches, or specific course caches (CLI only)
  *        'theme'  Purge theme cache?
  *        'lang'   Purge language string cache?
  *        'js'     Purge javascript cache?
@@ -1687,7 +1693,7 @@ function hash_internal_user_password(
  * It will remove Web Services user tokens too.
  *
  * @param stdClass $user User object (password property may be updated).
- * @param string|null $password Plain text password.
+ * @param string $password Plain text password.
  * @param bool $fasthash If true, use a low cost factor when generating the hash
  *                       This is much faster to generate but makes the hash
  *                       less secure. It is used when lots of hashes need to
@@ -1697,7 +1703,7 @@ function hash_internal_user_password(
 function update_internal_user_password(
     stdClass $user,
     #[\SensitiveParameter]
-    ?string $password,
+    string $password,
     bool $fasthash = false
 ): bool
 {
@@ -1721,24 +1727,12 @@ function get_complete_user_data($field, $value, $mnethostid = null, $throwexcept
  * Validate a password against the configured password policy
  *
  * @param string $password the password to be checked against the password policy
- * @param string|null $errmsg the error message to display when the password doesn't comply with the policy.
- * @param stdClass|null $user the user object to perform password validation against. Defaults to null if not provided.
+ * @param string $errmsg the error message to display when the password doesn't comply with the policy.
+ * @param stdClass $user the user object to perform password validation against. Defaults to null if not provided.
  *
  * @return bool true if the password is valid according to the policy. false otherwise.
  */
-function check_password_policy(string $password, ?string &$errmsg, ?stdClass $user = null)
-{
-}
-/**
- * Validate a password against the configured password policy.
- * Note: This function is unaffected by whether the password policy is enabled or not.
- *
- * @param string $password the password to be checked against the password policy
- * @param stdClass|null $user the user object to perform password validation against. Defaults to null if not provided.
- *
- * @return string[] Array of error messages.
- */
-function get_password_policy_errors(string $password, ?stdClass $user = null): array
+function check_password_policy($password, &$errmsg, $user = null)
 {
 }
 /**

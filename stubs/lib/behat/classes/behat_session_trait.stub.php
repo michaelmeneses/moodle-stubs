@@ -379,10 +379,9 @@ trait behat_session_trait
      *
      * @param string $windowsize size of window.
      * @param bool $viewport If true, changes viewport rather than window size
-     * @param bool $scalesize Whether to scale the size by the WINDOWSCALE environment variable
      * @throws ExpectationException
      */
-    protected function resize_window(string $windowsize, bool $viewport = false, bool $scalesize = true): void
+    protected function resize_window($windowsize, $viewport = false)
     {
     }
     /**
@@ -438,14 +437,11 @@ trait behat_session_trait
     /**
      * Helper function to execute api in a given context.
      *
-     * Note: The contextapi does not support a callback.
-     *
-     * @param string|array $contextapi context in which api is defined.
+     * @param string $contextapi context in which api is defined.
      * @param array|mixed $params list of params to pass or a single parameter
      * @throws Exception
-     * @throws DriverException
      */
-    protected function execute(string|array $contextapi, mixed $params = []): void
+    protected function execute($contextapi, $params = array())
     {
     }
     /**
@@ -800,17 +796,6 @@ trait behat_session_trait
     {
     }
     /**
-     * Get the user object from an identifier.
-     *
-     * The user username and email fields are checked.
-     *
-     * @param string $identifier The user's username or email.
-     * @return stdClass|null The user id or null if not found.
-     */
-    protected function get_user_by_identifier(string $identifier): ?stdClass
-    {
-    }
-    /**
      * Get the user id from an identifier.
      *
      * The user username and email fields are checked.
@@ -819,15 +804,6 @@ trait behat_session_trait
      * @return int|null The user id or null if not found.
      */
     protected function get_user_id_by_identifier(string $identifier): ?int
-    {
-    }
-    /**
-     * Prepare an xpath for insertion into Selenium JavaScript.
-     *
-     * @param string $xpath
-     * @return string
-     */
-    protected function prepare_xpath_for_javascript(string $xpath): string
     {
     }
 }

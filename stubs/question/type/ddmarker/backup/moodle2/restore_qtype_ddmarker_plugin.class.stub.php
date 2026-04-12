@@ -62,12 +62,4 @@ class restore_qtype_ddmarker_plugin extends restore_qtype_plugin
     public static function define_decode_contents()
     {
     }
-    #[\Override]
-    public static function convert_backup_to_questiondata(array $backupdata): \stdClass
-    {
-    }
-    #[\Override]
-    protected function define_excluded_identity_hash_fields(): array
-    {
-    }
 }

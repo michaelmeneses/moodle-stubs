@@ -20,6 +20,13 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+/**
+ * Output the actionbar for this activity.
+ *
+ * @package   mod_assign
+ * @copyright 2021 Adrian Greeve <adrian@moodle.com>
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 namespace mod_assign\output;
 
 /**

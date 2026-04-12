@@ -20,12 +20,19 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+/**
+ * Customfields text field plugin
+ *
+ * @package   customfield_text
+ * @copyright 2018 Daniel Neis Araujo <daniel@moodle.com>
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 namespace customfield_text;
 
 /**
  * Class data
  *
- * @package   customfield_text
+ * @package customfield_text
  * @copyright 2018 Daniel Neis Araujo <daniel@moodle.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

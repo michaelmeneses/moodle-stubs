@@ -200,9 +200,10 @@ function upgrade_main_savepoint($result, $version, $allowabort = true)
  *
  * @category upgrade
  * @param bool $result false if upgrade step failed, true if completed
- * @param string|float $version main version
+ * @param string or float $version main version
  * @param string $modname name of module
  * @param bool $allowabort allow user to abort script execution here
+ * @return void
  */
 function upgrade_mod_savepoint($result, $version, $modname, $allowabort = true)
 {
@@ -214,24 +215,26 @@ function upgrade_mod_savepoint($result, $version, $modname, $allowabort = true)
  *
  * @category upgrade
  * @param bool $result false if upgrade step failed, true if completed
- * @param string|float $version main version
+ * @param string or float $version main version
  * @param string $blockname name of block
  * @param bool $allowabort allow user to abort script execution here
+ * @return void
  */
 function upgrade_block_savepoint($result, $version, $blockname, $allowabort = true)
 {
 }
 /**
- * Plugins upgrade savepoint, marks end of plugin upgrade blocks
+ * Plugins upgrade savepoint, marks end of blocks upgrade blocks
  * It stores plugin version, resets upgrade timeout
  * and abort upgrade if user cancels page loading.
  *
  * @category upgrade
  * @param bool $result false if upgrade step failed, true if completed
- * @param string|float $version main version
+ * @param string or float $version main version
  * @param string $type The type of the plugin.
  * @param string $plugin The name of the plugin.
  * @param bool $allowabort allow user to abort script execution here
+ * @return void
  */
 function upgrade_plugin_savepoint($result, $version, $type, $plugin, $allowabort = true)
 {
@@ -714,16 +717,5 @@ function check_oracle_usage(environment_results $result): ?environment_results
  * @return environment_results|null
  */
 function check_async_backup(environment_results $result): ?environment_results
-{
-}
-/**
- * Checks if the current database vendor is Aurora MySQL.
- *
- * If the database vendor is 'auroramysql', this function sets additional information.
- *
- * @param environment_results $result The environment results object to update.
- * @return environment_results|null The updated environment results object if Aurora is detected, or null otherwise.
- */
-function check_aurora_version(environment_results $result): ?environment_results
 {
 }

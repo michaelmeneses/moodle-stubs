@@ -43,8 +43,7 @@ class plugin_feature extends plugin_features_base
     public function get_question_actions($qbank): array
     {
     }
-    #[\Override]
-    public function get_bulk_actions(?view $qbank = null): array
+    public function get_bulk_actions(): array
     {
     }
     public function get_question_filters(view $qbank = null): array

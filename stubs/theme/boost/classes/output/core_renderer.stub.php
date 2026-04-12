@@ -60,6 +60,15 @@ class core_renderer extends \core_renderer
     {
     }
     /**
+     * Renders the header bar.
+     *
+     * @param context_header $contextheader Header bar object.
+     * @return string HTML for the header bar.
+     */
+    protected function render_context_header(\context_header $contextheader)
+    {
+    }
+    /**
      * See if this is the first view of the current cm in the session if it has fake blocks.
      *
      * (We track up to 100 cms so as not to overflow the session.)

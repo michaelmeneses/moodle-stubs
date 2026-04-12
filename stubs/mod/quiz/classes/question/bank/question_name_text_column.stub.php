@@ -33,23 +33,15 @@ namespace mod_quiz\question\bank;
  */
 class question_name_text_column extends question_name_column
 {
-    #[\Override]
     public function get_name(): string
     {
     }
-    #[\Override]
-    public function get_default_width(): int
-    {
-    }
-    #[\Override]
     protected function display_content($question, $rowclasses): void
     {
     }
-    #[\Override]
     public function get_required_fields(): array
     {
     }
-    #[\Override]
     public function load_additional_data(array $questions)
     {
     }

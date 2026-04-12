@@ -43,9 +43,7 @@ class after_user_enrolled
         /** @var stdClass The enrol instance */
         public readonly stdClass $enrolinstance,
         /** @var stdClass The user enrolment instance */
-        public readonly stdClass $userenrolmentinstance,
-        /** @var int|null The assigned role ID */
-        public readonly ?int $roleid = null
+        public readonly stdClass $userenrolmentinstance
     )
     {
     }

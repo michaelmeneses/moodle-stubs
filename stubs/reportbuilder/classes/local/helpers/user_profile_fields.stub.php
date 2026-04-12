@@ -35,6 +35,14 @@ class user_profile_fields
     {
     }
     /**
+     * Retrieves the list of available/visible user profile fields
+     *
+     * @return profile_field_base[]
+     */
+    private function get_user_profile_fields(): array
+    {
+    }
+    /**
      * Additional join that is needed.
      *
      * @param string $join

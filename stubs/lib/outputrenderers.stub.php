@@ -205,14 +205,6 @@ class renderer_base
     public function should_display_main_logo($headinglevel = 1)
     {
     }
-    /**
-     * Returns the moodle page object.
-     *
-     * @return moodle_page
-     */
-    public function get_page(): moodle_page
-    {
-    }
 }
 /**
  * Basis for all plugin renderers.
@@ -1843,21 +1835,21 @@ class core_renderer extends renderer_base
     {
     }
     /**
-     * Renders the header bar.
-     *
-     * @param context_header $contextheader Header bar object.
-     * @return string HTML for the header bar.
-     */
-    protected function render_context_header(context_header $contextheader)
-    {
-    }
-    /**
      * Renders the skip links for the page.
      *
      * @param array $links List of skip links.
      * @return string HTML for the skip links.
      */
     public function render_skip_links($links)
+    {
+    }
+    /**
+     * Renders the header bar.
+     *
+     * @param context_header $contextheader Header bar object.
+     * @return string HTML for the header bar.
+     */
+    protected function render_context_header(context_header $contextheader)
     {
     }
     /**
@@ -1910,10 +1902,9 @@ class core_renderer extends renderer_base
      *               will be appended to the end, JS will toggle the rest of the tags
      * @param context $pagecontext specify if needed to overwrite the current page context for the view tag link
      * @param bool $accesshidelabel if true, the label should have class="accesshide" added.
-     * @param bool $displaylink Indicates whether the tag should be displayed as a link.
      * @return string
      */
-    public function tag_list($tags, $label = null, $classes = '', $limit = 10, $pagecontext = null, $accesshidelabel = false, $displaylink = true)
+    public function tag_list($tags, $label = null, $classes = '', $limit = 10, $pagecontext = null, $accesshidelabel = false)
     {
     }
     /**

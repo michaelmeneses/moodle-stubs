@@ -76,24 +76,11 @@ class database
      * primarily to ensure uniqueness when the expression is to be used as part of a larger query
      *
      * @param string $sql
-     * @param array $params Parameter names
+     * @param array $params
      * @param callable $callback Method that takes a single string parameter, and returns another string
      * @return string
      */
     public static function sql_replace_parameter_names(string $sql, array $params, callable $callback): string
-    {
-    }
-    /**
-     * Replace parameter names within given SQL expression, returning updated SQL and parameter elements
-     *
-     * {@see sql_replace_parameter_names}
-     *
-     * @param string $sql
-     * @param array $params Parameter name/values
-     * @param callable $callback
-     * @return array [$sql, $params]
-     */
-    public static function sql_replace_parameters(string $sql, array $params, callable $callback): array
     {
     }
     /**

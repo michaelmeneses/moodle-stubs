@@ -97,8 +97,6 @@ class assign
     private static $modulenameplural = null;
     /** @var array of marking workflow states for the current user */
     private $markingworkflowstates = null;
-    /** @var array of all marking workflow states */
-    private $allmarkingworkflowstates = null;
     /** @var bool whether to exclude users with inactive enrolment */
     private $showonlyactiveenrol = null;
     /** @var string A key used to identify userlists created by this object. */
@@ -2161,14 +2159,6 @@ class assign
     {
     }
     /**
-     * Get the list of marking_workflow states.
-     *
-     * @return array Array of multiple state => description.
-     */
-    public function get_all_marking_workflow_states(): array
-    {
-    }
-    /**
      * Check is only active users in course should be shown.
      *
      * @return bool true if only active users should be shown.
@@ -2334,14 +2324,6 @@ class assign
      * @return bool
      */
     public function is_attempt_in_progress(?int $userid = null, int $groupid = 0, int $attemptnumber = -1): bool
-    {
-    }
-    /**
-     * Is "Allow partial release of grades while marking anonymously" enabled?
-     *
-     * @return bool
-     */
-    public function is_marking_anonymous(): bool
     {
     }
 }

@@ -29,7 +29,7 @@ namespace tiny_premium;
  * @copyright   2023 David Woloszyn <david.woloszyn@moodle.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class plugininfo extends plugin implements plugin_with_configuration
+class plugininfo extends plugin
 {
     /**
      * Determine if the plugin should be enabled by checking the capability and if the Tiny Premium API key is set.
@@ -41,18 +41,6 @@ class plugininfo extends plugin implements plugin_with_configuration
      * @return bool
      */
     public static function is_enabled(context $context, array $options, array $fpoptions, ?editor $editor = null): bool
-    {
-    }
-    /**
-     * Get a list of enabled Tiny Premium plugins set by the admin.
-     *
-     * @param context $context The context that the editor is used within
-     * @param array $options The options passed in when requesting the editor
-     * @param array $fpoptions The filepicker options passed in when requesting the editor
-     * @param editor|null $editor The editor instance in which the plugin is initialised
-     * @return array
-     */
-    public static function get_plugin_configuration_for_context(context $context, array $options, array $fpoptions, ?editor $editor = null): array
     {
     }
 }

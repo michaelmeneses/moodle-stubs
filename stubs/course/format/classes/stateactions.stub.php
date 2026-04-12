@@ -448,11 +448,10 @@ class stateactions
      * @param stdClass $course The course where given $cmids belong.
      * @param array $cmids List of course module ids to validate.
      * @param string $info additional information in case of error.
-     * @param array $capabilities optional capabilities checks to require.
-     * @param bool $usemodcontext whether to use each module context, or the course context
+     * @param array $capabilities optional capabilities checks per each cm context.
      * @throws moodle_exception if any id is not valid
      */
-    protected function validate_cms(stdClass $course, array $cmids, ?string $info = null, array $capabilities = [], bool $usemodcontext = true): void
+    protected function validate_cms(stdClass $course, array $cmids, ?string $info = null, array $capabilities = []): void
     {
     }
 }

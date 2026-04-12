@@ -64,27 +64,27 @@ class question_attempt_step
      * minfraction .. maxfraction, normally 0..1) or null.
      */
     private $fraction = null;
-    /** @var int the timestamp when this step was created. */
+    /** @var integer the timestamp when this step was created. */
     private $timecreated;
-    /** @var int the id of the user responsible for creating this step. */
+    /** @var integer the id of the user resonsible for creating this step. */
     private $userid;
     /** @var array name => value pairs. The submitted data. */
     private $data;
     /** @var array name => array of {@see stored_file}s. Caches the contents of file areas. */
     private $files = array();
-    /** @var stdClass|null User information. */
+    /** @var stdClass User information. */
     private $user = null;
     /**
      * You should not need to call this constructor in your own code. Steps are
      * normally created by {@see question_attempt} methods like
      * {@see question_attempt::process_action()}.
      * @param array $data the submitted data that defines this step.
-     * @param int|null $timecreated the time to record for the action. (If not given, use now.)
-     * @param int|null $userid the user to attribute the aciton to. (If not given, use the current user.)
-     * @param int|null $existingstepid if this step is going to replace an existing step
+     * @param int $timestamp the time to record for the action. (If not given, use now.)
+     * @param int $userid the user to attribute the aciton to. (If not given, use the current user.)
+     * @param int $existingstepid if this step is going to replace an existing step
      *      (for example, during a regrade) this is the id of the previous step we are replacing.
      */
-    public function __construct($data = [], $timecreated = null, $userid = null, $existingstepid = null)
+    public function __construct($data = array(), $timecreated = null, $userid = null, $existingstepid = null)
     {
     }
     /**
@@ -136,9 +136,9 @@ class question_attempt_step
     /**
      * Return the full user object.
      *
-     * @return null|stdClass Get full user object.
+     * @return stdClass Get full user object.
      */
-    public function get_user(): ?stdClass
+    public function get_user(): stdClass
     {
     }
     /**

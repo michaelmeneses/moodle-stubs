@@ -54,14 +54,6 @@ class redis extends handler implements SessionHandlerInterface
      * Compressor: PHP Zstandard.
      */
     const COMPRESSION_ZSTD = 'zstd';
-    /**
-     * Minimum version of the Redis extension required.
-     */
-    public const REDIS_EXTENSION_MIN_VERSION = '2.2.4';
-    /**
-     * Minimum version of the Redis extension required.
-     */
-    private const REDIS_SERVER_MIN_VERSION = '2.6.12';
     /** @var array $host save_path string  */
     protected array $host = [];
     /** @var int $port The port to connect to */
@@ -100,9 +92,7 @@ class redis extends handler implements SessionHandlerInterface
     /** @var bool $clustermode Redis in cluster mode. */
     protected bool $clustermode = false;
     /** @var int Maximum number of retries for cache store operations. */
-    protected int $maxretries = 3;
-    /** @var int $connectiontimeout The number of seconds to wait for a connection or response from the Redis server. */
-    protected int $connectiontimeout = 3;
+    const MAX_RETRIES = 5;
     /**
      * Create new instance of handler.
      */

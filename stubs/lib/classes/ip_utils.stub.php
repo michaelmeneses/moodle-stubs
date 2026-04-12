@@ -155,38 +155,4 @@ final class ip_utils
     public static function get_ip_address(string $hostname): ?string
     {
     }
-    /**
-     * Normalize internet address.
-     *
-     * Accepted input formats are :
-     * - a valid range or full ip address (e.g.: 192.168.0.0/16, fe80::ffff, 127.0.0.1 or fe80:fe80:fe80:fe80:fe80:fe80:fe80:fe80)
-     * - a valid domain name or pattern (e.g.: www.moodle.com or *.moodle.org)
-     *
-     * Convert forbidden syntaxes since MDL-74289 to allowed values. For examples:
-     * - 192.168. => 192.168.0.0/16
-     * - .domain.tld => *.domain.tld
-     *
-     * @param string $address The input string to normalize.
-     *
-     * @return string If $address is not normalizable, an empty string is returned.
-     */
-    public static function normalize_internet_address(string $address): string
-    {
-    }
-    /**
-     * Normalize a list of internet addresses.
-     *
-     * This function will:
-     * - normalize internet addresses {@see normalize_internet_address()}
-     * - remove invalid values
-     * - remove duplicate values
-     *
-     * @param string $addresslist A string representing a list of internet addresses separated by a common value.
-     * @param string $separator A separator character used within the list string.
-     *
-     * @return string
-     */
-    public static function normalize_internet_address_list(string $addresslist, string $separator = ','): string
-    {
-    }
 }

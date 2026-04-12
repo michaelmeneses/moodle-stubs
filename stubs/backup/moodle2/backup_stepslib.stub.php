@@ -348,22 +348,18 @@ class backup_groups_structure_step extends backup_structure_step
     }
     /**
      * Get custom fields array for group
-     *
-     * @param string $groupsourcesql
-     * @param array $groupsourceparams
+     * @param int $courseid
      * @return array
      */
-    protected function get_group_custom_fields_for_backup(string $groupsourcesql, array $groupsourceparams): array
+    protected function get_group_custom_fields_for_backup(int $courseid): array
     {
     }
     /**
      * Get custom fields array for grouping
-     *
-     * @param string $groupingsourcesql
-     * @param array $groupingsourceparams
+     * @param int $courseid
      * @return array
      */
-    protected function get_grouping_custom_fields_for_backup(string $groupingsourcesql, array $groupingsourceparams): array
+    protected function get_grouping_custom_fields_for_backup(int $courseid): array
     {
     }
 }

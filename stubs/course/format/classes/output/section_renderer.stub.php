@@ -32,15 +32,6 @@ namespace core_courseformat\output;
 abstract class section_renderer extends core_course_renderer
 {
     /**
-     * Constructor method, calls the parent constructor.
-     *
-     * @param moodle_page $page
-     * @param string $target one of rendering target constants
-     */
-    public function __construct(moodle_page $page, $target)
-    {
-    }
-    /**
      * Renders the provided widget and returns the HTML to display it.
      *
      * Course format templates uses a similar subfolder structure to the renderable classes.

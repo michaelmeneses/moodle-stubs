@@ -82,7 +82,7 @@ abstract class advanced_testcase extends base_testcase
      * @param array $files full paths to CSV or XML files to load.
      * @return phpunit_dataset
      */
-    protected static function dataset_from_files(array $files)
+    protected function dataset_from_files(array $files)
     {
     }
     /**
@@ -95,7 +95,7 @@ abstract class advanced_testcase extends base_testcase
      * @param string $table name of the table which the file belongs to (only for CSV files).
      * @return phpunit_dataset
      */
-    protected static function dataset_from_string(string $content, string $type, ?string $table = null)
+    protected function dataset_from_string(string $content, string $type, ?string $table = null)
     {
     }
     /**
@@ -106,7 +106,7 @@ abstract class advanced_testcase extends base_testcase
      * @param array $data array of tables, see {@see phpunit_dataset::from_array()} for supported formats.
      * @return phpunit_dataset
      */
-    protected static function dataset_from_array(array $data)
+    protected function dataset_from_array(array $data)
     {
     }
     /**
@@ -352,7 +352,7 @@ abstract class advanced_testcase extends base_testcase
      * @param bool $https true if https required
      * @return string url
      */
-    public static function getExternalTestFileUrl(string $path, bool $https = false): string
+    public function getExternalTestFileUrl($path, $https = false)
     {
     }
     /**
@@ -440,43 +440,6 @@ abstract class advanced_testcase extends base_testcase
      * @param string $path The path to the plugin's root
      */
     protected function add_mocked_plugin(string $plugintype, string $pluginname, string $path): void
-    {
-    }
-    /**
-     * Convenience method to get the path to a fixture.
-     *
-     * @param string $component
-     * @param string $path
-     * @throws coding_exception
-     */
-    protected static function get_fixture_path(string $component, string $path): string
-    {
-    }
-    /**
-     * Convenience method to load a fixture from a component's fixture directory.
-     *
-     * @param string $component
-     * @param string $path
-     * @throws coding_exception
-     */
-    protected static function load_fixture(string $component, string $path): void
-    {
-    }
-    /**
-     * Get a mocked HTTP Client, inserting it into the Dependency Injector.
-     *
-     * @param array|null $history An array which will contain the Request/Response history of the HTTP client
-     * @return array Containing the client, the mock, and the history
-     */
-    protected function get_mocked_http_client(?array &$history = null): array
-    {
-    }
-    /**
-     * Get a copy of the mocked string manager.
-     *
-     * @return \core\tests\mocking_string_manager
-     */
-    protected function get_mocked_string_manager(): \core\tests\mocking_string_manager
     {
     }
 }

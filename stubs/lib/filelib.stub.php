@@ -387,15 +387,6 @@ function file_save_draft_area_files($draftitemid, $contextid, $component, $filea
 {
 }
 /**
- * Clear a draft area.
- *
- * @param int $draftitemid Id of the draft area to clear.
- * @return boolean success
- */
-function file_clear_draft_area(int $draftitemid): bool
-{
-}
-/**
  * Convert the draft file area URLs in some content to @@PLUGINFILE@@ tokens
  * ready to be saved in the database. Normally, this is done automatically by
  * {@link file_save_draft_area_files()}.
@@ -1022,8 +1013,6 @@ class curl
     private $ignoresecurity;
     /** @var array $mockresponses For unit testing only - return the head of this list instead of making the next request. */
     private static $mockresponses = [];
-    /** @var array $curlresolveinfo Resolve addresses for the URL that have passed cuRL security checks, in a CURLOPT_RESOLVE compatible format. */
-    private $curlresolveinfo = [];
     /** @var array temporary params value if the value is not belongs to class stored_file. */
     public $_tmp_file_post_params = [];
     /**

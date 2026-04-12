@@ -22,10 +22,6 @@ class MoodleQuickForm_cohort extends MoodleQuickForm_autocomplete
      */
     protected $exclude = array();
     /**
-     * @var string $includes One of self/parents/all
-     */
-    protected $includes = 'parents';
-    /**
      * @var int $contextid The context id to fetch cohorts in.
      */
     protected $contextid = 0;

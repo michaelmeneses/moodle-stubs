@@ -37,10 +37,6 @@ namespace mod_quiz;
  */
 class structure
 {
-    /**
-     * Placeholder string used when a question category is missing.
-     */
-    const MISSING_QUESTION_CATEGORY_PLACEHOLDER = 'missing_question_category';
     /** @var quiz_settings the quiz this is the structure of. */
     protected $quizobj = null;
     /**
@@ -60,10 +56,6 @@ class structure
     protected $canbeedited = null;
     /** @var bool caches the results of can_add_random_question. */
     protected $canaddrandom = null;
-    /** @var array the slotids => question categories array for all slots containing a random question. */
-    protected $randomslotcategories = null;
-    /** @var array the slotids => question tags array for all slots containing a random question. */
-    protected $randomslottags = null;
     /**
      * Create an instance of this class representing an empty quiz.
      *
@@ -772,39 +764,6 @@ class structure
      * @param array $filtercondition the filter condition. Must contain at least a category filter.
      */
     public function add_random_questions(int $addonpage, int $number, array $filtercondition): void
-    {
-    }
-    /**
-     * Get a human-readable description of a random slot.
-     *
-     * @param int $slotid id of slot.
-     * @return string that can be used to display the random slot.
-     */
-    public function describe_random_slot(int $slotid): string
-    {
-    }
-    /**
-     * Ensure that {@see load_random_slot_info()} has been called, so the data is available.
-     */
-    protected function ensure_random_slot_info_loaded(): void
-    {
-    }
-    /**
-     * Load information about the question categories and tags for all random slots,
-     */
-    protected function load_random_slot_info(): void
-    {
-    }
-    /**
-     * Returns a description of the used question category, taking into account the context and whether subcategories are
-     * included.
-     *
-     * @param stdClass $qcategory The question category object containing category details.
-     * @param bool $includesubcategories Whether subcategories are included.
-     * @return string The generated description based on the used category.
-     * @throws coding_exception If the context level is unsupported.
-     */
-    private function get_used_category_description(stdClass $qcategory, bool $includesubcategories): string
     {
     }
 }

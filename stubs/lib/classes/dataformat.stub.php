@@ -42,11 +42,10 @@ class dataformat
      * Return an instance of a dataformat writer from given dataformat type
      *
      * @param string $dataformat
-     * @return base
-     *
-     * @throws coding_exception For unknown dataformat
+     * @return dataformat\base
+     * @throws coding_exception
      */
-    public static function get_format_instance(string $dataformat): base
+    protected static function get_format_instance(string $dataformat): \core\dataformat\base
     {
     }
     /**
@@ -87,18 +86,6 @@ class dataformat
      * @return stored_file
      */
     public static function write_data_to_filearea(array $filerecord, string $dataformat, array $columns, iterable $iterator, callable $callback = null): stored_file
-    {
-    }
-    /**
-     * Escape formula spreadsheet values.
-     *
-     * Check values being used in spreadsheets and make them safe for inclusion.
-     * Following OWASP recommendations {@link https://owasp.org/www-community/attacks/CSV_Injection}.
-     *
-     * @param mixed $value Value to check.
-     * @return string|null Return escaped formula if detected.
-     */
-    public static function escape_spreadsheet_formula(mixed $value): ?string
     {
     }
 }

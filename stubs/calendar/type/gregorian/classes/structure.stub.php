@@ -183,6 +183,13 @@ class structure extends type_base
     /**
      * Returns a formatted string that represents a date in user time.
      *
+     * Returns a formatted string that represents a date in user time
+     * <b>WARNING: note that the format is for strftime(), not date().</b>
+     * Because of a bug in most Windows time libraries, we can't use
+     * the nicer %e, so we have to use %d which has leading zeroes.
+     * A lot of the fuss in the function is just getting rid of these leading
+     * zeroes as efficiently as possible.
+     *
      * If parameter fixday = true (default), then take off leading
      * zero from %d, else maintain it.
      *

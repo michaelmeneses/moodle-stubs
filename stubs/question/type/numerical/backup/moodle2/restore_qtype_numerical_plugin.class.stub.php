@@ -27,8 +27,4 @@ class restore_qtype_numerical_plugin extends restore_qtype_plugin
     public function process_numerical($data)
     {
     }
-    #[\Override]
-    public static function convert_backup_to_questiondata(array $backupdata): \stdClass
-    {
-    }
 }

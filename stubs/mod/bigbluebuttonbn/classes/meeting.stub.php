@@ -187,7 +187,7 @@ class meeting
     /**
      * Conversion between form settings and lockSettings as set in BBB API.
      */
-    const LOCK_SETTINGS_MEETING_DATA = ['disablecam' => 'lockSettingsDisableCam', 'disablemic' => 'lockSettingsDisableMic', 'disableprivatechat' => 'lockSettingsDisablePrivateChat', 'disablepublicchat' => 'lockSettingsDisablePublicChat', 'disablenote' => 'lockSettingsDisableNotes', 'hideuserlist' => 'lockSettingsHideUserList'];
+    const LOCK_SETTINGS_MEETING_DATA = ['disablecam' => 'lockSettingsDisableCam', 'disablemic' => 'lockSettingsDisableMic', 'disableprivatechat' => 'lockSettingsDisablePrivateChat', 'disablepublicchat' => 'lockSettingsDisablePublicChat', 'disablenote' => 'lockSettingsDisableNote', 'hideuserlist' => 'lockSettingsHideUserList'];
     /**
      * Helper to prepare data used for create meeting.
      * @todo moderatorPW and attendeePW will be removed from create after release of BBB v2.6.

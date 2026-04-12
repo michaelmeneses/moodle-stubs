@@ -20,13 +20,20 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+/**
+ * Report plugins helper class
+ *
+ * @package core
+ * @subpackage report
+ * @copyright 2021 Sujith Haridasan
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 namespace core;
 
 /**
  * A helper class with static methods to help report plugins
  *
  * @package core
- * @subpackage report
  * @copyright 2021 Sujith Haridasan
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -36,9 +43,9 @@ class report_helper
      * Print the selector dropdown
      *
      * @param string $pluginname The report plugin where the header is modified
-     * @param string $additional Additional content to display aligned with the selector
+     * @return void
      */
-    public static function print_report_selector(string $pluginname, string $additional = ''): void
+    public static function print_report_selector(string $pluginname): void
     {
     }
     /**
@@ -63,17 +70,6 @@ class report_helper
      * @return array
      */
     public static function get_group_filter(stdClass $filterparams): array
-    {
-    }
-    /**
-     * Check if the user is in a valid group for the course (i.e. if the user is in a group in SEPARATEGROUPS mode)
-     *
-     * @param context $context context for the course or module: if context is a course context, the course group mode is used,
-     * if it is a module context, the module effective group mode is used (combined with the current user).
-     * @param int|null $userid user id to check, if null the current user is used
-     * @return bool true if the user is in a valid group (i.e. belongs to a group in SEPARATEGROUPS MODE), false otherwise
-     */
-    public static function has_valid_group(\context $context, ?int $userid = null): bool
     {
     }
 }

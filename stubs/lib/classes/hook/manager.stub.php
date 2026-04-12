@@ -55,13 +55,8 @@ final class manager implements EventDispatcherInterface, ListenerProviderInterfa
     private $redirectedcallbacks = [];
     /**
      * Constructor can be used only from factory methods.
-     *
-     * @param bool $phpunit Whether this is a PHPUnit instantiated instance
      */
-    private function __construct(
-        /** @var bool Whether this is a PHPUnit instantiated instance */
-        private bool $phpunit = false
-    )
+    private function __construct()
     {
     }
     /**
@@ -82,14 +77,6 @@ final class manager implements EventDispatcherInterface, ListenerProviderInterfa
      * @return self
      */
     public static function phpunit_get_instance(array $componentfiles): manager
-    {
-    }
-    /**
-     * Whether to warn when an unmigrated legacy hook is found.
-     *
-     * @return bool
-     */
-    public function warn_on_unmigrated_legacy_hooks(): bool
     {
     }
     /**

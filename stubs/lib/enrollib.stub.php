@@ -1333,20 +1333,8 @@ abstract class enrol_plugin
      * @param int $userid User ID.
      * @param int $sendoption Send email from constant ENROL_SEND_EMAIL_FROM_*
      * @param null|string $message Message to send to the user.
-     * @param int|null $roleid The assigned role ID
      */
-    public function send_course_welcome_message_to_user(stdClass $instance, int $userid, int $sendoption, ?string $message = '', ?int $roleid = null): void
-    {
-    }
-    /**
-     * Updates enrol plugin instance with provided data.
-     * @param int $courseid Course ID.
-     * @param array $enrolmentdata enrolment data.
-     * @param stdClass $instance Instance to update.
-     *
-     * @return stdClass updated instance
-     */
-    public function update_enrol_plugin_data(int $courseid, array $enrolmentdata, stdClass $instance): stdClass
+    public function send_course_welcome_message_to_user(stdClass $instance, int $userid, int $sendoption, ?string $message = ''): void
     {
     }
 }

@@ -43,7 +43,7 @@ class custom_field_column extends column_base
     public function __construct(\core_question\local\bank\view $qbank, \core_customfield\field_controller $field)
     {
     }
-    public static function from_column_name(view $view, string $columnname, bool $ingoremissing = false): ?custom_field_column
+    public static function from_column_name(view $view, string $columnname): custom_field_column
     {
     }
     /**

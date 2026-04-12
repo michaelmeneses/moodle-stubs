@@ -20,6 +20,13 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+/**
+ * Provides core\update\code_manager class.
+ *
+ * @package     core_plugin
+ * @copyright   2012, 2013, 2015 David Mudrak <david@moodle.com>
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 namespace core\update;
 
 /**
@@ -31,8 +38,7 @@ namespace core\update;
  * - archive existing version of the plugin source code
  * - move (deploy) the plugin source code into the $CFG->dirroot
  *
- * @package   core
- * @copyright 2012 David Mudrak <david@moodle.com>
+ * @copyright 2015 David Mudrak <david@moodle.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class code_manager

@@ -18,18 +18,8 @@
  */
 class restore_questions_parser_processor extends grouped_parser_processor
 {
-    /** @var string XML path in the questions.xml backup file to question categories. */
-    protected const CATEGORY_PATH = '/question_categories/question_category';
-    /** @var string XML path in the questions.xml to question elements within question_category (Moodle 4.0+). */
-    protected const QUESTION_SUBPATH = '/question_bank_entries/question_bank_entry/question_version/question_versions/questions/question';
-    /** @var string XML path in the questions.xml to question elements within question_category (before Moodle 4.0). */
-    protected const LEGACY_QUESTION_SUBPATH = '/questions/question';
-    /** @var string String for concatenating data into a string for hashing.*/
-    protected const HASHDATA_SEPARATOR = '|HASHDATA|';
-    /** @var string identifies the current restore. */
-    protected string $restoreid;
-    /** @var int during the restore, this tracks the last category we saw. Any questions we see will be in here. */
-    protected int $lastcatid;
+    protected $restoreid;
+    protected $lastcatid;
     public function __construct($restoreid)
     {
     }
@@ -46,28 +36,6 @@ class restore_questions_parser_processor extends grouped_parser_processor
      * Provide NULL decoding
      */
     public function process_cdata($cdata)
-    {
-    }
-    /**
-     * Load and instantiate the restore class for the given question type.
-     *
-     * If there is no restore class, null is returned.
-     *
-     * @param string $qtype The question type name (no qtype_ prefix)
-     * @return ?restore_qtype_plugin
-     */
-    protected static function get_qtype_restore(string $qtype): ?restore_qtype_plugin
-    {
-    }
-    /**
-     * Given a data structure containing the data for a question, reduce it to a flat array and return a sha1 hash of the data.
-     *
-     * @param stdClass $questiondata An array containing all the data for a question, including hints and qtype plugin data.
-     * @param ?backup_xml_transformer $transformer If provided, run the backup transformer process on all text fields. This ensures
-     *     that values from the database are compared like-for-like with encoded values from the backup.
-     * @return string A sha1 hash of all question data, normalised and concatenated together.
-     */
-    public static function generate_question_identity_hash(stdClass $questiondata, ?backup_xml_transformer $transformer = null): string
     {
     }
 }
