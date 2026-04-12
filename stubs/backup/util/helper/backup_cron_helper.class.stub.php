@@ -53,6 +53,7 @@ abstract class backup_cron_automated_helper
      * First backup courses that do not have an entry in backup_courses first,
      * as they are likely new and never been backed up. Do the oldest modified courses first.
      * Then backup courses that have previously been backed up starting with the oldest next start time.
+     * Finally, all else being equal, defer to the sortorder of the courses.
      *
      * @param null|int $now timestamp to use in course selection.
      * @return moodle_recordset The recordset of matching courses.

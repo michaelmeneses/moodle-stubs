@@ -38,6 +38,8 @@ class settings
     private $moduleenabled;
     /** @var string The name of the section */
     private $section;
+    /** @var string The parent name */
+    private $parent = "modbigbluebuttonbnfolder";
     /** @var string The section name prefix */
     private $sectionnameprefix = "mod_bigbluebuttonbn";
     /**

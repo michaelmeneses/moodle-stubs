@@ -51,9 +51,9 @@ class audience extends dynamic_form
     {
     }
     /**
-     * Checks if current user has access to this form, otherwise throws exception
+     * Ensure current user is able to use this form
      *
-     * @throws moodle_exception
+     * A {@see \core_reportbuilder\report_access_exception} will be thrown if they can't
      */
     protected function check_access_for_dynamic_submission(): void
     {

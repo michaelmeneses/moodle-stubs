@@ -31,7 +31,14 @@ namespace theme_boost\output;
  */
 class core_renderer extends \core_renderer
 {
-    public function edit_button(moodle_url $url)
+    /**
+     * Returns HTML to display a "Turn editing on/off" button in a form.
+     *
+     * @param moodle_url $url The URL + params to send through when clicking the button
+     * @param string $method
+     * @return string HTML the button
+     */
+    public function edit_button(moodle_url $url, string $method = 'post')
     {
     }
     /**

@@ -1720,3 +1720,14 @@ function forum_grading_areas_list()
 function mod_forum_core_calendar_get_event_action_string(string $eventtype): string
 {
 }
+/**
+ * This callback will check the provided instance of this module
+ * and make sure there are up-to-date events created for it.
+ *
+ * @param int $courseid Not used.
+ * @param stdClass $instance Forum module instance.
+ * @param stdClass $cm Course module object.
+ */
+function forum_refresh_events(int $courseid, stdClass $instance, stdClass $cm): void
+{
+}

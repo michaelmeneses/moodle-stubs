@@ -78,8 +78,9 @@ class quiz_overview_report extends quiz_attempts_report
      * @param bool $dryrun if true, do a pretend regrade, otherwise do it for real.
      * @param array $slots if null, regrade all questions, otherwise, just regrade
      *      the questions with those slots.
+     * @return array messages array with keys slot number, and values reasons why that slot cannot be regraded.
      */
-    public function regrade_attempt($attempt, $dryrun = false, $slots = null)
+    public function regrade_attempt($attempt, $dryrun = false, $slots = null): array
     {
     }
     /**

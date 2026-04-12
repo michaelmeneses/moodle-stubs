@@ -41,7 +41,7 @@ class ags_info
     private const SCOPES_RESULT_READONLY = 'https://purl.imsglobal.org/spec/lti-ags/scope/result.readonly';
     /** @var string Scope for posting scores.*/
     private const SCOPES_SCORES_POST = 'https://purl.imsglobal.org/spec/lti-ags/scope/score';
-    /** @var \moodle_url The service URL used to get/put lineitems*/
+    /** @var \moodle_url|null The service URL used to get/put lineitems, if supported*/
     private $lineitemsurl;
     /** @var \moodle_url|null The lineitemurl, which is only present when a single lineitem is supported.*/
     private $lineitemurl;
@@ -54,22 +54,22 @@ class ags_info
     /**
      * The ags_info constructor.
      *
-     * @param \moodle_url $lineitemsurl The service URL used to get/put lineitems.
+     * @param \moodle_url|null $lineitemsurl The service URL used to get/put lineitems, if supported.
      * @param \moodle_url|null $lineitemurl The lineitemurl, which is only present when a single lineitem is supported.
      * @param array $scopes The array of supported scopes for this service instance.
      */
-    private function __construct(\moodle_url $lineitemsurl, ?\moodle_url $lineitemurl, array $scopes)
+    private function __construct(?\moodle_url $lineitemsurl, ?\moodle_url $lineitemurl, array $scopes)
     {
     }
     /**
      * Factory method to create a new ags_info instance.
      *
-     * @param \moodle_url $lineitemsurl The service URL used to get/put lineitems.
+     * @param \moodle_url|null $lineitemsurl The service URL used to get/put lineitems, if supported.
      * @param \moodle_url|null $lineitemurl The lineitemurl, which is only present when a single lineitem is supported.
      * @param array $scopes The array of supported scopes for this service instance.
      * @return ags_info the object instance.
      */
-    public static function create(\moodle_url $lineitemsurl, ?\moodle_url $lineitemurl = null, array $scopes = []): ags_info
+    public static function create(?\moodle_url $lineitemsurl = null, ?\moodle_url $lineitemurl = null, array $scopes = []): ags_info
     {
     }
     /**
@@ -82,11 +82,11 @@ class ags_info
     {
     }
     /**
-     * Get the url for querying line items.
+     * Get the url for querying line items, if supported.
      *
      * @return \moodle_url the url.
      */
-    public function get_lineitemsurl(): \moodle_url
+    public function get_lineitemsurl(): ?\moodle_url
     {
     }
     /**

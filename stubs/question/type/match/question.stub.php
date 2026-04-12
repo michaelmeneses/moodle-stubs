@@ -48,6 +48,12 @@ class qtype_match_question extends question_graded_automatically_with_countback
     protected function set_choiceorder($choiceorder)
     {
     }
+    public function validate_can_regrade_with_other_version(question_definition $otherversion): ?string
+    {
+    }
+    public function update_attempt_state_data_for_new_version(question_attempt_step $oldstep, question_definition $otherversion)
+    {
+    }
     public function get_question_summary()
     {
     }

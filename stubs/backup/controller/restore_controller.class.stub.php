@@ -79,6 +79,12 @@ class restore_controller extends base_controller
     /** @var int Number of restore_controllers that are currently executing */
     protected static $executing = 0;
     /**
+     * Holds the relevant destination information for course copy operations.
+     *
+     * @var \stdClass.
+     */
+    protected $copy;
+    /**
      * Constructor.
      *
      * If you specify a progress monitor, this will be used to report progress
@@ -92,9 +98,10 @@ class restore_controller extends base_controller
      * @param int $userid
      * @param int $target backup::TARGET_[ NEW_COURSE | CURRENT_ADDING | CURRENT_DELETING | EXISTING_ADDING | EXISTING_DELETING ]
      * @param \core\progress\base $progress Optional progress monitor
+     * @param \stdClass $copydata Course copy data, required when in MODE_COPY
      * @param bool $releasesession Should release the session? backup::RELEASESESSION_YES or backup::RELEASESESSION_NO
      */
-    public function __construct($tempdir, $courseid, $interactive, $mode, $userid, $target, \core\progress\base $progress = null, $releasesession = backup::RELEASESESSION_NO)
+    public function __construct($tempdir, $courseid, $interactive, $mode, $userid, $target, \core\progress\base $progress = null, $releasesession = backup::RELEASESESSION_NO, ?\stdClass $copydata = null)
     {
     }
     /**
@@ -275,6 +282,14 @@ class restore_controller extends base_controller
      * @throws restore_controller_exception
      */
     public function prepare_copy(): void
+    {
+    }
+    /**
+     * Get the course copy data.
+     *
+     * @return \stdClass
+     */
+    public function get_copy(): \stdClass
     {
     }
     // Protected API starts here

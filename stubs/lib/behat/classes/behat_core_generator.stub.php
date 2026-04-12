@@ -20,6 +20,15 @@ class behat_core_generator extends behat_generator_base
     {
     }
     /**
+     * Get the grade item id using a name.
+     *
+     * @param string $name
+     * @return int The grade item id
+     */
+    protected function get_gradeitem_id(string $name): int
+    {
+    }
+    /**
      * Remove any empty custom fields, to avoid errors when creating the course.
      *
      * @param array $data
@@ -283,6 +292,15 @@ class behat_core_generator extends behat_generator_base
      * @throws dml_exception
      */
     protected function process_setup_backpack_connected(array $data)
+    {
+    }
+    /**
+     * Creates notifications to specific user.
+     *
+     * @param array $data
+     * @return void
+     */
+    protected function process_notification(array $data)
     {
     }
     /**

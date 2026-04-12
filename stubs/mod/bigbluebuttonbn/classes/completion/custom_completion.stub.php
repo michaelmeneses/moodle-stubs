@@ -94,25 +94,6 @@ class custom_completion extends activity_custom_completion
     {
     }
     /**
-     * Fetches the list of custom completion rules that are being used by this activity module instance.
-     *
-     * @return array
-     */
-    public function get_available_custom_rules(): array
-    {
-    }
-    /**
-     * Get completion view value
-     *
-     * This will override the usual completion value (see COMPLETION_CUSTOM_MODULE_FLOW)
-     *
-     * @param stdClass $log
-     * @return int
-     */
-    protected static function get_completionview_value(stdClass $log): int
-    {
-    }
-    /**
      * Get attendance summary value
      *
      * @param stdClass $log

@@ -33,7 +33,7 @@ function grade_import_commit($courseid, $importcode, $importfeedback = true, $ve
  * are still stored in the database, but will not be visible in the gradebook unless
  * this user subsequently enrols on the course in a graded roles.
  *
- * The returned objects have fields user firstname, lastname and useridnumber, and gradeidnumber.
+ * The returned objects have fields useridnumber and gradeidnumber, plus enough user name fields to pass to {@see fullname}
  *
  * @param integer $importcode import batch identifier
  * @param integer $courseid the course we are importing to.

@@ -176,6 +176,24 @@ abstract class behat_generator_base
     {
     }
     /**
+     * Gets the user id from it's username.
+     * @throws Exception
+     * @param string $username
+     * @return int
+     */
+    protected function get_userfrom_id(string $username)
+    {
+    }
+    /**
+     * Gets the user id from it's username.
+     * @throws Exception
+     * @param string $username
+     * @return int
+     */
+    protected function get_userto_id(string $username)
+    {
+    }
+    /**
      * Gets the role id from it's shortname.
      * @throws Exception
      * @param string $roleshortname

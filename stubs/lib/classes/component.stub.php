@@ -420,9 +420,9 @@ class core_component
      * and the value is the new class name.
      * It is only included when we are populating the component cache. After that is not needed.
      *
-     * @param string $fulldir
+     * @param string|null $fulldir The directory to the renamed classes.
      */
-    protected static function load_renamed_classes($fulldir)
+    protected static function load_renamed_classes(?string $fulldir)
     {
     }
     /**

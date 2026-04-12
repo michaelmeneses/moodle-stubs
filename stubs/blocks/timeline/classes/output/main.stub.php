@@ -51,6 +51,10 @@ class main implements renderable, templatable
      * @var string The current limit preference
      */
     public $limit;
+    /** @var int Number of timeline instances displayed. */
+    protected static $timelineinstances = 0;
+    /** @var int This timeline instance's ID. */
+    protected $timelineinstanceid = 0;
     /**
      * main constructor.
      *

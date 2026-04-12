@@ -47,6 +47,8 @@ class meeting_info extends external_api
      * @param int $groupid
      * @param bool $updatecache
      * @return array
+     * @throws \moodle_exception
+     * @throws restricted_context_exception
      */
     public static function execute(int $bigbluebuttonbnid, int $groupid, bool $updatecache = false): array
     {

@@ -309,6 +309,15 @@ class testing_data_generator
     {
     }
     /**
+     * Create a grade_grade.
+     *
+     * @param array $record
+     * @return grade_grade the grade record
+     */
+    public function create_grade_grade(?array $record = null): grade_grade
+    {
+    }
+    /**
      * Create a grade_item.
      *
      * @param array|stdClass $record
