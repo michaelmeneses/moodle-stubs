@@ -666,3 +666,13 @@ function restrict_php_version_82($result)
 function restrict_php_version_83($result)
 {
 }
+/**
+ * Check if the current PHP version is greater than or equal to
+ * PHP version 8.4
+ *
+ * @param object $result an environment_results instance
+ * @return bool result of version check
+ */
+function restrict_php_version_84($result)
+{
+}
