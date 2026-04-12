@@ -55,6 +55,8 @@ class report_log_renderable implements renderable
     public $groupid;
     /** @var table_log table log which will be used for rendering logs */
     public $tablelog;
+    /** @var array group ids */
+    public $grouplist;
     /**
      * Constructor.
      *
@@ -130,7 +132,11 @@ class report_log_renderable implements renderable
     {
     }
     /**
-     * Return list of groups.
+     * Return list of groups that are used in this course. This is done when groups are used in the course
+     * and the user is allowed to see all groups or groups are visible anyway. If groups are used but the
+     * mode is separate groups and the user is not allowed to see all groups, the list contains the groups
+     * only, where the user is member.
+     * If the course uses no groups, the list is empty.
      *
      * @return array list of groups.
      */

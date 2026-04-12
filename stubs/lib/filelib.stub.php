@@ -985,7 +985,7 @@ class curl
     public $rawresponse = array();
     /** @var array http header */
     public $header = array();
-    /** @var string cURL information */
+    /** @var array cURL information */
     public $info;
     /** @var string error */
     public $error;
@@ -1354,7 +1354,7 @@ class curl
     /**
      * Get curl information
      *
-     * @return string
+     * @return array
      */
     public function get_info()
     {

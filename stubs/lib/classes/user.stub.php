@@ -427,4 +427,13 @@ class core_user
     public static function welcome_message(): ?lang_string
     {
     }
+    /**
+     * Get initials for users
+     *
+     * @param stdClass $user
+     * @return string
+     */
+    public static function get_initials(stdClass $user): string
+    {
+    }
 }

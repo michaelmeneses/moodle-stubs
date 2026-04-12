@@ -240,9 +240,10 @@ function grade_get_plugin_info($courseid, $active_type, $active_plugin)
  *
  * @param int $courseid The course ID.
  * @param int|null $groupid The group ID (optional).
+ * @param bool $onlyactiveenrol Include only active enrolments.
  * @return array $users A list of enrolled gradable users.
  */
-function get_gradable_users(int $courseid, ?int $groupid = null): array
+function get_gradable_users(int $courseid, ?int $groupid = null, bool $onlyactiveenrol = false): array
 {
 }
 /**

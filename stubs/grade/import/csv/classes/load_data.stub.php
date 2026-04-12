@@ -74,11 +74,12 @@ class gradeimport_csv_load_data
     /**
      * Inserts a record into the grade_import_values table. This also adds common record information.
      *
-     * @param object $record The grade record being inserted into the database.
+     * @param stdClass $record The grade record being inserted into the database.
      * @param int $studentid The student ID.
-     * @return bool|int true or insert id on success. Null if the grade value is too high.
+     * @param grade_item $gradeitem Grade item.
+     * @return bool|int true or insert id on success. Null if the grade value is too high or too low or grade item not exist.
      */
-    protected function insert_grade_record($record, $studentid)
+    protected function insert_grade_record(stdClass $record, int $studentid, grade_item $gradeitem)
     {
     }
     /**

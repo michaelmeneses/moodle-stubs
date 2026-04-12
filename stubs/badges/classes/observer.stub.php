@@ -8,6 +8,10 @@
  */
 /**
  * Event observer for badges.
+ *
+ * @package    core_badges
+ * @copyright  2013 Rajesh Taneja <rajesh@moodle.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class core_badges_observer
 {
