@@ -1085,7 +1085,7 @@ function course_get_user_navigation_options($context, $course = null)
  * This function also handles the frontpage settings.
  *
  * @param  stdClass $course  course object (for frontpage it should be a clone of $SITE)
- * @param  stdClass $context context object (course context)
+ * @param  context_course $context context object (course context)
  * @return stdClass          the administration options in a course and their availability status
  * @since  Moodle 3.2
  */
@@ -1402,6 +1402,8 @@ function course_output_fragment_new_base_form($args)
  *
  * @param array $args the fragment arguments
  * @return string the course overview fragment
+ *
+ * @throws require_login_exception
  */
 function course_output_fragment_course_overview($args)
 {

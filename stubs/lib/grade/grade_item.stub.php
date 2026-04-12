@@ -576,6 +576,15 @@ class grade_item extends grade_object
     {
     }
     /**
+     * Returns whether the item is gradable or not. It's considered gradable when there is at least one gradeitem
+     * set as GRADE_TYPE_VALUE or GRADE_TYPE_SCALE.
+     *
+     * @return bool
+     */
+    public function is_gradable(): bool
+    {
+    }
+    /**
      * Returns the grade item associated with the course
      *
      * @param int $courseid

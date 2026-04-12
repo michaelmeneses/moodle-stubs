@@ -71,7 +71,7 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
         descendant::*[
             contains(concat(' ', normalize-space(@class), ' '), ' dropdown-toggle ')
                 and
-            (contains(normalize-space(.), %locator%) or descendant::*[%titleMatch%])
+            (contains(normalize-space(.), %locator%) or descendant::*[%titleMatch%] or %ariaLabelMatch%)
         ]
     ]
     XPATH, 'badge' => <<<XPATH

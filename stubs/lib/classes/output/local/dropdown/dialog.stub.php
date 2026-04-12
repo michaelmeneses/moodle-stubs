@@ -64,6 +64,10 @@ class dialog implements named_templatable, renderable
      */
     protected $dropdownwidth = self::WIDTH['default'];
     /**
+     * @var string dropdown autoclose behaviour.
+     */
+    protected $autoclose = 'true';
+    /**
      * @var array extra HTML attributes (attribute => value).
      */
     protected $extras = [];
@@ -79,6 +83,7 @@ class dialog implements named_templatable, renderable
      * - buttonclasses: the button CSS classes.
      * - dialogwidth: the dropdown width.
      * - dropdownposition: the dropdown position.
+     * - autoclose: dropdown autoclose behaviour ('true' (default), 'false', 'inside', 'outside')
      * - extras: extra HTML attributes (attribute => value).
      *
      * @param string $buttoncontent the button content

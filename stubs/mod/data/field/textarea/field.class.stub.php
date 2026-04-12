@@ -10,11 +10,39 @@ class data_field_textarea extends data_field_base
 {
     var $type = 'textarea';
     /**
+     * Prefix for the field name to split field id and the random part.
+     * @var string
+     */
+    protected const RND_PREFIX = 'xZx';
+    /**
      * priority for globalsearch indexing
      *
      * @var int
      */
     protected static $priority = self::LOW_PRIORITY;
+    /**
+     * The field name for the content field.
+     *
+     * @var string
+     */
+    protected $fieldname = null;
+    /**
+     * Returns a random field name for the content field.
+     *
+     * @return string
+     */
+    protected function get_content_field_name()
+    {
+    }
+    /**
+     * Check if the given field name is the content field that contains the actual data.
+     *
+     * @param string $name
+     * @return bool
+     */
+    protected function is_content_field(string $name): bool
+    {
+    }
     public function supports_preview(): bool
     {
     }

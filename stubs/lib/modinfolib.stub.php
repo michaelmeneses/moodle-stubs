@@ -63,6 +63,12 @@ class course_modinfo
      */
     private ?array $delegatedbycm = null;
     /**
+     * Contains the course content weights so they can be sorted accordingly.
+     *
+     * @var array|null
+     */
+    private ?array $weights = null;
+    /**
      * User ID
      * @var int
      */
@@ -203,6 +209,27 @@ class course_modinfo
      * @return cm_info[] Array from instance id => cm_info for modules on this course; empty if none
      */
     public function get_instances_of($modname)
+    {
+    }
+    /**
+     * Obtains a single instance of a particular module on this course.
+     *
+     * @param string $modname Name of module (not full frankenstyle) e.g. 'label'
+     * @param int $instanceid Instance id
+     * @param int $strictness Use IGNORE_MISSING to return null if not found, or MUST_EXIST to throw exception
+     * @return cm_info|null cm_info for the instance on this course or null if not found
+     * @throws moodle_exception If the instance is not found
+     */
+    public function get_instance_of(string $modname, int $instanceid, int $strictness = IGNORE_MISSING): ?cm_info
+    {
+    }
+    /**
+     * Sorts the given array of course modules according to the order they appear on the course page.
+     *
+     * @param cm_info[] $cms Array of cm_info objects to sort by reference
+     * @return void
+     */
+    public function sort_cm_array(array &$cms): void
     {
     }
     /**
@@ -463,6 +490,27 @@ class course_modinfo
      * @return bool
      */
     public static function is_mod_type_visible_on_course(string $modname): bool
+    {
+    }
+    /**
+     * Get content weights for all sections and modules in the course.
+     *
+     * The weights are calculated based on the order of sections and modules
+     * as they appear on the course page, including delegated sections.
+     *
+     * @return array Associative array with keys 'section{sectionid}' and 'cm{cmid}' and integer weights as values.
+     */
+    private function get_content_weights(): array
+    {
+    }
+    /**
+     * Calculate weights for a section and its modules, including delegated sections.
+     *
+     * @param section_info $section The section to calculate weights for.
+     * @param int $currentweight The starting weight to use for this section.
+     * @return section_info[] Associative array of section_info objects, indexed by the cmid of the delegating module.
+     */
+    private function calculate_section_weights(section_info $section, int $currentweight = 0): array
     {
     }
 }

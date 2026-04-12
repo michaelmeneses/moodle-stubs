@@ -760,8 +760,9 @@ class assign
      * @param bool $idsonly
      * @param bool $tablesort
      * @return array List of user records
+     * @param bool|null $onlyactive Whether to show only active users.
      */
-    public function list_participants($currentgroup, $idsonly, $tablesort = false)
+    public function list_participants($currentgroup, $idsonly, $tablesort = false, ?bool $onlyactive = null)
     {
     }
     /**
