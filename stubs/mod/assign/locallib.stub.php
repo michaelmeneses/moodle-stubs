@@ -116,6 +116,8 @@ class assign
     private $mostrecentteamsubmission = null;
     /** @var array Array of error messages encountered during the execution of assignment related operations. */
     private $errors = array();
+    /** @var mixed This var can vary between false for no overrides to a stdClass of the overrides for a group */
+    private $overridedata;
     /**
      * Constructor for the base assign class.
      *
@@ -1395,12 +1397,39 @@ class assign
     {
     }
     /**
+     * Helper function to allow up to fetch the group overrides via one query as opposed to many calls.
+     *
+     * @param int $activitygroup The group we want to check the overrides of
+     * @return mixed Can return either a fetched DB object, local object or false
+     */
+    private function get_override_data(int $activitygroup)
+    {
+    }
+    /**
      * Return group override duedate.
      *
      * @param int $activitygroup Activity active group
      * @return int $duedate
      */
     private function get_duedate($activitygroup = null)
+    {
+    }
+    /**
+     * Return group override timelimit.
+     *
+     * @param null|int $activitygroup Activity active group
+     * @return int $timelimit
+     */
+    private function get_timelimit(?int $activitygroup = null): int
+    {
+    }
+    /**
+     * Return group override cutoffdate.
+     *
+     * @param null|int $activitygroup Activity active group
+     * @return int $cutoffdate
+     */
+    private function get_cutoffdate(?int $activitygroup = null): int
     {
     }
     /**

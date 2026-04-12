@@ -226,7 +226,7 @@ class instance
      * Helper to get an instance var.
      *
      * @param string $name
-     * @return string
+     * @return mixed|null
      */
     public function get_instance_var(string $name)
     {
@@ -427,6 +427,14 @@ class instance
      * @return string
      */
     public function get_current_user_password(): string
+    {
+    }
+    /**
+     * Get the appropriate designated role for the current user.
+     *
+     * @return string
+     */
+    public function get_current_user_role(): string
     {
     }
     /**
@@ -666,7 +674,7 @@ class instance
      * @param bool $viewdeleted view deleted recordings ?
      * @return recording[]
      */
-    public function get_recordings(array $excludedid = [], $viewdeleted = false): array
+    public function get_recordings(array $excludedid = [], bool $viewdeleted = false): array
     {
     }
     /**

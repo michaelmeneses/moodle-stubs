@@ -41,6 +41,8 @@ class secondary extends view
     const MAX_DISPLAYED_NAV_NODES = 5;
     /** @var navigation_node The course overflow node. */
     protected $courseoverflownode = null;
+    /** @var string The key of the node to set as selected in the course overflow menu, if explicitly set by a page. */
+    protected $overflowselected = null;
     /**
      * Defines the default structure for the secondary nav in a course context.
      *
@@ -189,6 +191,39 @@ class secondary extends view
      * @return navigation_node|null The node that matches this page's url.
      */
     protected function nodes_match_current_url(navigation_node $node): ?navigation_node
+    {
+    }
+    /**
+     * Recursively search a node and its children for a node matching the key string $key.
+     *
+     * @param navigation_node $node the navigation node to check.
+     * @param string $key the key of the node to match.
+     * @return navigation_node|null node if found, otherwise null.
+     */
+    protected function node_matches_key_string(navigation_node $node, string $key): ?navigation_node
+    {
+    }
+    /**
+     * Force a specific node in the 'coursereuse' course overflow to be selected, based on the provided node key.
+     *
+     * Normally, the selected node is determined by matching the page URL to the node URL. E.g. The page 'backup/restorefile.php'
+     * will match the "Restore" node which has a registered URL of 'backup/restorefile.php' because the URLs match.
+     *
+     * This method allows a page to choose a specific node to match, which is useful in cases where the page knows its URL won't
+     * match the node it needs to reside under. I.e. this permits several pages to 'share' the same overflow node. When the page
+     * knows the PAGE->url won't match the node URL, the page can simply say "I want to match the 'XXX' node".
+     *
+     * E.g.
+     * - The $PAGE->url is 'backup/restore.php' (this page is used during restores but isn't the main landing page for a restore)
+     * - The 'Restore' node in the overflow has a key of 'restore' and will only match 'backup/restorefile.php' by default (the
+     * main restore landing page).
+     * - The backup/restore.php page calls:
+     * $PAGE->secondarynav->set_overflow_selected_node(new moodle_url('restore');
+     * and when the page is loaded, the 'Restore' node be presented as the selected node.
+     *
+     * @param string $nodekey The string key of the overflow node to match.
+     */
+    public function set_overflow_selected_node(string $nodekey): void
     {
     }
     /**

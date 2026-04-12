@@ -53,7 +53,7 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
     /**
      * @var array Allowed types when using selector arguments.
      */
-    protected static $allowedselectors = array('activity' => 'activity', 'badge' => 'badge', 'block' => 'block', 'button' => 'button', 'checkbox' => 'checkbox', 'css_element' => 'css_element', 'dialogue' => 'dialogue', 'field' => 'field', 'fieldset' => 'fieldset', 'file' => 'file', 'filemanager' => 'filemanager', 'group_message' => 'group_message', 'group_message_conversation' => 'group_message_conversation', 'group_message_header' => 'group_message_header', 'group_message_member' => 'group_message_member', 'group_message_tab' => 'group_message_tab', 'group_message_list_area' => 'group_message_list_area', 'group_message_message_content' => 'group_message_message_content', 'icon_container' => 'icon_container', 'icon' => 'icon', 'link' => 'link', 'link_or_button' => 'link_or_button', 'list_item' => 'list_item', 'menuitem' => 'menuitem', 'optgroup' => 'optgroup', 'option' => 'option', 'question' => 'question', 'radio' => 'radio', 'region' => 'region', 'section' => 'section', 'select' => 'select', 'table' => 'table', 'table_row' => 'table_row', 'text' => 'text', 'xpath_element' => 'xpath_element', 'form_row' => 'form_row', 'autocomplete_selection' => 'autocomplete_selection', 'autocomplete_suggestions' => 'autocomplete_suggestions', 'autocomplete' => 'autocomplete', 'iframe' => 'iframe');
+    protected static $allowedselectors = array('activity' => 'activity', 'actionmenu' => 'actionmenu', 'badge' => 'badge', 'block' => 'block', 'button' => 'button', 'checkbox' => 'checkbox', 'css_element' => 'css_element', 'dialogue' => 'dialogue', 'field' => 'field', 'fieldset' => 'fieldset', 'file' => 'file', 'filemanager' => 'filemanager', 'group_message' => 'group_message', 'group_message_conversation' => 'group_message_conversation', 'group_message_header' => 'group_message_header', 'group_message_member' => 'group_message_member', 'group_message_tab' => 'group_message_tab', 'group_message_list_area' => 'group_message_list_area', 'group_message_message_content' => 'group_message_message_content', 'icon_container' => 'icon_container', 'icon' => 'icon', 'link' => 'link', 'link_or_button' => 'link_or_button', 'list_item' => 'list_item', 'menuitem' => 'menuitem', 'optgroup' => 'optgroup', 'option' => 'option', 'question' => 'question', 'radio' => 'radio', 'region' => 'region', 'section' => 'section', 'select' => 'select', 'table' => 'table', 'table_row' => 'table_row', 'text' => 'text', 'xpath_element' => 'xpath_element', 'form_row' => 'form_row', 'autocomplete_selection' => 'autocomplete_selection', 'autocomplete_suggestions' => 'autocomplete_suggestions', 'autocomplete' => 'autocomplete', 'iframe' => 'iframe');
     /**
      * Behat by default comes with XPath, CSS and named selectors,
      * named selectors are a mapping between names (like button) and
@@ -64,6 +64,16 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
      */
     protected static $moodleselectors = array('activity' => <<<XPATH
     .//li[contains(concat(' ', normalize-space(@class), ' '), ' activity ')][descendant::*[contains(normalize-space(.), %locator%)]]
+    XPATH, 'actionmenu' => <<<XPATH
+    .//*[
+        contains(concat(' ', normalize-space(@class), ' '), ' action-menu ')
+            and
+        descendant::*[
+            contains(concat(' ', normalize-space(@class), ' '), ' dropdown-toggle ')
+                and
+            contains(normalize-space(.), %locator%)
+        ]
+    ]
     XPATH, 'badge' => <<<XPATH
     .//span[(contains(@class, 'badge')) and text()[contains(., %locator%)]]
     XPATH, 'block' => <<<XPATH

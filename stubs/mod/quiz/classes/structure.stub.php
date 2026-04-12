@@ -193,6 +193,16 @@ class structure
     {
     }
     /**
+     * Does the current user have '...use' capability over the question(s) in a given slot?
+     *
+     *
+     * @param int $slotnumber the index of the slot in question.
+     * @return bool true if they have the required capability.
+     */
+    public function has_use_capability(int $slotnumber): bool
+    {
+    }
+    /**
      * Get the course id that the quiz belongs to.
      * @return int the course.id for the quiz.
      */

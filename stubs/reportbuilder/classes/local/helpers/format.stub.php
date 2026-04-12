@@ -23,7 +23,7 @@ class format
     /**
      * Returns formatted date.
      *
-     * @param int $value Unix timestamp
+     * @param int|null $value Unix timestamp
      * @param stdClass $row
      * @param string|null $format Format string for strftime
      * @return string
@@ -34,7 +34,7 @@ class format
     /**
      * Returns yes/no string depending on the given value
      *
-     * @param bool $value
+     * @param bool|null $value
      * @return string
      */
     public static function boolean_as_text($value): string
@@ -43,7 +43,7 @@ class format
     /**
      * Returns float value as a percentage
      *
-     * @param float $value
+     * @param float|null $value
      * @return string
      */
     public static function percent($value): string

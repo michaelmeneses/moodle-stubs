@@ -108,9 +108,9 @@ class roles
      *
      * @param string|integer $id
      *
-     * @return stdClass $role
+     * @return stdClass|null $role
      */
-    protected static function get_role($id): stdClass
+    protected static function get_role($id): ?stdClass
     {
     }
     /**

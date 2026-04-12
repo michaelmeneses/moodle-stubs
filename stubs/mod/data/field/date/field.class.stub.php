@@ -40,8 +40,14 @@ class data_field_date extends data_field_base
     function display_add_field($recordid = 0, $formdata = null)
     {
     }
-    //Enable the following three functions once core API issues have been addressed.
-    function display_search_field($value = 0)
+    // Enable the following three functions once core API issues have been addressed.
+    /**
+     * Display the search field in advanced search page
+     * @param mixed $value
+     * @return string
+     * @throws coding_exception
+     */
+    public function display_search_field($value = null)
     {
     }
     function generate_sql($tablealias, $value)

@@ -75,15 +75,6 @@ abstract class base_report_table extends table_sql implements dynamic, renderabl
     {
     }
     /**
-     * Set the export class to use when downloading reports (TODO: consider applying to all tables, MDL-72058)
-     *
-     * @param table_default_export_format_parent|null $exportclass
-     * @return table_default_export_format_parent|null
-     */
-    public function export_class_instance($exportclass = null)
-    {
-    }
-    /**
      * Get the context for the table (that of the report persistent)
      *
      * @return context

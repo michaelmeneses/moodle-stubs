@@ -370,10 +370,10 @@ function data_get_field_new($type, $data)
  * input: $param $field - record from db
  *
  * @global object
- * @param object $field
- * @param object $data
- * @param object $cm
- * @return object
+ * @param stdClass $field the field record
+ * @param stdClass $data the data instance
+ * @param stdClass|null $cm optional course module data
+ * @return data_field_base the field object instance or data_field_base if unkown type
  */
 function data_get_field($field, $data, $cm = null)
 {

@@ -32,6 +32,8 @@ class MoodleQuickForm_editor extends HTML_QuickForm_element implements templatab
     // 15 is $_options['return_types'] = FILE_INTERNAL | FILE_EXTERNAL | FILE_REFERENCE | FILE_CONTROLLED_LINK.
     /** @var array values for editor */
     protected $_values = array('text' => null, 'format' => null, 'itemid' => null);
+    /** @var bool if true label will be hidden */
+    protected $_hiddenLabel = false;
     /**
      * Constructor
      *
@@ -214,6 +216,15 @@ class MoodleQuickForm_editor extends HTML_QuickForm_element implements templatab
      * @return empty string
      */
     function getFrozenHtml()
+    {
+    }
+    /**
+     * Sets label to be hidden.
+     *
+     * @param bool $hiddenLabel Whether the label should be hidden or not.
+     * @return void
+     */
+    function setHiddenLabel($hiddenLabel)
     {
     }
 }

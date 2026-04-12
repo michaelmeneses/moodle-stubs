@@ -2018,6 +2018,15 @@ function current_language()
 {
 }
 /**
+ * Fix the current language to the given language code.
+ *
+ * @param string $lang The language code to use.
+ * @return void
+ */
+function fix_current_language(string $lang): void
+{
+}
+/**
  * Returns parent language of current active language if defined
  *
  * @category string

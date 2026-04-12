@@ -42,13 +42,14 @@ class bigbluebutton_proxy extends proxy_base
      * @param string $username
      * @param string $pw
      * @param string $logouturl
+     * @param string $role
      * @param string|null $configtoken
      * @param string|null $userid
      * @param string|null $createtime
      *
      * @return string
      */
-    public static function get_join_url(string $meetingid, string $username, string $pw, string $logouturl, string $configtoken = null, string $userid = null, string $createtime = null): ?string
+    public static function get_join_url(string $meetingid, string $username, string $pw, string $logouturl, string $role, string $configtoken = null, string $userid = null, string $createtime = null): ?string
     {
     }
     /**

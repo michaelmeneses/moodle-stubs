@@ -62,9 +62,9 @@ class plugin_features_base
     /**
      * This method will return the array objects for the bulk actions ui.
      *
-     * @return null|bulk_action_base
+     * @return bulk_action_base[]
      */
-    public function get_bulk_actions(): ?bulk_action_base
+    public function get_bulk_actions()
     {
     }
 }

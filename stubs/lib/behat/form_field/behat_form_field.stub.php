@@ -154,9 +154,10 @@ class behat_form_field implements behat_session_interface
      * Checks if the provided text matches the field value.
      *
      * @param string $expectedvalue
+     * @param string|null $actualvalue The actual value. If not specified, this will be fetched from $this->get_value().
      * @return bool
      */
-    protected function text_matches($expectedvalue)
+    protected function text_matches($expectedvalue, ?string $actualvalue = null): bool
     {
     }
     /**

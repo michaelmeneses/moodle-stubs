@@ -796,9 +796,11 @@ abstract class base
     /**
      * return true if the course editor must be displayed.
      *
+     * @param array|null $capabilities array of capabilities a user needs to have to see edit controls in general.
+     *  If null or not specified, the user needs to have 'moodle/course:manageactivities'
      * @return bool true if edit controls must be displayed
      */
-    public function show_editor(): bool
+    public function show_editor(?array $capabilities = ['moodle/course:manageactivities']): bool
     {
     }
     /**

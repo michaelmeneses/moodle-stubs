@@ -182,7 +182,7 @@ class quiz_statistics_report extends quiz_default_report
      *
      * @param $qubaids qubaid_condition
      */
-    protected function clear_cached_data($qubaids)
+    public function clear_cached_data($qubaids)
     {
     }
     /**
@@ -204,6 +204,15 @@ class quiz_statistics_report extends quiz_default_report
      * @param $whichtries string
      */
     protected function output_all_question_response_analysis($qubaids, $questions, $questionstats, $reporturl, $whichtries = question_attempt::LAST_TRY)
+    {
+    }
+    /**
+     * Load question stats for a quiz
+     *
+     * @param int $quizid question usage
+     * @return all_calculated_for_qubaid_condition question stats
+     */
+    public function calculate_questions_stats_for_question_bank(int $quizid): all_calculated_for_qubaid_condition
     {
     }
 }

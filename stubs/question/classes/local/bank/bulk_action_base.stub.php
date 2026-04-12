@@ -49,7 +49,9 @@ abstract class bulk_action_base
      *
      * @return string
      */
-    abstract public function get_bulk_action_key(): string;
+    public function get_bulk_action_key(): string
+    {
+    }
     /**
      * URL of the bulk action redirect page.
      * Bulk action can be performed by redirecting to a page and doing the appropriate selection
@@ -69,6 +71,18 @@ abstract class bulk_action_base
      * @return array|null
      */
     public function get_bulk_action_capabilities(): ?array
+    {
+    }
+    /**
+     * A unique key for the bulk action, this will be used in the api to identify the action data.
+     * Every bulk must have a unique key to perform the action as a part of the form post in the base view.
+     * When questions are selected, it will post according to the key its selected from the dropdown.
+     *
+     * Note: This method is the first towards moving from get_bulk_action_key() to get_key().
+     *
+     * @return string
+     */
+    public function get_key(): string
     {
     }
 }

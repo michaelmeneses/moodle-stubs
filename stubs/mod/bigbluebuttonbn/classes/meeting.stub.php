@@ -181,6 +181,7 @@ class meeting
     const LOCK_SETTINGS_MEETING_DATA = ['disablecam' => 'lockSettingsDisableCam', 'disablemic' => 'lockSettingsDisableMic', 'disableprivatechat' => 'lockSettingsDisablePrivateChat', 'disablepublicchat' => 'lockSettingsDisablePublicChat', 'disablenote' => 'lockSettingsDisableNote', 'lockonjoin' => 'lockSettingsLockOnJoin', 'hideuserlist' => 'lockSettingsHideUserList'];
     /**
      * Helper to prepare data used for create meeting.
+     * @todo moderatorPW and attendeePW will be removed from create after release of BBB v2.6.
      *
      * @return array
      */
@@ -204,9 +205,10 @@ class meeting
      *  - Body: <A JSON Object>
      *
      * @param instance $instance
-     * @return void
+     * @param object $data
+     * @return string
      */
-    public static function meeting_events(instance $instance)
+    public static function meeting_events(instance $instance, object $data): string
     {
     }
     /**

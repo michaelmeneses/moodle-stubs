@@ -893,10 +893,11 @@ class core_course_external extends external_api
      *
      * @param int $cmid Course Module id from which the users will be obtained
      * @param int $groupid Group id from which the users will be obtained
+     * @param bool $onlyactive Whether to return only the active enrolled users or all enrolled users in the course.
      * @return array List of users
      * @throws invalid_parameter_exception
      */
-    public static function get_enrolled_users_by_cmid(int $cmid, int $groupid = 0)
+    public static function get_enrolled_users_by_cmid(int $cmid, int $groupid = 0, bool $onlyactive = false)
     {
     }
     /**

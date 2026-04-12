@@ -197,7 +197,8 @@ class core_backup_renderer extends plugin_renderer_base
     {
     }
     /**
-     * Displays a continue button
+     * Displays a continue button, overriding core renderer method of the same in order
+     * to override submission method of the button form
      *
      * @param string|moodle_url $url
      * @param string $method

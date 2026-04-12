@@ -342,7 +342,7 @@ function data_get_tag_title_field($dataid)
  *
  * @param stdClass $field The field from the 'data_fields' table
  * @param stdClass $entry The entry from the 'data_records' table
- * @return string The title of the entry
+ * @return string|null It will return the title of the entry or null if the field type is not available.
  */
 function data_get_tag_title_for_entry($field, $entry)
 {

@@ -137,6 +137,14 @@ class forum_gradeitem extends component_gradeitem
     {
     }
     /**
+     * Defines whether only active users in the course should be gradeable.
+     *
+     * @return bool Whether only active users in the course should be gradeable.
+     */
+    public function should_grade_only_active_users(): bool
+    {
+    }
+    /**
      * Create or update the grade.
      *
      * @param stdClass $grade

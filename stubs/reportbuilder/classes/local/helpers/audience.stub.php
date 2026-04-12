@@ -18,7 +18,7 @@ namespace core_reportbuilder\local\helpers;
 class audience
 {
     /**
-     * Return audience base records for a given report
+     * Return audience instances for a given report. Note that any records pointing to invalid audience types will be excluded
      *
      * @param int $reportid
      * @return base[]

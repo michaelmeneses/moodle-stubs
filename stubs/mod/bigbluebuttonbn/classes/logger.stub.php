@@ -246,11 +246,11 @@ class logger
     /**
      * Helper function to count the number of callback logs matching the supplied specifications.
      *
-     * @param string $recordid
+     * @param string $id
      * @param string $callbacktype
      * @return int
      */
-    protected static function count_callback_events(string $recordid, string $callbacktype = 'recording_ready'): int
+    protected static function count_callback_events(string $id, string $callbacktype = 'recording_ready'): int
     {
     }
     /**

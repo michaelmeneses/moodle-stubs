@@ -59,7 +59,27 @@ class broker
      * @param instance $instance
      * @param array $params
      */
-    public static function recording_ready(instance $instance, array $params): void
+    public static function process_recording_ready(instance $instance, array $params): void
+    {
+    }
+    /**
+     * Process meeting events for instance with provided HTTP headers.
+     *
+     * @param instance $instance
+     * @return void
+     */
+    public static function process_meeting_events(instance $instance)
+    {
+    }
+    /**
+     * Get authorisation token
+     *
+     * We could use getallheaders but this is only compatible with apache types of servers
+     * some explanations and examples here: https://www.php.net/manual/en/function.getallheaders.php#127190
+     *
+     * @return array|null an array composed of the Authorization token provided in the header.
+     */
+    private static function get_authorization_token(): ?array
     {
     }
 }

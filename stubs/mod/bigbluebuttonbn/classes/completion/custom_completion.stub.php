@@ -33,6 +33,10 @@ namespace mod_bigbluebuttonbn\completion;
 class custom_completion extends activity_custom_completion
 {
     /**
+     * Filters for logs
+     */
+    const FILTERS = ['completionattendance' => [logger::EVENT_SUMMARY], 'completionengagementchats' => [logger::EVENT_SUMMARY], 'completionengagementtalks' => [logger::EVENT_SUMMARY], 'completionengagementraisehand' => [logger::EVENT_SUMMARY], 'completionengagementpollvotes' => [logger::EVENT_SUMMARY], 'completionengagementemojis' => [logger::EVENT_SUMMARY]];
+    /**
      * Get current state
      *
      * @param string $rule
@@ -46,9 +50,9 @@ class custom_completion extends activity_custom_completion
      *
      * @param array $logs
      * @param callable $logvaluegetter
-     * @return int the number of hits on this particular rule
+     * @return int the sum of all values for this particular event (it can be a duration or a number of hits)
      */
-    protected function count_actions(array $logs, callable $logvaluegetter): int
+    protected function aggregate_values(array $logs, callable $logvaluegetter): int
     {
     }
     /**
@@ -76,16 +80,24 @@ class custom_completion extends activity_custom_completion
     {
     }
     /**
-     * Get current state in a  friendly version
+     * Get current states of completion in a human-friendly version
+     *
+     * @return string[]
+     */
+    public function get_printable_states(): array
+    {
+    }
+    /**
+     * Get current states of completion for a rule in a human-friendly version
      *
      * @param string $rule
      * @return string
      */
-    public function get_printable_state(string $rule): string
+    private function get_printable_state(string $rule): string
     {
     }
     /**
-     * Get current state in a  friendly version
+     * Get current state in a friendly version
      *
      * @param string $rule
      * @return string

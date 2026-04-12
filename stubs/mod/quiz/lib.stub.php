@@ -688,3 +688,14 @@ function mod_quiz_core_calendar_get_event_action_string(string $eventtype): stri
 function quiz_delete_references($quizid): void
 {
 }
+/**
+ * Implement the calculate_question_stats callback.
+ *
+ * This enables quiz statistics to be shown in statistics columns in the database.
+ *
+ * @param context $context return the statistics related to this context (which will be a quiz context).
+ * @return all_calculated_for_qubaid_condition|null The statistics for this quiz, if any, else null.
+ */
+function mod_quiz_calculate_question_stats(context $context): ?all_calculated_for_qubaid_condition
+{
+}

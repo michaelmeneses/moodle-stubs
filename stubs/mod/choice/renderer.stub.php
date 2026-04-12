@@ -27,8 +27,6 @@
  * @copyright 2010 Rossiani Wijaya
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  **/
-define('DISPLAY_HORIZONTAL_LAYOUT', 0);
-define('DISPLAY_VERTICAL_LAYOUT', 1);
 class mod_choice_renderer extends plugin_renderer_base
 {
     /**
@@ -82,7 +80,7 @@ class mod_choice_renderer extends plugin_renderer_base
      * Can be displayed either in the vertical or horizontal position.
      *
      * @param stdClass $choices Choices responses object.
-     * @param int $displaylayout The constants DISPLAY_HORIZONTAL_LAYOUT or DISPLAY_VERTICAL_LAYOUT.
+     * @param int $displaylayout The constants CHOICE_DISPLAY_HORIZONTAL or CHOICE_DISPLAY_VERTICAL.
      * @return string the rendered chart.
      */
     public function display_publish_anonymous($choices, $displaylayout)

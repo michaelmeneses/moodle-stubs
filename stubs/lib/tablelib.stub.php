@@ -1067,6 +1067,15 @@ class table_default_export_format_parent
     function format_text($text, $format = FORMAT_MOODLE, $options = NULL, $courseid = NULL)
     {
     }
+    /**
+     * Format a row of data, removing HTML tags and entities from each of the cells
+     *
+     * @param array $row
+     * @return array
+     */
+    public function format_data(array $row): array
+    {
+    }
 }
 /**
  * Dataformat exporter
