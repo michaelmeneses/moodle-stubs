@@ -174,9 +174,10 @@ class manager
      *
      * @since Moodle 3.11
      * @param bool $allpotentialusers if true, the join will return all active users, not only the ones with attempts.
+     * @param int|bool $currentgroup False if groups not used, 0 for all groups, group id (int) to filter by specific group
      * @return sql_join the active users attempts join
      */
-    public function get_active_users_join(bool $allpotentialusers = false): sql_join
+    public function get_active_users_join(bool $allpotentialusers = false, $currentgroup = false): sql_join
     {
     }
     /**
@@ -230,9 +231,10 @@ class manager
      *
      * @param int $userid an opional userid to show
      * @param int $attemptid an optional $attemptid to show
+     * @param int|bool $currentgroup False if groups not used, 0 for all groups, group id (int) to filter by specific group
      * @return report|null available report (or null if no report available)
      */
-    public function get_report(int $userid = null, int $attemptid = null): ?report
+    public function get_report(int $userid = null, int $attemptid = null, $currentgroup = false): ?report
     {
     }
     /**

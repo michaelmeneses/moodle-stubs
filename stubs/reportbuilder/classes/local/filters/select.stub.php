@@ -73,4 +73,12 @@ class select extends base
     private function validate_filter_values(?int $operator, $value): bool
     {
     }
+    /**
+     * Return sample filter values
+     *
+     * @return array
+     */
+    public function get_sample_values(): array
+    {
+    }
 }

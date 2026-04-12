@@ -71,4 +71,12 @@ class number extends base
     private function validate_filter_values(int $operator, ?int $value1, ?int $value2): bool
     {
     }
+    /**
+     * Return sample filter values
+     *
+     * @return array
+     */
+    public function get_sample_values(): array
+    {
+    }
 }

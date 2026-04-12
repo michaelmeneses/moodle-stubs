@@ -43,7 +43,7 @@ class config
      *
      * @return string
      */
-    protected static function get_moodle_version_major()
+    protected static function get_moodle_version_major(): string
     {
     }
     /**
@@ -51,16 +51,16 @@ class config
      *
      * @return array
      */
-    protected static function defaultvalues()
+    protected static function defaultvalues(): array
     {
     }
     /**
      * Returns default value for an specific setting.
      *
      * @param string $setting
-     * @return string
+     * @return string|null
      */
-    public static function defaultvalue($setting)
+    public static function defaultvalue(string $setting): ?string
     {
     }
     /**
@@ -69,7 +69,7 @@ class config
      * @param string $setting
      * @return string
      */
-    public static function get($setting)
+    public static function get(string $setting): string
     {
     }
     /**
@@ -77,7 +77,7 @@ class config
      *
      * @return bool
      */
-    public static function recordings_enabled()
+    public static function recordings_enabled(): bool
     {
     }
     /**
@@ -85,7 +85,7 @@ class config
      *
      * @return bool
      */
-    public static function importrecordings_enabled()
+    public static function importrecordings_enabled(): bool
     {
     }
     /**
@@ -93,18 +93,18 @@ class config
      *
      * @return array
      */
-    public static function get_options()
+    public static function get_options(): array
     {
     }
     /**
      * Helper function returns an array with enabled features for an specific profile type.
      *
      * @param array $typeprofiles
-     * @param string $type
+     * @param string|null $type
      *
      * @return array
      */
-    public static function get_enabled_features($typeprofiles, $type = null)
+    public static function get_enabled_features(array $typeprofiles, ?string $type = null): array
     {
     }
 }

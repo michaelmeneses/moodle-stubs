@@ -33,6 +33,7 @@ class recording_unpublished extends base
 {
     /**
      * Init method.
+     *
      * @param string $crud
      * @param int $edulevel
      */

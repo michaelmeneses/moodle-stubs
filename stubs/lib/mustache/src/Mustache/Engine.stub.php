@@ -28,7 +28,7 @@
  */
 class Mustache_Engine
 {
-    const VERSION = '2.14.0';
+    const VERSION = '2.14.1';
     const SPEC_VERSION = '1.2.2';
     const PRAGMA_FILTERS = 'FILTERS';
     const PRAGMA_BLOCKS = 'BLOCKS';
@@ -50,6 +50,7 @@ class Mustache_Engine
     private $charset = 'UTF-8';
     private $logger;
     private $strictCallables = false;
+    private $disableLambdaRendering = false;
     private $pragmas = array();
     private $delimiters;
     // Services
@@ -124,6 +125,11 @@ class Mustache_Engine
      *         // helps protect against arbitrary code execution when user input is passed directly into the template.
      *         // This currently defaults to false, but will default to true in v3.0.
      *         'strict_callables' => true,
+     *
+     *         // Do not render the output of lambdas. Use this to prevent repeated rendering if the lambda already
+     *         // takes care of rendering its content. This helps protect against mustache code injection when user
+     *         // input is passed directly into the template. Defaults to false.
+     *         'disable_lambda_rendering' => true,
      *
      *         // Enable pragmas across all templates, regardless of the presence of pragma tags in the individual
      *         // templates.

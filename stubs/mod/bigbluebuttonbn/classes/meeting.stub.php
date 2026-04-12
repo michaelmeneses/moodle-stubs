@@ -60,7 +60,7 @@ class meeting
     /**
      * Get currently stored meeting info
      *
-     * @return mixed|stdClass
+     * @return stdClass
      */
     public function get_meeting_info()
     {

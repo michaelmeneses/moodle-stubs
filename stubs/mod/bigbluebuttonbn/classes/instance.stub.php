@@ -454,6 +454,14 @@ class instance
     {
     }
     /**
+     * Get recordings_imported from instancedata.
+     *
+     * @return bool
+     */
+    public function get_recordings_imported(): bool
+    {
+    }
+    /**
      * Whether this instance is recorded from the start.
      *
      * @return bool

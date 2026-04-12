@@ -347,7 +347,7 @@ abstract class base
      * @return array Array with SQL and parameters; both null if no need to query
      * @throws \coding_exception If called with invalid params
      */
-    protected function get_course_level_context_restriction_sql(\context $context = null, $coursetable, $paramtype = SQL_PARAMS_QM)
+    protected function get_course_level_context_restriction_sql(?\context $context, $coursetable, $paramtype = SQL_PARAMS_QM)
     {
     }
     /**

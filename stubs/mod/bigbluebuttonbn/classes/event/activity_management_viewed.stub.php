@@ -33,6 +33,7 @@ class activity_management_viewed extends base
 {
     /**
      * Init method.
+     *
      * @param string $crud
      * @param int $edulevel
      */
