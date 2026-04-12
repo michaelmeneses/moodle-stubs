@@ -538,6 +538,16 @@ class moodle_url
     public function get_port()
     {
     }
+    /**
+     * Returns the 'slashargument' portion of a URL. For example, if the URL is
+     * http://www.example.org.com/pluginfile.php/1/core_admin/logocompact/ then this will
+     * return '1/core_admin/logocompact/'.
+     *
+     * @return string Slash argument as string.
+     */
+    public function get_slashargument(): string
+    {
+    }
 }
 /**
  * Determine if there is data waiting to be processed from a form
