@@ -1013,6 +1013,8 @@ class curl
     private $ignoresecurity;
     /** @var array $mockresponses For unit testing only - return the head of this list instead of making the next request. */
     private static $mockresponses = [];
+    /** @var array $curlresolveinfo Resolve addresses for the URL that have passed cuRL security checks, in a CURLOPT_RESOLVE compatible format. */
+    private $curlresolveinfo = [];
     /**
      * Curl constructor.
      *
