@@ -160,6 +160,14 @@ class behat_core_generator extends behat_generator_base
     {
     }
     /**
+     * Assign capabilities to a role.
+     *
+     * @param array $data
+     */
+    protected function process_role_capability($data): void
+    {
+    }
+    /**
      * Adds members to cohorts
      *
      * @param array $data

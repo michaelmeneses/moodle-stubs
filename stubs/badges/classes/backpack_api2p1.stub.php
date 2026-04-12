@@ -49,9 +49,9 @@ class backpack_api2p1
     /** @var null version api of the backpack. */
     protected $backpackapiversion;
     /** @var issuer The OAuth2 Issuer for this backpack */
-    protected issuer $issuer;
+    protected $issuer;
     /** @var endpoint The apiBase endpoint */
-    protected endpoint $apibase;
+    protected $apibase;
     /**
      * backpack_api2p1 constructor.
      *
