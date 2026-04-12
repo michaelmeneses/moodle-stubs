@@ -809,6 +809,17 @@ trait behat_session_trait
     {
     }
     /**
+     * Get the user object from an identifier.
+     *
+     * The user username and email fields are checked.
+     *
+     * @param string $identifier The user's username or email.
+     * @return stdClass|null The user id or null if not found.
+     */
+    protected function get_user_by_identifier(string $identifier): ?stdClass
+    {
+    }
+    /**
      * Get the user id from an identifier.
      *
      * The user username and email fields are checked.

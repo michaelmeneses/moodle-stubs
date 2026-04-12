@@ -50,6 +50,8 @@ class grading_actionmenu implements templatable, renderable
     protected bool $showdownload;
     /** @var array Applied user initials filters, containing 'firstname' and 'lastname'. **/
     protected array $userinitials;
+    /** @var bool true if the user has this capability. Otherwise false. */
+    private bool $hasviewblind;
     /**
      * Constructor for this object.
      *

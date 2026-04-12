@@ -40,6 +40,8 @@ class manager
     const REDIRECT_EXCEPTION = -1;
     /** @var int */
     const REDIR_LOOP_THRESHOLD = 5;
+    /** @var array These components and related fileareas will not redirect. */
+    const ALLOWED_COMPONENTS = ['core_admin' => ['logocompact', 'logo', 'favicon'], 'tool_mfa' => ['guidance']];
     /**
      * Displays a debug table with current factor information.
      *

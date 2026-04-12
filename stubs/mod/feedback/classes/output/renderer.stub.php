@@ -52,4 +52,13 @@ class renderer extends plugin_renderer_base
     public function create_template_form(int $id)
     {
     }
+    /**
+     * Builds the feedback page title.
+     *
+     * @param array $titleparts the different parts to add to the title.
+     * @param string $pagetitle the page title to add to the rest of the parts. Empty by default.
+     */
+    public function set_title(array $titleparts, string $pagetitle = '')
+    {
+    }
 }
