@@ -65,6 +65,8 @@ class backpack_api_mapping
     protected $postparams;
     /** @var int OpenBadges version 1 or 2. */
     protected $backpackapiversion;
+    /** @var array Errors encountered during the request. */
+    protected $errors = [];
     /**
      * Create a mapping.
      *
@@ -106,6 +108,23 @@ class backpack_api_mapping
      * @return string
      */
     public static function get_authentication_error()
+    {
+    }
+    /**
+     * Get the errors encountered during the request.
+     *
+     * @return array The list of errors.
+     */
+    public function get_errors()
+    {
+    }
+    /**
+     * Add an error to the list of errors.
+     *
+     * @param string $error The error message.
+     * @return self This instance for method chaining.
+     */
+    public function add_error(string $error): self
     {
     }
     /**

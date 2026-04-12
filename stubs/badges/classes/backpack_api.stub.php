@@ -243,6 +243,14 @@ class backpack_api
     {
     }
     /**
+     * List all errors occurred during the requests to the backpack.
+     *
+     * @return array The list of errors.
+     */
+    public function get_errors(): array
+    {
+    }
+    /**
      * Get the list of badges in a collection.
      *
      * @param stdClass $collection The collection to deal with.

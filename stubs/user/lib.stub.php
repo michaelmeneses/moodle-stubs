@@ -298,6 +298,17 @@ function user_can_view_profile($user, $course = null, $usercontext = null)
 {
 }
 /**
+ * Process plugin callbacks for profile visibility.
+ *
+ * @param stdClass $user The user whose profile is being checked.
+ * @param stdClass|null $course The course context, if applicable.
+ * @param context|null $usercontext The user context, if applicable.
+ * @return int One of the core_user::VIEWPROFILE_* constants.
+ */
+function user_process_profile_callbacks(stdClass $user, ?stdClass $course = null, ?stdClass $usercontext = null): int
+{
+}
+/**
  * Returns users tagged with a specified tag.
  *
  * @param core_tag_tag $tag
