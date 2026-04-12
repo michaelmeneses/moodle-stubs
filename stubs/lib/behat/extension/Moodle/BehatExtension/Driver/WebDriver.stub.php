@@ -69,4 +69,8 @@ class WebDriver extends UpstreamDriver
     public function post_key($key, $xpath)
     {
     }
+    #[\Override]
+    public function stop(): void
+    {
+    }
 }

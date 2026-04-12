@@ -416,4 +416,14 @@ abstract class advanced_testcase extends base_testcase
     protected function run_all_adhoc_tasks(): void
     {
     }
+    /**
+     * Convenience method to load a fixture from a component's fixture directory.
+     *
+     * @param string $component
+     * @param string $path
+     * @throws coding_exception
+     */
+    protected static function load_fixture(string $component, string $path): void
+    {
+    }
 }

@@ -20,20 +20,13 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-/**
- * Report plugins helper class
- *
- * @package core
- * @subpackage report
- * @copyright 2021 Sujith Haridasan
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 namespace core;
 
 /**
  * A helper class with static methods to help report plugins
  *
  * @package core
+ * @subpackage report
  * @copyright 2021 Sujith Haridasan
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -43,9 +36,9 @@ class report_helper
      * Print the selector dropdown
      *
      * @param string $pluginname The report plugin where the header is modified
-     * @return void
+     * @param string $additional Additional content to display aligned with the selector
      */
-    public static function print_report_selector(string $pluginname): void
+    public static function print_report_selector(string $pluginname, string $additional = ''): void
     {
     }
     /**

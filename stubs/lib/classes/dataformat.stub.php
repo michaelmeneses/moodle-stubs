@@ -42,10 +42,11 @@ class dataformat
      * Return an instance of a dataformat writer from given dataformat type
      *
      * @param string $dataformat
-     * @return dataformat\base
-     * @throws coding_exception
+     * @return base
+     *
+     * @throws coding_exception For unknown dataformat
      */
-    protected static function get_format_instance(string $dataformat): \core\dataformat\base
+    public static function get_format_instance(string $dataformat): base
     {
     }
     /**

@@ -36,11 +36,7 @@ class quiz_notify_attempt_manual_grading_completed extends \core\task\scheduled_
      * @var int|null For using in unit testing only. Override the time we consider as now.
      */
     protected $forcedtime = null;
-    /**
-     * Get name of schedule task.
-     *
-     * @return string
-     */
+    #[\Override]
     public function get_name(): string
     {
     }
@@ -60,10 +56,8 @@ class quiz_notify_attempt_manual_grading_completed extends \core\task\scheduled_
     public function set_time_for_testing(int $time): void
     {
     }
-    /**
-     * Execute sending notification for manual graded attempts.
-     */
-    public function execute()
+    #[\Override]
+    public function execute(): void
     {
     }
     /**

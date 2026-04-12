@@ -46,7 +46,4 @@ class mod_lti_mod_form extends moodleform_mod
     public function set_data($defaultvalues)
     {
     }
-    public function validation($data, $files)
-    {
-    }
 }

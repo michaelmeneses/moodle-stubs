@@ -707,3 +707,12 @@ function check_mod_assignment(environment_results $result): ?environment_results
 function check_oracle_usage(environment_results $result): ?environment_results
 {
 }
+/**
+ * Check if asynchronous backups are enabled.
+ *
+ * @param environment_results $result
+ * @return environment_results|null
+ */
+function check_async_backup(environment_results $result): ?environment_results
+{
+}
