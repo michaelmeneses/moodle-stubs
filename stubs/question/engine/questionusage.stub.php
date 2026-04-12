@@ -122,8 +122,10 @@ class question_usage_by_activity
     }
     /**
      * Add another question to this usage, in the place of an existing slot.
-     * The question_attempt that was in that slot is moved to the end at a new
-     * slot number, which is returned.
+     *
+     * Depending on $keepoldquestionattempt, the question_attempt that was in
+     * that slot is moved to the end at a new slot number, which is returned.
+     * Otherwise the existing attempt is completely removed and replaced.
      *
      * The added question is not started until you call {@link start_question()}
      * on it.
@@ -133,9 +135,11 @@ class question_usage_by_activity
      * @param number $maxmark the maximum this question will be marked out of in
      *      this attempt (optional). If not given, the max mark from the $qa we
      *      are replacing is used.
+     * @param bool $keepoldquestionattempt if true (the default) we keep the existing
+     *      question_attempt, moving it to a new slot
      * @return int the new slot number of the question that was displaced.
      */
-    public function add_question_in_place_of_other($slot, question_definition $question, $maxmark = null)
+    public function add_question_in_place_of_other($slot, question_definition $question, $maxmark = null, bool $keepoldquestionattempt = true)
     {
     }
     /**

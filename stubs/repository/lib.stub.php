@@ -1358,7 +1358,7 @@ function repository_delete_selected_files($context, string $component, string $f
  * @param string $filearea filearea
  * @param int $itemid the item id
  * @param array $files Array of files object with each item having filename/filepath as values
- * @return array $return Array of strings matching up to the parent directory of the deleted files
+ * @return false|stdClass $return Object containing URL of zip archive and a file path
  * @throws coding_exception
  */
 function repository_download_selected_files($context, string $component, string $filearea, $itemid, array $files)

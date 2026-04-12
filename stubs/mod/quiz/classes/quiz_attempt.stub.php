@@ -1254,4 +1254,17 @@ class quiz_attempt
     public function get_number_of_unanswered_questions(): int
     {
     }
+    /**
+     * If any questions in this attempt have changed, update the attempts.
+     *
+     * For now, this should only be done for previews.
+     *
+     * When we update the question, we keep the same question (in the case of random questions)
+     * and the same variant (if this question has variants). If possible, we use regrade to
+     * preserve any interaction that has been had with this question (e.g. a saved answer) but
+     * if that is not possible, we put in a newly started attempt.
+     */
+    public function update_questions_to_new_version_if_changed(): void
+    {
+    }
 }

@@ -220,7 +220,8 @@ abstract class advanced_testcase extends base_testcase
     {
     }
     /**
-     * Assert that an event is not using event->contxet.
+     * Assert that various event methods are not using event->context
+     *
      * While restoring context might not be valid and it should not be used by event url
      * or description methods.
      *

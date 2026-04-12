@@ -55,7 +55,11 @@ class report_log_renderable implements renderable
     public $groupid;
     /** @var table_log table log which will be used for rendering logs */
     public $tablelog;
-    /** @var array group ids */
+    /**
+     * @var array group ids
+     * @deprecated since Moodle 4.4 - please do not use this public property
+     * @todo MDL-81155 remove this property as it is not used anymore.
+     */
     public $grouplist;
     /**
      * Constructor.

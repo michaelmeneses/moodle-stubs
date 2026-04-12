@@ -21,6 +21,8 @@ class report_log_table_log extends table_sql
     private $contextname = array();
     /** @var stdClass filters parameters */
     private $filterparams;
+    /** @var int[] A list of users to filter by */
+    private ?array $lateuseridfilter = null;
     /**
      * Sets up the table_log parameters.
      *
@@ -71,7 +73,7 @@ class report_log_table_log extends table_sql
     /**
      * Generate the username column.
      *
-     * @param stdClass $event event data.
+     * @param \core\event\base $event event data.
      * @return string HTML for the username column
      */
     public function col_fullnameuser($event)
@@ -195,18 +197,6 @@ class report_log_table_log extends table_sql
      * @deprecated since Moodle 2.9 MDL-48595 - please do not use this function any more.
      */
     public function update_users_and_courses_used()
-    {
-    }
-    /**
-     * Helper function to create list of user fullnames shown in log report.
-     *
-     * This will update $this->userfullnames array with userfullname,
-     * which will be used to render logs in table.
-     *
-     * @since   Moodle 2.9
-     * @return  void
-     */
-    protected function update_users_used()
     {
     }
 }

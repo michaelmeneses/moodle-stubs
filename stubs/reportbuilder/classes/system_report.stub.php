@@ -41,6 +41,14 @@ abstract class system_report extends base
     {
     }
     /**
+     * Provide default implementation of the report name. Extending classes can implement this method to provide their own name
+     *
+     * @return string
+     */
+    public static function get_name(): string
+    {
+    }
+    /**
      * Validates access to view this report
      *
      * This is necessary to implement independently of the page that would typically embed the report because

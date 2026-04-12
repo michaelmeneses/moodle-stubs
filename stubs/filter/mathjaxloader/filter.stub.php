@@ -68,4 +68,15 @@ class filter_mathjaxloader extends moodle_text_filter
     protected function insert_span($text, $start, $end)
     {
     }
+    /**
+     * Escapes HTML tags within a string.
+     *
+     * This function replaces HTML tags enclosed in curly brackets with their respective HTML entities.
+     *
+     * @param string $text The input string containing HTML tags.
+     * @return string Returns the input string with HTML tags escaped.
+     */
+    private function escape_html_tag_wrapper(string $text): string
+    {
+    }
 }

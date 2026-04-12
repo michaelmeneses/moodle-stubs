@@ -91,7 +91,7 @@ class data_controller extends \core_customfield\data_controller
     /**
      * Checks if the value is empty, overriding the base method to ensure it's the "text" element of our value being compared
      *
-     * @param mixed $value
+     * @param string|string[] $value
      * @return bool
      */
     protected function is_empty($value): bool

@@ -15,15 +15,15 @@
 class qtype_calculated extends question_type
 {
     /**
-     * @const string a placeholder is a letter, followed by almost any characters. (This should probably be restricted more.)
+     * @var string a placeholder is a letter, followed by almost any characters. (This should probably be restricted more.)
      */
     const PLACEHOLDER_REGEX_PART = '[[:alpha:]][^>} <`{"\']*';
     /**
-     * @const string REGEXP for a placeholder, wrapped in its {...} delimiters, with capturing brackets around the name.
+     * @var string REGEXP for a placeholder, wrapped in its {...} delimiters, with capturing brackets around the name.
      */
     const PLACEHODLER_REGEX = '~\{(' . self::PLACEHOLDER_REGEX_PART . ')\}~';
     /**
-     * @const string Regular expression that finds the formulas in content, with capturing brackets to get the forumlas.
+     * @var string Regular expression that finds the formulas in content, with capturing brackets to get the forumlas.
      */
     const FORMULAS_IN_TEXT_REGEX = '~\{=([^{}]*(?:\{' . self::PLACEHOLDER_REGEX_PART . '\}[^{}]*)*)\}~';
     const MAX_DATASET_ITEMS = 100;

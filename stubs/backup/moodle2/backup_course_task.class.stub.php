@@ -75,9 +75,10 @@ class backup_course_task extends backup_task
      * @param string $name the name of this type of encoded link.
      * @param string $path the path that identifies this type of link, up
      *      to the ?paramname= bit.
+     * @param bool $urlencoded whether to use urlencode() before replacing the path.
      * @return string content with one type of link encoded.
      */
-    private static function encode_links_helper($content, $name, $path)
+    private static function encode_links_helper(string $content, string $name, string $path, bool $urlencoded = false)
     {
     }
     // Protected API starts here
