@@ -54,7 +54,7 @@ jobs:
             git -C "${MOODLE_CACHE_DIR}" fetch --all
           else
             echo "Cache miss — cloning bare repo..."
-            git clone --bare --filter=blob:none "${MOODLE_REPO}" "${MOODLE_CACHE_DIR}"
+            git clone --bare "${MOODLE_REPO}" "${MOODLE_CACHE_DIR}"
           fi
 
           echo "Branches available:"
