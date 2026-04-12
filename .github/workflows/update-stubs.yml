@@ -25,13 +25,46 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   STUBS_REPO_SLUG: michaelmeneses/moodle-stubs
   MOODLE_REPO: git://git.moodle.org/moodle.git
+  MOODLE_CACHE_DIR: /tmp/bimoo-moodle-cache
 
 jobs:
+  # ──────────────────────────────────────────────────
+  # Phase 0: Prepare Moodle cache
+  # ──────────────────────────────────────────────────
+  prepare:
+    name: Prepare Moodle cache
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Restore Moodle bare cache
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.MOODLE_CACHE_DIR }}
+          key: moodle-bare-${{ github.run_id }}
+          restore-keys: |
+            moodle-bare-
+
+      - name: Clone or fetch Moodle
+        run: |
+          if [ -f "${MOODLE_CACHE_DIR}/HEAD" ]; then
+            echo "Cache hit — fetching updates..."
+            git -C "${MOODLE_CACHE_DIR}" fetch --all
+          else
+            echo "Cache miss — cloning bare repo..."
+            git clone --bare --filter=blob:none "${MOODLE_REPO}" "${MOODLE_CACHE_DIR}"
+          fi
+
+          echo "Branches available:"
+          git -C "${MOODLE_CACHE_DIR}" branch --list | wc -l
+
   # ──────────────────────────────────────────────────
   # Phase 1: Discover what needs updating
   # ──────────────────────────────────────────────────
   discover:
     name: Discover updates
+    needs: prepare
     runs-on: ubuntu-latest
     timeout-minutes: 10
     outputs:
@@ -91,7 +124,7 @@ jobs:
   # ──────────────────────────────────────────────────
   sync-branch:
     name: "Branch: ${{ matrix.item.branch }}"
-    needs: discover
+    needs: [prepare, discover]
     if: needs.discover.outputs.has_branches == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -114,19 +147,32 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist --no-interaction
 
-      - name: Configure git
-        run: |
-          git config --global user.name "Bimoo Bot"
-          git config --global user.email "bimoo-bot@users.noreply.github.com"
+      - name: Restore Moodle bare cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ env.MOODLE_CACHE_DIR }}
+          key: moodle-bare-${{ github.run_id }}
+          restore-keys: |
+            moodle-bare-
 
-      - name: Sync branch ${{ matrix.item.branch }}
+      - name: Configure git
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          STUBS_REPO="https://x-access-token:${GH_TOKEN}@github.com/${STUBS_REPO_SLUG}.git"
+          git config --global user.name "Bimoo Bot"
+          git config --global user.email "bimoo-bot@users.noreply.github.com"
+          git config --global url."https://x-access-token:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
+
+      - name: Sync branch ${{ matrix.item.branch }}
+        run: |
+          # Pre-populate work-dir with cached Moodle bare repo
+          mkdir -p /tmp/bimoo-work
+          if [ -f "${MOODLE_CACHE_DIR}/HEAD" ]; then
+            cp -r "${MOODLE_CACHE_DIR}" /tmp/bimoo-work/moodle
+          fi
 
           vendor/bin/bimoo sync:branches \
-            --stubs-repo="${STUBS_REPO}" \
+            --stubs-repo="https://github.com/${STUBS_REPO_SLUG}.git" \
             --moodle-repo="${MOODLE_REPO}" \
             --branches="${{ matrix.item.branch }}" \
             --force
@@ -136,7 +182,7 @@ jobs:
   # ──────────────────────────────────────────────────
   sync-tags:
     name: Sync new tags
-    needs: [discover, sync-branch]
+    needs: [prepare, discover, sync-branch]
     if: |
       always() &&
       needs.discover.outputs.has_tags == 'true' &&
@@ -157,10 +203,21 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist --no-interaction
 
+      - name: Restore Moodle bare cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ env.MOODLE_CACHE_DIR }}
+          key: moodle-bare-${{ github.run_id }}
+          restore-keys: |
+            moodle-bare-
+
       - name: Configure git
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config --global user.name "Bimoo Bot"
           git config --global user.email "bimoo-bot@users.noreply.github.com"
+          git config --global url."https://x-access-token:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
 
       - name: Extract tag list
         id: tags
@@ -172,13 +229,15 @@ jobs:
 
       - name: Sync tags
         if: steps.tags.outputs.list != ''
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
-          STUBS_REPO="https://x-access-token:${GH_TOKEN}@github.com/${STUBS_REPO_SLUG}.git"
+          # Pre-populate work-dir with cached Moodle bare repo
+          mkdir -p /tmp/bimoo-work
+          if [ -f "${MOODLE_CACHE_DIR}/HEAD" ]; then
+            cp -r "${MOODLE_CACHE_DIR}" /tmp/bimoo-work/moodle
+          fi
 
           vendor/bin/bimoo sync:tags \
-            --stubs-repo="${STUBS_REPO}" \
+            --stubs-repo="https://github.com/${STUBS_REPO_SLUG}.git" \
             --moodle-repo="${MOODLE_REPO}" \
             --tags="${{ steps.tags.outputs.list }}"
 
