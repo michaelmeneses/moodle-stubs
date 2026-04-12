@@ -237,12 +237,17 @@ function set_downloadcontent(int $id, bool $downloadcontent): bool
  * has been moved to {@link set_section_visible()} which was the only place from which
  * the parameter was used.
  *
+ * If $rebuildcache is set to false, the calling code is responsible for ensuring the cache is purged
+ * and rebuilt as appropriate. Consider using this if set_coursemodule_visible is called multiple times
+ * (e.g. in a loop).
+ *
  * @param int $id of the module
  * @param int $visible state of the module
  * @param int $visibleoncoursepage state of the module on the course page
+ * @param bool $rebuildcache If true (default), perform a partial cache purge and rebuild.
  * @return bool false when the module was not found, true otherwise
  */
-function set_coursemodule_visible($id, $visible, $visibleoncoursepage = 1)
+function set_coursemodule_visible($id, $visible, $visibleoncoursepage = 1, bool $rebuildcache = true)
 {
 }
 /**

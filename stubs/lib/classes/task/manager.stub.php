@@ -455,6 +455,16 @@ class manager
     {
     }
     /**
+     * This behaves similar to passthru but filters every line via
+     * the mtrace function so it can be post processed.
+     *
+     * @param string $command to run
+     * @return void
+     */
+    public static function passthru_via_mtrace(string $command)
+    {
+    }
+    /**
      * Executes an ad hoc task from web invocation using PHP CLI.
      *
      * @param int   $taskid Task to execute via CLI.

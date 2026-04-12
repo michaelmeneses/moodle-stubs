@@ -45,6 +45,15 @@ class lesson_page_type_endofcluster extends lesson_page
     public function valid_page_and_view(&$validpages, &$pageviews)
     {
     }
+    /**
+     * Creates answers within the database for this end of cluster page. Usually only ever
+     * called when creating a new page instance.
+     * @param object $properties
+     * @return array
+     */
+    public function create_answers($properties)
+    {
+    }
 }
 class lesson_add_page_form_endofcluster extends lesson_add_page_form_base
 {

@@ -23,7 +23,7 @@
 namespace core_admin\table;
 
 /**
- * Tiny admin settings.
+ * Admin tool settings.
  *
  * @package core_admin
  * @copyright 2023 Andrew Lyons <andrew@nicols.co.uk>
@@ -32,9 +32,6 @@ namespace core_admin\table;
 class tool_plugin_management_table extends \core_admin\table\plugin_management_table
 {
     protected function get_plugintype(): string
-    {
-    }
-    public function guess_base_url(): void
     {
     }
     protected function get_column_list(): array

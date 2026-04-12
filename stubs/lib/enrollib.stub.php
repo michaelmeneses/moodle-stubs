@@ -486,9 +486,10 @@ function enrol_get_course_by_user_enrolment_id($ueid)
  * @param bool $onlyactive consider only active enrolments in enabled plugins and time restrictions
  * @param array $usersfilter Limit the results obtained to this list of user ids. $uefilter compatibility not guaranteed.
  * @param array $uefilter Limit the results obtained to this list of user enrolment ids. $usersfilter compatibility not guaranteed.
+ * @param array $usergroups Limit the results of users to the ones that belong to one of the submitted group ids.
  * @return stdClass[]
  */
-function enrol_get_course_users($courseid = false, $onlyactive = false, $usersfilter = array(), $uefilter = array())
+function enrol_get_course_users($courseid = false, $onlyactive = false, $usersfilter = [], $uefilter = [], $usergroups = [])
 {
 }
 /**

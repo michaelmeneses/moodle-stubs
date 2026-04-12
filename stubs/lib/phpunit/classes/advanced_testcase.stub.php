@@ -57,14 +57,6 @@ abstract class advanced_testcase extends base_testcase
     {
     }
     /**
-     * Hook into the setInIsolation method to define an optional constant.
-     *
-     * @param bool $inisolation
-     */
-    public function setInIsolation(bool $inisolation): void
-    {
-    }
-    /**
      * Runs the bare test sequence.
      * @return void
      */
