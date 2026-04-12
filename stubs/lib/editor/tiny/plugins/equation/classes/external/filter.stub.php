@@ -52,10 +52,11 @@ class filter extends external_api
      *
      * @param int $contextid Context ID.
      * @param string $content Equation content.
+     * @param string $striptags Strip HTML tags.
      * @return array
      * @since Moodle 4.1
      */
-    public static function execute(int $contextid, string $content): array
+    public static function execute(int $contextid, string $content, bool $striptags = false): array
     {
     }
     /**
