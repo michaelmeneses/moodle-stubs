@@ -37,7 +37,9 @@ namespace core\lock;
  * 2 different forms of lock functions, some accepting a single int, and some accepting 2 ints. This implementation
  * uses the 2 int version so that it uses a separate namespace from the session locking. The second note,
  * is because postgres uses integer keys for locks, we first need to map strings to a unique integer. This is done
- * using a prefix of a sha1 hash converted to an integer.
+ * using a prefix of a sha1 hash converted to an integer. There is a realistic chance of collisions by using this
+ * prefix when locking multiple resources at the same time (multiple resource identifiers leading to the
+ * same token/prefix). We need to deal with that.
  *
  * @package   core
  * @category  lock
@@ -54,8 +56,10 @@ class postgres_lock_factory implements lock_factory
     protected $db;
     /** @var string $type Used to prefix lock keys */
     protected $type;
-    /** @var array $openlocks - List of held locks - used by auto-release */
-    protected $openlocks = array();
+    /** @var int[] $resourcetokens Mapping of held locks (resource identifier => internal token) */
+    protected $resourcetokens = [];
+    /** @var int[] $locksbytoken Mapping of held locks (db connection => internal token => number of locks held) */
+    protected static $locksbytoken = [];
     /**
      * Calculate a unique instance id based on the database name and prefix.
      * @return int.
@@ -118,7 +122,7 @@ class postgres_lock_factory implements lock_factory
      * @param string $resource - The identifier for the lock. Should use frankenstyle prefix.
      * @param int $timeout - The number of seconds to wait for a lock before giving up.
      * @param int $maxlifetime - Unused by this lock type.
-     * @return boolean - true if a lock was obtained.
+     * @return \core\lock\lock|boolean - An instance of \core\lock\lock if the lock was obtained, or false.
      */
     public function get_lock($resource, $timeout, $maxlifetime = 86400)
     {
