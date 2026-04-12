@@ -467,6 +467,7 @@ function feedback_get_template_list($course, $onlyownorpublic = '')
  *
  * @param string $typ
  * @return feedback_item_base the instance of itemclass
+ * @throws moodle_exception For invalid type
  */
 function feedback_get_item_class($typ)
 {

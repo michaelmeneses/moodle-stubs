@@ -73,3 +73,10 @@ function tool_mobile_standard_footer_html()
 function tool_mobile_pre_processor_message_send($procname, $data)
 {
 }
+/**
+ * Callback to add headers before the HTTP headers are sent.
+ *
+ */
+function tool_mobile_before_http_headers()
+{
+}
