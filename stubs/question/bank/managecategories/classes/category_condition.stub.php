@@ -177,4 +177,8 @@ class category_condition extends condition
     public function is_required(): bool
     {
     }
+    #[\Override]
+    public function filter_invalid_values(array $filterconditions): array
+    {
+    }
 }

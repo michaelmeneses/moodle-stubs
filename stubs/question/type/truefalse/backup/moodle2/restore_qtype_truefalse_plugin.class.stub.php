@@ -36,4 +36,8 @@ class restore_qtype_truefalse_plugin extends restore_qtype_plugin
     public function recode_legacy_state_answer($state)
     {
     }
+    #[\Override]
+    public function define_excluded_identity_hash_fields(): array
+    {
+    }
 }

@@ -69,10 +69,7 @@ class question_history_view extends view
     public function allow_add_questions(): bool
     {
     }
-    /**
-     * Default sort for question data.
-     * @return array
-     */
+    #[\Override]
     protected function default_sort(): array
     {
     }

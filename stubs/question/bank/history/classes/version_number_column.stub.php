@@ -44,4 +44,8 @@ class version_number_column extends column_base
     public function get_extra_classes(): array
     {
     }
+    #[\Override]
+    public function is_sortable()
+    {
+    }
 }
