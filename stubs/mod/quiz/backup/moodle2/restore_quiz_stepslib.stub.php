@@ -43,6 +43,10 @@ class restore_quiz_activity_structure_step extends restore_questions_activity_st
      * shufflequestionsoption quiz option which has moved to the quiz_sections table.
      */
     protected $legacyshufflequestionsoption = false;
+    /**
+     * @var array Track old question ids that need to be removed at the end of the restore.
+     */
+    protected $oldquestionids = [];
     protected function define_structure()
     {
     }
@@ -100,6 +104,9 @@ class restore_quiz_activity_structure_step extends restore_questions_activity_st
     {
     }
     protected function after_execute()
+    {
+    }
+    protected function after_restore()
     {
     }
 }

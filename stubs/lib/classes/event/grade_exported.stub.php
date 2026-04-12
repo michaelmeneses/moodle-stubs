@@ -20,17 +20,10 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-/**
- * Grade report viewed event.
- *
- * @package    core
- * @copyright  2016 Zane Karl <zkarl@oid.ucla.edu>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 namespace core\event;
 
 /**
- * Grade report viewed event class.
+ * Abstract grade report exported event class.
  *
  * @package    core
  * @since      Moodle 3.2

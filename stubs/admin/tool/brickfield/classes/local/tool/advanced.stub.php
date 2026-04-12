@@ -55,6 +55,16 @@ class advanced extends tool
     {
     }
     /**
+     * Builds context data used to render a single grid item on the advanced page.
+     * @param string $icon
+     * @param string $heading
+     * @param string $content
+     * @return array
+     */
+    protected function get_grid_item_context(string $icon, string $heading, string $content): array
+    {
+    }
+    /**
      * Return the data for renderer / template display.
      * @return \stdClass
      */

@@ -139,6 +139,26 @@ class restore_plan extends base_plan implements loggable
     public function execute_after_restore()
     {
     }
+    /**
+     * Compares the provided moodle version with the one the backup was taken from.
+     *
+     * @param int $version Moodle version number (YYYYMMDD or YYYYMMDDXX)
+     * @param string $operator Operator to compare the provided version to the backup version. {@see version_compare()}
+     * @return bool True if the comparison passes.
+     */
+    public function backup_version_compare(int $version, string $operator): bool
+    {
+    }
+    /**
+     * Compares the provided moodle release with the one the backup was taken from.
+     *
+     * @param string $release Moodle release (X.Y or X.Y.Z)
+     * @param string $operator Operator to compare the provided release to the backup release. {@see version_compare()}
+     * @return bool True if the comparison passes.
+     */
+    public function backup_release_compare(string $release, string $operator): bool
+    {
+    }
 }
 /*
  * Exception class used by all the @restore_plan stuff
