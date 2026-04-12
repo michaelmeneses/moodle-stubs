@@ -38,6 +38,14 @@ class external_backpack extends \moodleform
     public function definition()
     {
     }
+    #[\Override]
+    public function definition_after_data(): void
+    {
+    }
+    #[\Override]
+    public function set_data($backpack)
+    {
+    }
     /**
      * Validate the data from the form.
      *
@@ -49,12 +57,44 @@ class external_backpack extends \moodleform
     {
     }
     /**
-     * Return submitted data if properly submitted or returns NULL if validation fails or
-     * if there is no submitted data.
+     * Validate the data for Open Badges v2.0.
      *
-     * @return object|void
+     * @param array $data Form data.
+     * @return string[] An array of error messages.
      */
-    public function get_data()
+    private function validate_obv20(array $data): array
+    {
+    }
+    /**
+     * Validate the data for Open Badges v2.1.
+     *
+     * @param array $data Form data.
+     * @return string[] An array of error messages.
+     */
+    private function validate_obv2p1(array $data): array
+    {
+    }
+    /**
+     * Add provider fields to the form.
+     */
+    protected function add_provider_fields(): void
+    {
+    }
+    /**
+     * Add Canvas backpack specific issuer auth details.
+     *
+     * @param string|null $email The email addressed provided or null if it's new.
+     */
+    protected function add_connect_issuer_canvas_fields(?string $email): void
+    {
+    }
+    /**
+     * Add generic backpack issuer auth details.
+     *
+     * @param \stdClass|null $backpack The backpack instance.
+     * @param string|null $email The issuer email or null if it's new.
+     */
+    protected function add_connect_issuer_fields(?\stdClass $backpack, ?string $email): void
     {
     }
     /**

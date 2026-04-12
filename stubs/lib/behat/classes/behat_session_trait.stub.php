@@ -450,11 +450,14 @@ trait behat_session_trait
     /**
      * Helper function to execute api in a given context.
      *
-     * @param string $contextapi context in which api is defined.
+     * Note: The contextapi does not support a callback.
+     *
+     * @param string|array $contextapi context in which api is defined.
      * @param array|mixed $params list of params to pass or a single parameter
      * @throws Exception
+     * @throws DriverException
      */
-    protected function execute($contextapi, $params = array())
+    protected function execute(string|array $contextapi, mixed $params = []): void
     {
     }
     /**

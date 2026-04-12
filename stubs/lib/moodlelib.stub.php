@@ -687,9 +687,10 @@ function html_is_blank($string)
  * @param string|int|bool|null $value the value to set (without magic quotes),
  *               null to unset the value
  * @param string $plugin (optional) the plugin scope, default null
+ * @param boolean $log (optional) should this emit to the config log
  * @return bool true or exception
  */
-function set_config($name, $value, $plugin = null)
+function set_config($name, $value, $plugin = null, bool $log = false)
 {
 }
 /**
@@ -719,9 +720,10 @@ function get_config($plugin, $name = null)
  *
  * @param string $name the key to set
  * @param string $plugin (optional) the plugin scope
+ * @param boolean $log (optional) should this emit to the config log
  * @return boolean whether the operation succeeded.
  */
-function unset_config($name, $plugin = null)
+function unset_config($name, $plugin = null, bool $log = false)
 {
 }
 /**

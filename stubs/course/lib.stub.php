@@ -1073,7 +1073,7 @@ function course_get_user_navigation_options($context, $course = null)
  * This function also handles the frontpage settings.
  *
  * @param  stdClass $course  course object (for frontpage it should be a clone of $SITE)
- * @param  stdClass $context context object (course context)
+ * @param  context_course $context context object (course context)
  * @return stdClass          the administration options in a course and their availability status
  * @since  Moodle 3.2
  */

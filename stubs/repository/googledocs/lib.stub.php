@@ -26,10 +26,6 @@ class repository_googledocs extends repository
      * @var \core\oauth2\issuer
      */
     private $issuer = null;
-    /**
-     * Additional scopes required for drive.
-     */
-    const SCOPES = 'https://www.googleapis.com/auth/drive';
     /** @var string Defines the path node identifier for the repository root. */
     const REPOSITORY_ROOT_ID = 'repository_root';
     /** @var string Defines the path node identifier for the my drive root. */
@@ -56,7 +52,7 @@ class repository_googledocs extends repository
      * @param moodle_url $overrideurl - Use this url instead of the repo callback.
      * @return \core\oauth2\client
      */
-    protected function get_user_oauth_client($overrideurl = false)
+    public function get_user_oauth_client($overrideurl = false)
     {
     }
     /**
@@ -275,19 +271,6 @@ class repository_googledocs extends repository
     {
     }
     /**
-     * Copy a file and return the new file details. A side effect of the copy
-     * is that the owner will be the account authenticated with this oauth client.
-     *
-     * @param \repository_googledocs\rest $client Authenticated client.
-     * @param string $fileid The file we are copying.
-     * @param string $name The original filename (don't change it).
-     *
-     * @return stdClass file details.
-     */
-    protected function copy_file(\repository_googledocs\rest $client, $fileid, $name)
-    {
-    }
-    /**
      * Add a writer to the permissions on the file (temporary).
      *
      * @param \repository_googledocs\rest $client Authenticated client.
@@ -356,6 +339,30 @@ class repository_googledocs extends repository
      * @return string updated reference (final one before it's saved to db).
      */
     public function reference_file_selected($reference, $context, $component, $filearea, $itemid)
+    {
+    }
+    /**
+     * Uploads a file to Google Docs using the provided REST client.
+     *
+     * @param \repository_googledocs\rest $client The REST client for Google Docs API communication.
+     * @param string $filepath The local path to the file to be uploaded.
+     * @param string $filename The name to assign to the uploaded file.
+     * @param string $exportformat The export format for the file (e.g., 'pdf', 'docx').
+     * @param string $parentid The ID of the parent folder in Google Drive where the file will be uploaded.
+     * @return stdClass|coding_exception Returns the response from the Google Docs API after uploading the file.
+     */
+    public function upload_file(\repository_googledocs\rest $client, string $filepath, string $filename, string $exportformat, string $parentid): stdClass
+    {
+    }
+    /**
+     * Downloads a file from Google Docs using the provided user service.
+     *
+     * @param \repository_googledocs\rest $userservice The user service instance for Google Docs REST API.
+     * @param string $fileid The ID of the file to download.
+     * @param string $originalfilename The file original name
+     * @return array|repository_exception The downloaded file content or relevant response.
+     */
+    protected function download_file(\repository_googledocs\rest $userservice, string $fileid, string $originalfilename): array|repository_exception
     {
     }
     /**
