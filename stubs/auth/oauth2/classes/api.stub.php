@@ -127,7 +127,7 @@ class api
     {
     }
     /**
-     * Delete linked login
+     * Delete a users own linked login
      *
      * Requires auth/oauth2:managelinkedlogins capability at the user context.
      *
