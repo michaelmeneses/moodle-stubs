@@ -189,6 +189,15 @@ class column_manager extends column_manager_base
     public function get_hidden_columns(): array
     {
     }
+    /**
+     * Returns an array of column objects.
+     *
+     * @param array $columnsnames Array of columns.
+     * @return column_base[] Array of $columnsname => $columnobject
+     */
+    public function create_column_objects(array $columnsnames): array
+    {
+    }
     public function get_column_width(column_base $column): string
     {
     }

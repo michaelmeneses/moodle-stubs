@@ -73,7 +73,7 @@ abstract class activity_custom_completion
     /**
      * Fetches the overall completion status of this activity instance for a user based on its available custom completion rules.
      *
-     * @return int The completion state (e.g. COMPLETION_COMPLETE, COMPLETION_INCOMPLETE).
+     * @return int The completion state (e.g. COMPLETION_COMPLETE, COMPLETION_INCOMPLETE, COMPLETION_COMPLETE_FAIL).
      */
     public function get_overall_completion_state(): int
     {

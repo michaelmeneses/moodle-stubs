@@ -36,12 +36,19 @@ class preview_action_column extends \core_question\local\bank\column_base
     public function get_extra_classes(): array
     {
     }
+    #[\Override]
     public function get_title(): string
     {
     }
+    #[\Override]
     public function get_name()
     {
     }
+    #[\Override]
+    public function get_default_width(): int
+    {
+    }
+    #[\Override]
     protected function display_content($question, $rowclasses)
     {
     }
