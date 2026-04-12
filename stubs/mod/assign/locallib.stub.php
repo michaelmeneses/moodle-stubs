@@ -2359,6 +2359,14 @@ class assign
     public function is_attempt_in_progress(?int $userid = null, int $groupid = 0, int $attemptnumber = -1): bool
     {
     }
+    /**
+     * Is "Allow partial release of grades while marking anonymously" enabled?
+     *
+     * @return bool
+     */
+    public function is_marking_anonymous(): bool
+    {
+    }
 }
 /**
  * Portfolio caller class for mod_assign.

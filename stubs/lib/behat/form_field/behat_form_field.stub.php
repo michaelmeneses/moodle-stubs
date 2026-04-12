@@ -177,4 +177,12 @@ class behat_form_field implements behat_session_interface
     protected function get_field_locator($locatortype = false)
     {
     }
+    /**
+     * Returns the field node.
+     *
+     * @return NodeElement
+     */
+    public function get_node(): NodeElement
+    {
+    }
 }

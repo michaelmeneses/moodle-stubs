@@ -1022,6 +1022,8 @@ class curl
     private $ignoresecurity;
     /** @var array $mockresponses For unit testing only - return the head of this list instead of making the next request. */
     private static $mockresponses = [];
+    /** @var array $curlresolveinfo Resolve addresses for the URL that have passed cuRL security checks, in a CURLOPT_RESOLVE compatible format. */
+    private $curlresolveinfo = [];
     /** @var array temporary params value if the value is not belongs to class stored_file. */
     public $_tmp_file_post_params = [];
     /**

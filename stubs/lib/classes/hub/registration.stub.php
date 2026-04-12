@@ -111,6 +111,14 @@ class registration
     {
     }
     /**
+     * Returns registration secret.
+     *
+     * @return string
+     */
+    public static function get_secret(): string
+    {
+    }
+    /**
      * When was the registration last updated
      *
      * @return int|null timestamp or null if site is not registered
@@ -294,6 +302,32 @@ class registration
      * @return array
      */
     private static function get_ai_usage_time_range(bool $format = false): array
+    {
+    }
+    /**
+     * Displays AI usage data for all providers.
+     *
+     * @return array Array containing usage data, grouped by provider
+     */
+    public static function show_ai_usage(): array
+    {
+    }
+    /**
+     * Formats individual actions for a provider.
+     *
+     * @param array $actions Raw actions data
+     * @return array Formatted action data
+     */
+    private static function format_ai_usage_actions(array $actions): array
+    {
+    }
+    /**
+     * Formats action values into formatted strings.
+     *
+     * @param array $values Action values to format
+     * @return array Formatted action values
+     */
+    private static function format_ai_usage_action_values(array $values): array
     {
     }
     /**
