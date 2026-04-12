@@ -86,7 +86,7 @@ class Bucket
      * @param array   $options      Bucket options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct(Manager $manager, $databaseName, array $options = [])
+    public function __construct(Manager $manager, string $databaseName, array $options = [])
     {
     }
     /**
@@ -151,7 +151,7 @@ class Bucket
      * @throws StreamException if the file could not be uploaded
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
      */
-    public function downloadToStreamByName($filename, $destination, array $options = [])
+    public function downloadToStreamByName(string $filename, $destination, array $options = [])
     {
     }
     /**
@@ -326,7 +326,7 @@ class Bucket
      * @throws FileNotFoundException if no file could be selected
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
      */
-    public function openDownloadStreamByName($filename, array $options = [])
+    public function openDownloadStreamByName(string $filename, array $options = [])
     {
     }
     /**
@@ -349,7 +349,7 @@ class Bucket
      * @param array  $options  Upload options
      * @return resource
      */
-    public function openUploadStream($filename, array $options = [])
+    public function openUploadStream(string $filename, array $options = [])
     {
     }
     /**
@@ -360,7 +360,7 @@ class Bucket
      * @throws FileNotFoundException if no file could be selected
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
      */
-    public function rename($id, $newFilename)
+    public function rename($id, string $newFilename)
     {
     }
     /**
@@ -387,32 +387,27 @@ class Bucket
      * @throws StreamException if the file could not be uploaded
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
      */
-    public function uploadFromStream($filename, $source, array $options = [])
+    public function uploadFromStream(string $filename, $source, array $options = [])
     {
     }
     /**
      * Creates a path for an existing GridFS file.
      *
-     * @param stdClass $file GridFS file document
-     * @return string
+     * @param object $file GridFS file document
      */
-    private function createPathForFile(stdClass $file)
+    private function createPathForFile(object $file): string
     {
     }
     /**
      * Creates a path for a new GridFS file, which does not yet have an ID.
-     *
-     * @return string
      */
-    private function createPathForUpload()
+    private function createPathForUpload(): string
     {
     }
     /**
      * Returns the names of the files collection.
-     *
-     * @return string
      */
-    private function getFilesNamespace()
+    private function getFilesNamespace(): string
     {
     }
     /**
@@ -422,25 +417,24 @@ class Bucket
      * respect the Bucket's type map.
      *
      * @param resource $stream GridFS stream
-     * @return stdClass
      * @throws InvalidArgumentException
      */
-    private function getRawFileDocumentForStream($stream)
+    private function getRawFileDocumentForStream($stream): object
     {
     }
     /**
      * Opens a readable stream for the GridFS file.
      *
-     * @param stdClass $file GridFS file document
+     * @param object $file GridFS file document
      * @return resource
      */
-    private function openDownloadStreamByFile(stdClass $file)
+    private function openDownloadStreamByFile(object $file)
     {
     }
     /**
      * Registers the GridFS stream wrapper if it is not already registered.
      */
-    private function registerStreamWrapper()
+    private function registerStreamWrapper(): void
     {
     }
 }

@@ -33,7 +33,7 @@ class FileNotFoundException extends RuntimeException
      * @param string  $namespace Namespace for the files collection
      * @return self
      */
-    public static function byFilenameAndRevision($filename, $revision, $namespace)
+    public static function byFilenameAndRevision(string $filename, int $revision, string $namespace)
     {
     }
     /**
@@ -43,7 +43,7 @@ class FileNotFoundException extends RuntimeException
      * @param string $namespace Namespace for the files collection
      * @return self
      */
-    public static function byId($id, $namespace)
+    public static function byId($id, string $namespace)
     {
     }
 }

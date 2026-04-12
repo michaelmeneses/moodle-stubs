@@ -38,10 +38,7 @@ class CollectionInfoCommandIterator extends IteratorIterator implements Collecti
 {
     /** @var string|null */
     private $databaseName;
-    /**
-     * @param string|null $databaseName
-     */
-    public function __construct(Traversable $iterator, $databaseName = null)
+    public function __construct(Traversable $iterator, ?string $databaseName = null)
     {
     }
     /**
@@ -49,10 +46,8 @@ class CollectionInfoCommandIterator extends IteratorIterator implements Collecti
      *
      * @see CollectionInfoIterator::current()
      * @see https://php.net/iterator.current
-     * @return CollectionInfo
      */
-    #[ReturnTypeWillChange]
-    public function current()
+    public function current(): CollectionInfo
     {
     }
 }

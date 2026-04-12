@@ -28,6 +28,10 @@ class HTMLPurifier_AttrTransform_SafeParam extends HTMLPurifier_AttrTransform
      * @type HTMLPurifier_AttrDef_URI
      */
     private $uri;
+    /**
+     * @type HTMLPurifier_AttrDef_Enum
+     */
+    public $wmode;
     public function __construct()
     {
     }

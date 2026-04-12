@@ -50,24 +50,21 @@ class ChangeStreamIterator extends IteratorIterator implements CommandSubscriber
     private $server;
     /**
      * @internal
-     * @param Cursor            $cursor
-     * @param integer           $firstBatchSize
      * @param array|object|null $initialResumeToken
-     * @param object|null       $postBatchResumeToken
      */
-    public function __construct(Cursor $cursor, $firstBatchSize, $initialResumeToken, $postBatchResumeToken)
+    public function __construct(Cursor $cursor, int $firstBatchSize, $initialResumeToken, ?object $postBatchResumeToken)
     {
     }
     /** @internal */
-    final public function commandFailed(CommandFailedEvent $event)
+    final public function commandFailed(CommandFailedEvent $event): void
     {
     }
     /** @internal */
-    final public function commandStarted(CommandStartedEvent $event)
+    final public function commandStarted(CommandStartedEvent $event): void
     {
     }
     /** @internal */
-    final public function commandSucceeded(CommandSucceededEvent $event)
+    final public function commandSucceeded(CommandSucceededEvent $event): void
     {
     }
     /**
@@ -76,6 +73,15 @@ class ChangeStreamIterator extends IteratorIterator implements CommandSubscriber
      */
     #[ReturnTypeWillChange]
     public function current()
+    {
+    }
+    /**
+     * Necessary to let psalm know that we're always expecting a cursor as inner
+     * iterator. This could be side-stepped due to the class not being final,
+     * but it's very much an invalid use-case. This method can be dropped in 2.0
+     * once the class is final.
+     */
+    final public function getInnerIterator(): Cursor
     {
     }
     /**
@@ -106,26 +112,20 @@ class ChangeStreamIterator extends IteratorIterator implements CommandSubscriber
     }
     /**
      * @see https://php.net/iteratoriterator.rewind
-     * @return void
      */
-    #[ReturnTypeWillChange]
-    public function next()
+    public function next(): void
     {
     }
     /**
      * @see https://php.net/iteratoriterator.rewind
-     * @return void
      */
-    #[ReturnTypeWillChange]
-    public function rewind()
+    public function rewind(): void
     {
     }
     /**
      * @see https://php.net/iteratoriterator.valid
-     * @return boolean
      */
-    #[ReturnTypeWillChange]
-    public function valid()
+    public function valid(): bool
     {
     }
     /**
@@ -141,19 +141,16 @@ class ChangeStreamIterator extends IteratorIterator implements CommandSubscriber
     }
     /**
      * Return whether the iterator is positioned at the end of the batch.
-     *
-     * @return boolean
      */
-    private function isAtEndOfBatch()
+    private function isAtEndOfBatch(): bool
     {
     }
     /**
      * Perform housekeeping after an iteration event.
      *
      * @see https://github.com/mongodb/specifications/blob/master/source/change-streams/change-streams.rst#updating-the-cached-resume-token
-     * @param boolean $incrementBatchPosition
      */
-    private function onIteration($incrementBatchPosition)
+    private function onIteration(bool $incrementBatchPosition): void
     {
     }
 }

@@ -79,14 +79,13 @@ class CountDocuments implements Executable
      * @param array        $options        Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct($databaseName, $collectionName, $filter, array $options = [])
+    public function __construct(string $databaseName, string $collectionName, $filter, array $options = [])
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
-     * @param Server $server
      * @return integer
      * @throws UnexpectedValueException if the command response was malformed
      * @throws UnsupportedException if collation or read concern is used and unsupported
@@ -95,10 +94,7 @@ class CountDocuments implements Executable
     public function execute(Server $server)
     {
     }
-    /**
-     * @return Aggregate
-     */
-    private function createAggregate()
+    private function createAggregate(): Aggregate
     {
     }
 }

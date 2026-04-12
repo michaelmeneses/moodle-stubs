@@ -56,6 +56,7 @@ class RowIterator implements IteratorInterface
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
     }
@@ -74,6 +75,7 @@ class RowIterator implements IteratorInterface
      *
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
     }
@@ -84,6 +86,7 @@ class RowIterator implements IteratorInterface
      * @throws \Box\Spout\Common\Exception\EncodingConversionException If unable to convert data to UTF-8
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
     }
@@ -125,6 +128,7 @@ class RowIterator implements IteratorInterface
      *
      * @return Row|null
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
     }
@@ -134,6 +138,7 @@ class RowIterator implements IteratorInterface
      *
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
     }

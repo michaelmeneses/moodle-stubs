@@ -44,7 +44,7 @@ class WritableStream
     private $collectionWrapper;
     /** @var array */
     private $file;
-    /** @var resource */
+    /** @var HashContext|null */
     private $hashCtx;
     /** @var boolean */
     private $isClosed = false;
@@ -78,40 +78,35 @@ class WritableStream
      * @param array             $options           Upload options
      * @throws InvalidArgumentException
      */
-    public function __construct(CollectionWrapper $collectionWrapper, $filename, array $options = [])
+    public function __construct(CollectionWrapper $collectionWrapper, string $filename, array $options = [])
     {
     }
     /**
      * Return internal properties for debugging purposes.
      *
      * @see https://php.net/manual/en/language.oop5.magic.php#language.oop5.magic.debuginfo
-     * @return array
      */
-    public function __debugInfo()
+    public function __debugInfo(): array
     {
     }
     /**
      * Closes an active stream and flushes all buffered data to GridFS.
      */
-    public function close()
+    public function close(): void
     {
     }
     /**
      * Return the stream's file document.
-     *
-     * @return stdClass
      */
-    public function getFile()
+    public function getFile(): object
     {
     }
     /**
      * Return the stream's size in bytes.
      *
      * Note: this value will increase as more data is written to the stream.
-     *
-     * @return integer
      */
-    public function getSize()
+    public function getSize(): int
     {
     }
     /**
@@ -122,9 +117,8 @@ class WritableStream
      * always the end of the stream.
      *
      * @see WritableStream::getSize()
-     * @return integer
      */
-    public function tell()
+    public function tell(): int
     {
     }
     /**
@@ -134,12 +128,11 @@ class WritableStream
      * which point a chunk document will be inserted and the buffer reset.
      *
      * @param string $data Binary data to write
-     * @return integer
      */
-    public function writeBytes($data)
+    public function writeBytes(string $data): int
     {
     }
-    private function abort()
+    private function abort(): void
     {
     }
     /**
@@ -148,7 +141,7 @@ class WritableStream
     private function fileCollectionInsert()
     {
     }
-    private function insertChunkFromBuffer()
+    private function insertChunkFromBuffer(): void
     {
     }
 }

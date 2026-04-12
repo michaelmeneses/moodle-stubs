@@ -61,14 +61,13 @@ class ListCollections implements Executable
      * @param array  $options      Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct($databaseName, array $options = [])
+    public function __construct(string $databaseName, array $options = [])
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
-     * @param Server $server
      * @return CollectionInfoIterator
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
      */

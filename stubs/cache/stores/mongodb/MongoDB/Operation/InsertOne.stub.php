@@ -62,14 +62,13 @@ class InsertOne implements Executable
      * @param array        $options        Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct($databaseName, $collectionName, $document, array $options = [])
+    public function __construct(string $databaseName, string $collectionName, $document, array $options = [])
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
-     * @param Server $server
      * @return InsertOneResult
      * @throws UnsupportedException if write concern is used and unsupported
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
@@ -81,18 +80,16 @@ class InsertOne implements Executable
      * Create options for constructing the bulk write.
      *
      * @see https://php.net/manual/en/mongodb-driver-bulkwrite.construct.php
-     * @return array
      */
-    private function createBulkWriteOptions()
+    private function createBulkWriteOptions(): array
     {
     }
     /**
      * Create options for executing the bulk write.
      *
      * @see https://php.net/manual/en/mongodb-driver-server.executebulkwrite.php
-     * @return array
      */
-    private function createExecuteOptions()
+    private function createExecuteOptions(): array
     {
     }
 }

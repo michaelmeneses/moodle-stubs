@@ -2763,6 +2763,14 @@ function mtrace($string, $eol = "\n", $sleep = 0)
 {
 }
 /**
+ * Helper to {@see mtrace()} an exception or throwable, including all relevant information.
+ *
+ * @param Throwable $e the error to ouptput.
+ */
+function mtrace_exception(Throwable $e): void
+{
+}
+/**
  * Replace 1 or more slashes or backslashes to 1 slash
  *
  * @param string $path The path to strip

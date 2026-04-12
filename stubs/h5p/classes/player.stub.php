@@ -234,9 +234,9 @@ class player
     /**
      * Return the info export file for Mobile App.
      *
-     * @return array
+     * @return array or null
      */
-    public function get_export_file(): array
+    public function get_export_file(): ?array
     {
     }
 }

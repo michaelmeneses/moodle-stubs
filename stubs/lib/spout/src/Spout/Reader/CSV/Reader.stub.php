@@ -20,6 +20,16 @@ class Reader extends ReaderAbstract
     protected $sheetIterator;
     /** @var string Original value for the "auto_detect_line_endings" INI value */
     protected $originalAutoDetectLineEndings;
+    /** @var bool Whether the code is running with PHP >= 8.1 */
+    private $isRunningAtLeastPhp81;
+    /**
+     * @param OptionsManagerInterface $optionsManager
+     * @param GlobalFunctionsHelper $globalFunctionsHelper
+     * @param InternalEntityFactoryInterface $entityFactory
+     */
+    public function __construct(OptionsManagerInterface $optionsManager, GlobalFunctionsHelper $globalFunctionsHelper, InternalEntityFactoryInterface $entityFactory)
+    {
+    }
     /**
      * Sets the field delimiter for the CSV.
      * Needs to be called before opening the reader.

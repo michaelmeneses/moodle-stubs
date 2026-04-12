@@ -26,6 +26,8 @@ namespace MongoDB;
 /**
  * Iterator for a change stream.
  *
+ * @psalm-type ResumeCallable = callable(array|object|null, bool): ChangeStreamIterator
+ *
  * @api
  * @see \MongoDB\Collection::watch()
  * @see https://mongodb.com/docs/manual/reference/method/db.watch/#mongodb-method-db.watch
@@ -77,7 +79,7 @@ class ChangeStream implements Iterator
     ];
     /** @var int */
     private static $wireVersionForResumableChangeStreamError = 9;
-    /** @var callable */
+    /** @var ResumeCallable|null */
     private $resumeCallable;
     /** @var ChangeStreamIterator */
     private $iterator;
@@ -92,8 +94,8 @@ class ChangeStream implements Iterator
     private $hasAdvanced = false;
     /**
      * @internal
-     * @param ChangeStreamIterator $iterator
-     * @param callable             $resumeCallable
+     *
+     * @param ResumeCallable $resumeCallable
      */
     public function __construct(ChangeStreamIterator $iterator, callable $resumeCallable)
     {
@@ -162,10 +164,8 @@ class ChangeStream implements Iterator
      * Determines if an exception is a resumable error.
      *
      * @see https://github.com/mongodb/specifications/blob/master/source/change-streams/change-streams.rst#resumable-error
-     * @param RuntimeException $exception
-     * @return boolean
      */
-    private function isResumableError(RuntimeException $exception)
+    private function isResumableError(RuntimeException $exception): bool
     {
     }
     /**
@@ -174,24 +174,21 @@ class ChangeStream implements Iterator
      * @param boolean $incrementKey Increment $key if there is a current result
      * @throws ResumeTokenException
      */
-    private function onIteration($incrementKey)
+    private function onIteration(bool $incrementKey): void
     {
     }
     /**
      * Recreates the ChangeStreamIterator after a resumable server error.
-     *
-     * @return void
      */
-    private function resume()
+    private function resume(): void
     {
     }
     /**
      * Either resumes after a resumable error or re-throws the exception.
      *
-     * @param RuntimeException $exception
      * @throws RuntimeException
      */
-    private function resumeOrThrow(RuntimeException $exception)
+    private function resumeOrThrow(RuntimeException $exception): void
     {
     }
 }

@@ -31,6 +31,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
     }
@@ -40,6 +41,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
     }
@@ -49,6 +51,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
     }
@@ -58,6 +61,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return \Box\Spout\Reader\XLSX\Sheet
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
     }
@@ -67,6 +71,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
     }
@@ -75,6 +80,7 @@ class SheetIterator implements IteratorInterface
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function end()
     {
     }

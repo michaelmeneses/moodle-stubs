@@ -45,10 +45,8 @@ class StreamWrapper
     }
     /**
      * Return the stream's file document.
-     *
-     * @return stdClass
      */
-    public function getFile()
+    public function getFile(): object
     {
     }
     /**
@@ -56,7 +54,7 @@ class StreamWrapper
      *
      * @param string $protocol Protocol to use for stream_wrapper_register()
      */
-    public static function register($protocol = 'gridfs')
+    public static function register(string $protocol = 'gridfs'): void
     {
     }
     /**
@@ -64,29 +62,27 @@ class StreamWrapper
      *
      * @see https://php.net/manual/en/streamwrapper.stream-close.php
      */
-    public function stream_close()
+    public function stream_close(): void
     {
     }
     /**
      * Returns whether the file pointer is at the end of the stream.
      *
      * @see https://php.net/manual/en/streamwrapper.stream-eof.php
-     * @return boolean
      */
-    public function stream_eof()
+    public function stream_eof(): bool
     {
     }
     /**
      * Opens the stream.
      *
      * @see https://php.net/manual/en/streamwrapper.stream-open.php
-     * @param string  $path       Path to the file resource
-     * @param string  $mode       Mode used to open the file (only "r" and "w" are supported)
-     * @param integer $options    Additional flags set by the streams API
-     * @param string  $openedPath Not used
-     * @return boolean
+     * @param string      $path       Path to the file resource
+     * @param string      $mode       Mode used to open the file (only "r" and "w" are supported)
+     * @param integer     $options    Additional flags set by the streams API
+     * @param string|null $openedPath Not used
      */
-    public function stream_open($path, $mode, $options, &$openedPath)
+    public function stream_open(string $path, string $mode, int $options, ?string &$openedPath): bool
     {
     }
     /**
@@ -97,9 +93,8 @@ class StreamWrapper
      *
      * @see https://php.net/manual/en/streamwrapper.stream-read.php
      * @param integer $length Number of bytes to read
-     * @return string
      */
-    public function stream_read($length)
+    public function stream_read(int $length): string
     {
     }
     /**
@@ -110,16 +105,15 @@ class StreamWrapper
      * @param integer $whence One of SEEK_SET, SEEK_CUR, or SEEK_END
      * @return boolean True if the position was updated and false otherwise
      */
-    public function stream_seek($offset, $whence = SEEK_SET)
+    public function stream_seek(int $offset, int $whence = SEEK_SET): bool
     {
     }
     /**
      * Return information about the stream.
      *
      * @see https://php.net/manual/en/streamwrapper.stream-stat.php
-     * @return array
      */
-    public function stream_stat()
+    public function stream_stat(): array
     {
     }
     /**
@@ -128,7 +122,7 @@ class StreamWrapper
      * @see https://php.net/manual/en/streamwrapper.stream-tell.php
      * @return integer The current position of the stream
      */
-    public function stream_tell()
+    public function stream_tell(): int
     {
     }
     /**
@@ -138,42 +132,37 @@ class StreamWrapper
      * @param string $data Data to write
      * @return integer The number of bytes written
      */
-    public function stream_write($data)
+    public function stream_write(string $data): int
     {
     }
     /**
      * Returns a stat template with default values.
-     *
-     * @return array
      */
-    private function getStatTemplate()
+    private function getStatTemplate(): array
     {
     }
     /**
      * Initialize the protocol from the given path.
      *
      * @see StreamWrapper::stream_open()
-     * @param string $path
      */
-    private function initProtocol($path)
+    private function initProtocol(string $path): void
     {
     }
     /**
      * Initialize the internal stream for reading.
      *
      * @see StreamWrapper::stream_open()
-     * @return boolean
      */
-    private function initReadableStream()
+    private function initReadableStream(): bool
     {
     }
     /**
      * Initialize the internal stream for writing.
      *
      * @see StreamWrapper::stream_open()
-     * @return boolean
      */
-    private function initWritableStream()
+    private function initWritableStream(): bool
     {
     }
 }

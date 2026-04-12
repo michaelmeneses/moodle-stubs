@@ -112,15 +112,14 @@ class Aggregate implements Executable, Explainable
      * @param array       $options        Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct($databaseName, $collectionName, array $pipeline, array $options = [])
+    public function __construct(string $databaseName, ?string $collectionName, array $pipeline, array $options = [])
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
-     * @param Server $server
-     * @return Traversable
+     * @return ArrayIterator|Cursor
      * @throws UnexpectedValueException if the command response was malformed
      * @throws UnsupportedException if read concern or write concern is used and unsupported
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
@@ -132,7 +131,6 @@ class Aggregate implements Executable, Explainable
      * Returns the command document for this operation.
      *
      * @see Explainable::getCommandDocument()
-     * @param Server $server
      * @return array
      */
     public function getCommandDocument(Server $server)
@@ -140,10 +138,8 @@ class Aggregate implements Executable, Explainable
     }
     /**
      * Create the aggregate command document.
-     *
-     * @return array
      */
-    private function createCommandDocument()
+    private function createCommandDocument(): array
     {
     }
     private function createCommandOptions(): array

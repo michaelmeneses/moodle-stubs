@@ -52,6 +52,10 @@ class HTMLPurifier_Lexer
      * If it does, set to true.
      */
     public $tracksLineNumbers = false;
+    /**
+     * @type HTMLPurifier_EntityParser
+     */
+    private $_entity_parser;
     // -- STATIC ----------------------------------------------------------
     /**
      * Retrieves or sets the default Lexer as a Prototype Factory.

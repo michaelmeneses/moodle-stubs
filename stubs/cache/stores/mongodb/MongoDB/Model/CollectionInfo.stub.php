@@ -75,8 +75,6 @@ class CollectionInfo implements ArrayAccess
     }
     /**
      * Return information about the _id index for the collection.
-     *
-     * @return array
      */
     public function getIdIndex(): array
     {
@@ -85,7 +83,6 @@ class CollectionInfo implements ArrayAccess
      * Return the "info" property of the server response.
      *
      * @see https://mongodb.com/docs/manual/reference/command/listCollections/#output
-     * @return array
      */
     public function getInfo(): array
     {
@@ -112,7 +109,6 @@ class CollectionInfo implements ArrayAccess
      * Return the collection type.
      *
      * @see https://mongodb.com/docs/manual/reference/command/listCollections/#output
-     * @return string
      */
     public function getType(): string
     {

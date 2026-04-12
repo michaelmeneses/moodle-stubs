@@ -26,12 +26,18 @@ namespace MongoDB\GridFS\Exception;
 class CorruptFileException extends RuntimeException
 {
     /**
+     * Thrown when a chunk doesn't contain valid data.
+     */
+    public static function invalidChunkData(int $chunkIndex): self
+    {
+    }
+    /**
      * Thrown when a chunk is not found for an expected index.
      *
      * @param integer $expectedIndex Expected index number
      * @return self
      */
-    public static function missingChunk($expectedIndex)
+    public static function missingChunk(int $expectedIndex)
     {
     }
     /**
@@ -41,7 +47,7 @@ class CorruptFileException extends RuntimeException
      * @param integer $expectedIndex Expected index number
      * @return self
      */
-    public static function unexpectedIndex($index, $expectedIndex)
+    public static function unexpectedIndex(int $index, int $expectedIndex)
     {
     }
     /**
@@ -51,7 +57,7 @@ class CorruptFileException extends RuntimeException
      * @param integer $expectedSize Expected size
      * @return self
      */
-    public static function unexpectedSize($size, $expectedSize)
+    public static function unexpectedSize(int $size, int $expectedSize)
     {
     }
 }

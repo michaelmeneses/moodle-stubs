@@ -62,14 +62,13 @@ class DropCollection implements Executable
      * @param array  $options        Command options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct($databaseName, $collectionName, array $options = [])
+    public function __construct(string $databaseName, string $collectionName, array $options = [])
     {
     }
     /**
      * Execute the operation.
      *
      * @see Executable::execute()
-     * @param Server $server
      * @return array|object Command result document
      * @throws UnsupportedException if write concern is used and unsupported
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
@@ -79,19 +78,16 @@ class DropCollection implements Executable
     }
     /**
      * Create the drop command.
-     *
-     * @return Command
      */
-    private function createCommand()
+    private function createCommand(): Command
     {
     }
     /**
      * Create options for executing the command.
      *
      * @see https://php.net/manual/en/mongodb-driver-server.executewritecommand.php
-     * @return array
      */
-    private function createOptions()
+    private function createOptions(): array
     {
     }
 }

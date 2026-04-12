@@ -32,6 +32,13 @@ class HTMLPurifier_Injector_RemoveSpansWithoutAttributes extends HTMLPurifier_In
      * @type HTMLPurifier_Context
      */
     private $context;
+    /**
+     * @type SplObjectStorage
+     */
+    private $markForDeletion;
+    public function __construct()
+    {
+    }
     public function prepare($config, $context)
     {
     }

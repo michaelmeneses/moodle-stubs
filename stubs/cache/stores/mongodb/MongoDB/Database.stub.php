@@ -68,7 +68,7 @@ class Database
      * @param array   $options      Database options
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function __construct(Manager $manager, $databaseName, array $options = [])
+    public function __construct(Manager $manager, string $databaseName, array $options = [])
     {
     }
     /**
@@ -92,7 +92,7 @@ class Database
      * @param string $collectionName Name of the collection to select
      * @return Collection
      */
-    public function __get($collectionName)
+    public function __get(string $collectionName)
     {
     }
     /**
@@ -137,14 +137,12 @@ class Database
      * Create a new collection explicitly.
      *
      * @see CreateCollection::__construct() for supported options
-     * @param string $collectionName
-     * @param array  $options
      * @return array|object Command result document
      * @throws UnsupportedException if options are not supported by the selected server
      * @throws InvalidArgumentException for parameter/option parsing errors
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
      */
-    public function createCollection($collectionName, array $options = [])
+    public function createCollection(string $collectionName, array $options = [])
     {
     }
     /**
@@ -171,7 +169,7 @@ class Database
      * @throws InvalidArgumentException for parameter/option parsing errors
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
      */
-    public function dropCollection($collectionName, array $options = [])
+    public function dropCollection(string $collectionName, array $options = [])
     {
     }
     /**
@@ -238,7 +236,6 @@ class Database
      * Returns information for all collections in this database.
      *
      * @see ListCollections::__construct() for supported options
-     * @param array $options
      * @return CollectionInfoIterator
      * @throws InvalidArgumentException for parameter/option parsing errors
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
@@ -257,17 +254,17 @@ class Database
      * @throws InvalidArgumentException for parameter/option parsing errors
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
      */
-    public function modifyCollection($collectionName, array $collectionOptions, array $options = [])
+    public function modifyCollection(string $collectionName, array $collectionOptions, array $options = [])
     {
     }
     /**
      * Rename a collection within this database.
      *
      * @see RenameCollection::__construct() for supported options
-     * @param string  $fromCollectionName Collection name
-     * @param string  $toCollectionName   New name of the collection
-     * @param ?string $toDatabaseName     New database name of the collection. Defaults to the original database.
-     * @param array   $options            Additional options
+     * @param string      $fromCollectionName Collection name
+     * @param string      $toCollectionName   New name of the collection
+     * @param string|null $toDatabaseName     New database name of the collection. Defaults to the original database.
+     * @param array       $options            Additional options
      * @return array|object Command result document
      * @throws UnsupportedException if options are unsupported on the selected server
      * @throws InvalidArgumentException for parameter/option parsing errors
@@ -285,7 +282,7 @@ class Database
      * @return Collection
      * @throws InvalidArgumentException for parameter/option parsing errors
      */
-    public function selectCollection($collectionName, array $options = [])
+    public function selectCollection(string $collectionName, array $options = [])
     {
     }
     /**
