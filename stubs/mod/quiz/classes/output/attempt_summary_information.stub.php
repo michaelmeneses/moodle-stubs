@@ -49,6 +49,51 @@ class attempt_summary_information implements renderable, named_templatable
     {
     }
     /**
+     * Add an item to the summary just before the given item.
+     *
+     * If that item is not present, then add as the first item.
+     *
+     * @param string $shortname unique identifier of this item (not displayed).
+     * @param string|renderable $title the title of this item.
+     * @param string|renderable $content the content of this item.
+     * @param string $addbefore identifier of the other item to add this before.
+     */
+    public function add_item_before(string $shortname, string|renderable $title, string|renderable $content, string $addbefore): void
+    {
+    }
+    /**
+     * Add an item to the summary just after the given item.
+     *
+     * If that item is not present, then just add at the end.
+     *
+     * @param string $shortname unique identifier of this item (not displayed).
+     * @param string|renderable $title the title of this item.
+     * @param string|renderable $content the content of this item.
+     * @param string $addafter identifier of the other item to add this before.
+     */
+    public function add_item_after(string $shortname, string|renderable $title, string|renderable $content, string $addafter): void
+    {
+    }
+    /**
+     * Add an item to the summary just before the given position.
+     *
+     * @param string $shortname unique identifier of this item (not displayed).
+     * @param string|renderable $title the title of this item.
+     * @param string|renderable $content the content of this item.
+     * @param int $position Numerical position to insert the item at. 0 means first.
+     */
+    protected function insert_new_item_at_position(string $shortname, string|renderable $title, string|renderable $content, int $position)
+    {
+    }
+    /**
+     * Remove an item, if present.
+     *
+     * @param string $shortname
+     */
+    public function remove_item(string $shortname): void
+    {
+    }
+    /**
      * Filter the data held, to keep only the information with the given shortnames.
      *
      * @param array $shortnames items to keep.

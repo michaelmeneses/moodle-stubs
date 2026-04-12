@@ -54,6 +54,14 @@ class redis extends handler implements SessionHandlerInterface
      * Compressor: PHP Zstandard.
      */
     const COMPRESSION_ZSTD = 'zstd';
+    /**
+     * Minimum version of the Redis extension required.
+     */
+    public const REDIS_EXTENSION_MIN_VERSION = '2.2.4';
+    /**
+     * Minimum version of the Redis extension required.
+     */
+    private const REDIS_SERVER_MIN_VERSION = '2.6.12';
     /** @var array $host save_path string  */
     protected array $host = [];
     /** @var int $port The port to connect to */

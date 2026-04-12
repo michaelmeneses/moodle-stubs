@@ -80,6 +80,22 @@ class core_component
     /** @var array<string|array<string>> associative array of PRS-4 namespaces and corresponding paths. */
     protected static $psr4namespaces = ['MaxMind' => 'lib/maxmind/MaxMind', 'GeoIp2' => 'lib/maxmind/GeoIp2', 'Sabberworm\CSS' => 'lib/php-css-parser', 'MoodleHQ\RTLCSS' => 'lib/rtlcss', 'ScssPhp\ScssPhp' => 'lib/scssphp', 'OpenSpout' => 'lib/openspout/src', 'MatthiasMullie\Minify' => 'lib/minify/matthiasmullie-minify/src/', 'MatthiasMullie\PathConverter' => 'lib/minify/matthiasmullie-pathconverter/src/', 'IMSGlobal\LTI' => 'lib/ltiprovider/src', 'Packback\Lti1p3' => 'lib/lti1p3/src', 'Phpml' => 'lib/mlbackend/php/phpml/src/Phpml', 'PHPMailer\PHPMailer' => 'lib/phpmailer/src', 'RedeyeVentures\GeoPattern' => 'lib/geopattern-php/GeoPattern', 'Firebase\JWT' => 'lib/php-jwt/src', 'ZipStream' => 'lib/zipstream/src/', 'MyCLabs\Enum' => 'lib/php-enum/src', 'PhpXmlRpc' => 'lib/phpxmlrpc', 'Psr\Http\Client' => 'lib/psr/http-client/src', 'Psr\Http\Message' => ['lib/psr/http-message/src', 'lib/psr/http-factory/src'], 'Psr\EventDispatcher' => 'lib/psr/event-dispatcher/src', 'Psr\Clock' => 'lib/psr/clock/src', 'Psr\Container' => 'lib/psr/container/src', 'GuzzleHttp\Psr7' => 'lib/guzzlehttp/psr7/src', 'GuzzleHttp\Promise' => 'lib/guzzlehttp/promises/src', 'GuzzleHttp' => 'lib/guzzlehttp/guzzle/src', 'Kevinrob\GuzzleCache' => 'lib/guzzlehttp/kevinrob/guzzlecache/src', 'Aws' => 'lib/aws-sdk/src', 'JmesPath' => 'lib/jmespath/src', 'Laravel\SerializableClosure' => 'lib/laravel/serializable-closure/src', 'DI' => 'lib/php-di/php-di/src', 'Invoker' => 'lib/php-di/invoker/src'];
     /**
+     *  An array containing files which are normally in a package's composer/autoload.files section.
+     *
+     * PHP does not provide a mechanism for automatically including the files that methods are in.
+     *
+     * The Composer autoloader includes all files in this section of the composer.json file during the instantiation of the loader.
+     *
+     * @var array<string>
+     */
+    protected static $composerautoloadfiles = ['lib/aws-sdk/src/functions.php', 'lib/guzzlehttp/guzzle/src/functions_include.php', 'lib/guzzlehttp/promises/src/functions_include.php', 'lib/jmespath/src/JmesPath.php', 'lib/php-di/php-di/src/functions.php', 'lib/ralouphi/getallheaders/src/getallheaders.php', 'lib/symfony/deprecation-contracts/function.php'];
+    /**
+     * Register the Moodle class autoloader.
+     */
+    public static function register_autoloader(): void
+    {
+    }
+    /**
      * Class loader for Frankenstyle named classes in standard locations.
      * Frankenstyle namespaces are supported.
      *
