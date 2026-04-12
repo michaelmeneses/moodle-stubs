@@ -39,7 +39,7 @@ abstract class proxy_base
      * Sometimes the server sends back some error and errorKeys that
      * can be converted to Moodle error messages
      */
-    const BBB_TO_MOODLE_ERROR_CODE = ['checksumError' => 'index_error_checksum', 'notFound' => 'general_error_not_found', 'maxConcurrent' => 'view_error_max_concurrent'];
+    const MEETING_ERROR = ['checksumError' => 'index_error_checksum', 'notFound' => 'general_error_not_found', 'maxConcurrent' => 'view_error_max_concurrent'];
     /**
      * Returns the right URL for the action specified.
      *
@@ -76,24 +76,6 @@ abstract class proxy_base
      * @throws server_not_available_exception
      */
     protected static function assert_returned_xml($xml, ?array $additionaldetails = null): void
-    {
-    }
-    /**
-     * Get Moodle error code from returned Message Key
-     *
-     * @param string $messagekey
-     * @return string
-     */
-    private static function get_errorcode_from_xml_messagekey(string $messagekey): string
-    {
-    }
-    /**
-     * Get Moodle error code from returned Message Key
-     *
-     * @param string $messagekey
-     * @return string
-     */
-    private static function is_known_server_unavailable_errorcode(string $messagekey): string
     {
     }
     /**

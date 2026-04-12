@@ -288,12 +288,12 @@ abstract class moodle_database
     /**
      * This should be called before each db query.
      * @param string $sql The query string.
-     * @param array|null $params An array of parameters.
+     * @param array $params An array of parameters.
      * @param int $type The type of query. ( SQL_QUERY_SELECT | SQL_QUERY_AUX | SQL_QUERY_INSERT | SQL_QUERY_UPDATE | SQL_QUERY_STRUCTURE )
      * @param mixed $extrainfo This is here for any driver specific extra information.
      * @return void
      */
-    protected function query_start($sql, ?array $params, $type, $extrainfo = null)
+    protected function query_start($sql, array $params = null, $type, $extrainfo = null)
     {
     }
     /**
@@ -1527,20 +1527,6 @@ abstract class moodle_database
      * @return string or empty if not supported
      */
     public function sql_regex($positivematch = true, $casesensitive = false)
-    {
-    }
-    /**
-     * Returns the word-beginning boundary marker if this database driver supports regex syntax when searching.
-     * @return string The word-beginning boundary marker. Otherwise, an empty string.
-     */
-    public function sql_regex_get_word_beginning_boundary_marker()
-    {
-    }
-    /**
-     * Returns the word-end boundary marker if this database driver supports regex syntax when searching.
-     * @return string The word-end boundary marker. Otherwise, an empty string.
-     */
-    public function sql_regex_get_word_end_boundary_marker()
     {
     }
     /**

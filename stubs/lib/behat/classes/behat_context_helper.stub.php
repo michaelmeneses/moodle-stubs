@@ -74,25 +74,6 @@ class behat_context_helper
     {
     }
     /**
-     * Find all Behat contexts which match the specified context class name prefix.
-     *
-     * Moodle uses a consistent class naming scheme for all Behat contexts, whereby the context name is in the format:
-     *
-     *     behat_{component}
-     *
-     * This method will return all contexts which match the specified prefix.
-     *
-     * For example, to find all editors, you would pass in 'behat_editor', and this might return:
-     * - behat_editor_atto
-     * - behat_editor_textarea
-     *
-     * @param string $prefix The prefix to search for
-     * @return \Behat\Behat\Context\Context[]
-     */
-    public static function get_prefixed_contexts(string $prefix): array
-    {
-    }
-    /**
      * Check for any theme override of the specified class name.
      *
      * @param string $classname

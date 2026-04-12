@@ -288,16 +288,6 @@ class moodle_url
     {
     }
     /**
-     * Get the url params as an array of key => value pairs.
-     *
-     * This helps in handling cases where url params contain arrays.
-     *
-     * @return array params array for templates.
-     */
-    public function export_params_for_template(): array
-    {
-    }
-    /**
      * Shortcut for printing of encoded URL.
      *
      * @return string

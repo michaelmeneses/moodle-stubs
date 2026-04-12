@@ -136,14 +136,10 @@ function uu_allowed_roles()
 {
 }
 /**
- * Returns assignable roles for current user using short role name and role ID as index.
- * This function is no longer called without parameters.
- *
- * @param int|null $categoryid Id of the category to get roles for.
- * @param int|null $courseid Id of the course to get roles for.
+ * Returns mapping of all roles using short role name as index.
  * @return array
  */
-function uu_allowed_roles_cache(?int $categoryid = null, ?int $courseid = null): array
+function uu_allowed_roles_cache()
 {
 }
 /**

@@ -39,7 +39,7 @@ class recording_action
      * @param recording $recording
      * @param instance $targetinstance
      */
-    public static function import(recording $recording, instance $targetinstance): void
+    public static function import(recording $recording, instance $targetinstance)
     {
     }
     /**
@@ -47,7 +47,7 @@ class recording_action
      *
      * @param recording $recording
      */
-    public static function delete(recording $recording): void
+    public static function delete(recording $recording)
     {
     }
     /**
@@ -55,7 +55,7 @@ class recording_action
      *
      * @param recording $recording
      */
-    public static function edit(recording $recording): void
+    public static function edit(recording $recording)
     {
     }
     /**
@@ -63,7 +63,7 @@ class recording_action
      *
      * @param recording $recording
      */
-    public static function unprotect(recording $recording): void
+    public static function unprotect(recording $recording)
     {
     }
     /**
@@ -71,7 +71,7 @@ class recording_action
      *
      * @param recording $recording
      */
-    public static function protect(recording $recording): void
+    public static function protect(recording $recording)
     {
     }
     /**
@@ -79,7 +79,7 @@ class recording_action
      *
      * @param recording $recording
      */
-    public static function unpublish(recording $recording): void
+    public static function unpublish(recording $recording)
     {
     }
     /**
@@ -87,7 +87,7 @@ class recording_action
      *
      * @param recording $recording
      */
-    public static function publish(recording $recording): void
+    public static function publish(recording $recording)
     {
     }
 }

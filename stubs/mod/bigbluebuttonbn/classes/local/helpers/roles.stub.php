@@ -108,9 +108,9 @@ class roles
      *
      * @param string|integer $id
      *
-     * @return stdClass|null $role
+     * @return stdClass $role
      */
-    protected static function get_role($id): ?stdClass
+    protected static function get_role($id): stdClass
     {
     }
     /**
@@ -138,7 +138,7 @@ class roles
      * Returns an array to populate a list of participants used in mod_form.php with default values.
      *
      * @param context $context
-     * @param int|null $ownerid
+     * @param int $ownerid
      *
      * @return array
      */

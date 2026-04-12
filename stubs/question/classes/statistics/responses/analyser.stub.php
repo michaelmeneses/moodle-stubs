@@ -45,7 +45,7 @@ class analyser
      * tries into? This is set to 5 columns, any response in a try more than try 5 will be counted in the fifth column.
      */
     const MAX_TRY_COUNTED = 5;
-    /** @var int No longer used. Previously the time after which statistics are automatically recomputed. */
+    /** @var int Time after which responses are automatically reanalysed. */
     const TIME_TO_CACHE = 900;
     // 15 minutes.
     /** @var object full question data from db. */
@@ -54,10 +54,6 @@ class analyser
      * @var analysis_for_question|analysis_for_question_all_tries
      */
     public $analysis;
-    /**
-     * @var int used during calculations, so all results are stored with the same timestamp.
-     */
-    protected $calculationtime;
     /**
      * @var array Two index array first index is unique string for each sub question part, the second string index is the 'class'
      * that sub-question part can be classified into.
@@ -97,7 +93,7 @@ class analyser
     {
     }
     /**
-     * Analyse all the response data for all the specified attempts at this question.
+     * Analyse all the response data for for all the specified attempts at this question.
      *
      * @param \qubaid_condition $qubaids which attempts to consider.
      * @param string $whichtries         which tries to analyse. Will be one of

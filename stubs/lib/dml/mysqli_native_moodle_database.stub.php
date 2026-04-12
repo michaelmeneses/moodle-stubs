@@ -92,9 +92,9 @@ class mysqli_native_moodle_database extends moodle_database
     /**
      * Set 'dbcollation' option
      *
-     * @return string|null $dbcollation
+     * @return string $dbcollation
      */
-    private function detect_collation(): ?string
+    private function detect_collation(): string
     {
     }
     /**
@@ -635,20 +635,6 @@ class mysqli_native_moodle_database extends moodle_database
      * @return string or empty if not supported
      */
     public function sql_regex($positivematch = true, $casesensitive = false)
-    {
-    }
-    /**
-     * Returns the word-beginning boundary marker based on MySQL version.
-     * @return string The word-beginning boundary marker.
-     */
-    public function sql_regex_get_word_beginning_boundary_marker()
-    {
-    }
-    /**
-     * Returns the word-end boundary marker based on MySQL version.
-     * @return string The word-end boundary marker.
-     */
-    public function sql_regex_get_word_end_boundary_marker()
     {
     }
     /**

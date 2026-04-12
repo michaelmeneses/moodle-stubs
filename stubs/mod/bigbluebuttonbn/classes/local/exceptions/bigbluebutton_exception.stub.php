@@ -23,7 +23,7 @@
 namespace mod_bigbluebuttonbn\local\exceptions;
 
 /**
- * Class bigbluebutton_exception generic exception. This is supposed to be recoverable.
+ * Class bigbluebutton_exception generic exception
  *
  * @package   mod_bigbluebuttonbn
  * @copyright 2010 onwards, Blindside Networks Inc

@@ -51,7 +51,8 @@ class access_manager
     private $quizsettings;
     /** @var context_module $context Context of this quiz activity. */
     private $context;
-    /** @var string|null $validconfigkey Expected valid SEB config key. */
+    /** @var string|null $validconfigkey Expected valid SEB config key.
+     */
     private $validconfigkey = null;
     /**
      * The access_manager constructor.
@@ -62,25 +63,19 @@ class access_manager
     {
     }
     /**
-     * Validate browser exam key. It will validate a provided browser exam key if provided, then will fall back to checking
-     * the header.
+     * Check if the browser exam key hash in header matches one of the listed browser exam keys from quiz settings.
      *
-     * @param string|null $browserexamkey Optional. Can validate a provided key, or will fall back to checking header.
-     * @param string|null $url Optionally provide URL of page to validate.
-     * @return bool
+     * @return bool True if header key matches one of the saved keys.
      */
-    public function validate_browser_exam_key(?string $browserexamkey = null, ?string $url = null): bool
+    public function validate_browser_exam_keys(): bool
     {
     }
     /**
-     * Validate a config key. It will check a provided config key if provided then will fall back to checking config
-     * key in header.
+     * Check if the config key hash in header matches quiz settings.
      *
-     * @param string|null $configkey Optional. Can validate a provided key, or will fall back to checking header.
-     * @param string|null $url URL of page to validate.
-     * @return bool
+     * @return bool True if header key matches saved key.
      */
-    public function validate_config_key(?string $configkey = null, ?string $url = null): bool
+    public function validate_config_key(): bool
     {
     }
     /**
@@ -141,33 +136,23 @@ class access_manager
     {
     }
     /**
-     * Check that at least one browser exam key exists in the quiz settings.
-     *
-     * @return bool True if one or more keys are set in quiz settings.
-     */
-    private function is_allowed_browser_examkeys_configured(): bool
-    {
-    }
-    /**
      * Check the hash from the request header against the permitted browser exam keys.
      *
      * @param array $keys Allowed browser exam keys.
      * @param string $header The value of the X-SafeExamBrowser-RequestHash to check.
-     * @param string|null $url URL of page to validate.
      * @return bool True if the hash matches.
      */
-    private function check_browser_exam_keys(array $keys, string $header, ?string $url = null): bool
+    private function check_browser_exam_keys(array $keys, string $header): bool
     {
     }
     /**
      * Check the hash from the request header against a single permitted key.
      *
-     * @param string $validkey An allowed key.
-     * @param string $key The value of X-SafeExamBrowser-RequestHash, X-SafeExamBrowser-ConfigKeyHash or a provided key to check.
-     * @param string|null $url URL of page to validate.
-     * @return bool True if the hash matches.
+     * @param string $key an allowed key.
+     * @param string $header the value of the X-SafeExamBrowser-RequestHash or X-SafeExamBrowser-ConfigKeyHash to check.
+     * @return bool true if the hash matches.
      */
-    private function check_key(string $validkey, string $key, ?string $url = null): bool
+    private function check_key($key, $header): bool
     {
     }
     /**
@@ -175,7 +160,7 @@ class access_manager
      *
      * @return string|null
      */
-    public function get_received_config_key(): ?string
+    public function get_received_config_key()
     {
     }
     /**
@@ -183,7 +168,7 @@ class access_manager
      *
      * @return string|null
      */
-    public function get_received_browser_exam_key(): ?string
+    public function get_received_browser_exam_key()
     {
     }
     /**
@@ -215,42 +200,6 @@ class access_manager
      * @return bool
      */
     public function should_validate_browser_exam_key(): bool
-    {
-    }
-    /**
-     * Set session access for quiz.
-     *
-     * @param bool $accessallowed
-     */
-    public function set_session_access(bool $accessallowed): void
-    {
-    }
-    /**
-     * Check session access for quiz if already set.
-     *
-     * @return bool
-     */
-    public function validate_session_access(): bool
-    {
-    }
-    /**
-     * Unset the global session access variable for this quiz.
-     */
-    public function clear_session_access(): void
-    {
-    }
-    /**
-     * Redirect to SEB config link. This will force Safe Exam Browser to be reconfigured.
-     */
-    public function redirect_to_seb_config_link(): void
-    {
-    }
-    /**
-     * Check if we need to redirect to SEB config link.
-     *
-     * @return bool
-     */
-    public function should_redirect_to_seb_config_link(): bool
     {
     }
 }

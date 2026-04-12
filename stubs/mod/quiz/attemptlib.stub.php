@@ -190,7 +190,7 @@ class quiz
     /**
      * Get the quiz context.
      *
-     * @return context_module the module context for this quiz.
+     * @return context the module context for this quiz.
      */
     public function get_context()
     {
@@ -1386,17 +1386,13 @@ class quiz_attempt
     {
     }
     /**
-     * Check a page read access to see if is an out of sequence access.
+     * Check a page access to see if is an out of sequence access.
      *
-     * If allownext is set then we also check whether access to the page
-     * after the current one should be permitted.
-     *
-     * @param int $page page number.
-     * @param bool $allownext in case of a sequential navigation, can we go to next page ?
-     * @return boolean false is an out of sequence access, true otherwise.
+     * @param  int $page page number.
+     * @return boolean false is is an out of sequence access, true otherwise.
      * @since Moodle 3.1
      */
-    public function check_page_access(int $page, bool $allownext = true): bool
+    public function check_page_access($page)
     {
     }
     /**

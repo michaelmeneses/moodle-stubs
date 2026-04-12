@@ -37,10 +37,6 @@ class qtype_multianswer_renderer extends qtype_renderer
  */
 abstract class qtype_multianswer_subq_renderer_base extends qtype_renderer
 {
-    /** @var int[] Stores the counts of answer instances for questions. */
-    protected static $answercount = [];
-    /** @var question_display_options Question display options instance for any necessary information for rendering the question. */
-    protected $displayoptions;
     abstract public function subquestion(question_attempt $qa, question_display_options $options, $index, question_graded_automatically $subq);
     /**
      * Render the feedback pop-up contents.
@@ -53,30 +49,6 @@ abstract class qtype_multianswer_subq_renderer_base extends qtype_renderer
      * @return string the HTML for the feedback popup.
      */
     protected function feedback_popup(question_graded_automatically $subq, $fraction, $feedbacktext, $rightanswer, question_display_options $options)
-    {
-    }
-    /**
-     * Render the feedback icon for a sub-question which is also the trigger for the feedback popover.
-     *
-     * @param string $icon The feedback icon
-     * @param string $feedbackcontents The feedback contents to be shown on the popover.
-     * @return string
-     */
-    protected function get_feedback_image(string $icon, string $feedbackcontents): string
-    {
-    }
-    /**
-     * Generates a label for an answer field.
-     *
-     * If the question number is set ({@see qtype_renderer::$questionnumber}), the label will
-     * include the question number in order to indicate which question the answer field belongs to.
-     *
-     * @param string $langkey The lang string key for the lang string that does not include the question number.
-     * @param string $component The Frankenstyle component name.
-     * @return string
-     * @throws coding_exception
-     */
-    protected function get_answer_label(string $langkey = 'answerx', string $component = 'question'): string
     {
     }
 }

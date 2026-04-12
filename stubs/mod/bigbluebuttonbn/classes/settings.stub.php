@@ -38,8 +38,6 @@ class settings
     private $moduleenabled;
     /** @var string The name of the section */
     private $section;
-    /** @var string The parent name */
-    private $parent = "modbigbluebuttonbnfolder";
     /** @var string The section name prefix */
     private $sectionnameprefix = "mod_bigbluebuttonbn";
     /**
@@ -75,12 +73,6 @@ class settings
      * @throws \coding_exception
      */
     protected function add_general_settings(): admin_settingpage
-    {
-    }
-    /**
-     * Helper function renders default messages settings if the feature is enabled.
-     */
-    protected function add_defaultmessages_settings(): void
     {
     }
     /**

@@ -152,15 +152,6 @@ final class filter
     {
     }
     /**
-     * Retrieve SQL expression and parameters for the field
-     *
-     * @param int $index
-     * @return array [$sql, [...$params]]
-     */
-    public function get_field_sql_and_params(int $index = 0): array
-    {
-    }
-    /**
      * Set the SQL expression for the field that is being filtered. It will be passed to the filter class
      *
      * @param string $sql

@@ -92,9 +92,8 @@ class analysis_for_class
      * @param int               $questionid which question.
      * @param int               $variantno  which variant.
      * @param string            $subpartid  which sub part.
-     * @param int|null          $calculationtime time when the analysis was done. (Defaults to time()).
      */
-    public function cache($qubaids, $whichtries, $questionid, $variantno, $subpartid, $calculationtime = null)
+    public function cache($qubaids, $whichtries, $questionid, $variantno, $subpartid)
     {
     }
     /**

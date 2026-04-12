@@ -339,7 +339,7 @@ function grade_course_reset($courseid)
 {
 }
 /**
- * Convert a number to 5 decimal point float, null db compatible format
+ * Convert a number to 5 decimal point float, an empty string or a null db compatible format
  * (we need this to decide if db value changed)
  *
  * @param float|null $number The number to convert

@@ -388,15 +388,4 @@ class cache_helper
     public static function warnings(array $stores = null)
     {
     }
-    /**
-     * A helper to determine whether a result was found.
-     *
-     * This has been deemed required after people have been confused by the fact that [] == false.
-     *
-     * @param mixed $value
-     * @return bool
-     */
-    public static function result_found($value): bool
-    {
-    }
 }

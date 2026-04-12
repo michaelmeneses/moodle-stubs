@@ -129,17 +129,6 @@ abstract class base
     {
     }
     /**
-     * Reset the current user for all courses.
-     *
-     * The course format cache resets every time the course cache resets but
-     * also when the user changes their language, all course editors
-     *
-     * @return void
-     */
-    public static function session_cache_reset_all(): void
-    {
-    }
-    /**
      * Reset the current user course format cache.
      *
      * The course format cache resets every time the course cache resets but
@@ -292,6 +281,14 @@ abstract class base
     }
     /**
      * Returns true if this course format uses activity indentation.
+     *
+     * Indentation is not supported by core formats anymore and may be deprecated in the future.
+     * This method will keep a default return "true" for legacy reasons but new formats should override
+     * it with a return false to prevent future deprecations.
+     *
+     * A message in a bottle: if indentation is finally deprecated, both behat steps i_indent_right_activity
+     * and i_indent_left_activity should be removed as well. Right now no core behat uses them but indentation
+     * is not officially deprecated so they are still available for the contrib formats.
      *
      * @return bool if the course format uses indentation.
      */
@@ -799,11 +796,9 @@ abstract class base
     /**
      * return true if the course editor must be displayed.
      *
-     * @param array|null $capabilities array of capabilities a user needs to have to see edit controls in general.
-     *  If null or not specified, the user needs to have 'moodle/course:manageactivities'
      * @return bool true if edit controls must be displayed
      */
-    public function show_editor(?array $capabilities = ['moodle/course:manageactivities']): bool
+    public function show_editor(): bool
     {
     }
     /**

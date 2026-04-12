@@ -41,44 +41,43 @@ class helper
      */
     private const NEED_FOR_REVISION_UPPER_THRESHOLD = 50;
     /**
-     * For a list of questions find all the places, defined by (component, contextid) where there are attempts.
+     * Return ids of all quizzes that use the question
      *
-     * @param int[] $questionids array of question ids that we are interested in.
-     * @return \stdClass[] list of objects with fields ->component and ->contextid.
+     * @param int $questionid id of the question
+     * @return array list of quizids
+     * @throws \dml_exception
      */
-    private static function get_all_places_where_questions_were_attempted(array $questionids): array
+    public static function get_quizzes(int $questionid): array
     {
     }
     /**
-     * Load the question statistics for all the attempts belonging to a particular component in a particular context.
+     * Load question stats from a quiz
      *
-     * @param string $component frankenstyle component name, e.g. 'mod_quiz'.
-     * @param \context $context the context to load the statistics for.
-     * @return all_calculated_for_qubaid_condition|null question statistics.
+     * @param int $quizid quiz object or its id
+     * @return all_calculated_for_qubaid_condition
      */
-    private static function load_statistics_for_place(string $component, \context $context): ?all_calculated_for_qubaid_condition
+    private static function load_question_stats(int $quizid): all_calculated_for_qubaid_condition
     {
     }
     /**
-     * Extract the value for one question and one type of statistic from a set of statistics.
+     * Load a specified stats item for a question
      *
-     * @param all_calculated_for_qubaid_condition $statistics the batch of statistics.
-     * @param int $questionid a question id.
-     * @param string $item ane of the field names in all_calculated_for_qubaid_condition, e.g. 'facility'.
-     * @return float|null the required value.
+     * @param int $quizid quiz id
+     * @param int $questionid question id
+     * @param string $item a stats item
+     * @return float|int
      */
-    private static function extract_item_value(all_calculated_for_qubaid_condition $statistics, int $questionid, string $item): ?float
+    public static function load_question_stats_item(int $quizid, int $questionid, string $item): ?float
     {
     }
     /**
-     * Calculate average for a stats item on a list of questions.
+     * Calculate average for a stats item on a question.
      *
-     * @param int[] $questionids list of ids of the questions we are interested in.
-     * @param string $item ane of the field names in all_calculated_for_qubaid_condition, e.g. 'facility'.
-     * @return array array keys are question ids and the corresponding values are the average values.
-     *      Only questions for which there are data are included.
+     * @param int $questionid id of the question
+     * @param string $item stats item
+     * @return float|null
      */
-    private static function calculate_average_question_stats_item(array $questionids, string $item): array
+    private static function calculate_average_question_stats_item(int $questionid, string $item): ?float
     {
     }
     /**

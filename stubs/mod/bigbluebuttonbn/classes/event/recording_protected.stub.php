@@ -33,7 +33,6 @@ class recording_protected extends base
 {
     /**
      * Init method.
-     *
      * @param string $crud
      * @param int $edulevel
      */

@@ -49,9 +49,8 @@ class participants extends table_sql implements report
      * Create a new participants report.
      *
      * @param manager $manager h5pactivitymanager object
-     * @param int|bool $currentgroup False if groups not used, 0 for all groups, group id (int) to filter by specific group
      */
-    public function __construct(manager $manager, $currentgroup = false)
+    public function __construct(manager $manager)
     {
     }
     /**

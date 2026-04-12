@@ -2049,14 +2049,13 @@ class context_helper extends context
     {
     }
     /**
-     * Preloads context cache with information from db record and strips the cached info.
+     * Preloads context information from db record and strips the cached info.
      *
      * The db request has to contain all columns from context_helper::get_preload_record_columns().
      *
      * @static
      * @param stdClass $rec
-     * @return void This is intentional. See MDL-37115. You will need to get the context
-     *      in the normal way, but it is now cached, so that will be fast.
+     * @return void (modifies $rec)
      */
     public static function preload_from_record(stdClass $rec)
     {

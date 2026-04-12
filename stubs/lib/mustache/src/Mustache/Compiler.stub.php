@@ -31,22 +31,20 @@ class Mustache_Compiler
     private $entityFlags;
     private $charset;
     private $strictCallables;
-    private $disableLambdaRendering;
     /**
      * Compile a Mustache token parse tree into PHP source code.
      *
-     * @param string $source                 Mustache Template source code
-     * @param array  $tree                   Parse tree of Mustache tokens
-     * @param string $name                   Mustache Template class name
-     * @param bool   $customEscape           (default: false)
-     * @param string $charset                (default: 'UTF-8')
-     * @param bool   $strictCallables        (default: false)
-     * @param int    $entityFlags            (default: ENT_COMPAT)
-     * @param bool   $disableLambdaRendering (default: false)
+     * @param string $source          Mustache Template source code
+     * @param string $tree            Parse tree of Mustache tokens
+     * @param string $name            Mustache Template class name
+     * @param bool   $customEscape    (default: false)
+     * @param string $charset         (default: 'UTF-8')
+     * @param bool   $strictCallables (default: false)
+     * @param int    $entityFlags     (default: ENT_COMPAT)
      *
      * @return string Generated PHP source code
      */
-    public function compile($source, array $tree, $name, $customEscape = false, $charset = 'UTF-8', $strictCallables = false, $entityFlags = ENT_COMPAT, $disableLambdaRendering = false)
+    public function compile($source, array $tree, $name, $customEscape = false, $charset = 'UTF-8', $strictCallables = false, $entityFlags = ENT_COMPAT)
     {
     }
     /**
@@ -173,6 +171,7 @@ class Mustache_Compiler
     {
     }
     const SECTION_CALL = '
+        // %s section
         $value = $context->%s(%s);%s
         $buffer .= $this->section%s($context, $indent, $value);
     ';
@@ -183,8 +182,14 @@ class Mustache_Compiler
 
             if (%s) {
                 $source = %s;
-                $result = (string) call_user_func($value, $source, %s);%s
-                $buffer .= $result;
+                $result = call_user_func($value, $source, %s);
+                if (strpos($result, \'{{\') === false) {
+                    $buffer .= $result;
+                } else {
+                    $buffer .= $this->mustache
+                        ->loadLambda((string) $result%s)
+                        ->renderInternal($context);
+                }
             } elseif (!empty($value)) {
                 $values = $this->isIterable($value) ? $value : array($value);
                 foreach ($values as $value) {
@@ -197,28 +202,6 @@ class Mustache_Compiler
             return $buffer;
         }
     ';
-    const SECTION_RENDER_LAMBDA = '
-        if (strpos($result, \'{{\') !== false) {
-            $result = $this->mustache
-                ->loadLambda($result%s)
-                ->renderInternal($context);
-        }
-    ';
-    /**
-     * Helper function to compile section with and without lambda rendering.
-     *
-     * @param string $key
-     * @param string $callable
-     * @param string $source
-     * @param string $helper
-     * @param string $delims
-     * @param string $content
-     *
-     * @return string section code
-     */
-    private function getSection($key, $callable, $source, $helper, $delims, $content)
-    {
-    }
     /**
      * Generate Mustache Template section PHP source.
      *
@@ -237,6 +220,7 @@ class Mustache_Compiler
     {
     }
     const INVERTED_SECTION = '
+        // %s inverted section
         $value = $context->%s(%s);%s
         if (empty($value)) {
             %s
@@ -311,7 +295,7 @@ class Mustache_Compiler
     }
     const VARIABLE = '
         $value = $this->resolveValue($context->%s(%s), $context);%s
-        $buffer .= %s($value === null ? \'\' : %s);
+        $buffer .= %s%s;
     ';
     /**
      * Generate Mustache Template variable interpolation PHP source.

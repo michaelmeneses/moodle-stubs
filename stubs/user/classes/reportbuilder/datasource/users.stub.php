@@ -55,10 +55,4 @@ class users extends datasource
     public function get_default_conditions(): array
     {
     }
-    /**
-     * Set default columns and the sortorder
-     */
-    public function add_default_columns(): void
-    {
-    }
 }

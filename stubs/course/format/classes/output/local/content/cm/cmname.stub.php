@@ -36,7 +36,7 @@ namespace core_courseformat\output\local\content\cm;
  * @copyright 2020 Ferran Recio <ferran@moodle.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class cmname implements named_templatable, renderable
+class cmname extends inplace_editable implements named_templatable, renderable
 {
     use courseformat_named_templatable;
     /** @var course_format the course format */
@@ -45,6 +45,8 @@ class cmname implements named_templatable, renderable
     private $section;
     /** @var cm_info the course module instance */
     protected $mod;
+    /** @var editable if the title is editable */
+    protected $editable;
     /** @var array optional display options */
     protected $displayoptions;
     /** @var string the activity title output class name */
@@ -55,10 +57,10 @@ class cmname implements named_templatable, renderable
      * @param course_format $format the course format
      * @param section_info $section the section info
      * @param cm_info $mod the course module ionfo
-     * @param bool|null $editable if it is editable (not used)
+     * @param bool $editable if it is editable
      * @param array $displayoptions optional extra display options
      */
-    public function __construct(course_format $format, section_info $section, cm_info $mod, ?bool $editable = null, array $displayoptions = [])
+    public function __construct(course_format $format, section_info $section, cm_info $mod, bool $editable, array $displayoptions = [])
     {
     }
     /**
@@ -71,20 +73,13 @@ class cmname implements named_templatable, renderable
     {
     }
     /**
-     * Get the title data.
+     * Updates course module name
      *
-     * @param \renderer_base $output typically, the renderer that's calling this function
-     * @return array data context for a mustache template
+     * @param int $itemid course module id
+     * @param string $newvalue new name
+     * @return static
      */
-    protected function get_title_data(\renderer_base $output): array
-    {
-    }
-    /**
-     * Return if the activity has a visible name.
-     *
-     * @return bool if the title is visible.
-     */
-    public function has_name(): bool
+    public static function update($itemid, $newvalue)
     {
     }
 }

@@ -21,10 +21,6 @@ class tool_uploadcourse_course
     const DO_UPDATE = 2;
     /** Outcome of the process: deleting the course */
     const DO_DELETE = 3;
-    /** @var array assignable roles. */
-    protected $assignableroles = [];
-    /** @var array Roles context levels. */
-    protected $contextlevels = [];
     /** @var array final import data. */
     protected $data = array();
     /** @var array default values. */
@@ -274,25 +270,6 @@ class tool_uploadcourse_course
      * @return void
      */
     protected function process_enrolment_data($course)
-    {
-    }
-    /**
-     * Check if role is allowed in course context
-     *
-     * @param int $courseid course context.
-     * @param string $role Role.
-     * @return bool
-     */
-    protected function validate_role_context(int $courseid, string $role): bool
-    {
-    }
-    /**
-     * Check if role is allowed at this context level.
-     *
-     * @param int $roleid Role ID.
-     * @return bool
-     */
-    protected function validate_role_context_level(int $roleid): bool
     {
     }
     /**

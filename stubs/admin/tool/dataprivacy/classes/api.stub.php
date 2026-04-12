@@ -294,15 +294,6 @@ class api
     {
     }
     /**
-     * Check if user has permission to create data download request for themselves
-     *
-     * @param int|null $userid
-     * @return bool
-     */
-    public static function can_create_data_download_request_for_self(int $userid = null): bool
-    {
-    }
-    /**
      * Check if user has permisson to create data deletion request for themselves.
      *
      * @param int|null $userid ID of the user.

@@ -485,10 +485,9 @@ function enrol_get_course_by_user_enrolment_id($ueid)
  * @param bool $onlyactive consider only active enrolments in enabled plugins and time restrictions
  * @param array $usersfilter Limit the results obtained to this list of user ids. $uefilter compatibility not guaranteed.
  * @param array $uefilter Limit the results obtained to this list of user enrolment ids. $usersfilter compatibility not guaranteed.
- * @param array $usergroups Limit the results of users to the ones that belong to one of the submitted group ids.
  * @return stdClass[]
  */
-function enrol_get_course_users($courseid = false, $onlyactive = false, $usersfilter = [], $uefilter = [], $usergroups = [])
+function enrol_get_course_users($courseid = false, $onlyactive = false, $usersfilter = array(), $uefilter = array())
 {
 }
 /**
@@ -651,16 +650,6 @@ abstract class enrol_plugin
      * @return bool - true means show "Enrol me in this course" link in course UI
      */
     public function show_enrolme_link(stdClass $instance)
-    {
-    }
-    /**
-     * Does this plugin support some way to self enrol?
-     * This function doesn't check user capabilities. Use can_self_enrol to check capabilities.
-     *
-     * @param stdClass $instance enrolment instance
-     * @return bool - true means "Enrol me in this course" link could be available.
-     */
-    public function is_self_enrol_available(stdClass $instance)
     {
     }
     /**

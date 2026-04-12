@@ -47,6 +47,10 @@ class cm implements named_templatable, renderable
     protected $mod;
     /** @var array optional display options */
     protected $displayoptions;
+    /** @var string activity link css classes */
+    protected $linkclasses = null;
+    /** @var string text css classes */
+    protected $textclasses = null;
     /** @var string the activity name output class name */
     protected $cmnameclass;
     /** @var string the activity control menu class name */
@@ -155,14 +159,6 @@ class cm implements named_templatable, renderable
      * @return string the activity text classes.
      */
     public function get_text_classes(): string
-    {
-    }
-    /**
-     * Get the activity onclick code.
-     *
-     * @return string the activity onclick.
-     */
-    public function get_onclick_code(): string
     {
     }
 }

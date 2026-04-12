@@ -117,13 +117,4 @@ class manage_table extends \table_sql
     protected function get_display_text($tool, $text)
     {
     }
-    /**
-     * Get a warning icon, with tooltip, describing enrolment instances sharing activities which have been deleted.
-     *
-     * @param \stdClass $tool the tool instance record.
-     * @return string the HTML for the name column.
-     */
-    protected function get_deleted_activity_name_html(\stdClass $tool): string
-    {
-    }
 }

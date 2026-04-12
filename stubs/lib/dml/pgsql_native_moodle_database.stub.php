@@ -19,7 +19,6 @@ class pgsql_native_moodle_database extends moodle_database
         select_db_handle as read_slave_select_db_handle;
         can_use_readonly as read_slave_can_use_readonly;
         query_start as read_slave_query_start;
-        query_end as read_slave_query_end;
     }
     /** @var array $dbhcursor keep track of open cursors */
     private $dbhcursor = [];
@@ -141,12 +140,12 @@ class pgsql_native_moodle_database extends moodle_database
     /**
      * Called before each db query.
      * @param string $sql
-     * @param array|null $params An array of parameters.
+     * @param array array of parameters
      * @param int $type type of query
      * @param mixed $extrainfo driver specific extra information
      * @return void
      */
-    protected function query_start($sql, ?array $params, $type, $extrainfo = null)
+    protected function query_start($sql, array $params = null, $type, $extrainfo = null)
     {
     }
     /**

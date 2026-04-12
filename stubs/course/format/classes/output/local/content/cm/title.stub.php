@@ -38,8 +38,9 @@ namespace core_courseformat\output\local\content\cm;
  * @copyright 2020 Ferran Recio <ferran@moodle.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class title extends inplace_editable implements named_templatable, renderable
+class title implements named_templatable, renderable
 {
+    use courseformat_named_templatable;
     /** @var course_format the course format */
     protected $format;
     /** @var section_info the section object */
@@ -48,10 +49,6 @@ class title extends inplace_editable implements named_templatable, renderable
     protected $mod;
     /** @var array optional display options */
     protected $displayoptions;
-    /** @var editable if the title is editable */
-    protected $editable;
-    /** @var displaytemplate the default display template */
-    protected $displaytemplate = 'core_courseformat/local/content/cm/title';
     /**
      * Constructor.
      *
@@ -59,18 +56,8 @@ class title extends inplace_editable implements named_templatable, renderable
      * @param section_info $section the section info
      * @param cm_info $mod the course module ionfo
      * @param array $displayoptions optional extra display options
-     * @param bool|null $editable force editable value
      */
-    public function __construct(course_format $format, section_info $section, cm_info $mod, array $displayoptions = [], ?bool $editable = null)
-    {
-    }
-    /**
-     * Get the name of the template to use for this templatable.
-     *
-     * @param \renderer_base $renderer The renderer requesting the template name
-     * @return string
-     */
-    public function get_template_name(\renderer_base $renderer): string
+    public function __construct(course_format $format, section_info $section, cm_info $mod, array $displayoptions = [])
     {
     }
     /**
@@ -79,39 +66,7 @@ class title extends inplace_editable implements named_templatable, renderable
      * @param \renderer_base $output typically, the renderer that's calling this function
      * @return stdClass data context for a mustache template
      */
-    public function export_for_template(\renderer_base $output): array
-    {
-    }
-    /**
-     * Return the title template data to be used inside the inplace editable.
-     *
-     */
-    protected function get_title_displayvalue(): string
-    {
-    }
-    /**
-     * Load the required display options if not present already.
-     *
-     * In most cases, display options are provided as a param when creating the
-     * object. However, inplace_editable and some blocks does not know all of them as it is
-     * called in a webservice and we need to ensure it is calculated.
-     *
-     * @param array $displayoptions the provided dispaly options
-     * @return array the full display options list
-     */
-    protected function load_display_options(array $displayoptions): array
-    {
-    }
-    /**
-     * Updates course module name.
-     *
-     * This method is used mainly by inplace_editable webservice.
-     *
-     * @param int $itemid course module id
-     * @param string $newvalue new name
-     * @return static
-     */
-    public static function update($itemid, $newvalue)
+    public function export_for_template(\renderer_base $output): stdClass
     {
     }
 }

@@ -20,6 +20,13 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+/**
+ * Class handling course content updates notifications.
+ *
+ * @package    core_course
+ * @copyright  2021 Juan Leyva <juan@moodle.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 namespace core_course\task;
 
 /**
@@ -35,6 +42,8 @@ class content_notification_task extends adhoc_task
     use \core\task\logging_trait;
     /**
      * Run the main task.
+     *
+     * @throws \coding_exception if something wrong happens.
      */
     public function execute()
     {

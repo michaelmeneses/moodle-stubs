@@ -74,16 +74,6 @@ trait behat_session_trait
     {
     }
     /**
-     * Get a description of the selector and locator to use in an exception message.
-     *
-     * @param string $selector The type of locator
-     * @param mixed $locator The locator text
-     * @return string
-     */
-    protected function get_selector_description(string $selector, $locator): string
-    {
-    }
-    /**
      * Send key presses straight to the currently active element.
      *
      * The `$keys` array contains a list of key values to send to the session as defined in the WebDriver and JsonWire
@@ -444,23 +434,6 @@ trait behat_session_trait
     {
     }
     /**
-     * Execute a function in a specific behat context.
-     *
-     * For example, to call the 'set_editor_value' function for all editors, you would call:
-     *
-     *     behat_base::execute_in_matching_contexts('editor', 'set_editor_value', ['Some value']);
-     *
-     * This would find all behat contexts whose class name starts with 'behat_editor_' and
-     * call the 'set_editor_value' function on that context.
-     *
-     * @param string $prefix
-     * @param string $method
-     * @param array $params
-     */
-    public static function execute_in_matching_contexts(string $prefix, string $method, array $params): void
-    {
-    }
-    /**
      * Get the actual user in the behat session (note $USER does not correspond to the behat session's user).
      * @return mixed
      * @throws coding_exception
@@ -757,52 +730,6 @@ trait behat_session_trait
      * @return cm_info
      */
     protected function get_cm_by_activity_name(string $activity, string $identifier): cm_info
-    {
-    }
-    /**
-     * Check whether any of the tags availble to the current scope match using the given callable.
-     *
-     * This function is typically called from within a Behat Hook, such as BeforeFeature, BeforeScenario, AfterStep, etc.
-     *
-     * The callable is used as the second argument to `array_filter()`, and is passed a single string argument for each of the
-     * tags available in the scope.
-     *
-     * The tags passed will include:
-     * - For a FeatureScope, the Feature tags only
-     * - For a ScenarioScope, the Feature and Scenario tags
-     * - For a StepScope, the Feature, Scenario, and Step tags
-     *
-     * An example usage may be:
-     *
-     *    // Note: phpDoc beforeStep attribution not shown.
-     *    public function before_step(StepScope $scope) {
-     *        $callback = function (string $tag): bool {
-     *            return $tag === 'editor_atto' || substr($tag, 0, 5) === 'atto_';
-     *        };
-     *
-     *        if (!self::scope_tags_match($scope, $callback)) {
-     *            return;
-     *        }
-     *
-     *        // Do something here.
-     *    }
-     *
-     * @param HookScope $scope The scope to check
-     * @param callable $callback The callable to use to check the scope
-     * @return boolean Whether any of the scope tags match
-     */
-    public static function scope_tags_match(HookScope $scope, callable $callback): bool
-    {
-    }
-    /**
-     * Get the user id from an identifier.
-     *
-     * The user username and email fields are checked.
-     *
-     * @param string $identifier The user's username or email.
-     * @return int|null The user id or null if not found.
-     */
-    protected function get_user_id_by_identifier(string $identifier): ?int
     {
     }
 }

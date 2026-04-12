@@ -39,12 +39,6 @@ abstract class qtype_multichoice_base extends question_graded_automatically
     public function apply_attempt_state(question_attempt_step $step)
     {
     }
-    public function validate_can_regrade_with_other_version(question_definition $otherversion): ?string
-    {
-    }
-    public function update_attempt_state_data_for_new_version(question_attempt_step $oldstep, question_definition $otherversion)
-    {
-    }
     public function get_question_summary()
     {
     }
@@ -95,9 +89,6 @@ class qtype_multichoice_single_question extends qtype_multichoice_base
     {
     }
     public function summarise_response(array $response)
-    {
-    }
-    public function un_summarise_response(string $summary)
     {
     }
     public function classify_response(array $response)
@@ -165,9 +156,6 @@ class qtype_multichoice_multi_question extends qtype_multichoice_base
     {
     }
     public function summarise_response(array $response)
-    {
-    }
-    public function un_summarise_response(string $summary)
     {
     }
     public function classify_response(array $response)

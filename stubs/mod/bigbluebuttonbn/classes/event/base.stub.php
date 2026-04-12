@@ -31,12 +31,6 @@ namespace mod_bigbluebuttonbn\event;
  */
 abstract class base extends \core\event\base
 {
-    /**
-     * Object Id Mapping.
-     *
-     * @var array
-     */
-    protected static $objectidmapping = ['db' => 'bigbluebuttonbn', 'restore' => 'bigbluebuttonbn'];
     /** @var $bigbluebuttonbn */
     protected $bigbluebuttonbn;
     /**
@@ -46,11 +40,25 @@ abstract class base extends \core\event\base
      */
     protected $description;
     /**
+     * Object Id Mapping.
+     *
+     * @var array
+     */
+    protected static $objectidmapping = ['db' => 'bigbluebuttonbn', 'restore' => 'bigbluebuttonbn'];
+    /**
      * Legacy log data.
      *
      * @var array
      */
     protected $legacylogdata;
+    /**
+     * Init method.
+     * @param string $crud
+     * @param int $edulevel
+     */
+    protected function init($crud = 'r', $edulevel = self::LEVEL_PARTICIPATING)
+    {
+    }
     /**
      * Returns description of what happened.
      *
@@ -62,26 +70,9 @@ abstract class base extends \core\event\base
     /**
      * Returns relevant URL.
      *
-     * @return moodle_url
+     * @return \moodle_url
      */
     public function get_url()
-    {
-    }
-    /**
-     * Init method.
-     *
-     * @param string $crud
-     * @param int $edulevel
-     */
-    protected function init($crud = 'r', $edulevel = self::LEVEL_PARTICIPATING)
-    {
-    }
-    /**
-     * Return legacy data for add_to_log().
-     *
-     * @return array
-     */
-    protected function get_legacy_logdata()
     {
     }
     /**
@@ -95,9 +86,17 @@ abstract class base extends \core\event\base
     {
     }
     /**
+     * Return legacy data for add_to_log().
+     *
+     * @return array
+     */
+    protected function get_legacy_logdata()
+    {
+    }
+    /**
      * Custom validation.
      *
-     * @throws coding_exception
+     * @throws \coding_exception
      */
     protected function validate_data()
     {

@@ -73,12 +73,4 @@ class text extends base
     private function validate_filter_values(int $operator, ?string $value): bool
     {
     }
-    /**
-     * Return sample filter values
-     *
-     * @return array
-     */
-    public function get_sample_values(): array
-    {
-    }
 }

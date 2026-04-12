@@ -79,15 +79,6 @@ class core_question_renderer extends plugin_renderer_base
     {
     }
     /**
-     * Get the question number as a string.
-     *
-     * @param string|null $number e.g. '123' or 'i'. null or '' means do not display anything number-related.
-     * @return string e.g. 'Question 123' or 'Information' or ''.
-     */
-    protected function question_number_text(?string $number): string
-    {
-    }
-    /**
      * Add an invisible heading like 'question text', 'feebdack' at the top of
      * a section's contents, but only if the section has some content.
      * @param string $heading the heading to add.

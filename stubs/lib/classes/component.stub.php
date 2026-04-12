@@ -420,9 +420,9 @@ class core_component
      * and the value is the new class name.
      * It is only included when we are populating the component cache. After that is not needed.
      *
-     * @param string|null $fulldir The directory to the renamed classes.
+     * @param string $fulldir
      */
-    protected static function load_renamed_classes(?string $fulldir)
+    protected static function load_renamed_classes($fulldir)
     {
     }
     /**
@@ -459,19 +459,6 @@ class core_component
      * @return array the list of frankenstyle component names.
      */
     public static function get_component_names(): array
-    {
-    }
-    /**
-     * Checks for the presence of monologo icons within a plugin.
-     *
-     * Only checks monologo icons in PNG and SVG formats as they are
-     * formats that can have transparent background.
-     *
-     * @param string $plugintype The plugin type.
-     * @param string $pluginname The plugin name.
-     * @return bool True if the plugin has a monologo icon
-     */
-    public static function has_monologo_icon(string $plugintype, string $pluginname): bool
     {
     }
 }

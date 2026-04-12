@@ -152,21 +152,12 @@ trait moodle_read_slave_trait
     /**
      * Called before each db query.
      * @param string $sql
-     * @param array|null $params An array of parameters.
+     * @param array $params array of parameters
      * @param int $type type of query
      * @param mixed $extrainfo driver specific extra information
      * @return void
      */
-    protected function query_start($sql, ?array $params, $type, $extrainfo = null)
-    {
-    }
-    /**
-     * This should be called immediately after each db query. It does a clean up of resources.
-     *
-     * @param mixed $result The db specific result obtained from running a query.
-     * @return void
-     */
-    protected function query_end($result)
+    protected function query_start($sql, array $params = null, $type, $extrainfo = null)
     {
     }
     /**

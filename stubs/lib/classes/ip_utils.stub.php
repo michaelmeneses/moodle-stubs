@@ -125,8 +125,8 @@ final class ip_utils
     {
     }
     /**
-     * Checks the domain name against a list of allowed domains. The list of allowed domains may use wildcards
-     * that match {@see is_domain_matching_pattern()}. Domains are compared in a case-insensitive manner
+     * Checks the domain name against a list of allowed domains. The list of allowed domains is may use
+     * wildcards that match {@link is_domain_matching_pattern()}.
      *
      * @param  string $domain Domain address
      * @param  array $alloweddomains An array of allowed domains.

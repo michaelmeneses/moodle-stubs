@@ -38,10 +38,6 @@ class renderer_base
      */
     private $mustache;
     /**
-     * @var array $templatecache The mustache template cache.
-     */
-    protected $templatecache = [];
-    /**
      * Return an instance of the mustache class.
      *
      * @since 2.9
@@ -1104,10 +1100,9 @@ class core_renderer extends renderer_base
      * Returns HTML to display a "Turn editing on/off" button in a form.
      *
      * @param moodle_url $url The URL + params to send through when clicking the button
-     * @param string $method
      * @return string HTML the button
      */
-    public function edit_button(moodle_url $url, string $method = 'post')
+    public function edit_button(moodle_url $url)
     {
     }
     /**

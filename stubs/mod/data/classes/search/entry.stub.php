@@ -128,10 +128,10 @@ class entry extends \core_search\base_mod
     {
     }
     /**
-     * Returns the class name for the given field type and includes it.
+     * Returns the class name for that field type and includes it.
      *
      * @param string $fieldtype
-     * @return string|null It will return the class name or null if the field type is not available.
+     * @return string
      */
     protected function get_field_class_name($fieldtype)
     {

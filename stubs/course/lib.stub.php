@@ -96,10 +96,9 @@ function course_integrity_check($courseid, $rawmods = null, $sections = null, $f
  * and the value is a lang_string object with a human-readable string.
  *
  * @param bool $plural If true, the function returns the plural forms of the names.
- * @param bool $resetcache If true, the static cache will be reset
  * @return lang_string[] Localised human-readable names of all used modules.
  */
-function get_module_types_names($plural = false, $resetcache = false)
+function get_module_types_names($plural = false)
 {
 }
 /**

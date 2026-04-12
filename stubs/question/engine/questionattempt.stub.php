@@ -939,15 +939,6 @@ class question_attempt
     {
     }
     /**
-     * Verify if this question_attempt in can be regraded with that other question version.
-     *
-     * @param question_definition $otherversion a different version of the question to use in the regrade.
-     * @return string|null null if the regrade can proceed, else a reason why not.
-     */
-    public function validate_can_regrade_with_other_version(question_definition $otherversion): ?string
-    {
-    }
-    /**
      * Perform a regrade. This replays all the actions from $oldqa into this
      * attempt.
      * @param question_attempt $oldqa the attempt to regrade.
@@ -955,19 +946,6 @@ class question_attempt
      *      after the regrade, or whether it may still be in progress (default false).
      */
     public function regrade(question_attempt $oldqa, $finished)
-    {
-    }
-    /**
-     * Helper used by regrading.
-     *
-     * Get the data from the first step of the old attempt and, if necessary,
-     * update it to be suitable for use with the other version of the question.
-     *
-     * @param question_attempt_step $oldstep First step at an attempt at $otherversion of this question.
-     * @param question_definition $otherversion Another version of the question being attempted.
-     * @return array updated data required to restart an attempt with the current version of this question.
-     */
-    protected function get_attempt_state_data_to_regrade_with_version(question_attempt_step $oldstep, question_definition $otherversion): array
     {
     }
     /**

@@ -33,7 +33,6 @@ class meeting_left extends base
 {
     /**
      * Init method.
-     *
      * @param string $crud
      * @param int $edulevel
      */

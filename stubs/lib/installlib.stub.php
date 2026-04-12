@@ -94,10 +94,10 @@ function install_print_help_page($help)
 {
 }
 /**
- * Prints installation page header, we can not use weblib yet in installer.
+ * Prints installation page header, we can no use weblib yet in installer.
  *
  * @global object
- * @param stdClass $config
+ * @param array $config
  * @param string $stagename
  * @param string $heading
  * @param string $stagetext
@@ -108,10 +108,10 @@ function install_print_header($config, $stagename, $heading, $stagetext, $stagec
 {
 }
 /**
- * Prints installation page header, we can not use weblib yet in installer.
+ * Prints installation page header, we can no use weblib yet in isntaller.
  *
  * @global object
- * @param stdClass $config
+ * @param array $config
  * @param bool $reload print reload button instead of next
  * @return void
  */

@@ -79,12 +79,4 @@ class date extends base
     private static function get_relative_timeframe(int $operator, int $dateunitvalue, int $dateunit): array
     {
     }
-    /**
-     * Return sample filter values
-     *
-     * @return array
-     */
-    public function get_sample_values(): array
-    {
-    }
 }

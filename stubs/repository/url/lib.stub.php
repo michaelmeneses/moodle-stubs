@@ -19,10 +19,6 @@ class repository_url extends repository
 {
     /** @var int Maximum time of recursion. */
     const MAX_RECURSION_TIME = 5;
-    /** @var int Maximum number of CSS imports. */
-    const MAX_CSS_IMPORTS = 10;
-    /** @var int CSS import counter. */
-    var $cssimportcounter = 0;
     var $processedfiles = array();
     /** @var int Recursion counter. */
     var $recursioncounter = 0;

@@ -30,3 +30,12 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 define('NO_OUTPUT_BUFFERING', true);
+/**
+ * Function used to handle mtrace by outputting the text to normal browser window.
+ *
+ * @param string $message Message to output
+ * @param string $eol End of line character
+ */
+function tool_task_mtrace_wrapper($message, $eol)
+{
+}

@@ -326,11 +326,10 @@ function print_error($errorcode, $module = 'error', $link = '', $a = null, $debu
 }
 /**
  * Returns detailed information about specified exception.
- *
- * @param Throwable $ex any sort of exception or throwable.
- * @return stdClass standardised info to display. Fields are clear if you look at the end of this function.
+ * @param exception $ex
+ * @return object
  */
-function get_exception_info($ex): stdClass
+function get_exception_info($ex)
 {
 }
 /**

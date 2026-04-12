@@ -29,8 +29,8 @@ namespace core_courseformat;
  *
  * Each format plugin could extend this class to provide new updates to the frontend
  * mutation module.
- * Extended classes should be located in "format_XXX\course" namespace and
- * extends {@see \core_courseformat\stateupdates}.
+ * Extended classes should be locate in "format_XXX\course" namespace and
+ * extends core_course\stateupdates.
  *
  * @package    core_course
  * @copyright  2021 Ferran Recio <ferran@moodle.com>
@@ -100,14 +100,6 @@ class stateupdates implements JsonSerializable
     {
     }
     /**
-     * Add track about a section removed.
-     *
-     * @param int $sectionid The affected section id.
-     */
-    public function add_section_remove(int $sectionid): void
-    {
-    }
-    /**
      * Add track about a course module state update.
      *
      * @param int $cmid the affected course module id
@@ -141,18 +133,10 @@ class stateupdates implements JsonSerializable
     {
     }
     /**
-     * Add track about a course module removed.
-     *
-     * @param int $cmid the affected course module id
-     */
-    public function add_cm_remove(int $cmid): void
-    {
-    }
-    /**
      * Add a valid update message to the update list.
      *
      * @param string $name the update name
-     * @param string $action the update action (usually update, create, remove)
+     * @param string $action the update action (usually update, create, delete)
      * @param stdClass $fields the object fields
      */
     protected function add_update(string $name, string $action, stdClass $fields): void

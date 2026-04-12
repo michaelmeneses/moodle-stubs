@@ -9,6 +9,7 @@
 /**
  * Moodle editor field.
  *
+ * @todo Support for multiple editors
  * @package   core_form
  * @category  test
  * @copyright 2012 David Monllaó
@@ -20,16 +21,9 @@ class behat_form_editor extends behat_form_textarea
      * Sets the value to a field.
      *
      * @param string $value
+     * @return void
      */
-    public function set_value($value): void
-    {
-    }
-    /**
-     * Returns the current value of the select element.
-     *
-     * @return string
-     */
-    public function get_value(): string
+    public function set_value($value)
     {
     }
     /**
@@ -46,15 +40,6 @@ class behat_form_editor extends behat_form_textarea
      * @return bool The provided value matches the field value?
      */
     public function matches($expectedvalue)
-    {
-    }
-    /**
-     * Standardises the HTML content for comparison.
-     *
-     * @param string $html The HTML content to standardise
-     * @return string The standardised HTML content
-     */
-    protected function standardise_html(string $html): string
     {
     }
 }

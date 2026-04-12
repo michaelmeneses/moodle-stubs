@@ -249,16 +249,6 @@ class testing_data_generator
     {
     }
     /**
-     * Set role capabilities for the specified role.
-     *
-     * @param int $roleid The Role to set capabilities for
-     * @param array $rolecapabilities The list of capability =>permission to set for this role
-     * @param null|context $context The context to apply this capability to
-     */
-    public function create_role_capability(int $roleid, array $rolecapabilities, context $context = null): void
-    {
-    }
-    /**
      * Create a tag.
      *
      * @param array|stdClass $record
@@ -316,15 +306,6 @@ class testing_data_generator
      * @return stdClass the grade category record
      */
     public function create_grade_category($record = null)
-    {
-    }
-    /**
-     * Create a grade_grade.
-     *
-     * @param array $record
-     * @return grade_grade the grade record
-     */
-    public function create_grade_grade(?array $record = null): grade_grade
     {
     }
     /**

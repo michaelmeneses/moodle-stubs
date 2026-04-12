@@ -233,10 +233,9 @@ class grade_category extends grade_object
      *  4. Save them in final grades of associated category grade item
      *
      * @param int $userid The user ID if final grade generation should be limited to a single user
-     * @param \core\progress\base|null $progress Optional progress indicator
      * @return bool
      */
-    public function generate_grades($userid = null, ?\core\progress\base $progress = null)
+    public function generate_grades($userid = null)
     {
     }
     /**

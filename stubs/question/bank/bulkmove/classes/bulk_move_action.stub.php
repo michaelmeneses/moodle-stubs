@@ -35,7 +35,7 @@ class bulk_move_action extends \core_question\local\bank\bulk_action_base
     public function get_bulk_action_title(): string
     {
     }
-    public function get_key(): string
+    public function get_bulk_action_key(): string
     {
     }
     public function get_bulk_action_url(): \moodle_url

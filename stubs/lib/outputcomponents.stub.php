@@ -1849,8 +1849,6 @@ class custom_menu_item implements renderable, templatable
      * @var int A reference to the sort var of the last child that was added
      */
     protected $lastsort = 0;
-    /** @var array Array of other HTML attributes for the custom menu item. */
-    protected $attributes = [];
     /**
      * Constructs the new custom menu item
      *
@@ -1860,9 +1858,8 @@ class custom_menu_item implements renderable, templatable
      * @param int $sort A sort or to use if we need to sort differently [Optional]
      * @param custom_menu_item $parent A reference to the parent custom_menu_item this child
      *        belongs to, only if the child has a parent. [Optional]
-     * @param array $attributes Array of other HTML attributes for the custom menu item.
      */
-    public function __construct($text, moodle_url $url = null, $title = null, $sort = null, custom_menu_item $parent = null, array $attributes = [])
+    public function __construct($text, moodle_url $url = null, $title = null, $sort = null, custom_menu_item $parent = null)
     {
     }
     /**
@@ -1872,10 +1869,9 @@ class custom_menu_item implements renderable, templatable
      * @param moodle_url $url
      * @param string $title
      * @param int $sort
-     * @param array $attributes Array of other HTML attributes for the custom menu item.
      * @return custom_menu_item
      */
-    public function add($text, moodle_url $url = null, $title = null, $sort = null, $attributes = [])
+    public function add($text, moodle_url $url = null, $title = null, $sort = null)
     {
     }
     /**
@@ -2559,12 +2555,12 @@ class action_menu_link extends action_link implements renderable
      * Constructs the object.
      *
      * @param moodle_url $url The URL for the action.
-     * @param pix_icon|null $icon The icon to represent the action.
+     * @param pix_icon $icon The icon to represent the action.
      * @param string $text The text to represent the action.
      * @param bool $primary Whether this is a primary action or not.
      * @param array $attributes Any attribtues associated with the action.
      */
-    public function __construct(moodle_url $url, ?pix_icon $icon, $text, $primary = true, array $attributes = array())
+    public function __construct(moodle_url $url, pix_icon $icon = null, $text, $primary = true, array $attributes = array())
     {
     }
     /**
@@ -2591,11 +2587,11 @@ class action_menu_link_primary extends action_menu_link
      * Constructs the object.
      *
      * @param moodle_url $url
-     * @param pix_icon|null $icon
+     * @param pix_icon $icon
      * @param string $text
      * @param array $attributes
      */
-    public function __construct(moodle_url $url, ?pix_icon $icon, $text, array $attributes = array())
+    public function __construct(moodle_url $url, pix_icon $icon = null, $text, array $attributes = array())
     {
     }
 }
@@ -2613,11 +2609,11 @@ class action_menu_link_secondary extends action_menu_link
      * Constructs the object.
      *
      * @param moodle_url $url
-     * @param pix_icon|null $icon
+     * @param pix_icon $icon
      * @param string $text
      * @param array $attributes
      */
-    public function __construct(moodle_url $url, ?pix_icon $icon, $text, array $attributes = array())
+    public function __construct(moodle_url $url, pix_icon $icon = null, $text, array $attributes = array())
     {
     }
 }

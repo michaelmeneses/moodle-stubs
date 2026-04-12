@@ -149,10 +149,7 @@ define('PARAM_RAW_TRIMMED', 'raw_trimmed');
  */
 define('PARAM_SAFEDIR', 'safedir');
 /**
- * PARAM_SAFEPATH - several PARAM_SAFEDIR joined by "/", suitable for include() and require(), plugin paths
- * and other references to Moodle code files.
- *
- * This is NOT intended to be used for absolute paths or any user uploaded files.
+ * PARAM_SAFEPATH - several PARAM_SAFEDIR joined by "/", suitable for include() and require(), plugin paths, etc.
  */
 define('PARAM_SAFEPATH', 'safepath');
 /**
@@ -545,13 +542,13 @@ function validate_param($param, $type, $allownull = NULL_NOT_ALLOWED, $debuginfo
  * $options = clean_param($options, PARAM_INT);
  * </code>
  *
- * @param array|null $param the variable array we are cleaning
+ * @param array $param the variable array we are cleaning
  * @param string $type expected format of param after cleaning.
  * @param bool $recursive clean recursive arrays
  * @return array
  * @throws coding_exception
  */
-function clean_param_array(?array $param, $type, $recursive = false)
+function clean_param_array(array $param = null, $type, $recursive = false)
 {
 }
 /**
@@ -2018,15 +2015,6 @@ function current_language()
 {
 }
 /**
- * Fix the current language to the given language code.
- *
- * @param string $lang The language code to use.
- * @return void
- */
-function fix_current_language(string $lang): void
-{
-}
-/**
  * Returns parent language of current active language if defined
  *
  * @category string
@@ -2733,10 +2721,9 @@ function make_unique_id_code($extra = '')
  *
  * @param string $addr    The address you are checking
  * @param string $subnetstr    The string of subnet addresses
- * @param bool $checkallzeros    The state to whether check for 0.0.0.0
  * @return bool
  */
-function address_in_subnet($addr, $subnetstr, $checkallzeros = false)
+function address_in_subnet($addr, $subnetstr)
 {
 }
 /**
@@ -2748,14 +2735,6 @@ function address_in_subnet($addr, $subnetstr, $checkallzeros = false)
  *                      This ensures any messages have time to display before redirect
  */
 function mtrace($string, $eol = "\n", $sleep = 0)
-{
-}
-/**
- * Helper to {@see mtrace()} an exception or throwable, including all relevant information.
- *
- * @param Throwable $e the error to ouptput.
- */
-function mtrace_exception(Throwable $e): void
 {
 }
 /**
@@ -3086,6 +3065,8 @@ function get_course_display_name_for_list($course)
  * Safe analogue of unserialize() that can only parse arrays
  *
  * Arrays may contain only integers or strings as both keys and values. Nested arrays are allowed.
+ * Note: If any string (key or value) has semicolon (;) as part of the string parsing will fail.
+ * This is a simple method to substitute unnecessary unserialize() in code and not intended to cover all possible cases.
  *
  * @param string $expression
  * @return array|bool either parsed array or false if parsing was impossible.

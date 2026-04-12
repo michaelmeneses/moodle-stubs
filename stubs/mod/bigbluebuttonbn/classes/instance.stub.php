@@ -226,7 +226,7 @@ class instance
      * Helper to get an instance var.
      *
      * @param string $name
-     * @return mixed|null
+     * @return string
      */
     public function get_instance_var(string $name)
     {
@@ -430,14 +430,6 @@ class instance
     {
     }
     /**
-     * Get the appropriate designated role for the current user.
-     *
-     * @return string
-     */
-    public function get_current_user_role(): string
-    {
-    }
-    /**
      * Whether to show the recording button
      *
      * @return bool
@@ -459,14 +451,6 @@ class instance
      * @return bool
      */
     public function can_import_recordings(): bool
-    {
-    }
-    /**
-     * Get recordings_imported from instancedata.
-     *
-     * @return bool
-     */
-    public function get_recordings_imported(): bool
     {
     }
     /**
@@ -674,7 +658,7 @@ class instance
      * @param bool $viewdeleted view deleted recordings ?
      * @return recording[]
      */
-    public function get_recordings(array $excludedid = [], bool $viewdeleted = false): array
+    public function get_recordings(array $excludedid = [], $viewdeleted = false): array
     {
     }
     /**

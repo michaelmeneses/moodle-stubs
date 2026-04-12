@@ -146,14 +146,6 @@ class assign_feedback_editpdf extends assign_feedback_plugin
     {
     }
     /**
-     * Get all file areas for user data related to this plugin.
-     *
-     * @return array - An array of user data fileareas (keys) and descriptions (values)
-     */
-    public function get_user_data_file_areas(): array
-    {
-    }
-    /**
      * This plugin will inject content into the review panel with javascript.
      * @return bool true
      */

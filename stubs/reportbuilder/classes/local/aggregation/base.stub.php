@@ -61,10 +61,9 @@ abstract class base
      *
      * @param string[] $sqlfields
      * @param string $delimeter
-     * @param string $coalescechar
      * @return string
      */
-    final protected static function get_column_fields_concat(array $sqlfields, string $delimeter = ',', string $coalescechar = ' '): string
+    final protected static function get_column_fields_concat(array $sqlfields, string $delimeter = ','): string
     {
     }
     /**

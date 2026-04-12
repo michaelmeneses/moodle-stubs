@@ -73,11 +73,11 @@ class Mustache_Tokenizer
      * @throws Mustache_Exception_InvalidArgumentException when $delimiters string is invalid
      *
      * @param string $text       Mustache template source to tokenize
-     * @param string $delimiters Optionally, pass initial opening and closing delimiters (default: empty string)
+     * @param string $delimiters Optionally, pass initial opening and closing delimiters (default: null)
      *
      * @return array Set of Mustache tokens
      */
-    public function scan($text, $delimiters = '')
+    public function scan($text, $delimiters = null)
     {
     }
     /**

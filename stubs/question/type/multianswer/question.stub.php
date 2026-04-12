@@ -45,12 +45,6 @@ class qtype_multianswer_question extends question_graded_automatically_with_coun
     public function apply_attempt_state(question_attempt_step $step)
     {
     }
-    public function validate_can_regrade_with_other_version(question_definition $otherversion): ?string
-    {
-    }
-    public function update_attempt_state_data_for_new_version(question_attempt_step $oldstep, question_definition $oldquestion)
-    {
-    }
     public function get_question_summary()
     {
     }

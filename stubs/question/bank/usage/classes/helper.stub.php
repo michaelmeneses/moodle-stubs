@@ -59,29 +59,4 @@ class helper
     public static function get_question_attempts_count_in_quiz(int $questionid, $quizid = null): int
     {
     }
-    /**
-     * Get the question bank usage sql.
-     *
-     * The resulting string which represents a sql query has then to be
-     * called accompanying a $params array which includes the necessary
-     * parameters in the correct order which are the question id, then
-     * the component and finally the question area.
-     *
-     * @return string
-     */
-    public static function get_question_bank_usage_sql(): string
-    {
-    }
-    /**
-     * Get the question attempt usage sql.
-     *
-     * The resulting string which represents a sql query has then to be
-     * called accompanying a $params array which includes the necessary
-     * parameter, the question id.
-     *
-     * @return string
-     */
-    public static function get_question_attempt_usage_sql(): string
-    {
-    }
 }

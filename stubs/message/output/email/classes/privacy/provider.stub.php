@@ -36,7 +36,7 @@ namespace message_email\privacy;
  * @copyright  2018 Mihail Geshoski <mihail@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class provider implements \core_privacy\local\metadata\provider, \core_privacy\local\request\core_userlist_provider, \core_privacy\local\request\user_preference_provider, \core_privacy\local\request\plugin\provider
+class provider implements \core_privacy\local\metadata\provider, \core_privacy\local\request\core_userlist_provider, \core_privacy\local\request\plugin\provider
 {
     /**
      * Returns meta data about this system.
@@ -94,14 +94,6 @@ class provider implements \core_privacy\local\metadata\provider, \core_privacy\l
      * @param   approved_contextlist    $contextlist    The approved contexts and user information to delete information for.
      */
     public static function delete_data_for_user(approved_contextlist $contextlist)
-    {
-    }
-    /**
-     * Export all user preferences for the plugin
-     *
-     * @param int $userid
-     */
-    public static function export_user_preferences(int $userid)
     {
     }
 }

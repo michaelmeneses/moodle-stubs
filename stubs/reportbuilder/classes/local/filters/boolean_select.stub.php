@@ -51,12 +51,4 @@ class boolean_select extends base
     public function get_sql_filter(array $values): array
     {
     }
-    /**
-     * Return sample filter values
-     *
-     * @return array
-     */
-    public function get_sample_values(): array
-    {
-    }
 }

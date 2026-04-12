@@ -113,16 +113,6 @@ class enrol_self_plugin extends enrol_plugin
     {
     }
     /**
-     * Does this plugin support some way to self enrol?
-     * This function doesn't check user capabilities. Use can_self_enrol to check capabilities.
-     *
-     * @param stdClass $instance enrolment instance
-     * @return bool - true means "Enrol me in this course" link could be available
-     */
-    public function is_self_enrol_available(stdClass $instance)
-    {
-    }
-    /**
      * Return information for enrolment instance containing list of parameters required
      * for enrolment, name of enrolment plugin etc.
      *

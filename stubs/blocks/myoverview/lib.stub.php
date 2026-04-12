@@ -50,11 +50,9 @@ define('BLOCK_MYOVERVIEW_DISPLAY_CATEGORIES_OFF', 'off');
 /**
  * Get the current user preferences that are available
  *
- * @uses core_user::is_current_user
- *
- * @return array[] Array representing current options along with defaults
+ * @return mixed Array representing current options along with defaults
  */
-function block_myoverview_user_preferences(): array
+function block_myoverview_user_preferences()
 {
 }
 /**

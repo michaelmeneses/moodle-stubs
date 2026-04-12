@@ -136,18 +136,6 @@ class data_field_base
     {
     }
     /**
-     * Validates params of fieldinput data. Overwrite to validate fieldtype specific data.
-     *
-     * You are expected to return an array like ['paramname' => 'Error message for paramname param'] if there is an error,
-     * return an empty array if everything is fine.
-     *
-     * @param stdClass $fieldinput The field input data to check
-     * @return array $errors if empty validation was fine, otherwise contains one or more error messages
-     */
-    public function validate(stdClass $fieldinput): array
-    {
-    }
-    /**
      * Display the content of the field in browse mode
      *
      * @global object
@@ -382,10 +370,10 @@ function data_get_field_new($type, $data)
  * input: $param $field - record from db
  *
  * @global object
- * @param stdClass $field the field record
- * @param stdClass $data the data instance
- * @param stdClass|null $cm optional course module data
- * @return data_field_base the field object instance or data_field_base if unkown type
+ * @param object $field
+ * @param object $data
+ * @param object $cm
+ * @return object
  */
 function data_get_field($field, $data, $cm = null)
 {

@@ -19,8 +19,6 @@ class groupconcat extends base
 {
     /** @var string Character to use as a delimeter between column fields */
     protected const COLUMN_FIELD_DELIMETER = '<|>';
-    /** @var string Character to use a null coalesce value */
-    protected const COLUMN_NULL_COALESCE = '<^>';
     /** @var string Character to use as a delimeter between field values */
     protected const FIELD_VALUE_DELIMETER = '<,>';
     /**

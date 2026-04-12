@@ -20,8 +20,6 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\check\performance;
-
 /**
  * Stats check
  *
@@ -29,6 +27,14 @@ namespace core\check\performance;
  * @category   check
  * @copyright  2020 Brendan Heywood <brendan@catalyst-au.net>
  * @copyright  2008 petr Skoda
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+namespace core\check\performance;
+
+/**
+ * Stats check
+ *
+ * @copyright  2020 Brendan Heywood <brendan@catalyst-au.net>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class stats extends check
@@ -44,7 +50,7 @@ class stats extends check
     /**
      * A link to a place to action this
      *
-     * @return \action_link|null
+     * @return action_link|null
      */
     public function get_action_link(): ?\action_link
     {

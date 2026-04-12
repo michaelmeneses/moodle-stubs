@@ -68,9 +68,6 @@ abstract class qtype_gapselect_question_base extends question_graded_automatical
     protected function set_choiceorder($group, $choiceorder)
     {
     }
-    public function validate_can_regrade_with_other_version(question_definition $otherversion): ?string
-    {
-    }
     public function get_question_summary()
     {
     }

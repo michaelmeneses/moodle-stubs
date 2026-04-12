@@ -30,7 +30,6 @@
  * @copyright  2020 onward The Moodle Users Association <https://moodleassociation.org/>
  * @author     Matt Porritt <mattp@catalyst-au.net>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 4.1. Use copy_helper instead
  */
 namespace core_backup\copy;
 
@@ -44,9 +43,6 @@ namespace core_backup\copy;
  * @copyright  2020 onward The Moodle Users Association <https://moodleassociation.org/>
  * @author     Matt Porritt <mattp@catalyst-au.net>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 4.1 MDL-74548 - please use copy_helper instead
- * @todo MDL-75022 This class will be deleted in Moodle 4.5
- * @see copy_helper
  */
 class copy
 {
@@ -119,12 +115,18 @@ class copy
      * Sets up relevant controllers and adhoc task.
      *
      * @return array $copyids THe backup and restore controller ids.
-     * @deprecated since Moodle 4.1 MDL-74548 - please use copy_helper instead.
-     * @todo MDL-75023 This method will be deleted in Moodle 4.5
-     * @see copy_helper::process_formdata()
-     * @see copy_helper::create_copy()
      */
     public function create_copy(): array
+    {
+    }
+    /**
+     * Filters an array of copy records by course ID.
+     *
+     * @param array $copyrecords
+     * @param int $courseid
+     * @return array $copies Filtered array of records.
+     */
+    private static function filter_copies_course(array $copyrecords, int $courseid): array
     {
     }
     /**
@@ -133,9 +135,6 @@ class copy
      * @param int $userid User id to get the course copies for.
      * @param int $courseid The optional source course id to get copies for.
      * @return array $copies Details of the inprogress copies.
-     * @deprecated since Moodle 4.1 MDL-74548 - please use copy_helper::get_copies() instead.
-     * @todo MDL-75024 This method will be deleted in Moodle 4.5
-     * @see copy_helper::get_copies()
      */
     public static function get_copies(int $userid, int $courseid = 0): array
     {

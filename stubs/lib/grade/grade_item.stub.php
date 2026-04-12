@@ -397,10 +397,9 @@ class grade_item extends grade_object
      * because the regrading must be done in correct order!!
      *
      * @param int $userid Supply a user ID to limit the regrading to a single user
-     * @param \core\progress\base|null $progress Optional progress object, will be updated per user
      * @return bool true if ok, error string otherwise
      */
-    public function regrade_final_grades($userid = null, ?\core\progress\base $progress = null)
+    public function regrade_final_grades($userid = null)
     {
     }
     /**

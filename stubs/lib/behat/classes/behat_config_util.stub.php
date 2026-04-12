@@ -142,18 +142,6 @@ class behat_config_util
     {
     }
     /**
-     * Sort the list of components contexts.
-     *
-     * This ensures that contexts are sorted consistently.
-     * Core hooks defined in the behat_hooks class _must_ be defined first.
-     *
-     * @param array $contexts
-     * @return array The sorted context list
-     */
-    protected function sort_component_contexts(array $contexts): array
-    {
-    }
-    /**
      * Behat config file specifing the main context class,
      * the required Behat extensions and Moodle test wwwroot.
      *

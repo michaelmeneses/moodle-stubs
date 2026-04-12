@@ -41,7 +41,7 @@ class processor implements \core_analytics\classifier, \core_analytics\regressor
     /**
      * The required version of the python package that performs all calculations.
      */
-    const REQUIRED_PIP_PACKAGE_VERSION = '3.0.5';
+    const REQUIRED_PIP_PACKAGE_VERSION = '3.0.4';
     /**
      * The python package is installed in a server.
      * @var bool

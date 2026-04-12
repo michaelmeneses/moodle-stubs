@@ -375,10 +375,9 @@ function glossary_print_entry_icons($course, $cm, $glossary, $entry, $mode = '',
  * @param object $hook
  * @param bool $printicons
  * @param bool $aliases
- * @param bool $printseparator Whether to print a thematic break (separator) at the end of the lower section.
  * @return void
  */
-function glossary_print_entry_lower_section($course, $cm, $glossary, $entry, $mode, $hook, $printicons, $aliases = true, $printseparator = true)
+function glossary_print_entry_lower_section($course, $cm, $glossary, $entry, $mode, $hook, $printicons, $aliases = true)
 {
 }
 /**

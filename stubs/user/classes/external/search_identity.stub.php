@@ -35,7 +35,7 @@ class search_identity extends \external_api
     /**
      * Describes the external function parameters.
      *
-     * @return \external_function_parameters
+     * @return external_function_parameters
      */
     public static function execute_parameters(): \external_function_parameters
     {
@@ -52,7 +52,7 @@ class search_identity extends \external_api
     /**
      * Describes the external function result value.
      *
-     * @return \external_description
+     * @return external_description
      */
     public static function execute_returns(): \external_description
     {

@@ -36,14 +36,12 @@ class config
     public const DEFAULT_SERVER_URL = 'https://test-moodle.blindsidenetworks.com/bigbluebutton/';
     /** @var string Default bigbluebutton server shared secret */
     public const DEFAULT_SHARED_SECRET = '0b21fcaf34673a8c3ec8ed877d76ae34';
-    /** @var string Default bigbluebutton data processing agreement url */
-    public const DEFAULT_DPA_URL = 'https://blindsidenetworks.com/dpa-moodle-free-tier';
     /**
      * Returns moodle version.
      *
      * @return string
      */
-    protected static function get_moodle_version_major(): string
+    protected static function get_moodle_version_major()
     {
     }
     /**
@@ -51,16 +49,16 @@ class config
      *
      * @return array
      */
-    protected static function defaultvalues(): array
+    protected static function defaultvalues()
     {
     }
     /**
      * Returns default value for an specific setting.
      *
      * @param string $setting
-     * @return string|null
+     * @return string
      */
-    public static function defaultvalue(string $setting): ?string
+    public static function defaultvalue($setting)
     {
     }
     /**
@@ -69,7 +67,7 @@ class config
      * @param string $setting
      * @return string
      */
-    public static function get(string $setting): string
+    public static function get($setting)
     {
     }
     /**
@@ -77,7 +75,7 @@ class config
      *
      * @return bool
      */
-    public static function recordings_enabled(): bool
+    public static function recordings_enabled()
     {
     }
     /**
@@ -85,7 +83,7 @@ class config
      *
      * @return bool
      */
-    public static function importrecordings_enabled(): bool
+    public static function importrecordings_enabled()
     {
     }
     /**
@@ -93,18 +91,18 @@ class config
      *
      * @return array
      */
-    public static function get_options(): array
+    public static function get_options()
     {
     }
     /**
      * Helper function returns an array with enabled features for an specific profile type.
      *
      * @param array $typeprofiles
-     * @param string|null $type
+     * @param string $type
      *
      * @return array
      */
-    public static function get_enabled_features(array $typeprofiles, ?string $type = null): array
+    public static function get_enabled_features($typeprofiles, $type = null)
     {
     }
 }

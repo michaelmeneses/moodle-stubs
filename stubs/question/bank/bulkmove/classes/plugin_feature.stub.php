@@ -32,7 +32,7 @@ namespace qbank_bulkmove;
  */
 class plugin_feature extends plugin_features_base
 {
-    public function get_bulk_actions(): array
+    public function get_bulk_actions(): ?bulk_action_base
     {
     }
 }

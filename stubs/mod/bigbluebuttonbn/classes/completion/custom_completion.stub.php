@@ -33,10 +33,6 @@ namespace mod_bigbluebuttonbn\completion;
 class custom_completion extends activity_custom_completion
 {
     /**
-     * Filters for logs
-     */
-    const FILTERS = ['completionattendance' => [logger::EVENT_SUMMARY], 'completionengagementchats' => [logger::EVENT_SUMMARY], 'completionengagementtalks' => [logger::EVENT_SUMMARY], 'completionengagementraisehand' => [logger::EVENT_SUMMARY], 'completionengagementpollvotes' => [logger::EVENT_SUMMARY], 'completionengagementemojis' => [logger::EVENT_SUMMARY]];
-    /**
      * Get current state
      *
      * @param string $rule
@@ -50,9 +46,9 @@ class custom_completion extends activity_custom_completion
      *
      * @param array $logs
      * @param callable $logvaluegetter
-     * @return int the sum of all values for this particular event (it can be a duration or a number of hits)
+     * @return int the number of hits on this particular rule
      */
-    protected function aggregate_values(array $logs, callable $logvaluegetter): int
+    protected function count_actions(array $logs, callable $logvaluegetter): int
     {
     }
     /**
@@ -80,29 +76,40 @@ class custom_completion extends activity_custom_completion
     {
     }
     /**
-     * Get current states of completion in a human-friendly version
-     *
-     * @return string[]
-     */
-    public function get_printable_states(): array
-    {
-    }
-    /**
-     * Get current states of completion for a rule in a human-friendly version
+     * Get current state in a  friendly version
      *
      * @param string $rule
      * @return string
      */
-    private function get_printable_state(string $rule): string
+    public function get_printable_state(string $rule): string
     {
     }
     /**
-     * Get current state in a friendly version
+     * Get current state in a  friendly version
      *
      * @param string $rule
      * @return string
      */
     public function get_last_log_timestamp(string $rule): string
+    {
+    }
+    /**
+     * Fetches the list of custom completion rules that are being used by this activity module instance.
+     *
+     * @return array
+     */
+    public function get_available_custom_rules(): array
+    {
+    }
+    /**
+     * Get completion view value
+     *
+     * This will override the usual completion value (see COMPLETION_CUSTOM_MODULE_FLOW)
+     *
+     * @param stdClass $log
+     * @return int
+     */
+    protected static function get_completionview_value(stdClass $log): int
     {
     }
     /**
