@@ -49,11 +49,11 @@ class repository_local extends repository
      * This function may skip subfolders and recursively add their children
      * {@link repository_local::can_skip()}
      *
-     * @param file_info $fileinfo
-     * @param string|array $extensions, for example '*' or array('.gif','.jpg')
+     * @param file_info|null $fileinfo
+     * @param string|string[] $extensions for example '*' or ['.gif', '.jpg']
      * @return array array of file_info elements
      */
-    private function get_non_empty_children(file_info $fileinfo, $extensions)
+    private function get_non_empty_children(?file_info $fileinfo, $extensions): array
     {
     }
     /**

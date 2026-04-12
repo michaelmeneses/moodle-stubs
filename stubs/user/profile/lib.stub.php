@@ -337,6 +337,15 @@ class profile_field_base
     {
     }
     /**
+     * Whether to display the field and content to the user
+     *
+     * @param context|null $context
+     * @return bool
+     */
+    public function show_field_content(?context $context = null): bool
+    {
+    }
+    /**
      * Check if the field should convert the raw data into user-friendly data when exporting
      *
      * @return bool

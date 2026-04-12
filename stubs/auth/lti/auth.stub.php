@@ -114,11 +114,10 @@ class auth_plugin_lti extends \auth_plugin_base
      * itself and pass relevant data in - as auth_plugin_lti::complete_login() does.
      *
      * @param array $launchdata all data in the decoded JWT including iss and sub.
-     * @param bool $syncpicture whether to sync the user's picture with the picture sent in the launch.
      * @param array $legacyconsumersecrets all secrets found for the legacy consumer, facilitating user migration.
      * @return stdClass the Moodle user who is mapped to the platform user identified in the JWT data.
      */
-    public function find_or_create_user_from_launch(array $launchdata, bool $syncpicture = false, array $legacyconsumersecrets = []): stdClass
+    public function find_or_create_user_from_launch(array $launchdata, array $legacyconsumersecrets = []): stdClass
     {
     }
     /**
@@ -139,6 +138,14 @@ class auth_plugin_lti extends \auth_plugin_base
      * @return int|null the id of the corresponding Moodle user record, or null if not found.
      */
     public function get_user_binding(string $issuer, string $sub): ?int
+    {
+    }
+    /**
+     * If there's an existing session, inits an empty session.
+     *
+     * @return void
+     */
+    protected function empty_session(): void
     {
     }
     /**
@@ -167,7 +174,7 @@ class auth_plugin_lti extends \auth_plugin_base
      * @param array $userdata the user data coming from either a launch or membership service call.
      * @param string $iss the issuer to which the user belongs.
      */
-    protected function update_user_account(stdClass $user, array $userdata, string $iss): void
+    public function update_user_account(stdClass $user, array $userdata, string $iss): void
     {
     }
     /**

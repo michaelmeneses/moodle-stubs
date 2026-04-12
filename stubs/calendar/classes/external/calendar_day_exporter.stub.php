@@ -20,13 +20,6 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-/**
- * Contains event class for displaying the day view.
- *
- * @package   core_calendar
- * @copyright 2017 Simey Lameze <simey@moodle.com>
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 namespace core_calendar\external;
 
 /**

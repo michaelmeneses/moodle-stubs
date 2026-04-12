@@ -378,9 +378,10 @@ class quiz_settings
      * @param int $when One of the display_options::DURING,
      *      IMMEDIATELY_AFTER, LATER_WHILE_OPEN or AFTER_CLOSE constants.
      * @param bool $short if true, return a shorter string.
+     * @param int|null $attemptsubmittime time this attempt was submitted. (Optional, but should be given.)
      * @return string an appropraite message.
      */
-    public function cannot_review_message($when, $short = false)
+    public function cannot_review_message($when, $short = false, int $attemptsubmittime = null)
     {
     }
     /**
