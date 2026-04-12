@@ -85,7 +85,7 @@ abstract class backup_cron_automated_helper
      * @param stdClass $admin
      * @return array
      */
-    private static function send_backup_status_to_admin($admin)
+    public static function send_backup_status_to_admin($admin)
     {
     }
     /**

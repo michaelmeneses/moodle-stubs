@@ -77,6 +77,10 @@ abstract class base_report_table extends table_sql implements dynamic, renderabl
     /**
      * Override parent method of the same, to ensure that any columns with custom sort fields are accounted for
      *
+     * Because the base table_sql has "special" handling of fullname columns {@see table_sql::contains_fullname_columns}, we need
+     * to handle that here to ensure that any that are being sorted take priority over reportbuilders own aliases of the same
+     * columns. This prevents them appearing multiple times in a query, which SQL Server really doesn't like
+     *
      * @return string
      */
     public function get_sql_sort()

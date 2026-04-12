@@ -41,6 +41,8 @@ class quiz_attempt
     const ABANDONED = 'abandoned';
     /** @var int maximum number of slots in the quiz for the review page to default to show all. */
     const MAX_SLOTS_FOR_DEFAULT_REVIEW_SHOW_ALL = 50;
+    /** @var int amount of time considered 'immedately after the attempt', in seconds. */
+    const IMMEDIATELY_AFTER_PERIOD = 2 * MINSECS;
     /** @var quiz_settings object containing the quiz settings. */
     protected $quizobj;
     /** @var stdClass the quiz_attempts row. */

@@ -77,6 +77,16 @@ class core_course_external extends external_api
     {
     }
     /**
+     * Return array of all editable course custom fields indexed by their shortname
+     *
+     * @param \context $context
+     * @param int $courseid
+     * @return \core_customfield\field_controller[]
+     */
+    public static function get_editable_customfields(\context $context, int $courseid = 0): array
+    {
+    }
+    /**
      * Returns description of method parameters
      *
      * @return external_function_parameters
