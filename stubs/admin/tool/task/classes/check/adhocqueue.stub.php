@@ -23,7 +23,11 @@
 namespace tool_task\check;
 
 /**
- * Ad hoc queue checks
+ * Adhoc queue check.
+ *
+ * This alerts when the queue has old tasks in it which indicates that tasks
+ * are not being processed fast enough and more processess need to be added
+ * to manage the load. A large queue by itself is fine.
  *
  * @package    tool_task
  * @copyright  2020 Brendan Heywood (brendan@catalyst-au.net)

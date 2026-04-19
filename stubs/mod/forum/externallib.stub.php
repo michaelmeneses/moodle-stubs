@@ -549,4 +549,32 @@ class mod_forum_external extends external_api
     public static function update_discussion_post_returns()
     {
     }
+    /**
+     * Returns description of mark_posts_read parameters.
+     *
+     * @return external_function_parameters
+     */
+    public static function mark_posts_read_parameters(): external_function_parameters
+    {
+    }
+    /**
+     * Trigger the posts viewed event.
+     *
+     * This method differs from view_forum_discussion in that it is only
+     * interested in marking certain posts as viewed, and not an
+     * entire discussion.
+     *
+     * @param array $postids The post ids
+     * @param int $discussionid The discussion id
+     * @return bool True on success
+     */
+    public static function mark_posts_read(array $postids, int $discussionid): bool
+    {
+    }
+    /**
+     * Describes the data returned from mark_posts_read.
+     */
+    public static function mark_posts_read_returns(): external_value
+    {
+    }
 }

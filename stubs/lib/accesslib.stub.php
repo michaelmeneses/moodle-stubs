@@ -880,7 +880,7 @@ function get_roles_used_in_context(context $context, $includeparents = true)
  * It is using the CFG->profileroles to limit the list to only interesting roles.
  * (The permission tab has full details of user role assignments.)
  *
- * @param int $userid
+ * @param int $userid ID of the user whose course roles are filtered by visibility
  * @param int $courseid
  * @return string
  */
@@ -1034,7 +1034,7 @@ function get_switchable_roles(context $context, $rolenamedisplay = ROLENAME_ALIA
  * Gets a list of roles that this user can view in a context
  *
  * @param context $context a context.
- * @param int $userid id of user.
+ * @param int $userid id of user whose viewable roles we are fetching
  * @param int $rolenamedisplay the type of role name to display. One of the
  *      ROLENAME_X constants. Default ROLENAME_ALIAS.
  * @return array an array $roleid => $rolename.

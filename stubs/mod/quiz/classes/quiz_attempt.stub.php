@@ -915,6 +915,12 @@ class quiz_attempt
     {
     }
     /**
+     * Set up the page layout for an attempt, summary or review page.
+     */
+    public function setup_attempt_layout(): void
+    {
+    }
+    /**
      * Generate the HTML that displays the question in its current state, with
      * the appropriate display options.
      *

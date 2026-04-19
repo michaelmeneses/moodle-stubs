@@ -66,6 +66,10 @@ class curl_security_helper extends curl_security_helper_base
      */
     protected $allowedport;
     /**
+     * @var bool Whether url_is_blocked() has been called on this instance.
+     */
+    protected $urlblockchecked = false;
+    /**
      * Checks whether the given URL is blocked by checking its address and port number against the allow/block lists.
      * The behaviour of this function can be classified as strict, as it returns true for URLs which are invalid or
      * could not be parsed, as well as those valid URLs which were found in the blocklist.

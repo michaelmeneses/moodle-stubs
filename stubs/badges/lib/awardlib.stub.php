@@ -114,10 +114,10 @@ function process_manual_award($recipientid, $issuerid, $issuerrole, $badgeid)
 /**
  * Manually revoke awarded badges.
  *
- * @param int $recipientid
- * @param int $issuerid
- * @param int $issuerrole
- * @param int $badgeid
+ * @param int $recipientid User ID of the recipient
+ * @param int $issuerid User ID of the issuer (if 0, issuer will be ignored)
+ * @param int $issuerrole Role of the issuer
+ * @param int $badgeid ID of the badge
  * @return bool
  */
 function process_manual_revoke($recipientid, $issuerid, $issuerrole, $badgeid)

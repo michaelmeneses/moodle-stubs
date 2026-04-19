@@ -23,7 +23,7 @@
 namespace core\router;
 
 /**
- * An Eerror Handler implementation for Moodle which is aware of the REST API.
+ * An Error Handler implementation for Moodle which is aware of the REST API.
  *
  * @package    core
  * @copyright  Andrew Lyons <andrew@nicols.co.uk>
@@ -31,16 +31,12 @@ namespace core\router;
  */
 class error_handler extends ErrorHandler
 {
-    /**
-     * Construct a new Error Handler.
-     *
-     * @param \Slim\App $app
-     */
-    public function __construct(App $app)
+    #[\Override]
+    protected function determineContentType(ServerRequestInterface $request): ?string
     {
     }
     #[\Override]
-    protected function determineContentType(ServerRequestInterface $request): ?string
+    protected function determineStatusCode(): int
     {
     }
 }

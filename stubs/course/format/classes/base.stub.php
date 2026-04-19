@@ -549,7 +549,7 @@ abstract class base
      *     'expanded' (bool) if true the section will be shown expanded, true by default
      * @return null|moodle_url
      */
-    public function get_view_url($section, $options = array())
+    public function get_view_url($section, $options = [])
     {
     }
     /**

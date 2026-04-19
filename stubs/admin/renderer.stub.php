@@ -594,6 +594,14 @@ class core_admin_renderer extends plugin_renderer_base
     {
     }
     /**
+     * Display a notice about Moodle Marketplace integration.
+     *
+     * @return string HTML to output.
+     */
+    protected function marketplace_integration_notice(): string
+    {
+    }
+    /**
      * Renders the theme selector list.
      *
      * @param core_admin\output\theme_selector $themeselector

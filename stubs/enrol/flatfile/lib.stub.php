@@ -164,10 +164,10 @@ class enrol_flatfile_plugin extends enrol_plugin
     {
     }
     /**
-     * Returns a mapping of ims roles to role ids.
+     * Returns a mapping of role name aliases to role IDs
      *
      * @param progress_trace $trace
-     * @return array imsrolename=>roleid
+     * @return int[] role name alias => role ID
      */
     protected function get_role_map(progress_trace $trace)
     {

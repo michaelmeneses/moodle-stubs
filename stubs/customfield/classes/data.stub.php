@@ -46,6 +46,8 @@ class data extends persistent
     /**
      * For integer data field, persistent won't allow empty string, swap for null
      *
+     * Ensure we constrain maximum value to that supported by database
+     *
      * @param string|null $value
      * @return self
      */
@@ -54,6 +56,8 @@ class data extends persistent
     }
     /**
      * For decimal data field, persistent won't allow empty string, swap for null
+     *
+     * Ensure we constrain maximum value to that supported by database
      *
      * @param string|null $value
      * @return self

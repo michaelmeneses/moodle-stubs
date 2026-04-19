@@ -30,6 +30,8 @@ class select_menu implements renderable, templatable
     protected $inlinelabel = false;
     /** @var string Name of the combobox element */
     protected $name;
+    /** @var bool A flag indicating whether the active state should be disabled in the dropdown. */
+    protected $disableactive;
     /**
      * select_menu constructor.
      *
@@ -37,8 +39,15 @@ class select_menu implements renderable, templatable
      * @param array $options List of options in an associative array format like ['val' => 'Option'].
      *                       Supports grouped options as well. Empty string or null values will be rendered as dividers.
      * @param string|null $selected The value of the preselected option.
+     * @param bool $disableactive A flag that indicates whether the active state should be disabled in the dropdown.
+     *                            This is useful when the dropdown items result in navigation to another page,
+     *                            as it makes it unnecessary to mark the selected item as active. If the flag
+     *                            is set to true, the checkmark indicating the active menu item will not be displayed,
+     *                            as the user is redirected. However, in cases where no redirection occurs and
+     *                            it is valid to display the active state, this flag should remain false,
+     *                            allowing the checkmark to appear beside the active item.
      */
-    public function __construct(string $name, array $options, ?string $selected = null)
+    public function __construct(string $name, array $options, ?string $selected = null, bool $disableactive = false)
     {
     }
     /**

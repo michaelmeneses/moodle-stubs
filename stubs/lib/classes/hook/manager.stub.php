@@ -283,11 +283,19 @@ final class manager implements EventDispatcherInterface, ListenerProviderInterfa
     {
     }
     /**
-     * Get the path to the hook cache.
+     * Get the path to the local hook cache.
      *
-     * @return string
+     * @return string file path
      */
-    protected function get_cache_path(): string
+    protected function get_local_cache_path(): string
+    {
+    }
+    /**
+     * Get the path to the shared hook cache.
+     *
+     * @return string file path
+     */
+    protected function get_shared_cache_path(): string
     {
     }
     /**

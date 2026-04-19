@@ -56,6 +56,8 @@ class recording extends persistent
     public const RECORDING_STATUS_DELETED = 5;
     /** @var bool Whether metadata been changed so the remote information needs to be updated ? */
     protected $metadatachanged = false;
+    /** @var bool When true, skip remote BBB deletion in before_delete(). */
+    protected $skipremotedeletion = false;
     /** @var int A refresh period for recordings, defaults to 300s (5mins) */
     public const RECORDING_REFRESH_DEFAULT_PERIOD = 300;
     /** @var int A time limit for recordings to be dismissed, defaults to 30d (30days) */
@@ -169,6 +171,16 @@ class recording extends persistent
      * @return void
      */
     protected function before_delete()
+    {
+    }
+    /**
+     * Mark this recording so that delete() only removes the local DB row
+     * and does NOT delete the recording from the BigBlueButton server.
+     *
+     * @param bool $skipremote
+     * @return $this
+     */
+    public function set_skip_remote_deletion(bool $skipremote = true): self
     {
     }
     /**
