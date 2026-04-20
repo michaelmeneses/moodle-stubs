@@ -51,7 +51,7 @@ jobs:
         run: |
           if [ -f "${MOODLE_CACHE_DIR}/HEAD" ]; then
             echo "Cache hit — fetching updates..."
-            git -C "${MOODLE_CACHE_DIR}" fetch --all
+            git -C "${MOODLE_CACHE_DIR}" fetch --all --tags
           else
             echo "Cache miss — cloning bare repo..."
             git clone --bare "${MOODLE_REPO}" "${MOODLE_CACHE_DIR}"
