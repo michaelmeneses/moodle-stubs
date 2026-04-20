@@ -156,7 +156,7 @@ jobs:
         run: composer update --prefer-dist --no-interaction
 
       - name: Restore Moodle bare cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: ${{ env.MOODLE_CACHE_DIR }}
           key: moodle-bare-${{ github.run_id }}
@@ -222,7 +222,7 @@ jobs:
         run: composer update --prefer-dist --no-interaction
 
       - name: Restore Moodle bare cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: ${{ env.MOODLE_CACHE_DIR }}
           key: moodle-bare-${{ github.run_id }}
