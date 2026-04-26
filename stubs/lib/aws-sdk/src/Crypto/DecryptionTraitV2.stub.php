@@ -58,19 +58,13 @@ trait DecryptionTraitV2
     public function decrypt($cipherText, MaterialsProviderInterfaceV2 $provider, MetadataEnvelope $envelope, array $options = [])
     {
     }
-    private function buildMaterialDescription(MetadataEnvelope $envelope): array
-    {
-    }
-    private function numericalContenCipherToAesName(MetadataEnvelope $envelope): string
-    {
-    }
     private function getTagFromCiphertextStream(StreamInterface $cipherText, $tagLength)
     {
     }
     private function getStrippedCiphertextStream(StreamInterface $cipherText, $tagLength)
     {
     }
-    private function validateOptionsAndEnvelope($options, $envelope): void
+    private function validateOptionsAndEnvelope($options, $envelope)
     {
     }
     /**
@@ -80,38 +74,15 @@ trait DecryptionTraitV2
      * @param string $cipherText Plain-text data to be encrypted using the
      *                           materials, algorithm, and data provided.
      * @param string $cek A content encryption key for use by the stream for
-     *                   encrypting the plaintext data.
+     *                    encrypting the plaintext data.
      * @param array $cipherOptions Options for use in determining the cipher to
-     *                            be used for encrypting data.
+     *                             be used for encrypting data.
      *
      * @return AesStreamInterface
      *
      * @internal
      */
     protected function getDecryptingStream($cipherText, $cek, $cipherOptions)
-    {
-    }
-    /**
-     * Generates a stream that wraps the cipher text with the proper cipher and
-     * uses the content encryption key (CEK) to derive both a derived content encryption key
-     * and a commitment key to decrypt the data when read.
-     *
-     * @param string $cipherText Plain-text data to be encrypted using the
-     *                           materials, algorithm, and data provided.
-     * @param string $cek A content encryption key for use by the stream for
-     *                   encrypting the plaintext data.
-     * @param array $cipherOptions Options for use in determining the cipher to
-     *                            be used for encrypting data.
-     * @param string $messageId a string value used to calculate both a commitment
-     *                          key and derived content encryption key
-     * @param string $commitmentKey a string value to compare with the calculated commitment
-     *                              key value, if the values don't match an exception is raised.
-     *
-     * @return AesStreamInterface | CryptoException
-     *
-     * @internal
-     */
-    protected function getCommitingDecryptingStream(string $cipherText, string $cek, array $cipherOptions, string $messageId, string $commitmentKey, AlgorithmSuite $algorithmSuite): AesStreamInterface|CryptoException
     {
     }
 }
