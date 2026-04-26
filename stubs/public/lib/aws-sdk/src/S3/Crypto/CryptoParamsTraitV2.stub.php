@@ -14,7 +14,4 @@ trait CryptoParamsTraitV2
     protected function getMaterialsProvider(array $args)
     {
     }
-    protected function getKeyCommitmentPolicy(array $args): string
-    {
-    }
 }
