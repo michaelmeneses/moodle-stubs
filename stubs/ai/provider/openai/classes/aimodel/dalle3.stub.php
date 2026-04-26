@@ -29,7 +29,7 @@ namespace aiprovider_openai\aimodel;
  * @copyright  2025 Huong Nguyen <huongnv13@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class dalle3 extends base implements openai_base, openai_image_base
+class dalle3 extends base implements openai_base
 {
     #[\Override]
     public function get_model_name(): string
@@ -45,22 +45,6 @@ class dalle3 extends base implements openai_base, openai_image_base
     }
     #[\Override]
     public function model_type(): array
-    {
-    }
-    #[\Override]
-    public function response_format(): ?string
-    {
-    }
-    #[\Override]
-    public function get_output_format(): ?string
-    {
-    }
-    #[\Override]
-    public function calculate_size(string $ratio): string
-    {
-    }
-    #[\Override]
-    public function calculate_quality(string $quality): string
     {
     }
 }

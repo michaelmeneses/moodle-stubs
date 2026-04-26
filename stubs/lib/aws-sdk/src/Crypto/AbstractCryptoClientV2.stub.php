@@ -13,21 +13,10 @@ namespace Aws\Crypto;
  */
 abstract class AbstractCryptoClientV2
 {
-    const KEY_COMMITMENT_POLICIES = ['FORBID_ENCRYPT_ALLOW_DECRYPT'];
     public static $supportedCiphers = ['gcm'];
     public static $supportedKeyWraps = [KmsMaterialsProviderV2::WRAP_ALGORITHM_NAME];
     public static $supportedSecurityProfiles = ['V2', 'V2_AND_LEGACY'];
     public static $legacySecurityProfiles = ['V2_AND_LEGACY'];
-    /**
-     * Returns if the passed policy name is supported for encryption by the SDK.
-     *
-     * @param string $policy The name of a key commitment policy to verify is registered.
-     *
-     * @return bool If the key commitment policy passed is in our supported list.
-     */
-    public static function isSupportedKeyCommitmentPolicy(string $policy): bool
-    {
-    }
     /**
      * Returns if the passed cipher name is supported for encryption by the SDK.
      *
