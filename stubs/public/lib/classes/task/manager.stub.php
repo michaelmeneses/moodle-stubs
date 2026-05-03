@@ -112,16 +112,23 @@ class manager
     {
     }
     /**
-     * Checks if the task with the same classname, component and customdata is already scheduled
+     * Checks if the task with the same classname, component and customdata is already scheduled.
+     *
+     * Note, $includefailed defaults to true only because of backwards compatibility.
+     * It is very likely that you want to pass false here.
      *
      * @param adhoc_task $task
+     * @param bool $includefailed should tasks that have failed and will not be retried be included?
      * @return \stdClass|false
      */
-    public static function get_queued_adhoc_task_record($task)
+    public static function get_queued_adhoc_task_record($task, bool $includefailed = true)
     {
     }
     /**
-     * Schedule a new task, or reschedule an existing adhoc task which has matching data.
+     * Schedule an ad-hoc task to run at a set time in the future, or if already queued, reset that time.
+     *
+     * So, it only really makes sense to use this method if you have called
+     * $task->set_next_run_time(), otherwise just use manager::queue_adhoc_task().
      *
      * Only a task matching the same user, classname, component, and customdata will be rescheduled.
      * If these values do not match exactly then a new task is scheduled.
@@ -137,7 +144,8 @@ class manager
      *
      * @param \core\task\adhoc_task $task - The new adhoc task information to store.
      * @param bool $checkforexisting - If set to true and the task with the same user, classname, component and customdata
-     *     is already scheduled then it will not schedule a new task. Can be used only for ASAP tasks.
+     *     is already scheduled (and has not giving up re-trying after failures) then it will not schedule a new task.
+     *     Can be used only for ASAP tasks, otherwise use {@see reschedule_or_queue_adhoc_task()}.
      * @return boolean - True if the config was saved.
      */
     public static function queue_adhoc_task(adhoc_task $task, $checkforexisting = false)

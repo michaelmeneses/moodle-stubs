@@ -197,15 +197,6 @@ class manager
     {
     }
     /**
-     * Returns a valid setting for the SameSite cookie attribute.
-     *
-     * @return string The desired setting for the SameSite attribute on the cookie. Empty string indicates the SameSite attribute
-     * should not be set at all.
-     */
-    private static function should_use_samesite_none(): bool
-    {
-    }
-    /**
      * Terminate current user session.
      * @return void
      */
