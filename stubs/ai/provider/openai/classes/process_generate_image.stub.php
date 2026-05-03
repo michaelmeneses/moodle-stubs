@@ -33,8 +33,6 @@ class process_generate_image extends abstract_processor
 {
     /** @var int The number of images to generate dall-e-3 only supports 1. */
     private int $numberimages = 1;
-    /** @var string Response format: url or b64_json. */
-    private string $responseformat = 'url';
     #[\Override]
     protected function get_endpoint(): UriInterface
     {
@@ -48,13 +46,27 @@ class process_generate_image extends abstract_processor
     {
     }
     /**
-     * Convert the given aspect ratio to an image size
-     * that is compatible with the OpenAI API.
+     * Convert the given aspect ratio to an image size compatible with the model's API.
      *
-     * @param string $ratio The aspect ratio of the image.
-     * @return string The size of the image.
+     * DALL-E 3: square=1024x1024, landscape=1792x1024, portrait=1024x1792.
+     * GPT image models: square=1024x1024, landscape=1536x1024, portrait=1024x1536.
+     *
+     * @param string $ratio The aspect ratio of the image (square, landscape, portrait).
+     * @return string The size string for the API request.
      */
     private function calculate_size(string $ratio): string
+    {
+    }
+    /**
+     * Convert the given quality setting to the value expected by the model's API.
+     *
+     * DALL-E models accept the Moodle values directly (standard, hd).
+     * GPT image models map them: standard -> medium, hd -> high.
+     *
+     * @param string $quality The quality setting (standard, hd).
+     * @return string The quality value for the API request.
+     */
+    private function calculate_quality(string $quality): string
     {
     }
     #[\Override]
@@ -66,17 +78,18 @@ class process_generate_image extends abstract_processor
     {
     }
     /**
-     * Convert the url for the image to a file.
+     * Decode the base64-encoded image from the API response, add a watermark,
+     * and store it as a draft file for the given user.
      *
      * Placements can't interact with the provider AI directly,
      * therefore we need to provide the image file in a format that can
      * be used by placements. So we use the file API.
      *
      * @param int $userid The user id.
-     * @param string $url The URL to the image.
-     * @return \stored_file The file object.
+     * @param array $response Response from the AI provider, containing 'b64json' and 'output_format'.
+     * @return \stored_file The stored draft file.
      */
-    private function url_to_file(int $userid, string $url): \stored_file
+    private function create_file_from_response(int $userid, array $response): \stored_file
     {
     }
 }
