@@ -172,9 +172,12 @@ class auth_plugin_db extends auth_plugin_base
     /**
      * Add slashes, we can not use placeholders or system functions.
      *
+     * @deprecated since Moodle 5.0.
+     * @todo MDL-88386 Final deprecation in Moodle 6.0.
      * @param string $text
      * @return string
      */
+    #[\core\attribute\deprecated(replacement: 'parameterised queries', since: '5.0', mdl: 'MDL-88138')]
     function ext_addslashes($text)
     {
     }
