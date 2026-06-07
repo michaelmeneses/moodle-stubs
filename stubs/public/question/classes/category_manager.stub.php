@@ -188,17 +188,4 @@ class category_manager
     public static function fix_restored_category_parents(): void
     {
     }
-    /**
-     * Upgrade step to find questions with no category and delete them.
-     *
-     * Due to MDL-86154, there may be questions left in the database after a restore, whose category has been deleted. This will
-     * find any questions like that and delete them. These questions will always be unused.
-     *
-     * Now that we have prevented this occurring, this function is used by the upgrade process to clean up these questions.
-     *
-     * @return int A count of deleted questions.
-     */
-    public static function cleanup_questions_without_categories(): int
-    {
-    }
 }
