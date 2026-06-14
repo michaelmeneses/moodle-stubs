@@ -265,11 +265,9 @@ class question_bank_helper
      * @param module|null $modulecontext If set, use this instead of $coursecontext when applying text filters on bank names.
      * @param bool $includeshared Include banks with shared questions.
      * @param bool $includerecent Include banks recently viewed by the user.
-     * @param bool $includeprivate Include banks with private questions. If $modulecontext is set, only the current module's bank
-     *     will be included.
      * @return formatted_bank[]
      */
-    public static function get_banks_for_course(course $coursecontext, ?module $modulecontext = null, bool $includeshared = true, bool $includerecent = false, bool $includeprivate = false): array
+    public static function get_banks_for_course(course $coursecontext, ?module $modulecontext = null, bool $includeshared = true, bool $includerecent = false): array
     {
     }
 }
