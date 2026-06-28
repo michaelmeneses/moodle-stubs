@@ -55,7 +55,7 @@ class bank
      * @param question_bank_helper $helper Injected dependency.
      * @return payload_response A list of question banks with formatted names, and whether they are shared and recently used.
      */
-    #[route(path: '/banks', queryparams: [new query_course(required: true), new query_coursemodule('currentmodule'), new query_parameter(name: 'includeshared', type: param::BOOL, default: true), new query_parameter(name: 'includerecent', type: param::BOOL, default: false)], responses: [new response(statuscode: 200, description: 'OK', content: [new json_media_type(schema: new schema_object(content: ['banks' => new array_of_things(thingtype: formatted_bank::class)]))])], requirelogin: new require_login(true, courseattributename: 'course'))]
+    #[route(path: '/banks', queryparams: [new query_course(required: true), new query_coursemodule('currentmodule'), new query_parameter(name: 'includeshared', type: param::BOOL, default: true), new query_parameter(name: 'includerecent', type: param::BOOL, default: false), new query_parameter(name: 'includeprivate', type: param::BOOL, default: false)], responses: [new response(statuscode: 200, description: 'OK', content: [new json_media_type(schema: new schema_object(content: ['banks' => new array_of_things(thingtype: formatted_bank::class)]))])], requirelogin: new require_login(true, courseattributename: 'course'))]
     public function banks(ServerRequestInterface $request, ResponseInterface $response, course $coursecontext, module $currentmodulecontext, question_bank_helper $helper): payload_response
     {
     }

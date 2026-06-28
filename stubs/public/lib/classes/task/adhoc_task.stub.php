@@ -41,14 +41,18 @@ abstract class adhoc_task extends task_base
 {
     /** @var string $customdata - Custom data required for when this task is executed. */
     private $customdata = '';
-    /** @var integer|null $id - Adhoc tasks each have their own database record id. */
+    /** @var int|null $id - Adhoc tasks each have their own database record id. */
     private $id = null;
-    /** @var integer|null $userid - Adhoc tasks may choose to run as a specific user. */
+    /** @var int|null $userid - Adhoc tasks may choose to run as a specific user. */
     private $userid = null;
     /** @var \core\lock\lock The concurrency task lock for this task. */
     private $concurrencylock = null;
     /** @var int $attemptsavailable - The remaining attempts of the task. */
     private $attemptsavailable = 12;
+    /** @var bool $isdelayed - Whether the task has requested a soft retry delay */
+    private bool $isdelayed = false;
+    /** @var int|null $softretrydelay - A soft retry delay for adhoc tasks, null means use exponential backoff */
+    private ?int $softretrydelay = null;
     /**
      * Provide default implementation of the task name for backward compatibility. Extending classes are expected to implement
      * this method to provide a descriptive name for the task (shown to admins)
@@ -112,6 +116,36 @@ abstract class adhoc_task extends task_base
      * @param int|null $userid
      */
     public function set_userid($userid)
+    {
+    }
+    /**
+     * If a task is waiting on an external event then you can set a retry delay,
+     * which behaves very similar to throwing an exception and retrying with a
+     * fail delay except it will not be treated as an error.
+     *
+     * The number of attempts is still decremented so it cannot be retried indefinitely.
+     * You can specify a delay in seconds, or if not set it will default to an
+     * exponential delay similar to the faildelay.
+     *
+     * @param int|null $softretrydelay Delay in seconds, or null to use exponential backoff.
+     */
+    public function set_soft_retry_delay(?int $softretrydelay = null): void
+    {
+    }
+    /**
+     * Getter for $softretrydelay
+     *
+     * @return int|null $softretrydelay
+     */
+    public function get_soft_retry_delay(): ?int
+    {
+    }
+    /**
+     * Is the adhoc task delayed?
+     *
+     * @return bool true if the task is delayed, false otherwise.
+     */
+    public function is_adhoc_task_delayed(): bool
     {
     }
     /**
