@@ -43,7 +43,6 @@ class manager
         'adminpresets_admin_setting_configduration_with_advanced' => 'adminpresets_admin_setting_configtext_with_advanced',
         'adminpresets_admin_setting_configduration' => 'adminpresets_admin_setting_configtext',
         'adminpresets_admin_setting_configempty' => 'adminpresets_admin_setting_configtext',
-        'adminpresets_admin_setting_configexecutable' => 'adminpresets_admin_setting_configtext',
         'adminpresets_admin_setting_configfile' => 'adminpresets_admin_setting_configtext',
         'adminpresets_admin_setting_confightmleditor' => 'adminpresets_admin_setting_configtext',
         'adminpresets_admin_setting_configmixedhostiplist' => 'adminpresets_admin_setting_configtext',

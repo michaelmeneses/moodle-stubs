@@ -75,8 +75,6 @@ class restore_bigbluebuttonbn_activity_structure_step extends restore_activity_s
     }
     /**
      * Actions to be executed after the restore is completed
-     *
-     * @return void
      */
     protected function after_execute()
     {
