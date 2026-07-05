@@ -367,6 +367,20 @@ class manager
     {
     }
     /**
+     * If a task is waiting on an external event then you can set a retry delay,
+     * which behaves very similar to throwing an exception and retrying with a
+     * fail delay except it will not be treated as an error.
+     *
+     * The number of attempts is still decremented so it cannot be retried indefinitely.
+     * You can specify a delay in seconds, or if not set it will default to an
+     * exponential delay similar to the faildelay.
+     *
+     * @param \core\task\adhoc_task $task
+     */
+    public static function adhoc_task_delayed(\core\task\adhoc_task $task): void
+    {
+    }
+    /**
      * This function indicates that an adhoc task was not completed successfully and should be retried.
      *
      * @param \core\task\adhoc_task $task
