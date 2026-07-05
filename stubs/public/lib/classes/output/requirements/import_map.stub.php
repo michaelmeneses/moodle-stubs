@@ -113,11 +113,8 @@ class import_map implements \JsonSerializable
      * @param string $suffix File extension suffix appended when resolving filesystem paths (defaults to `.js`).
      * @param callable|null $modifier Optional callable (int $revision, string $requestedpath, string $resolvedpath): string
      *   to transform the resolved filesystem path before the file is served. Not used for URL generation.
-     * @param string[] $allowedsuffixes List of allowed suffixes for the resolved file.
-     *   If the resolved path already ends with one of these suffixes, the default suffix will not be appended.
-     *   Defaults to ['.js', '.js.map'] so that source maps are served without double-suffix mangling.
      */
-    public function add_import(string $specifier, ?\core\url $loader = null, ?string $path = null, bool $loadfromcomponent = false, string $suffix = '.js', ?callable $modifier = null, array $allowedsuffixes = ['.js', '.js.map']): void
+    public function add_import(string $specifier, ?\core\url $loader = null, ?string $path = null, bool $loadfromcomponent = false, string $suffix = '.js', ?callable $modifier = null): void
     {
     }
     /**
@@ -126,7 +123,6 @@ class import_map implements \JsonSerializable
      * Entries are matched longest-key-first so a more-specific prefix always wins
      * (e.g. `react/` is matched before `react`). Returns null if no entry matches.
      *
-     * @param int $revision The JS revision number, used for modifier callables to determine if in developer mode.
      * @param string $requestedpath The bare specifier path (e.g. `react`, `@moodle/lms/mod_book/viewer`).
      * @return string|null Absolute filesystem path to the JS file, or null if unresolved.
      */

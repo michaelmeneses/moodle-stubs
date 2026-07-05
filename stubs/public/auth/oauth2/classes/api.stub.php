@@ -39,11 +39,6 @@ namespace auth_oauth2;
 class api
 {
     /**
-     * @var string Interval string of the expiration duration
-     * @see https://www.php.net/manual/en/dateinterval.construct.php
-     */
-    public const CONFIRMTOKEN_EXPIRES = 'PT30M';
-    /**
      * Remove all linked logins that are using issuers that have been deleted.
      *
      * @param int $issuerid The issuer id of the issuer to check, or false to check all (defaults to all)
