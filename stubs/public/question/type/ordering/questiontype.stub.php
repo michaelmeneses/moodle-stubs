@@ -131,12 +131,4 @@ class qtype_ordering extends question_type
     public function get_numberingstyle(stdClass $questiondata): string
     {
     }
-    #[\Override]
-    public function move_files($questionid, $oldcontextid, $newcontextid): void
-    {
-    }
-    #[\Override]
-    public function delete_files($questionid, $contextid): void
-    {
-    }
 }

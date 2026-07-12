@@ -524,10 +524,7 @@ function core_question_question_preview_pluginfile($previewcontext, $questionid,
 {
 }
 /**
- * Return a list of page types for questions and the page types for the current module/context.
- *
- * This list is used when displaying blocks on a question page, to provide the list of possible page type patterns for the block.
- *
+ * Return a list of page types
  * @param string $pagetype current page type
  * @param stdClass $parentcontext Block's parent context
  * @param stdClass $currentcontext Current context of block

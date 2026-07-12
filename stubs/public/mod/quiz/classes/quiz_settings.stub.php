@@ -409,7 +409,7 @@ class quiz_settings
      *
      * @param boolean $includepotential if the quiz include random questions,
      *      setting this flag to true will make the function to return all the
-     *      possible question types matching random question filters.
+     *      possible question types in the random questions category.
      * @return array a sorted array including the different question types.
      * @since  Moodle 3.1
      */
