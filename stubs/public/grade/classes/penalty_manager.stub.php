@@ -136,6 +136,20 @@ class penalty_manager
     {
     }
     /**
+     * Apply grade-item multfactor/plusfactor to a raw penalised grade, returning a value
+     * on the same scale as the gradebook finalgrade.
+     *
+     * @param float $rawgrade The penalised raw grade (before grade-item factors are applied).
+     * @param grade_item $gradeitem The grade item whose multfactor/plusfactor to apply.
+     * @param grade_grade|null $usergrade The user's grade_grade record, which carries the
+     *        rawgrademin/rawgrademax stored at grading time. Falls back to gradeitem
+     *        grademin/grademax when null or when the record has not yet been persisted.
+     * @return float|null The adjusted grade, or null when rawgrade is null.
+     */
+    public static function apply_grade_item_factors(float $rawgrade, grade_item $gradeitem, ?grade_grade $usergrade = null): ?float
+    {
+    }
+    /**
      * Returns the penalty indicator HTML code if a penalty is applied to the grade.
      * Otherwise, returns an empty string.
      *
