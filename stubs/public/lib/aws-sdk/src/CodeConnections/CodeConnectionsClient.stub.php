@@ -8,6 +8,7 @@
  */
 namespace Aws\CodeConnections;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS CodeConnections** service.
  * @method \Aws\Result createConnection(array $args = [])

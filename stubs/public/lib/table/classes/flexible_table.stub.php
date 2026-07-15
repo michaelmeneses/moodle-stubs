@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_table;
 
+use core\context;
+use core_table\local\filter\filterset;
+use core\exception\coding_exception;
+use core\output\renderable;
+use html_writer;
+use moodle_url;
+use paging_bar;
+use stdClass;
 // phpcs:disable moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
 /**
  * Flexible table implementation.

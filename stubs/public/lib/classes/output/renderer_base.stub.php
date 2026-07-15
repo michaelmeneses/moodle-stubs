@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\context\system as context_system;
+use core\exception\moodle_exception;
+use core\exception\coding_exception;
+use core\output\actions\component_action;
+use moodle_page;
+use moodle_url;
+use stdClass;
+use Mustache_Exception_UnknownTemplateException;
 /**
  * Simple base class for Moodle renderers.
  *

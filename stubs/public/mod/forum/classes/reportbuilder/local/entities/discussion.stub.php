@@ -8,6 +8,13 @@
  */
 namespace mod_forum\reportbuilder\local\entities;
 
+use core\{context, context_helper};
+use core\lang_string;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{date, text};
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\{column, filter};
+use stdClass;
 /**
  * Forum discussion entity
  *

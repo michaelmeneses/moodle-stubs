@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_openai\form;
 
+use aiprovider_openai\aimodel\openai_base;
 /**
  * Generate text action provider settings form.
  *

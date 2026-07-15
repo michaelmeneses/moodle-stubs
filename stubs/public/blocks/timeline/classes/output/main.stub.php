@@ -29,6 +29,10 @@
  */
 namespace block_timeline\output;
 
+use renderable;
+use renderer_base;
+use templatable;
+use core_course\external\course_summary_exporter;
 /**
  * Class containing data for timeline block.
  *

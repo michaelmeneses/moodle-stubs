@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_admin\admin;
 
+use admin_setting;
+use core_plugin_manager;
+use core_text;
+use core_admin\admin_search;
 /**
  * Admin setting plugin manager.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\oauth2\service;
 
+use core\oauth2\issuer;
+use core\oauth2\discovery\openidconnect;
 /**
  * Class for Custom services, with the specific methods related to it.
  *

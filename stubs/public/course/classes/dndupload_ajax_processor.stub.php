@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course;
 
+use cm_info;
+use core\context\course as context_course;
+use core\exception\coding_exception;
+use core\exception\moodle_exception;
+use core_text;
+use course_modinfo;
+use navigation_cache;
+use repository;
+use stdClass;
 /**
  * Processes the upload, creating the course module and returning the result
  *

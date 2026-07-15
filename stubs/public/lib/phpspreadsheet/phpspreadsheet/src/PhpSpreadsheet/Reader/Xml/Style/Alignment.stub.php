@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xml\Style;
 
+use PhpOffice\PhpSpreadsheet\Style\Alignment as AlignmentStyles;
+use SimpleXMLElement;
 class Alignment extends StyleBase
 {
     protected const VERTICAL_ALIGNMENT_STYLES = [AlignmentStyles::VERTICAL_BOTTOM, AlignmentStyles::VERTICAL_TOP, AlignmentStyles::VERTICAL_CENTER, AlignmentStyles::VERTICAL_JUSTIFY];

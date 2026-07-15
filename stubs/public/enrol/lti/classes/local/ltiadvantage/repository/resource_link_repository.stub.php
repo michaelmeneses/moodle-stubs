@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\repository;
 
+use enrol_lti\local\ltiadvantage\entity\deployment;
+use enrol_lti\local\ltiadvantage\entity\resource_link;
 /**
  * Class resource_link_repository.
  *

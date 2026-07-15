@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course;
 
+use ArrayIterator;
+use IteratorAggregate;
+use Traversable;
+use core\context\course as context_course;
+use core_courseformat\sectiondelegate;
+use core_courseformat\sectiondelegatemodule;
 // phpcs:disable PSR2.Classes.PropertyDeclaration.Underscore
 /**
  * Data about a single section on a course.

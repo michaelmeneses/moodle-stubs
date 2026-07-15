@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\bigbluebutton\recordings;
 
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\config;
+use mod_bigbluebuttonbn\local\helpers\roles;
+use mod_bigbluebuttonbn\local\proxy\bigbluebutton_proxy;
+use mod_bigbluebuttonbn\output\recording_description_editable;
+use mod_bigbluebuttonbn\output\recording_name_editable;
+use mod_bigbluebuttonbn\output\recording_row_actionbar;
+use mod_bigbluebuttonbn\output\recording_row_playback;
+use mod_bigbluebuttonbn\output\recording_row_preview;
+use mod_bigbluebuttonbn\recording;
+use stdClass;
 /**
  * The recordings_data.
  *

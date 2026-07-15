@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign;
 
+use assign;
+use core_php_time_limit;
+use mod_assign\event\all_submissions_downloaded;
+use core\session\manager as sessionmanager;
+use core_files\archive_writer;
+use stdClass;
+use assign_plugin;
+use stored_file;
 /**
  * Class to download user submissions.
  *

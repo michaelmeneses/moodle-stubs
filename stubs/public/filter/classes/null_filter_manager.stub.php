@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_filters;
 
+use core\context;
 /**
  * Filter manager subclass that does nothing. Having this simplifies the logic
  * of format_text, etc.

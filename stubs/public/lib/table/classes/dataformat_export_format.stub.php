@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_table;
 
+use core\exception\coding_exception;
+use core\dataformat;
 /**
  * Dataformat exporter
  *

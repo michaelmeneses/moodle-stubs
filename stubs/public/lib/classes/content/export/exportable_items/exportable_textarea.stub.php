@@ -8,6 +8,10 @@
  */
 namespace core\content\export\exportable_items;
 
+use context;
+use core\content\export\exportable_item;
+use core\content\export\exported_item;
+use core\content\export\zipwriter;
 /**
  * The definition of a text area which can be exported.
  *

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace smsgateway_modica;
 
+use core_sms\hook\after_sms_gateway_form_hook;
 /**
  * Hook listener for Modica sms gateway.
  *

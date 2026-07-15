@@ -29,6 +29,9 @@
  */
 namespace mod_forum\local\vaults;
 
+use mod_forum\local\entities\post as post_entity;
+use context;
+use file_storage;
 /**
  * Post attachment vault class.
  *

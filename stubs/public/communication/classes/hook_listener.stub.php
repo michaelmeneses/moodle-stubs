@@ -22,6 +22,24 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_communication;
 
+use context_course;
+use core\hook\access\after_role_assigned;
+use core\hook\access\after_role_unassigned;
+use core_enrol\hook\before_enrol_instance_deleted;
+use core_enrol\hook\after_enrol_instance_status_updated;
+use core_enrol\hook\after_user_enrolled;
+use core_enrol\hook\before_user_enrolment_updated;
+use core_enrol\hook\before_user_enrolment_removed;
+use core_course\hook\after_course_created;
+use core_course\hook\before_course_deleted;
+use core_course\hook\after_course_updated;
+use core_group\hook\after_group_created;
+use core_group\hook\after_group_deleted;
+use core_group\hook\after_group_membership_added;
+use core_group\hook\after_group_membership_removed;
+use core_group\hook\after_group_updated;
+use core_user\hook\before_user_deleted;
+use core_user\hook\before_user_updated;
 /**
  * Hook listener for communication api.
  *

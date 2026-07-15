@@ -8,6 +8,9 @@
  */
 namespace Aws\S3\Crypto;
 
+use Aws\Crypto\MaterialsProvider;
+use Aws\Crypto\MetadataEnvelope;
+use Aws\Crypto\MetadataStrategyInterface;
 trait CryptoParamsTrait
 {
     protected function getMaterialsProvider(array $args)

@@ -8,6 +8,18 @@
  */
 namespace DI;
 
+use DI\Compiler\RequestedEntryHolder;
+use DI\Definition\Definition;
+use DI\Definition\Exception\InvalidDefinition;
+use DI\Invoker\FactoryParameterResolver;
+use Invoker\Exception\NotCallableException;
+use Invoker\Exception\NotEnoughParametersException;
+use Invoker\Invoker;
+use Invoker\InvokerInterface;
+use Invoker\ParameterResolver\AssociativeArrayResolver;
+use Invoker\ParameterResolver\DefaultValueResolver;
+use Invoker\ParameterResolver\NumericArrayResolver;
+use Invoker\ParameterResolver\ResolverChain;
 /**
  * Compiled version of the dependency injection container.
  *

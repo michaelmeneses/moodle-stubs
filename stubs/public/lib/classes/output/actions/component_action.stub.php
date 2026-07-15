@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\actions;
 
+use core\exception\coding_exception;
+use core\output\renderer_base;
+use core\output\templatable;
+use stdClass;
 /**
  * Helper class used by other components that involve an action on the page (URL or JS).
  *

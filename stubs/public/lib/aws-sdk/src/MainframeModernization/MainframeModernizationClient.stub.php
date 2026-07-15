@@ -8,6 +8,7 @@
  */
 namespace Aws\MainframeModernization;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWSMainframeModernization** service.
  * @method \Aws\Result cancelBatchJobExecution(array $args = [])

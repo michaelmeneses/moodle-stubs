@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\renderer_factory;
 
+use moodle_page;
+use core\output\renderer_base;
 /**
  * A renderer factory is just responsible for creating an appropriate renderer
  * for any given part of Moodle.

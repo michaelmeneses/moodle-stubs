@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\plugininfo;
 
+use core_plugin_manager;
+use moodle_url;
 /**
  * SMS gateway subplugin info class.
  *

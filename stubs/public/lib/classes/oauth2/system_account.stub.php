@@ -29,6 +29,7 @@
  */
 namespace core\oauth2;
 
+use core\persistent;
 /**
  * Class for loading/storing oauth2 refresh tokens from the DB.
  *

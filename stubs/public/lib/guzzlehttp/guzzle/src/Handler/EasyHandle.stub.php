@@ -8,6 +8,11 @@
  */
 namespace GuzzleHttp\Handler;
 
+use GuzzleHttp\Psr7\Response;
+use GuzzleHttp\Utils;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * Represents a cURL easy handle and the data it populates.
  *

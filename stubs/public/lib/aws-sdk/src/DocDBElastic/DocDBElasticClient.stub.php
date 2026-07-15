@@ -8,6 +8,7 @@
  */
 namespace Aws\DocDBElastic;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon DocumentDB Elastic Clusters** service.
  * @method \Aws\Result applyPendingMaintenanceAction(array $args = [])

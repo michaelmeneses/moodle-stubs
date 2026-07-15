@@ -29,6 +29,12 @@
  */
 namespace core_payment\external;
 
+use core_payment\helper;
+use core_external\external_api;
+use core_external\external_value;
+use core_external\external_single_structure;
+use core_external\external_multiple_structure;
+use core_external\external_function_parameters;
 class get_available_gateways extends external_api
 {
     /**

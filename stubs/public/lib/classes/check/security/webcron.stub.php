@@ -31,6 +31,8 @@
  */
 namespace core\check\security;
 
+use core\check\check;
+use core\check\result;
 /**
  * Verifies the status of web cron
  *

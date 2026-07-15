@@ -8,6 +8,13 @@
  */
 namespace core_customfield\external;
 
+use core_customfield\event\shared_category_usage_disabled;
+use core_customfield\event\shared_category_usage_enabled;
+use core_customfield\handler;
+use core_customfield\shared;
+use core_external\external_api;
+use core_external\external_value;
+use core_external\external_function_parameters;
 /**
  * External method for toggling shared categories
  *

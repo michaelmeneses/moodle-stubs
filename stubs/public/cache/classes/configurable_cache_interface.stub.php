@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache;
 
+use moodleform;
+use stdClass;
 /**
  * Cache store feature: configurable.
  *

@@ -29,6 +29,10 @@
  */
 namespace tool_lpimportcsv\form;
 
+use moodleform;
+use core_competency\api;
+use core_text;
+use csv_import_reader;
 /**
  * Import Competency framework form.
  *

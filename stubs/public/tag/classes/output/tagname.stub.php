@@ -29,6 +29,10 @@
  */
 namespace core_tag\output;
 
+use context_system;
+use lang_string;
+use html_writer;
+use core_tag_tag;
 /**
  * Class to preapare a tag name for display.
  *

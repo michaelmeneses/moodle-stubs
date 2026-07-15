@@ -8,6 +8,21 @@
  */
 namespace Composer\Pcre\PHPStan;
 
+use Composer\Pcre\Preg;
+use Composer\Pcre\Regex;
+use PhpParser\Node\Expr\StaticCall;
+use PHPStan\Analyser\Scope;
+use PHPStan\Reflection\MethodReflection;
+use PHPStan\Reflection\Native\NativeParameterReflection;
+use PHPStan\Reflection\ParameterReflection;
+use PHPStan\TrinaryLogic;
+use PHPStan\Type\ClosureType;
+use PHPStan\Type\Constant\ConstantArrayType;
+use PHPStan\Type\Php\RegexArrayShapeMatcher;
+use PHPStan\Type\StaticMethodParameterClosureTypeExtension;
+use PHPStan\Type\StringType;
+use PHPStan\Type\TypeCombinator;
+use PHPStan\Type\Type;
 final class PregReplaceCallbackClosureTypeExtension implements StaticMethodParameterClosureTypeExtension
 {
     /**

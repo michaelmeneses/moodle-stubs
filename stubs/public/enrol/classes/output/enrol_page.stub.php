@@ -8,6 +8,9 @@
  */
 namespace core_enrol\output;
 
+use core\output\named_templatable;
+use core\output\renderable;
+use core\output\single_button;
 /**
  * Allows to render a widget provided by enrol_plugin::enrol_page_hook()
  *

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation;
 
+use core_cache\cache;
+use core_cache\session_cache;
+use core_shutdown_manager;
 /**
  * The navigation_cache class is used for global and settings navigation data.
  *

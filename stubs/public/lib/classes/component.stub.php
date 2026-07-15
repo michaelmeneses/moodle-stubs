@@ -29,6 +29,13 @@
  */
 namespace core;
 
+use core\exception\coding_exception;
+use core\output\theme_config;
+use stdClass;
+use ArrayIterator;
+use DirectoryIterator;
+use Exception;
+use RegexIterator;
 // Constants used in version.php files, these must exist when core_component executes.
 // We make use of error_log as debugging is not always available.
 // phpcs:disable moodle.PHP.ForbiddenFunctions.FoundWithAlternative

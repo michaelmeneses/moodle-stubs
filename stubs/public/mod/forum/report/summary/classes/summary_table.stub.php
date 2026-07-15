@@ -29,6 +29,8 @@
  */
 namespace forumreport_summary;
 
+use coding_exception;
+use table_sql;
 /**
  * The class for displaying the forum report table.
  *

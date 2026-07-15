@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\route\shim;
 
+use core\param;
+use core\router\route;
+use core\router\route_controller;
+use core\router\schema\parameters\query_parameter;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * A shim for the course routes.
  *

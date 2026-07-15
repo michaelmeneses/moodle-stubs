@@ -8,6 +8,10 @@
  */
 namespace Matrix\Operators;
 
+use Matrix\Matrix;
+use Matrix\Builder;
+use Matrix\Exception;
+use Throwable;
 class Multiplication extends Operator
 {
     /**

@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache;
 
+use core\exception\coding_exception;
+use core_cache\exception\cache_exception;
+use cachestore_static;
+use cachestore_session;
+use cachestore_file;
+use core_component;
+use ReflectionClass;
 /**
  * Cache configuration writer.
  *

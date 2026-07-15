@@ -8,6 +8,10 @@
  */
 namespace Aws\S3;
 
+use Aws\CommandInterface;
+use Aws\ResultInterface;
+use Aws\S3\Exception\PermanentRedirectException;
+use Psr\Http\Message\RequestInterface;
 /**
  * Throws a PermanentRedirectException exception when a 301 redirect is
  * encountered.

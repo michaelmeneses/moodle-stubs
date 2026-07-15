@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_glossary\courseformat;
 
+use core\url;
+use mod_glossary_entry_query_builder;
+use core\output\local\properties\text_align;
+use core_courseformat\local\overview\overviewitem;
+use core_courseformat\output\local\overview\overviewaction;
 /**
  * Glossary overview integration class.
  *

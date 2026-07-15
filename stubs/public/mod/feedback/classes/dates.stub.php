@@ -8,6 +8,7 @@
  */
 namespace mod_feedback;
 
+use core\activity_dates;
 /**
  * Class for fetching the important dates in mod_feedback for a given module instance and a user.
  *

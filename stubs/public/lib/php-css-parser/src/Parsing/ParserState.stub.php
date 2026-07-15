@@ -8,6 +8,8 @@
  */
 namespace Sabberworm\CSS\Parsing;
 
+use Sabberworm\CSS\Comment\Comment;
+use Sabberworm\CSS\Settings;
 /**
  * @internal since 8.7.0
  */

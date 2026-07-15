@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_contentbank\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use core_contentbank\content;
 /**
  * Content bank Custom fields renderable class.
  *

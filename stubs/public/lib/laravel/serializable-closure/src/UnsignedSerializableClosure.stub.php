@@ -8,6 +8,7 @@
  */
 namespace Laravel\SerializableClosure;
 
+use Closure;
 class UnsignedSerializableClosure
 {
     /**

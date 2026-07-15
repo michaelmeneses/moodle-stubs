@@ -30,6 +30,9 @@
  */
 namespace mod_h5pactivity\local;
 
+use core_xapi\handler;
+use stdClass;
+use core_xapi\local\statement;
 /**
  * Class attempt for H5P activity
  *

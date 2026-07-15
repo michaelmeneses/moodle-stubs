@@ -29,6 +29,7 @@
  */
 namespace tool_moodlenet\output;
 
+use plugin_renderer_base;
 /**
  * Renderer class.
  *

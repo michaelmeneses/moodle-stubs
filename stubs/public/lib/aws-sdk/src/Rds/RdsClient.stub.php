@@ -8,6 +8,11 @@
  */
 namespace Aws\Rds;
 
+use Aws\AwsClient;
+use Aws\Api\Service;
+use Aws\Api\DocModel;
+use Aws\Api\ApiProvider;
+use Aws\PresignUrlMiddleware;
 /**
  * This client is used to interact with the **Amazon Relational Database Service (Amazon RDS)**.
  *

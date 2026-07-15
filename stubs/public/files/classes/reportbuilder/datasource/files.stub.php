@@ -8,6 +8,11 @@
  */
 namespace core_files\reportbuilder\datasource;
 
+use core\reportbuilder\local\entities\context;
+use core_files\reportbuilder\local\entities\file;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\filters\boolean_select;
 /**
  * Files datasource
  *

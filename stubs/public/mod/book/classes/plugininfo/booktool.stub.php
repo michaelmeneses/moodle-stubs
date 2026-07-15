@@ -29,6 +29,7 @@
  */
 namespace mod_book\plugininfo;
 
+use core\plugininfo\base;
 class booktool extends base
 {
     public function is_uninstall_allowed()

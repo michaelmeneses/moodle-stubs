@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tiny_premium\form;
 
+use moodleform;
 /**
  * Form for configuring Tiny Premium plugin settings.
  *

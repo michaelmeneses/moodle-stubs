@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_admin\table;
 
+use core_plugin_manager;
+use dml_exception;
+use html_writer;
+use moodle_url;
+use stdClass;
 /**
  * Activity Module admin settings.
  *

@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\plugin_manager;
+use core\task\adhoc_task;
+use core\task\stored_progress_task_trait;
+use core\url;
+use core\context\system;
+use stdClass;
 /**
  * Indicator for displaying status and progress of a background task
  *

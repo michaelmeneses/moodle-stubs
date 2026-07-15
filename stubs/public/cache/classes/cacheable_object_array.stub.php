@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache;
 
+use core\exception\coding_exception;
+use ArrayObject;
 /**
  * An array of cacheable objects.
  *

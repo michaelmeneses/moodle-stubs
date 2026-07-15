@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\output;
 
+use coding_exception;
+use context_course;
+use stdClass;
+use renderable;
+use core_badges\badge;
+use moodle_url;
+use renderer_base;
 /**
  * Page to display badge information, such as name, description or criteria. This information is unrelated to assertions.
  *

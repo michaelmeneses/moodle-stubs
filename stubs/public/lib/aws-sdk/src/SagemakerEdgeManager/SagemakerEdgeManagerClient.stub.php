@@ -8,6 +8,7 @@
  */
 namespace Aws\SagemakerEdgeManager;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Sagemaker Edge Manager** service.
  * @method \Aws\Result getDeployments(array $args = [])

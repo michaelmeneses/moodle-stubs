@@ -8,6 +8,9 @@
  */
 namespace Aws\Crypto;
 
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\LimitStream;
+use Psr\Http\Message\StreamInterface;
 trait DecryptionTrait
 {
     /**

@@ -8,6 +8,20 @@
  */
 namespace core_reportbuilder\local\entities;
 
+use core\{context, context_helper};
+use core_reportbuilder\local\filters\boolean_select;
+use core_reportbuilder\local\filters\course_selector;
+use core_reportbuilder\local\filters\date;
+use core_reportbuilder\local\filters\select;
+use core_reportbuilder\local\filters\text;
+use core_reportbuilder\local\helpers\custom_fields;
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
+use html_writer;
+use lang_string;
+use stdClass;
+use theme_config;
 /**
  * Course entity class implementation
  *

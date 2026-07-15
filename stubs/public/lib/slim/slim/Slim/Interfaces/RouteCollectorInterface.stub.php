@@ -8,6 +8,8 @@
  */
 namespace Slim\Interfaces;
 
+use InvalidArgumentException;
+use RuntimeException;
 interface RouteCollectorInterface
 {
     /**

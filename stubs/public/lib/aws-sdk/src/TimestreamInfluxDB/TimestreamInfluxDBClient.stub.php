@@ -8,6 +8,7 @@
  */
 namespace Aws\TimestreamInfluxDB;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Timestream InfluxDB** service.
  * @method \Aws\Result createDbCluster(array $args = [])

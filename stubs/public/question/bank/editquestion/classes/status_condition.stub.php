@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_editquestion;
 
+use core_question\local\bank\condition;
+use core_question\local\bank\question_version_status;
 /**
  * Filter condition for the status column
  *

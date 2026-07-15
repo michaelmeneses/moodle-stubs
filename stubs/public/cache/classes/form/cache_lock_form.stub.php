@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache\form;
 
+use core_cache\config as cache_config;
+use moodleform;
 /**
  * Form to add a cache lock instance.
  *

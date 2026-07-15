@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\local;
 
+use section_info;
+use stdClass;
+use core\event\course_module_updated;
+use core\event\course_section_deleted;
 /**
  * Section course format actions.
  *

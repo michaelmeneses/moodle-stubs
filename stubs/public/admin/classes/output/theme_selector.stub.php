@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_admin\output;
 
+use moodle_url;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * Theme selector renderable.
  *

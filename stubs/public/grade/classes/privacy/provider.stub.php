@@ -30,6 +30,18 @@
  */
 namespace core_grades\privacy;
 
+use context;
+use context_course;
+use context_system;
+use grade_item;
+use grade_grade;
+use grade_scale;
+use stdClass;
+use core_grades\privacy\grade_grade_with_history;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
 /**
  * Data provider class.
  *

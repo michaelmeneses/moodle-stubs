@@ -29,6 +29,7 @@
  */
 namespace core_badges\output;
 
+use core_badges\external\backpack_exporter;
 /**
  * Manage enabled backpacks renderable.
  *

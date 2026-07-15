@@ -29,6 +29,11 @@
  */
 namespace mod_lesson\output;
 
+use core\output\notification;
+use moodle_url;
+use templatable;
+use renderable;
+use single_button;
 /**
  * Output the action buttons for this activity.
  *

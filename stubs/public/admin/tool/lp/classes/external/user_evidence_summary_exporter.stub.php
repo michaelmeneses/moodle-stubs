@@ -29,6 +29,10 @@
  */
 namespace tool_lp\external;
 
+use moodle_url;
+use renderer_base;
+use core_files\external\stored_file_exporter;
+use core_competency\external\performance_helper;
 /**
  * Class for exporting user evidence with all competencies.
  *

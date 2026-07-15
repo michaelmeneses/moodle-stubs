@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation;
 
+use core\context\course as context_course;
+use core\context_helper;
+use core\url;
+use moodle_page;
 /**
  * Class used to generate a collection of navigation nodes most closely related
  * to the current page.

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router;
 
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Routing attribute.
  *

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_filters;
 
+use core\context;
+use core\context\system as context_system;
+use moodle_page;
 /**
  * Class to manage the filtering of strings. It is intended that this class is
  * only used by weblib.php. Client code should probably be using the

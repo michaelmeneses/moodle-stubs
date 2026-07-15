@@ -29,6 +29,13 @@
  */
 namespace core_courseformat\output\local\content\cm;
 
+use cm_info;
+use core\output\named_templatable;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\courseformat_named_templatable;
+use renderable;
+use section_info;
+use stdClass;
 /**
  * Base class to render a course module inplace editable header.
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\ManagedBlockchainQuery;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Managed Blockchain Query** service.
  * @method \Aws\Result batchGetTokenBalance(array $args = [])

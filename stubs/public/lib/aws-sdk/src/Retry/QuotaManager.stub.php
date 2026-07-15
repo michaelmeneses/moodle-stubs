@@ -8,6 +8,8 @@
  */
 namespace Aws\Retry;
 
+use Aws\Exception\AwsException;
+use Aws\ResultInterface;
 /**
  * @internal
  */

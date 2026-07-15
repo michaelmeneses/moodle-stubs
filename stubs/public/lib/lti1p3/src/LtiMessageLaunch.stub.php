@@ -8,6 +8,22 @@
  */
 namespace Packback\Lti1p3;
 
+use Exception;
+use Firebase\JWT\ExpiredException;
+use Firebase\JWT\JWK;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+use GuzzleHttp\Exception\TransferException;
+use Packback\Lti1p3\Interfaces\ICache;
+use Packback\Lti1p3\Interfaces\ICookie;
+use Packback\Lti1p3\Interfaces\IDatabase;
+use Packback\Lti1p3\Interfaces\ILtiDeployment;
+use Packback\Lti1p3\Interfaces\ILtiRegistration;
+use Packback\Lti1p3\Interfaces\ILtiServiceConnector;
+use Packback\Lti1p3\Interfaces\IMigrationDatabase;
+use Packback\Lti1p3\MessageValidators\DeepLinkMessageValidator;
+use Packback\Lti1p3\MessageValidators\ResourceMessageValidator;
+use Packback\Lti1p3\MessageValidators\SubmissionReviewMessageValidator;
 class LtiMessageLaunch
 {
     public const TYPE_DEEPLINK = 'LtiDeepLinkingRequest';

@@ -8,6 +8,16 @@
  */
 namespace core_reportbuilder;
 
+use action_menu_filler;
+use coding_exception;
+use core_reportbuilder\exception\report_access_exception;
+use html_writer;
+use stdClass;
+use core\output\checkbox_toggleall;
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\local\report\action;
+use core_reportbuilder\local\report\base;
+use core_reportbuilder\local\report\column;
 /**
  * Base class for system reports
  *

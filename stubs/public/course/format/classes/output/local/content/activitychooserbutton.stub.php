@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\content;
 
+use action_link;
+use cm_info;
+use renderable;
+use renderer_base;
+use section_info;
+use stdClass;
+use core\output\named_templatable;
+use core\di;
+use core\hook;
 /**
  * Class to render a activity chooser button.
  *

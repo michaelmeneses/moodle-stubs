@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared;
 
+use PhpOffice\PhpSpreadsheet\Exception as SpException;
+use PhpOffice\PhpSpreadsheet\Worksheet\Protection;
 class PasswordHasher
 {
     const MAX_PASSWORD_LENGTH = 255;

@@ -8,6 +8,12 @@
  */
 namespace core_webservice\reportbuilder\local\entities;
 
+use core_collator;
+use lang_string;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\autocomplete;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
 /**
  * External service report builder entity
  *

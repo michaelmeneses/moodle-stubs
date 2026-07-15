@@ -31,6 +31,7 @@
  */
 namespace mod_quiz\privacy;
 
+use core_privacy\local\request\approved_userlist;
 interface quizaccess_user_provider extends \core_privacy\local\request\plugin\subplugin_provider
 {
     /**

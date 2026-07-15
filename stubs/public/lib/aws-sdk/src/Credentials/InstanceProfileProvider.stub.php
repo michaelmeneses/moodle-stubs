@@ -8,6 +8,15 @@
  */
 namespace Aws\Credentials;
 
+use Aws\Configuration\ConfigurationResolver;
+use Aws\Exception\CredentialsException;
+use Aws\Exception\InvalidJsonException;
+use Aws\Sdk;
+use GuzzleHttp\Exception\TransferException;
+use GuzzleHttp\Promise;
+use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Promise\PromiseInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Credential provider that provides credentials from the EC2 metadata service.
  */

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_communication\task;
 
+use core\task\adhoc_task;
+use core_communication\processor;
 /**
  * Class add_members_to_room_task to add the task to add members to the room and execute the task to action the addition.
  *

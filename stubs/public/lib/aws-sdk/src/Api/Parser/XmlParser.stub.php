@@ -8,6 +8,12 @@
  */
 namespace Aws\Api\Parser;
 
+use Aws\Api\DateTimeResult;
+use Aws\Api\ListShape;
+use Aws\Api\MapShape;
+use Aws\Api\Parser\Exception\ParserException;
+use Aws\Api\Shape;
+use Aws\Api\StructureShape;
 /**
  * @internal Implements standard XML parsing for REST-XML and Query protocols.
  */

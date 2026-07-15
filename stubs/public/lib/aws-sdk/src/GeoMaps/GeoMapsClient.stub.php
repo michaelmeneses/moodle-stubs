@@ -8,6 +8,7 @@
  */
 namespace Aws\GeoMaps;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Location Service Maps V2** service.
  * @method \Aws\Result getGlyphs(array $args = [])

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_contentbank\customfield;
 
+use core_customfield\api;
+use core_customfield\field_controller;
 /**
  * Content handler for content bank custom fields
  *

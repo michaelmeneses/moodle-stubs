@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\route\controller;
 
+use core\form\error_feedback;
+use core\router;
+use core\router\route;
+use core\router\schema\parameters\query_parameter;
+use core\router\util;
+use core\url;
+use core_user;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Page Not Found Controller.
  *

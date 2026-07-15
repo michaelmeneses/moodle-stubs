@@ -8,6 +8,11 @@
  */
 namespace Sabberworm\CSS\Value;
 
+use Sabberworm\CSS\Parsing\ParserState;
+use Sabberworm\CSS\Parsing\SourceException;
+use Sabberworm\CSS\Parsing\UnexpectedEOFException;
+use Sabberworm\CSS\Parsing\UnexpectedTokenException;
+use Sabberworm\CSS\Renderable;
 /**
  * Abstract base class for specific classes of CSS values: `Size`, `Color`, `CSSString` and `URL`, and another
  * abstract subclass `ValueList`.

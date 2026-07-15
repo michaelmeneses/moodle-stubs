@@ -29,6 +29,11 @@
  */
 namespace block_search_forums\output;
 
+use help_icon;
+use moodle_url;
+use renderable;
+use renderer_base;
+use templatable;
 /**
  * Search form renderable class.
  *

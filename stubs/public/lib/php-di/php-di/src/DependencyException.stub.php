@@ -8,6 +8,7 @@
  */
 namespace DI;
 
+use Psr\Container\ContainerExceptionInterface;
 /**
  * Exception for the Container.
  */

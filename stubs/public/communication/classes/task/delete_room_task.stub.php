@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_communication\task;
 
+use core\task\adhoc_task;
+use core_communication\processor;
 /**
  * Class delete_room_task to add a task to delete a room and execute the task to action the deletion.
  *

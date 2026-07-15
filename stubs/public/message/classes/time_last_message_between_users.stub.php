@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_message;
 
+use core_cache\data_source_interface;
+use core_cache\definition;
 /**
  * Cache data source for the time of the last message in a conversation.
  *

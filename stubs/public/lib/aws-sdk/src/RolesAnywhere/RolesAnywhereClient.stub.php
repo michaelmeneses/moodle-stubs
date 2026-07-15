@@ -8,6 +8,7 @@
  */
 namespace Aws\RolesAnywhere;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **IAM Roles Anywhere** service.
  * @method \Aws\Result createProfile(array $args = [])

@@ -30,6 +30,11 @@
  */
 namespace mod_bigbluebuttonbn\test;
 
+use core_component;
+use core_h5p\core;
+use core_plugin_manager;
+use mod_bigbluebuttonbn\extension;
+use ReflectionClass;
 trait subplugins_test_helper_trait
 {
     /**

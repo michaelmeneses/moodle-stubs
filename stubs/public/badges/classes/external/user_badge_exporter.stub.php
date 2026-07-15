@@ -29,6 +29,12 @@
  */
 namespace core_badges\external;
 
+use core\external\exporter;
+use renderer_base;
+use moodle_url;
+use core_badges\external\endorsement_exporter;
+use core_badges\external\alignment_exporter;
+use core_badges\external\related_info_exporter;
 /**
  * Class for displaying a badge issued to a user.
  *

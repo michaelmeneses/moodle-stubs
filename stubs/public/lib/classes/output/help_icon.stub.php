@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use moodle_url;
+use stdClass;
 /**
  * Data structure representing a help icon.
  *

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat;
 
+use core_courseformat\local\courseactions;
+use core_courseformat\local\sectionactions;
+use core_courseformat\local\cmactions;
+use coding_exception;
+use stdClass;
 /**
  * Class to instantiate course format actions.
  *

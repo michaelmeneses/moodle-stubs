@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\form;
 
+use context;
+use core\notification;
+use moodle_exception;
+use moodle_url;
+use core_form\dynamic_form;
+use mod_data\manager;
+use mod_data\preset;
 /**
  * Save database as preset form.
  *

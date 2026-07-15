@@ -22,6 +22,24 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn;
 
+use admin_category;
+use admin_setting;
+use admin_setting_configcheckbox;
+use admin_setting_configmultiselect;
+use admin_setting_configpasswordunmask;
+use admin_setting_configselect;
+use admin_setting_configstoredfile;
+use admin_setting_configtext;
+use admin_setting_configtextarea;
+use admin_setting_heading;
+use admin_settingpage;
+use cache_helper;
+use core_plugin_manager;
+use lang_string;
+use mod_bigbluebuttonbn\local\config;
+use mod_bigbluebuttonbn\local\helpers\roles;
+use mod_bigbluebuttonbn\local\plugins\admin_page_manage_extensions;
+use mod_bigbluebuttonbn\local\proxy\bigbluebutton_proxy;
 /**
  * The mod_bigbluebuttonbn settings helper
  *

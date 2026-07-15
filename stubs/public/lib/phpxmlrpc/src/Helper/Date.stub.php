@@ -8,6 +8,7 @@
  */
 namespace PhpXmlRpc\Helper;
 
+use PhpXmlRpc\PhpXmlRpc;
 /**
  * Helps to convert timestamps to the xml-rpc date format.
  *

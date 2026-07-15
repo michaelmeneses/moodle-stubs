@@ -8,6 +8,7 @@
  */
 namespace Aws\CleanRooms;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Clean Rooms Service** service.
  * @method \Aws\Result batchGetCollaborationAnalysisTemplate(array $args = [])

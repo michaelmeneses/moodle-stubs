@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_message;
 
+use core\{clock, di};
+use core_favourites\local\entity\favourite;
 /**
  * Class used to return information to display for the message area.
  *

@@ -29,6 +29,9 @@
  */
 namespace core_xapi\local\statement;
 
+use core_xapi\xapi_exception;
+use core_xapi\iri;
+use stdClass;
 /**
  * Abstract xAPI attachment class.
  *

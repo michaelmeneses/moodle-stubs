@@ -29,6 +29,11 @@
  */
 namespace booktool_print\output;
 
+use plugin_renderer_base;
+use html_writer;
+use context_module;
+use moodle_url;
+use moodle_exception;
 /**
  * The renderer for the book print tool.
  *

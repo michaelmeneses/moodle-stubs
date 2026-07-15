@@ -8,6 +8,7 @@
  */
 namespace Aws\VPCLattice;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon VPC Lattice** service.
  * @method \Aws\Result batchUpdateRule(array $args = [])

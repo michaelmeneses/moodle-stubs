@@ -29,6 +29,7 @@
  */
 namespace core_calendar\external;
 
+use core_calendar\local\event\entities\event_interface;
 /**
  * Class to providing the related objects when exporting a list of calendar events.
  *

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_files\redactor;
 
+use core_files\hook\before_file_created;
 /**
  * Allow the plugin to call as soon as possible before the file is created.
  *

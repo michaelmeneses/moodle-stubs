@@ -29,6 +29,14 @@
  */
 namespace tool_lp\external;
 
+use context_course;
+use renderer_base;
+use stdClass;
+use moodle_url;
+use core_competency\competency_framework;
+use core_competency\external\competency_exporter;
+use core_competency\external\competency_framework_exporter;
+use core_course\external\course_summary_exporter;
 /**
  * Class for exporting competency data with additional related data.
  *

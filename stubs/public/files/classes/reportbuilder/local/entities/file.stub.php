@@ -8,6 +8,15 @@
  */
 namespace core_files\reportbuilder\local\entities;
 
+use core_collator;
+use core_filetypes;
+use lang_string;
+use license_manager;
+use stdClass;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\filters\{boolean_select, date, filesize, select, text};
+use core_reportbuilder\local\report\{column, filter};
 /**
  * File entity
  *

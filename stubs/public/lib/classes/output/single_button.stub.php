@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\output\actions\confirm_action;
+use core\output\actions\component_action;
+use moodle_url;
+use stdClass;
 /**
  * Data structure representing a simple form with only one button.
  *

@@ -29,6 +29,7 @@
  */
 namespace core;
 
+use Exception;
 /**
  * V4 UUID generator class.
  *

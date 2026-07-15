@@ -49,6 +49,7 @@
  */
 namespace SimplePie\Cache;
 
+use InvalidArgumentException;
 /**
  * Adapter for deprecated \SimplePie\Cache\Base implementations
  *

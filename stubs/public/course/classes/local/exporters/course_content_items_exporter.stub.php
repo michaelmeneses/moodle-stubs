@@ -30,6 +30,8 @@
  */
 namespace core_course\local\exporters;
 
+use core\external\exporter;
+use core_course\local\entity\content_item;
 /**
  * The course_content_items_exporter class.
  *

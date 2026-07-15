@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use moodle_page;
 /**
  * Data structure representing standard components displayed on the activity header.
  *

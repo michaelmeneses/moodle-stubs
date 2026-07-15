@@ -8,6 +8,7 @@
  */
 namespace Aws\Ecs\Exception;
 
+use Aws\Exception\AwsException;
 /**
  * Amazon ECS exception.
  */

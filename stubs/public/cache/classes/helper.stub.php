@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache;
 
+use core\lang_string;
+use core\exception\coding_exception;
+use DirectoryIterator;
 /**
  * The cache helper class.
  *

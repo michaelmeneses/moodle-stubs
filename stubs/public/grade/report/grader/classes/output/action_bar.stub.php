@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradereport_grader\output;
 
+use core\output\comboboxsearch;
+use core_course\output\actionbar\group_selector;
+use core_course\output\actionbar\initials_selector;
+use core_course\output\actionbar\user_selector;
+use core_grades\output\general_action_bar;
+use moodle_url;
 /**
  * Renderable class for the action bar elements in the grader report.
  *

@@ -29,6 +29,12 @@
  */
 namespace mod_feedback\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use moodle_url;
+use mod_feedback_structure;
 /**
  * Class to help display feedback summary
  *

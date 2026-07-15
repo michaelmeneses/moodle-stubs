@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\Wizard;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Exception;
+use PhpOffice\PhpSpreadsheet\Style\Conditional;
+use PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\CellMatcher;
+use PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\Wizard;
 /**
  * @method CellValue equals($value, string $operandValueType = Wizard::VALUE_TYPE_LITERAL)
  * @method CellValue notEquals($value, string $operandValueType = Wizard::VALUE_TYPE_LITERAL)

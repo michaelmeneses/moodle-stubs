@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\form;
 
+use enrol_lti\local\ltiadvantage\repository\application_registration_repository;
 /**
  * The platform_registration_form class, for registering a platform as a consumer of a published tool.
  *

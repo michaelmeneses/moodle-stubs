@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_scorm\courseformat;
 
+use cm_info;
+use core_calendar\output\humandate;
+use core_courseformat\local\overview\overviewitem;
+use core_courseformat\output\local\overview\overviewdialog;
+use core\output\action_link;
+use core\output\local\properties\text_align;
+use core\output\local\properties\button;
+use core\url;
+use mod_data\dates;
+use mod_scorm\manager;
 /**
  * SCORM activity overview integration.
  *

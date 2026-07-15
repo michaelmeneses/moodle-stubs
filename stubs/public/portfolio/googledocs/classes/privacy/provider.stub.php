@@ -29,6 +29,7 @@
  */
 namespace portfolio_googledocs\privacy;
 
+use core_privacy\local\metadata\collection;
 /**
  * Provider for the portfolio_googledocs plugin.
  *

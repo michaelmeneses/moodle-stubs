@@ -31,6 +31,9 @@
  */
 namespace core_comment\external;
 
+use core_comment\manager;
+use renderer_base;
+use stdClass;
 /**
  * Class for exporting a comment area.
  *

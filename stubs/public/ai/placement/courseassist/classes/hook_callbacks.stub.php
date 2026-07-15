@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiplacement_courseassist;
 
+use core\hook\output\after_http_headers;
+use core\hook\output\before_footer_html_generation;
 /**
  * Hook callbacks for the course assist AI Placement.
  *

@@ -29,6 +29,7 @@
  */
 namespace auth_ldap\task;
 
+use core\task\adhoc_task;
 /**
  * Adhoc task class for LDAP user sync.
  *

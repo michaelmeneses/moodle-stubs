@@ -30,6 +30,9 @@
  */
 namespace core_backup\output;
 
+use core\di;
+use core\hook\manager;
+use core_backup\hook\after_copy_form_definition;
 /**
  * Course copy form class.
  *

@@ -29,6 +29,12 @@ namespace qbank_managecategories;
  * @todo Final removal in Moodle 6.0 MDL-80804.
  */
 define('QUESTION_PAGE_LENGTH', 25);
+use context;
+use moodle_exception;
+use moodle_url;
+use qbank_managecategories\form\question_category_edit_form;
+use question_bank;
+use stdClass;
 /**
  * Class for performing operations on question categories.
  *

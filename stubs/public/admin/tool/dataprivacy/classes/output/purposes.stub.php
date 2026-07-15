@@ -29,6 +29,11 @@
  */
 namespace tool_dataprivacy\output;
 
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
+use tool_dataprivacy\external\purpose_exporter;
 /**
  * Class containing the purposes page renderable.
  *

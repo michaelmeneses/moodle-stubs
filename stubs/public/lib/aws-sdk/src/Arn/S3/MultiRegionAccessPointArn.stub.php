@@ -8,6 +8,8 @@
  */
 namespace Aws\Arn\S3;
 
+use Aws\Arn\Arn;
+use Aws\Arn\ResourceTypeAndIdTrait;
 /**
  * This class represents an S3 multi-region bucket ARN, which is in the
  * following format:

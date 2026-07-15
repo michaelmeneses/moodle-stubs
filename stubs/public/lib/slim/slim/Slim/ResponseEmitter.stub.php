@@ -8,6 +8,16 @@
  */
 namespace Slim;
 
+use Psr\Http\Message\ResponseInterface;
+use function connection_status;
+use function header;
+use function headers_sent;
+use function in_array;
+use function min;
+use function sprintf;
+use function strlen;
+use function strtolower;
+use const CONNECTION_NORMAL;
 class ResponseEmitter
 {
     private int $responseChunkSize;

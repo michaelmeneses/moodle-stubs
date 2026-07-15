@@ -8,6 +8,16 @@
  */
 namespace core_tag\reportbuilder\local\entities;
 
+use context_system;
+use core_tag_tag;
+use stdClass;
+use core\lang_string;
+use core\output\html_writer;
+use core_reportbuilder\local\aggregation\{groupconcat, groupconcatdistinct};
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{boolean_select, date, number, tags};
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Tag entity
  *

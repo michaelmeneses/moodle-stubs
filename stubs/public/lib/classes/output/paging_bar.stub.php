@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\exception\coding_exception;
+use moodle_page;
+use moodle_url;
+use stdClass;
 /**
  * Component representing a paging bar.
  *

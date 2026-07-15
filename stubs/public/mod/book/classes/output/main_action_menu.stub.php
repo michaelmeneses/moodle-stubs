@@ -29,6 +29,10 @@
  */
 namespace mod_book\output;
 
+use templatable;
+use renderable;
+use moodle_url;
+use stdClass;
 /**
  * Output the action menu for the book activity.
  *

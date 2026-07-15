@@ -8,6 +8,7 @@
  */
 namespace Aws\PrometheusService;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Prometheus Service** service.
  * @method \Aws\Result createAlertManagerDefinition(array $args = [])

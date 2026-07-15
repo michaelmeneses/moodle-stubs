@@ -8,6 +8,17 @@
  */
 namespace core\router;
 
+use core\di;
+use Invoker\Invoker;
+use Invoker\ParameterResolver\AssociativeArrayResolver;
+use Invoker\ParameterResolver\Container\TypeHintContainerResolver;
+use Invoker\ParameterResolver\DefaultValueResolver;
+use Invoker\ParameterResolver\ResolverChain;
+use Psr\Container\ContainerInterface;
+use Slim\App;
+use Slim\Factory\AppFactory;
+use Slim\Interfaces\CallableResolverInterface;
+use Slim\Interfaces\InvocationStrategyInterface;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * This factory creates a Slim application correctly configured with PHP-DI.

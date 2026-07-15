@@ -29,6 +29,12 @@
  */
 namespace tool_templatelibrary;
 
+use core_component;
+use core\output\mustache_template_finder;
+use coding_exception;
+use moodle_exception;
+use required_capability_exception;
+use stdClass;
 /**
  * API exposed by tool_templatelibrary
  *

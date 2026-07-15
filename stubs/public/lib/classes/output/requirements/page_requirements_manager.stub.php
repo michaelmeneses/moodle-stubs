@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\requirements;
 
+use core_component;
+use core\context\course as context_course;
+use core\exception\coding_exception;
+use core\output\core_renderer;
+use core\output\js_writer;
+use core\output\html_writer;
+use core\output\renderer_base;
+use lang_string;
+use moodle_page;
+use moodle_url;
+use stdClass;
 /**
  * This class tracks all the things that are needed by the current page.
  *

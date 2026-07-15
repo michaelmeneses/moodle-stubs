@@ -8,6 +8,7 @@
  */
 namespace Aws\NetworkMonitor;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon CloudWatch Network Monitor** service.
  * @method \Aws\Result createMonitor(array $args = [])

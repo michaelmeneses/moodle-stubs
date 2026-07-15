@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\hook\navigation;
 
+use core\hook\stoppable_trait;
+use core\navigation\views\secondary;
 /**
  * Allows plugins to insert nodes into site secondary navigation
  *

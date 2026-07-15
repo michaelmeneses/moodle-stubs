@@ -29,6 +29,9 @@
  */
 namespace qtype_ddwtos\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem for qtype_ddwtos implementing user_preference_provider.
  *

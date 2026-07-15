@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation;
 
+use moodle_page;
 /**
  * Class used to populate site admin navigation for ajax.
  *

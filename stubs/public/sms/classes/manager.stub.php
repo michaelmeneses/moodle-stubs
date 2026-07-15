@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_sms;
 
+use Generator;
+use stdClass;
+use core\url;
 /**
  * SMS manager.
  *

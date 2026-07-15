@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use data_portfolio_caller;
+use mod_data\manager;
+use moodle_url;
+use portfolio_add_button;
+use templatable;
+use renderable;
 /**
  * Renderable class for the action bar elements in the view pages in the database activity.
  *

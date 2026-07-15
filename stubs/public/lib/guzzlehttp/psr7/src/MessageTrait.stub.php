@@ -8,6 +8,8 @@
  */
 namespace GuzzleHttp\Psr7;
 
+use Psr\Http\Message\MessageInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * Trait implementing functionality common to requests and responses.
  */

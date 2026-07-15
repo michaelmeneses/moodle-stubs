@@ -8,6 +8,7 @@
  */
 namespace Psr\Clock;
 
+use DateTimeImmutable;
 interface ClockInterface
 {
     /**

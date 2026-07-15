@@ -8,6 +8,7 @@
  */
 namespace GuzzleHttp\Cookie;
 
+use GuzzleHttp\Utils;
 /**
  * Persists non-session cookies using a JSON formatted file
  */

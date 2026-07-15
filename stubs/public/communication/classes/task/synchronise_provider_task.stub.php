@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_communication\task;
 
+use core\task\adhoc_task;
+use core_communication\processor;
 /**
  * Class synchronise_provider_task to add a task to synchronise the provider and execute the task to action the synchronisation.
  *

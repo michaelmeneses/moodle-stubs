@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache\output;
 
+use context;
+use core_cache\factory as cache_factory;
+use core_cache\store as cache_store;
+use core_collator;
+use html_table;
+use html_table_cell;
+use html_table_row;
+use html_writer;
+use lang_string;
+use moodle_url;
+use single_select;
 /**
  * The cache renderer (mainly admin interfaces).
  *

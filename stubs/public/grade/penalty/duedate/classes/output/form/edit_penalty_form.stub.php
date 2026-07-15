@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradepenalty_duedate\output\form;
 
+use MoodleQuickForm;
+use action_menu_link;
+use core\output\action_menu;
+use core\output\html_writer;
+use core\output\pix_icon;
+use core\url;
+use gradepenalty_duedate\constants;
+use gradepenalty_duedate\penalty_rule;
+use moodleform;
 /**
  * Form to set up the penalty rules for the gradepenalty_duedate plugin.
  *

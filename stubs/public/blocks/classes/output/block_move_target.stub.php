@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_block\output;
 
+use moodle_url;
 /**
  * This class represents a target for where a block can go when it is being moved.
  *

@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course;
 
+use core\{clock, di};
+use core\context;
+use core\context\course as context_course;
+use core\context\coursecat as context_coursecat;
+use core\context\system as context_system;
+use core\exception\coding_exception;
+use core\exception\moodle_exception;
+use core_course_category;
+use restore_dbops;
+use stdClass;
 /**
  * This class pertains to course requests and contains methods associated with
  * create, approving, and removing course requests.

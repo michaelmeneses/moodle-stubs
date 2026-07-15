@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_grades;
 
+use grade_grade;
+use grade_item;
+use moodle_exception;
 /**
  * An object for storing and aggregating penalty information.
  *

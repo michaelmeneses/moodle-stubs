@@ -29,6 +29,9 @@
  */
 namespace core\event;
 
+use core\event\base;
+use core_competency\user_competency_course;
+use context_course;
 /**
  * User competency grade rated in course event class.
  *

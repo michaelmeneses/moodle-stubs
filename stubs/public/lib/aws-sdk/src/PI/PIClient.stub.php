@@ -8,6 +8,7 @@
  */
 namespace Aws\PI;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Performance Insights** service.
  * @method \Aws\Result createPerformanceAnalysisReport(array $args = [])

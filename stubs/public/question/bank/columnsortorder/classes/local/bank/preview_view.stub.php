@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_columnsortorder\local\bank;
 
+use core_question\local\bank\view;
+use qbank_columnsortorder\column_manager;
 /**
  * Custom view for displaying a preview of the question bank
  *

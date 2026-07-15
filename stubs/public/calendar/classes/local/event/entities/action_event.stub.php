@@ -29,6 +29,7 @@
  */
 namespace core_calendar\local\event\entities;
 
+use core_calendar\local\event\factories\action_factory_interface;
 /**
  * Class representing an actionable event.
  *

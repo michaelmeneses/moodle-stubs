@@ -33,6 +33,24 @@
  */
 namespace theme_boost;
 
+use Sabberworm\CSS\CSSList\CSSList;
+use Sabberworm\CSS\CSSList\Document;
+use Sabberworm\CSS\CSSList\KeyFrame;
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Parser;
+use Sabberworm\CSS\Property\AtRule;
+use Sabberworm\CSS\Property\Selector;
+use Sabberworm\CSS\Rule\Rule;
+use Sabberworm\CSS\RuleSet\AtRuleSet;
+use Sabberworm\CSS\RuleSet\DeclarationBlock;
+use Sabberworm\CSS\RuleSet\RuleSet;
+use Sabberworm\CSS\Settings;
+use Sabberworm\CSS\Value\CSSFunction;
+use Sabberworm\CSS\Value\CSSString;
+use Sabberworm\CSS\Value\PrimitiveValue;
+use Sabberworm\CSS\Value\RuleValueList;
+use Sabberworm\CSS\Value\Size;
+use Sabberworm\CSS\Value\ValueList;
 /**
  * Autoprefixer class.
  *

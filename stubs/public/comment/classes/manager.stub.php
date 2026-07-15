@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_comment;
 
+use coding_exception;
+use context;
+use core_component;
+use html_writer;
+use moodle_page;
+use moodle_url;
+use stdClass;
 /**
  * Helper class to add/delete comments anywhere in moodle.
  *

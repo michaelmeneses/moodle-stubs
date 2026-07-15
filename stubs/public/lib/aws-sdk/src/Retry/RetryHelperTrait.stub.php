@@ -8,6 +8,8 @@
  */
 namespace Aws\Retry;
 
+use Aws\Exception\AwsException;
+use Aws\ResultInterface;
 trait RetryHelperTrait
 {
     private function addRetryHeader($request, $retries, $delayBy)

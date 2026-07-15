@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\form;
 
+use core_course\course_request;
+use core_course_category;
+use moodleform;
 /**
  * A form for a user to request a course.
  *

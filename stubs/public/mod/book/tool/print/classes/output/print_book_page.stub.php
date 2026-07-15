@@ -29,6 +29,12 @@
  */
 namespace booktool_print\output;
 
+use moodle_url;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
+use context_module;
 /**
  * Class containing data for the print book page.
  *

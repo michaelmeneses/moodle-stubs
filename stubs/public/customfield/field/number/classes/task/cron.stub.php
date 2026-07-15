@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace customfield_number\task;
 
+use core\task\scheduled_task;
+use core_customfield\category_controller;
+use core_customfield\customfield\shared_handler;
+use core_customfield\field_controller;
+use core_customfield\handler;
+use customfield_number\provider_base;
 /**
  * Scheduled task for customfield_number to recalculate automatically populated fields.
  *

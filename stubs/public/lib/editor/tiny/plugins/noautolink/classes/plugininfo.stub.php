@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tiny_noautolink;
 
+use editor_tiny\plugin;
+use editor_tiny\plugin_with_buttons;
+use editor_tiny\plugin_with_menuitems;
 /**
  * Tiny noautolink plugin.
  *

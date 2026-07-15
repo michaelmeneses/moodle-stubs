@@ -8,6 +8,7 @@
  */
 namespace Aws\QuickSight;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon QuickSight** service.
  * @method \Aws\Result batchCreateTopicReviewedAnswer(array $args = [])

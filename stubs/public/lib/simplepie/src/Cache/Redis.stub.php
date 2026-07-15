@@ -49,6 +49,7 @@
  */
 namespace SimplePie\Cache;
 
+use Redis as NativeRedis;
 /**
  * Caches data to redis
  *

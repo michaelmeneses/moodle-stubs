@@ -8,6 +8,7 @@
  */
 namespace Aws\CleanRoomsML;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **cleanrooms-ml** service.
  * @method \Aws\Result cancelTrainedModel(array $args = [])

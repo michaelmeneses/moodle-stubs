@@ -30,6 +30,13 @@
  */
 namespace ltiservice_gradebookservices\local\service;
 
+use ltiservice_gradebookservices\local\resources\lineitem;
+use ltiservice_gradebookservices\local\resources\lineitems;
+use ltiservice_gradebookservices\local\resources\results;
+use ltiservice_gradebookservices\local\resources\scores;
+use mod_lti\local\ltiservice\resource_base;
+use mod_lti\local\ltiservice\service_base;
+use moodle_url;
 /**
  * A service implementing LTI Gradebook Services.
  *

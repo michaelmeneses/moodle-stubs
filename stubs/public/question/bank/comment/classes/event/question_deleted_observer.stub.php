@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_comment\event;
 
+use core\event\question_deleted;
 /**
  * Event observer for question deletion
  *

@@ -8,6 +8,9 @@
  */
 namespace Slim\Exception;
 
+use Psr\Http\Message\ServerRequestInterface;
+use RuntimeException;
+use Throwable;
 /**
  * @method int getCode()
  */

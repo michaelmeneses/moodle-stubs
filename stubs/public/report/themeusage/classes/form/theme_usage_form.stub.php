@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace report_themeusage\form;
 
+use moodleform;
+use core\output\theme_usage;
 /**
  * Defines the form for generating theme usage report data.
  *

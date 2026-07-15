@@ -8,6 +8,9 @@
  */
 namespace Aws;
 
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Promise\PromisorInterface;
+use GuzzleHttp\Promise\EachPromise;
 /**
  * Sends and iterator of commands concurrently using a capped pool size.
  *

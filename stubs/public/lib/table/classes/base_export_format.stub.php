@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_table;
 
+use flexible_table;
 /**
  * The table base export format.
  *

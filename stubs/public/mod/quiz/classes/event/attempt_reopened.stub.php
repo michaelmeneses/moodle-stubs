@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\event;
 
+use coding_exception;
+use core\event\base;
+use moodle_url;
 /**
  * Event fired when a quiz attempt is reopened.
  *

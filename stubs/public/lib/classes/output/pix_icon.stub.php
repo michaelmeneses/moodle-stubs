@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\external\pix_icon_exporter;
 /**
  * Data structure representing an icon.
  *

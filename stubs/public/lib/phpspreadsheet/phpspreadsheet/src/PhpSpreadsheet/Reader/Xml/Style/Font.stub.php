@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xml\Style;
 
+use PhpOffice\PhpSpreadsheet\Style\Font as FontUnderline;
+use SimpleXMLElement;
 class Font extends StyleBase
 {
     protected const UNDERLINE_STYLES = [FontUnderline::UNDERLINE_NONE, FontUnderline::UNDERLINE_DOUBLE, FontUnderline::UNDERLINE_DOUBLEACCOUNTING, FontUnderline::UNDERLINE_SINGLE, FontUnderline::UNDERLINE_SINGLEACCOUNTING];

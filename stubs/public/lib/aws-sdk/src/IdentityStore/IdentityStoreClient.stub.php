@@ -8,6 +8,7 @@
  */
 namespace Aws\IdentityStore;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS SSO Identity Store** service.
  * @method \Aws\Result createGroup(array $args = [])

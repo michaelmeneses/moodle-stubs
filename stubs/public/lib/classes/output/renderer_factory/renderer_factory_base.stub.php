@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\renderer_factory;
 
+use core_component;
+use core\exception\coding_exception;
+use core\output\theme_config;
 /**
  * This is a base class to help you implement the renderer_factory interface.
  *

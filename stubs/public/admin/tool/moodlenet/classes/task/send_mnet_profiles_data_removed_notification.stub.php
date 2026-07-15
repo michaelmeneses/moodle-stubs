@@ -8,6 +8,7 @@
  */
 namespace tool_moodlenet\task;
 
+use core\message\message;
 /**
  * Ad-hoc task to send a notification to admin stating that the user data related to the linked MoodleNet profiles has
  * been removed.

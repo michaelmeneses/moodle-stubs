@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Helper;
 
+use PhpOffice\PhpSpreadsheet\Exception;
+use PhpOffice\PhpSpreadsheet\Shared\Drawing;
+use PhpOffice\PhpSpreadsheet\Style\Font;
 class Dimension
 {
     public const UOM_CENTIMETERS = 'cm';

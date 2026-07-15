@@ -29,6 +29,16 @@
  */
 namespace core_courseformat\output\local\content\section;
 
+use context_course;
+use core_availability_multiple_messages;
+use core\output\named_templatable;
+use core_availability\info;
+use core_availability\info_section;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\courseformat_named_templatable;
+use renderable;
+use section_info;
+use stdClass;
 /**
  * Base class to render section availability.
  *

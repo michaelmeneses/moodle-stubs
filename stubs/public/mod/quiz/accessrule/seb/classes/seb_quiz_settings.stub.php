@@ -30,6 +30,15 @@
  */
 namespace quizaccess_seb;
 
+use CFPropertyList\CFArray;
+use CFPropertyList\CFBoolean;
+use CFPropertyList\CFDictionary;
+use CFPropertyList\CFNumber;
+use CFPropertyList\CFString;
+use core\persistent;
+use lang_string;
+use moodle_exception;
+use moodle_url;
 /**
  * Entity model representing quiz settings for the seb plugin.
  *

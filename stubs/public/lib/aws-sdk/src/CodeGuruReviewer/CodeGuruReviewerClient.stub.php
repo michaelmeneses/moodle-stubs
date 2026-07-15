@@ -8,6 +8,7 @@
  */
 namespace Aws\CodeGuruReviewer;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon CodeGuru Reviewer** service.
  * @method \Aws\Result associateRepository(array $args = [])

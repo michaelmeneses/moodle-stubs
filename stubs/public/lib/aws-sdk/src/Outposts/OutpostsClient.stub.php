@@ -8,6 +8,7 @@
  */
 namespace Aws\Outposts;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Outposts** service.
  * @method \Aws\Result cancelCapacityTask(array $args = [])

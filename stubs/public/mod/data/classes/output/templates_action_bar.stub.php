@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use core\output\select_menu;
+use templatable;
+use renderable;
 /**
  * Renderable class for the action bar elements in the template pages in the database activity.
  *

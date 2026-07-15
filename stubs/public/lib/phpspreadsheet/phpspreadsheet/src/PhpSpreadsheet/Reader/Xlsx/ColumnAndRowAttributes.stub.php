@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Reader\DefaultReadFilter;
+use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use SimpleXMLElement;
 class ColumnAndRowAttributes extends BaseParserClass
 {
     private Worksheet $worksheet;

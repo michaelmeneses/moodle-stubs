@@ -8,6 +8,7 @@
  */
 namespace Aws\IoTManagedIntegrations;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Managed integrations for AWS IoT Device Management** service.
  * @method \Aws\Result createCredentialLocker(array $args = [])

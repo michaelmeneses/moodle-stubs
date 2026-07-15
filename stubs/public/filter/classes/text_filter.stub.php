@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_filters;
 
+use core\context;
+use core\exception\coding_exception;
+use moodle_page;
 /**
  * Base class for text filters. You just need to override this class and
  * implement the filter method.

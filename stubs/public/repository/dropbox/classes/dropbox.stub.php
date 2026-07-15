@@ -30,6 +30,8 @@
  */
 namespace repository_dropbox;
 
+use core\oauth2\client;
+use core\oauth2\issuer;
 /**
  * Dropbox V2 API.
  *

@@ -8,6 +8,8 @@
  */
 namespace mod_assign\cache;
 
+use core_cache\data_source_interface;
+use core_cache\definition;
 /**
  * Class assign_overrides
  *

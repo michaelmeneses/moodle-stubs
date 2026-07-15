@@ -8,6 +8,12 @@
  */
 namespace Aws\Crypto;
 
+use Aws\Exception\CryptoException;
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\StreamDecoratorTrait;
+use Psr\Http\Message\StreamInterface;
+use Aws\Crypto\Polyfill\AesGcm;
+use Aws\Crypto\Polyfill\Key;
 /**
  * @internal Represents a stream of data to be gcm decrypted.
  */

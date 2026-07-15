@@ -29,6 +29,9 @@
  */
 namespace tool_lpimportcsv\form;
 
+use moodleform;
+use context_system;
+use core_competency\api;
 /**
  * Export Competency framework form.
  *

@@ -31,6 +31,8 @@
  */
 namespace core\check\performance;
 
+use core\check\check;
+use core\check\result;
 /**
  * Designer mode
  *

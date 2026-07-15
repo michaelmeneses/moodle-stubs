@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use core\context\user as context_user;
+use core\exception\coding_exception;
+use core\exception\moodle_exception;
+use Psr\Http\Message\UriInterface;
 /**
  * Class for creating and manipulating urls.
  *

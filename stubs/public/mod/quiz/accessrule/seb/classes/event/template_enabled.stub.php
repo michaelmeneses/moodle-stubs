@@ -30,6 +30,9 @@
  */
 namespace quizaccess_seb\event;
 
+use context_system;
+use core\event\base;
+use quizaccess_seb\template;
 /**
  * Event for when a template is enabled.
  *

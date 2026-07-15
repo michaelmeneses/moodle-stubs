@@ -29,6 +29,20 @@
  */
 namespace tool_lp\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use context;
+use context_system;
+use moodle_url;
+use core_competency\external\template_exporter;
+use core_competency\template;
+use core_competency\api;
+use core_competency\external\performance_helper;
+use tool_lp\external\competency_summary_exporter;
+use tool_lp\external\template_statistics_exporter;
+use tool_lp\template_statistics;
 /**
  * Class containing data for learning plan template competencies page
  *

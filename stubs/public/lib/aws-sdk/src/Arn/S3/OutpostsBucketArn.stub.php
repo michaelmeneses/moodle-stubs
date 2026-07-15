@@ -8,6 +8,9 @@
  */
 namespace Aws\Arn\S3;
 
+use Aws\Arn\Arn;
+use Aws\Arn\Exception\InvalidArnException;
+use Aws\Arn\ResourceTypeAndIdTrait;
 /**
  * This class represents an S3 Outposts bucket ARN, which is in the
  * following format:

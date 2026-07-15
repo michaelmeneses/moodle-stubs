@@ -8,6 +8,8 @@
  */
 namespace core_completion;
 
+use cm_info;
+use completion_info;
 /**
  * Class for building the user's activity completion details.
  *

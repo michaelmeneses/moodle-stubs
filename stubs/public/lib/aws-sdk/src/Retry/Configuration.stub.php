@@ -8,6 +8,7 @@
  */
 namespace Aws\Retry;
 
+use Aws\Retry\Exception\ConfigurationException;
 class Configuration implements ConfigurationInterface
 {
     private $mode;

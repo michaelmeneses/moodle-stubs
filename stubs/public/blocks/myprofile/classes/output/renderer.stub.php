@@ -29,6 +29,7 @@
  */
 namespace block_myprofile\output;
 
+use plugin_renderer_base;
 /**
  * myprofile block renderer
  *

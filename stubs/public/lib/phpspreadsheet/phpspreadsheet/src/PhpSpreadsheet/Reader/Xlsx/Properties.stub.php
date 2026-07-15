@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 
+use PhpOffice\PhpSpreadsheet\Document\Properties as DocumentProperties;
+use PhpOffice\PhpSpreadsheet\Reader\Security\XmlScanner;
+use SimpleXMLElement;
 class Properties
 {
     private XmlScanner $securityScanner;

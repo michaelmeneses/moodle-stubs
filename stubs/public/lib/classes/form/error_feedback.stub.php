@@ -29,6 +29,7 @@
  */
 namespace core\form;
 
+use moodleform;
 /**
  * Moodle 404 Error page feedback form
  *

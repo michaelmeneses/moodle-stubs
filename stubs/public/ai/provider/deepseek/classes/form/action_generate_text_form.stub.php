@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_deepseek\form;
 
+use aiprovider_deepseek\aimodel\deepseek_base;
 /**
  * Generate text action provider settings form.
  *

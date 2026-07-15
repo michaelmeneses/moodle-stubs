@@ -8,6 +8,7 @@
  */
 namespace Aws\Neptunedata;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon NeptuneData** service.
  * @method \Aws\Result cancelGremlinQuery(array $args = [])

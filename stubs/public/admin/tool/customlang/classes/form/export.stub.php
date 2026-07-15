@@ -29,6 +29,7 @@
  */
 namespace tool_customlang\form;
 
+use tool_customlang_utils;
 /**
  * Formular for customlang file export
  *

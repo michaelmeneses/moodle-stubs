@@ -29,6 +29,16 @@
  */
 namespace tool_lp\external;
 
+use context_user;
+use renderer_base;
+use stdClass;
+use core_comment\external\comment_area_exporter;
+use core_competency\external\evidence_exporter;
+use core_competency\external\user_competency_exporter;
+use core_competency\external\user_competency_plan_exporter;
+use core_competency\external\user_competency_course_exporter;
+use core_user\external\user_summary_exporter;
+use core_competency\user_competency;
 /**
  * Class for exporting user competency data with additional related data.
  *

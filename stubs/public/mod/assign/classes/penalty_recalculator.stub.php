@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign;
 
+use core\context;
+use mod_assign\task\recalculate_penalties;
 /**
  * Recalculate penalties for the assignment.
  *

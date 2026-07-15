@@ -29,6 +29,8 @@
  */
 namespace tool_oauth2\form;
 
+use stdClass;
+use core\form\persistent;
 /**
  * Issuer form.
  *

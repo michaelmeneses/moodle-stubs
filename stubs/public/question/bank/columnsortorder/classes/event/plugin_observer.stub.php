@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_columnsortorder\event;
 
+use core\event\qbank_plugin_disabled;
+use core\event\qbank_plugin_enabled;
+use qbank_columnsortorder\column_manager;
 /**
  * Observer for qbank plugin enabled/disabled events
  *

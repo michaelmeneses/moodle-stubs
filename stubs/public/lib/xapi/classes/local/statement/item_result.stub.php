@@ -29,6 +29,10 @@
  */
 namespace core_xapi\local\statement;
 
+use core_xapi\xapi_exception;
+use DateInterval;
+use Exception;
+use stdClass;
 /**
  * Abstract xAPI result class.
  *

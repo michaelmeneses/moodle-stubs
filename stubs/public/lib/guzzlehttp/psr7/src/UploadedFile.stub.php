@@ -8,6 +8,10 @@
  */
 namespace GuzzleHttp\Psr7;
 
+use InvalidArgumentException;
+use Psr\Http\Message\StreamInterface;
+use Psr\Http\Message\UploadedFileInterface;
+use RuntimeException;
 class UploadedFile implements UploadedFileInterface
 {
     private const ERRORS = [UPLOAD_ERR_OK, UPLOAD_ERR_INI_SIZE, UPLOAD_ERR_FORM_SIZE, UPLOAD_ERR_PARTIAL, UPLOAD_ERR_NO_FILE, UPLOAD_ERR_NO_TMP_DIR, UPLOAD_ERR_CANT_WRITE, UPLOAD_ERR_EXTENSION];

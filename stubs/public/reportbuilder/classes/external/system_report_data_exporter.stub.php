@@ -8,6 +8,10 @@
  */
 namespace core_reportbuilder\external;
 
+use renderer_base;
+use core\external\exporter;
+use core_reportbuilder\system_report;
+use core_reportbuilder\table\system_report_table;
 /**
  * System report data exporter class
  *

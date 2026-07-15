@@ -8,6 +8,7 @@
  */
 namespace Aws\Route53RecoveryReadiness;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Route53 Recovery Readiness** service.
  * @method \Aws\Result createCell(array $args = [])

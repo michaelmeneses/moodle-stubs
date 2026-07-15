@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Ods;
 
+use DOMElement;
+use DOMNode;
 class AutoFilter extends BaseLoader
 {
     public function read(DOMElement $workbookData): void

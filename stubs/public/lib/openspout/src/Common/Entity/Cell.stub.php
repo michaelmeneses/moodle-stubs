@@ -8,6 +8,17 @@
  */
 namespace OpenSpout\Common\Entity;
 
+use DateInterval;
+use DateTimeInterface;
+use OpenSpout\Common\Entity\Cell\BooleanCell;
+use OpenSpout\Common\Entity\Cell\DateIntervalCell;
+use OpenSpout\Common\Entity\Cell\DateTimeCell;
+use OpenSpout\Common\Entity\Cell\EmptyCell;
+use OpenSpout\Common\Entity\Cell\FormulaCell;
+use OpenSpout\Common\Entity\Cell\NumericCell;
+use OpenSpout\Common\Entity\Cell\StringCell;
+use OpenSpout\Common\Entity\Comment\Comment;
+use OpenSpout\Common\Entity\Style\Style;
 abstract class Cell
 {
     public ?Comment $comment = null;

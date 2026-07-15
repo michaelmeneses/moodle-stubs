@@ -29,6 +29,14 @@
  */
 namespace mod_assign\output;
 
+use assign;
+use context_module;
+use core_course\output\actionbar\group_selector;
+use core_course\output\actionbar\user_selector;
+use templatable;
+use renderable;
+use moodle_url;
+use core\output\local\dropdown\dialog;
 /**
  * Output the grading actionbar for this activity.
  *

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\parameters;
 
+use core\param;
+use core\router\schema\referenced_object;
+use core\router\schema\example;
 /**
  * Routing parameter for validation.
  *

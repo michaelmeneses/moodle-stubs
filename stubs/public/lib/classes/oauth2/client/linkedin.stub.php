@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\oauth2\client;
 
+use core\oauth2\client;
 /**
  * Class linkedin - Custom client handler to fetch data from linkedin
  *

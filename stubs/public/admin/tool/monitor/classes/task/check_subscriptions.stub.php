@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_monitor\task;
 
+use tool_monitor\subscription;
+use tool_monitor\subscription_manager;
 /**
  * Simple task class responsible for activating, deactivating and removing subscriptions.
  *

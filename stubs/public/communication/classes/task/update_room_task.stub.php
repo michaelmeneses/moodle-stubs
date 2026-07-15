@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_communication\task;
 
+use core\task\adhoc_task;
+use core_communication\processor;
 /**
  * Class update_room_task to add a task to update a room and execute the task to action the update.
  *

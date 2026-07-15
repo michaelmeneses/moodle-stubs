@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_external;
 
+use coding_exception;
+use context;
+use context_helper;
+use context_system;
+use core_component;
+use core_php_time_limit;
+use invalid_parameter_exception;
+use invalid_response_exception;
+use moodle_exception;
 /**
  * Base class for external api methods.
  *

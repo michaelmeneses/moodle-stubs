@@ -8,6 +8,7 @@
  */
 namespace Aws\B2bi;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS B2B Data Interchange** service.
  * @method \Aws\Result createCapability(array $args = [])

@@ -8,6 +8,15 @@
  */
 namespace core_reportbuilder\reportbuilder\schedule;
 
+use core\exception\moodle_exception;
+use core\user;
+use core_reportbuilder\local\helpers\{report, schedule as helper};
+use core_reportbuilder\local\models\schedule;
+use core_reportbuilder\local\schedules\base;
+use MoodleQuickForm;
+use progress_trace;
+use stdClass;
+use stored_file;
 /**
  * Message schedule class
  *

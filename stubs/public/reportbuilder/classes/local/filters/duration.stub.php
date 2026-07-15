@@ -8,6 +8,9 @@
  */
 namespace core_reportbuilder\local\filters;
 
+use lang_string;
+use MoodleQuickForm;
+use core_reportbuilder\local\helpers\database;
 /**
  * Duration report filter
  *

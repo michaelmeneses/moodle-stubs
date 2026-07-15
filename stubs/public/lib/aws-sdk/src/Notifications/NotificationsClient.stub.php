@@ -8,6 +8,7 @@
  */
 namespace Aws\Notifications;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS User Notifications** service.
  * @method \Aws\Result associateChannel(array $args = [])

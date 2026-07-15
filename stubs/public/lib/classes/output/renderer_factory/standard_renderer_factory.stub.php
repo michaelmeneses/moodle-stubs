@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\renderer_factory;
 
+use core\exception\coding_exception;
+use core\output\renderer_base;
+use moodle_page;
 /**
  * This is the default renderer factory for Moodle.
  *
