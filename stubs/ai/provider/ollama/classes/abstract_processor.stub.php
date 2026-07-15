@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_ollama;
 
+use core\http_client;
+use core_ai\process_base;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Psr7\Uri;
+use GuzzleHttp\RequestOptions;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\UriInterface;
 /**
  * Class process text generation.
  *

@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use action_link;
+use core\output\sticky_footer;
+use html_writer;
+use mod_data\manager;
+use mod_data\template;
+use moodle_url;
+use renderer_base;
 /**
  * Renderable class for sticky footer in the view pages of the database activity.
  *

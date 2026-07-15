@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_ollama\form;
 
+use aiprovider_ollama\aimodel\ollama_base;
 /**
  * Base action settings form for Ollama provider.
  *

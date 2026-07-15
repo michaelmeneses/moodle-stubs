@@ -30,6 +30,7 @@
  */
 namespace qtype_random\task;
 
+use core\task\manager;
 /**
  * A scheduled task to remove unneeded random questions.
  *

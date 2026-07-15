@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_files\task;
 
+use core\task\adhoc_task;
 /**
  * Ad-hoc task that performs asynchronous upgrades of a given file type.
  *

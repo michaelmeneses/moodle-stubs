@@ -8,6 +8,7 @@
  */
 namespace Aws\RDSDataService;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS RDS DataService** service.
  * @method \Aws\Result batchExecuteStatement(array $args = [])

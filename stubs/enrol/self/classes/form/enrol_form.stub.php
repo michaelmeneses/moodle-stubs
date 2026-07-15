@@ -8,6 +8,12 @@
  */
 namespace enrol_self\form;
 
+use core\context\course as context_course;
+use core\context\system as context_system;
+use core_form\dynamic_form;
+use core_text;
+use html_writer;
+use moodle_url;
 /**
  * Form for entering password for self enrolment
  *

@@ -17,6 +17,8 @@
  */
 namespace ScssPhp\ScssPhp\Formatter;
 
+use ScssPhp\ScssPhp\Formatter;
+use ScssPhp\ScssPhp\Type;
 /**
  * Nested formatter
  *

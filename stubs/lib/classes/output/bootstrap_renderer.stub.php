@@ -20,137 +20,147 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * This class solves the problem of how to initialise $OUTPUT.
- *
- * The problem is caused be two factors
- * <ol>
- * <li>On the one hand, we cannot be sure when output will start. In particular,
- * an error, which needs to be displayed, could be thrown at any time.</li>
- * <li>On the other hand, we cannot be sure when we will have all the information
- * necessary to correctly initialise $OUTPUT. $OUTPUT depends on the theme, which
- * (potentially) depends on the current course, course categories, and logged in user.
- * It also depends on whether the current page requires HTTPS.</li>
- * </ol>
- *
- * So, it is hard to find a single natural place during Moodle script execution,
- * which we can guarantee is the right time to initialise $OUTPUT. Instead we
- * adopt the following strategy
- * <ol>
- * <li>We will initialise $OUTPUT the first time it is used.</li>
- * <li>If, after $OUTPUT has been initialised, the script tries to change something
- * that $OUTPUT depends on, we throw an exception making it clear that the script
- * did something wrong.
- * </ol>
- *
- * The only problem with that is, how do we initialise $OUTPUT on first use if,
- * it is going to be used like $OUTPUT->somthing(...)? Well that is where this
- * class comes in. Initially, we set up $OUTPUT = new bootstrap_renderer(). Then,
- * when any method is called on that object, we initialise $OUTPUT, and pass the call on.
- *
- * Note that this class is used before lib/outputlib.php has been loaded, so we
- * must be careful referring to classes/functions from there, they may not be
- * defined yet, and we must avoid fatal errors.
- *
- * @package    core
- * @copyright 2009 Tim Hunt
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since     Moodle 2.0
- */
-class bootstrap_renderer
-{
+namespace core\output {
+    use coding_exception;
     /**
-     * Handles re-entrancy. Without this, errors or debugging output that occur
-     * during the initialisation of $OUTPUT, cause infinite recursion.
+     * This class solves the problem of how to initialise $OUTPUT.
      *
-     * @var bool
-     */
-    protected $initialising = false;
-    /**
-     * Whether output has started yet.
+     * The problem is caused be two factors
+     * <ol>
+     * <li>On the one hand, we cannot be sure when output will start. In particular,
+     * an error, which needs to be displayed, could be thrown at any time.</li>
+     * <li>On the other hand, we cannot be sure when we will have all the information
+     * necessary to correctly initialise $OUTPUT. $OUTPUT depends on the theme, which
+     * (potentially) depends on the current course, course categories, and logged in user.
+     * It also depends on whether the current page requires HTTPS.</li>
+     * </ol>
      *
-     * @return bool true if the header has been printed.
+     * So, it is hard to find a single natural place during Moodle script execution,
+     * which we can guarantee is the right time to initialise $OUTPUT. Instead we
+     * adopt the following strategy
+     * <ol>
+     * <li>We will initialise $OUTPUT the first time it is used.</li>
+     * <li>If, after $OUTPUT has been initialised, the script tries to change something
+     * that $OUTPUT depends on, we throw an exception making it clear that the script
+     * did something wrong.
+     * </ol>
+     *
+     * The only problem with that is, how do we initialise $OUTPUT on first use if,
+     * it is going to be used like $OUTPUT->somthing(...)? Well that is where this
+     * class comes in. Initially, we set up $OUTPUT = new bootstrap_renderer(). Then,
+     * when any method is called on that object, we initialise $OUTPUT, and pass the call on.
+     *
+     * Note that this class is used before lib/outputlib.php has been loaded, so we
+     * must be careful referring to classes/functions from there, they may not be
+     * defined yet, and we must avoid fatal errors.
+     *
+     * @package    core
+     * @copyright 2009 Tim Hunt
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since     Moodle 2.0
      */
-    public function has_started()
+    class bootstrap_renderer
     {
+        /**
+         * Handles re-entrancy. Without this, errors or debugging output that occur
+         * during the initialisation of $OUTPUT, cause infinite recursion.
+         *
+         * @var bool
+         */
+        protected $initialising = false;
+        /**
+         * Whether output has started yet.
+         *
+         * @return bool true if the header has been printed.
+         */
+        public function has_started()
+        {
+        }
+        /**
+         * Constructor - to be used by core code only.
+         *
+         * @param string $method The method to call
+         * @param array $arguments Arguments to pass to the method being called
+         * @return string
+         */
+        public function __call($method, $arguments)
+        {
+        }
+        /**
+         * Returns nicely formatted error message in a div box.
+         *
+         * @param string $message error message
+         * @param ?string $moreinfourl (ignored in early errors)
+         * @param ?string $link (ignored in early errors)
+         * @param ?array $backtrace
+         * @param ?string $debuginfo
+         * @return string
+         */
+        public static function early_error_content($message, $moreinfourl, $link, $backtrace, $debuginfo = null)
+        {
+        }
+        /**
+         * This function should only be called by this class, or from exception handlers
+         *
+         * @param string $message error message
+         * @param string $moreinfourl (ignored in early errors)
+         * @param string $link (ignored in early errors)
+         * @param array $backtrace
+         * @param string $debuginfo extra information for developers
+         * @return ?string
+         */
+        public static function early_error($message, $moreinfourl, $link, $backtrace, $debuginfo = null, $errorcode = null)
+        {
+        }
+        /**
+         * Early notification message
+         *
+         * @param string $message
+         * @param string $classes usually notifyproblem or notifysuccess
+         * @return string
+         */
+        public static function early_notification($message, $classes = 'notifyproblem')
+        {
+        }
+        /**
+         * Page should redirect message.
+         *
+         * @param string $encodedurl redirect url
+         * @return string
+         */
+        public static function plain_redirect_message($encodedurl)
+        {
+        }
+        /**
+         * Early redirection page, used before full init of $PAGE global.
+         *
+         * @param string $encodedurl redirect url
+         * @param string $message redirect message
+         * @param int $delay time in seconds
+         * @return string redirect page
+         */
+        public static function early_redirect_message($encodedurl, $message, $delay)
+        {
+        }
+        /**
+         * Output basic html page.
+         *
+         * @param string $title page title
+         * @param string $content page content
+         * @param string $meta meta tag
+         * @return string html page
+         */
+        public static function plain_page($title, $content, $meta = '')
+        {
+        }
     }
+}
+namespace {
     /**
-     * Constructor - to be used by core code only.
-     *
-     * @param string $method The method to call
-     * @param array $arguments Arguments to pass to the method being called
-     * @return string
+     * Runtime class alias of \core\output\bootstrap_renderer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __call($method, $arguments)
-    {
-    }
-    /**
-     * Returns nicely formatted error message in a div box.
-     *
-     * @param string $message error message
-     * @param ?string $moreinfourl (ignored in early errors)
-     * @param ?string $link (ignored in early errors)
-     * @param ?array $backtrace
-     * @param ?string $debuginfo
-     * @return string
-     */
-    public static function early_error_content($message, $moreinfourl, $link, $backtrace, $debuginfo = null)
-    {
-    }
-    /**
-     * This function should only be called by this class, or from exception handlers
-     *
-     * @param string $message error message
-     * @param string $moreinfourl (ignored in early errors)
-     * @param string $link (ignored in early errors)
-     * @param array $backtrace
-     * @param string $debuginfo extra information for developers
-     * @return ?string
-     */
-    public static function early_error($message, $moreinfourl, $link, $backtrace, $debuginfo = null, $errorcode = null)
-    {
-    }
-    /**
-     * Early notification message
-     *
-     * @param string $message
-     * @param string $classes usually notifyproblem or notifysuccess
-     * @return string
-     */
-    public static function early_notification($message, $classes = 'notifyproblem')
-    {
-    }
-    /**
-     * Page should redirect message.
-     *
-     * @param string $encodedurl redirect url
-     * @return string
-     */
-    public static function plain_redirect_message($encodedurl)
-    {
-    }
-    /**
-     * Early redirection page, used before full init of $PAGE global.
-     *
-     * @param string $encodedurl redirect url
-     * @param string $message redirect message
-     * @param int $delay time in seconds
-     * @return string redirect page
-     */
-    public static function early_redirect_message($encodedurl, $message, $delay)
-    {
-    }
-    /**
-     * Output basic html page.
-     *
-     * @param string $title page title
-     * @param string $content page content
-     * @param string $meta meta tag
-     * @return string html page
-     */
-    public static function plain_page($title, $content, $meta = '')
+    class bootstrap_renderer extends \core\output\bootstrap_renderer
     {
     }
 }

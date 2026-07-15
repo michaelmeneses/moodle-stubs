@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Common\Entity\Cell;
 
+use DateInterval;
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Style\Style;
 final class DateIntervalCell extends Cell
 {
     private readonly DateInterval $value;

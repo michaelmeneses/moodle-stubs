@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_ollama\aimodel;
 
+use core_ai\aimodel\base;
+use MoodleQuickForm;
 /**
  * Llama 3.3 AI model.
  *

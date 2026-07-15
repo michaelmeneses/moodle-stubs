@@ -8,6 +8,7 @@
  */
 namespace Aws\ConnectCases\Exception;
 
+use Aws\Exception\AwsException;
 /**
  * Represents an error interacting with the **Amazon Connect Cases** service.
  */

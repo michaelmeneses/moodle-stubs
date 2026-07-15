@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_ai\admin;
 
+use admin_setting;
+use coding_exception;
 /**
  * Admin setting plugin manager.
  *

@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use coding_exception;
+use core_php_time_limit;
+use moodle_exception;
+use stdClass;
 // Disable the moodle.PHP.ForbiddenFunctions.FoundWithAlternative sniff for this file.
 // It detects uses of error_log() which are valid in this file.
 // phpcs:disable moodle.PHP.ForbiddenFunctions.FoundWithAlternative

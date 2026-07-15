@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_calendar\output;
 
+use DateTimeInterface;
+use DateTimeImmutable;
+use core\output\templatable;
+use core\output\renderable;
+use core\output\renderer_base;
+use core\url;
 /**
  * Class humantimeperiod.
  *

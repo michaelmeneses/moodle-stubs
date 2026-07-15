@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\task;
 
+use core\task\scheduled_task;
+use mod_bigbluebuttonbn\recording;
 /**
  * Synchronise pending and dismissed recordings from the server.
  *

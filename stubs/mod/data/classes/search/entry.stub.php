@@ -29,6 +29,7 @@
  */
 namespace mod_data\search;
 
+use mod_data\manager;
 /**
  * Search area for mod_data activity entries.
  *

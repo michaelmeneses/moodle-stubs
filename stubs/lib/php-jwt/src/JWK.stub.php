@@ -8,6 +8,9 @@
  */
 namespace Firebase\JWT;
 
+use DomainException;
+use InvalidArgumentException;
+use UnexpectedValueException;
 /**
  * JSON Web Key implementation, based on this spec:
  * https://tools.ietf.org/html/draft-ietf-jose-json-web-key-41

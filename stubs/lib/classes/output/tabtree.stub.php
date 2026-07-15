@@ -20,52 +20,61 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Stores tabs list
- *
- * Example how to print a single line tabs:
- * $rows = array(
- *    new tabobject(...),
- *    new tabobject(...)
- * );
- * echo $OUTPUT->tabtree($rows, $selectedid);
- *
- * Multiple row tabs may not look good on some devices but if you want to use them
- * you can specify ->subtree for the active tabobject.
- *
- * @copyright 2013 Marina Glancy
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.5
- * @package core
- * @category output
- */
-class tabtree extends tabobject
-{
+namespace core\output {
     /**
-     * Constuctor
+     * Stores tabs list
      *
-     * It is highly recommended to call constructor when list of tabs is already
-     * populated, this way you ensure that selected and inactive tabs are located
-     * and attribute level is set correctly.
+     * Example how to print a single line tabs:
+     * $rows = array(
+     *    new tabobject(...),
+     *    new tabobject(...)
+     * );
+     * echo $OUTPUT->tabtree($rows, $selectedid);
      *
-     * @param array $tabs array of tabs, each of them may have it's own ->subtree
-     * @param string|null $selected which tab to mark as selected, all parent tabs will
-     *     automatically be marked as activated
-     * @param array|string|null $inactive list of ids of inactive tabs, regardless of
-     *     their level. Note that you can as weel specify tabobject::$inactive for separate instances
+     * Multiple row tabs may not look good on some devices but if you want to use them
+     * you can specify ->subtree for the active tabobject.
+     *
+     * @copyright 2013 Marina Glancy
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.5
+     * @package core
+     * @category output
      */
-    public function __construct($tabs, $selected = null, $inactive = null)
+    class tabtree extends tabobject
     {
+        /**
+         * Constuctor
+         *
+         * It is highly recommended to call constructor when list of tabs is already
+         * populated, this way you ensure that selected and inactive tabs are located
+         * and attribute level is set correctly.
+         *
+         * @param array $tabs array of tabs, each of them may have it's own ->subtree
+         * @param string|null $selected which tab to mark as selected, all parent tabs will
+         *     automatically be marked as activated
+         * @param array|string|null $inactive list of ids of inactive tabs, regardless of
+         *     their level. Note that you can as weel specify tabobject::$inactive for separate instances
+         */
+        public function __construct($tabs, $selected = null, $inactive = null)
+        {
+        }
+        /**
+         * Export for template.
+         *
+         * @param renderer_base $output Renderer.
+         * @return \stdClass
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Export for template.
-     *
-     * @param renderer_base $output Renderer.
-     * @return \stdClass
+     * Runtime class alias of \core\output\tabtree registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function export_for_template(renderer_base $output)
+    class tabtree extends \core\output\tabtree
     {
     }
 }

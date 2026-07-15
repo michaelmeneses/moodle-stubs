@@ -8,6 +8,9 @@
  */
 namespace Aws;
 
+use Aws\Api\Service;
+use Aws\Exception\IncalculablePayloadException;
+use Psr\Http\Message\RequestInterface;
 /**
  * @internal
  */

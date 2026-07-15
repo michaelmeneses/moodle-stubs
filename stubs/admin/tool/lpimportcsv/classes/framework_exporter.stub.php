@@ -29,6 +29,9 @@
  */
 namespace tool_lpimportcsv;
 
+use core_competency\api;
+use stdClass;
+use csv_export_writer;
 /**
  * Export Competency framework.
  *

@@ -8,6 +8,10 @@
  */
 namespace mod_feedback\external\questions;
 
+use core_external\external_api;
+use core_external\external_value;
+use core_external\external_function_parameters;
+use context_module;
 /**
  * External method for reordering feedback questions.
  *

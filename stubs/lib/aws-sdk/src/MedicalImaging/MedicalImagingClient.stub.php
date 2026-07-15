@@ -8,6 +8,7 @@
  */
 namespace Aws\MedicalImaging;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Health Imaging** service.
  * @method \Aws\Result copyImageSet(array $args = [])

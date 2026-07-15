@@ -8,6 +8,14 @@
  */
 namespace Aws\DynamoDb;
 
+use Aws\Api\Parser\Crc32ValidatingParser;
+use Aws\AwsClient;
+use Aws\ClientResolver;
+use Aws\Exception\AwsException;
+use Aws\HandlerList;
+use Aws\Middleware;
+use Aws\RetryMiddleware;
+use Aws\RetryMiddlewareV2;
 /**
  * This client is used to interact with the **Amazon DynamoDB** service.
  *

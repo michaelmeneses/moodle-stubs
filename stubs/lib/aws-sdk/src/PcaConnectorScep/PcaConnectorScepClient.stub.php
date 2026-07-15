@@ -8,6 +8,7 @@
  */
 namespace Aws\PcaConnectorScep;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Private CA Connector for SCEP** service.
  * @method \Aws\Result createChallenge(array $args = [])

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace report_progress\output;
 
+use single_select;
+use plugin_renderer_base;
+use html_writer;
 /**
  * Renderer for report progress.
  *

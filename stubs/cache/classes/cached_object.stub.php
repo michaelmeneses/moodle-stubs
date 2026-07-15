@@ -20,42 +20,51 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * A cached object wrapper.
- *
- * This class gets used when the data is an object that has implemented the cacheable_object_interface interface.
- *
- * @package    core_cache
- * @category   cache
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class cached_object
-{
+namespace core_cache {
     /**
-     * The class of the cacheable object
-     * @var string
+     * A cached object wrapper.
+     *
+     * This class gets used when the data is an object that has implemented the cacheable_object_interface interface.
+     *
+     * @package    core_cache
+     * @category   cache
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    protected $class;
-    /**
-     * The data returned by the cacheable_object_interface prepare_to_cache method.
-     * @var mixed
-     */
-    protected $data;
-    /**
-     * Constructs a cached object wrapper.
-     * @param cacheable_object_interface $obj
-     */
-    public function __construct(cacheable_object_interface $obj)
+    class cached_object
     {
+        /**
+         * The class of the cacheable object
+         * @var string
+         */
+        protected $class;
+        /**
+         * The data returned by the cacheable_object_interface prepare_to_cache method.
+         * @var mixed
+         */
+        protected $data;
+        /**
+         * Constructs a cached object wrapper.
+         * @param cacheable_object_interface $obj
+         */
+        public function __construct(cacheable_object_interface $obj)
+        {
+        }
+        /**
+         * Restores the data as an instance of the cacheable_object_interface class.
+         * @return object
+         */
+        public function restore_object()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Restores the data as an instance of the cacheable_object_interface class.
-     * @return object
+     * Runtime class alias of \core_cache\cached_object registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function restore_object()
+    class cache_cached_object extends \core_cache\cached_object
     {
     }
 }

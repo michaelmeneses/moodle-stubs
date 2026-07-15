@@ -8,6 +8,12 @@
  */
 namespace core\content\export\exportable_items;
 
+use context;
+use core\content\export\exportable_item;
+use core\content\export\exported_item;
+use core\content\export\zipwriter;
+use moodle_url;
+use stored_file;
 /**
  * The definition of a set of files in a filearea to be exported.
  *

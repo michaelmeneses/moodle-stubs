@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_xapi\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\transform;
 /**
  * Privacy implementation for core xAPI Library.
  *

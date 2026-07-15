@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style;
 
+use PhpOffice\PhpSpreadsheet\IComparable;
+use PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\ConditionalColorScale;
+use PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\ConditionalDataBar;
 class Conditional implements IComparable
 {
     // Condition types

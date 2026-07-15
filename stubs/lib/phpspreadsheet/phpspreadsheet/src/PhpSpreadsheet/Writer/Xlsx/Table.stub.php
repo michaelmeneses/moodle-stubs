@@ -8,6 +8,10 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Namespaces;
+use PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
+use PhpOffice\PhpSpreadsheet\Worksheet\Table as WorksheetTable;
 class Table extends WriterPart
 {
     /**

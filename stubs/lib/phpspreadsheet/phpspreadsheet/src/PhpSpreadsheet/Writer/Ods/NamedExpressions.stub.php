@@ -8,6 +8,13 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer\Ods;
 
+use Composer\Pcre\Preg;
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\DefinedName;
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
+use PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 class NamedExpressions
 {
     private XMLWriter $objWriter;

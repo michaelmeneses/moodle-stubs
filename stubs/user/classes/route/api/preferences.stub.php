@@ -22,6 +22,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_user\route\api;
 
+use core\exception\coding_exception;
+use core\exception\invalid_parameter_exception;
+use core\param;
+use core\router\route;
+use core\router\schema\objects\scalar_type;
+use core\router\schema\response\payload_response;
+use core\router\schema\response\content\payload_response_type;
+use core\router\schema\response\response_type;
+use core\user;
+use core_user\route\responses\user_preferences_response;
+use stdClass;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * User preference API handler.
  *

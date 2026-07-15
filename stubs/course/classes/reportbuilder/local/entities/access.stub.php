@@ -8,6 +8,13 @@
  */
 namespace core_course\reportbuilder\local\entities;
 
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\date;
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
+use lang_string;
+use stdClass;
 /**
  * Course access entity implementation
  *

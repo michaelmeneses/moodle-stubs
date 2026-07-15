@@ -8,6 +8,10 @@
  */
 namespace DI\Definition\Resolver;
 
+use DI\Definition\ArrayDefinition;
+use DI\Definition\Definition;
+use DI\DependencyException;
+use Exception;
 /**
  * Resolves an array definition to a value.
  *

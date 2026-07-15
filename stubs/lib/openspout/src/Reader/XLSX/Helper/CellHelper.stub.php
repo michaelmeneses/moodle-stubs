@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Reader\XLSX\Helper;
 
+use OpenSpout\Common\Exception\InvalidArgumentException;
 /**
  * @internal
  */

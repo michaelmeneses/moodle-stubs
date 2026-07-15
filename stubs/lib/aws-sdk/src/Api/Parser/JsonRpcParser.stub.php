@@ -8,6 +8,13 @@
  */
 namespace Aws\Api\Parser;
 
+use Aws\Api\Operation;
+use Aws\Api\StructureShape;
+use Aws\Api\Service;
+use Aws\Result;
+use Aws\CommandInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * @internal Implements JSON-RPC parsing (e.g., DynamoDB)
  */

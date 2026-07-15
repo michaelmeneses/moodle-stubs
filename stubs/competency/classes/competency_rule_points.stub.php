@@ -29,6 +29,8 @@
  */
 namespace core_competency;
 
+use coding_exception;
+use lang_string;
 /**
  * Competency rule points based class.
  *

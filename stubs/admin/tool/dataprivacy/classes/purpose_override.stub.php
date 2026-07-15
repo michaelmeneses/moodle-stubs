@@ -29,6 +29,7 @@
  */
 namespace tool_dataprivacy;
 
+use stdClass;
 /**
  * Class for loading/storing data purpose overrides from the DB.
  *

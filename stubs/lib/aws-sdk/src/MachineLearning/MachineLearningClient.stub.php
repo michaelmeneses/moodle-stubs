@@ -8,6 +8,10 @@
  */
 namespace Aws\MachineLearning;
 
+use Aws\AwsClient;
+use Aws\CommandInterface;
+use GuzzleHttp\Psr7\Uri;
+use Psr\Http\Message\RequestInterface;
 /**
  * Amazon Machine Learning client.
  *

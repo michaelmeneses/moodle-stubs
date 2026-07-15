@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\event;
 
+use core\event\base;
 /**
  * The quiz sub-grade that this slot contributes to has changed.
  *

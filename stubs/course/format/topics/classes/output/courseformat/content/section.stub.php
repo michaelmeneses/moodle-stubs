@@ -29,6 +29,9 @@
  */
 namespace format_topics\output\courseformat\content;
 
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\content\section as section_base;
+use stdClass;
 /**
  * Base class to render a course section.
  *

@@ -50,6 +50,9 @@
  */
 namespace CFPropertyList;
 
+use DOMDocument;
+use Iterator;
+use ArrayAccess;
 /**
  * Number Type  of CFPropertyList
  * {@link http://developer.apple.com/documentation/Darwin/Reference/ManPages/man5/plist.5.html Property Lists}

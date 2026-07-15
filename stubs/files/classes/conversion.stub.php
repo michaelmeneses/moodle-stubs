@@ -29,6 +29,7 @@
  */
 namespace core_files;
 
+use stored_file;
 /**
  * Class representing a conversion currently in progress.
  *

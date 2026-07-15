@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\output;
 
+use mod_quiz\structure;
+use renderable;
+use renderer_base;
+use templatable;
 /**
  * Represents the page where teachers can set up additional grade items.
  *

@@ -8,6 +8,8 @@
  */
 namespace Slim\Routing;
 
+use Slim\Interfaces\DispatcherInterface;
+use function rawurldecode;
 class RoutingResults
 {
     public const NOT_FOUND = 0;

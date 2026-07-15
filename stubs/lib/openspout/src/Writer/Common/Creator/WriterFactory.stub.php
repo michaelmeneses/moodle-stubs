@@ -8,6 +8,11 @@
  */
 namespace OpenSpout\Writer\Common\Creator;
 
+use OpenSpout\Common\Exception\UnsupportedTypeException;
+use OpenSpout\Writer\CSV\Writer as CSVWriter;
+use OpenSpout\Writer\ODS\Writer as ODSWriter;
+use OpenSpout\Writer\WriterInterface;
+use OpenSpout\Writer\XLSX\Writer as XLSXWriter;
 /**
  * This factory is used to create writers, based on the type of the file to be read.
  * It supports CSV, XLSX and ODS formats.

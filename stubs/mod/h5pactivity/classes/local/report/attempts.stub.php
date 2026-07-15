@@ -30,6 +30,11 @@
  */
 namespace mod_h5pactivity\local\report;
 
+use mod_h5pactivity\local\report;
+use mod_h5pactivity\local\manager;
+use mod_h5pactivity\local\attempt;
+use mod_h5pactivity\output\reportattempts;
+use stdClass;
 /**
  * Class  H5P activity attempts report.
  *

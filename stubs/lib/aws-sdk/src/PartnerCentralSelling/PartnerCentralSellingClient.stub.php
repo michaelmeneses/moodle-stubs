@@ -8,6 +8,7 @@
  */
 namespace Aws\PartnerCentralSelling;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Partner Central Selling API** service.
  * @method \Aws\Result acceptEngagementInvitation(array $args = [])

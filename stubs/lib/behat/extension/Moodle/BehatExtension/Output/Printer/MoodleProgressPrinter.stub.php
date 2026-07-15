@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\Output\Printer;
 
+use Behat\Behat\Output\Node\Printer\SetupPrinter;
+use Behat\Testwork\Call\CallResult;
+use Behat\Testwork\Hook\Tester\Setup\HookedTeardown;
+use Behat\Testwork\Output\Formatter;
+use Behat\Testwork\Output\Printer\OutputPrinter;
+use Behat\Testwork\Tester\Setup\Setup;
+use Behat\Testwork\Tester\Setup\Teardown;
+use Moodle\BehatExtension\Driver\WebDriver;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * Prints hooks in a pretty fashion.

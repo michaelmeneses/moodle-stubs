@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data;
 
+use cm_info;
+use context_module;
+use completion_info;
+use data_field_base;
+use mod_data_renderer;
+use mod_data\event\course_module_viewed;
+use mod_data\event\template_viewed;
+use mod_data\event\template_updated;
+use moodle_page;
+use core_component;
+use stdClass;
 /**
  * Class manager for database activity
  *

@@ -31,6 +31,7 @@
  */
 namespace quizaccess_seb;
 
+use core\persistent;
 /**
  * Entity model representing template settings for the seb plugin.
  *

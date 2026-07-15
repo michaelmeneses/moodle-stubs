@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Common\Helper;
 
+use Error;
+use OpenSpout\Common\Exception\EncodingConversionException;
 /**
  * @internal
  */

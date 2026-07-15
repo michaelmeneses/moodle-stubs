@@ -8,6 +8,7 @@
  */
 namespace Aws\GeoRoutes;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Location Service Routes V2** service.
  * @method \Aws\Result calculateIsolines(array $args = [])

@@ -29,6 +29,9 @@
  */
 namespace core_form;
 
+use core_collator;
+use core_filetypes;
+use core_text;
 /**
  * Utility class for handling with file types in the forms.
  *

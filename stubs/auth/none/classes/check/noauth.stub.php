@@ -30,6 +30,7 @@
  */
 namespace auth_none\check;
 
+use core\check\result;
 /**
  * Verifies unsupported noauth setting
  *

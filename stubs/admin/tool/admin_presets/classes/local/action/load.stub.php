@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_admin_presets\local\action;
 
+use moodle_exception;
+use stdClass;
+use tool_admin_presets\form\continue_form;
+use tool_admin_presets\form\load_form;
+use tool_admin_presets\output\presets_list;
 /**
  * This class extends base class and handles load function.
  *

@@ -8,6 +8,14 @@
  */
 namespace Aws\S3;
 
+use Aws\Api\Service;
+use Aws\Api\Shape;
+use Aws\CommandInterface;
+use Aws\MetricsBuilder;
+use GuzzleHttp\Psr7;
+use InvalidArgumentException;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * Apply required or optional checksums to requests before sending.
  *

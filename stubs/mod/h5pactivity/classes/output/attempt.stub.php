@@ -29,6 +29,13 @@
  */
 namespace mod_h5pactivity\output;
 
+use mod_h5pactivity\local\attempt as activity_attempt;
+use renderable;
+use templatable;
+use renderer_base;
+use moodle_url;
+use user_picture;
+use stdClass;
 /**
  * Class to help display report link in mod_h5pactivity.
  *

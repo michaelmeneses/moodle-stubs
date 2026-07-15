@@ -8,6 +8,7 @@
  */
 namespace Aws\OpsWorksCM;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS OpsWorks for Chef Automate** service.
  * @method \Aws\Result associateNode(array $args = [])

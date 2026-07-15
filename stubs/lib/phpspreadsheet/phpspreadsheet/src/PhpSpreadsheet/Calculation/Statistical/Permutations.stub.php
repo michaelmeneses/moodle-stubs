@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Statistical;
 
+use PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+use PhpOffice\PhpSpreadsheet\Calculation\MathTrig;
+use PhpOffice\PhpSpreadsheet\Shared\IntOrFloat;
 class Permutations
 {
     use ArrayEnabled;

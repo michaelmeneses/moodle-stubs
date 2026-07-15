@@ -8,6 +8,12 @@
  */
 namespace Aws\Retry;
 
+use Aws\AbstractConfigurationProvider;
+use Aws\CacheInterface;
+use Aws\ConfigurationProviderInterface;
+use Aws\Retry\Exception\ConfigurationException;
+use GuzzleHttp\Promise;
+use GuzzleHttp\Promise\PromiseInterface;
 /**
  * A configuration provider is a function that returns a promise that is
  * fulfilled with a {@see \Aws\Retry\ConfigurationInterface}

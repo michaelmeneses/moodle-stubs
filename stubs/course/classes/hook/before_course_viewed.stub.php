@@ -29,6 +29,8 @@
  */
 namespace core_course\hook;
 
+use stdClass;
+use core\hook\described_hook;
 /**
  * External course redirect hook before_course_viewed
  *

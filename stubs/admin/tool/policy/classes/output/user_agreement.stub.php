@@ -30,6 +30,11 @@
  */
 namespace tool_policy\output;
 
+use moodle_url;
+use renderable;
+use renderer_base;
+use single_button;
+use templatable;
 /**
  * List of users and their acceptances
  *

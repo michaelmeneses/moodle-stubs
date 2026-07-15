@@ -8,6 +8,7 @@
  */
 namespace Aws\Firehose;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Kinesis Firehose** service.
  *

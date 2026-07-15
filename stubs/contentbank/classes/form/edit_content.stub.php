@@ -29,6 +29,7 @@
  */
 namespace core_contentbank\form;
 
+use moodleform;
 /**
  * Defines the form for editing a content.
  *

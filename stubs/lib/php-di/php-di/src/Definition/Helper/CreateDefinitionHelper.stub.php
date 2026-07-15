@@ -8,6 +8,10 @@
  */
 namespace DI\Definition\Helper;
 
+use DI\Definition\Exception\InvalidDefinition;
+use DI\Definition\ObjectDefinition;
+use DI\Definition\ObjectDefinition\MethodInjection;
+use DI\Definition\ObjectDefinition\PropertyInjection;
 /**
  * Helps defining how to create an instance of a class.
  *

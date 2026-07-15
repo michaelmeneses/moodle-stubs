@@ -30,6 +30,8 @@
  */
 namespace ltiservice_gradebookservices\local\resources;
 
+use ltiservice_gradebookservices\local\service\gradebookservices;
+use mod_lti\local\ltiservice\resource_base;
 /**
  * A resource implementing LineItem container.
  *

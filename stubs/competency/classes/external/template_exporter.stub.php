@@ -29,6 +29,10 @@
  */
 namespace core_competency\external;
 
+use moodle_url;
+use renderer_base;
+use core_competency\plan;
+use core_competency\template_cohort;
 /**
  * Class for exporting template data.
  *

@@ -20,45 +20,54 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\exception;
-
-/**
- * Base Moodle Exception class
- *
- * Although this class is defined here, you cannot throw a moodle_exception until
- * after moodlelib.php has been included (which will happen very soon).
- *
- * @package    core
- * @subpackage exception
- * @copyright  2008 Petr Skoda  {@link http://skodak.org}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class moodle_exception extends \Exception
-{
-    /** @var string The name of the string from error.php to print */
-    public $errorcode;
-    /** @var string The name of module */
-    public $module;
-    /** @var mixed Extra words and phrases that might be required in the error string */
-    public $a;
+namespace core\exception {
     /**
-     * The url where the user will be prompted to continue. If no url is provided the user will be directed to the site index page.
+     * Base Moodle Exception class
      *
-     * @var string
+     * Although this class is defined here, you cannot throw a moodle_exception until
+     * after moodlelib.php has been included (which will happen very soon).
+     *
+     * @package    core
+     * @subpackage exception
+     * @copyright  2008 Petr Skoda  {@link http://skodak.org}
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public $link;
-    /** @var string Optional information to aid the debugging process */
-    public $debuginfo;
+    class moodle_exception extends \Exception
+    {
+        /** @var string The name of the string from error.php to print */
+        public $errorcode;
+        /** @var string The name of module */
+        public $module;
+        /** @var mixed Extra words and phrases that might be required in the error string */
+        public $a;
+        /**
+         * The url where the user will be prompted to continue. If no url is provided the user will be directed to the site index page.
+         *
+         * @var string
+         */
+        public $link;
+        /** @var string Optional information to aid the debugging process */
+        public $debuginfo;
+        /**
+         * Constructor
+         * @param string $errorcode The name of the string from error.php to print
+         * @param string $module name of module
+         * @param string $link The url where the user will be prompted to continue.
+         * If no url is provided the user will be directed to the site index page.
+         * @param mixed $a Extra words and phrases that might be required in the error string
+         * @param string $debuginfo optional debugging information
+         */
+        public function __construct($errorcode, $module = '', $link = '', $a = null, $debuginfo = null)
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Constructor
-     * @param string $errorcode The name of the string from error.php to print
-     * @param string $module name of module
-     * @param string $link The url where the user will be prompted to continue.
-     * If no url is provided the user will be directed to the site index page.
-     * @param mixed $a Extra words and phrases that might be required in the error string
-     * @param string $debuginfo optional debugging information
+     * Runtime class alias of \core\exception\moodle_exception registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct($errorcode, $module = '', $link = '', $a = null, $debuginfo = null)
+    class moodle_exception extends \core\exception\moodle_exception
     {
     }
 }

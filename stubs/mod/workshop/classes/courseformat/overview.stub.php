@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_workshop\courseformat;
 
+use cm_info;
+use core_courseformat\local\overview\overviewitem;
+use core\output\action_link;
+use core\output\local\properties\text_align;
+use core\output\local\properties\button;
+use core\url;
+use stdClass;
+use workshop;
 /**
  * Workshop overview integration.
  *

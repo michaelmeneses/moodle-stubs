@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\lib;
 
+use core\session\utility\cookie_helper;
+use Packback\Lti1p3\Interfaces\ICookie;
 /**
  * Cookie representation used by the lti1p3 library code.
  *

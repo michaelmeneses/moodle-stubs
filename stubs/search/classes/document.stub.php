@@ -29,6 +29,7 @@
  */
 namespace core_search;
 
+use context;
 /**
  * Represents a document to index.
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\IVS;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Interactive Video Service** service.
  * @method \Aws\Result batchGetChannel(array $args = [])

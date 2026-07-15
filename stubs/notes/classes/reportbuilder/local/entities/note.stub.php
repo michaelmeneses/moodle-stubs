@@ -8,6 +8,12 @@
  */
 namespace core_notes\reportbuilder\local\entities;
 
+use lang_string;
+use stdClass;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{date, select, text};
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Note entity
  *

@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn;
 
+use cache;
+use cm_info;
+use mod_bigbluebuttonbn\local\extension\action_url_addons;
+use mod_bigbluebuttonbn\local\extension\broker_meeting_events_addons;
+use mod_bigbluebuttonbn\local\extension\custom_completion_addons;
+use mod_bigbluebuttonbn\local\extension\mod_form_addons;
+use mod_bigbluebuttonbn\local\extension\mod_instance_helper;
+use stdClass;
+use core_plugin_manager;
+use core_component;
 /**
  * Generic subplugin management helper
  *

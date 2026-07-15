@@ -8,6 +8,13 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Namespaces;
+use PhpOffice\PhpSpreadsheet\Shared\File;
+use PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Worksheet\Drawing as WorksheetDrawing;
+use PhpOffice\PhpSpreadsheet\Worksheet\MemoryDrawing;
+use PhpOffice\PhpSpreadsheet\Writer\Exception as WriterException;
 class ContentTypes extends WriterPart
 {
     /**

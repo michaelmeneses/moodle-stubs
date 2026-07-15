@@ -22,6 +22,22 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_admin\reportbuilder\local\systemreports;
 
+use core_admin\reportbuilder\local\filters\courserole;
+use core\context\system;
+use core_cohort\reportbuilder\local\entities\cohort;
+use core_cohort\reportbuilder\local\entities\cohort_member;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\filters\boolean_select;
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\local\helpers\user_profile_fields;
+use core_reportbuilder\local\report\action;
+use core_reportbuilder\local\report\filter;
+use core_reportbuilder\system_report;
+use core_role\reportbuilder\local\entities\role;
+use core_user\fields;
+use lang_string;
+use moodle_url;
+use pix_icon;
 /**
  * Browse users system report class implementation
  *

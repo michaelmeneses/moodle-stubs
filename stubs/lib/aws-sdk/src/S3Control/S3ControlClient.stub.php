@@ -8,6 +8,13 @@
  */
 namespace Aws\S3Control;
 
+use Aws\AwsClient;
+use Aws\CacheInterface;
+use Aws\HandlerList;
+use Aws\S3\UseArnRegion\Configuration;
+use Aws\S3\UseArnRegion\ConfigurationInterface;
+use Aws\S3\UseArnRegion\ConfigurationProvider as UseArnRegionConfigurationProvider;
+use GuzzleHttp\Promise\PromiseInterface;
 /**
  * This client is used to interact with the **AWS S3 Control** service.
  * @method \Aws\Result associateAccessGrantsIdentityCenter(array $args = [])

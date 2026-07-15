@@ -29,6 +29,12 @@
  */
 namespace mod_forum\local\vaults;
 
+use core_group\output\group_details;
+use mod_forum\local\vaults\preprocessors\extract_record as extract_record_preprocessor;
+use mod_forum\local\vaults\preprocessors\extract_user as extract_user_preprocessor;
+use mod_forum\local\renderers\discussion_list as discussion_list_renderer;
+use core\dml\table as dml_table;
+use stdClass;
 /**
  * Discussion list vault.
  *

@@ -8,6 +8,12 @@
  */
 namespace Invoker;
 
+use Closure;
+use Invoker\Exception\NotCallableException;
+use Psr\Container\ContainerInterface;
+use Psr\Container\NotFoundExceptionInterface;
+use ReflectionException;
+use ReflectionMethod;
 /**
  * Resolves a callable from a container.
  */

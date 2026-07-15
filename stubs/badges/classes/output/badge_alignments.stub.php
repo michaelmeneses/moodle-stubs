@@ -31,6 +31,7 @@
  */
 namespace core_badges\output;
 
+use renderable;
 /**
  * Link to external resources this badge is aligned with.
  *

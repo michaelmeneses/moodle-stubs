@@ -8,6 +8,10 @@
  */
 namespace PhpXmlRpc;
 
+use PhpXmlRpc\Exception\StateErrorException;
+use PhpXmlRpc\Traits\CharsetEncoderAware;
+use PhpXmlRpc\Traits\DeprecationLogger;
+use PhpXmlRpc\Traits\PayloadBearer;
 /**
  * This class provides the representation of the response of an XML-RPC server.
  * Server-side, a server method handler will construct a Response and pass it as its return value.

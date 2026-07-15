@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_usertours\external;
 
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
+use tool_usertours\tour as tourinstance;
+use tool_usertours\step;
 /**
  * Web Service functions for steps.
  *

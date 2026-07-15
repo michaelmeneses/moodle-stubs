@@ -8,6 +8,7 @@
  */
 namespace Aws\Glue;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Glue** service.
  * @method \Aws\Result batchCreatePartition(array $args = [])

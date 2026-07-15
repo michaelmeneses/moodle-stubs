@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\search;
 
+use stdClass;
 /**
  * Search area for mod_bigbluebuttonbn tags.
  *

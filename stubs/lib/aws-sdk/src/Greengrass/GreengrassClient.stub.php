@@ -8,6 +8,7 @@
  */
 namespace Aws\Greengrass;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Greengrass** service.
  * @method \Aws\Result associateRoleToGroup(array $args = [])

@@ -8,6 +8,14 @@
  */
 namespace core_reportbuilder\external\filters;
 
+use core_external\external_api;
+use core_external\external_value;
+use core_external\external_single_structure;
+use core_external\external_function_parameters;
+use core_reportbuilder\manager;
+use core_reportbuilder\permission;
+use core_reportbuilder\external\custom_report_filters_exporter;
+use core_reportbuilder\local\helpers\report;
 /**
  * External method for adding report filters
  *

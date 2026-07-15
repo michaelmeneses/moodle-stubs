@@ -29,6 +29,8 @@
  */
 namespace tool_lp\form;
 
+use moodleform;
+use core\form\persistent;
 /**
  * Template plans form class.
  *

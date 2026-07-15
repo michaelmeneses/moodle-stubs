@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_backup\hook;
 
+use MoodleQuickForm;
 /**
  * Hook to allow adding extra fields to the copy course form.
  * This should be used together with core_backup\hook\copy_helper_process_formdata

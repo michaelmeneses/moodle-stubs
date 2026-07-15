@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use PhpOffice\PhpSpreadsheet\Cell\Cell;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
 /**
  * @extends CellIterator<string>
  */

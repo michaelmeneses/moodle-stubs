@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_policy;
 
+use core\hook\output\before_standard_footer_html_generation;
+use core\hook\output\before_standard_top_of_body_html_generation;
+use html_writer;
+use moodle_url;
 /**
  * Allows the plugin to add any elements to the footer.
  *

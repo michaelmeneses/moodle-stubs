@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Reader;
 
+use Iterator;
 /**
  * @template T of SheetInterface
  *

@@ -8,6 +8,12 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\MathTrig;
 
+use Matrix\Builder;
+use Matrix\Div0Exception as MatrixDiv0Exception;
+use Matrix\Exception as MatrixException;
+use Matrix\Matrix;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
 class MatrixFunctions
 {
     /**

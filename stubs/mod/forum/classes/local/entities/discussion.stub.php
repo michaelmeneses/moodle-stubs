@@ -29,6 +29,7 @@
  */
 namespace mod_forum\local\entities;
 
+use mod_forum\local\entities\post as post_entity;
 /**
  * Discussion class.
  *

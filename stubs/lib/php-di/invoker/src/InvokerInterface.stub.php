@@ -8,6 +8,9 @@
  */
 namespace Invoker;
 
+use Invoker\Exception\InvocationException;
+use Invoker\Exception\NotCallableException;
+use Invoker\Exception\NotEnoughParametersException;
 /**
  * Invoke a callable.
  */

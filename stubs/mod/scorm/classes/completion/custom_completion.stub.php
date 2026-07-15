@@ -8,6 +8,7 @@
  */
 namespace mod_scorm\completion;
 
+use core_completion\activity_custom_completion;
 /**
  * Activity custom completion subclass for the scorm activity.
  *

@@ -8,6 +8,7 @@
  */
 namespace Laravel\SerializableClosure\Support;
 
+use SplObjectStorage;
 class ClosureScope extends SplObjectStorage
 {
     /**

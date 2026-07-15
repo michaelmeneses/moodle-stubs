@@ -8,6 +8,7 @@
  */
 namespace Aws\MQ;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AmazonMQ** service.
  * @method \Aws\Result createBroker(array $args = [])

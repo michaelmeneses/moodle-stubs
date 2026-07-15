@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradereport_user\report;
 
+use cache;
+use context_course;
+use core_grades\penalty_manager;
+use course_modinfo;
+use grade_grade;
+use grade_helper;
+use grade_item;
+use grade_report;
+use grade_tree;
+use html_writer;
+use moodle_url;
 /**
  * Class providing an API for the user report building and displaying.
  * @uses grade_report

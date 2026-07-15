@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema;
 
+use core\exception\coding_exception;
+use core\param;
+use core\router\route;
+use core\router\schema\objects\type_base;
+use stdClass;
 /**
  * OpenAPI parameter.
  *

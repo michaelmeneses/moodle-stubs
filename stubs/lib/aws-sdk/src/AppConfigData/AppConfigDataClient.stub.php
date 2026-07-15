@@ -8,6 +8,7 @@
  */
 namespace Aws\AppConfigData;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS AppConfig Data** service.
  * @method \Aws\Result getLatestConfiguration(array $args = [])

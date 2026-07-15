@@ -29,6 +29,8 @@
  */
 namespace core_badges\external;
 
+use core\external\exporter;
+use renderer_base;
 /**
  * Class for displaying a badge competency.
  *

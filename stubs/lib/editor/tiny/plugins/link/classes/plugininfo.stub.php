@@ -29,6 +29,12 @@
  */
 namespace tiny_link;
 
+use context;
+use editor_tiny\editor;
+use editor_tiny\plugin;
+use editor_tiny\plugin_with_buttons;
+use editor_tiny\plugin_with_configuration;
+use editor_tiny\plugin_with_menuitems;
 /**
  * Tiny link plugin.
  *

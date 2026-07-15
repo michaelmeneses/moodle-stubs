@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_admin_presets\form;
 
+use moodleform;
 /**
  * Form for exporting settings.
  *

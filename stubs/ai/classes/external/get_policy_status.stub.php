@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_ai\external;
 
+use core_ai\manager;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_value;
 /**
  * External API to get a users AI policy acceptance.
  *

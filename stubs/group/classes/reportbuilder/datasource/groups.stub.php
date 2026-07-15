@@ -8,6 +8,10 @@
  */
 namespace core_group\reportbuilder\datasource;
 
+use core_group\reportbuilder\local\entities\{grouping, group, group_member};
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\{course, user};
+use core_reportbuilder\local\helpers\database;
 /**
  * Groups datasource
  *

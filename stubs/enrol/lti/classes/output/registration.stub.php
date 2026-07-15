@@ -29,6 +29,10 @@
  */
 namespace enrol_lti\output;
 
+use renderable;
+use renderer_base;
+use templatable;
+use stdClass;
 /**
  * Tool registration page class.
  *

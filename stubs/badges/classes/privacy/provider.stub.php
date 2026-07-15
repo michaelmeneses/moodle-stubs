@@ -30,6 +30,19 @@
  */
 namespace core_badges\privacy;
 
+use badge;
+use context;
+use context_course;
+use context_helper;
+use context_system;
+use context_user;
+use core_text;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\approved_userlist;
 /**
  * Data provider class.
  *

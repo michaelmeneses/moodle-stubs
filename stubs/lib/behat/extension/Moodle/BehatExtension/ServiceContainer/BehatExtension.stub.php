@@ -22,6 +22,24 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\ServiceContainer;
 
+use Behat\Behat\Definition\ServiceContainer\DefinitionExtension;
+use Behat\Behat\EventDispatcher\ServiceContainer\EventDispatcherExtension;
+use Behat\Behat\Gherkin\ServiceContainer\GherkinExtension;
+use Behat\Behat\Tester\ServiceContainer\TesterExtension;
+use Behat\Testwork\Cli\ServiceContainer\CliExtension;
+use Behat\Testwork\Output\ServiceContainer\OutputExtension;
+use Behat\Testwork\ServiceContainer\Extension as ExtensionInterface;
+use Behat\Testwork\ServiceContainer\ExtensionManager;
+use Behat\Testwork\ServiceContainer\ServiceProcessor;
+use Behat\Testwork\Suite\ServiceContainer\SuiteExtension;
+use Moodle\BehatExtension\Driver\WebDriverFactory;
+use Moodle\BehatExtension\Output\Formatter\MoodleProgressFormatterFactory;
+use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
+use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Definition;
+use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+use Symfony\Component\DependencyInjection\Reference;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * Behat extension for moodle

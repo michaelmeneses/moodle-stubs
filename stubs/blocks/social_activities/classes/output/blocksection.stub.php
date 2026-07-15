@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace block_social_activities\output;
 
+use core_courseformat\base as courseformat;
+use renderable;
+use section_info;
+use templatable;
 /**
  * Class blocksection
  *

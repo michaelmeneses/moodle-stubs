@@ -8,6 +8,10 @@
  */
 namespace GuzzleHttp;
 
+use GuzzleHttp\Promise as P;
+use GuzzleHttp\Promise\PromiseInterface;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Middleware that retries requests based on the boolean result of
  * invoking the provided "decider" function.

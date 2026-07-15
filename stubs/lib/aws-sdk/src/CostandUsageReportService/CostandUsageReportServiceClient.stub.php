@@ -8,6 +8,7 @@
  */
 namespace Aws\CostandUsageReportService;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Cost and Usage Report Service** service.
  * @method \Aws\Result deleteReportDefinition(array $args = [])

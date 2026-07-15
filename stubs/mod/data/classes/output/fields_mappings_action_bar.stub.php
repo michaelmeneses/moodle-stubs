@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use templatable;
+use renderable;
 /**
  * Renderable class for the action bar elements in the fields mapping page in the database activity.
  *

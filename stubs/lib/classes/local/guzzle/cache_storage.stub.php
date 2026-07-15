@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\local\guzzle;
 
+use Kevinrob\GuzzleCache\CacheEntry;
+use Kevinrob\GuzzleCache\Storage\CacheStorageInterface;
 /**
  * Cache storage handler to handle cache objects, TTL etc.
  *

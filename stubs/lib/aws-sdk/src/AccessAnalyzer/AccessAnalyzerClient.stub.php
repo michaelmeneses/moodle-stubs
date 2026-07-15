@@ -8,6 +8,7 @@
  */
 namespace Aws\AccessAnalyzer;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Access Analyzer** service.
  * @method \Aws\Result applyArchiveRule(array $args = [])

@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Reader\XLSX\Manager;
 
+use OpenSpout\Reader\Wrapper\XMLReader;
 class StyleManager implements StyleManagerInterface
 {
     /**

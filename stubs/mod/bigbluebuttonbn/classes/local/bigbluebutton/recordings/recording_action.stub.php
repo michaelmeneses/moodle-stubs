@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\bigbluebutton\recordings;
 
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\logger;
+use mod_bigbluebuttonbn\recording;
+use mod_bigbluebuttonbn\local\config;
 /**
  * Collection of helper methods for handling recordings actions in Moodle.
  *

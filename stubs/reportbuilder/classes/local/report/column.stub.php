@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\local\report;
 
+use core\exception\coding_exception;
+use core\lang_string;
+use core\output\help_icon;
+use core_reportbuilder\local\helpers\{aggregation, database, join_trait};
+use core_reportbuilder\local\aggregation\base;
+use core_reportbuilder\local\models\column as column_model;
 /**
  * Class to represent a report column
  *

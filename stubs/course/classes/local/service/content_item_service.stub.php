@@ -30,6 +30,9 @@
  */
 namespace core_course\local\service;
 
+use core_course\local\exporters\course_content_items_exporter;
+use core_course\local\repository\content_item_readonly_repository_interface;
+use core_courseformat\sectiondelegate;
 /**
  * The content_item_service class, providing the api for interacting with content items.
  *

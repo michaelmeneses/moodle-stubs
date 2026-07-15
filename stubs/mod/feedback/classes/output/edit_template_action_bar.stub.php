@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_feedback\output;
 
+use confirm_action;
+use context_system;
+use moodle_url;
+use pix_icon;
+use core\output\action_menu;
+use core\output\action_link;
+use core\output\action_menu\link as action_menu_link;
+use mod_feedback\manager;
 /**
  * Class actionbar - Display the action bar
  *

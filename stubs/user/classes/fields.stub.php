@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_user;
 
+use core_text;
+use core_user;
 /**
  * Class for retrieving information about user fields that are needed for displaying user identity.
  *

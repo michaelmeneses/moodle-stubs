@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\test;
 
+use PHPUnit\Framework\MockObject\MockObject;
 /**
  * Trait for providing mocked question restore objects
  *

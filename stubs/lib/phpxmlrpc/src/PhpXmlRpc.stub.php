@@ -8,6 +8,10 @@
  */
 namespace PhpXmlRpc;
 
+use PhpXmlRpc\Helper\Charset;
+use PhpXmlRpc\Helper\Http;
+use PhpXmlRpc\Helper\Interop;
+use PhpXmlRpc\Helper\XMLParser;
 /**
  * Manages global configuration for operation of the library.
  */

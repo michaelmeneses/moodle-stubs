@@ -29,6 +29,15 @@
  */
 namespace core_calendar\external;
 
+use core\external\exporter;
+use core_calendar\local\event\container;
+use core_calendar\local\event\entities\event_interface;
+use core_calendar\local\event\entities\action_event_interface;
+use core_calendar\output\humantimeperiod;
+use core_course\external\course_summary_exporter;
+use core\external\coursecat_summary_exporter;
+use renderer_base;
+use core\url;
 /**
  * Class for displaying a calendar event.
  *

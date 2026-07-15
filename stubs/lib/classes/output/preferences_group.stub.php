@@ -20,34 +20,43 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Represents a group of preferences page link.
- *
- * @package core
- * @category output
- * @copyright 2015 Frédéric Massart - FMCorz.net
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class preferences_group implements renderable
-{
+namespace core\output {
     /**
-     * Title of the group.
-     * @var string
+     * Represents a group of preferences page link.
+     *
+     * @package core
+     * @category output
+     * @copyright 2015 Frédéric Massart - FMCorz.net
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public $title;
+    class preferences_group implements renderable
+    {
+        /**
+         * Title of the group.
+         * @var string
+         */
+        public $title;
+        /**
+         * Array of navigation_node.
+         * @var array
+         */
+        public $nodes;
+        /**
+         * Constructor.
+         * @param string $title The title.
+         * @param array $nodes of navigation_node.
+         */
+        public function __construct($title, $nodes)
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Array of navigation_node.
-     * @var array
+     * Runtime class alias of \core\output\preferences_group registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $nodes;
-    /**
-     * Constructor.
-     * @param string $title The title.
-     * @param array $nodes of navigation_node.
-     */
-    public function __construct($title, $nodes)
+    class preferences_group extends \core\output\preferences_group
     {
     }
 }

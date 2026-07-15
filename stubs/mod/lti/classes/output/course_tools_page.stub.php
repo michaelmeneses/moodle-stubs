@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_lti\output;
 
+use core_reportbuilder\system_report_factory;
+use mod_lti\reportbuilder\local\systemreports\course_external_tools_list;
 /**
  * The course tools page renderable, containing a page header renderable and a course tools system report.
  *

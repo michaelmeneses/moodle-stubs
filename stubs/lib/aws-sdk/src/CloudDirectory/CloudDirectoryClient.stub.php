@@ -8,6 +8,7 @@
  */
 namespace Aws\CloudDirectory;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon CloudDirectory** service.
  * @method \Aws\Result addFacetToObject(array $args = [])

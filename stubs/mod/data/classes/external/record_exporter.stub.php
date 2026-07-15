@@ -29,6 +29,10 @@
  */
 namespace mod_data\external;
 
+use core\external\exporter;
+use renderer_base;
+use core_user;
+use core_tag\external\tag_item_exporter;
 /**
  * Class for exporting record data.
  *

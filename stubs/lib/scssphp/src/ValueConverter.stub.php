@@ -17,6 +17,7 @@
  */
 namespace ScssPhp\ScssPhp;
 
+use ScssPhp\ScssPhp\Node\Number;
 final class ValueConverter
 {
     // Prevent instantiating it

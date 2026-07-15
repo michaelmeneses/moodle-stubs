@@ -29,6 +29,11 @@
  */
 namespace core\content\export\exporters;
 
+use coding_exception;
+use context;
+use core\content\export\zipwriter;
+use core_component;
+use stdClass;
 /**
  * A class to help define, describe, and export content in a specific context.
  *

@@ -29,6 +29,8 @@
  */
 namespace core_files;
 
+use core_files\local\archive_writer\file_writer_interface as file_writer_interface;
+use core_files\local\archive_writer\stream_writer_interface as stream_writer_interface;
 /**
  * Each file archive type must extend this class.
  *

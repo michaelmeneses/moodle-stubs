@@ -29,6 +29,9 @@
  */
 namespace core\event;
 
+use core\event\base;
+use core_competency\evidence;
+use core_competency\user_competency;
 /**
  * Evidence created event class.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_usertours\local\filter;
 
+use tool_usertours\tour;
+use context;
 /**
  * Course format filter.
  *

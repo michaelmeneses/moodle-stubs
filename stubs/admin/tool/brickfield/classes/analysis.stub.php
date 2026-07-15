@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield;
 
+use tool_brickfield\task\process_analysis_requests;
 /**
  * Analysis and deployment class.
  *

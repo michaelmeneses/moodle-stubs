@@ -8,6 +8,9 @@
  */
 namespace core\content\export;
 
+use context;
+use core\content\export\exported_item;
+use core\content\export\zipwriter;
 /**
  * An object used to represent content which can be served.
  *

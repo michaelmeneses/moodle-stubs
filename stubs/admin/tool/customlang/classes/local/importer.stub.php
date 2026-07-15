@@ -29,6 +29,15 @@
  */
 namespace tool_customlang\local;
 
+use tool_customlang\local\mlang\phpparser;
+use tool_customlang\local\mlang\logstatus;
+use tool_customlang\local\mlang\langstring;
+use core\output\notification;
+use stored_file;
+use coding_exception;
+use moodle_exception;
+use core_component;
+use stdClass;
 /**
  * Class containing tha custom lang importer
  *

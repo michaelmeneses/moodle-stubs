@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\response;
 
+use GuzzleHttp\Psr7\Utils;
+use Psr\Http\Message\ResponseFactoryInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * A response which will render the specified template.
  *

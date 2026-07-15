@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_user\route\responses;
 
+use core\param;
+use core\router\schema\response\content\payload_response_type;
 /**
  * A standard response for user preferences.
  *

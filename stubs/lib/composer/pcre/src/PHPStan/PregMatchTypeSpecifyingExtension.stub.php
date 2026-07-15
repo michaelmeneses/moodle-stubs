@@ -8,6 +8,20 @@
  */
 namespace Composer\Pcre\PHPStan;
 
+use Composer\Pcre\Preg;
+use PhpParser\Node\Expr\StaticCall;
+use PHPStan\Analyser\Scope;
+use PHPStan\Analyser\SpecifiedTypes;
+use PHPStan\Analyser\TypeSpecifier;
+use PHPStan\Analyser\TypeSpecifierAwareExtension;
+use PHPStan\Analyser\TypeSpecifierContext;
+use PHPStan\Reflection\MethodReflection;
+use PHPStan\TrinaryLogic;
+use PHPStan\Type\Constant\ConstantArrayType;
+use PHPStan\Type\Php\RegexArrayShapeMatcher;
+use PHPStan\Type\StaticMethodTypeSpecifyingExtension;
+use PHPStan\Type\TypeCombinator;
+use PHPStan\Type\Type;
 final class PregMatchTypeSpecifyingExtension implements StaticMethodTypeSpecifyingExtension, TypeSpecifierAwareExtension
 {
     /**

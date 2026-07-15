@@ -29,6 +29,7 @@
  */
 namespace tool_dataprivacy\external;
 
+use core\external\persistent_exporter;
 /**
  * Class for exporting context instance.
  *

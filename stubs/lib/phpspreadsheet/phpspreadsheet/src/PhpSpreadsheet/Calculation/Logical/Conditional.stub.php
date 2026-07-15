@@ -8,6 +8,12 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Logical;
 
+use PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ErrorValue;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\Value;
 class Conditional
 {
     use ArrayEnabled;

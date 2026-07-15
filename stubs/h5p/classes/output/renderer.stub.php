@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_h5p\output;
 
+use plugin_renderer_base;
 /**
  * Renderer class.
  *

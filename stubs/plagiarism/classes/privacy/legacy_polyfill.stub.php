@@ -29,6 +29,7 @@
  */
 namespace core_plagiarism\privacy;
 
+use core_privacy\local\metadata\collection;
 /**
  * The trait used to provide a backwards compatibility for third-party plugins.
  *

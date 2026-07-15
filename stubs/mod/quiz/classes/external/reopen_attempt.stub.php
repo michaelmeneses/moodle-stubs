@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\external;
 
+use core_external\external_api;
+use core_external\external_description;
+use core_external\external_function_parameters;
+use core_external\external_value;
+use mod_quiz\quiz_attempt;
+use moodle_exception;
 /**
  * Web service method for re-opening a quiz attempt.
  *

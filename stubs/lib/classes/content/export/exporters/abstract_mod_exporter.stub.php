@@ -29,6 +29,7 @@
  */
 namespace core\content\export\exporters;
 
+use core\content\controllers\export\component_controller;
 /**
  * Activity module exporter for the content API.
  *

@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace filter_tex;
 
+use core\context\system as context_system;
+use core\exception\coding_exception;
+use core\output\actions\popup_action;
+use core\url;
+use core_useragent;
+use stdClass;
 /**
  * Moodle - Filter for converting TeX expressions to cached gif images
  *

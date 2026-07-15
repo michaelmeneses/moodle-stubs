@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\task;
 
+use core_h5p\factory;
+use invalid_response_exception;
 /**
  * A task to get the latest content types from the official H5P repository.
  *

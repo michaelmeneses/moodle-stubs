@@ -8,6 +8,10 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use SimpleXMLElement;
 class Hyperlinks
 {
     private Worksheet $worksheet;

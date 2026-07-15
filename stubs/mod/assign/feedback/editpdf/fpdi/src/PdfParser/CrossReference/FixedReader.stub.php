@@ -15,6 +15,8 @@
  */
 namespace setasign\Fpdi\PdfParser\CrossReference;
 
+use setasign\Fpdi\PdfParser\PdfParser;
+use setasign\Fpdi\PdfParser\StreamReader;
 /**
  * Class FixedReader
  *

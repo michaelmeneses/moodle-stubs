@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_previewquestion\form;
 
+use moodleform;
+use question_display_options;
+use question_engine;
+use qbank_previewquestion\question_preview_options;
 /**
  * Settings form for the preview options.
  *

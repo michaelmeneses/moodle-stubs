@@ -8,6 +8,7 @@
  */
 namespace Aws\BackupSearch;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Backup Search** service.
  * @method \Aws\Result getSearchJob(array $args = [])

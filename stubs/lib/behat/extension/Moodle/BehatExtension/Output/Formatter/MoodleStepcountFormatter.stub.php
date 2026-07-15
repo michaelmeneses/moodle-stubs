@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\Output\Formatter;
 
+use Behat\Behat\EventDispatcher\Event\AfterFeatureTested;
+use Behat\Behat\EventDispatcher\Event\AfterStepTested;
+use Behat\Behat\EventDispatcher\Event\BeforeFeatureTested;
+use Behat\Testwork\Output\Formatter;
+use Behat\Testwork\Output\Printer\OutputPrinter;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * Feature step counter for distributing features between parallel runs.

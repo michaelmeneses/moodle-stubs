@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace smsgateway_modica;
 
+use core\http_client;
+use core_sms\manager;
+use core_sms\message;
+use GuzzleHttp\Exception\GuzzleException;
 /**
  * Modica SMS gateway.
  *

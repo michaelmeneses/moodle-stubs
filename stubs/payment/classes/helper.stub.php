@@ -29,6 +29,9 @@
  */
 namespace core_payment;
 
+use core_payment\event\account_created;
+use core_payment\event\account_deleted;
+use core_payment\event\account_updated;
 /**
  * Helper class for the payment subsystem.
  *

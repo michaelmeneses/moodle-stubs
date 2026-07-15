@@ -8,6 +8,7 @@
  */
 namespace Aws\Crypto\Cipher;
 
+use Aws\Exception\CryptoException;
 trait CipherBuilderTrait
 {
     /**

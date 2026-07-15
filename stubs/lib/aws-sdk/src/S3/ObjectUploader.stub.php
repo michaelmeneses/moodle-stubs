@@ -8,6 +8,10 @@
  */
 namespace Aws\S3;
 
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Promise\PromisorInterface;
+use GuzzleHttp\Psr7;
+use Psr\Http\Message\StreamInterface;
 /**
  * Uploads an object to S3, using a PutObject command or a multipart upload as
  * appropriate.

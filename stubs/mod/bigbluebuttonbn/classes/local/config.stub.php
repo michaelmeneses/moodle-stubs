@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local;
 
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\proxy\bigbluebutton_proxy;
+use mod_bigbluebuttonbn\recording;
 /**
  * Handles the global configuration based on config.php.
  *

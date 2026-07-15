@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_subsection\local\callbacks;
 
+use core_courseformat\hook\after_cm_name_edited;
+use core_courseformat\formatactions;
+use mod_subsection\manager;
 /**
  * Class after activity renaming hook handler.
  *

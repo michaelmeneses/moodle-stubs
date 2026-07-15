@@ -29,6 +29,7 @@
  */
 namespace core_competency;
 
+use lang_string;
 /**
  * Competency rule all class.
  *

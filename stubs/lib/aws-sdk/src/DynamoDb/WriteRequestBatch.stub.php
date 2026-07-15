@@ -8,6 +8,10 @@
  */
 namespace Aws\DynamoDb;
 
+use Aws\CommandInterface;
+use Aws\CommandPool;
+use Aws\Exception\AwsException;
+use Aws\ResultInterface;
 /**
  * The WriteRequestBatch is an object that is capable of efficiently sending
  * DynamoDB BatchWriteItem requests from queued up put and delete item requests.

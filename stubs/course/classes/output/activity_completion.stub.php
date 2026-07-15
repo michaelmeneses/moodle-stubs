@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\output;
 
+use cm_info;
+use core_availability\info;
+use core_completion\cm_completion_details;
+use core_user;
+use core_user\fields;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * The activity completion renderable class.
  *

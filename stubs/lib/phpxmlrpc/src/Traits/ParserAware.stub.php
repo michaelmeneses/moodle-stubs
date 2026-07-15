@@ -8,6 +8,7 @@
  */
 namespace PhpXmlRpc\Traits;
 
+use PhpXmlRpc\Helper\XMLParser;
 trait ParserAware
 {
     protected static $parser;

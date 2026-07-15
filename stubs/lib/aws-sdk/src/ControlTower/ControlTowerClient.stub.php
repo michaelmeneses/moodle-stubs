@@ -8,6 +8,7 @@
  */
 namespace Aws\ControlTower;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Control Tower** service.
  * @method \Aws\Result createLandingZone(array $args = [])

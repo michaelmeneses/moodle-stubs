@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\form;
 
+use context;
+use moodle_exception;
+use moodle_url;
+use core_form\dynamic_form;
 /**
  * Import presets form.
  *

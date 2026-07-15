@@ -8,6 +8,7 @@
  */
 namespace Aws\Crypto;
 
+use Aws\S3\Crypto\S3EncryptionClientV3;
 enum AlgorithmSuite : int
 {
     case ALG_AES_256_GCM_HKDF_SHA512_COMMIT_KEY = 0x73;

@@ -30,6 +30,9 @@
  */
 namespace logstore_standard\privacy;
 
+use context;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\contextlist;
 /**
  * Data provider class.
  *

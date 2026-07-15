@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\output;
 
+use action_link;
+use renderer_base;
+use core_courseformat\output\local\content\cm\controlmenu;
+use core_question\local\bank\question_bank_helper;
 /**
  * Create a list of question bank type links to manage their respective instances.
  *

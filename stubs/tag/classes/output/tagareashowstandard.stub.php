@@ -29,6 +29,10 @@
  */
 namespace core_tag\output;
 
+use context_system;
+use lang_string;
+use core_tag_tag;
+use core_tag_area;
 /**
  * Class to display tag area show standard control
  *

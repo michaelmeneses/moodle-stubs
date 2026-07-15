@@ -17,6 +17,9 @@
  */
 namespace ScssPhp\ScssPhp\Block;
 
+use ScssPhp\ScssPhp\Block;
+use ScssPhp\ScssPhp\Compiler\Environment;
+use ScssPhp\ScssPhp\Node\Number;
 /**
  * @internal
  */

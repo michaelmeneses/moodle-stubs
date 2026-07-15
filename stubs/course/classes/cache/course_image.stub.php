@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\cache;
 
+use core_cache\data_source_interface;
+use core_cache\definition;
+use moodle_url;
+use core_course_list_element;
 /**
  * Class to describe cache data source for course image.
  *

@@ -30,6 +30,7 @@
  */
 namespace mod_lti\plugininfo;
 
+use core\plugininfo\base;
 /**
  * The mod_lti\plugininfo\ltiservice class.
  *

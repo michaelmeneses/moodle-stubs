@@ -29,6 +29,17 @@
  */
 namespace enrol_lti;
 
+use IMSGlobal\LTI\ToolProvider;
+use IMSGlobal\LTI\ToolProvider\ConsumerNonce;
+use IMSGlobal\LTI\ToolProvider\Context;
+use IMSGlobal\LTI\ToolProvider\DataConnector\DataConnector;
+use IMSGlobal\LTI\ToolProvider\ResourceLink;
+use IMSGlobal\LTI\ToolProvider\ResourceLinkShare;
+use IMSGlobal\LTI\ToolProvider\ResourceLinkShareKey;
+use IMSGlobal\LTI\ToolProvider\ToolConsumer;
+use IMSGlobal\LTI\ToolProvider\ToolProxy;
+use IMSGlobal\LTI\ToolProvider\User;
+use stdClass;
 /**
  * Extends the IMS Tool provider library data connector for moodle.
  *

@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\form;
 
+use context;
+use core_form\dynamic_form;
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\exceptions\bigbluebutton_exception;
+use mod_bigbluebuttonbn\task\send_guest_emails;
+use moodle_exception;
+use moodle_url;
+use MoodleQuickForm;
 /**
  * Popup form to add new guests to a meeting and show/copy credential to access the guest login page.
  *

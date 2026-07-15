@@ -8,6 +8,7 @@
  */
 namespace GuzzleHttp\Psr7;
 
+use Psr\Http\Message\StreamInterface;
 /**
  * Compose stream implementations based on a hash of functions.
  *

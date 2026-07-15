@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\response;
 
+use Psr\Http\Message\ResponseFactoryInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * A Payload Response for a Routed request.
  *

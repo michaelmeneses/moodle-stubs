@@ -29,6 +29,8 @@
  */
 namespace core\oauth2;
 
+use core\persistent;
+use lang_string;
 /**
  * Class for loading/storing issuer from the DB
  *

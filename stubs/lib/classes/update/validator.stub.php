@@ -33,6 +33,10 @@
  */
 namespace core\update;
 
+use core_component;
+use core_plugin_manager;
+use help_icon;
+use coding_exception;
 /**
  * Validates the contents of extracted plugin ZIP file
  *

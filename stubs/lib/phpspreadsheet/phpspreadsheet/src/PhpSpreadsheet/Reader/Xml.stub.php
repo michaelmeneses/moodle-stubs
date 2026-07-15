@@ -8,6 +8,26 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader;
 
+use DateTime;
+use DateTimeZone;
+use PhpOffice\PhpSpreadsheet\Cell\AddressHelper;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Cell\DataType;
+use PhpOffice\PhpSpreadsheet\DefinedName;
+use PhpOffice\PhpSpreadsheet\Helper\Html as HelperHtml;
+use PhpOffice\PhpSpreadsheet\Reader\Security\XmlScanner;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Namespaces;
+use PhpOffice\PhpSpreadsheet\Reader\Xml\PageSettings;
+use PhpOffice\PhpSpreadsheet\Reader\Xml\Properties;
+use PhpOffice\PhpSpreadsheet\Reader\Xml\Style;
+use PhpOffice\PhpSpreadsheet\RichText\RichText;
+use PhpOffice\PhpSpreadsheet\Shared\Date;
+use PhpOffice\PhpSpreadsheet\Shared\File;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Worksheet\SheetView;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use SimpleXMLElement;
+use Throwable;
 /**
  * Reader for SpreadsheetML, the XML schema for Microsoft Office Excel 2003.
  */

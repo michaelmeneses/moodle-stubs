@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Cell;
 
+use PhpOffice\PhpSpreadsheet\Exception;
+use PhpOffice\PhpSpreadsheet\Worksheet\Validations;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 /**
  * Helper class to manipulate cell coordinates.
  *

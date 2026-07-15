@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield;
 
+use curl;
+use moodle_url;
 /**
  * Class brickfieldconnect. Contains all function to connect to Brickfield external services.
  *

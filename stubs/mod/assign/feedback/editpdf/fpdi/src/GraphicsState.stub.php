@@ -15,6 +15,8 @@
  */
 namespace setasign\Fpdi;
 
+use setasign\Fpdi\Math\Matrix;
+use setasign\Fpdi\Math\Vector;
 /**
  * A simple graphic state class which holds the current transformation matrix.
  */

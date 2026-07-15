@@ -30,6 +30,7 @@
  */
 namespace core_privacy\local\request;
 
+use core_privacy\local\request\writer;
 /**
  * The core_privacy\local\request\helper class with useful shared functionality.
  *

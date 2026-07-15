@@ -8,6 +8,10 @@
  */
 namespace enrol_guest\form;
 
+use core\context\course as context_course;
+use core_form\dynamic_form;
+use core_text;
+use moodle_url;
 /**
  * Form for entering password for guest enrolment
  *

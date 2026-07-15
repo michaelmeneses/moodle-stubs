@@ -8,6 +8,7 @@
  */
 namespace Aws\ChimeSDKIdentity;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Chime SDK Identity** service.
  * @method \Aws\Result createAppInstance(array $args = [])

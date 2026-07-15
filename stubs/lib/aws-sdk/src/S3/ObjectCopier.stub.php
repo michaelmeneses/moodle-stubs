@@ -8,6 +8,15 @@
  */
 namespace Aws\S3;
 
+use Aws\Arn\ArnParser;
+use Aws\Arn\S3\AccessPointArn;
+use Aws\Exception\MultipartUploadException;
+use Aws\Result;
+use Aws\S3\Exception\S3Exception;
+use GuzzleHttp\Promise\Coroutine;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Promise\PromisorInterface;
+use InvalidArgumentException;
 /**
  * Copies objects from one S3 location to another, utilizing a multipart copy
  * when appropriate.

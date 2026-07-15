@@ -29,6 +29,7 @@
  */
 namespace core\oauth2;
 
+use core\persistent;
 /**
  * Loads/stores oauth2 access tokens in DB for system accounts in order to use a single token across multiple sessions.
  *

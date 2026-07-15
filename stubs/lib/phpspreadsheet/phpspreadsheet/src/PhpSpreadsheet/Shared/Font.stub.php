@@ -8,6 +8,12 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared;
 
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
+use PhpOffice\PhpSpreadsheet\RichText\RichText;
+use PhpOffice\PhpSpreadsheet\Style\Alignment;
+use PhpOffice\PhpSpreadsheet\Style\Font as FontStyle;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
 class Font
 {
     // Methods for resolving autosize value

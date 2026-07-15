@@ -8,6 +8,7 @@
  */
 namespace core_completion\external;
 
+use renderer_base;
 /**
  * Completion info exporter
  *

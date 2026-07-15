@@ -8,6 +8,13 @@
  */
 namespace core_reportbuilder\local\helpers;
 
+use core\lang_string;
+use core_customfield\data_controller;
+use core_customfield\field_controller;
+use core_customfield\handler;
+use core_reportbuilder\local\filters\{boolean_select, date, number, select, text};
+use core_reportbuilder\local\report\{column, filter};
+use stdClass;
 /**
  * Helper class for course custom fields.
  *

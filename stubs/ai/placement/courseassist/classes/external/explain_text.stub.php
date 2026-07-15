@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiplacement_courseassist\external;
 
+use aiplacement_courseassist\utils;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_value;
 /**
  * External API to call explain text action for this placement.
  *

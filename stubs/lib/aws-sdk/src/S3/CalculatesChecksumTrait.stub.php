@@ -8,6 +8,10 @@
  */
 namespace Aws\S3;
 
+use AWS\CRT\CRT;
+use Aws\Exception\CommonRuntimeException;
+use GuzzleHttp\Psr7;
+use InvalidArgumentException;
 trait CalculatesChecksumTrait
 {
     private static $supportedAlgorithms = ['crc32c' => true, 'crc32' => true, 'sha256' => true, 'sha1' => true];

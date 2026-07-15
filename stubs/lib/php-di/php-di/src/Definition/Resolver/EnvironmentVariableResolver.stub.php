@@ -8,6 +8,9 @@
  */
 namespace DI\Definition\Resolver;
 
+use DI\Definition\Definition;
+use DI\Definition\EnvironmentVariableDefinition;
+use DI\Definition\Exception\InvalidDefinition;
 /**
  * Resolves a environment variable definition to a value.
  *

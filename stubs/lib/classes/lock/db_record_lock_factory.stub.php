@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\lock;
 
+use coding_exception;
 /**
  * This is a db record locking factory.
  *

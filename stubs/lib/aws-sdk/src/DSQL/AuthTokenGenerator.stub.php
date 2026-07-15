@@ -8,6 +8,13 @@
  */
 namespace Aws\DSQL;
 
+use Aws\Credentials\CredentialsInterface;
+use Aws\Credentials\Credentials;
+use Aws\Signature\SignatureV4;
+use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Psr7\Uri;
+use GuzzleHttp\Promise;
+use Aws;
 /**
  * Generates auth tokens to connect to DSQL database clusters.
  */

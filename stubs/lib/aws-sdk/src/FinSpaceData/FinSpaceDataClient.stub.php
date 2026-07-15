@@ -8,6 +8,9 @@
  */
 namespace Aws\FinSpaceData;
 
+use Aws\AwsClient;
+use Aws\CommandInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * This client is used to interact with the **FinSpace Public API** service.
  * @method \Aws\Result associateUserToPermissionGroup(array $args = [])

@@ -8,6 +8,7 @@
  */
 namespace Packback\Lti1p3\Interfaces;
 
+use Psr\Http\Message\ResponseInterface;
 /** @internal */
 interface ILtiServiceConnector
 {

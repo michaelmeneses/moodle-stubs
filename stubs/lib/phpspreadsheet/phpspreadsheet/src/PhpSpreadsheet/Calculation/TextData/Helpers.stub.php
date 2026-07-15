@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\TextData;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception as CalcExp;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ErrorValue;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
 class Helpers
 {
     public static function convertBooleanValue(bool $value): string

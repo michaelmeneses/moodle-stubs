@@ -8,6 +8,13 @@
  */
 namespace Aws\ClientSideMonitoring;
 
+use Aws\CommandInterface;
+use Aws\Credentials\CredentialsInterface;
+use Aws\Exception\AwsException;
+use Aws\ResponseContainerInterface;
+use Aws\ResultInterface;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * @internal
  */

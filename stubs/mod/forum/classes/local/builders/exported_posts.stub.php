@@ -29,6 +29,17 @@
  */
 namespace mod_forum\local\builders;
 
+use mod_forum\local\entities\discussion as discussion_entity;
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\entities\post as post_entity;
+use mod_forum\local\factories\legacy_data_mapper as legacy_data_mapper_factory;
+use mod_forum\local\factories\exporter as exporter_factory;
+use mod_forum\local\factories\vault as vault_factory;
+use mod_forum\local\factories\manager as manager_factory;
+use core_tag_tag;
+use moodle_exception;
+use renderer_base;
+use stdClass;
 /**
  * Exported post builder class.
  *

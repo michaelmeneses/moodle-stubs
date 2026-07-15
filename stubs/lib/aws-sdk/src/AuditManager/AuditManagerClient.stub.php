@@ -8,6 +8,7 @@
  */
 namespace Aws\AuditManager;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Audit Manager** service.
  * @method \Aws\Result associateAssessmentReportEvidenceFolder(array $args = [])

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace filter_mathjaxloader;
 
+use core\url;
 /**
  * This filter provides automatic support for MathJax
  *

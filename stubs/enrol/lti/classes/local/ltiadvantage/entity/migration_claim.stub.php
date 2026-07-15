@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\entity;
 
+use enrol_lti\local\ltiadvantage\repository\legacy_consumer_repository;
 /**
  * The migration_claim class, instances of which represent information passed in an 'lti1p1' migration claim.
  *

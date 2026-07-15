@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\overview;
 
+use core\output\named_templatable;
+use core\output\renderable;
+use core\output\renderer_base;
+use core\plugin_manager;
+use core_courseformat\local\overview\overviewitem;
+use core_courseformat\local\overview\overviewfactory;
+use cm_info;
+use stdClass;
 /**
  * Class overviewtable
  *

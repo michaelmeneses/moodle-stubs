@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_viewcreator;
 
+use core\output\datafilter;
+use core_question\local\bank\condition;
 /**
  * Abstract class for conditions filtering by user.
  *

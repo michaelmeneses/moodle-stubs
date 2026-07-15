@@ -30,6 +30,10 @@
  */
 namespace tool_customlang\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
 /**
  * Class containing data for customlang translator page
  *

@@ -8,6 +8,12 @@
  */
 namespace Aws\CloudSearchDomain;
 
+use Aws\AwsClient;
+use Aws\CommandInterface;
+use Aws\HandlerList;
+use GuzzleHttp\Psr7\Uri;
+use Psr\Http\Message\RequestInterface;
+use GuzzleHttp\Psr7;
 /**
  * This client is used to search and upload documents to an **Amazon CloudSearch** Domain.
  *

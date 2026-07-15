@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
+use PhpOffice\PhpSpreadsheet\Document\Properties;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Namespaces;
+use PhpOffice\PhpSpreadsheet\Shared\Date;
+use PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
 class DocProps extends WriterPart
 {
     /**

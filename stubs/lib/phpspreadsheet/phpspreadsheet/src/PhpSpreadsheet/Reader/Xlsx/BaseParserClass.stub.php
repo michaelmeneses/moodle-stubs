@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 
+use Stringable;
 class BaseParserClass
 {
     protected static function boolean(mixed $value): bool

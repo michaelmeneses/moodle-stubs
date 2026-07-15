@@ -8,6 +8,7 @@
  */
 namespace Aws\KinesisVideoArchivedMedia;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Kinesis Video Streams Archived Media** service.
  * @method \Aws\Result getClip(array $args = [])
