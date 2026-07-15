@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiplacement_editor;
 
+use core_ai\manager;
 /**
  * AI Placement HTML editor utils.
  *

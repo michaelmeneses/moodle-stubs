@@ -8,6 +8,14 @@
  */
 namespace core_reportbuilder\external\systemreports;
 
+use core_external\external_api;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_function_parameters;
+use core_external\external_value;
+use core_external\external_warnings;
+use core_reportbuilder\system_report_factory;
+use core_reportbuilder\external\system_report_data_exporter;
 /**
  * External method for retrieving system report content
  *

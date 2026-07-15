@@ -8,6 +8,7 @@
  */
 namespace Aws\WorkSpacesWeb;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon WorkSpaces Web** service.
  * @method \Aws\Result associateBrowserSettings(array $args = [])

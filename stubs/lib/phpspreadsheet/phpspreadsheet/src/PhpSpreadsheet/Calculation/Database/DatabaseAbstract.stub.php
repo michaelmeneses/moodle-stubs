@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Database;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Internal\WildcardMatch;
 abstract class DatabaseAbstract
 {
     abstract public static function evaluate(array $database, array|null|int|string $field, array $criteria): null|float|int|string;

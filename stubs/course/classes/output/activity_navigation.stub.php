@@ -29,6 +29,9 @@
  */
 namespace core_course\output;
 
+use renderable;
+use templatable;
+use url_select;
 /**
  * The class activity navigation renderable.
  *

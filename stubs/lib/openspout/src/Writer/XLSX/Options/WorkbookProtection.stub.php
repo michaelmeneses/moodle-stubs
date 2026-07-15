@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Writer\XLSX\Options;
 
+use OpenSpout\Writer\XLSX\Helper\PasswordHashHelper;
 final readonly class WorkbookProtection
 {
     public function __construct(public ?string $password = null, public bool $lockStructure = false, public bool $lockWindows = false, public bool $lockRevisions = false)

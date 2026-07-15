@@ -8,6 +8,13 @@
  */
 namespace core\reportbuilder\local\entities;
 
+use core\context_helper;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{select, text};
+use core_reportbuilder\local\report\{column, filter};
+use html_writer;
+use lang_string;
+use stdClass;
 /**
  * Context entity
  *

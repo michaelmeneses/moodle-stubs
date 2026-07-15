@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache\form;
 
+use core_cache\administration_helper;
+use moodleform;
 /**
  * Add store instance form.
  *

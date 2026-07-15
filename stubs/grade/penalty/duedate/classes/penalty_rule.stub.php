@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradepenalty_duedate;
 
+use context;
+use context_system;
+use core\lang_string;
+use core\persistent;
 /**
  * To create/load/update/delete penalty rules.
  *

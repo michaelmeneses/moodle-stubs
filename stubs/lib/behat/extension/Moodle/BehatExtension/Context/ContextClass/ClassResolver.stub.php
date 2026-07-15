@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\Context\ContextClass;
 
+use Behat\Behat\Context\ContextClass\ClassResolver as Resolver;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * Moodle behat context class resolver.

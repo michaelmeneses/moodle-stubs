@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Reader\Wrapper;
 
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Reader\Exception\XMLProcessingException;
+use ZipArchive;
 /**
  * @internal
  */

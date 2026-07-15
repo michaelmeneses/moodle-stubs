@@ -8,6 +8,8 @@
  */
 namespace Psr\Http\Server;
 
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Participant in processing a server request and response.
  *

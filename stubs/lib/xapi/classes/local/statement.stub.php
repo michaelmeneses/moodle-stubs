@@ -29,6 +29,16 @@
  */
 namespace core_xapi\local;
 
+use core_xapi\local\statement\item;
+use core_xapi\local\statement\item_actor;
+use core_xapi\local\statement\item_object;
+use core_xapi\local\statement\item_verb;
+use core_xapi\local\statement\item_result;
+use core_xapi\local\statement\item_attachment;
+use core_xapi\local\statement\item_context;
+use core_xapi\xapi_exception;
+use JsonSerializable;
+use stdClass;
 /**
  * Privacy Subsystem for core_xapi implementing null_provider.
  *

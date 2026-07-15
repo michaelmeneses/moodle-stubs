@@ -8,6 +8,7 @@
  */
 namespace Aws\ResourceGroups;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Resource Groups** service.
  * @method \Aws\Result cancelTagSyncTask(array $args = [])

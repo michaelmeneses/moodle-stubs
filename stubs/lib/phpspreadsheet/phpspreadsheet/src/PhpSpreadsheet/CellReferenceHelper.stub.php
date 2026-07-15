@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet;
 
+use PhpOffice\PhpSpreadsheet\Cell\AddressRange;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 class CellReferenceHelper
 {
     protected string $beforeCellAddress;

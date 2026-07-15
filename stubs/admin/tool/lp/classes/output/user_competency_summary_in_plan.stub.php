@@ -29,6 +29,10 @@
  */
 namespace tool_lp\output;
 
+use renderable;
+use templatable;
+use core_competency\api;
+use tool_lp\external\user_competency_summary_in_plan_exporter;
 /**
  * User competency page class.
  *

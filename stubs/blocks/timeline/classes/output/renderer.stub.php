@@ -29,6 +29,8 @@
  */
 namespace block_timeline\output;
 
+use plugin_renderer_base;
+use renderable;
 /**
  * Timeline block renderer.
  *

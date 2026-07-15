@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\moodlenet;
 
+use backup;
+use backup_controller;
+use cm_info;
 /**
  * Packager to prepare appropriate backup of an activity to share to MoodleNet.
  *

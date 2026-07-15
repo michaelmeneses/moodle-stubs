@@ -8,6 +8,10 @@
  */
 namespace core_role\reportbuilder\datasource;
 
+use core\reportbuilder\local\entities\context;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\user;
+use core_role\reportbuilder\local\entities\{role, role_assignment};
 /**
  * Roles datasource
  *

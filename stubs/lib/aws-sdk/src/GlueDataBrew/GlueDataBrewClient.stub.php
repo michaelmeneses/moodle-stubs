@@ -8,6 +8,7 @@
  */
 namespace Aws\GlueDataBrew;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Glue DataBrew** service.
  * @method \Aws\Result batchDeleteRecipeVersion(array $args = [])

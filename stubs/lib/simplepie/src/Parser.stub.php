@@ -49,6 +49,7 @@
  */
 namespace SimplePie;
 
+use SimplePie\XML\Declaration\Parser as DeclarationParser;
 /**
  * Parses XML into something sane
  *

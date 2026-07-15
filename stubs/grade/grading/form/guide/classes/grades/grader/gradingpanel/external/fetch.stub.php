@@ -8,6 +8,19 @@
  */
 namespace gradingform_guide\grades\grader\gradingpanel\external;
 
+use coding_exception;
+use context;
+use core_user;
+use core_grades\component_gradeitem as gradeitem;
+use core_grades\component_gradeitems;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
+use core_external\external_warnings;
+use moodle_exception;
+use stdClass;
 /**
  * Web services relating to fetching of a marking guide for the grading panel.
  *

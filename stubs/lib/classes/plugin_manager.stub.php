@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use cache;
+use coding_exception;
+use core_component;
+use moodle_exception;
+use moodle_url;
+use progress_trace;
+use stdClass;
 /**
  * Defines classes used for plugins management
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\ApplicationCostProfiler;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Application Cost Profiler** service.
  * @method \Aws\Result deleteReportDefinition(array $args = [])

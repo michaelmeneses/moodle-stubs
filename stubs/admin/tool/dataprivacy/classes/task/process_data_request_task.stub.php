@@ -29,6 +29,16 @@
  */
 namespace tool_dataprivacy\task;
 
+use action_link;
+use coding_exception;
+use context_system;
+use core\message\message;
+use core\task\adhoc_task;
+use core_user;
+use moodle_exception;
+use moodle_url;
+use tool_dataprivacy\api;
+use tool_dataprivacy\data_request;
 /**
  * Class that processes an approved data request and prepares/deletes the user's data.
  *

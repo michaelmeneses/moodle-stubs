@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield;
 
+use context_system;
+use moodle_exception;
+use moodle_url;
+use stdClass;
+use tool_brickfield\local\tool\filter;
 /**
  * Provides the Brickfield Accessibility toolkit API.
  *

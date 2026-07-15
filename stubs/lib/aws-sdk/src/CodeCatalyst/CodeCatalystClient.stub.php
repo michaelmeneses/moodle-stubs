@@ -8,6 +8,7 @@
  */
 namespace Aws\CodeCatalyst;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon CodeCatalyst** service.
  * @method \Aws\Result createAccessToken(array $args = [])

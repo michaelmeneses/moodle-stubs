@@ -8,6 +8,9 @@
  */
 namespace Aws;
 
+use Aws\EndpointDiscovery\Configuration;
+use Closure;
+use Psr\Http\Message\RequestInterface;
 /**
  * Builds and injects the user agent header values.
  * This middleware must be appended into step where all the

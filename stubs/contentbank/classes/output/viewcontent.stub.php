@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_contentbank\output;
 
+use context;
+use core_contentbank\content;
+use core_contentbank\contenttype;
+use moodle_url;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * Class containing data for the content view.
  *

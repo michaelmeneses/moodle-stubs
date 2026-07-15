@@ -29,6 +29,7 @@
  */
 namespace repository_onedrive;
 
+use core\persistent;
 /**
  * Class for loading/storing issuer from the DB
  *

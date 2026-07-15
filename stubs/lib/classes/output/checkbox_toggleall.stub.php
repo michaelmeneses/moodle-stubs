@@ -29,6 +29,7 @@
  */
 namespace core\output;
 
+use stdClass;
 /**
  * The checkbox-toggleall renderable class.
  *

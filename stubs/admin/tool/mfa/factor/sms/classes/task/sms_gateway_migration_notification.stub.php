@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace factor_sms\task;
 
+use core\task\adhoc_task;
+use moodle_url;
 /**
  * Notification for admins to notify about the migration of SMS setup from MFA to SMS gateway plugins.
  *

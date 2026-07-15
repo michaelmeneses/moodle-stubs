@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_tagquestion\external;
 
+use core_tag_tag;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_single_structure;
+use core_external\external_value;
+use qbank_tagquestion\form\tags_form;
 /**
  * External qbank_tagquestion API.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\htmlchecker\common;
 
+use tool_brickfield\local\htmlchecker\brickfield_accessibility_report_item;
+use tool_brickfield\manager;
 /**
  * This handles importing DOM objects, adding items to the report and provides a few DOM-traversing methods
  *

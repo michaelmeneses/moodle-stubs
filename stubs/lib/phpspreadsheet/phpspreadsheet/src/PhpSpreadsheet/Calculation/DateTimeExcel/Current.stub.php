@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\DateTimeExcel;
 
+use DateTime;
+use DateTimeImmutable;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
 class Current
 {
     /**

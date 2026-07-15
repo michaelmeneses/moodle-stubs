@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\task;
 
+use core\progress\db_updater;
+use core\progress\stored;
+use core\output\stored_progress_bar;
 /**
  * Trait to use in tasks to automatically add stored progress functionality.
  *

@@ -31,6 +31,8 @@
  */
 namespace core_badges;
 
+use context_system;
+use curl;
 /**
  * Represent a single method for the remote api and this class using for Open Badge API v2.1 methods.
  *

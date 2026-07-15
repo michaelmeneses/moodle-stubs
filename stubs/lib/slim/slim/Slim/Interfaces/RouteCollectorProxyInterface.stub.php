@@ -8,6 +8,9 @@
  */
 namespace Slim\Interfaces;
 
+use Psr\Container\ContainerInterface;
+use Psr\Http\Message\ResponseFactoryInterface;
+use Psr\Http\Message\UriInterface;
 interface RouteCollectorProxyInterface
 {
     public function getResponseFactory(): ResponseFactoryInterface;

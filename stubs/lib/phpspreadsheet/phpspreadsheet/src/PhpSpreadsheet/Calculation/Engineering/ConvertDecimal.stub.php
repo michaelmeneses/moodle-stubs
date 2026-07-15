@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Engineering;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
 class ConvertDecimal extends ConvertBase
 {
     const LARGEST_OCTAL_IN_DECIMAL = 536870911;

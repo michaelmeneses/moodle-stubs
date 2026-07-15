@@ -49,6 +49,9 @@
  */
 namespace SimplePie;
 
+use SimplePie\Content\Type\Sniffer;
+use SimplePie\Parse\Date;
+use SimplePie\XML\Declaration\Parser as DeclarationParser;
 /**
  * Handles creating objects and calling methods
  *

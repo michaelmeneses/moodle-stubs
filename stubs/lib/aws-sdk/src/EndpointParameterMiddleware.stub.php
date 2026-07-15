@@ -8,6 +8,9 @@
  */
 namespace Aws;
 
+use Aws\Api\Service;
+use Psr\Http\Message\RequestInterface;
+use Psr\Log\InvalidArgumentException;
 /**
  * Used to update the host based on a modeled endpoint trait
  *

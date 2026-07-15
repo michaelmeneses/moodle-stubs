@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\exception\coding_exception;
+use moodle_page;
 /**
  * Basis for all plugin renderers.
  *

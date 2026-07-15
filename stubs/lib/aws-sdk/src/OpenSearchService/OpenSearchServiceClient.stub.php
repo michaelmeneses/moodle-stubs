@@ -8,6 +8,7 @@
  */
 namespace Aws\OpenSearchService;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon OpenSearch Service** service.
  * @method \Aws\Result acceptInboundConnection(array $args = [])

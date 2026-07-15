@@ -30,6 +30,7 @@
  */
 namespace workshopform_rubric\privacy;
 
+use core_privacy\local\request\writer;
 /**
  * Privacy API implementation for the Rubric strategy.
  *

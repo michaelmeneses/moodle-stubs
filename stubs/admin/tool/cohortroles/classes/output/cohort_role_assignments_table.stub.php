@@ -29,6 +29,11 @@
  */
 namespace tool_cohortroles\output;
 
+use context_helper;
+use context_system;
+use html_writer;
+use moodle_url;
+use table_sql;
 /**
  * Cohort role assignments table.
  *

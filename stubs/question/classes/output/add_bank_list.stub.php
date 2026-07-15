@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\output;
 
+use action_link;
+use core_question\local\bank\question_bank_helper;
+use renderer_base;
+use stdClass;
 /**
  * Create a list of 'Add another question bank' links for plugins that support FEATURE_PUBLISHES_QUESTIONS.
  *

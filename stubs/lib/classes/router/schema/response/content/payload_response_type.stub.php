@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\response\content;
 
+use core\router\schema\openapi_base;
+use core\router\schema\specification;
 /**
  * A standard Moodle response for all supported payload types.
  *

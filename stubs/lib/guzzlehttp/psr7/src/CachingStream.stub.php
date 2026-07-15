@@ -8,6 +8,7 @@
  */
 namespace GuzzleHttp\Psr7;
 
+use Psr\Http\Message\StreamInterface;
 /**
  * Stream decorator that can cache previously read bytes from a sequentially
  * read stream.

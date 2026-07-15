@@ -29,6 +29,9 @@
  */
 namespace tool_lp;
 
+use core_competency\api;
+use core_competency\plan;
+use core_competency\template;
 /**
  * Template statistics class.
  *

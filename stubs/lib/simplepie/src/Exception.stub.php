@@ -49,6 +49,7 @@
  */
 namespace SimplePie;
 
+use Exception as NativeException;
 /**
  * General SimplePie exception class
  *

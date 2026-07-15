@@ -17,6 +17,7 @@
  */
 namespace ScssPhp\ScssPhp\SourceMap;
 
+use ScssPhp\ScssPhp\Exception\CompilerException;
 /**
  * Source Map Generator
  *

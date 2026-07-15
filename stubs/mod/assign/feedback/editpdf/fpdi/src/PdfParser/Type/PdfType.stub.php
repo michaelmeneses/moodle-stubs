@@ -15,6 +15,9 @@
  */
 namespace setasign\Fpdi\PdfParser\Type;
 
+use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use setasign\Fpdi\PdfParser\PdfParser;
+use setasign\Fpdi\PdfParser\PdfParserException;
 /**
  * A class defining a PDF data type
  */

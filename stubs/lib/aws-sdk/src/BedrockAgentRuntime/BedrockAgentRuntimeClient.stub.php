@@ -8,6 +8,7 @@
  */
 namespace Aws\BedrockAgentRuntime;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Agents for Amazon Bedrock Runtime** service.
  * @method \Aws\Result createInvocation(array $args = [])

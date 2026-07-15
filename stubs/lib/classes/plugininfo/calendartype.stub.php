@@ -29,6 +29,7 @@
  */
 namespace core\plugininfo;
 
+use part_of_admin_tree, admin_settingpage;
 /**
  * Class for calendar type plugins.
  */

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_viewquestionname;
 
+use core\output\datafilter;
 /**
  * Filter condition for filtering on the question name
  *

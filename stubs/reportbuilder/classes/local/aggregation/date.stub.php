@@ -8,6 +8,10 @@
  */
 namespace core_reportbuilder\local\aggregation;
 
+use core\{clock, di};
+use core\lang_string;
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\column;
 /**
  * Column date aggregation type
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\DLM;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Data Lifecycle Manager** service.
  * @method \Aws\Result createLifecyclePolicy(array $args = [])

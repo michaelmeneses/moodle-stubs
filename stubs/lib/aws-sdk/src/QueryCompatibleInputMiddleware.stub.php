@@ -8,6 +8,12 @@
  */
 namespace Aws;
 
+use Aws\Api\ListShape;
+use Aws\Api\MapShape;
+use Aws\Api\Service;
+use Aws\Api\Shape;
+use Aws\Api\StructureShape;
+use Closure;
 /**
  * Inspects command input values and casts them to their modeled type.
  * This covers query compatible services which have migrated from query

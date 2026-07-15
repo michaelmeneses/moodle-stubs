@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn;
 
+use cache;
+use context;
+use context_course;
+use context_module;
+use core\persistent;
+use mod_bigbluebuttonbn\local\proxy\recording_proxy;
+use moodle_url;
+use stdClass;
 /**
  * The recording entity.
  *

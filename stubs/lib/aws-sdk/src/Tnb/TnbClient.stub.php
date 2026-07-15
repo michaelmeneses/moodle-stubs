@@ -8,6 +8,7 @@
  */
 namespace Aws\Tnb;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Telco Network Builder** service.
  * @method \Aws\Result cancelSolNetworkOperation(array $args = [])

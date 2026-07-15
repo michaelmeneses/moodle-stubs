@@ -8,6 +8,9 @@
  */
 namespace lbuchs\WebAuthn\Attestation;
 
+use lbuchs\WebAuthn\WebAuthnException;
+use lbuchs\WebAuthn\CBOR\CborDecoder;
+use lbuchs\WebAuthn\Binary\ByteBuffer;
 /**
  * @author Lukas Buchs
  * @license https://github.com/lbuchs/WebAuthn/blob/master/LICENSE MIT

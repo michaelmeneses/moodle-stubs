@@ -8,6 +8,7 @@
  */
 namespace Aws\MediaConnect;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS MediaConnect** service.
  * @method \Aws\Result addBridgeOutputs(array $args = [])

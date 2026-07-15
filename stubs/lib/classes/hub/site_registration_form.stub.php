@@ -29,6 +29,10 @@
  */
 namespace core\hub;
 
+use context_course;
+use stdClass;
+use html_writer;
+use moodle_url;
 /**
  * The site registration form. Information will be sent to the sites directory.
  *

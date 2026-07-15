@@ -30,6 +30,8 @@
  */
 namespace ltiservice_toolproxy\local\resources;
 
+// TODO: Switch to core oauthlib once implemented - MDL-30149.
+use moodle\mod\lti as lti;
 /**
  * A resource implementing the Tool Proxy.
  *

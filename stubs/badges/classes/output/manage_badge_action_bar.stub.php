@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\output;
 
+use core_badges\badge;
+use moodle_url;
+use renderer_base;
+use single_button;
+use moodle_page;
+use url_select;
 /**
  * Class manage_badge_action_bar - Display the action bar
  *

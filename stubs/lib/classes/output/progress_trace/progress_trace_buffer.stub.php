@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\progress_trace;
 
+use core\output\progress_trace;
 /**
  * Special type of trace that can be used for catching of output of other traces.
  *

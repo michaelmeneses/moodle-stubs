@@ -8,6 +8,14 @@
  */
 namespace core_reportbuilder\local\helpers;
 
+use cache;
+use context;
+use context_system;
+use core_collator;
+use core_component;
+use core_reportbuilder\local\audiences\base;
+use core_reportbuilder\local\models\{audience as audience_model, schedule};
+use invalid_parameter_exception;
 /**
  * Class containing report audience helper methods
  *

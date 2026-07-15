@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\overview;
 
+use cm_info;
+use core\output\named_templatable;
+use core\output\renderable;
+use core\output\renderer_base;
+use core_courseformat\base as course_format;
+use stdClass;
 /**
  * Class activityname
  *

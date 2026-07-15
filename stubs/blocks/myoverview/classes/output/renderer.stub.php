@@ -29,6 +29,8 @@
  */
 namespace block_myoverview\output;
 
+use plugin_renderer_base;
+use renderable;
 /**
  * myoverview block renderer
  *

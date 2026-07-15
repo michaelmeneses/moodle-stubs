@@ -29,6 +29,9 @@
  */
 namespace core;
 
+use coding_exception;
+use JsonSerializable;
+use renderable;
 /**
  * Chart base class.
  *

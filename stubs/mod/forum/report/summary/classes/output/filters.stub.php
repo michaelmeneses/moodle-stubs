@@ -29,6 +29,13 @@
  */
 namespace forumreport_summary\output;
 
+use context_course;
+use moodle_url;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
+use forumreport_summary;
 /**
  * Forum summary report filters renderable.
  *

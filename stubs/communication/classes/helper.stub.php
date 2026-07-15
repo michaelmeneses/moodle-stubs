@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_communication;
 
+use context;
+use stdClass;
 /**
  * Helper method for communication.
  *

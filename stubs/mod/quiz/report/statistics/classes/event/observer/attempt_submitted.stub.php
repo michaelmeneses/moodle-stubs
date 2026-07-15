@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace quiz_statistics\event\observer;
 
+use core\check\performance\debugging;
+use quiz_statistics\task\recalculate;
 /**
  * Event observer for \mod_quiz\event\attempt_submitted
  *

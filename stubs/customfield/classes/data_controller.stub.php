@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_customfield;
 
+use backup_nested_element;
+use core_customfield\output\field_data;
 /**
  * Base class for custom fields data controllers
  *

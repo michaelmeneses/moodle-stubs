@@ -8,6 +8,7 @@
  */
 namespace Aws\Arn;
 
+use Aws\Arn\Exception\InvalidArnException;
 /**
  * @internal
  */

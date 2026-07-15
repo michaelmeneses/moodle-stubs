@@ -8,6 +8,7 @@
  */
 namespace JmesPath;
 
+use JmesPath\Lexer as T;
 /**
  * JMESPath Pratt parser
  * @link http://hall.org.ua/halls/wizzard/pdf/Vaughan.Pratt.TDOP.pdf

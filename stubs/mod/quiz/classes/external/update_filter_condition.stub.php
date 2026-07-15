@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\external;
 
+use external_function_parameters;
+use external_single_structure;
+use external_value;
+use external_api;
+use stdClass;
 /**
  * Update the filter condition for a random question.
  *

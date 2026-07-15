@@ -29,3 +29,5 @@
  */
 define('NO_DEBUG_DISPLAY', true);
 define('NO_MOODLE_COOKIES', true);
+use mod_lti\local\ltiopenid\registration_helper;
+use mod_lti\local\ltiopenid\registration_exception;

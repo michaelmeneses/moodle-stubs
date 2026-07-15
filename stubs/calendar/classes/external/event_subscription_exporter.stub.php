@@ -29,6 +29,8 @@
  */
 namespace core_calendar\external;
 
+use core\external\exporter;
+use core_calendar\local\event\entities\event_interface;
 /**
  * Class for displaying a calendar event's subscription.
  *

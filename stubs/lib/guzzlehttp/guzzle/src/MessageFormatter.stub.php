@@ -8,6 +8,9 @@
  */
 namespace GuzzleHttp;
 
+use Psr\Http\Message\MessageInterface;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Formats log messages using variable substitutions for requests, responses,
  * and other transactional data.

@@ -8,6 +8,13 @@
  */
 namespace PhpXmlRpc;
 
+use PhpXmlRpc\Exception\HttpException;
+use PhpXmlRpc\Helper\Http;
+use PhpXmlRpc\Helper\XMLParser;
+use PhpXmlRpc\Traits\CharsetEncoderAware;
+use PhpXmlRpc\Traits\DeprecationLogger;
+use PhpXmlRpc\Traits\ParserAware;
+use PhpXmlRpc\Traits\PayloadBearer;
 /**
  * This class provides the representation of a request to an XML-RPC server.
  * A client sends a PhpXmlrpc\Request to a server, and receives back an PhpXmlrpc\Response.

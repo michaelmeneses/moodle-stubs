@@ -29,6 +29,10 @@
  */
 namespace mod_forum\local\exporters;
 
+use mod_forum\local\entities\author as author_entity;
+use mod_forum\local\exporters\group as group_exporter;
+use core\external\exporter;
+use renderer_base;
 /**
  * Author exporter.
  *

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\form;
 
+use core_badges\backpack_api;
 /**
  * Backpack form class.
  *

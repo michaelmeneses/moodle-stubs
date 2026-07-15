@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\parameters;
 
+use core\exception\coding_exception;
+use core\param;
+use core\router\schema\parameter;
+use core\router\schema\specification;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Routing query parameter for validation.
  *

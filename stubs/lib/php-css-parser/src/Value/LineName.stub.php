@@ -8,6 +8,10 @@
  */
 namespace Sabberworm\CSS\Value;
 
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Parsing\ParserState;
+use Sabberworm\CSS\Parsing\UnexpectedEOFException;
+use Sabberworm\CSS\Parsing\UnexpectedTokenException;
 class LineName extends ValueList
 {
     /**

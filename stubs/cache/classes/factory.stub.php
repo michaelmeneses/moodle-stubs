@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache;
 
+use core\exception\coding_exception;
+use cache_config_testing;
+use cache_phpunit_factory;
 /**
  * The cache factory class.
  *

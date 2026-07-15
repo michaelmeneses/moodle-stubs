@@ -29,6 +29,10 @@
  */
 namespace tool_uploaduser;
 
+use context_system;
+use context_coursecat;
+use core_course_category;
+use tool_uploaduser\local\field_value_validators;
 /**
  * Process CSV file with users data, this will create/update users, enrol them into courses, etc
  *

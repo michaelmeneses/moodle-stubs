@@ -29,6 +29,10 @@
  */
 namespace core\moodlenet;
 
+use html_writer;
+use moodle_url;
+use stdClass;
+use table_sql;
 /**
  * MoodleNet share progress table.
  *

@@ -29,6 +29,10 @@
  */
 namespace core_customfield\output;
 
+use core_customfield\api;
+use core_customfield\handler;
+use renderable;
+use templatable;
 /**
  * Class management
  *

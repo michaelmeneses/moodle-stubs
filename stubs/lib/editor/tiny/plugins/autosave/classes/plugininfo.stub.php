@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tiny_autosave;
 
+use context;
+use editor_tiny\plugin;
+use editor_tiny\plugin_with_configuration;
 /**
  * Tiny autosave plugin for Moodle.
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\AppRunner;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS App Runner** service.
  * @method \Aws\Result associateCustomDomain(array $args = [])

@@ -29,6 +29,10 @@
  */
 namespace repository_nextcloud;
 
+use context;
+use core\oauth2\api;
+use core\notification;
+use repository_exception;
 /**
  * Manages the creation and usage of access controlled links.
  *

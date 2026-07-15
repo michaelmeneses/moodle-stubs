@@ -29,6 +29,13 @@
  */
 namespace core_portfolio\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\context;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\approved_userlist;
 /**
  * Provider for the portfolio API.
  *

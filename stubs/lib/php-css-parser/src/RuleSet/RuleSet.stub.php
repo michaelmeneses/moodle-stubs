@@ -8,6 +8,14 @@
  */
 namespace Sabberworm\CSS\RuleSet;
 
+use Sabberworm\CSS\Comment\Comment;
+use Sabberworm\CSS\Comment\Commentable;
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Parsing\ParserState;
+use Sabberworm\CSS\Parsing\UnexpectedEOFException;
+use Sabberworm\CSS\Parsing\UnexpectedTokenException;
+use Sabberworm\CSS\Renderable;
+use Sabberworm\CSS\Rule\Rule;
 /**
  * This class is a container for individual 'Rule's.
  *

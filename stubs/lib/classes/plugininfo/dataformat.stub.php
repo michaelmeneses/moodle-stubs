@@ -29,6 +29,10 @@
  */
 namespace core\plugininfo;
 
+use admin_settingpage;
+use core_plugin_manager;
+use moodle_url;
+use part_of_admin_tree;
 /**
  * Class for dataformats
  *

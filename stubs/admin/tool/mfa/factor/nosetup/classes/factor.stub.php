@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace factor_nosetup;
 
+use stdClass;
+use tool_mfa\local\factor\object_factor_base;
 /**
  * No setup factor class.
  *

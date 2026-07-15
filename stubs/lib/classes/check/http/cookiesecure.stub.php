@@ -33,6 +33,8 @@
  */
 namespace core\check\http;
 
+use core\check\check;
+use core\check\result;
 /**
  * Verifies if https enabled only secure cookies allowed
  *

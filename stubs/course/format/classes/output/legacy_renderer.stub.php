@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output;
 
+use core_courseformat\output\section_renderer;
 /**
  * Legacy course format renderer.
  *

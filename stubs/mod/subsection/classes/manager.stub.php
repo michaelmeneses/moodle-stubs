@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_subsection;
 
+use cm_info;
+use context_module;
+use completion_info;
+use core_courseformat\formatactions;
+use mod_subsection\event\course_module_viewed;
+use moodle_page;
+use section_info;
+use stdClass;
 /**
  * Class manager for subsection
  *

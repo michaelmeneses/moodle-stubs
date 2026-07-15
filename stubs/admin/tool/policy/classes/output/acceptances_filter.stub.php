@@ -30,6 +30,8 @@
  */
 namespace tool_policy\output;
 
+use tool_policy\api;
+use tool_policy\policy_version;
 /**
  * Implements the widget allowing to filter the acceptance records.
  *

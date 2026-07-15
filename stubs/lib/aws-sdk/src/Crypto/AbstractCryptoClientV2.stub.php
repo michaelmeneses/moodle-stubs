@@ -8,6 +8,8 @@
  */
 namespace Aws\Crypto;
 
+use Aws\Crypto\Cipher\CipherMethod;
+use GuzzleHttp\Psr7\Stream;
 /**
  * @internal
  */

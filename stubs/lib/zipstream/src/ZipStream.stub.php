@@ -8,6 +8,16 @@
  */
 namespace ZipStream;
 
+use Closure;
+use DateTimeImmutable;
+use DateTimeInterface;
+use GuzzleHttp\Psr7\StreamWrapper;
+use Psr\Http\Message\StreamInterface;
+use RuntimeException;
+use ZipStream\Exception\FileNotFoundException;
+use ZipStream\Exception\FileNotReadableException;
+use ZipStream\Exception\OverflowException;
+use ZipStream\Exception\ResourceActionException;
 /**
  * Streamed, dynamically generated zip archives.
  *

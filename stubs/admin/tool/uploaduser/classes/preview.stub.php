@@ -29,6 +29,7 @@
  */
 namespace tool_uploaduser;
 
+use tool_uploaduser\local\field_value_validators;
 /**
  * Display the preview of a CSV file
  *

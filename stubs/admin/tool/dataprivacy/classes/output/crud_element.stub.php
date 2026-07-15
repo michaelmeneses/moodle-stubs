@@ -29,6 +29,12 @@
  */
 namespace tool_dataprivacy\output;
 
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
+use tool_dataprivacy\external\purpose_exporter;
+use tool_dataprivacy\external\category_exporter;
 /**
  * Abstract renderer for independent renderable elements.
  *

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\session;
 
+use core\context;
+use core\context\course as context_course;
+use core\context\system as context_system;
+use core\session\manager as sessionmanager;
+use stdClass;
 /**
  * Helper functions for the 'login as' feature.
  *

@@ -49,6 +49,7 @@
  */
 namespace SimplePie;
 
+use SimplePie\XML\Declaration\Parser;
 /**
  * Miscellaneous utilities
  *

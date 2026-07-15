@@ -8,6 +8,12 @@
  */
 namespace OpenSpout\Reader\ODS;
 
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Common\Helper\Escaper\ODS;
+use OpenSpout\Reader\AbstractReader;
+use OpenSpout\Reader\Exception\NoSheetsFoundException;
+use OpenSpout\Reader\ODS\Helper\SettingsHelper;
+use ZipArchive;
 /**
  * @extends AbstractReader<SheetIterator>
  */

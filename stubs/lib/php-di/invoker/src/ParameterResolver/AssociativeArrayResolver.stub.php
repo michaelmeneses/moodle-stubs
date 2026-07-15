@@ -8,6 +8,7 @@
  */
 namespace Invoker\ParameterResolver;
 
+use ReflectionFunctionAbstract;
 /**
  * Tries to map an associative array (string-indexed) to the parameter names.
  *

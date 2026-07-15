@@ -8,6 +8,7 @@
  */
 namespace PhpXmlRpc\Traits;
 
+use PhpXmlRpc\Helper\Charset;
 trait CharsetEncoderAware
 {
     protected static $charsetEncoder;

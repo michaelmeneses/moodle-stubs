@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_subsection;
 
+use context_course;
+use section_info;
 /**
  * Class to check permissions for subsection module.
  *

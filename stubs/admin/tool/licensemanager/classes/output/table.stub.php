@@ -29,6 +29,11 @@
  */
 namespace tool_licensemanager\output;
 
+use html_table;
+use html_table_cell;
+use html_table_row;
+use html_writer;
+use license_manager;
 /**
  * Renderable for display of license manager table.
  *

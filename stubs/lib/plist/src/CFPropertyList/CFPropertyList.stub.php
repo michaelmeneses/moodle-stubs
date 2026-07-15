@@ -49,6 +49,11 @@
  */
 namespace CFPropertyList;
 
+use Iterator;
+use DOMDocument;
+use DOMException;
+use DOMImplementation;
+use DOMNode;
 /**
  * Property List
  * Interface for handling reading, editing and saving Property Lists as defined by Apple.

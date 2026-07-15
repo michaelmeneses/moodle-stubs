@@ -8,6 +8,10 @@
  */
 namespace core_admin\reportbuilder\datasource;
 
+use core_admin\reportbuilder\local\entities\task_log;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\filters\select;
 /**
  * Task logs datasource
  *

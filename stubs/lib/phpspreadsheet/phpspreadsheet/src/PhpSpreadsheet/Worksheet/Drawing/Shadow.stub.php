@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet\Drawing;
 
+use PhpOffice\PhpSpreadsheet\IComparable;
+use PhpOffice\PhpSpreadsheet\Style\Color;
 class Shadow implements IComparable
 {
     // Shadow alignment

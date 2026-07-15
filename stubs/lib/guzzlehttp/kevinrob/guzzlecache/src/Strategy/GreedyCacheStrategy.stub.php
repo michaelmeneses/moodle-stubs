@@ -8,6 +8,11 @@
  */
 namespace Kevinrob\GuzzleCache\Strategy;
 
+use Kevinrob\GuzzleCache\CacheEntry;
+use Kevinrob\GuzzleCache\KeyValueHttpHeader;
+use Kevinrob\GuzzleCache\Storage\CacheStorageInterface;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * This strategy represents a "greedy" HTTP client.
  *

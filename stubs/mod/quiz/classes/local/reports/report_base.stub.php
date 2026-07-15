@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\local\reports;
 
+use context;
+use context_module;
+use stdClass;
 /**
  * Base class for quiz report plugins.
  *

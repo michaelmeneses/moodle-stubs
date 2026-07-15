@@ -29,6 +29,9 @@
  */
 namespace mod_lesson\output;
 
+use moodle_url;
+use templatable;
+use renderable;
 /**
  * Output the override action menu for this activity.
  *

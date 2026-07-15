@@ -8,6 +8,8 @@
  */
 namespace DI\Definition\Source;
 
+use DI\Definition\Definition;
+use DI\Definition\Exception\InvalidDefinition;
 /**
  * Source of definitions for entries of the container.
  *

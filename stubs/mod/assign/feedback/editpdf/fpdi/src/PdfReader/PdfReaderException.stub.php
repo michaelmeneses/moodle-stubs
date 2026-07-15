@@ -15,6 +15,7 @@
  */
 namespace setasign\Fpdi\PdfReader;
 
+use setasign\Fpdi\FpdiException;
 /**
  * Exception for the pdf reader class
  */

@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\Wizard;
 
+use PhpOffice\PhpSpreadsheet\Exception;
+use PhpOffice\PhpSpreadsheet\Style\Conditional;
 /**
  * @method DateValue yesterday()
  * @method DateValue today()

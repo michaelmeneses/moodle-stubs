@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use Iterator as NativeIterator;
+use PhpOffice\PhpSpreadsheet\Cell\Cell;
+use PhpOffice\PhpSpreadsheet\Collection\Cells;
 /**
  * @template TKey
  *

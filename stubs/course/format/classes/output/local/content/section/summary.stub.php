@@ -29,6 +29,13 @@
  */
 namespace core_courseformat\output\local\content\section;
 
+use context_course;
+use core\output\named_templatable;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\courseformat_named_templatable;
+use renderable;
+use section_info;
+use stdClass;
 /**
  * Base class to render a course section summary.
  *

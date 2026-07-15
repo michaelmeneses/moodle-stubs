@@ -30,6 +30,9 @@
  */
 namespace quizaccess_seb\local\table;
 
+use quizaccess_seb\helper;
+use quizaccess_seb\template;
+use quizaccess_seb\template_controller;
 /**
  * Templates table.
  *

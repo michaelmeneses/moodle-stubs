@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qtype_ordering\output;
 
+use templatable;
+use renderable;
+use question_attempt;
 /**
  * The base class for the renderables that are used to output the components of the ordering question.
  *

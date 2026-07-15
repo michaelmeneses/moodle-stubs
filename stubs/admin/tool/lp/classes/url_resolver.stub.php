@@ -29,6 +29,7 @@
  */
 namespace tool_lp;
 
+use moodle_url;
 /**
  * URL resolver class.
  *

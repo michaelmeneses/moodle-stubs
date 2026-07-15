@@ -30,6 +30,16 @@
  */
 namespace quizaccess_seb\privacy;
 
+use context;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\approved_userlist;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\writer;
+use quizaccess_seb\seb_quiz_settings;
+use quizaccess_seb\template;
 /**
  * Privacy Subsystem implementation for quizaccess_seb.
  *

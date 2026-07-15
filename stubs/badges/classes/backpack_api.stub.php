@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges;
 
+use cache;
+use coding_exception;
+use core_badges\external\issuer_exporter;
+use core_badges\external\badgeclass_exporter;
+use stdClass;
+use context_system;
 define('BADGE_ACCESS_TOKEN', 'access');
 define('BADGE_USER_ID_TOKEN', 'user_id');
 define('BADGE_BACKPACK_ID_TOKEN', 'backpack_id');

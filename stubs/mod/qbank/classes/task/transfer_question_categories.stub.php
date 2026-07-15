@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_qbank\task;
 
+use context_system;
+use core\context;
+use core\task\adhoc_task;
+use core\task\manager;
+use core_course_category;
+use core_question\local\bank\question_bank_helper;
+use stdClass;
 /**
  * This script transfers question categories at CONTEXT_SITE, CONTEXT_COURSE, & CONTEXT_COURSECAT to a new qbank instance
  * context.

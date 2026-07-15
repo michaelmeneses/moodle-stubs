@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Writer\ODS\Manager\Style;
 
+use OpenSpout\Common\Entity\Style\Style;
+use OpenSpout\Writer\Common\Manager\Style\AbstractStyleRegistry as CommonStyleRegistry;
 /**
  * @internal
  */

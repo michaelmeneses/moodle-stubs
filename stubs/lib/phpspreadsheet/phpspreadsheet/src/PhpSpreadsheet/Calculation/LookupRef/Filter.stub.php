@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\LookupRef;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
 class Filter
 {
     public static function filter(array $lookupArray, mixed $matchArray, mixed $ifEmpty = null): mixed

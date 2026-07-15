@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_azureai;
 
+use core_ai\hook\after_ai_provider_form_hook;
 /**
  * Hook listener for Azure AI provider.
  *

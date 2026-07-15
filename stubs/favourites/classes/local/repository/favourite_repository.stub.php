@@ -29,6 +29,7 @@
  */
 namespace core_favourites\local\repository;
 
+use core_favourites\local\entity\favourite;
 /**
  * Class favourite_repository.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\task;
 
+use core\task\scheduled_task;
+use mod_quiz\notification_helper;
 /**
  * Scheduled task to queue tasks for notifying about quizzes with an approaching open date.
  *

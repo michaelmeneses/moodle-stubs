@@ -29,6 +29,11 @@
  */
 namespace core_calendar\external;
 
+use core\external\exporter;
+use core_calendar\output\humantimeperiod;
+use renderer_base;
+use core\url;
+use core_calendar\local\event\container;
 /**
  * Class for displaying the day view.
  *

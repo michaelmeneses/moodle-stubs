@@ -8,6 +8,12 @@
  */
 namespace customfield_number\external;
 
+use core\exception\invalid_parameter_exception;
+use core_external\external_function_parameters;
+use core_external\external_single_structure;
+use core_external\external_api;
+use core_external\external_value;
+use customfield_number\provider_base;
 /**
  * Implementation of web service customfield_number_recalculate_value
  *

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradepenalty_duedate\table;
 
+use context;
+use context_system;
+use core_table\sql_table;
 /**
  * Table for penalty rule.
  *

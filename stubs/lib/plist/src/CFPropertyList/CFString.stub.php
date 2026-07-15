@@ -50,6 +50,9 @@
  */
 namespace CFPropertyList;
 
+use DOMDocument;
+use Iterator;
+use ArrayAccess;
 /**
  * String Type for CFPropertyList as defined by Apple.
  */

@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_xapi\external;
 
+use core_xapi\handler;
+use core_xapi\xapi_exception;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_value;
+use core_xapi\iri;
+use core_xapi\local\statement\item_agent;
 /**
  * This is the external API for generic xAPI get all states ids.
  *

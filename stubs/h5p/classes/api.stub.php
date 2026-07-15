@@ -29,6 +29,8 @@
  */
 namespace core_h5p;
 
+use core\lock\lock_config;
+use Moodle\H5PCore;
 /**
  * Contains API class for the H5P area.
  *

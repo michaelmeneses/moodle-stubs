@@ -30,6 +30,8 @@
  */
 namespace mod_bigbluebuttonbn\analytics\indicator;
 
+use cm_info;
+use lang_string;
 /**
  * Cognitive depth indicator - bigbluebuttonbn.
  *

@@ -22,6 +22,41 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use breadcrumb_navigation_node;
+use cm_info;
+use core\hook\output\after_http_headers;
+use core_block\output\block_contents;
+use core_block\output\block_move_target;
+use core_completion\cm_completion_details;
+use core\context;
+use core_tag\output\taglist;
+use core_text;
+use core_useragent;
+use core\check\check as check_check;
+use core\check\result as check_result;
+use core\context\system as context_system;
+use core\context\course as context_course;
+use core\di;
+use core\exception\coding_exception;
+use core\hook\manager as hook_manager;
+use core\hook\output\after_standard_main_region_html_generation;
+use core\hook\output\before_footer_html_generation;
+use core\hook\output\before_html_attributes;
+use core\hook\output\before_http_headers;
+use core\hook\output\before_standard_footer_html_generation;
+use core\hook\output\before_standard_top_of_body_html_generation;
+use core\output\actions\component_action;
+use core\output\actions\popup_action;
+use core\output\local\properties\badge;
+use core\plugin_manager;
+use moodleform;
+use moodle_page;
+use moodle_url;
+use navigation_node;
+use rating;
+use rating_manager;
+use stdClass;
+use HTML_QuickForm_element;
 /**
  * The standard implementation of the core_renderer interface.
  *

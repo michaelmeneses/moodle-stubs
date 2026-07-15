@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_admin\admin;
 
+use admin_setting;
 /**
  * Render a template as part of other admin settings.
  * Use for rendering additional html in settings.

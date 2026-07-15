@@ -8,6 +8,11 @@
  */
 namespace GuzzleHttp;
 
+use GuzzleHttp\Promise as P;
+use GuzzleHttp\Promise\EachPromise;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Promise\PromisorInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * Sends an iterator of requests concurrently using a capped pool size.
  *

@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_columnsortorder\output;
 
+use core_reportbuilder\local\models\column;
+use qbank_columnsortorder\column_manager;
+use moodle_url;
+use renderer_base;
 /**
  * Renderable for the "add column" dropdown list
  *

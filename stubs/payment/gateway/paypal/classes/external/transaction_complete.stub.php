@@ -8,6 +8,12 @@
  */
 namespace paygw_paypal\external;
 
+use core_external\external_api;
+use core_external\external_value;
+use core_external\external_function_parameters;
+use core_payment\helper;
+use core_payment\helper as payment_helper;
+use paygw_paypal\paypal_helper;
 class transaction_complete extends external_api
 {
     /**

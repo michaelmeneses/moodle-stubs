@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\external;
 
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_value;
+use moodle_exception;
+use coding_exception;
+use context_course;
+use core_courseformat\base as course_format;
 /**
  * External service to create a new module instance in the course.
  *

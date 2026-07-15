@@ -8,6 +8,7 @@
  */
 namespace Aws\AmplifyUIBuilder;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Amplify UI Builder** service.
  * @method \Aws\Result createComponent(array $args = [])

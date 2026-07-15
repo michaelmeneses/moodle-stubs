@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared;
 
+use DateTimeZone;
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
 class TimeZone
 {
     /**

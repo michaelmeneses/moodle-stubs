@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\task;
 
+use core\task\adhoc_task;
 /**
  * Asynchronously regrade a course.
  *

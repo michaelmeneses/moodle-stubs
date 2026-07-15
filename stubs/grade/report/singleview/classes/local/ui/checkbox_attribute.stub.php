@@ -29,6 +29,7 @@
  */
 namespace gradereport_singleview\local\ui;
 
+use html_writer;
 /**
  * A checkbox ui element.
  *

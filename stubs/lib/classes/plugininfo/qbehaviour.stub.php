@@ -29,6 +29,8 @@
  */
 namespace core\plugininfo;
 
+use core_plugin_manager;
+use moodle_url;
 /**
  * Class for question behaviours.
  */

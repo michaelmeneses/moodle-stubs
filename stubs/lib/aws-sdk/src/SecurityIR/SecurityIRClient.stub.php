@@ -8,6 +8,7 @@
  */
 namespace Aws\SecurityIR;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Security Incident Response** service.
  * @method \Aws\Result batchGetMemberAccountDetails(array $args = [])

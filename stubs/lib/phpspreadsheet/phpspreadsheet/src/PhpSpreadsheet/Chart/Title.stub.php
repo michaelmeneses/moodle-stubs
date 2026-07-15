@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Chart;
 
+use PhpOffice\PhpSpreadsheet\RichText\RichText;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Style\Font;
 class Title
 {
     public const TITLE_CELL_REFERENCE = '/^(.*)!' . '[$]([A-Z]{1,3})' . '[$](\d{1,7})$/i';

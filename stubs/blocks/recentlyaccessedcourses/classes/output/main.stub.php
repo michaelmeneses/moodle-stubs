@@ -29,6 +29,9 @@
  */
 namespace block_recentlyaccessedcourses\output;
 
+use renderable;
+use renderer_base;
+use templatable;
 /**
  * Class containing data for Recently accessed courses block.
  *

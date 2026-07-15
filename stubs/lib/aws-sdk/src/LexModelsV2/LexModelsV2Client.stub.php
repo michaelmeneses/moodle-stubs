@@ -8,6 +8,9 @@
  */
 namespace Aws\LexModelsV2;
 
+use Aws\AwsClient;
+use Aws\CommandInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * This client is used to interact with the **Amazon Lex Model Building V2** service.
  * @method \Aws\Result batchCreateCustomVocabularyItem(array $args = [])

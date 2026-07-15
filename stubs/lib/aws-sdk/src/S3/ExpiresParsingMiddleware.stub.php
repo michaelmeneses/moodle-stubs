@@ -8,6 +8,9 @@
  */
 namespace Aws\S3;
 
+use Aws\CommandInterface;
+use Aws\ResultInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * Logs a warning when the `expires` header
  * fails to be parsed.

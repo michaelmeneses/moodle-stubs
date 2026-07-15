@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\htmlchecker\common;
 
+use tool_brickfield\local\htmlchecker\brickfield_accessibility;
 /**
  * This is a helper class which organizes all the HTML tags into groups for finding.
  *

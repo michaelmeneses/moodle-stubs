@@ -29,6 +29,8 @@
  */
 namespace core_cohort\output;
 
+use core_external\external_api;
+use lang_string;
 /**
  * Class to prepare a cohort idnumber for display.
  *

@@ -8,6 +8,13 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Financial;
 
+use DateTime;
+use PhpOffice\PhpSpreadsheet\Calculation\DateTimeExcel;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Financial\Constants as FinancialConstants;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+use PhpOffice\PhpSpreadsheet\Shared\Date;
 class Coupons
 {
     private const PERIOD_DATE_PREVIOUS = false;

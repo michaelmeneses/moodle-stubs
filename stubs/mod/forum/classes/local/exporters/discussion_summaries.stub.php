@@ -29,6 +29,10 @@
  */
 namespace mod_forum\local\exporters;
 
+use mod_forum\local\entities\discussion as discussion_entity;
+use mod_forum\local\exporters\post as post_exporter;
+use core\external\exporter;
+use renderer_base;
 /**
  * Discussion summaries exporter.
  *

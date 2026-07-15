@@ -8,6 +8,19 @@
  */
 namespace OpenSpout\Writer\XLSX\Helper;
 
+use DateTimeImmutable;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Common\Helper\Escaper\XLSX;
+use OpenSpout\Common\Helper\FileSystemHelper as CommonFileSystemHelper;
+use OpenSpout\Writer\Common\Entity\Sheet;
+use OpenSpout\Writer\Common\Entity\Worksheet;
+use OpenSpout\Writer\Common\Helper\CellHelper;
+use OpenSpout\Writer\Common\Helper\FileSystemWithRootFolderHelperInterface;
+use OpenSpout\Writer\Common\Helper\ZipHelper;
+use OpenSpout\Writer\XLSX\Manager\Style\StyleManager;
+use OpenSpout\Writer\XLSX\MergeCell;
+use OpenSpout\Writer\XLSX\Options;
+use OpenSpout\Writer\XLSX\Properties;
 /**
  * @internal
  */

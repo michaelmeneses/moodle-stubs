@@ -8,6 +8,14 @@
  */
 namespace core_comment\reportbuilder\local\entities;
 
+use context;
+use context_helper;
+use lang_string;
+use stdClass;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{date, text};
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Comment entity
  *

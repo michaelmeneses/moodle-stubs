@@ -29,6 +29,9 @@
  */
 namespace core_comment\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\userlist;
 /**
  * Privacy class for requesting user data.
  *

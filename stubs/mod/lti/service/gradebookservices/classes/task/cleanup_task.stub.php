@@ -30,6 +30,8 @@
  */
 namespace ltiservice_gradebookservices\task;
 
+use core\task\scheduled_task;
+use ltiservice_gradebookservices\local\service\gradebookservices;
 /**
  * Class containing the scheduled task for gradebookservices.
  *

@@ -8,6 +8,7 @@
  */
 namespace Packback\Lti1p3\DeepLinkResources;
 
+use Packback\Lti1p3\Concerns\Arrayable;
 class Window
 {
     use Arrayable, HasDimensions;

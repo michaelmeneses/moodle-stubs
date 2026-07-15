@@ -8,6 +8,7 @@
  */
 namespace Moodle;
 
+use stdClass;
 class H5peditor
 {
     private static $hasWYSIWYGEditor = array('H5P.CoursePresentation', 'H5P.InteractiveVideo', 'H5P.DragQuestion');

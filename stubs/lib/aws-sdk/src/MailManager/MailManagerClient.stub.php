@@ -8,6 +8,7 @@
  */
 namespace Aws\MailManager;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **MailManager** service.
  * @method \Aws\Result createAddonInstance(array $args = [])

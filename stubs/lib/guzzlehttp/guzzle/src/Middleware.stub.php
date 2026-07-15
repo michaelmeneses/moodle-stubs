@@ -8,6 +8,13 @@
  */
 namespace GuzzleHttp;
 
+use GuzzleHttp\Cookie\CookieJarInterface;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Promise as P;
+use GuzzleHttp\Promise\PromiseInterface;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Log\LoggerInterface;
 /**
  * Functions used to create and wrap handlers with handler middleware.
  */

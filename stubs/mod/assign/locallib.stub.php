@@ -59,6 +59,13 @@ define('ASSIGN_EVENT_TYPE_GRADINGDUE', 'gradingdue');
 define('ASSIGN_EVENT_TYPE_OPEN', 'open');
 define('ASSIGN_EVENT_TYPE_CLOSE', 'close');
 define('ASSIGN_EVENT_TYPE_EXTENSION', 'extension');
+use mod_assign\event\submission_removed;
+use mod_assign\event\submission_status_updated;
+use mod_assign\output\grading_app;
+use mod_assign\output\assign_header;
+use mod_assign\output\assign_submission_status;
+use mod_assign\output\timelimit_panel;
+use mod_assign\downloader;
 /**
  * Standard base class for mod_assign (assignment types).
  *

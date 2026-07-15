@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories\form;
 
+use moodleform;
 /**
  * Form for moving questions between categories.
  *

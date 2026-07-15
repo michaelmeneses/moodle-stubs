@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
 abstract class BaseFormatter
 {
     protected static function stripQuotes(string $format): string

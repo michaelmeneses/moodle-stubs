@@ -8,6 +8,9 @@
  */
 namespace core_user\table;
 
+use core_table\local\filter\filterset;
+use core_table\local\filter\integer_filter;
+use core_table\local\filter\string_filter;
 /**
  * Participants table filterset.
  *

@@ -29,6 +29,7 @@
  */
 namespace mlbackend_python;
 
+use core_analytics\tests\mlbackend_helper_trait;
 /**
  * Python predictions processor.
  *

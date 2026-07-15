@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache\exception;
 
+use core\exception\moodle_exception;
 /**
  * A cache exception class. Just allows people to catch cache exceptions.
  *

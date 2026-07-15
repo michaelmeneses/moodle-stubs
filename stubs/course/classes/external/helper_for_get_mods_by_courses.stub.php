@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\external;
 
+use context_module;
+use core_external\external_description;
+use core_external\external_files;
+use core_external\external_format_value;
+use core_external\util as external_util;
+use core_external\external_value;
 /**
  * This class helps implement the get_..._by_courses web service that every activity should have.
  *

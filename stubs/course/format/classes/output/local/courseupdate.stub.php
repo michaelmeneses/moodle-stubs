@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local;
 
+use core_courseformat\base as course_format;
+use core\output\renderer_base;
+use core\output\single_button;
+use core\url;
+use stdClass;
 /**
  * Support UIs for non-ajax course updates alternatives.
  *

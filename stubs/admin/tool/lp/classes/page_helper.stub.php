@@ -29,6 +29,14 @@
  */
 namespace tool_lp;
 
+use coding_exception;
+use context;
+use moodle_exception;
+use moodle_url;
+use core_user;
+use context_user;
+use context_course;
+use stdClass;
 /**
  * Page helper.
  *

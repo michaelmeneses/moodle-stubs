@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question;
 
+use core_question\local\bank\question_version_status;
 /**
  * This class should provide an API for managing question_references.
  *

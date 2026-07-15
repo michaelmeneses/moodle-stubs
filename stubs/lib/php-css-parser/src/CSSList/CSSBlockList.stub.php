@@ -8,6 +8,13 @@
  */
 namespace Sabberworm\CSS\CSSList;
 
+use Sabberworm\CSS\Property\Selector;
+use Sabberworm\CSS\Rule\Rule;
+use Sabberworm\CSS\RuleSet\DeclarationBlock;
+use Sabberworm\CSS\RuleSet\RuleSet;
+use Sabberworm\CSS\Value\CSSFunction;
+use Sabberworm\CSS\Value\Value;
+use Sabberworm\CSS\Value\ValueList;
 /**
  * A `CSSBlockList` is a `CSSList` whose `DeclarationBlock`s are guaranteed to contain valid declaration blocks or
  * at-rules.

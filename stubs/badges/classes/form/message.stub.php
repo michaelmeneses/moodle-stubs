@@ -31,6 +31,7 @@
  */
 namespace core_badges\form;
 
+use moodleform;
 /**
  * Form to edit badge message.
  *

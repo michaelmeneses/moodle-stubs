@@ -8,6 +8,8 @@
  */
 namespace Sabberworm\CSS\CSSList;
 
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Property\AtRule;
 class KeyFrame extends CSSList implements AtRule
 {
     /**

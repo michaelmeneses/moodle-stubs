@@ -8,6 +8,7 @@
  */
 namespace Aws\BedrockDataAutomationRuntime;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Runtime for Amazon Bedrock Data Automation** service.
  * @method \Aws\Result getDataAutomationStatus(array $args = [])

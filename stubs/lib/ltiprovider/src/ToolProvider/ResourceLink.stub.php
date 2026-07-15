@@ -8,6 +8,12 @@
  */
 namespace IMSGlobal\LTI\ToolProvider;
 
+use DOMDocument;
+use DOMElement;
+use IMSGlobal\LTI\ToolProvider\DataConnector\DataConnector;
+use IMSGlobal\LTI\ToolProvider\Service;
+use IMSGlobal\LTI\HTTPMessage;
+use IMSGlobal\LTI\OAuth;
 /**
  * Class to represent a tool consumer resource link
  *

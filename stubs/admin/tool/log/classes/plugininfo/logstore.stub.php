@@ -29,6 +29,10 @@
  */
 namespace tool_log\plugininfo;
 
+use admin_settingpage;
+use core\plugininfo\base;
+use moodle_url;
+use part_of_admin_tree;
 /**
  * Plugin info class for logging store plugins.
  */

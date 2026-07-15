@@ -49,6 +49,7 @@
  */
 namespace SimplePie\Cache;
 
+use Memcache as NativeMemcache;
 /**
  * Caches data to memcache
  *

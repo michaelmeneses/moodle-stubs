@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace auth_lti\local\ltiadvantage\utility;
 
+use core\session\utility\cookie_helper as core_cookie_helper;
 /**
  * Helper class providing utils dealing with cookies in LTI, particularly 3rd party cookies.
  *

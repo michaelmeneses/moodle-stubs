@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\local\bank;
 
+use cm_info;
+use context;
+use context_course;
+use core\context_helper;
+use core\task\manager;
+use moodle_url;
+use stdClass;
 /**
  * Helper class for qbank sharing.
  *

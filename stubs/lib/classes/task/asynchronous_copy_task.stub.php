@@ -30,6 +30,11 @@
  */
 namespace core\task;
 
+use core\di;
+use async_helper;
+use cache_helper;
+use core\hook\manager;
+use core_backup\hook\before_copy_course_execute;
 /**
  * Adhoc task that performs asynchronous course copies.
  *

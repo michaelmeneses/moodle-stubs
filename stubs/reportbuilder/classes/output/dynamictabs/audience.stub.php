@@ -8,6 +8,13 @@
  */
 namespace core_reportbuilder\output\dynamictabs;
 
+use core\output\dynamic_tabs\base;
+use core_reportbuilder\external\custom_report_audience_cards_exporter;
+use core_reportbuilder\local\helpers\audience as audience_helper;
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\output\audience_heading_editable;
+use core_reportbuilder\permission;
+use renderer_base;
 /**
  * Audience dynamic tab
  *

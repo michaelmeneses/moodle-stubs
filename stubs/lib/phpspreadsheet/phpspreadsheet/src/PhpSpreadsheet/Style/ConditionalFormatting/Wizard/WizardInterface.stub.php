@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\Wizard;
 
+use PhpOffice\PhpSpreadsheet\Style\Conditional;
+use PhpOffice\PhpSpreadsheet\Style\Style;
 interface WizardInterface
 {
     public function getCellRange(): string;

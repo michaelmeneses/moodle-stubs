@@ -31,6 +31,7 @@
  */
 namespace core_question\statistics\questions;
 
+use question_bank;
 /**
  * A collection of all the question statistics calculated for an activity instance.
  *

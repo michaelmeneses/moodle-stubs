@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_h5p;
 
+use Moodle\H5PCore;
+use Moodle\H5PFrameworkInterface;
+use Moodle\H5PHubEndpoints;
+use stdClass;
+use moodle_url;
+use core_h5p\local\library\autoloader;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 // phpcs:disable moodle.NamingConventions.ValidVariableName.VariableNameLowerCase
 /**

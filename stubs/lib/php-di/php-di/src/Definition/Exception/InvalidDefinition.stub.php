@@ -8,6 +8,8 @@
  */
 namespace DI\Definition\Exception;
 
+use DI\Definition\Definition;
+use Psr\Container\ContainerExceptionInterface;
 /**
  * Invalid DI definitions.
  *

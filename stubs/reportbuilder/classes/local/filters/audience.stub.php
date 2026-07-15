@@ -8,6 +8,8 @@
  */
 namespace core_reportbuilder\local\filters;
 
+use core_reportbuilder\local\helpers\audience as audience_helper;
+use core_reportbuilder\local\models\audience as audience_model;
 /**
  * Report audience filter
  *

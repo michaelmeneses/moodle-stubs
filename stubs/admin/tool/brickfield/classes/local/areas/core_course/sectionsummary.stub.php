@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\areas\core_course;
 
+use core\event\course_section_created;
+use core\event\course_section_updated;
+use tool_brickfield\area_base;
 /**
  * Course section summary observer.
  *

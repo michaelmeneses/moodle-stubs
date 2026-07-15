@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use core\exception\coding_exception;
+use stdClass;
 /**
  * The lang_string class
  *

@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\exception\coding_exception;
+use core\output\actions\component_action;
+use moodle_url;
+use stdClass;
 /**
  * Simple form with just one select field that gets submitted automatically.
  *

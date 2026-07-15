@@ -8,6 +8,10 @@
  */
 namespace Aws\EndpointV2;
 
+use Aws\EndpointV2\Ruleset\Ruleset;
+use Aws\EndpointV2\Ruleset\RulesetEndpoint;
+use Aws\Exception\UnresolvedEndpointException;
+use Aws\LruArrayCache;
 /**
  * Given a service's Ruleset and client-provided input parameters, provides
  * either an object reflecting the properties of a resolved endpoint,

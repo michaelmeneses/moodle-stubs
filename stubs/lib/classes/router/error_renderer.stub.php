@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router;
 
+use Slim\Exception\HttpNotFoundException;
+use Slim\Interfaces\ErrorRendererInterface;
+use Throwable;
 // phpcs:disable moodle.NamingConventions.ValidVariableName.VariableNameLowerCase
 /**
  * Class routed_error_handler

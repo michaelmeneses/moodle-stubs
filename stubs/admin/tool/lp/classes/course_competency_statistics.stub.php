@@ -29,6 +29,7 @@
  */
 namespace tool_lp;
 
+use core_competency\api;
 /**
  * Course competency statistics class.
  *

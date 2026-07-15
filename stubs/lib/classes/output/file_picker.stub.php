@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\context\user as context_user;
+use moodle_url;
+use stdClass;
 /**
  * Data structure representing a file picker.
  *

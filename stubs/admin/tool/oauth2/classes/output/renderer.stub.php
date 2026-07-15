@@ -29,6 +29,14 @@
  */
 namespace tool_oauth2\output;
 
+use plugin_renderer_base;
+use html_table;
+use html_table_cell;
+use html_table_row;
+use html_writer;
+use core\oauth2\issuer;
+use core\oauth2\api;
+use moodle_url;
 /**
  * Implements the plugin renderer
  *

@@ -8,6 +8,10 @@
  */
 namespace Aws\Api\Parser;
 
+use Aws\Api\StructureShape;
+use Aws\Api\Service;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * @internal Implements REST-XML parsing (e.g., S3, CloudFront, etc...)
  */

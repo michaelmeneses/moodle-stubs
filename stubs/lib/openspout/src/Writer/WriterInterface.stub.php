@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Writer;
 
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Exception\InvalidArgumentException;
+use OpenSpout\Common\Exception\IOException;
 interface WriterInterface
 {
     /**

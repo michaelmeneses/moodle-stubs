@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\local\overview;
 
+use cm_info;
+use core_courseformat\activityoverviewbase;
 /**
  * Plugin overview instance factory.
  *

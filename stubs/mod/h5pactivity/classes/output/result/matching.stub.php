@@ -29,6 +29,7 @@
  */
 namespace mod_h5pactivity\output\result;
 
+use mod_h5pactivity\output\result;
 /**
  * Class to display H5P matching result.
  *

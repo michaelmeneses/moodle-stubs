@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace filter_glossary;
 
+use cache;
+use cache_store;
+use core\output\html_writer;
+use core\url;
+use core_filters\filter_object;
+use stdClass;
 // phpcs:disable moodle.NamingConventions.ValidVariableName.VariableNameLowerCase -- GLOSSARY_EXCLUDEENTRY
 // phpcs:disable moodle.NamingConventions.ValidVariableName.VariableNameUnderscore -- GLOSSARY_EXCLUDEENTRY
 /**

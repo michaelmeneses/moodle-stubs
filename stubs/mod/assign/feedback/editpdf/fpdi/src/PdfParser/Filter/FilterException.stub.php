@@ -15,6 +15,7 @@
  */
 namespace setasign\Fpdi\PdfParser\Filter;
 
+use setasign\Fpdi\PdfParser\PdfParserException;
 /**
  * Exception for filters
  */

@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Statistical\Distributions;
 
+use PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Averages;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\StandardDeviations;
 class StandardNormal
 {
     use ArrayEnabled;

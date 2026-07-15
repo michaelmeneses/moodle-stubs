@@ -8,6 +8,12 @@
  */
 namespace OpenSpout\Writer\CSV;
 
+use Exception;
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Common\Helper\EncodingHelper;
+use OpenSpout\Writer\AbstractWriter;
 final class Writer extends AbstractWriter
 {
     /** @var string Content-Type value for the header */

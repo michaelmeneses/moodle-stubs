@@ -29,6 +29,9 @@
  */
 namespace core\plugininfo;
 
+use admin_externalpage;
+use moodle_url;
+use part_of_admin_tree;
 /**
  * Class for repositories
  */

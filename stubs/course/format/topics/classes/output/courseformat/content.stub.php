@@ -29,6 +29,8 @@
  */
 namespace format_topics\output\courseformat;
 
+use core_courseformat\output\local\content as content_base;
+use renderer_base;
 /**
  * Base class to render a course content.
  *

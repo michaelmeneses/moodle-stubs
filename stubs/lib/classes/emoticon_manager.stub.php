@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use pix_emoticon;
+use stdClass;
 /**
  * Provides core support for plugins that have to deal with emoticons (like HTML editor or emoticon filter).
  *

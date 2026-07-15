@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qtype_ordering\output;
 
+use qtype_ordering_question;
 /**
  * Generate the grade feedback when the grading should be shown.
  *

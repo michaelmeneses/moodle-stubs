@@ -8,6 +8,7 @@
  */
 namespace Aws\MarketplaceDeployment;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Marketplace Deployment Service** service.
  * @method \Aws\Result listTagsForResource(array $args = [])

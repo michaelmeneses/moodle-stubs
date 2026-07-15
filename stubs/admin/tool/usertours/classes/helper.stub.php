@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_usertours;
 
+use coding_exception;
+use core\output\inplace_editable;
 /**
  * Tour helper.
  *

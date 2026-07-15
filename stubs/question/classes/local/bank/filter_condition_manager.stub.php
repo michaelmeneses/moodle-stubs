@@ -30,6 +30,9 @@
  */
 namespace core_question\local\bank;
 
+use core\output\datafilter;
+use qbank_deletequestion\hidden_condition;
+use qbank_managecategories\category_condition;
 /**
  * Static methods for parsing and formatting data related to filter conditions.
  */

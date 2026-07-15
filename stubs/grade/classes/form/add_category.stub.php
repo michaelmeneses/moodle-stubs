@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_grades\form;
 
+use context;
+use context_course;
+use core_form\dynamic_form;
+use grade_category;
+use grade_edit_tree;
+use grade_helper;
+use grade_item;
+use grade_plugin_return;
+use grade_scale;
+use moodle_url;
 /**
  * Prints the add category gradebook form
  *

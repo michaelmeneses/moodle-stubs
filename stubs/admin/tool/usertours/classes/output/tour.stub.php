@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_usertours\output;
 
+use tool_usertours\tour as toursource;
 /**
  * Tour renderable.
  *

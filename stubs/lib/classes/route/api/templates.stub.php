@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\route\api;
 
+use core\exception;
+use core\param;
+use core\router\route;
+use core\output\mustache_template_source_loader;
+use core\router\schema\response\payload_response;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Template Controller.
  *

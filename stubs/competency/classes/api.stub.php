@@ -29,6 +29,20 @@
  */
 namespace core_competency;
 
+use core\invalid_persistent_exception;
+use stdClass;
+use cm_info;
+use context;
+use context_helper;
+use context_system;
+use context_course;
+use context_module;
+use context_user;
+use coding_exception;
+use require_login_exception;
+use moodle_exception;
+use moodle_url;
+use required_capability_exception;
 /**
  * Class for doing things with competency frameworks.
  *

@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_columnsortorder\output;
 
+use core_question\local\bank\column_base;
+use qbank_columnsortorder\local\bank\column_action_remove;
+use moodle_url;
+use qbank_columnsortorder\column_manager;
+use renderable;
+use templatable;
 /**
  * Renderable for the column sort admin UI.
  *

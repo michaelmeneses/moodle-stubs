@@ -29,6 +29,11 @@
  */
 namespace availability_completion;
 
+use cache;
+use core_availability\info;
+use core_availability\info_module;
+use core_availability\info_section;
+use stdClass;
 /**
  * Activity completion condition.
  *

@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Reader;
 
+use Iterator;
+use OpenSpout\Common\Entity\Row;
 /**
  * @extends Iterator<Row>
  */

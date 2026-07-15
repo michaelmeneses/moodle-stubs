@@ -8,6 +8,7 @@
  */
 namespace Aws\DynamoDb;
 
+use GuzzleHttp\Psr7;
 /**
  * Special object to represent a DynamoDB binary (B) value.
  */

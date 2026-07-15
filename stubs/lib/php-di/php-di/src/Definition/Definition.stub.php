@@ -8,6 +8,7 @@
  */
 namespace DI\Definition;
 
+use DI\Factory\RequestedEntry;
 /**
  * Definition.
  *

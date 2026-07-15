@@ -8,6 +8,16 @@
  */
 namespace ZipStream;
 
+use Closure;
+use DateTimeInterface;
+use DeflateContext;
+use RuntimeException;
+use ZipStream\Exception\FileSizeIncorrectException;
+use ZipStream\Exception\OverflowException;
+use ZipStream\Exception\ResourceActionException;
+use ZipStream\Exception\SimulationFileUnknownException;
+use ZipStream\Exception\StreamNotReadableException;
+use ZipStream\Exception\StreamNotSeekableException;
 /**
  * @internal
  */
