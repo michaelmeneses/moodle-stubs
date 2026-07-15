@@ -29,6 +29,8 @@
  */
 namespace mod_forum\local\data_mappers\legacy;
 
+use mod_forum\local\entities\discussion as discussion_entity;
+use stdClass;
 /**
  * Convert a discussion entity into an stdClass.
  *

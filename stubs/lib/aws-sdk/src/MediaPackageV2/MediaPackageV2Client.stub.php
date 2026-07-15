@@ -8,6 +8,7 @@
  */
 namespace Aws\MediaPackageV2;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Elemental MediaPackage v2** service.
  * @method \Aws\Result createChannel(array $args = [])

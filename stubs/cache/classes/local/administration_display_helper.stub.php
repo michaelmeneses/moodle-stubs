@@ -35,6 +35,30 @@
  */
 namespace core_cache\local;
 
+use core_cache\cache;
+use core_cache\config;
+use core_cache\config_writer;
+use core_cache\configurable_cache_interface;
+use core_cache\exception\cache_exception;
+use core_cache\factory;
+use core_cache\form\cache_lock_form;
+use core_cache\form\cache_mode_mappings_form;
+use core_cache\form\cache_definition_sharing_form;
+use core_cache\form\cache_definition_mappings_form;
+use core_cache\form\cachestore_addinstance_form;
+use core_cache\helper as cache_helper;
+use core_cache\lockable_cache_interface;
+use core_cache\store;
+use core_component;
+use core\context;
+use core\context\system as context_system;
+use core\exception\coding_exception;
+use core\exception\moodle_exception;
+use core\output\notification;
+use core\output\single_button;
+use core\url;
+use html_writer;
+use stdClass;
 /**
  * A cache helper for administration tasks
  *

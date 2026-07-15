@@ -22,6 +22,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\EventDispatcher\Tester;
 
+// phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
+use Behat\Behat\EventDispatcher\Event\AfterStepSetup;
+use Behat\Behat\EventDispatcher\Event\AfterStepTested;
+use Behat\Behat\EventDispatcher\Event\BeforeStepTeardown;
+use Behat\Behat\EventDispatcher\Event\BeforeStepTested;
+use Behat\Behat\Tester\Result\StepResult;
+use Behat\Behat\Tester\StepTester;
+use Behat\Gherkin\Node\FeatureNode;
+use Behat\Gherkin\Node\StepNode;
+use Behat\Testwork\Environment\Environment;
+use Behat\Testwork\EventDispatcher\TestworkEventDispatcher;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 /**
  * Step tester dispatching BEFORE/AFTER events during tests.
  *

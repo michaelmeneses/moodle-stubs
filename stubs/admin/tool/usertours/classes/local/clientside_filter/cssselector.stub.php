@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_usertours\local\clientside_filter;
 
+use stdClass;
+use tool_usertours\tour;
 /**
  * Course filter.
  *

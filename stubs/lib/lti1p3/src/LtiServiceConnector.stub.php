@@ -8,6 +8,15 @@
  */
 namespace Packback\Lti1p3;
 
+use Exception;
+use Firebase\JWT\JWT;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
+use Packback\Lti1p3\Interfaces\ICache;
+use Packback\Lti1p3\Interfaces\ILtiRegistration;
+use Packback\Lti1p3\Interfaces\ILtiServiceConnector;
+use Packback\Lti1p3\Interfaces\IServiceRequest;
+use Psr\Http\Message\ResponseInterface;
 class LtiServiceConnector implements ILtiServiceConnector
 {
     public const NEXT_PAGE_REGEX = '/<([^>]*)>; ?rel="next"/i';

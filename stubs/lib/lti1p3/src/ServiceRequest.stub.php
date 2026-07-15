@@ -8,6 +8,7 @@
  */
 namespace Packback\Lti1p3;
 
+use Packback\Lti1p3\Interfaces\IServiceRequest;
 class ServiceRequest implements IServiceRequest
 {
     // Request methods

@@ -8,6 +8,7 @@
  */
 namespace mod_choice;
 
+use core\activity_dates;
 /**
  * Class for fetching the important dates in mod_choice for a given module instance and a user.
  *

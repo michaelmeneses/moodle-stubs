@@ -8,6 +8,9 @@
  */
 namespace lbuchs\WebAuthn\Attestation\Format;
 
+use lbuchs\WebAuthn\Attestation\AuthenticatorData;
+use lbuchs\WebAuthn\WebAuthnException;
+use lbuchs\WebAuthn\Binary\ByteBuffer;
 class Apple extends FormatBase
 {
     private $_x5c;

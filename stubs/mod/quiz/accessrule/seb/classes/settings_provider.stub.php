@@ -34,6 +34,11 @@
  */
 namespace quizaccess_seb;
 
+use context_module;
+use context_user;
+use lang_string;
+use stdClass;
+use stored_file;
 /**
  * Helper class for providing quiz settings, to make setting up quiz form manageable.
  *

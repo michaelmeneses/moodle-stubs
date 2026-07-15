@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_generator\output;
 
+use renderable;
+use renderer_base;
+use templatable;
+use tool_generator\local\testscenario\parsedfeature;
 /**
  * A report to show the feature file parsing process.
  *

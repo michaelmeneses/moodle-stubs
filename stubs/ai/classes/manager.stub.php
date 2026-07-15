@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_ai;
 
+use core\exception\coding_exception;
+use core_ai\aiactions\base;
+use core_ai\aiactions\responses;
 /**
  * AI subsystem manager.
  *

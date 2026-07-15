@@ -8,6 +8,18 @@
  */
 namespace Phpml\NeuralNetwork\Network;
 
+use Phpml\Estimator;
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Helper\Predictable;
+use Phpml\IncrementalEstimator;
+use Phpml\NeuralNetwork\ActivationFunction;
+use Phpml\NeuralNetwork\ActivationFunction\Sigmoid;
+use Phpml\NeuralNetwork\Layer;
+use Phpml\NeuralNetwork\Node\Bias;
+use Phpml\NeuralNetwork\Node\Input;
+use Phpml\NeuralNetwork\Node\Neuron;
+use Phpml\NeuralNetwork\Node\Neuron\Synapse;
+use Phpml\NeuralNetwork\Training\Backpropagation;
 abstract class MultilayerPerceptron extends LayeredNetwork implements Estimator, IncrementalEstimator
 {
     use Predictable;

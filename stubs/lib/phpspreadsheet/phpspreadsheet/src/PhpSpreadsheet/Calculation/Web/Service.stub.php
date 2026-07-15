@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Web;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+use PhpOffice\PhpSpreadsheet\Settings;
+use Psr\Http\Client\ClientExceptionInterface;
 class Service
 {
     /**

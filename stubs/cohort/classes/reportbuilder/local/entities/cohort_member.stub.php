@@ -8,6 +8,12 @@
  */
 namespace core_cohort\reportbuilder\local\entities;
 
+use lang_string;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\date;
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
 /**
  * Cohort member entity
  *

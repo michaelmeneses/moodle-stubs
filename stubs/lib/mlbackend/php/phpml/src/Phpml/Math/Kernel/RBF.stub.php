@@ -8,6 +8,9 @@
  */
 namespace Phpml\Math\Kernel;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Math\Kernel;
+use Phpml\Math\Product;
 class RBF implements Kernel
 {
     /**

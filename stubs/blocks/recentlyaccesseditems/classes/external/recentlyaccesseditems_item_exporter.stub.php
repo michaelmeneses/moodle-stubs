@@ -29,6 +29,8 @@
  */
 namespace block_recentlyaccesseditems\external;
 
+use renderer_base;
+use moodle_url;
 /**
  * Class for exporting the data needed to render a recent accessed item.
  *

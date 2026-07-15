@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Cell;
 
+use DateTimeInterface;
+use PhpOffice\PhpSpreadsheet\RichText\RichText;
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
 class DefaultValueBinder implements IValueBinder
 {
     /**

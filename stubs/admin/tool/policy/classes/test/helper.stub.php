@@ -30,6 +30,8 @@
  */
 namespace tool_policy\test;
 
+use tool_policy\api;
+use tool_policy\policy_version;
 /**
  * Provides some helper methods for unit-tests.
  *

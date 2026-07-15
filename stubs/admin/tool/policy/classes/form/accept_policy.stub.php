@@ -29,6 +29,8 @@
  */
 namespace tool_policy\form;
 
+use tool_policy\api;
+use tool_policy\policy_version;
 /**
  * Represents the form for accepting or revoking a policy.
  *

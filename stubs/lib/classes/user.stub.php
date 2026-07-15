@@ -22,6 +22,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use core\context\user as context_user;
+use core\context\course as context_course;
+use core\context\system as context_system;
+use core_user\fields;
+use core\exception\invalid_parameter_exception;
+use core\exception\moodle_exception;
+use core\exception\coding_exception;
+use core\output\theme_config;
+use core\output\user_picture;
+use core_date;
+use dml_exception;
+use stdClass;
 /**
  * User class to access user details.
  *

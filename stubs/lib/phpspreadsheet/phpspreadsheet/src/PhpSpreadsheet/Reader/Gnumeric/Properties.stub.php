@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Gnumeric;
 
+use PhpOffice\PhpSpreadsheet\Reader\Gnumeric;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use SimpleXMLElement;
 class Properties
 {
     /**

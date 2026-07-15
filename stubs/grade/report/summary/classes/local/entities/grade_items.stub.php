@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradereport_summary\local\entities;
 
+use core_reportbuilder\local\filters\select;
+use grade_item;
+use grade_plugin_return;
+use grade_report_summary;
+use lang_string;
+use stdClass;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
 /**
  * Grade summary entity class implementation
  *

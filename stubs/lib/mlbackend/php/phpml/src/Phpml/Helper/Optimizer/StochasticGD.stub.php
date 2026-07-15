@@ -8,6 +8,9 @@
  */
 namespace Phpml\Helper\Optimizer;
 
+use Closure;
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Exception\InvalidOperationException;
 /**
  * Stochastic Gradient Descent optimization method
  * to find a solution for the equation A.ϴ = y where

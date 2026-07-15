@@ -29,6 +29,8 @@
  */
 namespace mod_forum\local\vaults\preprocessors;
 
+use moodle_database;
+use core\dml\table as dml_table;
 /**
  * Extract record vault preprocessor.
  *

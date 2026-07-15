@@ -29,6 +29,8 @@
  */
 namespace core\output;
 
+use lang_string;
+use stdClass;
 /**
  * The chooser_section renderable class.
  *

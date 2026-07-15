@@ -29,6 +29,10 @@
  */
 namespace mod_h5pactivity\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use moodle_url;
 /**
  * Class to help display report link in mod_h5pactivity.
  *

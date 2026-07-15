@@ -8,6 +8,7 @@
  */
 namespace Aws\EndpointV2\Ruleset;
 
+use Aws\EndpointV2\Rule\RuleCreator;
 /**
  * A collection of rules, parameter definitions and a class of helper functions
  * used to resolve either an endpoint or an error.

@@ -8,6 +8,25 @@
  */
 namespace core_reportbuilder\privacy;
 
+use context;
+use stdClass;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\approved_userlist;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\core_userlist_provider;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\user_preference_provider;
+use core_privacy\local\request\writer;
+use core_reportbuilder\manager;
+use core_reportbuilder\local\helpers\user_filter_manager;
+use core_reportbuilder\local\helpers\schedule as schedule_helper;
+use core_reportbuilder\local\models\audience;
+use core_reportbuilder\local\models\column;
+use core_reportbuilder\local\models\filter;
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\local\models\schedule;
 /**
  * Privacy Subsystem for core_reportbuilder
  *

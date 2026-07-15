@@ -8,6 +8,12 @@
  */
 namespace Aws\Api\Parser;
 
+use Aws\Api\Service;
+use Aws\Api\StructureShape;
+use Aws\Result;
+use Aws\CommandInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * @internal Parses query (XML) responses (e.g., EC2, SQS, and many others)
  */

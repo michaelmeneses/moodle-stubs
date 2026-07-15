@@ -8,6 +8,13 @@
  */
 namespace core_course\reportbuilder\datasource;
 
+use core_course\reportbuilder\local\entities\course_category;
+use core_files\reportbuilder\local\entities\file;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\course;
+use core_reportbuilder\local\helpers\database;
+use core_tag\reportbuilder\local\entities\tag;
+use lang_string;
 /**
  * Courses datasource
  *

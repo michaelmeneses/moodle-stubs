@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_table;
 
+use flexible_table;
+use moodle_recordset;
+use stdClass;
 /**
  * A table whose data is provided by SQL queries.
  *

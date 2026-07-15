@@ -8,6 +8,7 @@
  */
 namespace Phpml;
 
+use Phpml\Exception\InvalidArgumentException;
 final class FeatureUnion implements Transformer
 {
     /**

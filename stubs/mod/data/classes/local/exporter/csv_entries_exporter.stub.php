@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\local\exporter;
 
+use coding_exception;
+use csv_export_writer;
 /**
  * CSV entries exporter for mod_data.
  *

@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\local\systemreports;
 
+use core_reportbuilder\local\models\audience;
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\permission;
+use core_reportbuilder\system_report;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\helpers\audience as audience_helper;
 /**
  * Report access list
  *

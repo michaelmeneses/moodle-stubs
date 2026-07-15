@@ -8,6 +8,15 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer\Ods\Cell;
 
+use PhpOffice\PhpSpreadsheet\Helper\Dimension;
+use PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
+use PhpOffice\PhpSpreadsheet\Style\Alignment;
+use PhpOffice\PhpSpreadsheet\Style\Fill;
+use PhpOffice\PhpSpreadsheet\Style\Font;
+use PhpOffice\PhpSpreadsheet\Style\Style as CellStyle;
+use PhpOffice\PhpSpreadsheet\Worksheet\ColumnDimension;
+use PhpOffice\PhpSpreadsheet\Worksheet\RowDimension;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 class Style
 {
     public const CELL_STYLE_PREFIX = 'ce';

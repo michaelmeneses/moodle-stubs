@@ -8,6 +8,7 @@
  */
 namespace Phpml\Exception;
 
+use Exception;
 class MatrixException extends Exception
 {
 }

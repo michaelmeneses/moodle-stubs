@@ -8,6 +8,9 @@
  */
 namespace Laravel\SerializableClosure\Serializers;
 
+use Laravel\SerializableClosure\Contracts\Serializable;
+use Laravel\SerializableClosure\Exceptions\InvalidSignatureException;
+use Laravel\SerializableClosure\Exceptions\MissingSecretKeyException;
 class Signed implements Serializable
 {
     /**

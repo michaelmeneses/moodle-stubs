@@ -8,6 +8,7 @@
  */
 namespace Phpml\Classification\DecisionTree;
 
+use Phpml\Math\Comparison;
 class DecisionTreeLeaf
 {
     /**

@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace report_competency;
 
+use context_course;
+use core_competency\external\user_competency_course_exporter;
+use core_course\external\course_summary_exporter;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
+use core_user\external\user_summary_exporter;
+use tool_lp\external\competency_summary_exporter;
 /**
  * This is the external API for this report.
  *

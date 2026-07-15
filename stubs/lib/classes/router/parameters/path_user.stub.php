@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\parameters;
 
+use core\exception\not_found_exception;
+use core\param;
+use core\user;
+use core\router\schema\example;
+use core\router\schema\parameters\mapped_property_parameter;
+use core\router\schema\referenced_object;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * A parameter representing a user.
  *

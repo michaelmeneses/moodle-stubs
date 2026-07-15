@@ -15,6 +15,16 @@
  */
 namespace setasign\Fpdi\PdfParser\Type;
 
+use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use setasign\Fpdi\PdfParser\Filter\Ascii85;
+use setasign\Fpdi\PdfParser\Filter\AsciiHex;
+use setasign\Fpdi\PdfParser\Filter\FilterException;
+use setasign\Fpdi\PdfParser\Filter\Flate;
+use setasign\Fpdi\PdfParser\Filter\Lzw;
+use setasign\Fpdi\PdfParser\PdfParser;
+use setasign\Fpdi\PdfParser\PdfParserException;
+use setasign\Fpdi\PdfParser\StreamReader;
+use setasign\FpdiPdfParser\PdfParser\Filter\Predictor;
 /**
  * Class representing a PDF stream object
  */

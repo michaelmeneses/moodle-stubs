@@ -8,6 +8,9 @@
  */
 namespace gradereport_singleview\output;
 
+use moodle_url;
+use renderer_base;
+use gradereport_singleview\report\singleview;
 /**
  * Renderable class for the action bar elements in the single view report page.
  *

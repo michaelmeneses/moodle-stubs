@@ -8,6 +8,36 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\HashTable;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Style\Borders;
+use PhpOffice\PhpSpreadsheet\Style\Conditional;
+use PhpOffice\PhpSpreadsheet\Style\Fill;
+use PhpOffice\PhpSpreadsheet\Style\Font;
+use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
+use PhpOffice\PhpSpreadsheet\Worksheet\BaseDrawing;
+use PhpOffice\PhpSpreadsheet\Worksheet\Drawing as WorksheetDrawing;
+use PhpOffice\PhpSpreadsheet\Worksheet\MemoryDrawing;
+use PhpOffice\PhpSpreadsheet\Writer\Exception as WriterException;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Chart;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Comments;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\ContentTypes;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\DocProps;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Drawing;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Rels;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\RelsRibbon;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\RelsVBA;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\StringTable;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Style;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Table;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Theme;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Workbook;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Worksheet;
+use ZipArchive;
+use ZipStream\Exception\OverflowException;
+use ZipStream\ZipStream;
 class Xlsx extends BaseWriter
 {
     /**

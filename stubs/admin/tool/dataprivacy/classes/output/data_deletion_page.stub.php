@@ -29,6 +29,16 @@
  */
 namespace tool_dataprivacy\output;
 
+use coding_exception;
+use moodle_exception;
+use moodle_url;
+use renderable;
+use renderer_base;
+use single_select;
+use stdClass;
+use templatable;
+use tool_dataprivacy\data_request;
+use tool_dataprivacy\local\helper;
 /**
  * Class containing data for a user's data requests.
  *

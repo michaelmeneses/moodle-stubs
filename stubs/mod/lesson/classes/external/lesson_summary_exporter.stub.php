@@ -29,6 +29,10 @@
  */
 namespace mod_lesson\external;
 
+use core\external\exporter;
+use renderer_base;
+use core_external\external_files;
+use core_external\util as external_util;
 /**
  * Class for exporting partial lesson data (some fields are only viewable by admins).
  *

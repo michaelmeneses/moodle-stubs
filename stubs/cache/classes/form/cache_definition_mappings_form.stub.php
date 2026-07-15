@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache\form;
 
+use core_cache\administration_helper;
+use core_cache\store;
+use html_writer;
+use moodleform;
 /**
  * Form to set definition mappings
  *

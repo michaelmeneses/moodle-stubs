@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\output;
 
+use context_coursecat;
+use core_course_category;
+use course_request;
+use moodle_page;
+use moodle_url;
 /**
  * Class responsible for generating the action bar (tertiary nav) elements in an individual category page
  *

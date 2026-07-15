@@ -8,6 +8,7 @@
  */
 namespace Aws\TaxSettings;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Tax Settings** service.
  * @method \Aws\Result batchDeleteTaxRegistration(array $args = [])

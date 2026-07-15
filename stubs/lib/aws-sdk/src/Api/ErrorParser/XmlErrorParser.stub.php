@@ -8,6 +8,12 @@
  */
 namespace Aws\Api\ErrorParser;
 
+use Aws\Api\Parser\PayloadParserTrait;
+use Aws\Api\Parser\XmlParser;
+use Aws\Api\Service;
+use Aws\Api\StructureShape;
+use Aws\CommandInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Parses XML errors.
  */

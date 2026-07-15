@@ -8,6 +8,7 @@
  */
 namespace Phpml\Dataset;
 
+use Phpml\Exception\FileException;
 class CsvDataset extends ArrayDataset
 {
     /**

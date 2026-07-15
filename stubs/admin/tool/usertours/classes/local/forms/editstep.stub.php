@@ -29,6 +29,9 @@
  */
 namespace tool_usertours\local\forms;
 
+use stdClass;
+use tool_usertours\helper;
+use tool_usertours\step;
 /**
  * Form for editing steps.
  *

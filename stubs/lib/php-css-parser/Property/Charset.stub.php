@@ -8,6 +8,8 @@
  */
 namespace Sabberworm\CSS\Property;
 
+use Sabberworm\CSS\Comment\Comment;
+use Sabberworm\CSS\OutputFormat;
 /**
  * Class representing an `@charset` rule.
  *

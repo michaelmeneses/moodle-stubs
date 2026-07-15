@@ -29,6 +29,7 @@
  */
 namespace tool_policy\event;
 
+use core\event\base;
 /**
  * Base class for acceptance_created and acceptance_updated events.
  *

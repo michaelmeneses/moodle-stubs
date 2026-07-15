@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_feedback\output;
 
+use plugin_renderer_base;
 /**
  * Class renderer
  *

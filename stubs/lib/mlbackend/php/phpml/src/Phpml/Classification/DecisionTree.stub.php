@@ -8,6 +8,11 @@
  */
 namespace Phpml\Classification;
 
+use Phpml\Classification\DecisionTree\DecisionTreeLeaf;
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Helper\Predictable;
+use Phpml\Helper\Trainable;
+use Phpml\Math\Statistic\Mean;
 class DecisionTree implements Classifier
 {
     use Trainable;

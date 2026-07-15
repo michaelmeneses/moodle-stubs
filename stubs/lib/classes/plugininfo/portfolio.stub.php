@@ -29,6 +29,7 @@
  */
 namespace core\plugininfo;
 
+use moodle_url;
 /**
  * Class for portfolios
  */

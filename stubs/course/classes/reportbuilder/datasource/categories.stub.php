@@ -8,6 +8,11 @@
  */
 namespace core_course\reportbuilder\datasource;
 
+use core_cohort\reportbuilder\local\entities\cohort;
+use core_course\reportbuilder\local\entities\course_category;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\{course, user};
+use core_role\reportbuilder\local\entities\role;
 /**
  * Course categories datasource
  *

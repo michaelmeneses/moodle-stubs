@@ -8,6 +8,7 @@
  */
 namespace Aws\KinesisVideo;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Kinesis Video Streams** service.
  * @method \Aws\Result createSignalingChannel(array $args = [])

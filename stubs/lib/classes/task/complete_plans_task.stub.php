@@ -29,6 +29,8 @@
  */
 namespace core\task;
 
+use core_competency\api;
+use core_competency\plan;
 /**
  * Complete plans task class.
  *

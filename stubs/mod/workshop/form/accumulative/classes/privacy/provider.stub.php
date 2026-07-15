@@ -30,6 +30,7 @@
  */
 namespace workshopform_accumulative\privacy;
 
+use core_privacy\local\request\writer;
 /**
  * Privacy API implementation for the Accumulative grading strategy.
  *

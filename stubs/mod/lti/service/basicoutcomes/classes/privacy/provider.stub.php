@@ -29,6 +29,11 @@
  */
 namespace ltiservice_basicoutcomes\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\approved_userlist;
 /**
  * Privacy Subsystem for ltiservice_basicoutcomes.
  *

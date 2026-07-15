@@ -8,6 +8,10 @@
  */
 namespace DI\Definition\Source;
 
+use DI\Definition\ObjectDefinition;
+use DI\Definition\ObjectDefinition\MethodInjection;
+use DI\Definition\Reference;
+use ReflectionNamedType;
 /**
  * Reads DI class definitions using reflection.
  *

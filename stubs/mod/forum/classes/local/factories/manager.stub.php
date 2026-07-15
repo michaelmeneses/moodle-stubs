@@ -29,6 +29,9 @@
  */
 namespace mod_forum\local\factories;
 
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\managers\capability as capability_manager;
+use rating_manager;
 /**
  * Managers factory.
  *

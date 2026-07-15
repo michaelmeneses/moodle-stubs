@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\oauth2\discovery;
 
+use core\http_client;
+use GuzzleHttp\Exception\ClientException;
 /**
  * Simple reader class, allowing OAuth 2 Authorization Server Metadata to be read from an auth server's well-known.
  *

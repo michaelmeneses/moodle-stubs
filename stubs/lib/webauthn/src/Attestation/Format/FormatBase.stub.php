@@ -8,6 +8,8 @@
  */
 namespace lbuchs\WebAuthn\Attestation\Format;
 
+use lbuchs\WebAuthn\WebAuthnException;
+use lbuchs\WebAuthn\Attestation\AuthenticatorData;
 abstract class FormatBase
 {
     protected $_attestationObject = null;

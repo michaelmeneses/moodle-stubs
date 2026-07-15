@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_h5p\form;
 
+use core_h5p\editor;
 /**
  * Form to edit an existing H5P content.
  *

@@ -8,6 +8,10 @@
  */
 namespace Aws\Ses;
 
+use Aws\Api\ApiProvider;
+use Aws\Api\DocModel;
+use Aws\Api\Service;
+use Aws\Credentials\CredentialsInterface;
 /**
  * This client is used to interact with the **Amazon Simple Email Service (Amazon SES)**.
  *

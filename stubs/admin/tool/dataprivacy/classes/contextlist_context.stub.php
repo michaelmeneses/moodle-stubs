@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_dataprivacy;
 
+use core\persistent;
 /**
  * The contextlist_context persistent.
  *

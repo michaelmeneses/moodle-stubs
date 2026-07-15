@@ -8,6 +8,12 @@
  */
 namespace Slim\Routing;
 
+use Psr\Http\Server\MiddlewareInterface;
+use Slim\Interfaces\AdvancedCallableResolverInterface;
+use Slim\Interfaces\CallableResolverInterface;
+use Slim\Interfaces\RouteCollectorProxyInterface;
+use Slim\Interfaces\RouteGroupInterface;
+use Slim\MiddlewareDispatcher;
 class RouteGroup implements RouteGroupInterface
 {
     /**

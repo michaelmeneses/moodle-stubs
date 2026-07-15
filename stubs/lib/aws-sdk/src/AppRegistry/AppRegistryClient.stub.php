@@ -8,6 +8,7 @@
  */
 namespace Aws\AppRegistry;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Service Catalog App Registry** service.
  * @method \Aws\Result associateAttributeGroup(array $args = [])

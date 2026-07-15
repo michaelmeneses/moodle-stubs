@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared;
 
+use PhpOffice\PhpSpreadsheet\Exception as SpreadsheetException;
 class XMLWriter extends \XMLWriter
 {
     /** @var bool */

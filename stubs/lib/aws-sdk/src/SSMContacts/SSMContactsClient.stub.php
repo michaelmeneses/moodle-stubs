@@ -8,6 +8,7 @@
  */
 namespace Aws\SSMContacts;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Systems Manager Incident Manager Contacts** service.
  * @method \Aws\Result acceptPage(array $args = [])

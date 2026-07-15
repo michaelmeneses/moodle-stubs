@@ -29,6 +29,12 @@
  */
 namespace tool_lp\output;
 
+use renderable;
+use renderer_base;
+use templatable;
+use context_course;
+use core_course\external\course_module_summary_exporter;
+use stdClass;
 /**
  * User course navigation class.
  *

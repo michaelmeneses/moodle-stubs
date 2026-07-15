@@ -50,6 +50,9 @@
  */
 namespace CFPropertyList;
 
+use DOMDocument;
+use Iterator;
+use ArrayAccess;
 /**
  * Date Type of CFPropertyList
  * Note: CFDate uses Unix timestamp (epoch) to store dates internally

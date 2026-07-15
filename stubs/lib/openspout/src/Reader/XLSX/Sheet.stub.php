@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Reader\XLSX;
 
+use OpenSpout\Reader\Common\ColumnWidth;
+use OpenSpout\Reader\SheetWithVisibilityInterface;
 /**
  * @implements SheetWithVisibilityInterface<RowIterator>
  */

@@ -15,6 +15,7 @@
  */
 namespace setasign\Fpdi\PdfParser\CrossReference;
 
+use setasign\Fpdi\PdfParser\Type\PdfDictionary;
 /**
  * ReaderInterface for cross-reference readers.
  */

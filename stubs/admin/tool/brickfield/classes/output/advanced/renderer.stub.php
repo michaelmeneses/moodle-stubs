@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\output\advanced;
 
+use tool_brickfield\local\tool\filter;
+use tool_brickfield\manager;
 /**
  * tool_brickfield/advanced renderer
  *

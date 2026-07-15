@@ -8,6 +8,8 @@
  */
 namespace Sabberworm\CSS\RuleSet;
 
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Property\AtRule;
 /**
  * A RuleSet constructed by an unknown at-rule. `@font-face` rules are rendered into AtRuleSet objects.
  */

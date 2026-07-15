@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\renderer_factory;
 
+use core\exception\coding_exception;
+use core\output\renderer_base;
+use core\output\theme_config;
+use moodle_page;
 /**
  * This is renderer factory allows themes to override the standard renderers using php code.
  *

@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer\Ods;
 
+use PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
 class Styles extends WriterPart
 {
     /**

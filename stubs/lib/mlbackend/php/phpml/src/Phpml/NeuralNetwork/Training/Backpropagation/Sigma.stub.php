@@ -8,6 +8,7 @@
  */
 namespace Phpml\NeuralNetwork\Training\Backpropagation;
 
+use Phpml\NeuralNetwork\Node\Neuron;
 class Sigma
 {
     /**

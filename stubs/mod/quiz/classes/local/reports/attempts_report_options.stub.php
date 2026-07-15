@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\local\reports;
 
+use context_module;
+use mod_quiz\quiz_attempt;
+use moodle_url;
+use stdClass;
 /**
  * Base class for the options that control what is visible in an {@see attempts_report}.
  *

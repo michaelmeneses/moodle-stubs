@@ -8,6 +8,7 @@
  */
 namespace Aws\ServiceCatalog;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Service Catalog** service.
  * @method \Aws\Result acceptPortfolioShare(array $args = [])

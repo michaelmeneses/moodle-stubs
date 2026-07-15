@@ -30,6 +30,7 @@
  */
 namespace ltiservice_profile\local\resources;
 
+use mod_lti\local\ltiservice\service_base;
 /**
  * A resource implementing the Tool Consumer Profile.
  *

@@ -22,6 +22,21 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data;
 
+use action_menu;
+use action_menu_link_secondary;
+use core\output\checkbox_toggleall;
+use data_field_base;
+use html_writer;
+use mod_data\manager;
+use moodle_url;
+use pix_icon;
+use stdClass;
+use user_picture;
+use core_user;
+use portfolio_add_button;
+use data_portfolio_caller;
+use comment;
+use core_tag_tag;
 /**
  * Class template for database activity
  *

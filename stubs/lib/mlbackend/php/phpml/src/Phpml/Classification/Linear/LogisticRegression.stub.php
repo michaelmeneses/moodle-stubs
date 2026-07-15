@@ -8,6 +8,10 @@
  */
 namespace Phpml\Classification\Linear;
 
+use Closure;
+use Exception;
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Helper\Optimizer\ConjugateGradient;
 class LogisticRegression extends Adaline
 {
     /**

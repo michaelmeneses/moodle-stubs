@@ -29,6 +29,11 @@
  */
 namespace tool_admin_presets\output;
 
+use core_adminpresets\manager;
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
 /**
  * Class containing data for admin_presets tool
  *

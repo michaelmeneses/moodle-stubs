@@ -8,6 +8,7 @@
  */
 namespace Phpml\NeuralNetwork\ActivationFunction;
 
+use Phpml\NeuralNetwork\ActivationFunction;
 class Gaussian implements ActivationFunction
 {
     /**

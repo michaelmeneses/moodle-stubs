@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_usage;
 
+use core_question\local\bank\column_base;
 /**
  * Question bank column for the question last used.
  *

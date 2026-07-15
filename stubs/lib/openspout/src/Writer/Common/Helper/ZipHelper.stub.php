@@ -8,6 +8,10 @@
  */
 namespace OpenSpout\Writer\Common\Helper;
 
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use SplFileInfo;
+use ZipArchive;
 /**
  * @internal
  */

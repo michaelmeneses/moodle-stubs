@@ -15,6 +15,16 @@
  */
 namespace setasign\Fpdi\PdfReader;
 
+use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use setasign\Fpdi\PdfParser\PdfParser;
+use setasign\Fpdi\PdfParser\PdfParserException;
+use setasign\Fpdi\PdfParser\Type\PdfArray;
+use setasign\Fpdi\PdfParser\Type\PdfDictionary;
+use setasign\Fpdi\PdfParser\Type\PdfIndirectObject;
+use setasign\Fpdi\PdfParser\Type\PdfIndirectObjectReference;
+use setasign\Fpdi\PdfParser\Type\PdfNumeric;
+use setasign\Fpdi\PdfParser\Type\PdfType;
+use setasign\Fpdi\PdfParser\Type\PdfTypeException;
 /**
  * A PDF reader class
  */

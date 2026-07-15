@@ -8,6 +8,7 @@
  */
 namespace GuzzleHttp\Handler;
 
+use Psr\Http\Message\RequestInterface;
 interface CurlFactoryInterface
 {
     /**

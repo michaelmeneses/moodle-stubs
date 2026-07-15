@@ -8,6 +8,7 @@
  */
 namespace Aws\ElasticInference;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Elastic  Inference** service.
  * @method \Aws\Result describeAcceleratorOfferings(array $args = [])

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_tag\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use core_tag_tag;
 /**
  * Class to help display tag
  *

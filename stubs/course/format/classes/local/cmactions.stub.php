@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\local;
 
+use core_courseformat\sectiondelegatemodule;
+use course_modinfo;
 /**
  * Course module course format actions.
  *

@@ -29,6 +29,9 @@
  */
 namespace block_online_users\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\writer;
+use core_privacy\local\request\transform;
 /**
  * Privacy Subsystem for block_online_users.
  *

@@ -8,6 +8,13 @@
  */
 namespace core_reportbuilder\form;
 
+use context;
+use moodle_url;
+use core_form\dynamic_form;
+use core_reportbuilder\manager;
+use core_reportbuilder\permission;
+use core_reportbuilder\local\report\base;
+use core_reportbuilder\local\models\report;
 /**
  * Card view dynamic form
  *

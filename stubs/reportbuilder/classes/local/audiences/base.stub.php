@@ -8,6 +8,14 @@
  */
 namespace core_reportbuilder\local\audiences;
 
+use core_plugin_manager;
+use MoodleQuickForm;
+use stdClass;
+use core\output\notification;
+use core_reportbuilder\external\custom_report_audience_cards_exporter;
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\local\models\audience;
+use core_reportbuilder\exception\report_access_exception;
 /**
  * Audience base class
  *

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use stdClass;
 /**
  * This class keeps track of which HTML tags are currently open.
  *

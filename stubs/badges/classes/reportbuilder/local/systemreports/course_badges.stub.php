@@ -8,6 +8,15 @@
  */
 namespace core_badges\reportbuilder\local\systemreports;
 
+use core\context\system;
+use core_badges\reportbuilder\local\entities\badge;
+use core_badges\reportbuilder\local\entities\badge_issued;
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\system_report;
+use lang_string;
+use moodle_url;
+use pix_icon;
+use stdClass;
 /**
  * Course badges system report class implementation
  *

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\htmlchecker;
 
+use DOMDocument;
 /**
  * A report item. There is one per issue with the report
  *

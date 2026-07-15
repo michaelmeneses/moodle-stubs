@@ -8,6 +8,7 @@
  */
 namespace Aws\SageMaker;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon SageMaker Service** service.
  * @method \Aws\Result addAssociation(array $args = [])

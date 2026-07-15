@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Common\Entity\Style;
 
+use OpenSpout\Writer\Exception\Border\InvalidNameException;
+use OpenSpout\Writer\Exception\Border\InvalidStyleException;
+use OpenSpout\Writer\Exception\Border\InvalidWidthException;
 final class BorderPart
 {
     public const allowedStyles = [Border::STYLE_NONE, Border::STYLE_SOLID, Border::STYLE_DASHED, Border::STYLE_DOTTED, Border::STYLE_DOUBLE];

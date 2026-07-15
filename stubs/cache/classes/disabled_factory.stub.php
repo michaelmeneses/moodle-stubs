@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache;
 
+use cachestore_static;
+use core\exception\coding_exception;
 /**
  * The cache factory class used when the Cache has been disabled.
  *

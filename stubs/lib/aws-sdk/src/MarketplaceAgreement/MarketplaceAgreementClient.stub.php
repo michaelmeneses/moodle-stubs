@@ -8,6 +8,7 @@
  */
 namespace Aws\MarketplaceAgreement;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Marketplace Agreement Service** service.
  * @method \Aws\Result describeAgreement(array $args = [])

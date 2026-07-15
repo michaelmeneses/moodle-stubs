@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\oauth2\client;
 
+use core\oauth2\client;
 /**
  * Custom oauth2 client for Microsoft to handle specific requirements.
  *

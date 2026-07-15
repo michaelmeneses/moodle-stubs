@@ -8,6 +8,7 @@
  */
 namespace Aws\ComputeOptimizer;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Compute Optimizer** service.
  * @method \Aws\Result deleteRecommendationPreferences(array $args = [])

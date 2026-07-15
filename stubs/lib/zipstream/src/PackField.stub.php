@@ -8,6 +8,7 @@
  */
 namespace ZipStream;
 
+use RuntimeException;
 /**
  * @internal
  * TODO: Make class readonly when requiring PHP 8.2 exclusively

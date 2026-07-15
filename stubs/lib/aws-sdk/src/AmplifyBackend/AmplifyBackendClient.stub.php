@@ -8,6 +8,7 @@
  */
 namespace Aws\AmplifyBackend;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AmplifyBackend** service.
  * @method \Aws\Result cloneBackend(array $args = [])

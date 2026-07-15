@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting;
 
+use PhpOffice\PhpSpreadsheet\Style\Conditional;
+use SimpleXMLElement;
 class ConditionalFormattingRuleExtension
 {
     const CONDITION_EXTENSION_DATABAR = 'dataBar';

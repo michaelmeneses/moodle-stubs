@@ -29,6 +29,12 @@
  */
 namespace core_h5p;
 
+use core_h5p\local\library\autoloader;
+use core_xapi\handler;
+use core_xapi\local\state;
+use core_xapi\local\statement\item_activity;
+use core_xapi\local\statement\item_agent;
+use core_xapi\xapi_exception;
 /**
  * H5P player class, for displaying any local H5P content.
  *

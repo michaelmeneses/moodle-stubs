@@ -8,6 +8,9 @@
  */
 namespace RedeyeVentures\GeoPattern;
 
+use RedeyeVentures\GeoPattern\SVGElements\Polyline;
+use RedeyeVentures\GeoPattern\SVGElements\Rectangle;
+use RedeyeVentures\GeoPattern\SVGElements\Group;
 class GeoPattern
 {
     protected $string;

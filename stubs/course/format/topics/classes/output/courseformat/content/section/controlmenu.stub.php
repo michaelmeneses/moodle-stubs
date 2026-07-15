@@ -29,6 +29,8 @@
  */
 namespace format_topics\output\courseformat\content\section;
 
+use core_courseformat\output\local\content\section\controlmenu as controlmenu_base;
+use moodle_url;
 /**
  * Base class to render a course section menu.
  *

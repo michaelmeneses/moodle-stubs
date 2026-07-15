@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\action_menu;
 
+use core\output\action_link;
+use core\output\pix_icon;
+use core\output\renderable;
+use stdClass;
 /**
  * Interface to a subpanel implementation.
  *

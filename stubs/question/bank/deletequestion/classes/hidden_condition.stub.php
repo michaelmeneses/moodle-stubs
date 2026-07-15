@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_deletequestion;
 
+use core\output\datafilter;
+use core_question\local\bank\condition;
+use core_question\local\bank\question_version_status;
 /**
  * This class controls whether hidden / deleted questions are hidden in the list.
  *

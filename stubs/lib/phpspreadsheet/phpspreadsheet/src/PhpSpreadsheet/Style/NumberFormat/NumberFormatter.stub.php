@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
+use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 class NumberFormatter
 {
     private const NUMBER_REGEX = '/(0+)(\.?)(0*)/';

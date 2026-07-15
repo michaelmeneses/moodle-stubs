@@ -8,6 +8,7 @@
  */
 namespace Phpml\Math\Statistic;
 
+use Phpml\Exception\InvalidArgumentException;
 class Covariance
 {
     /**

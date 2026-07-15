@@ -8,6 +8,16 @@
  */
 namespace OpenSpout\Writer\ODS\Manager\Style;
 
+use OpenSpout\Common\Entity\Style\Border;
+use OpenSpout\Common\Entity\Style\BorderPart;
+use OpenSpout\Common\Entity\Style\CellAlignment;
+use OpenSpout\Common\Entity\Style\CellVerticalAlignment;
+use OpenSpout\Common\Entity\Style\Style;
+use OpenSpout\Writer\Common\AbstractOptions;
+use OpenSpout\Writer\Common\ColumnWidth;
+use OpenSpout\Writer\Common\Entity\Worksheet;
+use OpenSpout\Writer\Common\Manager\Style\AbstractStyleManager as CommonStyleManager;
+use OpenSpout\Writer\ODS\Helper\BorderHelper;
 /**
  * @internal
  *

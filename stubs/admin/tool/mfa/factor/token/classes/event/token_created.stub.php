@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace factor_token\event;
 
+use stdClass;
 /**
  * Event for a token being created for a user.
  *

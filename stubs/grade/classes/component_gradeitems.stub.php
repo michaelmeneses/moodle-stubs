@@ -8,6 +8,8 @@
  */
 namespace core_grades;
 
+use code_grades\local\gradeitem\itemnumber_mapping;
+use code_grades\local\gradeitem\advancedgrading_mapping;
 /**
  * Helper class to fetch information about component grade items.
  *

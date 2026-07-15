@@ -8,6 +8,9 @@
  */
 namespace Slim\Handlers\Strategies;
 
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use Slim\Interfaces\InvocationStrategyInterface;
 /**
  * Default route callback strategy with route parameters as an array of arguments.
  */

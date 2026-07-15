@@ -8,6 +8,10 @@
  */
 namespace core_reportbuilder\reportbuilder\audience;
 
+use context_system;
+use core_reportbuilder\local\audiences\base;
+use core_reportbuilder\local\helpers\database;
+use MoodleQuickForm;
 /**
  * The backend class for Has system role audience type
  *

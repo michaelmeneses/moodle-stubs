@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\actions;
 
+use core\exception\coding_exception;
+use moodle_url;
 /**
  * Component action for a popup window.
  *

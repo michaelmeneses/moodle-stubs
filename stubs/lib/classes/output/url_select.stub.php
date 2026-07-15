@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\exception\coding_exception;
+use moodle_url;
+use stdClass;
 /**
  * Simple URL selection widget description.
  *

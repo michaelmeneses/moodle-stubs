@@ -29,6 +29,7 @@
  */
 namespace core\plugininfo;
 
+use admin_settingpage;
 /**
  * Class for availability plugins.
  *

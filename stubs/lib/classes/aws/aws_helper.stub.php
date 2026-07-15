@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\aws;
 
+use Aws\CommandInterface;
+use Aws\AwsClient;
+use Psr\Http\Message\RequestInterface;
 /**
  * This class contains functions that help plugins to interact with the AWS SDK.
  *

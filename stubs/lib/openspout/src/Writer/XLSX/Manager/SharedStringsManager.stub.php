@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Writer\XLSX\Manager;
 
+use OpenSpout\Common\Helper\Escaper;
 /**
  * @internal
  */

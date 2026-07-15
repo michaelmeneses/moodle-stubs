@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace smsgateway_aws\local\service;
 
+use core_sms\message_status;
+use smsgateway_aws\helper;
+use smsgateway_aws\local\aws_sms_service_provider;
+use stdClass;
 /**
  * AWS SNS service provider.
  *

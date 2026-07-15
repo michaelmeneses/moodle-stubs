@@ -8,6 +8,7 @@
  */
 namespace core_reportbuilder\local\helpers;
 
+use core_text;
 /**
  * This class handles the setting and retrieving of a users' filter values for given reports
  *

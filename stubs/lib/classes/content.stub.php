@@ -29,6 +29,16 @@
  */
 namespace core;
 
+use coding_exception;
+use context;
+use core\content\export\exporters\course_exporter;
+use core\content\export\exporters\component_exporter;
+use core\content\export\exporters\abstract_mod_exporter;
+use core\content\export\zipwriter;
+use core_component;
+use moodle_url;
+use stdClass;
+use stored_file;
 /**
  * The Content API allows all parts of Moodle to determine details about content within a component, or plugintype.
  *

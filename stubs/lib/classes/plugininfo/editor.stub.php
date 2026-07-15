@@ -29,6 +29,9 @@
  */
 namespace core\plugininfo;
 
+use admin_settingpage;
+use moodle_url;
+use part_of_admin_tree;
 /**
  * Class for HTML editors
  */

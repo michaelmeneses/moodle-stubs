@@ -8,6 +8,9 @@
  */
 namespace DI\Definition\Source;
 
+use DI\Definition\AutowireDefinition;
+use DI\Definition\Definition;
+use DI\Definition\ObjectDefinition;
 /**
  * Decorator that caches another definition source.
  *

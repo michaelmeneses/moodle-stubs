@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\plugininfo;
 
+use core\plugininfo\base;
+use mod_bigbluebuttonbn\extension;
 /**
  * Subplugin extension info class.
  *

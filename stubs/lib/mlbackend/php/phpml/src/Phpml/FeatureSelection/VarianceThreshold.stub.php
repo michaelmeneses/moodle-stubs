@@ -8,6 +8,10 @@
  */
 namespace Phpml\FeatureSelection;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Math\Matrix;
+use Phpml\Math\Statistic\Variance;
+use Phpml\Transformer;
 final class VarianceThreshold implements Transformer
 {
     /**

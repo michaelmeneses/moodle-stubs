@@ -31,6 +31,14 @@
  */
 namespace core_courseformat\output\local\content;
 
+use context_course;
+use core\output\named_templatable;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\courseformat_named_templatable;
+use moodle_url;
+use renderable;
+use section_info;
+use stdClass;
 /**
  * Represents the frontpage section 1.
  *

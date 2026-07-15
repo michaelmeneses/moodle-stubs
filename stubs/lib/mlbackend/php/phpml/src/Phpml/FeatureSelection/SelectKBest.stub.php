@@ -8,6 +8,10 @@
  */
 namespace Phpml\FeatureSelection;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Exception\InvalidOperationException;
+use Phpml\FeatureSelection\ScoringFunction\ANOVAFValue;
+use Phpml\Transformer;
 final class SelectKBest implements Transformer
 {
     /**

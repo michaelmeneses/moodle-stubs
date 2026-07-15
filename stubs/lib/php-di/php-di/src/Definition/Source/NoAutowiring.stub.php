@@ -8,6 +8,8 @@
  */
 namespace DI\Definition\Source;
 
+use DI\Definition\Exception\InvalidDefinition;
+use DI\Definition\ObjectDefinition;
 /**
  * Implementation used when autowiring is completely disabled.
  *

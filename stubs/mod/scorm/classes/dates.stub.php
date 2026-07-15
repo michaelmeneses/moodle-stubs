@@ -8,6 +8,7 @@
  */
 namespace mod_scorm;
 
+use core\activity_dates;
 /**
  * Class for fetching the important dates in mod_scorm for a given module instance and a user.
  *

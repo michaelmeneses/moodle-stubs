@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Chart;
 
+use PhpOffice\PhpSpreadsheet\RichText\RichText;
 class Title
 {
     /**

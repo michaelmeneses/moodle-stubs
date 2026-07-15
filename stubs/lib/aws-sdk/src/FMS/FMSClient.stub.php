@@ -8,6 +8,7 @@
  */
 namespace Aws\FMS;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Firewall Management Service** service.
  * @method \Aws\Result associateAdminAccount(array $args = [])

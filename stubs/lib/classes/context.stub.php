@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace core;
 
+use stdClass, IteratorAggregate, ArrayIterator;
+use coding_exception, moodle_url;
 /**
  * Basic moodle context abstraction class.
  *

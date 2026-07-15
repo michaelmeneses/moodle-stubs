@@ -29,6 +29,8 @@
  */
 namespace qbank_editquestion;
 
+use core_question\local\bank\question_action_base;
+use moodle_url;
 /**
  * Class for question bank edit question column.
  *

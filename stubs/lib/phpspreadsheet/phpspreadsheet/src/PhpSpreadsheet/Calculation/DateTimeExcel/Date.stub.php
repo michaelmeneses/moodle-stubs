@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\DateTimeExcel;
 
+use PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+use PhpOffice\PhpSpreadsheet\Shared\Date as SharedDateHelper;
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
 class Date
 {
     use ArrayEnabled;

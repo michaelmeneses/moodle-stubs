@@ -8,6 +8,7 @@
  */
 namespace Kevinrob\GuzzleCache\Strategy\Delegate;
 
+use Psr\Http\Message\RequestInterface;
 interface RequestMatcherInterface
 {
     /**

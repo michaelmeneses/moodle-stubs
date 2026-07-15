@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz;
 
+use stdClass;
 /**
  * Helper for sending quiz related notifications.
  *

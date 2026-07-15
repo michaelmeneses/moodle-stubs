@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Engine;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
 class ArrayArgumentHelper
 {
     /**

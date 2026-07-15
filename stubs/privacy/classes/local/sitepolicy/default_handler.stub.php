@@ -29,6 +29,7 @@
  */
 namespace core_privacy\local\sitepolicy;
 
+use moodle_url;
 /**
  * Default (core) handler for site policies.
  *

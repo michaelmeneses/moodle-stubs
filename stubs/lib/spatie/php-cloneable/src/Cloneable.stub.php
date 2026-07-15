@@ -8,6 +8,7 @@
  */
 namespace Spatie\Cloneable;
 
+use ReflectionClass;
 trait Cloneable
 {
     public function with(...$values): static

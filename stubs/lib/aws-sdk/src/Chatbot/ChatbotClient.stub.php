@@ -8,6 +8,7 @@
  */
 namespace Aws\Chatbot;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **chatbot** service.
  * @method \Aws\Result createChimeWebhookConfiguration(array $args = [])

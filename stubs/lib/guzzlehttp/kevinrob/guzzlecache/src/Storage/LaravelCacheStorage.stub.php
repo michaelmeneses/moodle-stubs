@@ -8,6 +8,8 @@
  */
 namespace Kevinrob\GuzzleCache\Storage;
 
+use Illuminate\Contracts\Cache\Repository as Cache;
+use Kevinrob\GuzzleCache\CacheEntry;
 class LaravelCacheStorage implements CacheStorageInterface
 {
     /**

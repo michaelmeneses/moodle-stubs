@@ -29,6 +29,8 @@
  */
 namespace tool_cohortroles\output;
 
+use plugin_renderer_base;
+use renderable;
 /**
  * Renderer class for cohort roles
  *

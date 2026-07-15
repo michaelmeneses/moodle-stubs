@@ -8,6 +8,10 @@
  */
 namespace core_reportbuilder\local\filters;
 
+use core_course_category;
+use lang_string;
+use MoodleQuickForm;
+use core_reportbuilder\local\helpers\database;
 /**
  * Course category report filter
  *

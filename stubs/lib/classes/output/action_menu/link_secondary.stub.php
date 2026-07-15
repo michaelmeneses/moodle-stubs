@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\action_menu;
 
+use core\output\pix_icon;
+use moodle_url;
 /**
  * A secondary action menu action
  *

@@ -8,6 +8,11 @@
  */
 namespace OpenSpout\Writer\Common\Entity;
 
+use OpenSpout\Writer\AutoFilter;
+use OpenSpout\Writer\Common\ColumnWidth;
+use OpenSpout\Writer\Common\Manager\SheetManager;
+use OpenSpout\Writer\Exception\InvalidSheetNameException;
+use OpenSpout\Writer\XLSX\Entity\SheetView;
 /**
  * External representation of a worksheet.
  */

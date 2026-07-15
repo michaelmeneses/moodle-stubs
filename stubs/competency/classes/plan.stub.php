@@ -29,6 +29,10 @@
  */
 namespace core_competency;
 
+use comment;
+use context_user;
+use dml_missing_record_exception;
+use lang_string;
 /**
  * Class for loading/storing plans from the DB.
  *

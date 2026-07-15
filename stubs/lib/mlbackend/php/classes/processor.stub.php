@@ -29,6 +29,12 @@
  */
 namespace mlbackend_php;
 
+use Phpml\Preprocessing\Normalizer;
+use Phpml\CrossValidation\RandomSplit;
+use Phpml\Dataset\ArrayDataset;
+use Phpml\ModelManager;
+use Phpml\Classification\Linear\LogisticRegression;
+use Phpml\Metric\ClassificationReport;
 /**
  * PHP predictions processor.
  *

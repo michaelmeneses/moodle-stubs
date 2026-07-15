@@ -30,6 +30,9 @@
  */
 namespace core_course\local\repository;
 
+use core_component;
+use core_course\local\entity\content_item;
+use core_course\local\entity\lang_string_title;
 /**
  * The class content_item_repository, for reading content_items.
  *

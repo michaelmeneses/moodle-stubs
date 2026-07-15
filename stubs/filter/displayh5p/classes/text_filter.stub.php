@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace filter_displayh5p;
 
+use core\output\html_writer;
+use core\url;
+use core_filters\filter_object;
+use core_h5p\local\library\autoloader;
 /**
  * Display H5P filter
  *

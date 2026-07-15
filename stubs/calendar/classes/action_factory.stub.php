@@ -29,6 +29,8 @@
  */
 namespace core_calendar;
 
+use core_calendar\local\event\factories\action_factory_interface;
+use core_calendar\local\event\value_objects\action;
 /**
  * Action factory class.
  *

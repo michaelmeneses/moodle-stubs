@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared;
 
+use GdImage;
+use PhpOffice\PhpSpreadsheet\Reader\Exception as ReaderException;
+use SimpleXMLElement;
 class Drawing
 {
     /**

@@ -8,6 +8,7 @@
  */
 namespace Aws\PcaConnectorAd;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **PcaConnectorAd** service.
  * @method \Aws\Result createConnector(array $args = [])

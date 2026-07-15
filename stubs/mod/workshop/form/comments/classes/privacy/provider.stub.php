@@ -30,6 +30,7 @@
  */
 namespace workshopform_comments\privacy;
 
+use core_privacy\local\request\writer;
 /**
  * Privacy API implementation for the Comments grading strategy.
  *

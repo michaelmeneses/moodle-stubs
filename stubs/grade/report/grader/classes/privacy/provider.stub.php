@@ -29,6 +29,9 @@
  */
 namespace gradereport_grader\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem for gradereport_grader implementing null_provider.
  *

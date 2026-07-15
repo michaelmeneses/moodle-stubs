@@ -29,6 +29,7 @@
  */
 namespace report_insights\output;
 
+use core_analytics\prediction;
 /**
  * Single insight view page.
  *

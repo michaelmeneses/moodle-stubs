@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\progress_trace;
 
+use core\output\progress_trace;
 /**
  * HTML List Progress Tree
  *

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz;
 
+use stdClass;
 /**
  * The repaginate class will rearrange questions in pages.
  *

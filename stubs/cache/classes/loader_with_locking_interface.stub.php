@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache;
 
+use core\exception\moodle_exception;
 /**
  * Cache Loader supporting locking.
  *

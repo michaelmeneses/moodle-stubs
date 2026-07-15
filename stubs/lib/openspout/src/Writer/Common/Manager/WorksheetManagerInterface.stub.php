@@ -8,6 +8,10 @@
  */
 namespace OpenSpout\Writer\Common\Manager;
 
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Exception\InvalidArgumentException;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Writer\Common\Entity\Worksheet;
 /**
  * @internal
  */

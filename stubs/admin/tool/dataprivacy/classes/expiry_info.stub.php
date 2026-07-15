@@ -29,6 +29,7 @@
  */
 namespace tool_dataprivacy;
 
+use core_privacy\manager;
 /**
  * Expiry Data.
  *

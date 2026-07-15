@@ -49,6 +49,7 @@
  */
 namespace SimplePie;
 
+use SimplePie\Cache\Base;
 /**
  * Used to create cache objects
  *

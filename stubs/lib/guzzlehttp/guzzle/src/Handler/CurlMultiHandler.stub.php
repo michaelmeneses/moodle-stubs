@@ -8,6 +8,11 @@
  */
 namespace GuzzleHttp\Handler;
 
+use GuzzleHttp\Promise as P;
+use GuzzleHttp\Promise\Promise;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Utils;
+use Psr\Http\Message\RequestInterface;
 /**
  * Returns an asynchronous response using curl_multi_* functions.
  *

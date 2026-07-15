@@ -8,6 +8,9 @@
  */
 namespace Phpml\FeatureSelection\ScoringFunction;
 
+use Phpml\FeatureSelection\ScoringFunction;
+use Phpml\Math\Matrix;
+use Phpml\Math\Statistic\Mean;
 /**
  * Quick linear model for testing the effect of a single regressor,
  * sequentially for many regressors.

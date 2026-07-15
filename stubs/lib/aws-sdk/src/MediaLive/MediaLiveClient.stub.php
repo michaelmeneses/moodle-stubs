@@ -8,6 +8,7 @@
  */
 namespace Aws\MediaLive;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Elemental MediaLive** service.
  * @method \Aws\Result acceptInputDeviceTransfer(array $args = [])

@@ -8,6 +8,10 @@
  */
 namespace Kevinrob\GuzzleCache\Strategy\Delegate;
 
+use Kevinrob\GuzzleCache\Strategy\CacheStrategyInterface;
+use Kevinrob\GuzzleCache\Strategy\NullCacheStrategy;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 class DelegatingCacheStrategy implements CacheStrategyInterface
 {
     /**

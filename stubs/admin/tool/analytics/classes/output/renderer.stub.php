@@ -29,6 +29,7 @@
  */
 namespace tool_analytics\output;
 
+use plugin_renderer_base;
 /**
  * Renderer class.
  *

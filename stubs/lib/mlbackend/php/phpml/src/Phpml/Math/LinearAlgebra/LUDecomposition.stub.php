@@ -34,6 +34,8 @@
  */
 namespace Phpml\Math\LinearAlgebra;
 
+use Phpml\Exception\MatrixException;
+use Phpml\Math\Matrix;
 class LUDecomposition
 {
     /**

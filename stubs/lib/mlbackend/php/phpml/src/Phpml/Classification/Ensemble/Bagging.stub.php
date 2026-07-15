@@ -8,6 +8,12 @@
  */
 namespace Phpml\Classification\Ensemble;
 
+use Phpml\Classification\Classifier;
+use Phpml\Classification\DecisionTree;
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Helper\Predictable;
+use Phpml\Helper\Trainable;
+use ReflectionClass;
 class Bagging implements Classifier
 {
     use Trainable;

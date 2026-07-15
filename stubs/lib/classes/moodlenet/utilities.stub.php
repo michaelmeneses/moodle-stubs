@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\moodlenet;
 
+use core\oauth2\issuer;
 /**
  * Class containing static utilities (such as various checks) required by the MoodleNet API.
  *

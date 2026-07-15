@@ -8,6 +8,7 @@
  */
 namespace Phpml\NeuralNetwork\Node;
 
+use Phpml\NeuralNetwork\Node;
 class Bias implements Node
 {
     public function getOutput(): float

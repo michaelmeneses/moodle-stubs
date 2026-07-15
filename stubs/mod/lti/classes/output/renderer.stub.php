@@ -29,6 +29,7 @@
  */
 namespace mod_lti\output;
 
+use plugin_renderer_base;
 /**
  * Renderer class for template library.
  *

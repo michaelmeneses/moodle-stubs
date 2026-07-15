@@ -8,6 +8,10 @@
  */
 namespace core_reportbuilder\task;
 
+use core\{clock, di};
+use core\task\scheduled_task;
+use core_reportbuilder\local\helpers\schedule;
+use core_reportbuilder\local\models\schedule as model;
 /**
  * Scheduled task for sending queued report schedules
  *

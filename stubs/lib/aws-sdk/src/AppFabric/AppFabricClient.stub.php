@@ -8,6 +8,7 @@
  */
 namespace Aws\AppFabric;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AppFabric** service.
  * @method \Aws\Result batchGetUserAccessTasks(array $args = [])

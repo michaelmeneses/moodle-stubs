@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace filter_algebra;
 
+use core\context\system as context_system;
+use core\output\actions\popup_action;
+use core\url;
+use stdClass;
 /**
  * Moodle - Filter for converting simple calculator-type algebraic expressions to cached gif images
  *

@@ -29,6 +29,8 @@
  */
 namespace mod_h5pactivity\output\result;
 
+use mod_h5pactivity\output\result;
+use renderer_base;
 /**
  * Class to display H5P sequencing result.
  *

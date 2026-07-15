@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Writer\XLSX\Helper;
 
+use DateTimeInterface;
 /**
  * @internal
  */

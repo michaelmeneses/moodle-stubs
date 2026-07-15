@@ -30,3 +30,7 @@
  */
 define('NO_DEBUG_DISPLAY', true);
 define('NO_MOODLE_COOKIES', true);
+// TODO: Switch to core oauthlib once implemented - MDL-30149.
+use mod_lti\service_exception_handler;
+use moodle\mod\lti as lti;
+use ltiservice_basicoutcomes\local\service\basicoutcomes;

@@ -49,6 +49,12 @@
  */
 namespace SimplePie;
 
+use InvalidArgumentException;
+use SimplePie\Cache\Base;
+use SimplePie\Cache\BaseDataCache;
+use SimplePie\Cache\CallableNameFilter;
+use SimplePie\Cache\DataCache;
+use SimplePie\Cache\NameFilter;
 /**
  * Used for data cleanup and post-processing
  *

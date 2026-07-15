@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\htmlchecker\reporters;
 
+use tool_brickfield\local\htmlchecker\brickfield_accessibility;
+use tool_brickfield\local\htmlchecker\brickfield_accessibility_reporter;
 /**
  * Returns the entire document marked-up to highlight problems.
  *

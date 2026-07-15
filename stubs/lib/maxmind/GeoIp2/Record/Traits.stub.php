@@ -8,6 +8,7 @@
  */
 namespace GeoIp2\Record;
 
+use GeoIp2\Util;
 /**
  * Contains data for the traits record associated with an IP address.
  *

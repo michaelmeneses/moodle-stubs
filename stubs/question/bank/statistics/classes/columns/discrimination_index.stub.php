@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_statistics\columns;
 
+use core_question\local\bank\column_base;
 /**
  * This columns shows a message about whether this question is OK or needs revision.
  *

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router;
 
+use core\component;
+use core\router\schema\specification;
+use Psr\Http\Message\ResponseInterface;
+use ReflectionClass;
+use Throwable;
 /**
  * Moodle Router.
  *

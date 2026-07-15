@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache;
 
+use core\exception\coding_exception;
 /**
  * The cache loader class used when the Cache has been disabled.
  *

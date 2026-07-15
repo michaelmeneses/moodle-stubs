@@ -29,6 +29,8 @@
  */
 namespace core_editor\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\writer;
 /**
  * Provider for the editor API.
  *

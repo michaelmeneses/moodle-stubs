@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_survey\output;
 
+use moodle_url;
+use renderable;
+use renderer_base;
+use templatable;
+use url_select;
 /**
  * Output the rendered elements for the tertiary nav page action
  *

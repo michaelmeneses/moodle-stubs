@@ -8,6 +8,7 @@
  */
 namespace Phpml\NeuralNetwork\Node;
 
+use Phpml\NeuralNetwork\Node;
 class Input implements Node
 {
     /**

@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use SimpleXMLElement;
 class WorkbookView
 {
     /**

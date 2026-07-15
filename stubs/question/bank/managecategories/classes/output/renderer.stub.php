@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories\output;
 
+use core\check\performance\debugging;
+use plugin_renderer_base;
 /**
  * Class renderer for managecategories.
  *

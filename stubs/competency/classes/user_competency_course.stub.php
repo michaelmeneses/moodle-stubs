@@ -29,6 +29,9 @@
  */
 namespace core_competency;
 
+use context_course;
+use context_user;
+use lang_string;
 /**
  * Class for loading/storing user_competency_course from the DB.
  *

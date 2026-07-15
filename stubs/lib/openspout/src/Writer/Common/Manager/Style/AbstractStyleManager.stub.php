@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Writer\Common\Manager\Style;
 
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Style\Style;
 /**
  * @internal
  */

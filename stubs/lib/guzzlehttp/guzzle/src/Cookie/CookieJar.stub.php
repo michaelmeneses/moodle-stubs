@@ -8,6 +8,8 @@
  */
 namespace GuzzleHttp\Cookie;
 
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Cookie jar that stores cookies as an array
  */

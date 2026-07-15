@@ -8,6 +8,8 @@
  */
 namespace GuzzleHttp\Exception;
 
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Exception when an HTTP error occurs (4xx or 5xx error)
  */

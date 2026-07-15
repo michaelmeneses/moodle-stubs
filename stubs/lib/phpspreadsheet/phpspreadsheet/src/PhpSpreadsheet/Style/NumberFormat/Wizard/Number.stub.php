@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\NumberFormat\Wizard;
 
+use PhpOffice\PhpSpreadsheet\Exception;
 class Number extends NumberBase implements Wizard
 {
     public const WITH_THOUSANDS_SEPARATOR = true;

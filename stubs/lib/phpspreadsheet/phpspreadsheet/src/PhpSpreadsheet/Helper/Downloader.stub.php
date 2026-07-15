@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Helper;
 
+use PhpOffice\PhpSpreadsheet\Exception;
 class Downloader
 {
     protected string $filepath;

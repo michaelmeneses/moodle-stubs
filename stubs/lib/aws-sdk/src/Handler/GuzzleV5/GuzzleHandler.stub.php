@@ -8,6 +8,18 @@
  */
 namespace Aws\Handler\GuzzleV5;
 
+use Exception;
+use GuzzleHttp\Client;
+use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Event\EndEvent;
+use GuzzleHttp\Exception\ConnectException;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Message\ResponseInterface as GuzzleResponse;
+use GuzzleHttp\Promise;
+use GuzzleHttp\Psr7\Response as Psr7Response;
+use GuzzleHttp\Stream\Stream;
+use Psr\Http\Message\RequestInterface as Psr7Request;
+use Psr\Http\Message\StreamInterface as Psr7StreamInterface;
 /**
  * A request handler that sends PSR-7-compatible requests with Guzzle 5.
  *

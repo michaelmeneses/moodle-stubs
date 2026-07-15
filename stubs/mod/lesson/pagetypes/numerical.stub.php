@@ -8,6 +8,7 @@
  */
 /** Numerical question type */
 define("LESSON_PAGE_NUMERICAL", "8");
+use mod_lesson\local\numeric\helper;
 class lesson_page_type_numerical extends lesson_page
 {
     protected $type = lesson_page::TYPE_QUESTION;

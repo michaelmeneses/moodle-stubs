@@ -8,6 +8,7 @@
  */
 namespace Aws\QLDB;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon QLDB** service.
  * @method \Aws\Result cancelJournalKinesisStream(array $args = [])

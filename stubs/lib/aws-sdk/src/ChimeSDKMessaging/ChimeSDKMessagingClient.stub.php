@@ -8,6 +8,7 @@
  */
 namespace Aws\ChimeSDKMessaging;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Chime SDK Messaging** service.
  * @method \Aws\Result associateChannelFlow(array $args = [])

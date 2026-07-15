@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories;
 
+use context;
+use core_question\category_manager;
+use core_question\local\bank\question_version_status;
+use moodle_exception;
+use html_writer;
 /**
  * Class helper contains all the library functions.
  *

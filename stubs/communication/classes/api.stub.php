@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_communication;
 
+use core\context;
+use core_communication\task\add_members_to_room_task;
+use core_communication\task\create_and_configure_room_task;
+use core_communication\task\delete_room_task;
+use core_communication\task\remove_members_from_room;
+use core_communication\task\synchronise_provider_task;
+use core_communication\task\update_room_task;
+use core_communication\task\update_room_membership_task;
+use stdClass;
 /**
  * Class api is the public endpoint of the communication api. This class is the point of contact for api usage.
  *

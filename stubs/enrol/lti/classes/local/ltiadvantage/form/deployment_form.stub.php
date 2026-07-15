@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\form;
 
+use enrol_lti\local\ltiadvantage\repository\deployment_repository;
 /**
  * The deployment_form class, for registering a deployment for a registered platform.
  *

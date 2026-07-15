@@ -29,6 +29,8 @@
  */
 namespace tool_policy\privacy\local\sitepolicy;
 
+use tool_policy\api;
+use tool_policy\policy_version;
 /**
  * Class implementation for a site policy handler.
  *

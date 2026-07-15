@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use action_menu;
+use action_menu_link_secondary;
+use mod_data\manager;
+use mod_data\preset;
+use moodle_url;
+use templatable;
+use renderable;
+use renderer_base;
+use stdClass;
 /**
  * Renderable class for the presets table in the database activity.
  *

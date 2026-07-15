@@ -29,6 +29,7 @@
  */
 namespace block_accessreview\privacy;
 
+use core_privacy\local\metadata\collection;
 /**
  * The accessreview block stores a user preference data.
  *

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router;
 
+use core\exception\coding_exception;
+use core\router\schema\parameter;
+use core\router\schema\response\response;
+use core\router\schema\request_body;
+use Attribute;
 /**
  * Routing attribute.
  *

@@ -8,6 +8,11 @@
  */
 namespace core_reportbuilder\external;
 
+use renderer_base;
+use core\external\exporter;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\report\filter;
+use core_reportbuilder\output\filter_heading_editable;
 /**
  * Custom report filters exporter class
  *

@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiplacement_editor\external;
 
+use aiplacement_editor\utils;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_value;
 /**
  * External API to call an action for this placement.
  *

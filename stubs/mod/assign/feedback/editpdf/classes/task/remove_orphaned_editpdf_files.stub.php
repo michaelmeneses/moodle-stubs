@@ -29,6 +29,7 @@
  */
 namespace assignfeedback_editpdf\task;
 
+use core\task\adhoc_task;
 /**
  * Cleans up orphaned feedback pdf files and table entries.
  *

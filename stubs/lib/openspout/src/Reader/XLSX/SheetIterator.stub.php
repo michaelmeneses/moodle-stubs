@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Reader\XLSX;
 
+use OpenSpout\Reader\Exception\NoSheetsFoundException;
+use OpenSpout\Reader\SheetIteratorInterface;
+use OpenSpout\Reader\XLSX\Manager\SheetManager;
 /**
  * @implements SheetIteratorInterface<Sheet>
  */

@@ -8,6 +8,10 @@
  */
 namespace core_cohort\reportbuilder\datasource;
 
+use core_cohort\reportbuilder\local\entities\{cohort, cohort_member};
+use core_reportbuilder\local\filters\boolean_select;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\user;
 /**
  * Cohorts datasource
  *

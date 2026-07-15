@@ -8,6 +8,14 @@
  */
 namespace Aws\Handler\GuzzleV6;
 
+use Exception;
+use GuzzleHttp\Exception\ConnectException;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Promise;
+use GuzzleHttp\Client;
+use GuzzleHttp\ClientInterface;
+use GuzzleHttp\TransferStats;
+use Psr\Http\Message\RequestInterface as Psr7Request;
 /**
  * A request handler that sends PSR-7-compatible requests with Guzzle 6.
  */

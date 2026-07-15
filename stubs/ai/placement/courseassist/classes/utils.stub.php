@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiplacement_courseassist;
 
+use core_ai\aiactions\summarise_text;
+use core_ai\manager;
 /**
  * AI Placement course assist utils.
  *

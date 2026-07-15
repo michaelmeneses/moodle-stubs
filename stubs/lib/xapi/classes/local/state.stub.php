@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_xapi\local;
 
+use core_xapi\local\statement\item_agent;
+use core_xapi\local\statement\item_activity;
+use JsonSerializable;
+use stdClass;
 /**
  * State resource object for xAPI structure checking and validation.
  *

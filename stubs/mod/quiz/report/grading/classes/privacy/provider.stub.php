@@ -29,6 +29,8 @@
  */
 namespace quiz_grading\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\writer;
 /**
  * Privacy subsystem for quiz_grading.
  */

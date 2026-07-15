@@ -29,6 +29,11 @@
  */
 namespace core_completion\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_userlist;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\userlist;
 /**
  * Privacy class for requesting user data.
  *

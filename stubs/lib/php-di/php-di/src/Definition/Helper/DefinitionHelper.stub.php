@@ -8,6 +8,7 @@
  */
 namespace DI\Definition\Helper;
 
+use DI\Definition\Definition;
 /**
  * Helps defining container entries.
  *

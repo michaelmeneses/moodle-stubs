@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_tag\external;
 
+use core_tag_tag;
 /**
  * Tag external functions utility class.
  *

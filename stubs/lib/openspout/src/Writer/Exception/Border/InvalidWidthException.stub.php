@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Writer\Exception\Border;
 
+use OpenSpout\Common\Entity\Style\BorderPart;
+use OpenSpout\Writer\Exception\WriterException;
 final class InvalidWidthException extends WriterException
 {
     public function __construct(string $name)

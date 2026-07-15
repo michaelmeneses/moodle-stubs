@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_user\form;
 
+use html_writer;
+use moodle_url;
 /**
  * Manage user private area files form
  *

@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\parameters;
 
+use core\exception\invalid_parameter_exception;
+use core\param;
+use core\router\schema\parameter;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * A Header Object.
  *

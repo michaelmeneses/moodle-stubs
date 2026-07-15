@@ -29,6 +29,7 @@
  */
 namespace mod_chat\external;
 
+use core\external\exporter;
 /**
  * Class for exporting a chat message.
  *

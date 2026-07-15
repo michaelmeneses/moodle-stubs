@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\task;
 
+use tool_brickfield\accessibility;
+use tool_brickfield\brickfieldconnect;
+use tool_brickfield\manager;
+use tool_brickfield\registration;
 /**
  * Task function to update this site's summary data to the Brickfield database.
  *

@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Financial\Securities;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Financial\FinancialValidations;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
 class SecurityValidations extends FinancialValidations
 {
     /**

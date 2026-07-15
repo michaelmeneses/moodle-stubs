@@ -8,6 +8,16 @@
  */
 namespace Aws\EndpointDiscovery;
 
+use Aws\AwsClient;
+use Aws\CacheInterface;
+use Aws\CommandInterface;
+use Aws\Credentials\CredentialsInterface;
+use Aws\Exception\AwsException;
+use Aws\Exception\UnresolvedEndpointException;
+use Aws\LruArrayCache;
+use Aws\Middleware;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\UriInterface;
 class EndpointDiscoveryMiddleware
 {
     /**

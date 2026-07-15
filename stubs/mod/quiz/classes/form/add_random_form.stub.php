@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\form;
 
+use core\check\performance\debugging;
+use core_tag_tag;
+use moodleform;
 /**
  * The add random questions form.
  *

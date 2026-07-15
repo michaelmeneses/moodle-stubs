@@ -8,6 +8,7 @@
  */
 namespace Aws\LexRuntimeV2;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Lex Runtime V2** service.
  * @method \Aws\Result deleteSession(array $args = [])

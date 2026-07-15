@@ -30,6 +30,13 @@
  */
 namespace mod_bigbluebuttonbn\local\helpers;
 
+use cache;
+use cache_store;
+use context;
+use context_course;
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\proxy\bigbluebutton_proxy;
+use stdClass;
 /**
  * Utility class for all roles routines helper
  *

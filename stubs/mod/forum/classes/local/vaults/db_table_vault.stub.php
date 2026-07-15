@@ -29,6 +29,8 @@
  */
 namespace mod_forum\local\vaults;
 
+use mod_forum\local\factories\entity as entity_factory;
+use moodle_database;
 /**
  * Abstract class for loading records from the DB.
  *

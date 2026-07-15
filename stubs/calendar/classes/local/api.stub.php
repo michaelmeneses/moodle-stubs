@@ -29,6 +29,9 @@
  */
 namespace core_calendar\local;
 
+use core_calendar\local\event\container;
+use core_calendar\local\event\entities\event_interface;
+use core_calendar\local\event\exceptions\limit_invalid_parameter_exception;
 /**
  * Class containing the local calendar API.
  *

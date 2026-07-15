@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace qbank_usage\tables;
 
+use context_course;
+use html_writer;
+use moodle_url;
+use qbank_usage\helper;
+use table_sql;
 /**
  * Class question_usage_table.
  * An extension of regular Moodle table.

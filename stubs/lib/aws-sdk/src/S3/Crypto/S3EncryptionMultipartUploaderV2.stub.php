@@ -8,6 +8,13 @@
  */
 namespace Aws\S3\Crypto;
 
+use Aws\Crypto\AbstractCryptoClientV2;
+use Aws\Crypto\EncryptionTraitV2;
+use Aws\Crypto\MetadataEnvelope;
+use Aws\Crypto\Cipher\CipherBuilderTrait;
+use Aws\S3\MultipartUploader;
+use Aws\S3\S3ClientInterface;
+use GuzzleHttp\Promise;
 /**
  * Encapsulates the execution of a multipart upload of an encrypted object to S3.
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\Appstream;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon AppStream** service.
  * @method \Aws\Result associateAppBlockBuilderAppBlock(array $args = [])

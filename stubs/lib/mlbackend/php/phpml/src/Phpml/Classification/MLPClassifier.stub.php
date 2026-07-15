@@ -8,6 +8,8 @@
  */
 namespace Phpml\Classification;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\NeuralNetwork\Network\MultilayerPerceptron;
 class MLPClassifier extends MultilayerPerceptron implements Classifier
 {
     /**

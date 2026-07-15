@@ -30,6 +30,8 @@
  */
 namespace quizaccess_seb;
 
+use core\notification;
+use quizaccess_seb\local\table\template_list;
 /**
  * Class for manipulating with the template records.
  *

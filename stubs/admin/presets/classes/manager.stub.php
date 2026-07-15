@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_adminpresets;
 
+use memory_xml_output;
+use moodle_exception;
+use stdClass;
+use xml_writer;
 /**
  * Admin tool presets manager class.
  *

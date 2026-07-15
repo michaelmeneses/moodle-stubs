@@ -8,6 +8,7 @@
  */
 namespace Aws\AugmentedAIRuntime;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Augmented AI Runtime** service.
  * @method \Aws\Result deleteHumanLoop(array $args = [])

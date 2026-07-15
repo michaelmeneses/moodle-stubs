@@ -30,6 +30,19 @@
  */
 namespace mod_chat\privacy;
 
+use context;
+use context_helper;
+use context_module;
+use moodle_recordset;
+use stdClass;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\approved_userlist;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\helper;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\writer;
 /**
  * Data provider class.
  *

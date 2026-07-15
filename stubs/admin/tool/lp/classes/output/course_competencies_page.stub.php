@@ -29,6 +29,27 @@
  */
 namespace tool_lp\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use moodle_url;
+use context_system;
+use context_course;
+use core_competency\api;
+use tool_lp\course_competency_statistics;
+use core_competency\competency;
+use core_competency\course_competency;
+use core_competency\external\performance_helper;
+use core_competency\external\competency_exporter;
+use core_competency\external\course_competency_exporter;
+use core_competency\external\course_competency_settings_exporter;
+use core_competency\external\user_competency_course_exporter;
+use core_competency\external\user_competency_exporter;
+use core_competency\external\plan_exporter;
+use tool_lp\external\competency_path_exporter;
+use tool_lp\external\course_competency_statistics_exporter;
+use core_course\external\course_module_summary_exporter;
 /**
  * Class containing data for course competencies page
  *

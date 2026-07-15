@@ -8,6 +8,11 @@
  */
 namespace Phpml\Clustering;
 
+use Phpml\Clustering\KMeans\Cluster;
+use Phpml\Clustering\KMeans\Point;
+use Phpml\Clustering\KMeans\Space;
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Math\Distance\Euclidean;
 class FuzzyCMeans implements Clusterer
 {
     /**

@@ -8,6 +8,11 @@
  */
 namespace RedeyeVentures\GeoPattern;
 
+use RedeyeVentures\GeoPattern\SVGElements\Group;
+use RedeyeVentures\GeoPattern\SVGElements\Polyline;
+use RedeyeVentures\GeoPattern\SVGElements\Rectangle;
+use RedeyeVentures\GeoPattern\SVGElements\Circle;
+use RedeyeVentures\GeoPattern\SVGElements\Path;
 class SVG
 {
     protected $width;

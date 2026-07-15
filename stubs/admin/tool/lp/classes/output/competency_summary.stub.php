@@ -29,6 +29,12 @@
  */
 namespace tool_lp\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use core_competency\api;
+use tool_lp\external\competency_summary_exporter;
 /**
  * Class containing data for competency summary
  *

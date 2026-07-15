@@ -8,6 +8,15 @@
  */
 namespace OpenSpout\Reader\XLSX\Helper;
 
+use DateInterval;
+use DateTimeImmutable;
+use DOMElement;
+use Exception;
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Helper\Escaper\XLSX;
+use OpenSpout\Reader\Exception\InvalidValueException;
+use OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
+use OpenSpout\Reader\XLSX\Manager\StyleManagerInterface;
 /**
  * This class provides helper functions to format cell values.
  */

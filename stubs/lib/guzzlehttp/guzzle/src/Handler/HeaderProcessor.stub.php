@@ -8,6 +8,7 @@
  */
 namespace GuzzleHttp\Handler;
 
+use GuzzleHttp\Utils;
 /**
  * @internal
  */

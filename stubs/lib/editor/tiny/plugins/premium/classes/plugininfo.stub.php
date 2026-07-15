@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tiny_premium;
 
+use context;
+use editor_tiny\editor;
+use editor_tiny\plugin;
+use editor_tiny\plugin_with_configuration;
+use tiny_premium\manager;
 /**
  * Tiny Premium plugin.
  *

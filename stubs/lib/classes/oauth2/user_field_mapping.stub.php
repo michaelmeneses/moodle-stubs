@@ -29,6 +29,8 @@
  */
 namespace core\oauth2;
 
+use core\persistent;
+use lang_string;
 /**
  * Class for loading/storing oauth2 user field mappings from the DB
  *

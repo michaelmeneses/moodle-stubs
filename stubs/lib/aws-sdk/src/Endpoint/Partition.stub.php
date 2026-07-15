@@ -8,6 +8,11 @@
  */
 namespace Aws\Endpoint;
 
+use ArrayAccess;
+use Aws\HasDataTrait;
+use Aws\Sts\RegionalEndpoints\ConfigurationProvider;
+use Aws\S3\RegionalEndpoint\ConfigurationProvider as S3ConfigurationProvider;
+use InvalidArgumentException as Iae;
 /**
  * Default implementation of an AWS partition.
  */

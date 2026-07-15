@@ -8,6 +8,10 @@
  */
 namespace core_reportbuilder\external;
 
+use core_collator;
+use core_component;
+use renderer_base;
+use core_reportbuilder\local\audiences\base;
 /**
  * Custom report audience cards exporter class
  *

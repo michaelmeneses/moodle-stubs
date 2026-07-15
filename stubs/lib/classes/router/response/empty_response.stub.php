@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\response;
 
+use core\router\schema\referenced_object;
 /**
  * A standard empty 204 response.
  *

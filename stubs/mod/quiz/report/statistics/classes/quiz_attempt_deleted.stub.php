@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace quiz_statistics;
 
+use quiz_statistics\task\recalculate;
 /**
  * Queue a statistics recalculation when an attempt is deleted.
  *

@@ -8,6 +8,7 @@
  */
 namespace mod_data;
 
+use core\activity_dates;
 /**
  * Class for fetching the important dates in mod_data for a given module instance and a user.
  *

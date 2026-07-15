@@ -29,6 +29,11 @@
  */
 namespace repository_onedrive;
 
+use core\task\scheduled_task;
+use DateTime;
+use DateInterval;
+use repository_exception;
+use core\oauth2\rest_exception;
 /**
  * Simple task to delete temporary permission records.
  * @package    repository_onedrive

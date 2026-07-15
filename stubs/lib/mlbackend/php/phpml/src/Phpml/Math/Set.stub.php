@@ -8,6 +8,8 @@
  */
 namespace Phpml\Math;
 
+use ArrayIterator;
+use IteratorAggregate;
 class Set implements IteratorAggregate
 {
     /**

@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace factor_totp;
 
+use MoodleQuickForm;
+use tool_mfa\local\factor\object_factor_base;
+use OTPHP\TOTP;
+use stdClass;
+use core\clock;
+use core\context\system;
+use core\di;
 /**
  * TOTP factor class.
  *

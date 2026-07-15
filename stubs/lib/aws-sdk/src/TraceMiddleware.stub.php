@@ -8,6 +8,14 @@
  */
 namespace Aws;
 
+use Aws\Api\Service;
+use Aws\Exception\AwsException;
+use GuzzleHttp\Promise\RejectedPromise;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
+use RecursiveArrayIterator;
+use RecursiveIteratorIterator;
 /**
  * Traces state changes between middlewares.
  */

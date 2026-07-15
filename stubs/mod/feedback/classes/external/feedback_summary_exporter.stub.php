@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_feedback\external;
 
+use core\external\exporter;
+use renderer_base;
+use core_external\util as external_util;
+use core_external\external_files;
 /**
  * Class for exporting partial feedback data (some fields are only viewable by admins).
  *

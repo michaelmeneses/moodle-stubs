@@ -29,6 +29,14 @@
  */
 namespace block_lp\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use moodle_url;
+use core_competency\api;
+use core_competency\external\plan_exporter;
+use core_user\external\user_summary_exporter;
 /**
  * Plans to review renderable class.
  *
