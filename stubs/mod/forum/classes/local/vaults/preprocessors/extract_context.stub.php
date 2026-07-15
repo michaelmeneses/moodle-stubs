@@ -29,6 +29,8 @@
  */
 namespace mod_forum\local\vaults\preprocessors;
 
+use context;
+use context_helper;
 /**
  * Extract context vault preprocessor.
  *

@@ -22,6 +22,33 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz;
 
+use action_link;
+use block_contents;
+use cm_info;
+use coding_exception;
+use context_module;
+use core\di;
+use core\hook;
+use Exception;
+use html_writer;
+use mod_quiz\hook\attempt_state_changed;
+use mod_quiz\output\grades\grade_out_of;
+use mod_quiz\output\links_to_other_attempts;
+use mod_quiz\output\renderer;
+use mod_quiz\question\bank\qbank_helper;
+use mod_quiz\question\display_options;
+use moodle_exception;
+use moodle_url;
+use popup_action;
+use qtype_description_question;
+use question_attempt;
+use question_bank;
+use question_display_options;
+use question_engine;
+use question_out_of_sequence_exception;
+use question_state;
+use question_usage_by_activity;
+use stdClass;
 /**
  * This class represents one user's attempt at a particular quiz.
  *

@@ -29,6 +29,9 @@
  */
 namespace tool_dataprivacy\form;
 
+use tool_dataprivacy\api;
+use tool_dataprivacy\data_registry;
+use tool_dataprivacy\purpose;
 /**
  * Context instance data form.
  *

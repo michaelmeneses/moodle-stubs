@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder;
 
+use context;
+use context_system;
+use core_reportbuilder\exception\report_access_exception;
+use core_reportbuilder\local\helpers\audience;
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\local\report\base;
 /**
  * Report permission class
  *

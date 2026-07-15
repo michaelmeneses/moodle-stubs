@@ -47,81 +47,90 @@
  * @link http://simplepie.org/ SimplePie
  * @license http://www.opensource.org/licenses/bsd-license.php BSD License
  */
-namespace SimplePie;
-
-/**
- * Manages all author-related data
- *
- * Used by {@see Item::get_author()} and {@see SimplePie::get_authors()}
- *
- * This class can be overloaded with {@see SimplePie::set_author_class()}
- *
- * @package SimplePie
- * @subpackage API
- */
-class Author
-{
+namespace SimplePie {
     /**
-     * Author's name
+     * Manages all author-related data
      *
-     * @var string
-     * @see get_name()
-     */
-    public $name;
-    /**
-     * Author's link
+     * Used by {@see Item::get_author()} and {@see SimplePie::get_authors()}
      *
-     * @var string
-     * @see get_link()
-     */
-    public $link;
-    /**
-     * Author's email address
+     * This class can be overloaded with {@see SimplePie::set_author_class()}
      *
-     * @var string
-     * @see get_email()
+     * @package SimplePie
+     * @subpackage API
      */
-    public $email;
-    /**
-     * Constructor, used to input the data
-     *
-     * @param string $name
-     * @param string $link
-     * @param string $email
-     */
-    public function __construct($name = null, $link = null, $email = null)
+    class Author
     {
+        /**
+         * Author's name
+         *
+         * @var string
+         * @see get_name()
+         */
+        public $name;
+        /**
+         * Author's link
+         *
+         * @var string
+         * @see get_link()
+         */
+        public $link;
+        /**
+         * Author's email address
+         *
+         * @var string
+         * @see get_email()
+         */
+        public $email;
+        /**
+         * Constructor, used to input the data
+         *
+         * @param string $name
+         * @param string $link
+         * @param string $email
+         */
+        public function __construct($name = null, $link = null, $email = null)
+        {
+        }
+        /**
+         * String-ified version
+         *
+         * @return string
+         */
+        public function __toString()
+        {
+        }
+        /**
+         * Author's name
+         *
+         * @return string|null
+         */
+        public function get_name()
+        {
+        }
+        /**
+         * Author's link
+         *
+         * @return string|null
+         */
+        public function get_link()
+        {
+        }
+        /**
+         * Author's email address
+         *
+         * @return string|null
+         */
+        public function get_email()
+        {
+        }
     }
+}
+namespace {
     /**
-     * String-ified version
-     *
-     * @return string
+     * Runtime class alias of \SimplePie\Author registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __toString()
-    {
-    }
-    /**
-     * Author's name
-     *
-     * @return string|null
-     */
-    public function get_name()
-    {
-    }
-    /**
-     * Author's link
-     *
-     * @return string|null
-     */
-    public function get_link()
-    {
-    }
-    /**
-     * Author's email address
-     *
-     * @return string|null
-     */
-    public function get_email()
+    class SimplePie_Author extends \SimplePie\Author
     {
     }
 }

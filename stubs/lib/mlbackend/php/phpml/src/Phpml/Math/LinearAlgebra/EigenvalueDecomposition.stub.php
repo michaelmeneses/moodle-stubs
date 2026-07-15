@@ -34,6 +34,7 @@
  */
 namespace Phpml\Math\LinearAlgebra;
 
+use Phpml\Math\Matrix;
 class EigenvalueDecomposition
 {
     /**

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\aws;
 
+use Aws\AwsClient;
 /**
  * AWS Client factory. Retrieves a client with moodle specific HTTP configuration.
  *

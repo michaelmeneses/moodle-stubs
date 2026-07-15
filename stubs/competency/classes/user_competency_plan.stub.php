@@ -29,6 +29,8 @@
  */
 namespace core_competency;
 
+use lang_string;
+use context_user;
 /**
  * Class for loading/storing user_competency_plan from the DB.
  *

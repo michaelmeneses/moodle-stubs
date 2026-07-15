@@ -8,6 +8,8 @@
  */
 namespace Phpml\DimensionReduction;
 
+use Phpml\Math\LinearAlgebra\EigenvalueDecomposition;
+use Phpml\Math\Matrix;
 /**
  * Class to compute eigen pairs (values & vectors) of a given matrix
  * with the consideration of numFeatures or totalVariance to be preserved

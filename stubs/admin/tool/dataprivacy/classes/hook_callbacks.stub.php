@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_dataprivacy;
 
+use html_writer;
+use moodle_url;
 /**
  * Hook callbacks for tool_dataprivacy.
  *

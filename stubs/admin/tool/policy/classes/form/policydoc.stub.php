@@ -30,6 +30,11 @@
  */
 namespace tool_policy\form;
 
+use context_system;
+use html_writer;
+use moodleform;
+use tool_policy\api;
+use tool_policy\policy_version;
 /**
  * Defines the form for editing a policy document version.
  *

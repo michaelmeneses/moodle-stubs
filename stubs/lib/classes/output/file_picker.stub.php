@@ -20,39 +20,51 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Data structure representing a file picker.
- *
- * @copyright 2010 Dongsheng Cai
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class file_picker implements renderable
-{
+namespace core\output {
+    use core\context\user as context_user;
+    use moodle_url;
+    use stdClass;
     /**
-     * @var stdClass An object containing options for the file picker
+     * Data structure representing a file picker.
+     *
+     * @copyright 2010 Dongsheng Cai
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public $options;
+    class file_picker implements renderable
+    {
+        /**
+         * @var stdClass An object containing options for the file picker
+         */
+        public $options;
+        /**
+         * Constructs a file picker object.
+         *
+         * The following are possible options for the filepicker:
+         *    - accepted_types  (*)
+         *    - return_types    (FILE_INTERNAL)
+         *    - env             (filepicker)
+         *    - client_id       (uniqid)
+         *    - itemid          (0)
+         *    - maxbytes        (-1)
+         *    - maxfiles        (1)
+         *    - buttonname      (false)
+         *
+         * @param stdClass $options An object containing options for the file picker.
+         */
+        public function __construct(stdClass $options)
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Constructs a file picker object.
-     *
-     * The following are possible options for the filepicker:
-     *    - accepted_types  (*)
-     *    - return_types    (FILE_INTERNAL)
-     *    - env             (filepicker)
-     *    - client_id       (uniqid)
-     *    - itemid          (0)
-     *    - maxbytes        (-1)
-     *    - maxfiles        (1)
-     *    - buttonname      (false)
-     *
-     * @param stdClass $options An object containing options for the file picker.
+     * Runtime class alias of \core\output\file_picker registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct(stdClass $options)
+    class file_picker extends \core\output\file_picker
     {
     }
 }

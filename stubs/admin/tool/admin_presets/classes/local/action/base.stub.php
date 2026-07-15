@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_admin_presets\local\action;
 
+use context_system;
+use core_adminpresets\manager;
+use tool_admin_presets\output\export_import;
 /**
  * Admin tool presets main controller class.
  *

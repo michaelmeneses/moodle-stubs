@@ -29,6 +29,7 @@
  */
 namespace core_customfield\event;
 
+use core_customfield\category_controller;
 /**
  * Custom field category updated event class.
  *

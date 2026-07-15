@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xml;
 
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Namespaces;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Worksheet\PageSetup;
+use SimpleXMLElement;
+use stdClass;
 class PageSettings
 {
     /**

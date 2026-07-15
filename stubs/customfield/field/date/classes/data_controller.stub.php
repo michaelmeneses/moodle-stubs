@@ -29,6 +29,7 @@
  */
 namespace customfield_date;
 
+use core_customfield\api;
 /**
  * Class data
  *

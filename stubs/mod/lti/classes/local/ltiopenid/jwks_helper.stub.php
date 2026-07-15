@@ -29,6 +29,7 @@
  */
 namespace mod_lti\local\ltiopenid;
 
+use Firebase\JWT\JWT;
 /**
  * This class exposes functions for LTI 1.3 Key Management.
  *

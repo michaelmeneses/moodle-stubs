@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories;
 
+use core\output\datafilter;
+use core_question\local\bank\condition;
+use core_question\local\bank\view;
 /**
  * This class controls from which category questions are listed.
  *

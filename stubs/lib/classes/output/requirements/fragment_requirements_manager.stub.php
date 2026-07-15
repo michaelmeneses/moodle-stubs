@@ -20,41 +20,52 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\requirements;
-
-/**
- * This requirements manager captures the appropriate html for creating a fragment to
- * be inserted elsewhere.
- *
- * @copyright 2016 Adrian Greeve <adrian@moodle.com>
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 3.1
- * @package core
- * @category output
- */
-class fragment_requirements_manager extends page_requirements_manager
-{
+namespace core\output\requirements {
+    use core\output\html_writer;
+    use core\output\js_writer;
     /**
-     * Page fragment constructor.
-     */
-    public function __construct()
-    {
-    }
-    /**
-     * Returns js code to load amd module loader, then insert inline script tags
-     * that contain require() calls using RequireJS.
+     * This requirements manager captures the appropriate html for creating a fragment to
+     * be inserted elsewhere.
      *
-     * @return string
+     * @copyright 2016 Adrian Greeve <adrian@moodle.com>
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 3.1
+     * @package core
+     * @category output
      */
-    protected function get_amd_footercode()
+    class fragment_requirements_manager extends page_requirements_manager
     {
+        /**
+         * Page fragment constructor.
+         */
+        public function __construct()
+        {
+        }
+        /**
+         * Returns js code to load amd module loader, then insert inline script tags
+         * that contain require() calls using RequireJS.
+         *
+         * @return string
+         */
+        protected function get_amd_footercode()
+        {
+        }
+        /**
+         * Generate any HTML that needs to go at the end of the page.
+         *
+         * @return string the HTML code to to at the end of the page.
+         */
+        public function get_end_code()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Generate any HTML that needs to go at the end of the page.
-     *
-     * @return string the HTML code to to at the end of the page.
+     * Runtime class alias of \core\output\requirements\fragment_requirements_manager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get_end_code()
+    class fragment_requirements_manager extends \core\output\requirements\fragment_requirements_manager
     {
     }
 }

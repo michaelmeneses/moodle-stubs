@@ -8,6 +8,7 @@
  */
 namespace Phpml\FeatureExtraction;
 
+use Phpml\Transformer;
 class TfIdfTransformer implements Transformer
 {
     /**

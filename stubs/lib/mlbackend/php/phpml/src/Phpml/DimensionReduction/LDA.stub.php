@@ -8,6 +8,9 @@
  */
 namespace Phpml\DimensionReduction;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Exception\InvalidOperationException;
+use Phpml\Math\Matrix;
 class LDA extends EigenTransformerBase
 {
     /**

@@ -20,29 +20,39 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\progress_trace;
-
-/**
- * This subclass of progress_trace outputs to error log.
- *
- * @copyright Petr Skoda {@link http://skodak.org}
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- */
-class error_log_progress_trace extends progress_trace
-{
+namespace core\output\progress_trace {
+    use core\output\progress_trace;
     /**
-     * Constructor.
-     * @param string $prefix optional log prefix
+     * This subclass of progress_trace outputs to error log.
+     *
+     * @copyright Petr Skoda {@link http://skodak.org}
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
      */
-    public function __construct(
-        /** @var string The prefix to use in the error_log messages */
-        protected string $prefix = ''
-    )
+    class error_log_progress_trace extends progress_trace
     {
+        /**
+         * Constructor.
+         * @param string $prefix optional log prefix
+         */
+        public function __construct(
+            /** @var string The prefix to use in the error_log messages */
+            protected string $prefix = ''
+        )
+        {
+        }
+        #[\Override]
+        public function output(string $message, int $depth = 0): void
+        {
+        }
     }
-    #[\Override]
-    public function output(string $message, int $depth = 0): void
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\progress_trace\error_log_progress_trace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class error_log_progress_trace extends \core\output\progress_trace\error_log_progress_trace
     {
     }
 }

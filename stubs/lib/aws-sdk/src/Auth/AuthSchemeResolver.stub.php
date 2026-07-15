@@ -8,6 +8,10 @@
  */
 namespace Aws\Auth;
 
+use Aws\Auth\Exception\UnresolvedAuthSchemeException;
+use Aws\Identity\AwsCredentialIdentity;
+use Aws\Identity\BearerTokenIdentity;
+use GuzzleHttp\Promise\PromiseInterface;
 /**
  * Houses logic for selecting an auth scheme modeled in a service's `auth` trait.
  * The `auth` trait can be modeled either in a service's metadata, or at the operation level.

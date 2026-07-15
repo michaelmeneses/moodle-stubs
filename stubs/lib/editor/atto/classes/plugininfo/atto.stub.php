@@ -29,6 +29,7 @@
  */
 namespace editor_atto\plugininfo;
 
+use core\plugininfo\base;
 class atto extends base
 {
     /**

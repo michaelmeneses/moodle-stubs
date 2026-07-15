@@ -8,6 +8,16 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Averages;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Conditional;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Confidence;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Counts;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Maximum;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Minimum;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Permutations;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\StandardDeviations;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Trends;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Variances;
 /**
  * @deprecated 1.18.0
  */

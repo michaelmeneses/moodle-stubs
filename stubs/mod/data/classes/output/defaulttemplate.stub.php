@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use core_tag_tag;
+use mod_data\manager;
+use templatable;
+use renderable;
 /**
  * Renderable class for the default templates in the database activity.
  *

@@ -8,6 +8,7 @@
  */
 namespace core_reportbuilder\local\helpers;
 
+use stdClass;
 /**
  * Class containing helper methods for formatting column data via callbacks
  *

@@ -8,6 +8,9 @@
  */
 namespace PhpXmlRpc\Helper;
 
+use PhpXmlRpc\PhpXmlRpc;
+use PhpXmlRpc\Traits\DeprecationLogger;
+use PhpXmlRpc\Value;
 /**
  * Deals with parsing the XML.
  * @see http://xmlrpc.com/spec.md

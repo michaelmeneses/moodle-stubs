@@ -29,6 +29,10 @@
  */
 namespace core_availability\output;
 
+use core_availability_multiple_messages;
+use renderable;
+use templatable;
+use stdClass;
 /**
  * Base class to render availability info.
  *

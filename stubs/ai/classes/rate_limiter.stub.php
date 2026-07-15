@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_ai;
 
+use Psr\Clock\ClockInterface;
 /**
  * Rate limiting functionality that can be used by AI providers.
  *

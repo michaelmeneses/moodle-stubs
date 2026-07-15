@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\output\errors;
 
+use tool_brickfield\accessibility;
+use tool_brickfield\local\areas\module_area_base;
+use tool_brickfield\local\tool\filter;
+use tool_brickfield\local\tool\tool;
+use tool_brickfield\manager;
 /**
  * tool_brickfield/errors renderer
  *

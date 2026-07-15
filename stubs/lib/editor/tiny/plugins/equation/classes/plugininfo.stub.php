@@ -29,6 +29,14 @@
  */
 namespace tiny_equation;
 
+use context;
+use context_system;
+use editor_tiny\editor;
+use editor_tiny\plugin;
+use editor_tiny\plugin_with_buttons;
+use editor_tiny\plugin_with_configuration;
+use editor_tiny\plugin_with_menuitems;
+use filter_manager;
 /**
  * Tiny equation plugin.
  *

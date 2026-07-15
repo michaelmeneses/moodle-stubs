@@ -29,6 +29,14 @@
  */
 namespace mod_forum\local\factories;
 
+use mod_forum\local\entities\author as author_entity;
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\entities\discussion as discussion_entity;
+use mod_forum\local\entities\post as post_entity;
+use mod_forum\local\factories\legacy_data_mapper as legacy_data_mapper_factory;
+use moodle_url;
+use stored_file;
+use user_picture;
 /**
  * A URL factory for the forum.
  *

@@ -8,6 +8,10 @@
  */
 namespace core_table\local\filter;
 
+use Countable;
+use JsonSerializable;
+use InvalidArgumentException;
+use Iterator;
 /**
  * Class representing a generic filter of any type.
  *

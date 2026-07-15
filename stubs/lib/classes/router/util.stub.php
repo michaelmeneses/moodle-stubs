@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router;
 
+use moodle_url;
+use GuzzleHttp\Psr7\Uri;
+use Psr\Http\Message\ServerRequestInterface;
+use Slim\Routing\RouteContext;
 /**
  * Routing Helper Utilities.
  *

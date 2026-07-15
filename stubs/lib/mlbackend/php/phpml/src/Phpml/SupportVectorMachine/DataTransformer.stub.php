@@ -8,6 +8,7 @@
  */
 namespace Phpml\SupportVectorMachine;
 
+use Phpml\Exception\InvalidArgumentException;
 class DataTransformer
 {
     public static function trainingSet(array $samples, array $labels, bool $targets = false): string

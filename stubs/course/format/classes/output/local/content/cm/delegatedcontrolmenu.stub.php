@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\content\cm;
 
+use action_menu;
+use context_course;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\content\basecontrolmenu;
+use moodle_url;
+use section_info;
+use cm_info;
 /**
  * Base class to render delegated section controls.
  *

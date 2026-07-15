@@ -8,6 +8,16 @@
  */
 namespace core_comment\reportbuilder\local\systemreports;
 
+use context_system;
+use lang_string;
+use moodle_url;
+use pix_icon;
+use stdClass;
+use core\reportbuilder\local\entities\context;
+use core_reportbuilder\system_report;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\report\action;
+use core_comment\reportbuilder\local\entities\comment;
 /**
  * Comments system report
  *

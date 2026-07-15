@@ -29,6 +29,10 @@
  */
 namespace core_calendar\external;
 
+use core\external\exporter;
+use renderer_base;
+use moodle_url;
+use core_calendar\local\event\container;
 /**
  * Class for displaying the day view.
  *

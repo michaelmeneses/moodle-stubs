@@ -8,6 +8,12 @@
  */
 namespace Aws\EndpointV2;
 
+use Aws\Api\Operation;
+use Aws\Api\Service;
+use Aws\Auth\Exception\UnresolvedAuthSchemeException;
+use Aws\CommandInterface;
+use Closure;
+use GuzzleHttp\Promise\Promise;
 /**
  * Handles endpoint rule evaluation and endpoint resolution.
  *

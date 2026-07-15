@@ -8,6 +8,8 @@
  */
 namespace Matrix\Decomposition;
 
+use Matrix\Exception;
+use Matrix\Matrix;
 class Decomposition
 {
     const LU = 'LU';

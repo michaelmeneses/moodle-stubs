@@ -30,6 +30,7 @@
  */
 namespace mod_bigbluebuttonbn\analytics\indicator;
 
+use core_analytics\local\indicator\community_of_inquiry_activity;
 /**
  * Activity base class.
  *

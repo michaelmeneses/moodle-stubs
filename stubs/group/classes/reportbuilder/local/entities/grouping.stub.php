@@ -8,6 +8,14 @@
  */
 namespace core_group\reportbuilder\local\entities;
 
+use context_course;
+use context_helper;
+use lang_string;
+use stdClass;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{date, text};
+use core_reportbuilder\local\helpers\{custom_fields, format};
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Grouping entity
  *

@@ -29,6 +29,9 @@
  */
 namespace core_user\output;
 
+use core_user\fields;
+use renderer_base;
+use stdClass;
 /**
  * Class for rendering user filters on the course participants page.
  *

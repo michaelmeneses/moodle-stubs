@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output;
 
+use cm_info;
+use coding_exception;
+use core_course_renderer;
+use core_courseformat\base as course_format;
+use html_writer;
+use moodle_page;
+use renderable;
+use section_info;
+use stdClass;
 /**
  * Contains the default section course format output class.
  *

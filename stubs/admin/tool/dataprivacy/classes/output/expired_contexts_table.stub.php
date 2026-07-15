@@ -29,6 +29,18 @@
  */
 namespace tool_dataprivacy\output;
 
+use coding_exception;
+use context_helper;
+use dml_exception;
+use Exception;
+use html_writer;
+use pix_icon;
+use stdClass;
+use table_sql;
+use tool_dataprivacy\api;
+use tool_dataprivacy\expired_context;
+use tool_dataprivacy\external\purpose_exporter;
+use tool_dataprivacy\purpose;
 /**
  * The class for displaying the expired contexts table.
  *

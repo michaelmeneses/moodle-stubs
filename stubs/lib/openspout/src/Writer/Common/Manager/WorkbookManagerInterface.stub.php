@@ -8,6 +8,12 @@
  */
 namespace OpenSpout\Writer\Common\Manager;
 
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Writer\Common\Entity\Sheet;
+use OpenSpout\Writer\Common\Entity\Worksheet;
+use OpenSpout\Writer\Exception\SheetNotFoundException;
+use OpenSpout\Writer\Exception\WriterException;
 /**
  * @internal
  */

@@ -8,6 +8,7 @@
  */
 namespace mod_survey\completion;
 
+use core_completion\activity_custom_completion;
 /**
  * Activity custom completion subclass for the survey activity.
  *

@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Writer;
 
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Writer\Exception\WriterNotOpenedException;
 abstract class AbstractWriter implements WriterInterface
 {
     /** @var resource Pointer to the file/stream we will write to */

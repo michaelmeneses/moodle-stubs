@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace smsgateway_aws\privacy;
 
+use core_privacy\local\metadata\null_provider;
 /**
  * Privacy Subsystem for smsgateway_aws implementing null_provider.
  *

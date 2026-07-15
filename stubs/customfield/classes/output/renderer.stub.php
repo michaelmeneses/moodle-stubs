@@ -29,6 +29,7 @@
  */
 namespace core_customfield\output;
 
+use plugin_renderer_base;
 /**
  * Renderer class.
  *

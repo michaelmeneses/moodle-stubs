@@ -29,6 +29,9 @@
  */
 namespace core\form;
 
+use coding_exception;
+use moodleform;
+use stdClass;
 /**
  * Persistent form abstract class.
  *

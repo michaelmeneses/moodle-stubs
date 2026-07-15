@@ -8,6 +8,7 @@
  */
 namespace Aws\CloudFrontKeyValueStore;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon CloudFront KeyValueStore** service.
  * @method \Aws\Result deleteKey(array $args = [])

@@ -29,6 +29,7 @@
  */
 namespace mod_forum\local\entities;
 
+use stdClass;
 /**
  * Post class.
  *

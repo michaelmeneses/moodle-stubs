@@ -8,6 +8,9 @@
  */
 namespace Aws\Script\Composer;
 
+use Composer\Script\Event;
+use Symfony\Component\Filesystem\Exception\IOException;
+use Symfony\Component\Filesystem\Filesystem;
 class Composer
 {
     public static function removeUnusedServicesInDev(Event $event, Filesystem $filesystem = null)

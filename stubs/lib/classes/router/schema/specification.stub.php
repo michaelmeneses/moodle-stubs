@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema;
 
+use coding_exception;
+use core\router\response\invalid_parameter_response;
+use core\router\response\not_found_response;
+use core\router\route;
+use core\router\route_loader_interface;
+use core\router\schema\objects\type_base;
+use core\router\schema\response\response;
+use core\url;
+use stdClass;
 /**
  * Moodle OpenApi Specification class.
  *

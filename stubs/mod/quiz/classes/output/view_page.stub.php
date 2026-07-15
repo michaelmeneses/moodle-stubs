@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\output;
 
+use mod_quiz\access_manager;
+use mod_quiz\form\preflight_check_form;
+use mod_quiz\quiz_attempt;
+use moodle_url;
 /**
  * This class captures all the various information to render the front page of the quiz activity.
  *

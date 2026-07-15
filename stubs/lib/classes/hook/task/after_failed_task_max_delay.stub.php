@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\hook\task;
 
+use core\hook\described_hook;
+use core\task\task_base;
 /**
  * Hook to allow plugins to get information when a task has reached the maximum fail delay in adhoc and scheduled task
  *

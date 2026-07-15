@@ -29,6 +29,8 @@
  */
 namespace core_message\output\preferences;
 
+use renderable;
+use templatable;
 /**
  * Class to create context for one of the message processors settings on the message preferences page.
  *

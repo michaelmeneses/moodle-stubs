@@ -29,6 +29,7 @@
  */
 namespace tool_lp\form;
 
+use core\form\persistent;
 /**
  * Learning plan template form.
  *

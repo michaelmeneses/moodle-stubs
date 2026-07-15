@@ -29,6 +29,7 @@
  */
 namespace core_message;
 
+use core_favourites\local\entity\favourite;
 /**
  * Class used to return information to display for the message area.
  *

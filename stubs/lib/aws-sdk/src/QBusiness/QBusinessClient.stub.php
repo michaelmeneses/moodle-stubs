@@ -8,6 +8,7 @@
  */
 namespace Aws\QBusiness;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **QBusiness** service.
  * @method \Aws\Result batchDeleteDocument(array $args = [])

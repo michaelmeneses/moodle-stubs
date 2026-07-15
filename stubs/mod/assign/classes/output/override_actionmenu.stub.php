@@ -29,6 +29,12 @@
  */
 namespace mod_assign\output;
 
+use core_availability\info_module;
+use moodle_url;
+use templatable;
+use renderable;
+use url_select;
+use single_button;
 /**
  * Output the override actionbar for this activity.
  *

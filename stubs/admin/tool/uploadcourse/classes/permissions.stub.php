@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_uploadcourse;
 
+use context_course;
+use context_coursecat;
+use core_course_category;
+use core_tag_tag;
+use lang_string;
+use tool_uploadcourse_course;
 /**
  * Checks various permissions related to the course upload process.
  *

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace communication_matrix;
 
+use communication_matrix\local\spec\features\matrix\{create_room_v3 as create_room_feature, get_room_members_v3 as get_room_members_feature, remove_member_from_room_v3 as remove_member_from_room_feature, update_room_avatar_v3 as update_room_avatar_feature, update_room_name_v3 as update_room_name_feature, update_room_topic_v3 as update_room_topic_feature, upload_content_v3 as upload_content_feature, media_create_v1 as media_create_feature};
+use communication_matrix\local\spec\features\synapse\{create_user_v2 as create_user_feature, get_room_info_v1 as get_room_info_feature, get_user_info_v2 as get_user_info_feature, invite_member_to_room_v1 as invite_member_to_room_feature};
+use core_communication\processor;
+use stdClass;
+use GuzzleHttp\Psr7\Response;
 /**
  * class communication_feature to handle matrix specific actions.
  *

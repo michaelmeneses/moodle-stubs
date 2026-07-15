@@ -8,6 +8,7 @@
  */
 namespace Aws\Transfer;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Transfer for SFTP** service.
  * @method \Aws\Result createAccess(array $args = [])

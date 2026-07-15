@@ -29,6 +29,7 @@
  */
 namespace editor_atto\task;
 
+use core\task\scheduled_task;
 /**
  * Simple task to run the autosave cleanup task.
  */

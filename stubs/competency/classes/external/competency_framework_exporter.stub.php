@@ -29,6 +29,8 @@
  */
 namespace core_competency\external;
 
+use core_competency\api;
+use renderer_base;
 /**
  * Class for exporting competency_framework data.
  *

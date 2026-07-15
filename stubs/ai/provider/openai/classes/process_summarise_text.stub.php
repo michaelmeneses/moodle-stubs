@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_openai;
 
+use GuzzleHttp\Psr7\Uri;
+use Psr\Http\Message\UriInterface;
 /**
  * Class process text summarisation.
  *

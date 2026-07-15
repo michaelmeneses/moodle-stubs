@@ -8,6 +8,12 @@
  */
 namespace Phpml\DimensionReduction;
 
+use Closure;
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Exception\InvalidOperationException;
+use Phpml\Math\Distance\Euclidean;
+use Phpml\Math\Distance\Manhattan;
+use Phpml\Math\Matrix;
 class KernelPCA extends PCA
 {
     public const KERNEL_RBF = 1;

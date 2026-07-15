@@ -8,6 +8,7 @@
  */
 namespace Phpml\Dataset;
 
+use Phpml\Exception\DatasetException;
 class FilesDataset extends ArrayDataset
 {
     public function __construct(string $rootPath)

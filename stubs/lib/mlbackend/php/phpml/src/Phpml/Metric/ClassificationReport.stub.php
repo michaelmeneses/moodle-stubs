@@ -8,6 +8,7 @@
  */
 namespace Phpml\Metric;
 
+use Phpml\Exception\InvalidArgumentException;
 class ClassificationReport
 {
     public const MICRO_AVERAGE = 1;

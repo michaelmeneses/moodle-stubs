@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_enrol\hook;
 
+use stdClass;
 /**
  * Hook before a user enrolment is updated.
  *

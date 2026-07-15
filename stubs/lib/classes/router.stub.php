@@ -22,6 +22,22 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use core\output\routed_error_handler;
+use core\router\middleware\cors_middleware;
+use core\router\middleware\error_handling_middleware;
+use core\router\middleware\moodle_bootstrap_middleware;
+use core\router\middleware\moodle_route_attribute_middleware;
+use core\router\middleware\uri_normalisation_middleware;
+use core\router\middleware\validation_middleware;
+use core\router\request_validator_interface;
+use core\router\response_handler;
+use core\router\response_validator_interface;
+use core\router\route_loader_interface;
+use Psr\Http\Message\ResponseFactoryInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use Slim\App;
+use Slim\Interfaces\RouteGroupInterface;
 /**
  * Moodle Router.
  *

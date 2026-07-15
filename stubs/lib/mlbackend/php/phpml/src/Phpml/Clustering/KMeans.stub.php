@@ -8,6 +8,8 @@
  */
 namespace Phpml\Clustering;
 
+use Phpml\Clustering\KMeans\Space;
+use Phpml\Exception\InvalidArgumentException;
 class KMeans implements Clusterer
 {
     public const INIT_RANDOM = 1;

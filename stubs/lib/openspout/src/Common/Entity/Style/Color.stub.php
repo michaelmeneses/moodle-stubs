@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Common\Entity\Style;
 
+use OpenSpout\Common\Exception\InvalidColorException;
 /**
  * This class provides constants and functions to work with colors.
  */

@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xml\Style;
 
+use SimpleXMLElement;
 abstract class StyleBase
 {
     protected static function identifyFixedStyleValue(array $styleList, string &$styleAttributeValue): bool

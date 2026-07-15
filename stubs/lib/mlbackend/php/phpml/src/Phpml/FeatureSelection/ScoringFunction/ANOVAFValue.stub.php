@@ -8,6 +8,8 @@
  */
 namespace Phpml\FeatureSelection\ScoringFunction;
 
+use Phpml\FeatureSelection\ScoringFunction;
+use Phpml\Math\Statistic\ANOVA;
 final class ANOVAFValue implements ScoringFunction
 {
     public function score(array $samples, array $targets): array

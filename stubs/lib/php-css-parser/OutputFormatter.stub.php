@@ -8,6 +8,7 @@
  */
 namespace Sabberworm\CSS;
 
+use Sabberworm\CSS\Parsing\OutputException;
 class OutputFormatter
 {
     /**

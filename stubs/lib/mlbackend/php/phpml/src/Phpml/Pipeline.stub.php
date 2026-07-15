@@ -8,6 +8,7 @@
  */
 namespace Phpml;
 
+use Phpml\Exception\InvalidOperationException;
 class Pipeline implements Estimator, Transformer
 {
     /**

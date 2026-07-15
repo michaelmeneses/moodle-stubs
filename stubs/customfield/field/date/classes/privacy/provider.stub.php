@@ -29,6 +29,9 @@
  */
 namespace customfield_date\privacy;
 
+use core_customfield\data_controller;
+use core_customfield\privacy\customfield_provider;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem for customfield_date implementing null_provider.
  *

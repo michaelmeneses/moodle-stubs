@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Reader\ODS\Helper;
 
+use OpenSpout\Reader\Exception\XMLProcessingException;
+use OpenSpout\Reader\Wrapper\XMLReader;
 /**
  * @internal
  */

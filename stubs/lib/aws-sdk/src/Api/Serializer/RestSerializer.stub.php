@@ -8,6 +8,21 @@
  */
 namespace Aws\Api\Serializer;
 
+use Aws\Api\MapShape;
+use Aws\Api\Service;
+use Aws\Api\Operation;
+use Aws\Api\Shape;
+use Aws\Api\StructureShape;
+use Aws\Api\TimestampShape;
+use Aws\CommandInterface;
+use Aws\EndpointV2\EndpointProviderV2;
+use Aws\EndpointV2\EndpointV2SerializerTrait;
+use Aws\EndpointV2\Ruleset\RulesetEndpoint;
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Psr7\Uri;
+use GuzzleHttp\Psr7\UriResolver;
+use Psr\Http\Message\RequestInterface;
 /**
  * Serializes HTTP locations like header, uri, payload, etc...
  * @internal

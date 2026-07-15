@@ -8,6 +8,16 @@
  */
 namespace OpenSpout\Writer\ODS;
 
+use OpenSpout\Common\Helper\Escaper\ODS;
+use OpenSpout\Writer\AbstractWriterMultiSheets;
+use OpenSpout\Writer\Common\Entity\Workbook;
+use OpenSpout\Writer\Common\Helper\ZipHelper;
+use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use OpenSpout\Writer\ODS\Helper\FileSystemHelper;
+use OpenSpout\Writer\ODS\Manager\Style\StyleManager;
+use OpenSpout\Writer\ODS\Manager\Style\StyleRegistry;
+use OpenSpout\Writer\ODS\Manager\WorkbookManager;
+use OpenSpout\Writer\ODS\Manager\WorksheetManager;
 final class Writer extends AbstractWriterMultiSheets
 {
     /** @var string Content-Type value for the header */

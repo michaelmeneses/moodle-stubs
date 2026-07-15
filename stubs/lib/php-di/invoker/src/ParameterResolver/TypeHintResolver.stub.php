@@ -8,6 +8,8 @@
  */
 namespace Invoker\ParameterResolver;
 
+use ReflectionFunctionAbstract;
+use ReflectionNamedType;
 /**
  * Inject entries using type-hints.
  *

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign\navigation\views;
 
+use core\navigation\views\secondary as core_secondary;
 /**
  * Class secondary_navigation_view.
  *

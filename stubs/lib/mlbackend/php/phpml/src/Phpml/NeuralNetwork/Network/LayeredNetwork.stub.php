@@ -8,6 +8,10 @@
  */
 namespace Phpml\NeuralNetwork\Network;
 
+use Phpml\NeuralNetwork\Layer;
+use Phpml\NeuralNetwork\Network;
+use Phpml\NeuralNetwork\Node\Input;
+use Phpml\NeuralNetwork\Node\Neuron;
 abstract class LayeredNetwork implements Network
 {
     /**

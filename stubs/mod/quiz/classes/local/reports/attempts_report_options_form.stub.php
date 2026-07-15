@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\local\reports;
 
+use html_writer;
+use MoodleQuickForm;
 /**
  * Base class for the settings form for {@see attempts_report}s.
  *

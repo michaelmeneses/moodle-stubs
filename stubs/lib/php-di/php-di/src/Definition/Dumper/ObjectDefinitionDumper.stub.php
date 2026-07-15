@@ -8,6 +8,10 @@
  */
 namespace DI\Definition\Dumper;
 
+use DI\Definition\Definition;
+use DI\Definition\ObjectDefinition;
+use DI\Definition\ObjectDefinition\MethodInjection;
+use ReflectionException;
 /**
  * Dumps object definitions to string for debugging purposes.
  *

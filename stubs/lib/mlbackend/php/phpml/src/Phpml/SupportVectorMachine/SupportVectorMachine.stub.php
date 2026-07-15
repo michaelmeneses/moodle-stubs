@@ -8,6 +8,10 @@
  */
 namespace Phpml\SupportVectorMachine;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Exception\InvalidOperationException;
+use Phpml\Exception\LibsvmCommandException;
+use Phpml\Helper\Trainable;
 class SupportVectorMachine
 {
     use Trainable;

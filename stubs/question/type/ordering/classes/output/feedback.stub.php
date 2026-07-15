@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qtype_ordering\output;
 
+use renderer_base;
+use question_attempt;
+use question_display_options;
 /**
  * Collate various sections of displayable feedback for render.
  *

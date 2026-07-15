@@ -8,6 +8,8 @@
  */
 namespace Phpml\Preprocessing;
 
+use Phpml\Exception\InvalidOperationException;
+use Phpml\Preprocessing\Imputer\Strategy;
 class Imputer implements Preprocessor
 {
     public const AXIS_COLUMN = 0;

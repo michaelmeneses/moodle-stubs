@@ -29,6 +29,10 @@
  */
 namespace tool_dataprivacy\local;
 
+use coding_exception;
+use moodle_exception;
+use tool_dataprivacy\api;
+use tool_dataprivacy\data_request;
 /**
  * Class containing helper functions for the data privacy tool.
  *

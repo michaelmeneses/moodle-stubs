@@ -8,6 +8,7 @@
  */
 namespace Aws\WAFV2;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS WAFV2** service.
  * @method \Aws\Result associateWebACL(array $args = [])

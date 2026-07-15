@@ -8,6 +8,10 @@
  */
 namespace MaxMind\Db;
 
+use MaxMind\Db\Reader\Decoder;
+use MaxMind\Db\Reader\InvalidDatabaseException;
+use MaxMind\Db\Reader\Metadata;
+use MaxMind\Db\Reader\Util;
 /**
  * Instances of this class provide a reader for the MaxMind DB format. IP
  * addresses can be looked up using the get method.

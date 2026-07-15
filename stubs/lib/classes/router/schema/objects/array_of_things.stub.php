@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\objects;
 
+use core\param;
+use core\router\schema\specification;
 /**
  * A schema to describe an array of things. These could be any type, including other schema definitions.
  *

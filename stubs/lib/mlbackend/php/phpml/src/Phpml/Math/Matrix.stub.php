@@ -8,6 +8,9 @@
  */
 namespace Phpml\Math;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Exception\MatrixException;
+use Phpml\Math\LinearAlgebra\LUDecomposition;
 class Matrix
 {
     /**

@@ -22,6 +22,20 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace tool_generator\local\testscenario;
 
+use behat_admin;
+use behat_data_generators;
+use behat_base;
+use behat_course;
+use behat_general;
+use behat_user;
+use core\attribute_helper;
+use Behat\Gherkin\Parser;
+use Behat\Gherkin\Lexer;
+use Behat\Gherkin\Keywords\ArrayKeywords;
+use Behat\Gherkin\Node\OutlineNode;
+use ReflectionClass;
+use ReflectionMethod;
+use stdClass;
 /**
  * Class to process a scenario generator file.
  *

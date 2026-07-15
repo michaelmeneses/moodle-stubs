@@ -8,6 +8,7 @@
  */
 namespace Aws\EndpointV2\Ruleset;
 
+use Aws\Exception\UnresolvedEndpointException;
 /**
  * Houses properties of an individual parameter definition.
  */

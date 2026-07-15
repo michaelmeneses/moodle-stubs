@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_columnsortorder\output;
 
+use renderer_base;
 /**
  * Renderable for resetting customised column settings.
  *

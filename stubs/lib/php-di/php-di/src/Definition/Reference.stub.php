@@ -8,6 +8,7 @@
  */
 namespace DI\Definition;
 
+use Psr\Container\ContainerInterface;
 /**
  * Represents a reference to another entry.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_files\hook;
 
+use core\attribute;
+use core\hook\stoppable_trait;
 /**
  * A hook which is fired after a file is created in the file storage API.
  *

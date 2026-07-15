@@ -8,6 +8,19 @@
  */
 namespace Aws\Signature;
 
+use Aws\Credentials\CredentialsInterface;
+use AWS\CRT\Auth\Signable;
+use AWS\CRT\Auth\SignatureType;
+use AWS\CRT\Auth\SignedBodyHeaderType;
+use AWS\CRT\Auth\Signing;
+use AWS\CRT\Auth\SigningAlgorithm;
+use AWS\CRT\Auth\SigningConfigAWS;
+use AWS\CRT\Auth\StaticCredentialsProvider;
+use AWS\CRT\HTTP\Request;
+use Aws\Exception\CommonRuntimeException;
+use Aws\Exception\CouldNotCreateChecksumException;
+use GuzzleHttp\Psr7;
+use Psr\Http\Message\RequestInterface;
 /**
  * Signature Version 4
  * @link http://docs.aws.amazon.com/general/latest/gr/signature-version-4.html

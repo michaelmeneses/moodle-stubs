@@ -8,6 +8,7 @@
  */
 namespace Aws\EMRServerless;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **EMR Serverless** service.
  * @method \Aws\Result cancelJobRun(array $args = [])

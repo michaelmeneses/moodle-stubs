@@ -8,6 +8,16 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared;
 
+use DateTime;
+use DateTimeInterface;
+use DateTimeZone;
+use PhpOffice\PhpSpreadsheet\Calculation\DateTimeExcel;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Cell\Cell;
+use PhpOffice\PhpSpreadsheet\Exception;
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
+use PhpOffice\PhpSpreadsheet\Shared\Date as SharedDate;
+use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 class Date
 {
     /** constants */

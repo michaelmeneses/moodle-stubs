@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\RichText;
 
+use PhpOffice\PhpSpreadsheet\Style\Font;
 class Run extends TextElement implements ITextElement
 {
     /**

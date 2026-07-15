@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_editquestion\output;
 
+use qbank_editquestion\editquestion_helper;
+use renderer_base;
 /**
  * Create new question button
  *

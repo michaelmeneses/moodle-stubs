@@ -31,6 +31,9 @@
  */
 namespace core_badges\output;
 
+use renderable;
+use renderer_base;
+use stdClass;
 /**
  * An external badges for external.php page
  *

@@ -29,6 +29,19 @@
  */
 namespace enrol_lti;
 
+use context;
+use core\notification;
+use core_user;
+use enrol_lti\output\registration;
+use html_writer;
+use IMSGlobal\LTI\Profile\Item;
+use IMSGlobal\LTI\Profile\Message;
+use IMSGlobal\LTI\Profile\ResourceHandler;
+use IMSGlobal\LTI\Profile\ServiceDefinition;
+use IMSGlobal\LTI\ToolProvider\ToolProvider;
+use moodle_exception;
+use moodle_url;
+use stdClass;
 /**
  * Extends the IMS Tool provider library for the LTI enrolment.
  *

@@ -30,6 +30,15 @@
  */
 namespace tool_policy\output;
 
+use moodle_exception;
+use context_system;
+use moodle_url;
+use renderable;
+use renderer_base;
+use single_button;
+use templatable;
+use tool_policy\api;
+use tool_policy\policy_version;
 /**
  * Represents a page for showing all the policy documents with a current version.
  *

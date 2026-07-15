@@ -8,6 +8,11 @@
  */
 namespace Aws;
 
+use Aws\Api\Parser\Exception\ParserException;
+use Aws\Exception\AwsException;
+use GuzzleHttp\Promise;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Converts an HTTP handler into a Command HTTP handler.
  *

@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Reader\Exception;
 
+use Throwable;
 final class InvalidValueException extends ReaderException
 {
     private readonly string $invalidValue;

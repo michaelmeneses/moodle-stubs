@@ -8,6 +8,7 @@
  */
 namespace Phpml\Helper\Optimizer;
 
+use Closure;
 /**
  * Conjugate Gradient method to solve a non-linear f(x) with respect to unknown x
  * See https://en.wikipedia.org/wiki/Nonlinear_conjugate_gradient_method)

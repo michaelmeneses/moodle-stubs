@@ -8,6 +8,16 @@
  */
 namespace Phpml\Classification\Linear;
 
+use Closure;
+use Phpml\Classification\Classifier;
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Helper\OneVsRest;
+use Phpml\Helper\Optimizer\GD;
+use Phpml\Helper\Optimizer\Optimizer;
+use Phpml\Helper\Optimizer\StochasticGD;
+use Phpml\Helper\Predictable;
+use Phpml\IncrementalEstimator;
+use Phpml\Preprocessing\Normalizer;
 class Perceptron implements Classifier, IncrementalEstimator
 {
     use Predictable;

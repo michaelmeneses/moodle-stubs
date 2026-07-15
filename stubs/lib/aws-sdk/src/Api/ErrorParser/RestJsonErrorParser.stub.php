@@ -8,6 +8,11 @@
  */
 namespace Aws\Api\ErrorParser;
 
+use Aws\Api\Parser\JsonParser;
+use Aws\Api\Service;
+use Aws\Api\StructureShape;
+use Aws\CommandInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Parses JSON-REST errors.
  */

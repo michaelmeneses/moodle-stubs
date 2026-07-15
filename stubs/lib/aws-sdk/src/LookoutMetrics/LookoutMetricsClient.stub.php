@@ -8,6 +8,9 @@
  */
 namespace Aws\LookoutMetrics;
 
+use Aws\AwsClient;
+use Aws\CommandInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * This client is used to interact with the **Amazon Lookout for Metrics** service.
  * @method \Aws\Result activateAnomalyDetector(array $args = [])

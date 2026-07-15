@@ -8,6 +8,9 @@
  */
 namespace Aws\Crypto\Polyfill;
 
+use Aws\Exception\CryptoPolyfillException;
+use InvalidArgumentException;
+use RangeException;
 /**
  * Class AesGcm
  *

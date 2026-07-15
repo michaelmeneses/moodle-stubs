@@ -29,6 +29,7 @@
  */
 namespace core_search\output\form;
 
+use core_search\manager;
 class search extends \moodleform
 {
     /**

@@ -8,6 +8,7 @@
  */
 namespace ZipStream;
 
+use DateTimeInterface;
 /**
  * @internal
  */

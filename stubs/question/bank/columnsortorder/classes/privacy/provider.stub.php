@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_columnsortorder\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\writer;
 /**
  * Privacy provider for columnsortorder.
  *

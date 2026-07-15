@@ -8,6 +8,13 @@
  */
 namespace DI\Compiler;
 
+use DI\Definition\Exception\InvalidDefinition;
+use DI\Definition\ObjectDefinition;
+use DI\Definition\ObjectDefinition\MethodInjection;
+use ReflectionClass;
+use ReflectionMethod;
+use ReflectionParameter;
+use ReflectionProperty;
 /**
  * Compiles an object definition into native PHP code that, when executed, creates the object.
  *

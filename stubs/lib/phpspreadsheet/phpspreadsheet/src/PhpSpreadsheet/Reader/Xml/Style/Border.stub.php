@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xml\Style;
 
+use PhpOffice\PhpSpreadsheet\Style\Border as BorderStyle;
+use PhpOffice\PhpSpreadsheet\Style\Borders;
+use SimpleXMLElement;
 class Border extends StyleBase
 {
     protected const BORDER_POSITIONS = ['top', 'left', 'bottom', 'right'];

@@ -29,6 +29,9 @@
  */
 namespace mod_forum\local\exporters;
 
+use core\external\exporter;
+use renderer_base;
+use stdClass;
 /**
  * Group exporter.
  *

@@ -30,6 +30,9 @@
  */
 namespace core_webservice;
 
+use core_user;
+use DateInterval;
+use DateTime;
 /**
  * Form to create and edit a web service token.
  *

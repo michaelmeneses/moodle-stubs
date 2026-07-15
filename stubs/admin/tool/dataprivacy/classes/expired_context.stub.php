@@ -29,6 +29,7 @@
  */
 namespace tool_dataprivacy;
 
+use dml_exception;
 /**
  * Class that represents an expired context.
  *

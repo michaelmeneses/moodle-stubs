@@ -29,6 +29,10 @@
  */
 namespace mod_lti\local\ltiopenid;
 
+use Firebase\JWT\JWK;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+use stdClass;
 /**
  * This class exposes functions for LTI Dynamic Registration.
  *

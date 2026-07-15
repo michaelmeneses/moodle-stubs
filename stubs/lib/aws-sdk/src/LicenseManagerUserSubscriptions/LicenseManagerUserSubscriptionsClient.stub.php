@@ -8,6 +8,7 @@
  */
 namespace Aws\LicenseManagerUserSubscriptions;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS License Manager User Subscriptions** service.
  * @method \Aws\Result associateUser(array $args = [])

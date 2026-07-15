@@ -29,6 +29,11 @@
  */
 namespace mod_forum\local\factories;
 
+use mod_forum\local\data_mappers\legacy\author as author_data_mapper;
+use mod_forum\local\data_mappers\legacy\discussion as discussion_data_mapper;
+use mod_forum\local\data_mappers\legacy\forum as forum_data_mapper;
+use mod_forum\local\data_mappers\legacy\post as post_data_mapper;
+use mod_forum\local\entities\forum;
 /**
  * Legacy data mapper factory.
  *

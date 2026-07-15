@@ -8,6 +8,10 @@
  */
 namespace customfield_number;
 
+use core\context\system;
+use core\context;
+use html_writer;
+use MoodleQuickForm;
 /**
  * Field controller class
  *

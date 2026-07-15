@@ -15,6 +15,7 @@
  */
 namespace setasign\Fpdi\PdfParser\Type;
 
+use setasign\Fpdi\PdfParser\StreamReader;
 /**
  * Class representing a hexadecimal encoded PDF string object
  */

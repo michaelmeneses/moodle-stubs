@@ -29,6 +29,9 @@
  */
 namespace scormreport_objectives\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem for scormreport_objectives.
  *

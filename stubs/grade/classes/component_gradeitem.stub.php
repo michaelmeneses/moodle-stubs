@@ -8,6 +8,13 @@
  */
 namespace core_grades;
 
+use context;
+use gradingform_controller;
+use gradingform_instance;
+use moodle_exception;
+use stdClass;
+use grade_item as core_gradeitem;
+use grading_manager;
 /**
  * Compontent definition of a gradeitem.
  *

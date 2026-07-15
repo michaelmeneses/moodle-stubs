@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Engine\ArrayArgumentHelper;
+use PhpOffice\PhpSpreadsheet\Calculation\Engine\ArrayArgumentProcessor;
 trait ArrayEnabled
 {
     /**

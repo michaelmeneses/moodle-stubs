@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace repository_googledocs;
 
+use repository_googledocs\local\browser\googledocs_root_content;
+use repository_googledocs\local\browser\googledocs_shared_drives_content;
+use repository_googledocs\local\browser\googledocs_drive_content;
+use repository_googledocs\local\node\node;
+use repository_googledocs\local\node\file_node;
+use repository_googledocs\local\node\folder_node;
 /**
  * Helper class for the googledocs repository.
  *

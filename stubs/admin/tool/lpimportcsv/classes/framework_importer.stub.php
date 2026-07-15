@@ -29,6 +29,11 @@
  */
 namespace tool_lpimportcsv;
 
+use core_competency\api;
+use grade_scale;
+use stdClass;
+use context_system;
+use csv_import_reader;
 /**
  * This file contains the class to import a competency framework.
  *

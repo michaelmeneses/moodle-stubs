@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use Mustache_LambdaHelper;
 /**
  * This class will call shorten_text with the section content.
  *

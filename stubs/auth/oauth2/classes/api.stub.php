@@ -29,6 +29,10 @@
  */
 namespace auth_oauth2;
 
+use context_user;
+use stdClass;
+use moodle_exception;
+use moodle_url;
 /**
  * Static list of api methods for auth oauth2 configuration.
  *

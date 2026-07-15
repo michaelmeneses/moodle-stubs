@@ -8,6 +8,7 @@
  */
 namespace Aws\SupportApp;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Support App** service.
  * @method \Aws\Result createSlackChannelConfiguration(array $args = [])

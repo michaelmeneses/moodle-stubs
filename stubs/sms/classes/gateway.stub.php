@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_sms;
 
+use coding_exception;
+use Spatie\Cloneable\Cloneable;
+use stdClass;
 /**
  * Class gateway.
  *

@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Reader\Common\Manager;
 
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Row;
 /**
  * @internal
  */

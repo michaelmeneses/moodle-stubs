@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Gnumeric;
 
+use PhpOffice\PhpSpreadsheet\Reader\Gnumeric;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Worksheet\PageMargins;
+use PhpOffice\PhpSpreadsheet\Worksheet\PageSetup as WorksheetPageSetup;
+use SimpleXMLElement;
 class PageSetup
 {
     /**

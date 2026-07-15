@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\oauth2\service;
 
+use core\oauth2\issuer;
+use core\oauth2\discovery\imsbadgeconnect;
 /**
  * Class for IMS Open Badges v2.1 oAuth service, with the specific methods related to it.
  *

@@ -29,6 +29,8 @@
  */
 namespace core\plugininfo;
 
+use admin_settingpage;
+use moodle_url;
 /**
  * Class for admin tool plugins
  *

@@ -29,6 +29,7 @@
  */
 namespace core_message;
 
+use DOMDocument;
 /**
  * Helper class for the message area.
  *

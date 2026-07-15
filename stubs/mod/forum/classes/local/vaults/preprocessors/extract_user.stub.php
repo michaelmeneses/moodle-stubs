@@ -29,6 +29,7 @@
  */
 namespace mod_forum\local\vaults\preprocessors;
 
+use user_picture;
 /**
  * Extract user vault preprocessor.
  *

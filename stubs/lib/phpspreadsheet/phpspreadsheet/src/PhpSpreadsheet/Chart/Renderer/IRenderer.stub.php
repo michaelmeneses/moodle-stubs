@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Chart\Renderer;
 
+use PhpOffice\PhpSpreadsheet\Chart\Chart;
 interface IRenderer
 {
     /**

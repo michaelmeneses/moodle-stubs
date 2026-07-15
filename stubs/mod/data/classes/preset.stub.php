@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data;
 
+use core_component;
+use invalid_parameter_exception;
+use data_field_base;
+use moodle_exception;
+use SimpleXMLElement;
+use stdClass;
+use stored_file;
 /**
  * Class preset for database activity.
  *

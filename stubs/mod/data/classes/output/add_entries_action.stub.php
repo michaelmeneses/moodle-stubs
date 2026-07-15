@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use moodle_url;
+use templatable;
+use renderable;
 /**
  * Renderable class for the Add entries button in the database activity.
  *

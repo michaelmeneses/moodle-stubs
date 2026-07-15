@@ -29,6 +29,7 @@
  */
 namespace core_customfield\privacy;
 
+use core_customfield\data_controller;
 /**
  * Interface customfield_provider, all customfield plugins need to implement it
  *

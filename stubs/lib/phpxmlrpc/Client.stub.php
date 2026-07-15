@@ -8,6 +8,10 @@
  */
 namespace PhpXmlRpc;
 
+use PhpXmlRpc\Exception\ValueErrorException;
+use PhpXmlRpc\Helper\XMLParser;
+use PhpXmlRpc\Traits\CharsetEncoderAware;
+use PhpXmlRpc\Traits\DeprecationLogger;
 /**
  * Used to represent a client of an XML-RPC server.
  *

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\task;
 
+use core\task\adhoc_task;
 /**
  * Class containing the deprecated class for send_notification event in BBB.
  *

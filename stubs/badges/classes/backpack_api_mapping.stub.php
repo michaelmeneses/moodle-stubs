@@ -30,6 +30,8 @@
  */
 namespace core_badges;
 
+use context_system;
+use curl;
 /**
  * Represent a single method for the remote api.
  *

@@ -20,28 +20,37 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\exception;
-
-/**
- * Exceptions indicating user does not have permissions to do something
- * and the execution can not continue.
- *
- * @package    core
- * @subpackage exception
- * @copyright  2009 Petr Skoda  {@link http://skodak.org}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class required_capability_exception extends moodle_exception
-{
+namespace core\exception {
     /**
-     * Constructor.
+     * Exceptions indicating user does not have permissions to do something
+     * and the execution can not continue.
      *
-     * @param \core\context $context The context used for the capability check
-     * @param string $capability The required capability
-     * @param string $errormessage The error message to show the user
-     * @param string $stringfile
+     * @package    core
+     * @subpackage exception
+     * @copyright  2009 Petr Skoda  {@link http://skodak.org}
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($context, $capability, $errormessage, $stringfile)
+    class required_capability_exception extends moodle_exception
+    {
+        /**
+         * Constructor.
+         *
+         * @param \core\context $context The context used for the capability check
+         * @param string $capability The required capability
+         * @param string $errormessage The error message to show the user
+         * @param string $stringfile
+         */
+        public function __construct($context, $capability, $errormessage, $stringfile)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\exception\required_capability_exception registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class required_capability_exception extends \core\exception\required_capability_exception
     {
     }
 }

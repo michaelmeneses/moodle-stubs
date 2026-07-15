@@ -8,6 +8,15 @@
  */
 namespace core_reportbuilder\form;
 
+use context;
+use context_system;
+use core_reportbuilder\permission;
+use moodle_url;
+use core_form\dynamic_form;
+use core_reportbuilder\datasource;
+use core_reportbuilder\manager;
+use core_reportbuilder\local\helpers\report as reporthelper;
+use core_tag_tag;
 /**
  * Report details form
  *

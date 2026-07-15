@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\NumberFormat\Wizard;
 
+use NumberFormatter;
+use PhpOffice\PhpSpreadsheet\Exception;
+use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 abstract class NumberBase
 {
     protected const MAX_DECIMALS = 30;

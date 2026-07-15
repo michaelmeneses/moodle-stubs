@@ -29,6 +29,7 @@
  */
 namespace qbank_exportquestions\form;
 
+use moodleform;
 /**
  * Form to export questions from the question bank.
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\VerifiedPermissions;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Verified Permissions** service.
  * @method \Aws\Result batchIsAuthorized(array $args = [])

@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation;
 
+use Complex\Complex;
+use PhpOffice\PhpSpreadsheet\Calculation\Engineering\ComplexFunctions;
+use PhpOffice\PhpSpreadsheet\Calculation\Engineering\ComplexOperations;
 /**
  * @deprecated 1.18.0
  */

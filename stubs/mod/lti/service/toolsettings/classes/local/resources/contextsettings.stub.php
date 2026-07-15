@@ -30,6 +30,7 @@
  */
 namespace ltiservice_toolsettings\local\resources;
 
+use ltiservice_toolsettings\local\service\toolsettings;
 /**
  * A resource implementing the Context-level (ToolProxyBinding) Settings.
  *

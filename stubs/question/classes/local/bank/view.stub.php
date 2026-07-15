@@ -29,6 +29,17 @@
  */
 namespace core_question\local\bank;
 
+use coding_exception;
+use core\plugininfo\qbank;
+use core\output\datafilter;
+use core_plugin_manager;
+use core_question\local\bank\condition;
+use core_question\local\statistics\statistics_bulk_loader;
+use core_question\output\question_bank_filter_ui;
+use core_question\local\bank\column_manager_base;
+use qbank_deletequestion\hidden_condition;
+use qbank_editquestion\editquestion_helper;
+use qbank_managecategories\category_condition;
 /**
  * This class prints a view of the question bank.
  *

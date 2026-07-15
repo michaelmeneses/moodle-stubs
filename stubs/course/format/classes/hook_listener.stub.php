@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat;
 
+use core_group\hook\after_group_membership_added;
+use core_group\hook\after_group_membership_removed;
 /**
  * Hook listener for course format
  *

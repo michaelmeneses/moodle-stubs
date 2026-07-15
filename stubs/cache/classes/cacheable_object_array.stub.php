@@ -20,63 +20,74 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * An array of cacheable objects.
- *
- * This class allows a developer to create an array of cacheable objects and store that.
- * The cache API doesn't check items within an array to see whether they are cacheable. Such a check would be very costly to both
- * arrays using cacheable object and those that don't.
- * Instead the developer must explicitly use a cacheable_object_array instance.
- *
- * The following is one example of how this class can be used.
- * <code>
- * $data = array();
- * $data[] = new cacheable_object('one');
- * $data[] = new cacheable_object('two');
- * $data[] = new cacheable_object('three');
- * $cache->set(new cacheable_object_array($data));
- * </code>
- * Another example would be
- * <code>
- * $data = new cacheable_object_array();
- * $data[] = new cacheable_object('one');
- * $data[] = new cacheable_object('two');
- * $data[] = new cacheable_object('three');
- * $cache->set($data);
- * </code>
- *
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core_cache
- */
-class cacheable_object_array extends ArrayObject implements cacheable_object_interface
-{
+namespace core_cache {
+    use core\exception\coding_exception;
+    use ArrayObject;
     /**
-     * Constructs a new array object instance.
-     * @param array $items
-     */
-    final public function __construct(array $items = [])
-    {
-    }
-    /**
-     * Returns the data to cache for this object.
+     * An array of cacheable objects.
      *
-     * @return cached_object[] An array of cached_object instances.
-     * @throws coding_exception
-     */
-    final public function prepare_to_cache()
-    {
-    }
-    /**
-     * Returns the cacheable_object_array that was originally sent to the cache.
+     * This class allows a developer to create an array of cacheable objects and store that.
+     * The cache API doesn't check items within an array to see whether they are cacheable. Such a check would be very costly to both
+     * arrays using cacheable object and those that don't.
+     * Instead the developer must explicitly use a cacheable_object_array instance.
      *
-     * @param array $data
-     * @return self
-     * @throws coding_exception
+     * The following is one example of how this class can be used.
+     * <code>
+     * $data = array();
+     * $data[] = new cacheable_object('one');
+     * $data[] = new cacheable_object('two');
+     * $data[] = new cacheable_object('three');
+     * $cache->set(new cacheable_object_array($data));
+     * </code>
+     * Another example would be
+     * <code>
+     * $data = new cacheable_object_array();
+     * $data[] = new cacheable_object('one');
+     * $data[] = new cacheable_object('two');
+     * $data[] = new cacheable_object('three');
+     * $cache->set($data);
+     * </code>
+     *
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core_cache
      */
-    final public static function wake_from_cache($data)
+    class cacheable_object_array extends ArrayObject implements cacheable_object_interface
+    {
+        /**
+         * Constructs a new array object instance.
+         * @param array $items
+         */
+        final public function __construct(array $items = [])
+        {
+        }
+        /**
+         * Returns the data to cache for this object.
+         *
+         * @return cached_object[] An array of cached_object instances.
+         * @throws coding_exception
+         */
+        final public function prepare_to_cache()
+        {
+        }
+        /**
+         * Returns the cacheable_object_array that was originally sent to the cache.
+         *
+         * @param array $data
+         * @return self
+         * @throws coding_exception
+         */
+        final public static function wake_from_cache($data)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core_cache\cacheable_object_array registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class cacheable_object_array extends \core_cache\cacheable_object_array
     {
     }
 }

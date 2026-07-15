@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\external;
 
+use core\context\module;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_single_structure;
+use core_external\external_value;
+use mod_quiz\quiz_settings;
 /**
  * External api for changing the question version in the quiz.
  *

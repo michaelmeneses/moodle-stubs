@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use PhpOffice\PhpSpreadsheet\Cell\Hyperlink;
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
+use PhpOffice\PhpSpreadsheet\IComparable;
 class BaseDrawing implements IComparable
 {
     const EDIT_AS_ABSOLUTE = 'absolute';

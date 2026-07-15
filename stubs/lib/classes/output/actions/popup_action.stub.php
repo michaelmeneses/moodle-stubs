@@ -20,45 +20,56 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\actions;
-
-/**
- * Component action for a popup window.
- *
- * @copyright 2009 Nicolas Connault
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class popup_action extends component_action
-{
+namespace core\output\actions {
+    use core\exception\coding_exception;
+    use moodle_url;
     /**
-     * @var string The JS function to call for the popup
-     */
-    public $jsfunction = 'openpopup';
-    /**
-     * @var array An array of parameters that will be passed to the openpopup JS function
-     */
-    public $params = ['height' => 400, 'width' => 500, 'top' => 0, 'left' => 0, 'menubar' => false, 'location' => false, 'scrollbars' => true, 'resizable' => true, 'toolbar' => true, 'status' => true, 'directories' => false, 'fullscreen' => false, 'dependent' => true];
-    /**
-     * Constructor
+     * Component action for a popup window.
      *
-     * @param string $event DOM event
-     * @param moodle_url|string $url A moodle_url object, required if no jsfunction is given
-     * @param string $name The JS function to call for the popup (default 'popup')
-     * @param array  $params An array of popup parameters
+     * @copyright 2009 Nicolas Connault
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function __construct($event, $url, $name = 'popup', $params = [])
+    class popup_action extends component_action
     {
+        /**
+         * @var string The JS function to call for the popup
+         */
+        public $jsfunction = 'openpopup';
+        /**
+         * @var array An array of parameters that will be passed to the openpopup JS function
+         */
+        public $params = ['height' => 400, 'width' => 500, 'top' => 0, 'left' => 0, 'menubar' => false, 'location' => false, 'scrollbars' => true, 'resizable' => true, 'toolbar' => true, 'status' => true, 'directories' => false, 'fullscreen' => false, 'dependent' => true];
+        /**
+         * Constructor
+         *
+         * @param string $event DOM event
+         * @param moodle_url|string $url A moodle_url object, required if no jsfunction is given
+         * @param string $name The JS function to call for the popup (default 'popup')
+         * @param array  $params An array of popup parameters
+         */
+        public function __construct($event, $url, $name = 'popup', $params = [])
+        {
+        }
+        /**
+         * Returns a string of concatenated option->value pairs used by JS to call the popup window,
+         * based on this object's variables
+         *
+         * @return string String of option->value pairs for JS popup function.
+         */
+        public function get_js_options()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns a string of concatenated option->value pairs used by JS to call the popup window,
-     * based on this object's variables
-     *
-     * @return string String of option->value pairs for JS popup function.
+     * Runtime class alias of \core\output\actions\popup_action registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get_js_options()
+    class popup_action extends \core\output\actions\popup_action
     {
     }
 }

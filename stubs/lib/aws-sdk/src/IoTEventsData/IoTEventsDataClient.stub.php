@@ -8,6 +8,7 @@
  */
 namespace Aws\IoTEventsData;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS IoT Events Data** service.
  * @method \Aws\Result batchAcknowledgeAlarm(array $args = [])

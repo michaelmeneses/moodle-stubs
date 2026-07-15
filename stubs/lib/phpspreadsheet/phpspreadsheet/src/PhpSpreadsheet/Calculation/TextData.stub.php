@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation;
 
+use DateTimeInterface;
 /**
  * @deprecated 1.18.0
  */

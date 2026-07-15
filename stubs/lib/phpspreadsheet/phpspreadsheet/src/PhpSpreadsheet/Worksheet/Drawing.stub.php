@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
+use ZipArchive;
 class Drawing extends BaseDrawing
 {
     const IMAGE_TYPES_CONVERTION_MAP = [IMAGETYPE_GIF => IMAGETYPE_PNG, IMAGETYPE_JPEG => IMAGETYPE_JPEG, IMAGETYPE_PNG => IMAGETYPE_PNG, IMAGETYPE_BMP => IMAGETYPE_PNG];

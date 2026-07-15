@@ -29,6 +29,14 @@
  */
 namespace tool_policy\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\approved_userlist;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\moodle_content_writer;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
 /**
  * Implementation of the privacy subsystem plugin provider for the policy tool.
  *

@@ -29,6 +29,8 @@
  */
 namespace block_lp\output;
 
+use plugin_renderer_base;
+use renderable;
 /**
  * Block LP renderer class.
  *

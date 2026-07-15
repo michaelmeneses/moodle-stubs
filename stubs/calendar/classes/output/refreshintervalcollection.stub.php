@@ -29,6 +29,7 @@
  */
 namespace core_calendar\output;
 
+use core\output\inplace_editable;
 class refreshintervalcollection extends inplace_editable
 {
     /**

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace report_configlog\reportbuilder\local\systemreports;
 
+use context_system;
+use report_configlog\reportbuilder\local\entities\config_change;
+use core_reportbuilder\system_report;
+use core_reportbuilder\local\entities\user;
+use stdClass;
 /**
  * Config changes system report class implementation
  *

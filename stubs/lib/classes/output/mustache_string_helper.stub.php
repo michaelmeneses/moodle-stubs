@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use Mustache_LambdaHelper;
+use stdClass;
 /**
  * This class will load language strings in a template.
  *

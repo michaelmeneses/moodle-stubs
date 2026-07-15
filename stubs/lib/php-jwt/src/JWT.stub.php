@@ -8,6 +8,15 @@
  */
 namespace Firebase\JWT;
 
+use ArrayAccess;
+use DateTime;
+use DomainException;
+use Exception;
+use InvalidArgumentException;
+use OpenSSLAsymmetricKey;
+use OpenSSLCertificate;
+use stdClass;
+use UnexpectedValueException;
 /**
  * JSON Web Token implementation, based on this spec:
  * https://tools.ietf.org/html/rfc7519

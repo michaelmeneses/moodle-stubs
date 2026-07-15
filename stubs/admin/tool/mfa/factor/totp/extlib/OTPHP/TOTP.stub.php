@@ -8,6 +8,10 @@
  */
 namespace OTPHP;
 
+use InvalidArgumentException;
+use Psr\Clock\ClockInterface;
+use function assert;
+use function is_int;
 /**
  * @see \OTPHP\Test\TOTPTest
  */

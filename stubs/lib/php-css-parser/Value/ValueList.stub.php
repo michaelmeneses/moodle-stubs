@@ -8,6 +8,7 @@
  */
 namespace Sabberworm\CSS\Value;
 
+use Sabberworm\CSS\OutputFormat;
 abstract class ValueList extends Value
 {
     /**

@@ -8,6 +8,28 @@
  */
 namespace DI\Compiler;
 
+use function chmod;
+use DI\Definition\ArrayDefinition;
+use DI\Definition\DecoratorDefinition;
+use DI\Definition\Definition;
+use DI\Definition\EnvironmentVariableDefinition;
+use DI\Definition\Exception\InvalidDefinition;
+use DI\Definition\FactoryDefinition;
+use DI\Definition\ObjectDefinition;
+use DI\Definition\Reference;
+use DI\Definition\Source\DefinitionSource;
+use DI\Definition\StringDefinition;
+use DI\Definition\ValueDefinition;
+use DI\DependencyException;
+use DI\Proxy\ProxyFactory;
+use function dirname;
+use function file_put_contents;
+use InvalidArgumentException;
+use Laravel\SerializableClosure\Support\ReflectionClosure;
+use function rename;
+use function sprintf;
+use function tempnam;
+use function unlink;
 /**
  * Compiles the container into PHP code much more optimized for performances.
  *

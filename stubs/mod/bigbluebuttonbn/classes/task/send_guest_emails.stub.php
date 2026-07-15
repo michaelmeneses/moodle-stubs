@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\task;
 
+use core_user;
+use html_writer;
 /**
  * This adhoc task will send emails to guest users with the meeting's details
  *

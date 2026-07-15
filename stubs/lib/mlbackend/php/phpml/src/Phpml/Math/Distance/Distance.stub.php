@@ -8,6 +8,8 @@
  */
 namespace Phpml\Math\Distance;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Math\Distance as DistanceInterface;
 /**
  * Class Distance
  */

@@ -29,6 +29,8 @@
  */
 namespace tool_dataprivacy;
 
+use core_privacy\manager;
+use tool_dataprivacy\expired_context;
 /**
  * Expired contexts manager.
  *

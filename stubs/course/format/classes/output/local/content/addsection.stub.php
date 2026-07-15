@@ -29,6 +29,12 @@
  */
 namespace core_courseformat\output\local\content;
 
+use core\output\named_templatable;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\courseformat_named_templatable;
+use moodle_url;
+use renderable;
+use stdClass;
 /**
  * Base class to render a course add section buttons.
  *

@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\local;
 
+use mod_quiz\event\group_override_created;
+use mod_quiz\event\group_override_deleted;
+use mod_quiz\event\group_override_updated;
+use mod_quiz\event\user_override_created;
+use mod_quiz\event\user_override_deleted;
+use mod_quiz\event\user_override_updated;
+use mod_quiz\quiz_settings;
 /**
  * Manager class for quiz overrides
  *

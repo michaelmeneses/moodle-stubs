@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Ods;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
 class FormulaTranslator
 {
     public static function convertToExcelAddressValue(string $openOfficeAddress): string

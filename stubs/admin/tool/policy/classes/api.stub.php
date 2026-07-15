@@ -30,6 +30,15 @@
  */
 namespace tool_policy;
 
+use coding_exception;
+use context_helper;
+use context_system;
+use context_user;
+use core\session\manager;
+use stdClass;
+use tool_policy\event\acceptance_created;
+use tool_policy\event\acceptance_updated;
+use user_picture;
 /**
  * Provides the API of the policies plugin.
  *

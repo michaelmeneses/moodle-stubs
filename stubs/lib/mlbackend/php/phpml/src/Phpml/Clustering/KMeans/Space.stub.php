@@ -8,6 +8,10 @@
  */
 namespace Phpml\Clustering\KMeans;
 
+use InvalidArgumentException;
+use LogicException;
+use Phpml\Clustering\KMeans;
+use SplObjectStorage;
 class Space extends SplObjectStorage
 {
     /**

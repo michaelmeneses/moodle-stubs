@@ -29,6 +29,14 @@
  */
 namespace core_h5p\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use moodle_url;
+use action_menu;
+use action_menu_link;
+use pix_icon;
 /**
  * Class to help display H5P library management table.
  *

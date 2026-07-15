@@ -29,6 +29,7 @@
  */
 namespace tool_lp\form;
 
+use core\form\persistent;
 /**
  * User evidence form class.
  *

@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tiny_media;
 
+use context;
+use editor_tiny\editor;
+use editor_tiny\plugin;
+use editor_tiny\plugin_with_buttons;
+use editor_tiny\plugin_with_configuration;
+use editor_tiny\plugin_with_menuitems;
 /**
  * Tiny media plugin.
  *

@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_communication\admin;
 
+use admin_setting;
+use core_plugin_manager;
+use core_text;
+use html_table;
+use html_table_row;
+use html_writer;
+use moodle_url;
 /**
  * Communication providers manager. Allow enable/disable communication providers and jump to settings.
  *

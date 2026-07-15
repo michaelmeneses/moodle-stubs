@@ -8,6 +8,12 @@
  */
 namespace Aws\Arn;
 
+use Aws\Arn\S3\AccessPointArn as S3AccessPointArn;
+use Aws\Arn\ObjectLambdaAccessPointArn;
+use Aws\Arn\S3\MultiRegionAccessPointArn;
+use Aws\Arn\S3\OutpostsBucketArn;
+use Aws\Arn\S3\RegionalBucketArn;
+use Aws\Arn\S3\OutpostsAccessPointArn;
 /**
  * This class provides functionality to parse ARN strings and return a
  * corresponding ARN object. ARN-parsing logic may be subject to change in the

@@ -29,6 +29,7 @@
  */
 namespace core_question\local\bank;
 
+use core\output\checkbox_toggleall;
 /**
  * A column with a checkbox for each question with name q{questionid}.
  *

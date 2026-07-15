@@ -47,97 +47,109 @@
  * @link http://simplepie.org/ SimplePie
  * @license http://www.opensource.org/licenses/bsd-license.php BSD License
  */
-namespace SimplePie;
-
-/**
- * Handles creating objects and calling methods
- *
- * Access this via {@see \SimplePie\SimplePie::get_registry()}
- *
- * @package SimplePie
- */
-class Registry
-{
+namespace SimplePie {
+    use SimplePie\Content\Type\Sniffer;
+    use SimplePie\Parse\Date;
+    use SimplePie\XML\Declaration\Parser as DeclarationParser;
     /**
-     * Default class mapping
+     * Handles creating objects and calling methods
      *
-     * Overriding classes *must* subclass these.
+     * Access this via {@see \SimplePie\SimplePie::get_registry()}
      *
-     * @var array<class-string, class-string>
+     * @package SimplePie
      */
-    protected $default = [Cache::class => Cache::class, Locator::class => Locator::class, Parser::class => Parser::class, File::class => File::class, Sanitize::class => Sanitize::class, Item::class => Item::class, Author::class => Author::class, Category::class => Category::class, Enclosure::class => Enclosure::class, Caption::class => Caption::class, Copyright::class => Copyright::class, Credit::class => Credit::class, Rating::class => Rating::class, Restriction::class => Restriction::class, Sniffer::class => Sniffer::class, Source::class => Source::class, Misc::class => Misc::class, DeclarationParser::class => DeclarationParser::class, Date::class => Date::class];
-    /**
-     * Class mapping
-     *
-     * @see register()
-     * @var array
-     */
-    protected $classes = [];
-    /**
-     * Legacy classes
-     *
-     * @see register()
-     * @var array<class-string>
-     */
-    protected $legacy = [];
-    /**
-     * Legacy types
-     *
-     * @see register()
-     * @var array<string, class-string>
-     */
-    private $legacyTypes = ['Cache' => Cache::class, 'Locator' => Locator::class, 'Parser' => Parser::class, 'File' => File::class, 'Sanitize' => Sanitize::class, 'Item' => Item::class, 'Author' => Author::class, 'Category' => Category::class, 'Enclosure' => Enclosure::class, 'Caption' => Caption::class, 'Copyright' => Copyright::class, 'Credit' => Credit::class, 'Rating' => Rating::class, 'Restriction' => Restriction::class, 'Content_Type_Sniffer' => Sniffer::class, 'Source' => Source::class, 'Misc' => Misc::class, 'XML_Declaration_Parser' => DeclarationParser::class, 'Parse_Date' => Date::class];
-    /**
-     * Constructor
-     *
-     * No-op
-     */
-    public function __construct()
+    class Registry
     {
+        /**
+         * Default class mapping
+         *
+         * Overriding classes *must* subclass these.
+         *
+         * @var array<class-string, class-string>
+         */
+        protected $default = [Cache::class => Cache::class, Locator::class => Locator::class, Parser::class => Parser::class, File::class => File::class, Sanitize::class => Sanitize::class, Item::class => Item::class, Author::class => Author::class, Category::class => Category::class, Enclosure::class => Enclosure::class, Caption::class => Caption::class, Copyright::class => Copyright::class, Credit::class => Credit::class, Rating::class => Rating::class, Restriction::class => Restriction::class, Sniffer::class => Sniffer::class, Source::class => Source::class, Misc::class => Misc::class, DeclarationParser::class => DeclarationParser::class, Date::class => Date::class];
+        /**
+         * Class mapping
+         *
+         * @see register()
+         * @var array
+         */
+        protected $classes = [];
+        /**
+         * Legacy classes
+         *
+         * @see register()
+         * @var array<class-string>
+         */
+        protected $legacy = [];
+        /**
+         * Legacy types
+         *
+         * @see register()
+         * @var array<string, class-string>
+         */
+        private $legacyTypes = ['Cache' => Cache::class, 'Locator' => Locator::class, 'Parser' => Parser::class, 'File' => File::class, 'Sanitize' => Sanitize::class, 'Item' => Item::class, 'Author' => Author::class, 'Category' => Category::class, 'Enclosure' => Enclosure::class, 'Caption' => Caption::class, 'Copyright' => Copyright::class, 'Credit' => Credit::class, 'Rating' => Rating::class, 'Restriction' => Restriction::class, 'Content_Type_Sniffer' => Sniffer::class, 'Source' => Source::class, 'Misc' => Misc::class, 'XML_Declaration_Parser' => DeclarationParser::class, 'Parse_Date' => Date::class];
+        /**
+         * Constructor
+         *
+         * No-op
+         */
+        public function __construct()
+        {
+        }
+        /**
+         * Register a class
+         *
+         * @param string $type See {@see $default} for names
+         * @param class-string $class Class name, must subclass the corresponding default
+         * @param bool $legacy Whether to enable legacy support for this class
+         * @return bool Successfulness
+         */
+        public function register($type, $class, $legacy = false)
+        {
+        }
+        /**
+         * Get the class registered for a type
+         *
+         * Where possible, use {@see create()} or {@see call()} instead
+         *
+         * @template T
+         * @param class-string<T> $type
+         * @return class-string<T>|null
+         */
+        public function get_class($type)
+        {
+        }
+        /**
+         * Create a new instance of a given type
+         *
+         * @template T class-string $type
+         * @param class-string<T> $type
+         * @param array $parameters Parameters to pass to the constructor
+         * @return T Instance of class
+         */
+        public function &create($type, $parameters = [])
+        {
+        }
+        /**
+         * Call a static method for a type
+         *
+         * @param class-string $type
+         * @param string $method
+         * @param array $parameters
+         * @return mixed
+         */
+        public function &call($type, $method, $parameters = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Register a class
-     *
-     * @param string $type See {@see $default} for names
-     * @param class-string $class Class name, must subclass the corresponding default
-     * @param bool $legacy Whether to enable legacy support for this class
-     * @return bool Successfulness
+     * Runtime class alias of \SimplePie\Registry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function register($type, $class, $legacy = false)
-    {
-    }
-    /**
-     * Get the class registered for a type
-     *
-     * Where possible, use {@see create()} or {@see call()} instead
-     *
-     * @template T
-     * @param class-string<T> $type
-     * @return class-string<T>|null
-     */
-    public function get_class($type)
-    {
-    }
-    /**
-     * Create a new instance of a given type
-     *
-     * @template T class-string $type
-     * @param class-string<T> $type
-     * @param array $parameters Parameters to pass to the constructor
-     * @return T Instance of class
-     */
-    public function &create($type, $parameters = [])
-    {
-    }
-    /**
-     * Call a static method for a type
-     *
-     * @param class-string $type
-     * @param string $method
-     * @param array $parameters
-     * @return mixed
-     */
-    public function &call($type, $method, $parameters = [])
+    class SimplePie_Registry extends \SimplePie\Registry
     {
     }
 }

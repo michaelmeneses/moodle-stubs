@@ -8,6 +8,11 @@
  */
 namespace core_reportbuilder\local\entities;
 
+use coding_exception;
+use core_reportbuilder\local\helpers\{database, join_trait};
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
+use lang_string;
 /**
  * Base class for all report entities
  *

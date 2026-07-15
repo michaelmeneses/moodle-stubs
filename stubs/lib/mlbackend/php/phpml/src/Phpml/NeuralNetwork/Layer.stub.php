@@ -8,6 +8,8 @@
  */
 namespace Phpml\NeuralNetwork;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\NeuralNetwork\Node\Neuron;
 class Layer
 {
     /**

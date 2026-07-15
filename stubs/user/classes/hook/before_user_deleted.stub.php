@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_user\hook;
 
+use stdClass;
+use Psr\EventDispatcher\StoppableEventInterface;
 /**
  * Hook before user deletion.
  *

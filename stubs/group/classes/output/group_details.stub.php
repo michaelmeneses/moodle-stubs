@@ -29,6 +29,12 @@
  */
 namespace core_group\output;
 
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
+use context_course;
+use moodle_url;
 /**
  * Group details page class.
  *

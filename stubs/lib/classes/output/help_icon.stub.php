@@ -20,63 +20,74 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Data structure representing a help icon.
- *
- * @copyright 2010 Petr Skoda (info@skodak.org)
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class help_icon implements renderable, templatable
-{
+namespace core\output {
+    use moodle_url;
+    use stdClass;
     /**
-     * @var string lang pack identifier (without the "_help" suffix),
-     * both get_string($identifier, $component) and get_string($identifier.'_help', $component)
-     * must exist.
-     */
-    public $identifier;
-    /**
-     * @var string Component name, the same as in get_string()
-     */
-    public $component;
-    /**
-     * @var string Extra descriptive text next to the icon
-     */
-    public $linktext = null;
-    /**
-     * @var mixed An object, string or number that can be used within translation strings
-     */
-    public $a = null;
-    /**
-     * Constructor
+     * Data structure representing a help icon.
      *
-     * @param string $identifier string for help page title,
-     *  string with _help suffix is used for the actual help text.
-     *  string with _link suffix is used to create a link to further info (if it exists)
-     * @param string $component
-     * @param string|object|array|int $a An object, string or number that can be used
-     *      within translation strings
+     * @copyright 2010 Petr Skoda (info@skodak.org)
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function __construct($identifier, $component, $a = null)
+    class help_icon implements renderable, templatable
     {
+        /**
+         * @var string lang pack identifier (without the "_help" suffix),
+         * both get_string($identifier, $component) and get_string($identifier.'_help', $component)
+         * must exist.
+         */
+        public $identifier;
+        /**
+         * @var string Component name, the same as in get_string()
+         */
+        public $component;
+        /**
+         * @var string Extra descriptive text next to the icon
+         */
+        public $linktext = null;
+        /**
+         * @var mixed An object, string or number that can be used within translation strings
+         */
+        public $a = null;
+        /**
+         * Constructor
+         *
+         * @param string $identifier string for help page title,
+         *  string with _help suffix is used for the actual help text.
+         *  string with _link suffix is used to create a link to further info (if it exists)
+         * @param string $component
+         * @param string|object|array|int $a An object, string or number that can be used
+         *      within translation strings
+         */
+        public function __construct($identifier, $component, $a = null)
+        {
+        }
+        /**
+         * Verifies that both help strings exists, shows debug warnings if not
+         */
+        public function diag_strings()
+        {
+        }
+        /**
+         * Export this data so it can be used as the context for a mustache template.
+         *
+         * @param renderer_base $output Used to do a final render of any components that need to be rendered for export.
+         * @return stdClass
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Verifies that both help strings exists, shows debug warnings if not
+     * Runtime class alias of \core\output\help_icon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function diag_strings()
-    {
-    }
-    /**
-     * Export this data so it can be used as the context for a mustache template.
-     *
-     * @param renderer_base $output Used to do a final render of any components that need to be rendered for export.
-     * @return stdClass
-     */
-    public function export_for_template(renderer_base $output)
+    class help_icon extends \core\output\help_icon
     {
     }
 }

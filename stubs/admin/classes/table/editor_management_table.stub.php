@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_admin\table;
 
+use moodle_url;
 /**
  * Tiny admin settings.
  *

@@ -8,6 +8,8 @@
  */
 namespace Phpml\Dataset;
 
+use Phpml\Exception\DatasetException;
+use Phpml\Exception\FileException;
 class SvmDataset extends ArrayDataset
 {
     public function __construct(string $filePath)

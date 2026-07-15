@@ -8,6 +8,7 @@
  */
 namespace Phpml\Preprocessing;
 
+use Phpml\Exception\InvalidArgumentException;
 final class OneHotEncoder implements Preprocessor
 {
     /**

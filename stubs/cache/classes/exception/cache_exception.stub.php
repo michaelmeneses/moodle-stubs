@@ -20,28 +20,38 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache\exception;
-
-/**
- * A cache exception class. Just allows people to catch cache exceptions.
- *
- * @package    core_cache
- * @category   cache
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class cache_exception extends moodle_exception
-{
+namespace core_cache\exception {
+    use core\exception\moodle_exception;
     /**
-     * Constructs a new exception
+     * A cache exception class. Just allows people to catch cache exceptions.
      *
-     * @param string $errorcode
-     * @param string $module
-     * @param string $link
-     * @param mixed $a
-     * @param mixed $debuginfo
+     * @package    core_cache
+     * @category   cache
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($errorcode, $module = 'cache', $link = '', $a = null, $debuginfo = null)
+    class cache_exception extends moodle_exception
+    {
+        /**
+         * Constructs a new exception
+         *
+         * @param string $errorcode
+         * @param string $module
+         * @param string $link
+         * @param mixed $a
+         * @param mixed $debuginfo
+         */
+        public function __construct($errorcode, $module = 'cache', $link = '', $a = null, $debuginfo = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core_cache\exception\cache_exception registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class cache_exception extends \core_cache\exception\cache_exception
     {
     }
 }

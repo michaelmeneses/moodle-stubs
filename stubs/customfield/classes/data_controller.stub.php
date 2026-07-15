@@ -29,6 +29,8 @@
  */
 namespace core_customfield;
 
+use backup_nested_element;
+use core_customfield\output\field_data;
 /**
  * Base class for custom fields data controllers
  *

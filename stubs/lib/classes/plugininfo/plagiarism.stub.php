@@ -29,6 +29,7 @@
  */
 namespace core\plugininfo;
 
+use moodle_url, part_of_admin_tree, admin_externalpage;
 /**
  * Class for plagiarism plugins
  */

@@ -29,6 +29,11 @@
  */
 namespace core_user\output;
 
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
+use user_enrolment_action;
 /**
  * Class containing the data for the status field.
  *

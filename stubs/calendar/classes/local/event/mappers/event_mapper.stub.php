@@ -29,6 +29,10 @@
  */
 namespace core_calendar\local\event\mappers;
 
+use core_calendar\event;
+use core_calendar\local\event\entities\action_event_interface;
+use core_calendar\local\event\entities\event_interface;
+use core_calendar\local\event\factories\event_factory_interface;
 /**
  * Event mapper class.
  *

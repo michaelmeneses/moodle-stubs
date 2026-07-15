@@ -8,6 +8,7 @@
  */
 namespace Aws\IoTFleetWise;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS IoT FleetWise** service.
  * @method \Aws\Result associateVehicleFleet(array $args = [])

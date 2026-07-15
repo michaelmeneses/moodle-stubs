@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\admin;
 
+use mod_quiz\access_manager;
 /**
  * Admin settings class for the quiz browser security option.
  *

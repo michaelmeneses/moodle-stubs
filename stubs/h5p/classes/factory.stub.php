@@ -30,6 +30,11 @@
  */
 namespace core_h5p;
 
+use core_h5p\local\library\autoloader;
+use Moodle\H5PContentValidator as content_validator;
+use Moodle\H5peditor;
+use Moodle\H5PStorage as storage;
+use Moodle\H5PValidator as validator;
 /**
  * H5P factory class.
  * This class is used to decouple the construction of H5P related objects.

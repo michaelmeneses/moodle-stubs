@@ -8,6 +8,7 @@
  */
 namespace Aws\EKS;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Elastic Container Service for Kubernetes** service.
  * @method \Aws\Result associateAccessPolicy(array $args = [])

@@ -20,117 +20,131 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * The cache config class used when the Cache has been disabled.
- *
- * @package core_cache
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class disabled_config extends config_writer
-{
+namespace core_cache {
+    use core\exception\coding_exception;
+    use core_cache\exception\cache_exception;
+    use cachestore_static;
+    use cachestore_session;
+    use cachestore_file;
     /**
-     * Returns an instance of the configuration writer.
+     * The cache config class used when the Cache has been disabled.
      *
-     * @return disabled_config
+     * @package core_cache
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public static function instance()
+    class disabled_config extends config_writer
     {
+        /**
+         * Returns an instance of the configuration writer.
+         *
+         * @return disabled_config
+         */
+        public static function instance()
+        {
+        }
+        /**
+         * Saves the current configuration.
+         */
+        protected function config_save()
+        {
+        }
+        /**
+         * Generates a configuration array suitable to be written to the config file.
+         *
+         * @return array
+         */
+        protected function generate_configuration_array()
+        {
+        }
+        /**
+         * Adds a plugin instance.
+         *
+         * @param string $name Unused.
+         * @param string $plugin Unused.
+         * @param array $configuration Unused.
+         * @return bool
+         * @throws cache_exception
+         */
+        public function add_store_instance($name, $plugin, array $configuration = [])
+        {
+        }
+        /**
+         * Sets the mode mappings.
+         *
+         * @param array $modemappings Unused.
+         * @return bool
+         * @throws cache_exception
+         */
+        public function set_mode_mappings(array $modemappings)
+        {
+        }
+        /**
+         * Edits a give plugin instance.
+         *
+         * @param string $name Unused.
+         * @param string $plugin Unused.
+         * @param array $configuration Unused.
+         * @return bool
+         * @throws cache_exception
+         */
+        public function edit_store_instance($name, $plugin, $configuration)
+        {
+        }
+        /**
+         * Deletes a store instance.
+         *
+         * @param string $name Unused.
+         * @return bool
+         * @throws cache_exception
+         */
+        public function delete_store_instance($name)
+        {
+        }
+        /**
+         * Creates the default configuration and saves it.
+         *
+         * @param bool $forcesave Ignored because we are disabled!
+         * @return array
+         */
+        public static function create_default_configuration($forcesave = false)
+        {
+        }
+        /**
+         * Updates the definition in the configuration from those found in the cache files.
+         *
+         * @param bool $coreonly Unused.
+         */
+        public static function update_definitions($coreonly = false)
+        {
+        }
+        /**
+         * Locates all of the definition files.
+         *
+         * @param bool $coreonly Unused.
+         * @return array
+         */
+        protected static function locate_definitions($coreonly = false)
+        {
+        }
+        /**
+         * Sets the mappings for a given definition.
+         *
+         * @param string $definition Unused.
+         * @param array $mappings Unused.
+         * @throws coding_exception
+         */
+        public function set_definition_mappings($definition, $mappings)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Saves the current configuration.
+     * Runtime class alias of \core_cache\disabled_config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    protected function config_save()
-    {
-    }
-    /**
-     * Generates a configuration array suitable to be written to the config file.
-     *
-     * @return array
-     */
-    protected function generate_configuration_array()
-    {
-    }
-    /**
-     * Adds a plugin instance.
-     *
-     * @param string $name Unused.
-     * @param string $plugin Unused.
-     * @param array $configuration Unused.
-     * @return bool
-     * @throws cache_exception
-     */
-    public function add_store_instance($name, $plugin, array $configuration = [])
-    {
-    }
-    /**
-     * Sets the mode mappings.
-     *
-     * @param array $modemappings Unused.
-     * @return bool
-     * @throws cache_exception
-     */
-    public function set_mode_mappings(array $modemappings)
-    {
-    }
-    /**
-     * Edits a give plugin instance.
-     *
-     * @param string $name Unused.
-     * @param string $plugin Unused.
-     * @param array $configuration Unused.
-     * @return bool
-     * @throws cache_exception
-     */
-    public function edit_store_instance($name, $plugin, $configuration)
-    {
-    }
-    /**
-     * Deletes a store instance.
-     *
-     * @param string $name Unused.
-     * @return bool
-     * @throws cache_exception
-     */
-    public function delete_store_instance($name)
-    {
-    }
-    /**
-     * Creates the default configuration and saves it.
-     *
-     * @param bool $forcesave Ignored because we are disabled!
-     * @return array
-     */
-    public static function create_default_configuration($forcesave = false)
-    {
-    }
-    /**
-     * Updates the definition in the configuration from those found in the cache files.
-     *
-     * @param bool $coreonly Unused.
-     */
-    public static function update_definitions($coreonly = false)
-    {
-    }
-    /**
-     * Locates all of the definition files.
-     *
-     * @param bool $coreonly Unused.
-     * @return array
-     */
-    protected static function locate_definitions($coreonly = false)
-    {
-    }
-    /**
-     * Sets the mappings for a given definition.
-     *
-     * @param string $definition Unused.
-     * @param array $mappings Unused.
-     * @throws coding_exception
-     */
-    public function set_definition_mappings($definition, $mappings)
+    class cache_config_disabled extends \core_cache\disabled_config
     {
     }
 }

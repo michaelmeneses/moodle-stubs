@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\output;
 
+use renderer_base;
+use templatable;
+use renderable;
+use question_bank;
 /**
  * A UI widget to select other versions of a particular question.
  *

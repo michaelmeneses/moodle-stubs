@@ -1556,3 +1556,59 @@ function get_suspended_userids(context $context, $usecache = false)
 function get_with_capability_sql(context $context, $capability)
 {
 }
+/**
+ * Runtime class alias of \core\context_helper registered by the original source,
+ * re-emitted as a declaration so static analysers can resolve the name.
+ */
+class context_helper extends \core\context_helper
+{
+}
+/**
+ * Runtime class alias of \core\context registered by the original source,
+ * re-emitted as a declaration so static analysers can resolve the name.
+ */
+class context extends \core\context
+{
+}
+/**
+ * Runtime class alias of \core\context\block registered by the original source,
+ * re-emitted as a declaration so static analysers can resolve the name.
+ */
+class context_block extends \core\context\block
+{
+}
+/**
+ * Runtime class alias of \core\context\course registered by the original source,
+ * re-emitted as a declaration so static analysers can resolve the name.
+ */
+class context_course extends \core\context\course
+{
+}
+/**
+ * Runtime class alias of \core\context\coursecat registered by the original source,
+ * re-emitted as a declaration so static analysers can resolve the name.
+ */
+class context_coursecat extends \core\context\coursecat
+{
+}
+/**
+ * Runtime class alias of \core\context\module registered by the original source,
+ * re-emitted as a declaration so static analysers can resolve the name.
+ */
+class context_module extends \core\context\module
+{
+}
+/**
+ * Runtime class alias of \core\context\system registered by the original source,
+ * re-emitted as a declaration so static analysers can resolve the name.
+ */
+class context_system extends \core\context\system
+{
+}
+/**
+ * Runtime class alias of \core\context\user registered by the original source,
+ * re-emitted as a declaration so static analysers can resolve the name.
+ */
+class context_user extends \core\context\user
+{
+}

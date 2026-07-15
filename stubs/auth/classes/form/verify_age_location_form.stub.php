@@ -29,6 +29,7 @@
  */
 namespace core_auth\form;
 
+use moodleform;
 /**
  * Age and location verification mform class.
  *

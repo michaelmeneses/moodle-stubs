@@ -31,3 +31,4 @@
 define('AJAX_SCRIPT', true);
 // To be able to process concurrent ajax request with the generate pdf ajax request we can not use cookie.
 define('NO_MOODLE_COOKIES', true);
+use assignfeedback_editpdf\document_services;

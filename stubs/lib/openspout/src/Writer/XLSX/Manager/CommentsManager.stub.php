@@ -8,6 +8,11 @@
  */
 namespace OpenSpout\Writer\XLSX\Manager;
 
+use OpenSpout\Common\Entity\Comment\Comment;
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Helper\Escaper;
+use OpenSpout\Writer\Common\Entity\Worksheet;
+use OpenSpout\Writer\Common\Helper\CellHelper;
 /**
  * @internal
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\QApps;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **QApps** service.
  * @method \Aws\Result associateLibraryItemReview(array $args = [])

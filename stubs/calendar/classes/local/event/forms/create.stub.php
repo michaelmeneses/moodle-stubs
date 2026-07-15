@@ -29,6 +29,7 @@
  */
 namespace core_calendar\local\event\forms;
 
+use context_system;
 /**
  * The mform class for creating a calendar event.
  *

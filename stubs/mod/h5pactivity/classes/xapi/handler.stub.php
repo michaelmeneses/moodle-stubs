@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_h5pactivity\xapi;
 
+use mod_h5pactivity\local\attempt;
+use mod_h5pactivity\local\manager;
+use mod_h5pactivity\event\statement_received;
+use core_xapi\local\statement;
+use core_xapi\handler as handler_base;
+use core\event\base as event_base;
+use core_xapi\local\state;
+use moodle_exception;
 /**
  * Class xapi_handler for H5P statements and states.
  *

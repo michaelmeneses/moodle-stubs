@@ -8,6 +8,7 @@
  */
 namespace Aws\SecurityLake;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Security Lake** service.
  * @method \Aws\Result createAwsLogSource(array $args = [])

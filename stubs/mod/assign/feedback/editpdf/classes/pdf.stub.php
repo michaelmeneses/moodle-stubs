@@ -29,6 +29,7 @@
  */
 namespace assignfeedback_editpdf;
 
+use setasign\Fpdi\TcpdfFpdi;
 /**
  * Library code for manipulating PDFs
  *

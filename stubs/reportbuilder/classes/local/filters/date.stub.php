@@ -8,6 +8,10 @@
  */
 namespace core_reportbuilder\local\filters;
 
+use core\{clock, di};
+use core\lang_string;
+use core_reportbuilder\local\helpers\database;
+use MoodleQuickForm;
 /**
  * Date report filter
  *

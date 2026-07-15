@@ -20,930 +20,947 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_table;
-
-// phpcs:disable moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
-/**
- * Flexible table implementation.
- *
- * @package   core_table
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class flexible_table
-{
-    public $attributes = [];
-    public $baseurl = null;
-    /** @var string The caption of table */
-    public $caption;
-    /** @var array The caption attributes of table */
-    public $captionattributes;
-    public $column_class = [];
-    public $column_nosort = ['userpic'];
-    public $column_style = [];
-    public $column_suppress = [];
-    public $columns = [];
-    public $currentrow = 0;
-    public $currpage = 0;
+namespace core_table {
+    use core\context;
+    use core_table\local\filter\filterset;
+    use core\exception\coding_exception;
+    use core\output\renderable;
+    use html_writer;
+    use moodle_url;
+    use paging_bar;
+    use stdClass;
+    // phpcs:disable moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
     /**
-     * Which download plugin to use. Default '' means none - print html table with paging.
-     * Property set by is_downloading which typically passes in cleaned data from $
-     * @var string
-     */
-    public $download = '';
-    /**
-     * Whether data is downloadable from table. Determines whether to display download buttons. Set by method downloadable().
-     * @var bool
-     */
-    public $downloadable = false;
-    /** @var dataformat_export_format */
-    public $exportclass = null;
-    public $headers = [];
-    public $is_collapsible = false;
-    public $is_sortable = false;
-    public $maxsortkeys = 2;
-    public $pagesize = 30;
-    public $request = [];
-    /** @var bool Stores if setup has already been called on this flixible table. */
-    public $setup = false;
-    /** @var int[] Array of positions in which to display download controls. */
-    public $showdownloadbuttonsat = [TABLE_P_TOP];
-    public $sort_default_column = null;
-    public $sort_default_order = SORT_ASC;
-    /** @var bool Has start output been called yet? */
-    public $started_output = false;
-    public $totalrows = 0;
-    public $uniqueid = null;
-    public $use_initials = false;
-    public $use_pages = false;
-    /** @var string Key of field returned by db query that is the id field of the user table or equivalent. */
-    public $useridfield = 'id';
-    /** @var bool Whether to make the table to be scrolled horizontally with ease. Make table responsive across all viewports. */
-    public bool $responsive = true;
-    /** @var array The sticky attribute of each table column. */
-    protected $columnsticky = [];
-    /** @var string $filename */
-    protected $filename;
-    /**
-     * The currently applied filerset. This is required for dynamic tables, but can be used by other tables too if desired.
-     * @var filterset
-     */
-    protected $filterset = null;
-    /** @var string A column which should be considered as a header column. */
-    protected $headercolumn = null;
-    /** @var string For create header with help icon. */
-    private $helpforheaders = [];
-    /** @var array List of hidden columns. */
-    protected $hiddencolumns;
-    /** @var string The manually set first name initial preference */
-    protected $ifirst;
-    /** @var string The manually set last name initial preference */
-    protected $ilast;
-    /** @var bool Whether the table preferences is resetting. */
-    protected $resetting;
-    /** @var string */
-    protected $sheettitle;
-    /** @var array The fields to sort. */
-    protected $sortdata;
-    /** @var string[] Columns that are expected to contain a users fullname.  */
-    protected $userfullnamecolumns = ['fullname'];
-    private $column_textsort = [];
-    /** @var array[] Attributes for each column  */
-    private $columnsattributes = [];
-    /** @var int The default per page size for the table. */
-    private $defaultperpage = 30;
-    /** @var bool Whether to store table properties in the user_preferences table. */
-    private $persistent = false;
-    /** @var array For storing user-customised table properties in the user_preferences db table. */
-    private $prefs = [];
-    /**
-     * Constructor
-     * @param string $uniqueid all tables have to have a unique id, this is used
-     *      as a key when storing table properties like sort order in the session.
-     */
-    public function __construct($uniqueid)
-    {
-    }
-    /**
-     * Call this to pass the download type. Use :
-     *         $download = optional_param('download', '', PARAM_ALPHA);
-     * To get the download type. We assume that if you call this function with
-     * params that this table's data is downloadable, so we call is_downloadable
-     * for you (even if the param is '', which means no download this time.
-     * Also you can call this method with no params to get the current set
-     * download type.
-     * @param string|null $download type of dataformat for export.
-     * @param string $filename filename for downloads without file extension.
-     * @param string $sheettitle title for downloaded data.
-     * @return string download dataformat type.
-     */
-    public function is_downloading($download = null, $filename = '', $sheettitle = '')
-    {
-    }
-    /**
-     * Get, and optionally set, the export class.
-     * @param dataformat_export_format $exportclass (optional) if passed, set the table to use this export class.
-     * @return dataformat_export_format the export class in use (after any set).
-     */
-    public function export_class_instance($exportclass = null)
-    {
-    }
-    /**
-     * Probably don't need to call this directly. Calling is_downloading with a
-     * param automatically sets table as downloadable.
+     * Flexible table implementation.
      *
-     * @param bool $downloadable optional param to set whether data from
-     * table is downloadable. If ommitted this function can be used to get
-     * current state of table.
-     * @return bool whether table data is set to be downloadable.
-     */
-    public function is_downloadable($downloadable = null)
-    {
-    }
-    /**
-     * Call with boolean true to store table layout changes in the user_preferences table.
-     * Note: user_preferences.value has a maximum length of 1333 characters.
-     * Call with no parameter to get current state of table persistence.
-     *
-     * @param bool $persistent Optional parameter to set table layout persistence.
-     * @return bool Whether or not the table layout preferences will persist.
-     */
-    public function is_persistent($persistent = null)
-    {
-    }
-    /**
-     * Where to show download buttons.
-     * @param array $showat array of postions in which to show download buttons.
-     * Containing TABLE_P_TOP and/or TABLE_P_BOTTOM
-     */
-    public function show_download_buttons_at($showat)
-    {
-    }
-    /**
-     * Sets the is_sortable variable to the given boolean, sort_default_column to
-     * the given string, and the sort_default_order to the given integer.
-     * @param bool $bool
-     * @param string $defaultcolumn
-     * @param int $defaultorder
-     * @return void
-     */
-    public function sortable($bool, $defaultcolumn = null, $defaultorder = SORT_ASC)
-    {
-    }
-    /**
-     * Use text sorting functions for this column (required for text columns with Oracle).
-     * Be warned that you cannot use this with column aliases. You can only do this
-     * with real columns. See MDL-40481 for an example.
-     * @param string column name
-     */
-    public function text_sorting($column)
-    {
-    }
-    /**
-     * Do not sort using this column
-     * @param string column name
-     */
-    public function no_sorting($column)
-    {
-    }
-    /**
-     * Is the column sortable?
-     * @param string column name, null means table
-     * @return bool
-     */
-    public function is_sortable($column = null)
-    {
-    }
-    /**
-     * Sets the is_collapsible variable to the given boolean.
-     * @param bool $bool
-     * @return void
-     */
-    public function collapsible($bool)
-    {
-    }
-    /**
-     * Sets the use_pages variable to the given boolean.
-     * @param bool $bool
-     * @return void
-     */
-    public function pageable($bool)
-    {
-    }
-    /**
-     * Sets the use_initials variable to the given boolean.
-     * @param bool $bool
-     * @return void
-     */
-    public function initialbars($bool)
-    {
-    }
-    /**
-     * Sets the pagesize variable to the given integer, the totalrows variable
-     * to the given integer, and the use_pages variable to true.
-     * @param int $perpage
-     * @param int $total
-     * @return void
-     */
-    public function pagesize($perpage, $total)
-    {
-    }
-    /**
-     * Assigns each given variable in the array to the corresponding index
-     * in the request class variable.
-     * @param array $variables
-     * @return void
-     */
-    public function set_control_variables($variables)
-    {
-    }
-    /**
-     * Gives the given $value to the $attribute index of $this->attributes.
-     * @param string $attribute
-     * @param mixed $value
-     * @return void
-     */
-    public function set_attribute($attribute, $value)
-    {
-    }
-    /**
-     * What this method does is set the column so that if the same data appears in
-     * consecutive rows, then it is not repeated.
-     *
-     * For example, in the quiz overview report, the fullname column is set to be suppressed, so
-     * that when one student has made multiple attempts, their name is only printed in the row
-     * for their first attempt.
-     * @param int $column the index of a column.
-     */
-    public function column_suppress($column)
-    {
-    }
-    /**
-     * Sets the given $column index to the given $classname in $this->column_class.
-     * @param int $column
-     * @param string $classname
-     * @return void
-     */
-    public function column_class($column, $classname)
-    {
-    }
-    /**
-     * Sets the given $column index and $property index to the given $value in $this->column_style.
-     * @param int $column
-     * @param string $property
-     * @param mixed $value
-     * @return void
-     */
-    public function column_style($column, $property, $value)
-    {
-    }
-    /**
-     * Sets a sticky attribute to a column.
-     * @param string $column Column name
-     * @param bool $sticky
-     */
-    public function column_sticky(string $column, bool $sticky = true): void
-    {
-    }
-    /**
-     * Sets the given $attributes to $this->columnsattributes.
-     * Column attributes will be added to every cell in the column.
-     *
-     * @param array[] $attributes e.g. ['c0_firstname' => ['data-foo' => 'bar']]
-     */
-    public function set_columnsattributes(array $attributes): void
-    {
-    }
-    /**
-     * Sets all columns' $propertys to the given $value in $this->column_style.
-     * @param int $property
-     * @param string $value
-     * @return void
-     */
-    public function column_style_all($property, $value)
-    {
-    }
-    /**
-     * Sets $this->baseurl.
-     * @param moodle_url|string $url the url with params needed to call up this page
-     */
-    public function define_baseurl($url)
-    {
-    }
-    /**
-     * Define the columns for the table.
-     *
-     * @param array $columns an array of identifying names for columns. If
-     * columns are sorted then column names must correspond to a field in sql.
-     */
-    public function define_columns($columns)
-    {
-    }
-    /**
-     * Define the headers for the table, replacing any existing header configuration.
-     *
-     * @param array $headers numerical keyed array of displayed string titles
-     * for each column.
-     */
-    public function define_headers($headers)
-    {
-    }
-    /**
-     * Mark a specific column as being a table header using the column name defined in define_columns.
-     *
-     * Note: Only one column can be a header, and it will be rendered using a th tag.
-     *
-     * @param   string  $column
-     */
-    public function define_header_column(string $column)
-    {
-    }
-    /**
-     * Defines a help icon for the header
-     *
-     * Always use this function if you need to create header with sorting and help icon.
-     *
-     * @param renderable[] $helpicons An array of renderable objects to be used as help icons
-     */
-    public function define_help_for_headers($helpicons)
-    {
-    }
-    /**
-     * Mark the table preferences to be reset.
-     */
-    public function mark_table_to_reset(): void
-    {
-    }
-    /**
-     * Is the table marked for reset preferences?
-     *
-     * @return bool True if the table is marked to reset, false otherwise.
-     */
-    protected function is_resetting_preferences(): bool
-    {
-    }
-    /**
-     * Must be called after table is defined. Use methods above first. Cannot
-     * use functions below till after calling this method.
-     */
-    public function setup()
-    {
-    }
-    /**
-     * Get the order by clause from the session or user preferences, for the table with id $uniqueid.
-     * @param string $uniqueid the identifier for a table.
-     * @return string SQL fragment that can be used in an ORDER BY clause.
-     */
-    public static function get_sort_for_table($uniqueid)
-    {
-    }
-    /**
-     * Prepare an an order by clause from the list of columns to be sorted.
-     *
-     * @param array $cols column name => SORT_ASC or SORT_DESC
-     * @return string SQL fragment that can be used in an ORDER BY clause.
-     */
-    public static function construct_order_by($cols, $textsortcols = [])
-    {
-    }
-    /**
-     * Get the SQL Sort clause for the table.
-     *
-     * @return string SQL fragment that can be used in an ORDER BY clause.
-     */
-    public function get_sql_sort()
-    {
-    }
-    /**
-     * Whether the current table contains any fullname columns
-     *
-     * @return bool
-     */
-    private function contains_fullname_columns(): bool
-    {
-    }
-    /**
-     * Get the columns to sort by, in the form required by {@see construct_order_by()}.
-     * @return array column name => SORT_... constant.
-     */
-    public function get_sort_columns()
-    {
-    }
-    /**
-     * Get the starting row number for this page.
-     *
-     * @return int the offset for LIMIT clause of SQL
-     */
-    public function get_page_start()
-    {
-    }
-    /**
-     * @return int the pagesize for LIMIT clause of SQL
-     */
-    public function get_page_size()
-    {
-    }
-    /**
-     * @return array sql to add to where statement.
-     */
-    public function get_sql_where()
-    {
-    }
-    /**
-     * Add a row of data to the table. This function takes an array or object with
-     * column names as keys or property names.
-     *
-     * It ignores any elements with keys that are not defined as columns. It
-     * puts in empty strings into the row when there is no element in the passed
-     * array corresponding to a column in the table. It puts the row elements in
-     * the proper order (internally row table data is stored by in arrays with
-     * a numerical index corresponding to the column number).
-     *
-     * @param object|array $rowwithkeys array keys or object property names are column names,
-     *                                      as defined in call to define_columns.
-     * @param string $classname CSS class name to add to this row's tr tag.
-     */
-    public function add_data_keyed($rowwithkeys, $classname = '')
-    {
-    }
-    /**
-     * Add a number of rows to the table at once. And optionally finish output after they have been added.
-     *
-     * @param (object|array|null)[] $rowstoadd Array of rows to add to table, a null value in array adds a separator row. Or a
-     *                                  object or array is added to table. We expect properties for the row array as would be
-     *                                  passed to add_data_keyed.
-     * @param bool     $finish
-     */
-    public function format_and_add_array_of_rows($rowstoadd, $finish = true)
-    {
-    }
-    /**
-     * Add a seperator line to table.
-     */
-    public function add_separator()
-    {
-    }
-    /**
-     * This method actually directly echoes the row passed to it now or adds it
-     * to the download. If this is the first row and start_output has not
-     * already been called this method also calls start_output to open the table
-     * or send headers for the downloaded.
-     * Can be used as before. print_html now calls finish_html to close table.
-     *
-     * @param array $row a numerically keyed row of data to add to the table.
-     * @param string $classname CSS class name to add to this row's tr tag.
-     * @return bool success.
-     */
-    public function add_data($row, $classname = '')
-    {
-    }
-    /**
-     * You should call this to finish outputting the table data after adding
-     * data to the table with add_data or add_data_keyed.
-     *
-     */
-    public function finish_output($closeexportclassdoc = true)
-    {
-    }
-    /**
-     * Hook that can be overridden in child classes to wrap a table in a form
-     * for example. Called only when there is data to display and not
-     * downloading.
-     */
-    public function wrap_html_start()
-    {
-    }
-    /**
-     * Hook that can be overridden in child classes to wrap a table in a form
-     * for example. Called only when there is data to display and not
-     * downloading.
-     */
-    public function wrap_html_finish()
-    {
-    }
-    /**
-     * Call appropriate methods on this table class to perform any processing on values before displaying in table.
-     * Takes raw data from the database and process it into human readable format, perhaps also adding html linking when
-     * displaying table as html, adding a div wrap, etc.
-     *
-     * See for example col_fullname below which will be called for a column whose name is 'fullname'.
-     *
-     * @param array|object $row row of data from db used to make one row of the table.
-     * @return array one row for the table, added using add_data_keyed method.
-     */
-    public function format_row($row)
-    {
-    }
-    /**
-     * Fullname is treated as a special columname in tablelib and should always
-     * be treated the same as the fullname of a user.
-     * @uses $this->useridfield if the userid field is not expected to be id
-     * then you need to override $this->useridfield to point at the correct
-     * field for the user id.
-     *
-     * @param object $row the data from the db containing all fields from the
-     *                    users table necessary to construct the full name of the user in
-     *                    current language.
-     * @return string contents of cell in column 'fullname', for this row.
-     */
-    public function col_fullname($row)
-    {
-    }
-    /**
-     * You can override this method in a child class. See the description of
-     * build_table which calls this method.
-     */
-    public function other_cols($column, $row)
-    {
-    }
-    /**
-     * Used from col_* functions when text is to be displayed. Does the
-     * right thing - either converts text to html or strips any html tags
-     * depending on if we are downloading and what is the download type. Params
-     * are the same as format_text function in weblib.php but some default
-     * options are changed.
-     */
-    public function format_text($text, $format = FORMAT_MOODLE, $options = null, $courseid = null)
-    {
-    }
-    /**
-     * This method is deprecated although the old api is still supported.
-     * @deprecated 1.9.2 - Jun 2, 2008
-     */
-    public function print_html()
-    {
-    }
-    /**
-     * This function is not part of the public api.
-     * @return string initial of first name we are currently filtering by
-     */
-    public function get_initial_first()
-    {
-    }
-    /**
-     * This function is not part of the public api.
-     * @return string initial of last name we are currently filtering by
-     */
-    public function get_initial_last()
-    {
-    }
-    /**
-     * Helper function, used by {@see print_initials_bar()} to output one initial bar.
-     * @param array $alpha of letters in the alphabet.
-     * @param string $current the currently selected letter.
-     * @param string $class class name to add to this initial bar.
-     * @param string $title the name to put in front of this initial bar.
-     * @param string $urlvar URL parameter name for this initial.
-     *
-     * @deprecated since Moodle 3.3
-     */
-    protected function print_one_initials_bar($alpha, $current, $class, $title, $urlvar)
-    {
-    }
-    /**
-     * This function is not part of the public api.
-     */
-    public function print_initials_bar()
-    {
-    }
-    /**
-     * This function is not part of the public api.
-     */
-    public function print_nothing_to_display()
-    {
-    }
-    /**
-     * This function is not part of the public api.
-     */
-    public function get_row_from_keyed($rowwithkeys)
-    {
-    }
-    /**
-     * Get the html for the download buttons
-     *
-     * Usually only use internally
-     */
-    public function download_buttons()
-    {
-    }
-    /**
-     * This function is not part of the public api.
-     * You don't normally need to call this. It is called automatically when
-     * needed when you start adding data to the table.
-     *
-     */
-    public function start_output()
-    {
-    }
-    /**
-     * This function is not part of the public api.
-     */
-    public function print_row($row, $classname = '')
-    {
-    }
-    /**
-     * Generate html code for the passed row.
-     *
-     * @param array $row Row data.
-     * @param string $classname classes to add.
-     *
-     * @return string $html html code for the row passed.
-     */
-    public function get_row_html($row, $classname = '')
-    {
-    }
-    /**
-     * Generate html code for the row cells.
-     *
-     * @param string $rowid
-     * @param array $row
-     * @param array|null $suppresslastrow
-     * @return string
-     */
-    public function get_row_cells_html(string $rowid, array $row, ?array $suppresslastrow): string
-    {
-    }
-    /**
-     * This function is not part of the public api.
-     */
-    public function finish_html()
-    {
-    }
-    /**
-     * Generate the HTML for the collapse/uncollapse icon. This is a helper method
-     * used by {@see print_headers()}.
-     * @param string $column the column name, index into various names.
-     * @param int $index numerical index of the column.
-     * @return string HTML fragment.
-     */
-    protected function show_hide_link($column, $index)
-    {
-    }
-    /**
-     * This function is not part of the public api.
-     */
-    public function print_headers()
-    {
-    }
-    /**
-     * Calculate the preferences for sort order based on user-supplied values and get params.
-     */
-    protected function set_sorting_preferences(): void
-    {
-    }
-    /**
-     * Fill in the preferences for the initials bar.
-     */
-    protected function set_initials_preferences(): void
-    {
-    }
-    /**
-     * Set hide and show preferences.
-     */
-    protected function set_hide_show_preferences(): void
-    {
-    }
-    /**
-     * Set the list of hidden columns.
-     *
-     * @param array $columns The list of hidden columns.
-     */
-    public function set_hidden_columns(array $columns): void
-    {
-    }
-    /**
-     * Initialise table preferences.
-     */
-    protected function initialise_table_preferences(): void
-    {
-    }
-    /**
-     * Save preferences.
-     *
-     * @param array $oldprefs Old preferences to compare against.
-     */
-    protected function save_preferences($oldprefs): void
-    {
-    }
-    /**
-     * Set the preferred table sorting attributes.
-     *
-     * @param string $sortby The field to sort by.
-     * @param int $sortorder The sort order.
-     */
-    public function set_sortdata(array $sortdata): void
-    {
-    }
-    /**
-     * Get the default per page.
-     *
-     * @return int
-     */
-    public function get_default_per_page(): int
-    {
-    }
-    /**
-     * Set the default per page.
-     *
-     * @param int $defaultperpage
-     */
-    public function set_default_per_page(int $defaultperpage): void
-    {
-    }
-    /**
-     * Set the preferred first name initial in an initials bar.
-     *
-     * @param string $initial The character to set
-     */
-    public function set_first_initial(string $initial): void
-    {
-    }
-    /**
-     * Set the preferred last name initial in an initials bar.
-     *
-     * @param string $initial The character to set
-     */
-    public function set_last_initial(string $initial): void
-    {
-    }
-    /**
-     * Set the page number.
-     *
-     * @param int $pagenumber The page number.
-     */
-    public function set_page_number(int $pagenumber): void
-    {
-    }
-    /**
-     * Generate the HTML for the sort icon. This is a helper method used by {@see sort_link()}.
-     * @param bool $isprimary whether an icon is needed (it is only needed for the primary sort column.)
-     * @param int $order SORT_ASC or SORT_DESC
-     * @return string HTML fragment.
-     */
-    protected function sort_icon($isprimary, $order)
-    {
-    }
-    /**
-     * Generate the correct tool tip for changing the sort order. This is a
-     * helper method used by {@see sort_link()}.
-     * @param bool $isprimary whether the is column is the current primary sort column.
-     * @param int $order SORT_ASC or SORT_DESC
-     * @return string the correct title.
-     */
-    protected function sort_order_name($isprimary, $order)
-    {
-    }
-    /**
-     * Generate the HTML for the sort link. This is a helper method used by {@see print_headers()}.
-     * @param string $text the text for the link.
-     * @param string $column the column name, may be a fake column like 'firstname' or a real one.
-     * @param bool $isprimary whether the is column is the current primary sort column.
-     * @param int $order SORT_ASC or SORT_DESC
-     * @return string HTML fragment.
-     */
-    protected function sort_link($text, $column, $isprimary, $order)
-    {
-    }
-    /**
-     * Return primary sorting column/order, either the first preferred "sortby" value or defaults defined for the table
-     *
-     * @return array
-     */
-    protected function get_primary_sort_order(): array
-    {
-    }
-    /**
-     * Return sorting attributes values.
-     *
-     * @return array
-     */
-    protected function get_sort_order(): array
-    {
-    }
-    /**
-     * Get dynamic class component.
-     *
-     * @return string
-     */
-    protected function get_component()
-    {
-    }
-    /**
-     * Get dynamic class handler.
-     *
-     * @return string
-     */
-    protected function get_handler()
-    {
-    }
-    /**
-     * Get the dynamic table start wrapper.
-     * If this is not a dynamic table, then an empty string is returned making this safe to blindly call.
-     *
-     * @return string
-     */
-    protected function get_dynamic_table_html_start(): string
-    {
-    }
-    /**
-     * Get the dynamic table end wrapper.
-     * If this is not a dynamic table, then an empty string is returned making this safe to blindly call.
-     *
-     * @return string
-     */
-    protected function get_dynamic_table_html_end(): string
-    {
-    }
-    /**
-     * This function is not part of the public api.
-     */
-    public function start_html()
-    {
-    }
-    /**
-     * This function set caption for table.
-     *
-     * @param string $caption Caption of table.
-     * @param array|null $captionattributes Caption attributes of table.
-     */
-    public function set_caption(string $caption, ?array $captionattributes): void
-    {
-    }
-    /**
-     * This function renders a table caption.
-     *
-     * @return string $output Caption of table.
-     */
-    public function render_caption(): string
-    {
-    }
-    /**
-     * This function is not part of the public api.
-     * @param array $styles CSS-property => value
-     * @return string values suitably to go in a style="" attribute in HTML.
-     */
-    public function make_styles_string($styles)
-    {
-    }
-    /**
-     * Generate the HTML for the table preferences reset button.
-     *
-     * @return string HTML fragment, empty string if no need to reset
-     */
-    protected function render_reset_button()
-    {
-    }
-    /**
-     * Are there some table preferences that can be reset?
-     *
-     * If true, then the "reset table preferences" widget should be displayed.
-     *
-     * @return bool
-     */
-    protected function can_be_reset()
-    {
-    }
-    /**
-     * Get the context for the table.
-     *
-     * Note: This function _must_ be overridden by dynamic tables to ensure that the context is correctly determined
-     * from the filterset parameters.
-     *
-     * @return context
-     */
-    public function get_context(): context
-    {
-    }
-    /**
-     * Set the filterset in the table class.
-     *
-     * The use of filtersets is a requirement for dynamic tables, but can be used by other tables too if desired.
-     *
-     * @param filterset $filterset The filterset object to get filters and table parameters from
-     */
-    public function set_filterset(filterset $filterset): void
-    {
-    }
-    /**
-     * Get the currently defined filterset.
-     *
-     * @return filterset
-     */
-    public function get_filterset(): ?filterset
-    {
-    }
-    /**
-     * Get the class used as a filterset.
-     *
-     * @return string
-     */
-    public static function get_filterset_class(): string
-    {
-    }
-    /**
-     * Attempt to guess the base URL.
-     */
-    public function guess_base_url(): void
+     * @package   core_table
+     * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     */
+    class flexible_table
+    {
+        public $attributes = [];
+        public $baseurl = null;
+        /** @var string The caption of table */
+        public $caption;
+        /** @var array The caption attributes of table */
+        public $captionattributes;
+        public $column_class = [];
+        public $column_nosort = ['userpic'];
+        public $column_style = [];
+        public $column_suppress = [];
+        public $columns = [];
+        public $currentrow = 0;
+        public $currpage = 0;
+        /**
+         * Which download plugin to use. Default '' means none - print html table with paging.
+         * Property set by is_downloading which typically passes in cleaned data from $
+         * @var string
+         */
+        public $download = '';
+        /**
+         * Whether data is downloadable from table. Determines whether to display download buttons. Set by method downloadable().
+         * @var bool
+         */
+        public $downloadable = false;
+        /** @var dataformat_export_format */
+        public $exportclass = null;
+        public $headers = [];
+        public $is_collapsible = false;
+        public $is_sortable = false;
+        public $maxsortkeys = 2;
+        public $pagesize = 30;
+        public $request = [];
+        /** @var bool Stores if setup has already been called on this flixible table. */
+        public $setup = false;
+        /** @var int[] Array of positions in which to display download controls. */
+        public $showdownloadbuttonsat = [TABLE_P_TOP];
+        public $sort_default_column = null;
+        public $sort_default_order = SORT_ASC;
+        /** @var bool Has start output been called yet? */
+        public $started_output = false;
+        public $totalrows = 0;
+        public $uniqueid = null;
+        public $use_initials = false;
+        public $use_pages = false;
+        /** @var string Key of field returned by db query that is the id field of the user table or equivalent. */
+        public $useridfield = 'id';
+        /** @var bool Whether to make the table to be scrolled horizontally with ease. Make table responsive across all viewports. */
+        public bool $responsive = true;
+        /** @var array The sticky attribute of each table column. */
+        protected $columnsticky = [];
+        /** @var string $filename */
+        protected $filename;
+        /**
+         * The currently applied filerset. This is required for dynamic tables, but can be used by other tables too if desired.
+         * @var filterset
+         */
+        protected $filterset = null;
+        /** @var string A column which should be considered as a header column. */
+        protected $headercolumn = null;
+        /** @var string For create header with help icon. */
+        private $helpforheaders = [];
+        /** @var array List of hidden columns. */
+        protected $hiddencolumns;
+        /** @var string The manually set first name initial preference */
+        protected $ifirst;
+        /** @var string The manually set last name initial preference */
+        protected $ilast;
+        /** @var bool Whether the table preferences is resetting. */
+        protected $resetting;
+        /** @var string */
+        protected $sheettitle;
+        /** @var array The fields to sort. */
+        protected $sortdata;
+        /** @var string[] Columns that are expected to contain a users fullname.  */
+        protected $userfullnamecolumns = ['fullname'];
+        private $column_textsort = [];
+        /** @var array[] Attributes for each column  */
+        private $columnsattributes = [];
+        /** @var int The default per page size for the table. */
+        private $defaultperpage = 30;
+        /** @var bool Whether to store table properties in the user_preferences table. */
+        private $persistent = false;
+        /** @var array For storing user-customised table properties in the user_preferences db table. */
+        private $prefs = [];
+        /**
+         * Constructor
+         * @param string $uniqueid all tables have to have a unique id, this is used
+         *      as a key when storing table properties like sort order in the session.
+         */
+        public function __construct($uniqueid)
+        {
+        }
+        /**
+         * Call this to pass the download type. Use :
+         *         $download = optional_param('download', '', PARAM_ALPHA);
+         * To get the download type. We assume that if you call this function with
+         * params that this table's data is downloadable, so we call is_downloadable
+         * for you (even if the param is '', which means no download this time.
+         * Also you can call this method with no params to get the current set
+         * download type.
+         * @param string|null $download type of dataformat for export.
+         * @param string $filename filename for downloads without file extension.
+         * @param string $sheettitle title for downloaded data.
+         * @return string download dataformat type.
+         */
+        public function is_downloading($download = null, $filename = '', $sheettitle = '')
+        {
+        }
+        /**
+         * Get, and optionally set, the export class.
+         * @param dataformat_export_format $exportclass (optional) if passed, set the table to use this export class.
+         * @return dataformat_export_format the export class in use (after any set).
+         */
+        public function export_class_instance($exportclass = null)
+        {
+        }
+        /**
+         * Probably don't need to call this directly. Calling is_downloading with a
+         * param automatically sets table as downloadable.
+         *
+         * @param bool $downloadable optional param to set whether data from
+         * table is downloadable. If ommitted this function can be used to get
+         * current state of table.
+         * @return bool whether table data is set to be downloadable.
+         */
+        public function is_downloadable($downloadable = null)
+        {
+        }
+        /**
+         * Call with boolean true to store table layout changes in the user_preferences table.
+         * Note: user_preferences.value has a maximum length of 1333 characters.
+         * Call with no parameter to get current state of table persistence.
+         *
+         * @param bool $persistent Optional parameter to set table layout persistence.
+         * @return bool Whether or not the table layout preferences will persist.
+         */
+        public function is_persistent($persistent = null)
+        {
+        }
+        /**
+         * Where to show download buttons.
+         * @param array $showat array of postions in which to show download buttons.
+         * Containing TABLE_P_TOP and/or TABLE_P_BOTTOM
+         */
+        public function show_download_buttons_at($showat)
+        {
+        }
+        /**
+         * Sets the is_sortable variable to the given boolean, sort_default_column to
+         * the given string, and the sort_default_order to the given integer.
+         * @param bool $bool
+         * @param string $defaultcolumn
+         * @param int $defaultorder
+         * @return void
+         */
+        public function sortable($bool, $defaultcolumn = null, $defaultorder = SORT_ASC)
+        {
+        }
+        /**
+         * Use text sorting functions for this column (required for text columns with Oracle).
+         * Be warned that you cannot use this with column aliases. You can only do this
+         * with real columns. See MDL-40481 for an example.
+         * @param string column name
+         */
+        public function text_sorting($column)
+        {
+        }
+        /**
+         * Do not sort using this column
+         * @param string column name
+         */
+        public function no_sorting($column)
+        {
+        }
+        /**
+         * Is the column sortable?
+         * @param string column name, null means table
+         * @return bool
+         */
+        public function is_sortable($column = null)
+        {
+        }
+        /**
+         * Sets the is_collapsible variable to the given boolean.
+         * @param bool $bool
+         * @return void
+         */
+        public function collapsible($bool)
+        {
+        }
+        /**
+         * Sets the use_pages variable to the given boolean.
+         * @param bool $bool
+         * @return void
+         */
+        public function pageable($bool)
+        {
+        }
+        /**
+         * Sets the use_initials variable to the given boolean.
+         * @param bool $bool
+         * @return void
+         */
+        public function initialbars($bool)
+        {
+        }
+        /**
+         * Sets the pagesize variable to the given integer, the totalrows variable
+         * to the given integer, and the use_pages variable to true.
+         * @param int $perpage
+         * @param int $total
+         * @return void
+         */
+        public function pagesize($perpage, $total)
+        {
+        }
+        /**
+         * Assigns each given variable in the array to the corresponding index
+         * in the request class variable.
+         * @param array $variables
+         * @return void
+         */
+        public function set_control_variables($variables)
+        {
+        }
+        /**
+         * Gives the given $value to the $attribute index of $this->attributes.
+         * @param string $attribute
+         * @param mixed $value
+         * @return void
+         */
+        public function set_attribute($attribute, $value)
+        {
+        }
+        /**
+         * What this method does is set the column so that if the same data appears in
+         * consecutive rows, then it is not repeated.
+         *
+         * For example, in the quiz overview report, the fullname column is set to be suppressed, so
+         * that when one student has made multiple attempts, their name is only printed in the row
+         * for their first attempt.
+         * @param int $column the index of a column.
+         */
+        public function column_suppress($column)
+        {
+        }
+        /**
+         * Sets the given $column index to the given $classname in $this->column_class.
+         * @param int $column
+         * @param string $classname
+         * @return void
+         */
+        public function column_class($column, $classname)
+        {
+        }
+        /**
+         * Sets the given $column index and $property index to the given $value in $this->column_style.
+         * @param int $column
+         * @param string $property
+         * @param mixed $value
+         * @return void
+         */
+        public function column_style($column, $property, $value)
+        {
+        }
+        /**
+         * Sets a sticky attribute to a column.
+         * @param string $column Column name
+         * @param bool $sticky
+         */
+        public function column_sticky(string $column, bool $sticky = true): void
+        {
+        }
+        /**
+         * Sets the given $attributes to $this->columnsattributes.
+         * Column attributes will be added to every cell in the column.
+         *
+         * @param array[] $attributes e.g. ['c0_firstname' => ['data-foo' => 'bar']]
+         */
+        public function set_columnsattributes(array $attributes): void
+        {
+        }
+        /**
+         * Sets all columns' $propertys to the given $value in $this->column_style.
+         * @param int $property
+         * @param string $value
+         * @return void
+         */
+        public function column_style_all($property, $value)
+        {
+        }
+        /**
+         * Sets $this->baseurl.
+         * @param moodle_url|string $url the url with params needed to call up this page
+         */
+        public function define_baseurl($url)
+        {
+        }
+        /**
+         * Define the columns for the table.
+         *
+         * @param array $columns an array of identifying names for columns. If
+         * columns are sorted then column names must correspond to a field in sql.
+         */
+        public function define_columns($columns)
+        {
+        }
+        /**
+         * Define the headers for the table, replacing any existing header configuration.
+         *
+         * @param array $headers numerical keyed array of displayed string titles
+         * for each column.
+         */
+        public function define_headers($headers)
+        {
+        }
+        /**
+         * Mark a specific column as being a table header using the column name defined in define_columns.
+         *
+         * Note: Only one column can be a header, and it will be rendered using a th tag.
+         *
+         * @param   string  $column
+         */
+        public function define_header_column(string $column)
+        {
+        }
+        /**
+         * Defines a help icon for the header
+         *
+         * Always use this function if you need to create header with sorting and help icon.
+         *
+         * @param renderable[] $helpicons An array of renderable objects to be used as help icons
+         */
+        public function define_help_for_headers($helpicons)
+        {
+        }
+        /**
+         * Mark the table preferences to be reset.
+         */
+        public function mark_table_to_reset(): void
+        {
+        }
+        /**
+         * Is the table marked for reset preferences?
+         *
+         * @return bool True if the table is marked to reset, false otherwise.
+         */
+        protected function is_resetting_preferences(): bool
+        {
+        }
+        /**
+         * Must be called after table is defined. Use methods above first. Cannot
+         * use functions below till after calling this method.
+         */
+        public function setup()
+        {
+        }
+        /**
+         * Get the order by clause from the session or user preferences, for the table with id $uniqueid.
+         * @param string $uniqueid the identifier for a table.
+         * @return string SQL fragment that can be used in an ORDER BY clause.
+         */
+        public static function get_sort_for_table($uniqueid)
+        {
+        }
+        /**
+         * Prepare an an order by clause from the list of columns to be sorted.
+         *
+         * @param array $cols column name => SORT_ASC or SORT_DESC
+         * @return string SQL fragment that can be used in an ORDER BY clause.
+         */
+        public static function construct_order_by($cols, $textsortcols = [])
+        {
+        }
+        /**
+         * Get the SQL Sort clause for the table.
+         *
+         * @return string SQL fragment that can be used in an ORDER BY clause.
+         */
+        public function get_sql_sort()
+        {
+        }
+        /**
+         * Whether the current table contains any fullname columns
+         *
+         * @return bool
+         */
+        private function contains_fullname_columns(): bool
+        {
+        }
+        /**
+         * Get the columns to sort by, in the form required by {@see construct_order_by()}.
+         * @return array column name => SORT_... constant.
+         */
+        public function get_sort_columns()
+        {
+        }
+        /**
+         * Get the starting row number for this page.
+         *
+         * @return int the offset for LIMIT clause of SQL
+         */
+        public function get_page_start()
+        {
+        }
+        /**
+         * @return int the pagesize for LIMIT clause of SQL
+         */
+        public function get_page_size()
+        {
+        }
+        /**
+         * @return array sql to add to where statement.
+         */
+        public function get_sql_where()
+        {
+        }
+        /**
+         * Add a row of data to the table. This function takes an array or object with
+         * column names as keys or property names.
+         *
+         * It ignores any elements with keys that are not defined as columns. It
+         * puts in empty strings into the row when there is no element in the passed
+         * array corresponding to a column in the table. It puts the row elements in
+         * the proper order (internally row table data is stored by in arrays with
+         * a numerical index corresponding to the column number).
+         *
+         * @param object|array $rowwithkeys array keys or object property names are column names,
+         *                                      as defined in call to define_columns.
+         * @param string $classname CSS class name to add to this row's tr tag.
+         */
+        public function add_data_keyed($rowwithkeys, $classname = '')
+        {
+        }
+        /**
+         * Add a number of rows to the table at once. And optionally finish output after they have been added.
+         *
+         * @param (object|array|null)[] $rowstoadd Array of rows to add to table, a null value in array adds a separator row. Or a
+         *                                  object or array is added to table. We expect properties for the row array as would be
+         *                                  passed to add_data_keyed.
+         * @param bool     $finish
+         */
+        public function format_and_add_array_of_rows($rowstoadd, $finish = true)
+        {
+        }
+        /**
+         * Add a seperator line to table.
+         */
+        public function add_separator()
+        {
+        }
+        /**
+         * This method actually directly echoes the row passed to it now or adds it
+         * to the download. If this is the first row and start_output has not
+         * already been called this method also calls start_output to open the table
+         * or send headers for the downloaded.
+         * Can be used as before. print_html now calls finish_html to close table.
+         *
+         * @param array $row a numerically keyed row of data to add to the table.
+         * @param string $classname CSS class name to add to this row's tr tag.
+         * @return bool success.
+         */
+        public function add_data($row, $classname = '')
+        {
+        }
+        /**
+         * You should call this to finish outputting the table data after adding
+         * data to the table with add_data or add_data_keyed.
+         *
+         */
+        public function finish_output($closeexportclassdoc = true)
+        {
+        }
+        /**
+         * Hook that can be overridden in child classes to wrap a table in a form
+         * for example. Called only when there is data to display and not
+         * downloading.
+         */
+        public function wrap_html_start()
+        {
+        }
+        /**
+         * Hook that can be overridden in child classes to wrap a table in a form
+         * for example. Called only when there is data to display and not
+         * downloading.
+         */
+        public function wrap_html_finish()
+        {
+        }
+        /**
+         * Call appropriate methods on this table class to perform any processing on values before displaying in table.
+         * Takes raw data from the database and process it into human readable format, perhaps also adding html linking when
+         * displaying table as html, adding a div wrap, etc.
+         *
+         * See for example col_fullname below which will be called for a column whose name is 'fullname'.
+         *
+         * @param array|object $row row of data from db used to make one row of the table.
+         * @return array one row for the table, added using add_data_keyed method.
+         */
+        public function format_row($row)
+        {
+        }
+        /**
+         * Fullname is treated as a special columname in tablelib and should always
+         * be treated the same as the fullname of a user.
+         * @uses $this->useridfield if the userid field is not expected to be id
+         * then you need to override $this->useridfield to point at the correct
+         * field for the user id.
+         *
+         * @param object $row the data from the db containing all fields from the
+         *                    users table necessary to construct the full name of the user in
+         *                    current language.
+         * @return string contents of cell in column 'fullname', for this row.
+         */
+        public function col_fullname($row)
+        {
+        }
+        /**
+         * You can override this method in a child class. See the description of
+         * build_table which calls this method.
+         */
+        public function other_cols($column, $row)
+        {
+        }
+        /**
+         * Used from col_* functions when text is to be displayed. Does the
+         * right thing - either converts text to html or strips any html tags
+         * depending on if we are downloading and what is the download type. Params
+         * are the same as format_text function in weblib.php but some default
+         * options are changed.
+         */
+        public function format_text($text, $format = FORMAT_MOODLE, $options = null, $courseid = null)
+        {
+        }
+        /**
+         * This method is deprecated although the old api is still supported.
+         * @deprecated 1.9.2 - Jun 2, 2008
+         */
+        public function print_html()
+        {
+        }
+        /**
+         * This function is not part of the public api.
+         * @return string initial of first name we are currently filtering by
+         */
+        public function get_initial_first()
+        {
+        }
+        /**
+         * This function is not part of the public api.
+         * @return string initial of last name we are currently filtering by
+         */
+        public function get_initial_last()
+        {
+        }
+        /**
+         * Helper function, used by {@see print_initials_bar()} to output one initial bar.
+         * @param array $alpha of letters in the alphabet.
+         * @param string $current the currently selected letter.
+         * @param string $class class name to add to this initial bar.
+         * @param string $title the name to put in front of this initial bar.
+         * @param string $urlvar URL parameter name for this initial.
+         *
+         * @deprecated since Moodle 3.3
+         */
+        protected function print_one_initials_bar($alpha, $current, $class, $title, $urlvar)
+        {
+        }
+        /**
+         * This function is not part of the public api.
+         */
+        public function print_initials_bar()
+        {
+        }
+        /**
+         * This function is not part of the public api.
+         */
+        public function print_nothing_to_display()
+        {
+        }
+        /**
+         * This function is not part of the public api.
+         */
+        public function get_row_from_keyed($rowwithkeys)
+        {
+        }
+        /**
+         * Get the html for the download buttons
+         *
+         * Usually only use internally
+         */
+        public function download_buttons()
+        {
+        }
+        /**
+         * This function is not part of the public api.
+         * You don't normally need to call this. It is called automatically when
+         * needed when you start adding data to the table.
+         *
+         */
+        public function start_output()
+        {
+        }
+        /**
+         * This function is not part of the public api.
+         */
+        public function print_row($row, $classname = '')
+        {
+        }
+        /**
+         * Generate html code for the passed row.
+         *
+         * @param array $row Row data.
+         * @param string $classname classes to add.
+         *
+         * @return string $html html code for the row passed.
+         */
+        public function get_row_html($row, $classname = '')
+        {
+        }
+        /**
+         * Generate html code for the row cells.
+         *
+         * @param string $rowid
+         * @param array $row
+         * @param array|null $suppresslastrow
+         * @return string
+         */
+        public function get_row_cells_html(string $rowid, array $row, ?array $suppresslastrow): string
+        {
+        }
+        /**
+         * This function is not part of the public api.
+         */
+        public function finish_html()
+        {
+        }
+        /**
+         * Generate the HTML for the collapse/uncollapse icon. This is a helper method
+         * used by {@see print_headers()}.
+         * @param string $column the column name, index into various names.
+         * @param int $index numerical index of the column.
+         * @return string HTML fragment.
+         */
+        protected function show_hide_link($column, $index)
+        {
+        }
+        /**
+         * This function is not part of the public api.
+         */
+        public function print_headers()
+        {
+        }
+        /**
+         * Calculate the preferences for sort order based on user-supplied values and get params.
+         */
+        protected function set_sorting_preferences(): void
+        {
+        }
+        /**
+         * Fill in the preferences for the initials bar.
+         */
+        protected function set_initials_preferences(): void
+        {
+        }
+        /**
+         * Set hide and show preferences.
+         */
+        protected function set_hide_show_preferences(): void
+        {
+        }
+        /**
+         * Set the list of hidden columns.
+         *
+         * @param array $columns The list of hidden columns.
+         */
+        public function set_hidden_columns(array $columns): void
+        {
+        }
+        /**
+         * Initialise table preferences.
+         */
+        protected function initialise_table_preferences(): void
+        {
+        }
+        /**
+         * Save preferences.
+         *
+         * @param array $oldprefs Old preferences to compare against.
+         */
+        protected function save_preferences($oldprefs): void
+        {
+        }
+        /**
+         * Set the preferred table sorting attributes.
+         *
+         * @param string $sortby The field to sort by.
+         * @param int $sortorder The sort order.
+         */
+        public function set_sortdata(array $sortdata): void
+        {
+        }
+        /**
+         * Get the default per page.
+         *
+         * @return int
+         */
+        public function get_default_per_page(): int
+        {
+        }
+        /**
+         * Set the default per page.
+         *
+         * @param int $defaultperpage
+         */
+        public function set_default_per_page(int $defaultperpage): void
+        {
+        }
+        /**
+         * Set the preferred first name initial in an initials bar.
+         *
+         * @param string $initial The character to set
+         */
+        public function set_first_initial(string $initial): void
+        {
+        }
+        /**
+         * Set the preferred last name initial in an initials bar.
+         *
+         * @param string $initial The character to set
+         */
+        public function set_last_initial(string $initial): void
+        {
+        }
+        /**
+         * Set the page number.
+         *
+         * @param int $pagenumber The page number.
+         */
+        public function set_page_number(int $pagenumber): void
+        {
+        }
+        /**
+         * Generate the HTML for the sort icon. This is a helper method used by {@see sort_link()}.
+         * @param bool $isprimary whether an icon is needed (it is only needed for the primary sort column.)
+         * @param int $order SORT_ASC or SORT_DESC
+         * @return string HTML fragment.
+         */
+        protected function sort_icon($isprimary, $order)
+        {
+        }
+        /**
+         * Generate the correct tool tip for changing the sort order. This is a
+         * helper method used by {@see sort_link()}.
+         * @param bool $isprimary whether the is column is the current primary sort column.
+         * @param int $order SORT_ASC or SORT_DESC
+         * @return string the correct title.
+         */
+        protected function sort_order_name($isprimary, $order)
+        {
+        }
+        /**
+         * Generate the HTML for the sort link. This is a helper method used by {@see print_headers()}.
+         * @param string $text the text for the link.
+         * @param string $column the column name, may be a fake column like 'firstname' or a real one.
+         * @param bool $isprimary whether the is column is the current primary sort column.
+         * @param int $order SORT_ASC or SORT_DESC
+         * @return string HTML fragment.
+         */
+        protected function sort_link($text, $column, $isprimary, $order)
+        {
+        }
+        /**
+         * Return primary sorting column/order, either the first preferred "sortby" value or defaults defined for the table
+         *
+         * @return array
+         */
+        protected function get_primary_sort_order(): array
+        {
+        }
+        /**
+         * Return sorting attributes values.
+         *
+         * @return array
+         */
+        protected function get_sort_order(): array
+        {
+        }
+        /**
+         * Get dynamic class component.
+         *
+         * @return string
+         */
+        protected function get_component()
+        {
+        }
+        /**
+         * Get dynamic class handler.
+         *
+         * @return string
+         */
+        protected function get_handler()
+        {
+        }
+        /**
+         * Get the dynamic table start wrapper.
+         * If this is not a dynamic table, then an empty string is returned making this safe to blindly call.
+         *
+         * @return string
+         */
+        protected function get_dynamic_table_html_start(): string
+        {
+        }
+        /**
+         * Get the dynamic table end wrapper.
+         * If this is not a dynamic table, then an empty string is returned making this safe to blindly call.
+         *
+         * @return string
+         */
+        protected function get_dynamic_table_html_end(): string
+        {
+        }
+        /**
+         * This function is not part of the public api.
+         */
+        public function start_html()
+        {
+        }
+        /**
+         * This function set caption for table.
+         *
+         * @param string $caption Caption of table.
+         * @param array|null $captionattributes Caption attributes of table.
+         */
+        public function set_caption(string $caption, ?array $captionattributes): void
+        {
+        }
+        /**
+         * This function renders a table caption.
+         *
+         * @return string $output Caption of table.
+         */
+        public function render_caption(): string
+        {
+        }
+        /**
+         * This function is not part of the public api.
+         * @param array $styles CSS-property => value
+         * @return string values suitably to go in a style="" attribute in HTML.
+         */
+        public function make_styles_string($styles)
+        {
+        }
+        /**
+         * Generate the HTML for the table preferences reset button.
+         *
+         * @return string HTML fragment, empty string if no need to reset
+         */
+        protected function render_reset_button()
+        {
+        }
+        /**
+         * Are there some table preferences that can be reset?
+         *
+         * If true, then the "reset table preferences" widget should be displayed.
+         *
+         * @return bool
+         */
+        protected function can_be_reset()
+        {
+        }
+        /**
+         * Get the context for the table.
+         *
+         * Note: This function _must_ be overridden by dynamic tables to ensure that the context is correctly determined
+         * from the filterset parameters.
+         *
+         * @return context
+         */
+        public function get_context(): context
+        {
+        }
+        /**
+         * Set the filterset in the table class.
+         *
+         * The use of filtersets is a requirement for dynamic tables, but can be used by other tables too if desired.
+         *
+         * @param filterset $filterset The filterset object to get filters and table parameters from
+         */
+        public function set_filterset(filterset $filterset): void
+        {
+        }
+        /**
+         * Get the currently defined filterset.
+         *
+         * @return filterset
+         */
+        public function get_filterset(): ?filterset
+        {
+        }
+        /**
+         * Get the class used as a filterset.
+         *
+         * @return string
+         */
+        public static function get_filterset_class(): string
+        {
+        }
+        /**
+         * Attempt to guess the base URL.
+         */
+        public function guess_base_url(): void
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core_table\flexible_table registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class flexible_table extends \core_table\flexible_table
     {
     }
 }

@@ -8,6 +8,7 @@
  */
 namespace Aws\FIS;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Fault Injection Simulator** service.
  * @method \Aws\Result createExperimentTemplate(array $args = [])

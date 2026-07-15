@@ -30,6 +30,10 @@
  */
 namespace mod_h5pactivity\local;
 
+use context_module;
+use cm_info;
+use moodle_recordset;
+use stdClass;
 /**
  * Class for handling H5P activity grading.
  *

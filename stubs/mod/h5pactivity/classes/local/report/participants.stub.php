@@ -30,6 +30,14 @@
  */
 namespace mod_h5pactivity\local\report;
 
+use mod_h5pactivity\local\report;
+use mod_h5pactivity\local\manager;
+use mod_h5pactivity\local\attempt;
+use core\dml\sql_join;
+use table_sql;
+use moodle_url;
+use html_writer;
+use stdClass;
 /**
  * Class  H5P activity participants report.
  *

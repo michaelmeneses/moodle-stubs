@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\Driver;
 
+use Behat\MinkExtension\ServiceContainer\Driver\DriverFactory;
+use OAndreyev\Mink\Driver\WebDriverFactory as UpstreamFactory;
+use Symfony\Component\DependencyInjection\Definition;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * Driver factory for the Moodle WebDriver.

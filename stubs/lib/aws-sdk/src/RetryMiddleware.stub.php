@@ -8,6 +8,12 @@
  */
 namespace Aws;
 
+use Aws\Exception\AwsException;
+use Aws\Retry\RetryHelperTrait;
+use GuzzleHttp\Exception\RequestException;
+use Psr\Http\Message\RequestInterface;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Promise;
 /**
  * Middleware that retries failures. V1 implemention that supports 'legacy' mode.
  *

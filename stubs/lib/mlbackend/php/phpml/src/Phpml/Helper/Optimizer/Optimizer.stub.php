@@ -8,6 +8,8 @@
  */
 namespace Phpml\Helper\Optimizer;
 
+use Closure;
+use Phpml\Exception\InvalidArgumentException;
 abstract class Optimizer
 {
     /**

@@ -22,6 +22,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz;
 
+use coding_exception;
+use core\di;
+use core\hook;
+use core_component;
+use mod_quiz\event\quiz_grade_updated;
+use mod_quiz\hook\structure_modified;
+use mod_quiz\output\grades\grade_out_of;
+use qubaid_condition;
+use qubaid_list;
+use question_engine_data_mapper;
+use question_usage_by_activity;
+use stdClass;
 /**
  * This class contains all the logic for computing the grade of a quiz.
  *

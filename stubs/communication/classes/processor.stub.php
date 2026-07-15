@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_communication;
 
+use core\context;
+use stdClass;
+use stored_file;
 /**
  * Class processor to manage the base operations of the providers.
  *

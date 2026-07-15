@@ -17,6 +17,9 @@
  */
 namespace ScssPhp\ScssPhp;
 
+use ScssPhp\ScssPhp\Base\Range;
+use ScssPhp\ScssPhp\Exception\RangeException;
+use ScssPhp\ScssPhp\Node\Number;
 /**
  * Utility functions
  *

@@ -29,6 +29,9 @@
  */
 namespace core\oauth2;
 
+use curl;
+use coding_exception;
+use stdClass;
 /**
  * Rest API base class mapping rest api methods to endpoints with http methods, args and post body.
  *

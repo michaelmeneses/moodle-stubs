@@ -15,6 +15,8 @@
  */
 namespace setasign\Fpdi\Tfpdf;
 
+use setasign\Fpdi\FpdfTrait;
+use setasign\Fpdi\FpdiTrait;
 /**
  * Class Fpdi
  *

@@ -30,6 +30,8 @@
  */
 namespace core\check\performance;
 
+use core\check\check;
+use core\check\result;
 /**
  * DB schema performance check
  *

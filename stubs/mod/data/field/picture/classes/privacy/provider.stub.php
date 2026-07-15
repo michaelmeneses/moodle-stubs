@@ -29,6 +29,8 @@
  */
 namespace datafield_picture\privacy;
 
+use core_privacy\local\request\writer;
+use mod_data\privacy\datafield_provider;
 /**
  * Privacy Subsystem for datafield_picture implementing null_provider.
  *

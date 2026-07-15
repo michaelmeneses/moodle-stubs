@@ -8,6 +8,29 @@
  */
 namespace core_reportbuilder\local\systemreports;
 
+use html_writer;
+use lang_string;
+use moodle_url;
+use pix_icon;
+use stdClass;
+use core_reportbuilder\datasource;
+use core_reportbuilder\manager;
+use core_reportbuilder\system_report;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\filters\date;
+use core_reportbuilder\local\filters\tags;
+use core_reportbuilder\local\filters\text;
+use core_reportbuilder\local\filters\select;
+use core_reportbuilder\local\helpers\audience;
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\action;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
+use core_reportbuilder\output\report_name_editable;
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\permission;
+use core_tag\reportbuilder\local\entities\tag;
+use core_tag_tag;
 /**
  * Reports list
  *

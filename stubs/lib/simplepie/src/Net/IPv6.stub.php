@@ -47,97 +47,106 @@
  * @link http://simplepie.org/ SimplePie
  * @license http://www.opensource.org/licenses/bsd-license.php BSD License
  */
-namespace SimplePie\Net;
-
-/**
- * Class to validate and to work with IPv6 addresses.
- *
- * @package SimplePie
- * @subpackage HTTP
- * @copyright 2003-2005 The PHP Group
- * @license http://www.opensource.org/licenses/bsd-license.php
- * @link http://pear.php.net/package/Net_IPv6
- * @author Alexander Merz <alexander.merz@web.de>
- * @author elfrink at introweb dot nl
- * @author Josh Peck <jmp at joshpeck dot org>
- * @author Sam Sneddon <geoffers@gmail.com>
- */
-class IPv6
-{
+namespace SimplePie\Net {
     /**
-     * Uncompresses an IPv6 address
+     * Class to validate and to work with IPv6 addresses.
      *
-     * RFC 4291 allows you to compress concecutive zero pieces in an address to
-     * '::'. This method expects a valid IPv6 address and expands the '::' to
-     * the required number of zero pieces.
-     *
-     * Example:  FF01::101   ->  FF01:0:0:0:0:0:0:101
-     *           ::1         ->  0:0:0:0:0:0:0:1
-     *
+     * @package SimplePie
+     * @subpackage HTTP
+     * @copyright 2003-2005 The PHP Group
+     * @license http://www.opensource.org/licenses/bsd-license.php
+     * @link http://pear.php.net/package/Net_IPv6
      * @author Alexander Merz <alexander.merz@web.de>
      * @author elfrink at introweb dot nl
      * @author Josh Peck <jmp at joshpeck dot org>
-     * @copyright 2003-2005 The PHP Group
-     * @license http://www.opensource.org/licenses/bsd-license.php
-     * @param string $ip An IPv6 address
-     * @return string The uncompressed IPv6 address
+     * @author Sam Sneddon <geoffers@gmail.com>
      */
-    public static function uncompress($ip)
+    class IPv6
     {
+        /**
+         * Uncompresses an IPv6 address
+         *
+         * RFC 4291 allows you to compress concecutive zero pieces in an address to
+         * '::'. This method expects a valid IPv6 address and expands the '::' to
+         * the required number of zero pieces.
+         *
+         * Example:  FF01::101   ->  FF01:0:0:0:0:0:0:101
+         *           ::1         ->  0:0:0:0:0:0:0:1
+         *
+         * @author Alexander Merz <alexander.merz@web.de>
+         * @author elfrink at introweb dot nl
+         * @author Josh Peck <jmp at joshpeck dot org>
+         * @copyright 2003-2005 The PHP Group
+         * @license http://www.opensource.org/licenses/bsd-license.php
+         * @param string $ip An IPv6 address
+         * @return string The uncompressed IPv6 address
+         */
+        public static function uncompress($ip)
+        {
+        }
+        /**
+         * Compresses an IPv6 address
+         *
+         * RFC 4291 allows you to compress concecutive zero pieces in an address to
+         * '::'. This method expects a valid IPv6 address and compresses consecutive
+         * zero pieces to '::'.
+         *
+         * Example:  FF01:0:0:0:0:0:0:101   ->  FF01::101
+         *           0:0:0:0:0:0:0:1        ->  ::1
+         *
+         * @see uncompress()
+         * @param string $ip An IPv6 address
+         * @return string The compressed IPv6 address
+         */
+        public static function compress($ip)
+        {
+        }
+        /**
+         * Splits an IPv6 address into the IPv6 and IPv4 representation parts
+         *
+         * RFC 4291 allows you to represent the last two parts of an IPv6 address
+         * using the standard IPv4 representation
+         *
+         * Example:  0:0:0:0:0:0:13.1.68.3
+         *           0:0:0:0:0:FFFF:129.144.52.38
+         *
+         * @param string $ip An IPv6 address
+         * @return array [0] contains the IPv6 represented part, and [1] the IPv4 represented part
+         */
+        private static function split_v6_v4($ip)
+        {
+        }
+        /**
+         * Checks an IPv6 address
+         *
+         * Checks if the given IP is a valid IPv6 address
+         *
+         * @param string $ip An IPv6 address
+         * @return bool true if $ip is a valid IPv6 address
+         */
+        public static function check_ipv6($ip)
+        {
+        }
+        /**
+         * Checks if the given IP is a valid IPv6 address
+         *
+         * @codeCoverageIgnore
+         * @deprecated Use {@see IPv6::check_ipv6()} instead
+         * @see check_ipv6
+         * @param string $ip An IPv6 address
+         * @return bool true if $ip is a valid IPv6 address
+         */
+        public static function checkIPv6($ip)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Compresses an IPv6 address
-     *
-     * RFC 4291 allows you to compress concecutive zero pieces in an address to
-     * '::'. This method expects a valid IPv6 address and compresses consecutive
-     * zero pieces to '::'.
-     *
-     * Example:  FF01:0:0:0:0:0:0:101   ->  FF01::101
-     *           0:0:0:0:0:0:0:1        ->  ::1
-     *
-     * @see uncompress()
-     * @param string $ip An IPv6 address
-     * @return string The compressed IPv6 address
+     * Runtime class alias of \SimplePie\Net\IPv6 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public static function compress($ip)
-    {
-    }
-    /**
-     * Splits an IPv6 address into the IPv6 and IPv4 representation parts
-     *
-     * RFC 4291 allows you to represent the last two parts of an IPv6 address
-     * using the standard IPv4 representation
-     *
-     * Example:  0:0:0:0:0:0:13.1.68.3
-     *           0:0:0:0:0:FFFF:129.144.52.38
-     *
-     * @param string $ip An IPv6 address
-     * @return array [0] contains the IPv6 represented part, and [1] the IPv4 represented part
-     */
-    private static function split_v6_v4($ip)
-    {
-    }
-    /**
-     * Checks an IPv6 address
-     *
-     * Checks if the given IP is a valid IPv6 address
-     *
-     * @param string $ip An IPv6 address
-     * @return bool true if $ip is a valid IPv6 address
-     */
-    public static function check_ipv6($ip)
-    {
-    }
-    /**
-     * Checks if the given IP is a valid IPv6 address
-     *
-     * @codeCoverageIgnore
-     * @deprecated Use {@see IPv6::check_ipv6()} instead
-     * @see check_ipv6
-     * @param string $ip An IPv6 address
-     * @return bool true if $ip is a valid IPv6 address
-     */
-    public static function checkIPv6($ip)
+    class SimplePie_Net_IPv6 extends \SimplePie\Net\IPv6
     {
     }
 }

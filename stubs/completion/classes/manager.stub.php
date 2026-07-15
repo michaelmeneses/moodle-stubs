@@ -30,6 +30,13 @@
  */
 namespace core_completion;
 
+use core\context;
+use stdClass;
+use context_course;
+use cm_info;
+use tabobject;
+use lang_string;
+use moodle_url;
 /**
  * Bulk activity completion manager class
  *

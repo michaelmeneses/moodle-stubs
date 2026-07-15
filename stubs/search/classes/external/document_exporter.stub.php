@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_search\external;
 
+use core\external\exporter;
 /**
  * Contains related class for displaying information of a search result.
  *

@@ -8,6 +8,7 @@
  */
 namespace DI\Definition\Source;
 
+use DI\Definition\Definition;
 /**
  * Describes a definition source to which we can add new definitions.
  *

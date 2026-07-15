@@ -8,6 +8,8 @@
  */
 namespace Invoker\ParameterResolver;
 
+use ReflectionException;
+use ReflectionFunctionAbstract;
 /**
  * Finds the default value for a parameter, *if it exists*.
  */

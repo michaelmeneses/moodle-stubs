@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories\output;
 
+use context;
+use renderable;
+use renderer_base;
+use templatable;
+use qbank_managecategories\question_categories;
 /**
  * Output component for category page header.
  *

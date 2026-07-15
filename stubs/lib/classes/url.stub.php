@@ -20,437 +20,450 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core;
-
-/**
- * Class for creating and manipulating urls.
- *
- * It can be used in moodle pages where config.php has been included without any further includes.
- *
- * It is useful for manipulating urls with long lists of params.
- * One situation where it will be useful is a page which links to itself to perform various actions
- * and / or to process form data. A url object:
- * can be created for a page to refer to itself with all the proper get params being passed from page call to
- * page call and methods can be used to output a url including all the params, optionally adding and overriding
- * params and can also be used to
- *     - output the url without any get params
- *     - and output the params as hidden fields to be output within a form
- *
- * @copyright 2007 jamiesensei
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- */
-class url
-{
+namespace core {
+    use core\context\user as context_user;
+    use core\exception\coding_exception;
+    use core\exception\moodle_exception;
+    use Psr\Http\Message\UriInterface;
     /**
-     * Scheme, ex.: http, https
-     * @var string
-     */
-    protected $scheme = '';
-    /**
-     * Hostname.
-     * @var string
-     */
-    protected $host = '';
-    /**
-     * Port number, empty means default 80 or 443 in case of http.
-     * @var int
-     */
-    protected $port = '';
-    /**
-     * Username for http auth.
-     * @var string
-     */
-    protected $user = '';
-    /**
-     * Password for http auth.
-     * @var string
-     */
-    protected $pass = '';
-    /**
-     * Script path.
-     * @var string
-     */
-    protected $path = '';
-    /**
-     * Optional slash argument value.
-     * @var string
-     */
-    protected $slashargument = '';
-    /**
-     * Anchor, may be also empty, null means none.
-     * @var string
-     */
-    protected $anchor = null;
-    /**
-     * Url parameters as associative array.
-     * @var array
-     */
-    protected $params = [];
-    /**
-     * Create new instance of url.
+     * Class for creating and manipulating urls.
      *
-     * @param self|string $url - moodle_url means make a copy of another
-     *      moodle_url and change parameters, string means full url or shortened
-     *      form (ex.: '/course/view.php'). It is strongly encouraged to not include
-     *      query string because it may result in double encoded values. Use the
-     *      $params instead. For admin URLs, just use /admin/script.php, this
-     *      class takes care of the $CFG->admin issue.
-     * @param null|array $params these params override current params or add new
-     * @param string $anchor The anchor to use as part of the URL if there is one.
-     * @throws moodle_exception
+     * It can be used in moodle pages where config.php has been included without any further includes.
+     *
+     * It is useful for manipulating urls with long lists of params.
+     * One situation where it will be useful is a page which links to itself to perform various actions
+     * and / or to process form data. A url object:
+     * can be created for a page to refer to itself with all the proper get params being passed from page call to
+     * page call and methods can be used to output a url including all the params, optionally adding and overriding
+     * params and can also be used to
+     *     - output the url without any get params
+     *     - and output the params as hidden fields to be output within a form
+     *
+     * @copyright 2007 jamiesensei
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
      */
-    public function __construct($url, ?array $params = null, $anchor = null)
+    class url
     {
+        /**
+         * Scheme, ex.: http, https
+         * @var string
+         */
+        protected $scheme = '';
+        /**
+         * Hostname.
+         * @var string
+         */
+        protected $host = '';
+        /**
+         * Port number, empty means default 80 or 443 in case of http.
+         * @var int
+         */
+        protected $port = '';
+        /**
+         * Username for http auth.
+         * @var string
+         */
+        protected $user = '';
+        /**
+         * Password for http auth.
+         * @var string
+         */
+        protected $pass = '';
+        /**
+         * Script path.
+         * @var string
+         */
+        protected $path = '';
+        /**
+         * Optional slash argument value.
+         * @var string
+         */
+        protected $slashargument = '';
+        /**
+         * Anchor, may be also empty, null means none.
+         * @var string
+         */
+        protected $anchor = null;
+        /**
+         * Url parameters as associative array.
+         * @var array
+         */
+        protected $params = [];
+        /**
+         * Create new instance of url.
+         *
+         * @param self|string $url - moodle_url means make a copy of another
+         *      moodle_url and change parameters, string means full url or shortened
+         *      form (ex.: '/course/view.php'). It is strongly encouraged to not include
+         *      query string because it may result in double encoded values. Use the
+         *      $params instead. For admin URLs, just use /admin/script.php, this
+         *      class takes care of the $CFG->admin issue.
+         * @param null|array $params these params override current params or add new
+         * @param string $anchor The anchor to use as part of the URL if there is one.
+         * @throws moodle_exception
+         */
+        public function __construct($url, ?array $params = null, $anchor = null)
+        {
+        }
+        /**
+         * Add an array of params to the params for this url.
+         *
+         * The added params override existing ones if they have the same name.
+         *
+         * @param null|array $params Defaults to null. If null then returns all params.
+         * @return array Array of Params for url.
+         * @throws coding_exception
+         */
+        public function params(?array $params = null)
+        {
+        }
+        /**
+         * Remove all params if no arguments passed.
+         * Remove selected params if arguments are passed.
+         *
+         * Can be called as either remove_params('param1', 'param2')
+         * or remove_params(array('param1', 'param2')).
+         *
+         * @param string[]|string ...$params either an array of param names, or 1..n string params to remove as args.
+         * @return array url parameters
+         */
+        public function remove_params(...$params)
+        {
+        }
+        /**
+         * Remove all url parameters.
+         *
+         * @param array $unused Unused param
+         */
+        public function remove_all_params($unused = null)
+        {
+        }
+        /**
+         * Add a param to the params for this url.
+         *
+         * The added param overrides existing one if they have the same name.
+         *
+         * @param string $paramname name
+         * @param string $newvalue Param value. If new value specified current value is overriden or parameter is added
+         * @return mixed string parameter value, null if parameter does not exist
+         */
+        public function param($paramname, $newvalue = '')
+        {
+        }
+        /**
+         * Merges parameters and validates them
+         *
+         * @param null|array $overrideparams
+         * @return array merged parameters
+         * @throws coding_exception
+         */
+        protected function merge_overrideparams(?array $overrideparams = null)
+        {
+        }
+        /**
+         * Get the params as as a query string.
+         *
+         * This method should not be used outside of this method.
+         *
+         * @param bool $escaped Use &amp; as params separator instead of plain &
+         * @param null|array $overrideparams params to add to the output params, these
+         *      override existing ones with the same name.
+         * @return string query string that can be added to a url.
+         */
+        public function get_query_string($escaped = true, ?array $overrideparams = null)
+        {
+        }
+        /**
+         * Get the url params as an array of key => value pairs.
+         *
+         * This helps in handling cases where url params contain arrays.
+         *
+         * @return array params array for templates.
+         */
+        public function export_params_for_template(): array
+        {
+        }
+        /**
+         * Shortcut for printing of encoded URL.
+         *
+         * @return string
+         */
+        public function __toString()
+        {
+        }
+        /**
+         * Output url.
+         *
+         * If you use the returned URL in HTML code, you want the escaped ampersands. If you use
+         * the returned URL in HTTP headers, you want $escaped=false.
+         *
+         * @param bool $escaped Use &amp; as params separator instead of plain &
+         * @param null|array $overrideparams params to add to the output url, these override existing ones with the same name.
+         * @return string Resulting URL
+         */
+        public function out($escaped = true, ?array $overrideparams = null)
+        {
+        }
+        /**
+         * Output url without any rewrites
+         *
+         * This is identical in signature and use to out() but doesn't call the rewrite handler.
+         *
+         * @param bool $escaped Use &amp; as params separator instead of plain &
+         * @param null|array $overrideparams params to add to the output url, these override existing ones with the same name.
+         * @return string Resulting URL
+         */
+        public function raw_out($escaped = true, ?array $overrideparams = null)
+        {
+        }
+        /**
+         * Encode the anchor according to RFC 3986.
+         *
+         * @return string The encoded anchor
+         */
+        public function get_encoded_anchor(): string
+        {
+        }
+        /**
+         * Returns url without parameters, everything before '?'.
+         *
+         * @param bool $includeanchor if {@see self::anchor} is defined, should it be returned?
+         * @return string
+         */
+        public function out_omit_querystring($includeanchor = false)
+        {
+        }
+        /**
+         * Compares this url with another.
+         *
+         * See documentation of constants for an explanation of the comparison flags.
+         *
+         * @param self $url The moodle_url object to compare
+         * @param int $matchtype The type of comparison (URL_MATCH_BASE, URL_MATCH_PARAMS, URL_MATCH_EXACT)
+         * @return bool
+         */
+        public function compare(self $url, $matchtype = URL_MATCH_EXACT)
+        {
+        }
+        /**
+         * Sets the anchor for the URI (the bit after the hash)
+         *
+         * @param string $anchor null means remove previous
+         */
+        public function set_anchor($anchor)
+        {
+        }
+        /**
+         * Sets the scheme for the URI (the bit before ://)
+         *
+         * @param string $scheme
+         */
+        public function set_scheme($scheme)
+        {
+        }
+        /**
+         * Sets the url slashargument value.
+         *
+         * @param string $path usually file path
+         * @param string $parameter name of page parameter if slasharguments not supported
+         * @param bool $supported usually null, then it depends on $CFG->slasharguments, use true or false for other servers
+         */
+        public function set_slashargument($path, $parameter = 'file', $supported = null)
+        {
+        }
+        // Static factory methods.
+        /**
+         * Create a new url instance from a UriInterface.
+         *
+         * @param UriInterface $uri
+         * @return self
+         */
+        public static function from_uri(UriInterface $uri): self
+        {
+        }
+        /**
+         * Create a new moodle_url instance from routed path.
+         *
+         * @param string $path The routed path
+         * @param null|array $params The path parameters
+         * @param null|string $anchor The anchor
+         * @return self
+         */
+        public static function routed_path(string $path, ?array $params = null, ?string $anchor = null): self
+        {
+        }
+        /**
+         * General moodle file url.
+         *
+         * @param string $urlbase the script serving the file
+         * @param string $path
+         * @param bool $forcedownload
+         * @return self
+         */
+        public static function make_file_url($urlbase, $path, $forcedownload = false)
+        {
+        }
+        /**
+         * Factory method for creation of url pointing to plugin file.
+         *
+         * Please note this method can be used only from the plugins to
+         * create urls of own files, it must not be used outside of plugins!
+         *
+         * @param int $contextid
+         * @param string $component
+         * @param string $area
+         * @param ?int $itemid
+         * @param string $pathname
+         * @param string $filename
+         * @param bool $forcedownload
+         * @param mixed $includetoken Whether to use a user token when displaying this group image.
+         *                True indicates to generate a token for current user, and integer value indicates to generate a token for the
+         *                user whose id is the value indicated.
+         *                If the group picture is included in an e-mail or some other location where the audience is a specific
+         *                user who will not be logged in when viewing, then we use a token to authenticate the user.
+         * @return url
+         */
+        public static function make_pluginfile_url($contextid, $component, $area, $itemid, $pathname, $filename, $forcedownload = false, $includetoken = false)
+        {
+        }
+        /**
+         * Factory method for creation of url pointing to plugin file.
+         * This method is the same that make_pluginfile_url but pointing to the webservice pluginfile.php script.
+         * It should be used only in external functions.
+         *
+         * @since  2.8
+         * @param int $contextid
+         * @param string $component
+         * @param string $area
+         * @param int $itemid
+         * @param string $pathname
+         * @param string $filename
+         * @param bool $forcedownload
+         * @return url
+         */
+        public static function make_webservice_pluginfile_url($contextid, $component, $area, $itemid, $pathname, $filename, $forcedownload = false)
+        {
+        }
+        /**
+         * Factory method for creation of url pointing to draft file of current user.
+         *
+         * @param int $draftid draft item id
+         * @param string $pathname
+         * @param string $filename
+         * @param bool $forcedownload
+         * @return url
+         */
+        public static function make_draftfile_url($draftid, $pathname, $filename, $forcedownload = false)
+        {
+        }
+        /**
+         * Factory method for creating of links to legacy course files.
+         *
+         * @param int $courseid
+         * @param string $filepath
+         * @param bool $forcedownload
+         * @return url
+         */
+        public static function make_legacyfile_url($courseid, $filepath, $forcedownload = false)
+        {
+        }
+        /**
+         * Checks if URL is relative to $CFG->wwwroot.
+         *
+         * @return bool True if URL is relative to $CFG->wwwroot; otherwise, false.
+         */
+        public function is_local_url(): bool
+        {
+        }
+        /**
+         * Returns URL as relative path from $CFG->wwwroot
+         *
+         * Can be used for passing around urls with the wwwroot stripped
+         *
+         * @param boolean $escaped Use &amp; as params separator instead of plain &
+         * @param ?array $overrideparams params to add to the output url, these override existing ones with the same name.
+         * @return string Resulting URL
+         * @throws coding_exception if called on a non-local url
+         */
+        public function out_as_local_url($escaped = true, ?array $overrideparams = null)
+        {
+        }
+        /**
+         * Returns the 'path' portion of a URL. For example, if the URL is
+         * http://www.example.org:447/my/file/is/here.txt?really=1 then this will
+         * return '/my/file/is/here.txt'.
+         *
+         * By default the path includes slash-arguments (for example,
+         * '/myfile.php/extra/arguments') so it is what you would expect from a
+         * URL path. If you don't want this behaviour, you can opt to exclude the
+         * slash arguments. (Be careful: if the $CFG variable slasharguments is
+         * disabled, these URLs will have a different format and you may need to
+         * look at the 'file' parameter too.)
+         *
+         * @param bool $includeslashargument If true, includes slash arguments
+         * @return string Path of URL
+         */
+        public function get_path($includeslashargument = true)
+        {
+        }
+        /**
+         * Returns a given parameter value from the URL.
+         *
+         * @param string $name Name of parameter
+         * @return string Value of parameter or null if not set
+         */
+        public function get_param($name)
+        {
+        }
+        /**
+         * Returns the 'scheme' portion of a URL. For example, if the URL is
+         * http://www.example.org:447/my/file/is/here.txt?really=1 then this will
+         * return 'http' (without the colon).
+         *
+         * @return string Scheme of the URL.
+         */
+        public function get_scheme()
+        {
+        }
+        /**
+         * Returns the 'host' portion of a URL. For example, if the URL is
+         * http://www.example.org:447/my/file/is/here.txt?really=1 then this will
+         * return 'www.example.org'.
+         *
+         * @return string Host of the URL.
+         */
+        public function get_host()
+        {
+        }
+        /**
+         * Returns the 'port' portion of a URL. For example, if the URL is
+         * http://www.example.org:447/my/file/is/here.txt?really=1 then this will
+         * return '447'.
+         *
+         * @return string Port of the URL.
+         */
+        public function get_port()
+        {
+        }
+        /**
+         * Returns the 'slashargument' portion of a URL. For example, if the URL is
+         * http://www.example.org.com/pluginfile.php/1/core_admin/logocompact/ then this will
+         * return '1/core_admin/logocompact/'.
+         *
+         * @return string Slash argument as string.
+         */
+        public function get_slashargument(): string
+        {
+        }
     }
+}
+namespace {
     /**
-     * Add an array of params to the params for this url.
-     *
-     * The added params override existing ones if they have the same name.
-     *
-     * @param null|array $params Defaults to null. If null then returns all params.
-     * @return array Array of Params for url.
-     * @throws coding_exception
+     * Runtime class alias of \core\url registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function params(?array $params = null)
-    {
-    }
-    /**
-     * Remove all params if no arguments passed.
-     * Remove selected params if arguments are passed.
-     *
-     * Can be called as either remove_params('param1', 'param2')
-     * or remove_params(array('param1', 'param2')).
-     *
-     * @param string[]|string ...$params either an array of param names, or 1..n string params to remove as args.
-     * @return array url parameters
-     */
-    public function remove_params(...$params)
-    {
-    }
-    /**
-     * Remove all url parameters.
-     *
-     * @param array $unused Unused param
-     */
-    public function remove_all_params($unused = null)
-    {
-    }
-    /**
-     * Add a param to the params for this url.
-     *
-     * The added param overrides existing one if they have the same name.
-     *
-     * @param string $paramname name
-     * @param string $newvalue Param value. If new value specified current value is overriden or parameter is added
-     * @return mixed string parameter value, null if parameter does not exist
-     */
-    public function param($paramname, $newvalue = '')
-    {
-    }
-    /**
-     * Merges parameters and validates them
-     *
-     * @param null|array $overrideparams
-     * @return array merged parameters
-     * @throws coding_exception
-     */
-    protected function merge_overrideparams(?array $overrideparams = null)
-    {
-    }
-    /**
-     * Get the params as as a query string.
-     *
-     * This method should not be used outside of this method.
-     *
-     * @param bool $escaped Use &amp; as params separator instead of plain &
-     * @param null|array $overrideparams params to add to the output params, these
-     *      override existing ones with the same name.
-     * @return string query string that can be added to a url.
-     */
-    public function get_query_string($escaped = true, ?array $overrideparams = null)
-    {
-    }
-    /**
-     * Get the url params as an array of key => value pairs.
-     *
-     * This helps in handling cases where url params contain arrays.
-     *
-     * @return array params array for templates.
-     */
-    public function export_params_for_template(): array
-    {
-    }
-    /**
-     * Shortcut for printing of encoded URL.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-    }
-    /**
-     * Output url.
-     *
-     * If you use the returned URL in HTML code, you want the escaped ampersands. If you use
-     * the returned URL in HTTP headers, you want $escaped=false.
-     *
-     * @param bool $escaped Use &amp; as params separator instead of plain &
-     * @param null|array $overrideparams params to add to the output url, these override existing ones with the same name.
-     * @return string Resulting URL
-     */
-    public function out($escaped = true, ?array $overrideparams = null)
-    {
-    }
-    /**
-     * Output url without any rewrites
-     *
-     * This is identical in signature and use to out() but doesn't call the rewrite handler.
-     *
-     * @param bool $escaped Use &amp; as params separator instead of plain &
-     * @param null|array $overrideparams params to add to the output url, these override existing ones with the same name.
-     * @return string Resulting URL
-     */
-    public function raw_out($escaped = true, ?array $overrideparams = null)
-    {
-    }
-    /**
-     * Encode the anchor according to RFC 3986.
-     *
-     * @return string The encoded anchor
-     */
-    public function get_encoded_anchor(): string
-    {
-    }
-    /**
-     * Returns url without parameters, everything before '?'.
-     *
-     * @param bool $includeanchor if {@see self::anchor} is defined, should it be returned?
-     * @return string
-     */
-    public function out_omit_querystring($includeanchor = false)
-    {
-    }
-    /**
-     * Compares this url with another.
-     *
-     * See documentation of constants for an explanation of the comparison flags.
-     *
-     * @param self $url The moodle_url object to compare
-     * @param int $matchtype The type of comparison (URL_MATCH_BASE, URL_MATCH_PARAMS, URL_MATCH_EXACT)
-     * @return bool
-     */
-    public function compare(self $url, $matchtype = URL_MATCH_EXACT)
-    {
-    }
-    /**
-     * Sets the anchor for the URI (the bit after the hash)
-     *
-     * @param string $anchor null means remove previous
-     */
-    public function set_anchor($anchor)
-    {
-    }
-    /**
-     * Sets the scheme for the URI (the bit before ://)
-     *
-     * @param string $scheme
-     */
-    public function set_scheme($scheme)
-    {
-    }
-    /**
-     * Sets the url slashargument value.
-     *
-     * @param string $path usually file path
-     * @param string $parameter name of page parameter if slasharguments not supported
-     * @param bool $supported usually null, then it depends on $CFG->slasharguments, use true or false for other servers
-     */
-    public function set_slashargument($path, $parameter = 'file', $supported = null)
-    {
-    }
-    // Static factory methods.
-    /**
-     * Create a new url instance from a UriInterface.
-     *
-     * @param UriInterface $uri
-     * @return self
-     */
-    public static function from_uri(UriInterface $uri): self
-    {
-    }
-    /**
-     * Create a new moodle_url instance from routed path.
-     *
-     * @param string $path The routed path
-     * @param null|array $params The path parameters
-     * @param null|string $anchor The anchor
-     * @return self
-     */
-    public static function routed_path(string $path, ?array $params = null, ?string $anchor = null): self
-    {
-    }
-    /**
-     * General moodle file url.
-     *
-     * @param string $urlbase the script serving the file
-     * @param string $path
-     * @param bool $forcedownload
-     * @return self
-     */
-    public static function make_file_url($urlbase, $path, $forcedownload = false)
-    {
-    }
-    /**
-     * Factory method for creation of url pointing to plugin file.
-     *
-     * Please note this method can be used only from the plugins to
-     * create urls of own files, it must not be used outside of plugins!
-     *
-     * @param int $contextid
-     * @param string $component
-     * @param string $area
-     * @param ?int $itemid
-     * @param string $pathname
-     * @param string $filename
-     * @param bool $forcedownload
-     * @param mixed $includetoken Whether to use a user token when displaying this group image.
-     *                True indicates to generate a token for current user, and integer value indicates to generate a token for the
-     *                user whose id is the value indicated.
-     *                If the group picture is included in an e-mail or some other location where the audience is a specific
-     *                user who will not be logged in when viewing, then we use a token to authenticate the user.
-     * @return url
-     */
-    public static function make_pluginfile_url($contextid, $component, $area, $itemid, $pathname, $filename, $forcedownload = false, $includetoken = false)
-    {
-    }
-    /**
-     * Factory method for creation of url pointing to plugin file.
-     * This method is the same that make_pluginfile_url but pointing to the webservice pluginfile.php script.
-     * It should be used only in external functions.
-     *
-     * @since  2.8
-     * @param int $contextid
-     * @param string $component
-     * @param string $area
-     * @param int $itemid
-     * @param string $pathname
-     * @param string $filename
-     * @param bool $forcedownload
-     * @return url
-     */
-    public static function make_webservice_pluginfile_url($contextid, $component, $area, $itemid, $pathname, $filename, $forcedownload = false)
-    {
-    }
-    /**
-     * Factory method for creation of url pointing to draft file of current user.
-     *
-     * @param int $draftid draft item id
-     * @param string $pathname
-     * @param string $filename
-     * @param bool $forcedownload
-     * @return url
-     */
-    public static function make_draftfile_url($draftid, $pathname, $filename, $forcedownload = false)
-    {
-    }
-    /**
-     * Factory method for creating of links to legacy course files.
-     *
-     * @param int $courseid
-     * @param string $filepath
-     * @param bool $forcedownload
-     * @return url
-     */
-    public static function make_legacyfile_url($courseid, $filepath, $forcedownload = false)
-    {
-    }
-    /**
-     * Checks if URL is relative to $CFG->wwwroot.
-     *
-     * @return bool True if URL is relative to $CFG->wwwroot; otherwise, false.
-     */
-    public function is_local_url(): bool
-    {
-    }
-    /**
-     * Returns URL as relative path from $CFG->wwwroot
-     *
-     * Can be used for passing around urls with the wwwroot stripped
-     *
-     * @param boolean $escaped Use &amp; as params separator instead of plain &
-     * @param ?array $overrideparams params to add to the output url, these override existing ones with the same name.
-     * @return string Resulting URL
-     * @throws coding_exception if called on a non-local url
-     */
-    public function out_as_local_url($escaped = true, ?array $overrideparams = null)
-    {
-    }
-    /**
-     * Returns the 'path' portion of a URL. For example, if the URL is
-     * http://www.example.org:447/my/file/is/here.txt?really=1 then this will
-     * return '/my/file/is/here.txt'.
-     *
-     * By default the path includes slash-arguments (for example,
-     * '/myfile.php/extra/arguments') so it is what you would expect from a
-     * URL path. If you don't want this behaviour, you can opt to exclude the
-     * slash arguments. (Be careful: if the $CFG variable slasharguments is
-     * disabled, these URLs will have a different format and you may need to
-     * look at the 'file' parameter too.)
-     *
-     * @param bool $includeslashargument If true, includes slash arguments
-     * @return string Path of URL
-     */
-    public function get_path($includeslashargument = true)
-    {
-    }
-    /**
-     * Returns a given parameter value from the URL.
-     *
-     * @param string $name Name of parameter
-     * @return string Value of parameter or null if not set
-     */
-    public function get_param($name)
-    {
-    }
-    /**
-     * Returns the 'scheme' portion of a URL. For example, if the URL is
-     * http://www.example.org:447/my/file/is/here.txt?really=1 then this will
-     * return 'http' (without the colon).
-     *
-     * @return string Scheme of the URL.
-     */
-    public function get_scheme()
-    {
-    }
-    /**
-     * Returns the 'host' portion of a URL. For example, if the URL is
-     * http://www.example.org:447/my/file/is/here.txt?really=1 then this will
-     * return 'www.example.org'.
-     *
-     * @return string Host of the URL.
-     */
-    public function get_host()
-    {
-    }
-    /**
-     * Returns the 'port' portion of a URL. For example, if the URL is
-     * http://www.example.org:447/my/file/is/here.txt?really=1 then this will
-     * return '447'.
-     *
-     * @return string Port of the URL.
-     */
-    public function get_port()
-    {
-    }
-    /**
-     * Returns the 'slashargument' portion of a URL. For example, if the URL is
-     * http://www.example.org.com/pluginfile.php/1/core_admin/logocompact/ then this will
-     * return '1/core_admin/logocompact/'.
-     *
-     * @return string Slash argument as string.
-     */
-    public function get_slashargument(): string
+    class moodle_url extends \core\url
     {
     }
 }

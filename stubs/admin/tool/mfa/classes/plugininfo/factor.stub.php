@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_mfa\plugininfo;
 
+use moodle_url;
+use stdClass;
 /**
  * Subplugin info class.
  *

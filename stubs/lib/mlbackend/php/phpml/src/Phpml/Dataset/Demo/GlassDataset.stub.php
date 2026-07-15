@@ -8,6 +8,7 @@
  */
 namespace Phpml\Dataset\Demo;
 
+use Phpml\Dataset\CsvDataset;
 /**
  * Classes: 6
  * Samples per class:

@@ -8,6 +8,20 @@
  */
 namespace Aws\S3Control;
 
+use Aws\Api\Service;
+use Aws\Arn\AccessPointArnInterface;
+use Aws\Arn\ArnInterface;
+use Aws\Arn\ArnParser;
+use Aws\Arn\Exception\InvalidArnException;
+use Aws\Arn\S3\BucketArnInterface;
+use Aws\Arn\S3\OutpostsArnInterface;
+use Aws\CommandInterface;
+use Aws\Endpoint\PartitionEndpointProvider;
+use Aws\Exception\InvalidRegionException;
+use Aws\Exception\UnresolvedEndpointException;
+use Aws\S3\EndpointRegionHelperTrait;
+use GuzzleHttp\Psr7;
+use Psr\Http\Message\RequestInterface;
 /**
  * Checks for access point ARN in members targeting BucketName, modifying
  * endpoint as appropriate

@@ -8,6 +8,7 @@
  */
 namespace Phpml\Metric;
 
+use Phpml\Exception\InvalidArgumentException;
 class Accuracy
 {
     /**

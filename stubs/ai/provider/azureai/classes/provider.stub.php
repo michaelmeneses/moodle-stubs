@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_azureai;
 
+use core_ai\aiactions;
+use core_ai\rate_limiter;
+use Psr\Http\Message\RequestInterface;
 /**
  * Class provider.
  *

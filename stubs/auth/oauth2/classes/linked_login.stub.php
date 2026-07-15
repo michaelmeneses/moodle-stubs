@@ -29,6 +29,7 @@
  */
 namespace auth_oauth2;
 
+use core\persistent;
 /**
  * Class for loading/storing issuer from the DB
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use Slim\Interfaces\ErrorRendererInterface;
+use Throwable;
 // phpcs:disable moodle.NamingConventions.ValidVariableName.VariableNameLowerCase
 /**
  * Class routed_error_handler

@@ -30,6 +30,11 @@
  */
 namespace tool_behat\external;
 
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
 /**
  * External function for getting properties of entity generators.
  */

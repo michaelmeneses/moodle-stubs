@@ -8,6 +8,7 @@
  */
 namespace Aws\FreeTier;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Free Tier** service.
  * @method \Aws\Result getFreeTierUsage(array $args = [])

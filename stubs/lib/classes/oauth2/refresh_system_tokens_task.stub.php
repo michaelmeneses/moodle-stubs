@@ -29,6 +29,9 @@
  */
 namespace core\oauth2;
 
+use core\task\scheduled_task;
+use core_user;
+use moodle_exception;
 /**
  * Task to refresh system tokens regularly. Admins are notified in case an authorisation expires.
  * @package    core

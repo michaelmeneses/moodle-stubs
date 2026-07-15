@@ -8,6 +8,7 @@
  */
 namespace Phpml\FeatureExtraction\StopWords;
 
+use Phpml\FeatureExtraction\StopWords;
 final class English extends StopWords
 {
     /**

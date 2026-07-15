@@ -8,6 +8,9 @@
  */
 namespace core_reportbuilder\local\aggregation;
 
+use lang_string;
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\local\report\column;
 /**
  * Column group concatenation aggregation type
  *

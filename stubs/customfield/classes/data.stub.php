@@ -29,6 +29,7 @@
  */
 namespace core_customfield;
 
+use core\persistent;
 /**
  * Class data
  *

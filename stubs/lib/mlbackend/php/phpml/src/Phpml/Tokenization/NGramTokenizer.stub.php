@@ -8,6 +8,7 @@
  */
 namespace Phpml\Tokenization;
 
+use Phpml\Exception\InvalidArgumentException;
 class NGramTokenizer extends WordTokenizer
 {
     /**

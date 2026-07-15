@@ -20,101 +20,111 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * This class keeps track of which HTML tags are currently open.
- *
- * This makes it much easier to always generate well formed XHTML output, even
- * if execution terminates abruptly. Any time you output some opening HTML
- * without the matching closing HTML, you should push the necessary close tags
- * onto the stack.
- *
- * @copyright 2009 Tim Hunt
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class xhtml_container_stack
-{
+namespace core\output {
+    use stdClass;
     /**
-     * @var array Stores the list of open containers.
-     */
-    protected $opencontainers = [];
-    /**
-     * @var array In developer debug mode, stores a stack trace of all opens and
-     * closes, so we can output helpful error messages when there is a mismatch.
-     */
-    protected $log = [];
-    /**
-     * @var bool Store whether we are developer debug mode. We need this in
-     * several places including in the destructor where we may not have access to $CFG.
-     */
-    protected $isdebugging;
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-    }
-    /**
-     * Push the close HTML for a recently opened container onto the stack.
+     * This class keeps track of which HTML tags are currently open.
      *
-     * @param string $type The type of container. This is checked when {@see pop()}
-     *      is called and must match, otherwise a developer debug warning is output.
-     * @param string $closehtml The HTML required to close the container.
-     */
-    public function push($type, $closehtml)
-    {
-    }
-    /**
-     * Pop the HTML for the next closing container from the stack. The $type
-     * must match the type passed when the container was opened, otherwise a
-     * warning will be output.
+     * This makes it much easier to always generate well formed XHTML output, even
+     * if execution terminates abruptly. Any time you output some opening HTML
+     * without the matching closing HTML, you should push the necessary close tags
+     * onto the stack.
      *
-     * @param string $type The type of container.
-     * @return ?string the HTML required to close the container.
+     * @copyright 2009 Tim Hunt
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function pop($type)
+    class xhtml_container_stack
     {
+        /**
+         * @var array Stores the list of open containers.
+         */
+        protected $opencontainers = [];
+        /**
+         * @var array In developer debug mode, stores a stack trace of all opens and
+         * closes, so we can output helpful error messages when there is a mismatch.
+         */
+        protected $log = [];
+        /**
+         * @var bool Store whether we are developer debug mode. We need this in
+         * several places including in the destructor where we may not have access to $CFG.
+         */
+        protected $isdebugging;
+        /**
+         * Constructor
+         */
+        public function __construct()
+        {
+        }
+        /**
+         * Push the close HTML for a recently opened container onto the stack.
+         *
+         * @param string $type The type of container. This is checked when {@see pop()}
+         *      is called and must match, otherwise a developer debug warning is output.
+         * @param string $closehtml The HTML required to close the container.
+         */
+        public function push($type, $closehtml)
+        {
+        }
+        /**
+         * Pop the HTML for the next closing container from the stack. The $type
+         * must match the type passed when the container was opened, otherwise a
+         * warning will be output.
+         *
+         * @param string $type The type of container.
+         * @return ?string the HTML required to close the container.
+         */
+        public function pop($type)
+        {
+        }
+        /**
+         * Close all but the last open container. This is useful in places like error
+         * handling, where you want to close all the open containers (apart from <body>)
+         * before outputting the error message.
+         *
+         * @param bool $shouldbenone assert that the stack should be empty now - causes a
+         *      developer debug warning if it isn't.
+         * @return string the HTML required to close any open containers inside <body>.
+         */
+        public function pop_all_but_last($shouldbenone = false)
+        {
+        }
+        /**
+         * You can call this function if you want to throw away an instance of this
+         * class without properly emptying the stack (for example, in a unit test).
+         * Calling this method stops the destruct method from outputting a developer
+         * debug warning. After calling this method, the instance can no longer be used.
+         */
+        public function discard()
+        {
+        }
+        /**
+         * Adds an entry to the log.
+         *
+         * @param string $action The name of the action
+         * @param string $type The type of action
+         */
+        protected function log($action, $type)
+        {
+        }
+        /**
+         * Outputs the log's contents as a HTML list.
+         *
+         * @return string HTML list of the log
+         */
+        protected function output_log()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Close all but the last open container. This is useful in places like error
-     * handling, where you want to close all the open containers (apart from <body>)
-     * before outputting the error message.
-     *
-     * @param bool $shouldbenone assert that the stack should be empty now - causes a
-     *      developer debug warning if it isn't.
-     * @return string the HTML required to close any open containers inside <body>.
+     * Runtime class alias of \core\output\xhtml_container_stack registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function pop_all_but_last($shouldbenone = false)
-    {
-    }
-    /**
-     * You can call this function if you want to throw away an instance of this
-     * class without properly emptying the stack (for example, in a unit test).
-     * Calling this method stops the destruct method from outputting a developer
-     * debug warning. After calling this method, the instance can no longer be used.
-     */
-    public function discard()
-    {
-    }
-    /**
-     * Adds an entry to the log.
-     *
-     * @param string $action The name of the action
-     * @param string $type The type of action
-     */
-    protected function log($action, $type)
-    {
-    }
-    /**
-     * Outputs the log's contents as a HTML list.
-     *
-     * @return string HTML list of the log
-     */
-    protected function output_log()
+    class xhtml_container_stack extends \core\output\xhtml_container_stack
     {
     }
 }

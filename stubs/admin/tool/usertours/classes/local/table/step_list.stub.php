@@ -29,6 +29,9 @@
  */
 namespace tool_usertours\local\table;
 
+use tool_usertours\helper;
+use tool_usertours\tour;
+use tool_usertours\step;
 /**
  * Table to show the list of steps in a tour.
  *

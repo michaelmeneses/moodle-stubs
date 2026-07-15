@@ -8,6 +8,16 @@
  */
 namespace Aws\Glacier;
 
+use Aws\Api\ApiProvider;
+use Aws\Api\DocModel;
+use Aws\Api\Service;
+use Aws\AwsClient;
+use Aws\CommandInterface;
+use Aws\Exception\CouldNotCreateChecksumException;
+use Aws\HashingStream;
+use Aws\Middleware;
+use Aws\PhpHash;
+use Psr\Http\Message\RequestInterface;
 /**
  * This client is used to interact with the **Amazon Glacier** service.
  *

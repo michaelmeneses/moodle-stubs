@@ -8,6 +8,7 @@
  */
 namespace Aws\ConnectParticipant;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Connect Participant Service** service.
  * @method \Aws\Result completeAttachmentUpload(array $args = [])
