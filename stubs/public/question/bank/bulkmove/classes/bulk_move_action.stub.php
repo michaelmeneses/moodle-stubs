@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_bulkmove;
 
+use moodle_exception;
 /**
  * Class bulk_move_action is the base class for moving questions.
  *

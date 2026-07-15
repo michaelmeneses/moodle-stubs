@@ -29,6 +29,16 @@
  */
 namespace tool_dataprivacy\output;
 
+use action_menu;
+use action_menu_link_secondary;
+use coding_exception;
+use dml_exception;
+use html_writer;
+use moodle_url;
+use stdClass;
+use table_sql;
+use tool_dataprivacy\api;
+use tool_dataprivacy\external\data_request_exporter;
 /**
  * The class for displaying the data requests table.
  *

@@ -8,6 +8,10 @@
  */
 namespace tool_admin_presets\reportbuilder\local\systemreports;
 
+use tool_admin_presets\reportbuilder\local\entities\admin_preset;
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\local\report\action;
+use core_reportbuilder\system_report;
 /**
  * Admin presets system report class implementation
  *

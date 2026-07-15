@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\areas;
 
+use core\event\course_module_created;
+use core\event\course_module_updated;
+use tool_brickfield\area_base;
 /**
  * Base class for all areas that represent a field from the module table (such as 'intro' or 'name')
  *

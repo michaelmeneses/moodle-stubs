@@ -8,6 +8,7 @@
  */
 namespace Aws;
 
+use GuzzleHttp\Promise;
 /**
  * Iterator that yields each page of results of a pageable operation.
  */

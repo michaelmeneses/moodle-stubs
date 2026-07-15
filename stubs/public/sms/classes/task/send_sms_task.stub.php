@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_sms\task;
 
+use core\task\adhoc_task;
+use core_sms\message;
 /**
  * Ad-hoc task to send an SMS.
  *

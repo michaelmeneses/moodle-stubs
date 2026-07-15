@@ -29,6 +29,7 @@
  */
 namespace gradereport_singleview\local\ui;
 
+use grade_grade;
 /**
  * Abstract class for a form element representing something about a grade_grade.
  *

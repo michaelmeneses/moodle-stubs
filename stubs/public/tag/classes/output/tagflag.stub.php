@@ -29,6 +29,8 @@
  */
 namespace core_tag\output;
 
+use context_system;
+use core_tag_tag;
 /**
  * Class to display tag flag toggle
  *

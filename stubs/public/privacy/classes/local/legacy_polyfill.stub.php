@@ -29,6 +29,9 @@
  */
 namespace core_privacy\local;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\approved_contextlist;
 /**
  * The trait used to provide a backwards compatability for third-party plugins.
  *

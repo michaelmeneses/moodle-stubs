@@ -8,6 +8,8 @@
  */
 namespace core_reportbuilder\table;
 
+use core_table\local\filter\filterset;
+use core_table\local\filter\integer_filter;
 /**
  * Custom report dynamic table filterset class
  *

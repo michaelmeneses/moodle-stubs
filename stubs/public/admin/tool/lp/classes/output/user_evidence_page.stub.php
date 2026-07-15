@@ -29,6 +29,12 @@
  */
 namespace tool_lp\output;
 
+use moodle_url;
+use renderable;
+use templatable;
+use stdClass;
+use core_competency\api;
+use tool_lp\external\user_evidence_summary_exporter;
 /**
  * User evidence page class.
  *

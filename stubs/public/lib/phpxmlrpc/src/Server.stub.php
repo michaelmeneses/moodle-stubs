@@ -8,6 +8,15 @@
  */
 namespace PhpXmlRpc;
 
+use PhpXmlRpc\Exception\NoSuchMethodException;
+use PhpXmlRpc\Exception\ValueErrorException;
+use PhpXmlRpc\Helper\Http;
+use PhpXmlRpc\Helper\Interop;
+use PhpXmlRpc\Helper\Logger;
+use PhpXmlRpc\Helper\XMLParser;
+use PhpXmlRpc\Traits\CharsetEncoderAware;
+use PhpXmlRpc\Traits\DeprecationLogger;
+use PhpXmlRpc\Traits\ParserAware;
 /**
  * Allows effortless implementation of XML-RPC servers
  *

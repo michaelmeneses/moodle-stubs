@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_viewquestiontext\external;
 
+use context_system;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_value;
+use qbank_viewquestiontext\output\question_text_format;
 /**
  * External function for setting the question text format.
  *

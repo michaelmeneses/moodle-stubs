@@ -29,6 +29,13 @@
  */
 namespace repository_wikimedia\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\approved_userlist;
+use core_privacy\local\request\context;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem for repository_wikimedia implementing metadata and plugin providers.
  *

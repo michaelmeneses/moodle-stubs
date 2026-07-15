@@ -8,6 +8,13 @@
  */
 namespace core_reportbuilder\local\models;
 
+use context;
+use core_reportbuilder\event\audience_created;
+use core_reportbuilder\event\audience_deleted;
+use core_reportbuilder\event\audience_updated;
+use lang_string;
+use core\persistent;
+use core_reportbuilder\local\helpers\audience as helper;
 /**
  * Persistent class to represent a report audience
  *

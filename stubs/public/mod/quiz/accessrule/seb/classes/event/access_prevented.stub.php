@@ -30,6 +30,8 @@
  */
 namespace quizaccess_seb\event;
 
+use core\event\base;
+use quizaccess_seb\seb_access_manager;
 /**
  * Event for when access to a quiz is prevented by this subplugin.
  *

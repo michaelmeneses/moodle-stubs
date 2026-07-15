@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\output;
 
+use mod_bigbluebuttonbn\recording;
+use pix_icon;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * Renderer for recording row actionbar column
  *

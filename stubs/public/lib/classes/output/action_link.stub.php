@@ -20,99 +20,112 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Data structure describing html link with special action attached.
- *
- * @copyright 2010 Petr Skoda
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class action_link implements externable, renderable
-{
+namespace core\output {
+    use core\external\action_link_exporter;
+    use core\output\actions\component_action;
+    use moodle_url;
+    use stdClass;
     /**
-     * @var moodle_url Href url
-     */
-    public $url;
-    /**
-     * @var string|renderable Link text HTML fragment
-     */
-    public $text;
-    /**
-     * @var array HTML attributes
-     */
-    public $attributes;
-    /**
-     * @var array List of actions attached to link
-     */
-    public $actions;
-    /**
-     * @var pix_icon Optional pix icon to render with the link
-     */
-    public $icon;
-    /**
-     * Constructor
-     * @param moodle_url $url
-     * @param string|renderable $text HTML fragment
-     * @param null|component_action $action
-     * @param null|array $attributes associative array of html link attributes + disabled
-     * @param null|pix_icon $icon optional pix_icon to render with the link text
-     */
-    public function __construct(moodle_url $url, $text, ?component_action $action = null, ?array $attributes = null, ?pix_icon $icon = null)
-    {
-    }
-    /**
-     * Add action to the link.
+     * Data structure describing html link with special action attached.
      *
-     * @param component_action $action
+     * @copyright 2010 Petr Skoda
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function add_action(component_action $action)
+    class action_link implements externable, renderable
     {
+        /**
+         * @var moodle_url Href url
+         */
+        public $url;
+        /**
+         * @var string|renderable Link text HTML fragment
+         */
+        public $text;
+        /**
+         * @var array HTML attributes
+         */
+        public $attributes;
+        /**
+         * @var array List of actions attached to link
+         */
+        public $actions;
+        /**
+         * @var pix_icon Optional pix icon to render with the link
+         */
+        public $icon;
+        /**
+         * Constructor
+         * @param moodle_url $url
+         * @param string|renderable $text HTML fragment
+         * @param null|component_action $action
+         * @param null|array $attributes associative array of html link attributes + disabled
+         * @param null|pix_icon $icon optional pix_icon to render with the link text
+         */
+        public function __construct(moodle_url $url, $text, ?component_action $action = null, ?array $attributes = null, ?pix_icon $icon = null)
+        {
+        }
+        /**
+         * Add action to the link.
+         *
+         * @param component_action $action
+         */
+        public function add_action(component_action $action)
+        {
+        }
+        /**
+         * Adds a CSS class to this action link object
+         * @param string $class
+         */
+        public function add_class($class)
+        {
+        }
+        /**
+         * Returns true if the specified class has been added to this link.
+         * @param string $class
+         * @return bool
+         */
+        public function has_class($class)
+        {
+        }
+        /**
+         * Return the rendered HTML for the icon. Useful for rendering action links in a template.
+         * @return string
+         */
+        public function get_icon_html()
+        {
+        }
+        /**
+         * Export for template.
+         *
+         * @param renderer_base $output The renderer.
+         * @return stdClass
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
+        #[\Override]
+        public function get_exporter(?\core\context $context = null): action_link_exporter
+        {
+        }
+        #[\Override]
+        public static function get_read_structure(int $required = VALUE_REQUIRED, mixed $default = null): \core_external\external_single_structure
+        {
+        }
+        #[\Override]
+        public static function read_properties_definition(): array
+        {
+        }
     }
+}
+namespace {
     /**
-     * Adds a CSS class to this action link object
-     * @param string $class
+     * Runtime class alias of \core\output\action_link registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function add_class($class)
-    {
-    }
-    /**
-     * Returns true if the specified class has been added to this link.
-     * @param string $class
-     * @return bool
-     */
-    public function has_class($class)
-    {
-    }
-    /**
-     * Return the rendered HTML for the icon. Useful for rendering action links in a template.
-     * @return string
-     */
-    public function get_icon_html()
-    {
-    }
-    /**
-     * Export for template.
-     *
-     * @param renderer_base $output The renderer.
-     * @return stdClass
-     */
-    public function export_for_template(renderer_base $output)
-    {
-    }
-    #[\Override]
-    public function get_exporter(?\core\context $context = null): action_link_exporter
-    {
-    }
-    #[\Override]
-    public static function get_read_structure(int $required = VALUE_REQUIRED, mixed $default = null): \core_external\external_single_structure
-    {
-    }
-    #[\Override]
-    public static function read_properties_definition(): array
+    class action_link extends \core\output\action_link
     {
     }
 }

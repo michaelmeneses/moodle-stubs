@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\exceptions;
 
+use mod_bigbluebuttonbn\plugin;
 /**
  * The mod_bigbluebuttonbn cannot join meeting exception.
  *

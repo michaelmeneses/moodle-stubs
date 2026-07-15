@@ -33,6 +33,10 @@
  */
 namespace mod_lti\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
 /**
  * Render a page containing a simple form which reposts to self via JS.
  *

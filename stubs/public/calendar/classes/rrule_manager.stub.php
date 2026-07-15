@@ -29,6 +29,11 @@
  */
 namespace core_calendar;
 
+use calendar_event;
+use DateInterval;
+use DateTime;
+use moodle_exception;
+use stdClass;
 /**
  * Defines calendar class to manage recurrence rule (rrule) during ical imports.
  *

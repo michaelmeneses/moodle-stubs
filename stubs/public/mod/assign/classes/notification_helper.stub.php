@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign;
 
+use DateTime;
+use core\output\html_writer;
 /**
  * Helper for sending assignment related notifications.
  *

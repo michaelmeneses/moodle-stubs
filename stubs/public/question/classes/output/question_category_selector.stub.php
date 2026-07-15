@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\output;
 
+use core\context;
+use core\output\renderable;
+use core\output\renderer_base;
+use core\output\templatable;
+use core_question\local\bank\question_version_status;
 /**
  * A select menu of question categories.
  *

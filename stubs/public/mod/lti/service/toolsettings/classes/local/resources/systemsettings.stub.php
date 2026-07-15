@@ -30,6 +30,8 @@
  */
 namespace ltiservice_toolsettings\local\resources;
 
+use ltiservice_toolsettings\local\service\toolsettings;
+use mod_lti\local\ltiservice\resource_base;
 /**
  * A resource implementing the System-level (ToolProxy) Settings.
  *

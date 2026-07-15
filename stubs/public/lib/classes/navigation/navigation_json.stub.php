@@ -20,47 +20,59 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\navigation;
-
-/**
- * Simple class used to output a navigation branch in XML
- *
- * @package   core
- * @category  navigation
- * @copyright 2009 Sam Hemelryk
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class navigation_json
-{
-    /** @var array An array of different node types */
-    protected $nodetype = ['node', 'branch'];
-    /** @var array An array of node keys and types */
-    protected $expandable = [];
+namespace core\navigation {
+    use core\output\action_link;
+    use core\output\pix_icon;
+    use core\url;
     /**
-     * Turns a branch and all of its children into XML
+     * Simple class used to output a navigation branch in XML
      *
-     * @param navigation_node $branch
-     * @return string XML string
+     * @package   core
+     * @category  navigation
+     * @copyright 2009 Sam Hemelryk
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function convert($branch)
+    class navigation_json
     {
+        /** @var array An array of different node types */
+        protected $nodetype = ['node', 'branch'];
+        /** @var array An array of node keys and types */
+        protected $expandable = [];
+        /**
+         * Turns a branch and all of its children into XML
+         *
+         * @param navigation_node $branch
+         * @return string XML string
+         */
+        public function convert($branch)
+        {
+        }
+        /**
+         * Set the expandable items in the array so that we have enough information
+         * to attach AJAX events
+         * @param array $expandable
+         */
+        public function set_expandable($expandable)
+        {
+        }
+        /**
+         * Recusively converts a child node and its children to XML for output
+         *
+         * @param navigation_node $child The child to convert
+         * @param int $depth Pointlessly used to track the depth of the XML structure
+         * @return string JSON
+         */
+        protected function convert_child($child, $depth = 1)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Set the expandable items in the array so that we have enough information
-     * to attach AJAX events
-     * @param array $expandable
+     * Runtime class alias of \core\navigation\navigation_json registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function set_expandable($expandable)
-    {
-    }
-    /**
-     * Recusively converts a child node and its children to XML for output
-     *
-     * @param navigation_node $child The child to convert
-     * @param int $depth Pointlessly used to track the depth of the XML structure
-     * @return string JSON
-     */
-    protected function convert_child($child, $depth = 1)
+    class navigation_json extends \core\navigation\navigation_json
     {
     }
 }

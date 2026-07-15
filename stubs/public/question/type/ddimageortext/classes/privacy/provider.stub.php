@@ -29,6 +29,9 @@
  */
 namespace qtype_ddimageortext\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem for qtype_ddimageortext implementing user_preference_provider.
  *

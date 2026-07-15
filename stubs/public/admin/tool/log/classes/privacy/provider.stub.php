@@ -30,6 +30,12 @@
  */
 namespace tool_log\privacy;
 
+use context;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
+use tool_log\log\manager;
 /**
  * Data provider class.
  *

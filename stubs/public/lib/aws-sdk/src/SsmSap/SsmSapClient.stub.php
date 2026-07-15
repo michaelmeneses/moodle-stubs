@@ -8,6 +8,7 @@
  */
 namespace Aws\SsmSap;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Systems Manager for SAP** service.
  * @method \Aws\Result deleteResourcePermission(array $args = [])

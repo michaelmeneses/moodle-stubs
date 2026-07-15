@@ -31,6 +31,17 @@
  */
 namespace core_courseformat\output\local\content\cm;
 
+use cm_info;
+use core\output\inplace_editable;
+use core\output\named_templatable;
+use core_courseformat\base as course_format;
+use core_text;
+use lang_string;
+use renderable;
+use section_info;
+use stdClass;
+use core_external\external_api;
+use context_module;
 /**
  * Base class to render a course module title inside a course format.
  *

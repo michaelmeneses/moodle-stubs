@@ -8,6 +8,8 @@
  */
 namespace core_table\local\filter;
 
+use InvalidArgumentException;
+use TypeError;
 /**
  * Class representing an integer filter.
  *

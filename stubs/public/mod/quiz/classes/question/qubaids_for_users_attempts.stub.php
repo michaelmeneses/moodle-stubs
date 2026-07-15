@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\question;
 
+use mod_quiz\quiz_attempt;
 /**
  * A {@see qubaid_condition} representing all the attempts by one user at a given quiz.
  *

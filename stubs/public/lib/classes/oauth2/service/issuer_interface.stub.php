@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\oauth2\service;
 
+use core\oauth2\issuer;
 /**
  * Interface for services, with the methods to be implemented by all the issuer implementing it.
  *

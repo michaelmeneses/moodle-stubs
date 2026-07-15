@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_deepseek\form;
 
+use aiprovider_deepseek\helper;
+use core_ai\form\action_settings_form;
 /**
  * Base action settings form for Deepseek provider.
  *

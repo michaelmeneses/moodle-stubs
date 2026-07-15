@@ -8,6 +8,7 @@
  */
 namespace Aws\LocationService;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Location Service** service.
  * @method \Aws\Result associateTrackerConsumer(array $args = [])

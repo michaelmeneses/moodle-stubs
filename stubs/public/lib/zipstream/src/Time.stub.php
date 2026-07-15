@@ -8,6 +8,10 @@
  */
 namespace ZipStream;
 
+use DateInterval;
+use DateTimeImmutable;
+use DateTimeInterface;
+use ZipStream\Exception\DosTimeOverflowException;
 /**
  * @internal
  */

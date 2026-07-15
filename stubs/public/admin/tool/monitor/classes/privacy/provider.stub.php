@@ -29,6 +29,15 @@
  */
 namespace tool_monitor\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\approved_userlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\writer;
+use tool_monitor\subscription_manager;
+use tool_monitor\rule_manager;
 /**
  * Privacy provider for tool_monitor
  *

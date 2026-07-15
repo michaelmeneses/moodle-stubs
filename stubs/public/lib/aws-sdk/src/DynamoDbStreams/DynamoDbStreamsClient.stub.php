@@ -8,6 +8,8 @@
  */
 namespace Aws\DynamoDbStreams;
 
+use Aws\AwsClient;
+use Aws\DynamoDb\DynamoDbClient;
 /**
  * This client is used to interact with the **Amazon DynamoDb Streams** service.
  *

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace factor_grace\privacy;
 
+use core_privacy\local\metadata\null_provider;
 /**
  * Privacy provider.
  *

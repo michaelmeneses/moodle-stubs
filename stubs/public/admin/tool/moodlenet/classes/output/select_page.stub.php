@@ -29,6 +29,7 @@
  */
 namespace tool_moodlenet\output;
 
+use tool_moodlenet\local\import_info;
 /**
  * Select page renderable.
  *

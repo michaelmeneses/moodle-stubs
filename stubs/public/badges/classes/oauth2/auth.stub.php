@@ -31,6 +31,7 @@
  */
 namespace core_badges\oauth2;
 
+use stdClass;
 /**
  * Proccess Oauth2 connects to backpack site.
  *

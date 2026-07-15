@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\areas\mod_wiki;
 
+use tool_brickfield\local\areas\module_area_base;
 /**
  * Wiki activity name observer.
  *

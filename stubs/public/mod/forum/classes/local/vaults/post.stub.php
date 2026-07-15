@@ -29,6 +29,10 @@
  */
 namespace mod_forum\local\vaults;
 
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\entities\post as post_entity;
+use mod_forum\local\factories\entity as entity_factory;
+use stdClass;
 /**
  * Post vault class.
  *

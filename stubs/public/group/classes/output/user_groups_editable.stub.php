@@ -29,6 +29,10 @@
  */
 namespace core_group\output;
 
+use context_course;
+use core_user;
+use core_external;
+use coding_exception;
 /**
  * Class to display list of user groups.
  *

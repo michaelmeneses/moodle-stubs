@@ -8,6 +8,7 @@
  */
 namespace Aws\ResilienceHub;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Resilience Hub** service.
  * @method \Aws\Result acceptResourceGroupingRecommendations(array $args = [])

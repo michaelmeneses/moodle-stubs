@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation\views;
 
+use navigation_node;
 /**
  * Class primary.
  *

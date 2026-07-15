@@ -30,6 +30,7 @@
  */
 namespace workshopform_numerrors\privacy;
 
+use core_privacy\local\request\writer;
 /**
  * Privacy API implementation for the Number of errors strategy.
  *

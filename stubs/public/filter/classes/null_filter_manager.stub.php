@@ -20,38 +20,48 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_filters;
-
-/**
- * Filter manager subclass that does nothing. Having this simplifies the logic
- * of format_text, etc.
- *
- * @package core_filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class null_filter_manager
-{
+namespace core_filters {
+    use core\context;
     /**
-     * As for the equivalent {@see filter_manager} method.
+     * Filter manager subclass that does nothing. Having this simplifies the logic
+     * of format_text, etc.
      *
-     * @param string $text The text to filter
-     * @param context $context not used.
-     * @param array $options not used
-     * @param null|array $skipfilters not used
-     * @return string resulting text.
+     * @package core_filters
+     * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function filter_text($text, $context, array $options = [], ?array $skipfilters = null)
+    class null_filter_manager
     {
+        /**
+         * As for the equivalent {@see filter_manager} method.
+         *
+         * @param string $text The text to filter
+         * @param context $context not used.
+         * @param array $options not used
+         * @param null|array $skipfilters not used
+         * @return string resulting text.
+         */
+        public function filter_text($text, $context, array $options = [], ?array $skipfilters = null)
+        {
+        }
+        /**
+         * As for the equivalent {@see filter_manager} method.
+         *
+         * @param string $string The text to filter
+         * @param context $context not used.
+         * @return string resulting string
+         */
+        public function filter_string($string, $context)
+        {
+        }
     }
+}
+namespace {
     /**
-     * As for the equivalent {@see filter_manager} method.
-     *
-     * @param string $string The text to filter
-     * @param context $context not used.
-     * @return string resulting string
+     * Runtime class alias of \core_filters\null_filter_manager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function filter_string($string, $context)
+    class null_filter_manager extends \core_filters\null_filter_manager
     {
     }
 }

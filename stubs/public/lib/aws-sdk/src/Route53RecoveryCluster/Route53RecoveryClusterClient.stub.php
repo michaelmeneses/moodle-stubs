@@ -8,6 +8,7 @@
  */
 namespace Aws\Route53RecoveryCluster;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Route53 Recovery Cluster** service.
  * @method \Aws\Result getRoutingControlState(array $args = [])

@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn;
 
+use cm_info;
+use context;
+use context_course;
+use context_module;
+use core\dml\table;
+use mod_bigbluebuttonbn\local\config;
+use mod_bigbluebuttonbn\local\helpers\files;
+use mod_bigbluebuttonbn\local\helpers\roles;
+use mod_bigbluebuttonbn\local\proxy\bigbluebutton_proxy;
+use moodle_url;
+use stdClass;
 /**
  * Instance record for mod_bigbluebuttonbn.
  *

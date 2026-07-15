@@ -8,6 +8,7 @@
  */
 namespace Aws\EndpointV2\Rule;
 
+use Aws\Exception\UnresolvedEndpointException;
 class RuleCreator
 {
     public static function create($type, $definition)

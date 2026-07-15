@@ -8,6 +8,8 @@
  */
 namespace Kevinrob\GuzzleCache\Storage;
 
+use Doctrine\Common\Cache\Cache;
+use Kevinrob\GuzzleCache\CacheEntry;
 class DoctrineCacheStorage implements CacheStorageInterface
 {
     /**

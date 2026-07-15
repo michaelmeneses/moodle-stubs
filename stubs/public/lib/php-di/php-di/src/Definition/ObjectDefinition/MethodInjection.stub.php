@@ -8,6 +8,7 @@
  */
 namespace DI\Definition\ObjectDefinition;
 
+use DI\Definition\Definition;
 /**
  * Describe an injection in an object method.
  *

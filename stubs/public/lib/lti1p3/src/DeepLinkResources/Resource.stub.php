@@ -8,6 +8,9 @@
  */
 namespace Packback\Lti1p3\DeepLinkResources;
 
+use Packback\Lti1p3\Concerns\Arrayable;
+use Packback\Lti1p3\LtiConstants;
+use Packback\Lti1p3\LtiLineitem;
 class Resource
 {
     use Arrayable;

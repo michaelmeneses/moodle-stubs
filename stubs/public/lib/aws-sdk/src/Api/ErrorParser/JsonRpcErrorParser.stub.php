@@ -8,6 +8,10 @@
  */
 namespace Aws\Api\ErrorParser;
 
+use Aws\Api\Parser\JsonParser;
+use Aws\Api\Service;
+use Aws\CommandInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Parsers JSON-RPC errors.
  */

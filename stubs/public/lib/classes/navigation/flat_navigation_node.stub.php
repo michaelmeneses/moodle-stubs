@@ -20,91 +20,101 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\navigation;
-
-/**
- * Subclass of navigation_node allowing different rendering for the flat navigation
- * in particular allowing dividers and indents.
- *
- * @deprecated since Moodle 4.0 - do not use any more. Leverage secondary/tertiary navigation concepts
- * @package   core
- * @category  navigation
- * @copyright 2016 Damyon Wiese
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class flat_navigation_node extends navigation_node
-{
-    /** @var $indent integer The indent level */
-    private $indent = 0;
-    /** @var $showdivider bool Show a divider before this element */
-    private $showdivider = false;
-    /** @var $collectionlabel string Label for a group of nodes */
-    private $collectionlabel = '';
+namespace core\navigation {
+    use core\exception\coding_exception;
     /**
-     * A proxy constructor
+     * Subclass of navigation_node allowing different rendering for the flat navigation
+     * in particular allowing dividers and indents.
      *
-     * @param mixed $navnode A navigation_node or an array
+     * @deprecated since Moodle 4.0 - do not use any more. Leverage secondary/tertiary navigation concepts
+     * @package   core
+     * @category  navigation
+     * @copyright 2016 Damyon Wiese
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($navnode, $indent)
+    class flat_navigation_node extends navigation_node
     {
+        /** @var $indent integer The indent level */
+        private $indent = 0;
+        /** @var $showdivider bool Show a divider before this element */
+        private $showdivider = false;
+        /** @var $collectionlabel string Label for a group of nodes */
+        private $collectionlabel = '';
+        /**
+         * A proxy constructor
+         *
+         * @param mixed $navnode A navigation_node or an array
+         */
+        public function __construct($navnode, $indent)
+        {
+        }
+        /**
+         * Setter, a label is required for a flat navigation node that shows a divider.
+         *
+         * @param string $label
+         */
+        public function set_collectionlabel($label)
+        {
+        }
+        /**
+         * Getter, get the label for this flat_navigation node, or it's parent if it doesn't have one.
+         *
+         * @return string
+         */
+        public function get_collectionlabel()
+        {
+        }
+        /**
+         * Does this node represent a course section link.
+         * @return boolean
+         */
+        public function is_section()
+        {
+        }
+        /**
+         * In flat navigation - sections are active if we are looking at activities in the section.
+         * @return boolean
+         */
+        public function isactive()
+        {
+        }
+        /**
+         * Getter for "showdivider"
+         * @return boolean
+         */
+        public function showdivider()
+        {
+        }
+        /**
+         * Setter for "showdivider"
+         * @param $val boolean
+         * @param $label string Label for the group of nodes
+         */
+        public function set_showdivider($val, $label = '')
+        {
+        }
+        /**
+         * Getter for "indent"
+         * @return boolean
+         */
+        public function get_indent()
+        {
+        }
+        /**
+         * Setter for "indent"
+         * @param $val boolean
+         */
+        public function set_indent($val)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Setter, a label is required for a flat navigation node that shows a divider.
-     *
-     * @param string $label
+     * Runtime class alias of \core\navigation\flat_navigation_node registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function set_collectionlabel($label)
-    {
-    }
-    /**
-     * Getter, get the label for this flat_navigation node, or it's parent if it doesn't have one.
-     *
-     * @return string
-     */
-    public function get_collectionlabel()
-    {
-    }
-    /**
-     * Does this node represent a course section link.
-     * @return boolean
-     */
-    public function is_section()
-    {
-    }
-    /**
-     * In flat navigation - sections are active if we are looking at activities in the section.
-     * @return boolean
-     */
-    public function isactive()
-    {
-    }
-    /**
-     * Getter for "showdivider"
-     * @return boolean
-     */
-    public function showdivider()
-    {
-    }
-    /**
-     * Setter for "showdivider"
-     * @param $val boolean
-     * @param $label string Label for the group of nodes
-     */
-    public function set_showdivider($val, $label = '')
-    {
-    }
-    /**
-     * Getter for "indent"
-     * @return boolean
-     */
-    public function get_indent()
-    {
-    }
-    /**
-     * Setter for "indent"
-     * @param $val boolean
-     */
-    public function set_indent($val)
+    class flat_navigation_node extends \core\navigation\flat_navigation_node
     {
     }
 }

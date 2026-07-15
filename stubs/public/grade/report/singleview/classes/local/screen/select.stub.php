@@ -29,6 +29,8 @@
  */
 namespace gradereport_singleview\local\screen;
 
+use gradereport_singleview;
+use moodle_url;
 /**
  * The gradebook simple view - initial view to select your search options
  *

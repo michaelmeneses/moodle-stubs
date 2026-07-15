@@ -29,6 +29,7 @@
  */
 namespace block_html\search;
 
+use core_search\moodle_recordset;
 /**
  * Search area for block_html blocks
  *

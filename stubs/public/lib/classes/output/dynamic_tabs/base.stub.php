@@ -8,6 +8,8 @@
  */
 namespace core\output\dynamic_tabs;
 
+use core\exception\moodle_exception;
+use core\output\templatable;
 /**
  * Class tab_base
  *

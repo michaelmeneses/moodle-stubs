@@ -30,6 +30,14 @@
  */
 namespace mod_bigbluebuttonbn\test;
 
+use context_module;
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\config;
+use mod_bigbluebuttonbn\local\proxy\recording_proxy;
+use mod_bigbluebuttonbn\meeting;
+use stdClass;
+use testing_data_generator;
+use core\plugininfo\mod;
 trait testcase_helper_trait
 {
     /** @var testing_data_generator|null */

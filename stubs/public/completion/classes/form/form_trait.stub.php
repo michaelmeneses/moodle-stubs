@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_completion\form;
 
+use core_grades\component_gradeitems;
+use cm_info;
 /**
  * Completion trait helper, with methods to add completion elements and validate them.
  *

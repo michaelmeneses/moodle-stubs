@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_ai\reportbuilder\local\entities;
 
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\date;
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
+use lang_string;
 /**
  * AI policy register entity.
  *

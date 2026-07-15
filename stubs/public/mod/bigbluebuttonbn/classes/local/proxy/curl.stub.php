@@ -29,6 +29,7 @@
  */
 namespace mod_bigbluebuttonbn\local\proxy;
 
+use SimpleXMLElement;
 /**
  * A curl wrapper for bbb.
  *

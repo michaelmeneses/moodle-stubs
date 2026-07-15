@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\attribute;
 
+use core\exception\coding_exception;
 /**
  * Attribute to describe a deprecated item.
  *

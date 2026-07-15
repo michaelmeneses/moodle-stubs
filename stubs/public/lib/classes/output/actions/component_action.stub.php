@@ -20,50 +20,63 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\actions;
-
-/**
- * Helper class used by other components that involve an action on the page (URL or JS).
- *
- * @copyright 2009 Nicolas Connault
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class component_action implements templatable
-{
+namespace core\output\actions {
+    use core\exception\coding_exception;
+    use core\output\renderer_base;
+    use core\output\templatable;
+    use stdClass;
     /**
-     * @var string $event The DOM event that will trigger this action when caught
-     */
-    public $event;
-    /**
-     * @var string A function name to call when the button is clicked
-     * The JS function you create must have two arguments:
-     *      1. The event object
-     *      2. An object/array of arguments ($jsfunctionargs)
-     */
-    public $jsfunction = false;
-    /**
-     * @var array An array of arguments to pass to the JS function
-     */
-    public $jsfunctionargs = [];
-    /**
-     * Constructor
-     * @param string $event DOM event
-     * @param string $jsfunction An optional JS function. Required if jsfunctionargs is given
-     * @param array $jsfunctionargs An array of arguments to pass to the jsfunction
-     */
-    public function __construct($event, $jsfunction, $jsfunctionargs = [])
-    {
-    }
-    /**
-     * Export for template.
+     * Helper class used by other components that involve an action on the page (URL or JS).
      *
-     * @param renderer_base $output The renderer.
-     * @return stdClass
+     * @copyright 2009 Nicolas Connault
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function export_for_template(renderer_base $output)
+    class component_action implements templatable
+    {
+        /**
+         * @var string $event The DOM event that will trigger this action when caught
+         */
+        public $event;
+        /**
+         * @var string A function name to call when the button is clicked
+         * The JS function you create must have two arguments:
+         *      1. The event object
+         *      2. An object/array of arguments ($jsfunctionargs)
+         */
+        public $jsfunction = false;
+        /**
+         * @var array An array of arguments to pass to the JS function
+         */
+        public $jsfunctionargs = [];
+        /**
+         * Constructor
+         * @param string $event DOM event
+         * @param string $jsfunction An optional JS function. Required if jsfunctionargs is given
+         * @param array $jsfunctionargs An array of arguments to pass to the jsfunction
+         */
+        public function __construct($event, $jsfunction, $jsfunctionargs = [])
+        {
+        }
+        /**
+         * Export for template.
+         *
+         * @param renderer_base $output The renderer.
+         * @return stdClass
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\actions\component_action registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class component_action extends \core\output\actions\component_action
     {
     }
 }

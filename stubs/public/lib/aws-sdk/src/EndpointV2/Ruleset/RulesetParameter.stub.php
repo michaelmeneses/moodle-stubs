@@ -8,6 +8,8 @@
  */
 namespace Aws\EndpointV2\Ruleset;
 
+use Aws\Exception\UnresolvedEndpointException;
+use function Aws\is_associative;
 /**
  * Houses properties of an individual parameter definition.
  */

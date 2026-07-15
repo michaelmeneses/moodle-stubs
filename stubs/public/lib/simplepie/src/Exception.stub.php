@@ -47,13 +47,23 @@
  * @link http://simplepie.org/ SimplePie
  * @license http://www.opensource.org/licenses/bsd-license.php BSD License
  */
-namespace SimplePie;
-
-/**
- * General SimplePie exception class
- *
- * @package SimplePie
- */
-class Exception extends NativeException
-{
+namespace SimplePie {
+    use Exception as NativeException;
+    /**
+     * General SimplePie exception class
+     *
+     * @package SimplePie
+     */
+    class Exception extends NativeException
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \SimplePie\Exception registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class SimplePie_Exception extends \SimplePie\Exception
+    {
+    }
 }

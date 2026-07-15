@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_user\hook;
 
+use action_link;
+use core\hook\described_hook;
+use core\hook\deprecated_callback_replacement;
 /**
  * Class extend_bulk_user_actions
  *

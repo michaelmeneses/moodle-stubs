@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Common;
 
+use OpenSpout\Common\Exception\InvalidArgumentException;
 /**
  * @internal
  */

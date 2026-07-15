@@ -29,6 +29,19 @@
  */
 namespace tool_lpmigrate\output;
 
+use context;
+use context_course;
+use context_module;
+use moodle_url;
+use renderable;
+use templatable;
+use stdClass;
+use core_competency\competency;
+use core_competency\competency_framework;
+use core_competency\external\competency_exporter;
+use core_competency\external\competency_framework_exporter;
+use core_competency\url;
+use tool_lpmigrate\framework_processor;
 /**
  * Migrate frameworks results class.
  *

@@ -8,6 +8,7 @@
  */
 namespace Laravel\SerializableClosure\Exceptions;
 
+use Exception;
 class MissingSecretKeyException extends Exception
 {
     /**

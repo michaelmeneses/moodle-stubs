@@ -8,6 +8,9 @@
  */
 namespace core_completion;
 
+use cm_info;
+use coding_exception;
+use moodle_exception;
 /**
  * Base class for defining an activity module's custom completion rules.
  *

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_dataprivacy\task;
 
+use coding_exception;
+use core\task\adhoc_task;
+use tool_dataprivacy\api;
+use tool_dataprivacy\contextlist_context;
+use tool_dataprivacy\data_request;
 /**
  * Class that processes a data request and prepares the user's relevant contexts for review.
  *

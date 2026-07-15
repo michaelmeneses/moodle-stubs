@@ -8,6 +8,7 @@
  */
 namespace Kevinrob\GuzzleCache\Storage;
 
+use Kevinrob\GuzzleCache\CacheEntry;
 /**
  * This cache class is backed by a PHP Array.
  */

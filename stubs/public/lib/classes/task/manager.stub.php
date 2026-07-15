@@ -30,6 +30,9 @@
  */
 namespace core\task;
 
+use core\lock\lock;
+use core\lock\lock_factory;
+use core_shutdown_manager;
 define('CORE_TASK_TASKS_FILENAME', 'db/tasks.php');
 /**
  * Collection of task related methods.

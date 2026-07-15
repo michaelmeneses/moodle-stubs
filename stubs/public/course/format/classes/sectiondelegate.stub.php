@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat;
 
+use action_menu;
+use renderer_base;
+use section_info;
+use core_courseformat\stateupdates;
+use core_courseformat\output\local\content\section\controlmenu;
+use core_courseformat\base as course_format;
+use stdClass;
 /**
  * Section delegate base class.
  *

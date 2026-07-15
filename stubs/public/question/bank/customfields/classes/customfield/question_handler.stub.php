@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_customfields\customfield;
 
+use core_customfield\api;
+use core_customfield\field_controller;
+use core_customfield\output\field_data;
 /**
  * Question handler for custom fields.
  *

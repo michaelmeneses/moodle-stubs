@@ -29,6 +29,16 @@
  */
 namespace mod_forum\local\exporters;
 
+use mod_forum\local\entities\post as post_entity;
+use mod_forum\local\entities\discussion as discussion_entity;
+use mod_forum\local\exporters\author as author_exporter;
+use mod_forum\local\factories\exporter as exporter_factory;
+use core\external\exporter;
+use core_files\external\stored_file_exporter;
+use context;
+use core_tag_tag;
+use renderer_base;
+use stdClass;
 /**
  * Post exporter class.
  *

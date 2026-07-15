@@ -31,6 +31,9 @@
  */
 namespace core_badges\form;
 
+use html_writer;
+use moodleform;
+use stdClass;
 /**
  * Form to edit backpack initial details.
  *

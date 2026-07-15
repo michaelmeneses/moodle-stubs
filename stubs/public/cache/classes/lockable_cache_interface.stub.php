@@ -20,46 +20,55 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * Cache store feature: locking.
- *
- * This is a feature that cache stores can implement if they wish to support locking themselves rather
- * than having the cache loader handle it for them.
- *
- * Can be implemented by classes already implementing store.
- * @package core_cache
- * @copyright Sam Hemelryk
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-interface lockable_cache_interface
-{
+namespace core_cache {
     /**
-     * Acquires a lock on the given key for the given identifier.
+     * Cache store feature: locking.
      *
-     * @param string $key The key we are locking.
-     * @param string $ownerid The identifier so we can check if we have the lock or if it is someone else.
-     *      The use of this property is entirely optional and implementations can act as they like upon it.
-     * @return bool True if the lock could be acquired, false otherwise.
+     * This is a feature that cache stores can implement if they wish to support locking themselves rather
+     * than having the cache loader handle it for them.
+     *
+     * Can be implemented by classes already implementing store.
+     * @package core_cache
+     * @copyright Sam Hemelryk
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function acquire_lock($key, $ownerid);
+    interface lockable_cache_interface
+    {
+        /**
+         * Acquires a lock on the given key for the given identifier.
+         *
+         * @param string $key The key we are locking.
+         * @param string $ownerid The identifier so we can check if we have the lock or if it is someone else.
+         *      The use of this property is entirely optional and implementations can act as they like upon it.
+         * @return bool True if the lock could be acquired, false otherwise.
+         */
+        public function acquire_lock($key, $ownerid);
+        /**
+         * Test if there is already a lock for the given key and if there is whether it belongs to the calling code.
+         *
+         * @param string $key The key we are locking.
+         * @param string $ownerid The identifier so we can check if we have the lock or if it is someone else.
+         * @return bool True if this code has the lock, false if there is a lock but this code doesn't have it, null if there
+         *      is no lock.
+         */
+        public function check_lock_state($key, $ownerid);
+        /**
+         * Releases the lock on the given key.
+         *
+         * @param string $key The key we are locking.
+         * @param string $ownerid The identifier so we can check if we have the lock or if it is someone else.
+         *      The use of this property is entirely optional and implementations can act as they like upon it.
+         * @return bool True if the lock has been released, false if there was a problem releasing the lock.
+         */
+        public function release_lock($key, $ownerid);
+    }
+}
+namespace {
     /**
-     * Test if there is already a lock for the given key and if there is whether it belongs to the calling code.
-     *
-     * @param string $key The key we are locking.
-     * @param string $ownerid The identifier so we can check if we have the lock or if it is someone else.
-     * @return bool True if this code has the lock, false if there is a lock but this code doesn't have it, null if there
-     *      is no lock.
+     * Runtime class alias of \core_cache\lockable_cache_interface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function check_lock_state($key, $ownerid);
-    /**
-     * Releases the lock on the given key.
-     *
-     * @param string $key The key we are locking.
-     * @param string $ownerid The identifier so we can check if we have the lock or if it is someone else.
-     *      The use of this property is entirely optional and implementations can act as they like upon it.
-     * @return bool True if the lock has been released, false if there was a problem releasing the lock.
-     */
-    public function release_lock($key, $ownerid);
+    interface cache_is_lockable extends \core_cache\lockable_cache_interface
+    {
+    }
 }

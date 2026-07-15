@@ -8,6 +8,12 @@
  */
 namespace Aws\Crypto;
 
+use Aws\Crypto\Cipher\CipherMethod;
+use Aws\Exception\CryptoException;
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\LimitStream;
+use PHPUnit\Framework\Constraint\IsEmpty;
+use Psr\Http\Message\StreamInterface;
 trait DecryptionTraitV3
 {
     /**

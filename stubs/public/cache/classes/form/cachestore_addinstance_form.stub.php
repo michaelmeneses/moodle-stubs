@@ -20,24 +20,35 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache\form;
-
-/**
- * Add store instance form.
- *
- * @package    core_cache
- * @category   cache
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class cachestore_addinstance_form extends moodleform
-{
-    #[\Override]
-    final protected function definition()
+namespace core_cache\form {
+    use core_cache\administration_helper;
+    use moodleform;
+    /**
+     * Add store instance form.
+     *
+     * @package    core_cache
+     * @category   cache
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     */
+    class cachestore_addinstance_form extends moodleform
     {
+        #[\Override]
+        final protected function definition()
+        {
+        }
+        #[\Override]
+        public function validation($data, $files)
+        {
+        }
     }
-    #[\Override]
-    public function validation($data, $files)
+}
+namespace {
+    /**
+     * Runtime class alias of \core_cache\form\cachestore_addinstance_form registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class cachestore_addinstance_form extends \core_cache\form\cachestore_addinstance_form
     {
     }
 }

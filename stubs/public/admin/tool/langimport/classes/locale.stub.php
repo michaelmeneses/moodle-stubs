@@ -29,6 +29,7 @@
  */
 namespace tool_langimport;
 
+use coding_exception;
 /**
  * Helper class for the language import tool.
  *

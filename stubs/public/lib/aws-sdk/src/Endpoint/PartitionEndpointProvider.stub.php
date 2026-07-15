@@ -8,6 +8,7 @@
  */
 namespace Aws\Endpoint;
 
+use JmesPath\Env;
 class PartitionEndpointProvider
 {
     /** @var Partition[] */

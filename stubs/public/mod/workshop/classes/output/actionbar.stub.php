@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_workshop\output;
 
+use moodle_url;
+use renderer_base;
+use url_select;
+use renderable;
+use templatable;
 /**
  * Output the rendered elements for the tertiary nav for page action.
  *

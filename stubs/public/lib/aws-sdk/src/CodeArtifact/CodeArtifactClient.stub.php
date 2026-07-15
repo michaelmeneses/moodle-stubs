@@ -8,6 +8,7 @@
  */
 namespace Aws\CodeArtifact;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **CodeArtifact** service.
  * @method \Aws\Result associateExternalConnection(array $args = [])

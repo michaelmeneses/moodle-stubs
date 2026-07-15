@@ -22,6 +22,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\content;
 
+use core\context\course as context_course;
+use core\output\action_menu;
+use core\output\action_menu\link_secondary;
+use core\output\named_templatable;
+use core\output\pix_icon;
+use core\output\renderable;
+use core\output\renderer_base;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\courseformat_named_templatable;
+use core\url;
+use section_info;
+use cm_info;
+use stdClass;
 /**
  * Base class to render course element controls.
  *

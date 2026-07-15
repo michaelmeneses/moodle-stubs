@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\plugininfo;
 
+use core\url;
 /**
  * Plugin information for the gradepenalty plugin type.
  *

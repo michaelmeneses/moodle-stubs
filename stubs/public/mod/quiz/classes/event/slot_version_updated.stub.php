@@ -8,6 +8,8 @@
  */
 namespace mod_quiz\event;
 
+use core\exception\coding_exception;
+use core\url;
 /**
  * The question version of a slot has changed.
  *

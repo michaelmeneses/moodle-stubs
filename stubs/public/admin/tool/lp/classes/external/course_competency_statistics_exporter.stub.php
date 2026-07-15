@@ -29,6 +29,10 @@
  */
 namespace tool_lp\external;
 
+use renderer_base;
+use moodle_url;
+use core_competency\external\competency_exporter;
+use core_competency\external\performance_helper;
 /**
  * Class for exporting a course competency statistics summary.
  *

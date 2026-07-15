@@ -29,6 +29,17 @@
  */
 namespace gradereport_singleview\local\screen;
 
+use context_course;
+use grade_seq;
+use gradereport_singleview;
+use moodle_url;
+use pix_icon;
+use html_writer;
+use gradereport_singleview\local\ui\range;
+use gradereport_singleview\local\ui\bulk_insert;
+use grade_item;
+use grade_grade;
+use stdClass;
 /**
  * The user screen.
  *

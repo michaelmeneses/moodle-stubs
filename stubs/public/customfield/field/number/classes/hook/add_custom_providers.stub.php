@@ -8,6 +8,8 @@
  */
 namespace customfield_number\hook;
 
+use customfield_number\provider_base;
+use customfield_number\field_controller;
 /**
  * Hook for adding custom providers to the provider_base.
  *

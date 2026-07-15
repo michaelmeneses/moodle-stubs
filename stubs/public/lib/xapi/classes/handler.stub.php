@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_xapi;
 
+use core_xapi\local\state;
+use core_xapi\local\statement;
+use core_xapi\xapi_exception;
 /**
  * Class handler handles basic xAPI statements and states.
  *

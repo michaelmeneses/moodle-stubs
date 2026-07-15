@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\route\shim;
 
+use core\param;
+use core\router\route;
+use core\router\schema\parameters\query_parameter;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Redirect requests for /error/index.php and /error to the page_not_found_controller.
  *

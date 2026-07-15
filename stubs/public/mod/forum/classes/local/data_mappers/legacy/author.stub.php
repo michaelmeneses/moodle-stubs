@@ -29,6 +29,8 @@
  */
 namespace mod_forum\local\data_mappers\legacy;
 
+use mod_forum\local\entities\author as author_entity;
+use stdClass;
 /**
  * Convert an author entity into an stdClass.
  *

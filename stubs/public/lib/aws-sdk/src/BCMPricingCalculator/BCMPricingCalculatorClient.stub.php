@@ -8,6 +8,7 @@
  */
 namespace Aws\BCMPricingCalculator;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Billing and Cost Management Pricing Calculator** service.
  * @method \Aws\Result batchCreateBillScenarioCommitmentModification(array $args = [])

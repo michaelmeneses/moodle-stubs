@@ -29,6 +29,11 @@
  */
 namespace core_tag\output;
 
+use templatable;
+use renderer_base;
+use stdClass;
+use core_tag_tag;
+use context;
 /**
  * Class to preapare a list of tags for display, usually the list of tags some entry is tagged with.
  *

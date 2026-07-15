@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\privacy;
 
+use core_privacy\local\metadata\collection;
 /**
  * Privacy provider implementation for courseformat core subsystem.
  *

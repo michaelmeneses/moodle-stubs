@@ -29,6 +29,8 @@
  */
 namespace qbank_deletequestion;
 
+use core_question\local\bank\question_version_status;
+use core_question\local\bank\question_action_base;
 /**
  * Action to delete (or hide) a question, or restore a previously hidden question.
  *

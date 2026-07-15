@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\task;
 
+use core\task\adhoc_task;
+use core\task\manager;
+use Matrix\Exception;
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\proxy\recording_proxy;
+use mod_bigbluebuttonbn\logger;
+use mod_bigbluebuttonbn\recording;
+use moodle_exception;
 /**
  * Class containing the scheduled task for converting recordings for the BigBlueButton version 2.5 in Moodle 4.0.
  *

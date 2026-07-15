@@ -8,6 +8,7 @@
  */
 namespace Aws\SecretsManager;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Secrets Manager** service.
  * @method \Aws\Result batchGetSecretValue(array $args = [])

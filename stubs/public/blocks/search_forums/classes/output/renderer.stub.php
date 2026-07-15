@@ -29,6 +29,8 @@
  */
 namespace block_search_forums\output;
 
+use plugin_renderer_base;
+use renderable;
 /**
  * Block search forums renderer.
  *

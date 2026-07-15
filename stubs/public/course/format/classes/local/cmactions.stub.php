@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\local;
 
+use core\exception\moodle_exception;
+use core_courseformat\sectiondelegatemodule;
+use core_text;
+use course_modinfo;
 /**
  * Course module course format actions.
  *

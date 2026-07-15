@@ -29,6 +29,8 @@
  */
 namespace core_h5p;
 
+use Moodle\H5peditorStorage;
+use stdClass;
 /**
  * Moodle's implementation of the H5P Editor storage interface.
  *

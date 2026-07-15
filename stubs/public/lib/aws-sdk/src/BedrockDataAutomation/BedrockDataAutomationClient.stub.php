@@ -8,6 +8,7 @@
  */
 namespace Aws\BedrockDataAutomation;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Data Automation for Amazon Bedrock** service.
  * @method \Aws\Result createBlueprint(array $args = [])

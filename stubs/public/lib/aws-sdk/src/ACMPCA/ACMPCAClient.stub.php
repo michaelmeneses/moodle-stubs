@@ -8,6 +8,7 @@
  */
 namespace Aws\ACMPCA;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Certificate Manager Private Certificate Authority** service.
  * @method \Aws\Result createCertificateAuthority(array $args = [])

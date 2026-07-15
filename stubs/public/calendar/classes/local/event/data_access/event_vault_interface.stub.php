@@ -29,6 +29,7 @@
  */
 namespace core_calendar\local\event\data_access;
 
+use core_calendar\local\event\entities\event_interface;
 /**
  * Interface for an event vault class
  *

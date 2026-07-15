@@ -8,6 +8,16 @@
  */
 namespace core_badges\reportbuilder\local\entities;
 
+use core\{context, context_helper};
+use core\context\system;
+use html_writer;
+use lang_string;
+use moodle_url;
+use stdClass;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{date, select, text};
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Badge entity
  *

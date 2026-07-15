@@ -29,6 +29,9 @@
  */
 namespace mod_forum\local\entities;
 
+use mod_forum\local\entities\discussion as discussion_entity;
+use context;
+use stdClass;
 /**
  * Forum class.
  *

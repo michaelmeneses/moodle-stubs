@@ -30,6 +30,8 @@
  */
 namespace paygw_paypal\privacy;
 
+use core_payment\privacy\paygw_provider;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem implementation for paygw_paypal.
  *

@@ -30,6 +30,8 @@
  */
 namespace mod_h5pactivity\local;
 
+use templatable;
+use stdClass;
 /**
  * Interface for any mod_h5pactivity report.
  *

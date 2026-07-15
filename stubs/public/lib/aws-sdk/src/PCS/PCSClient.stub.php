@@ -8,6 +8,7 @@
  */
 namespace Aws\PCS;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Parallel Computing Service** service.
  * @method \Aws\Result createCluster(array $args = [])

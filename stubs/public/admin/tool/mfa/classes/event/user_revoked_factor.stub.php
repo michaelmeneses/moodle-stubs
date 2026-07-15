@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_mfa\event;
 
+use stdClass;
 /**
  * Event for when user successfully revoked MFA Factor.
  *

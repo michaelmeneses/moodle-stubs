@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn;
 
+use mod_bigbluebuttonbn\event\events;
+use stdClass;
 /**
  * Utility class for all logs routines helper.
  *

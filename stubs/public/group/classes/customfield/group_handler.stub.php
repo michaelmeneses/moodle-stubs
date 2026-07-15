@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_group\customfield;
 
+use context;
+use context_course;
+use context_system;
+use core_customfield\api;
+use core_customfield\handler;
+use core_customfield\field_controller;
+use moodle_url;
+use restore_task;
 /**
  * Group handler for custom fields.
  *

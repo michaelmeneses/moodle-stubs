@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Reader\XLSX\Manager\SharedStringsCaching;
 
+use OpenSpout\Reader\Exception\SharedStringNotFoundException;
+use RuntimeException;
+use SplFixedArray;
 /**
  * This class implements the in-memory caching strategy for shared strings.
  * This strategy is used when the number of unique strings is low, compared to the memory available.

@@ -8,6 +8,7 @@
  */
 namespace Aws\ChimeSDKMediaPipelines;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Chime SDK Media Pipelines** service.
  * @method \Aws\Result createMediaCapturePipeline(array $args = [])

@@ -8,6 +8,12 @@
  */
 namespace OpenSpout\Writer\XLSX\Manager\Style;
 
+use OpenSpout\Common\Entity\Style\BorderPart;
+use OpenSpout\Common\Entity\Style\Color;
+use OpenSpout\Common\Entity\Style\Style;
+use OpenSpout\Common\Helper\Escaper\XLSX as XLSXEscaper;
+use OpenSpout\Writer\Common\Manager\Style\AbstractStyleManager as CommonStyleManager;
+use OpenSpout\Writer\XLSX\Helper\BorderHelper;
 /**
  * @internal
  *

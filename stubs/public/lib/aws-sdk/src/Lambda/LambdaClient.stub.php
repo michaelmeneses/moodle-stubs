@@ -8,6 +8,9 @@
  */
 namespace Aws\Lambda;
 
+use Aws\AwsClient;
+use Aws\CommandInterface;
+use Aws\Middleware;
 /**
  * This client is used to interact with AWS Lambda
  *

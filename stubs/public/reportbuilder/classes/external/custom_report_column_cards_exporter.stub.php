@@ -8,6 +8,8 @@
  */
 namespace core_reportbuilder\external;
 
+use renderer_base;
+use core_reportbuilder\datasource;
 /**
  * Custom report column cards exporter class
  *

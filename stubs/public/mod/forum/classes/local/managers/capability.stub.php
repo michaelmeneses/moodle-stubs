@@ -29,6 +29,17 @@
  */
 namespace mod_forum\local\managers;
 
+use mod_forum\local\data_mappers\legacy\forum as legacy_forum_data_mapper;
+use mod_forum\local\data_mappers\legacy\discussion as legacy_discussion_data_mapper;
+use mod_forum\local\data_mappers\legacy\post as legacy_post_data_mapper;
+use mod_forum\local\entities\discussion as discussion_entity;
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\entities\post as post_entity;
+use mod_forum\subscriptions;
+use context;
+use context_system;
+use stdClass;
+use moodle_exception;
 /**
  * Capability manager for the forum.
  *

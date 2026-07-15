@@ -29,6 +29,11 @@
  */
 namespace core_tag\output;
 
+use context_system;
+use lang_string;
+use html_writer;
+use core_tag_collection;
+use moodle_url;
 /**
  * Class to preapare a tag name for display.
  *

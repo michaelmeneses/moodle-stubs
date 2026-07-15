@@ -20,25 +20,34 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * An request cache.
- *
- * This class is used for request caches returned by the cache::make methods.
- *
- * This cache class should never be interacted with directly. Instead you should always use the cache::make methods.
- * It is technically possible to call those methods through this class however there is no guarantee that you will get an
- * instance of this class back again.
- *
- * @internal don't use me directly.
- *
- * @package    core_cache
- * @category   cache
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class request_cache extends cache
-{
-    // This comment appeases code pre-checker ;) !
+namespace core_cache {
+    /**
+     * An request cache.
+     *
+     * This class is used for request caches returned by the cache::make methods.
+     *
+     * This cache class should never be interacted with directly. Instead you should always use the cache::make methods.
+     * It is technically possible to call those methods through this class however there is no guarantee that you will get an
+     * instance of this class back again.
+     *
+     * @internal don't use me directly.
+     *
+     * @package    core_cache
+     * @category   cache
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     */
+    class request_cache extends cache
+    {
+        // This comment appeases code pre-checker ;) !
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core_cache\request_cache registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class cache_request extends \core_cache\request_cache
+    {
+    }
 }

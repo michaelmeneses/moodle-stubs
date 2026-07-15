@@ -8,6 +8,34 @@
  */
 namespace Aws\S3;
 
+use Aws\Api\ApiProvider;
+use Aws\Api\DocModel;
+use Aws\Api\Service;
+use Aws\AwsClient;
+use Aws\CacheInterface;
+use Aws\ClientResolver;
+use Aws\Command;
+use Aws\CommandInterface;
+use Aws\Configuration\ConfigurationResolver;
+use Aws\Exception\AwsException;
+use Aws\HandlerList;
+use Aws\Identity\S3\S3ExpressIdentityProvider;
+use Aws\InputValidationMiddleware;
+use Aws\Middleware;
+use Aws\ResultInterface;
+use Aws\Retry\QuotaManager;
+use Aws\RetryMiddleware;
+use Aws\RetryMiddlewareV2;
+use Aws\S3\Parser\GetBucketLocationResultMutator;
+use Aws\S3\Parser\S3Parser;
+use Aws\S3\Parser\ValidateResponseChecksumResultMutator;
+use Aws\S3\RegionalEndpoint\ConfigurationProvider;
+use Aws\S3\UseArnRegion\Configuration;
+use Aws\S3\UseArnRegion\ConfigurationInterface;
+use Aws\S3\UseArnRegion\ConfigurationProvider as UseArnRegionConfigurationProvider;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Promise\PromiseInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * Client used to interact with **Amazon Simple Storage Service (Amazon S3)**.
  *

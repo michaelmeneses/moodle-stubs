@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Common\Entity;
 
+use DateInterval;
+use DateTimeInterface;
+use OpenSpout\Common\Entity\Style\Style;
 final class Row
 {
     /**

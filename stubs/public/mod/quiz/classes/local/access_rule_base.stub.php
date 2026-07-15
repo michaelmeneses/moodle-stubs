@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\local;
 
+use mod_quiz\form\preflight_check_form;
+use mod_quiz_mod_form;
+use moodle_page;
+use MoodleQuickForm;
+use mod_quiz\quiz_settings;
+use stdClass;
 /**
  * Base class for rules that restrict the ability to attempt a quiz.
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\Route53Profiles;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Route 53 Profiles** service.
  * @method \Aws\Result associateProfile(array $args = [])

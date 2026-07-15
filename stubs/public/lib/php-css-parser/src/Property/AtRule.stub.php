@@ -8,6 +8,8 @@
  */
 namespace Sabberworm\CSS\Property;
 
+use Sabberworm\CSS\Comment\Commentable;
+use Sabberworm\CSS\Renderable;
 interface AtRule extends Renderable, Commentable
 {
     /**

@@ -30,6 +30,9 @@
  */
 namespace mod_lti\local\ltiservice;
 
+// TODO: Switch to core oauthlib once implemented - MDL-30149.
+use moodle\mod\lti as lti;
+use stdClass;
 /**
  * The mod_lti\local\ltiservice\service_base class.
  *

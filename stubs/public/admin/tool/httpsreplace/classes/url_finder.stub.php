@@ -29,6 +29,8 @@
  */
 namespace tool_httpsreplace;
 
+use database_column_info;
+use progress_bar;
 /**
  * Examines DB for non-https src or data links
  *

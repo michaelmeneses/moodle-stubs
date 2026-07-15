@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\courseformat;
 
+use core\output\renderer_helper;
+use core\url;
+use cm_info;
+use core_calendar\output\humandate;
+use core_courseformat\local\overview\overviewitem;
+use core\output\action_link;
+use core\output\local\properties\text_align;
+use core\output\local\properties\button;
+use core_courseformat\output\local\overview\overviewdialog;
+use mod_quiz\dates;
+use mod_quiz\quiz_settings;
 /**
  * Wiki overview integration.
  *

@@ -20,61 +20,70 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_table\output;
-
-/**
- * Component representing a table cell.
- *
- * @copyright 2009 Nicolas Connault
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core_table
- * @category output
- */
-class html_table_cell
-{
+namespace core_table\output {
     /**
-     * @var string Value to use for the id attribute of the cell.
-     */
-    public $id = null;
-    /**
-     * @var string The contents of the cell.
-     */
-    public $text;
-    /**
-     * @var string Abbreviated version of the contents of the cell.
-     */
-    public $abbr = null;
-    /**
-     * @var int Number of columns this cell should span.
-     */
-    public $colspan = null;
-    /**
-     * @var int Number of rows this cell should span.
-     */
-    public $rowspan = null;
-    /**
-     * @var string Defines a way to associate header cells and data cells in a table.
-     */
-    public $scope = null;
-    /**
-     * @var bool Whether or not this cell is a header cell.
-     */
-    public $header = null;
-    /**
-     * @var string Value to use for the style attribute of the table cell
-     */
-    public $style = null;
-    /**
-     * @var array Attributes of additional HTML attributes for the <td> element
-     */
-    public $attributes = [];
-    /**
-     * Constructs a table cell
+     * Component representing a table cell.
      *
-     * @param string $text
+     * @copyright 2009 Nicolas Connault
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core_table
+     * @category output
      */
-    public function __construct($text = null)
+    class html_table_cell
+    {
+        /**
+         * @var string Value to use for the id attribute of the cell.
+         */
+        public $id = null;
+        /**
+         * @var string The contents of the cell.
+         */
+        public $text;
+        /**
+         * @var string Abbreviated version of the contents of the cell.
+         */
+        public $abbr = null;
+        /**
+         * @var int Number of columns this cell should span.
+         */
+        public $colspan = null;
+        /**
+         * @var int Number of rows this cell should span.
+         */
+        public $rowspan = null;
+        /**
+         * @var string Defines a way to associate header cells and data cells in a table.
+         */
+        public $scope = null;
+        /**
+         * @var bool Whether or not this cell is a header cell.
+         */
+        public $header = null;
+        /**
+         * @var string Value to use for the style attribute of the table cell
+         */
+        public $style = null;
+        /**
+         * @var array Attributes of additional HTML attributes for the <td> element
+         */
+        public $attributes = [];
+        /**
+         * Constructs a table cell
+         *
+         * @param string $text
+         */
+        public function __construct($text = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core_table\output\html_table_cell registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class html_table_cell extends \core_table\output\html_table_cell
     {
     }
 }

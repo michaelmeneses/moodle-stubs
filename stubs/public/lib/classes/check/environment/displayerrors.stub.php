@@ -34,6 +34,8 @@
  */
 namespace core\check\environment;
 
+use core\check\result;
+use core\check\check;
 /**
  * Verifies displaying of errors
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_backup\hook;
 
+use stdClass;
+use restore_plan;
 /**
  * Hook used to allow interaction with the copy task, before the actual task execution takes place.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_openai\aimodel;
 
+use core_ai\aimodel\base;
+use MoodleQuickForm;
 /**
  * GPT-4o AI model.
  *

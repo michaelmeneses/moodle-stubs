@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\moodlenet;
 
+use core\http_client;
+use core\oauth2\client;
+use stored_file;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * MoodleNet client which handles direct outbound communication with MoodleNet instances.
  *

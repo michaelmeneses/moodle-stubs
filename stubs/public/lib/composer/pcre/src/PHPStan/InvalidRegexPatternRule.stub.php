@@ -8,6 +8,19 @@
  */
 namespace Composer\Pcre\PHPStan;
 
+use Composer\Pcre\Preg;
+use Composer\Pcre\Regex;
+use Composer\Pcre\PcreException;
+use Nette\Utils\RegexpException;
+use Nette\Utils\Strings;
+use PhpParser\Node;
+use PhpParser\Node\Expr\StaticCall;
+use PhpParser\Node\Name\FullyQualified;
+use PHPStan\Analyser\Scope;
+use PHPStan\Rules\Rule;
+use PHPStan\Rules\RuleErrorBuilder;
+use function in_array;
+use function sprintf;
 /**
  * Copy of PHPStan's RegularExpressionPatternRule
  *

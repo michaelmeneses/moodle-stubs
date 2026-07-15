@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_user\form;
 
+use core\di;
+use core\hook\manager;
+use core\lang_string;
+use core_user\hook\extend_default_homepage;
 /**
  * Form to allow user to set their default home page
  *

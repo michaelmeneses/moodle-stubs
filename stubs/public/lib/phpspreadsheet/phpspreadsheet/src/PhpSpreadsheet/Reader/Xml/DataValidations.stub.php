@@ -8,6 +8,12 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xml;
 
+use PhpOffice\PhpSpreadsheet\Cell\AddressHelper;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Cell\DataValidation;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Namespaces;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use SimpleXMLElement;
 class DataValidations
 {
     private const OPERATOR_MAPPINGS = ['between' => DataValidation::OPERATOR_BETWEEN, 'equal' => DataValidation::OPERATOR_EQUAL, 'greater' => DataValidation::OPERATOR_GREATERTHAN, 'greaterorequal' => DataValidation::OPERATOR_GREATERTHANOREQUAL, 'less' => DataValidation::OPERATOR_LESSTHAN, 'lessorequal' => DataValidation::OPERATOR_LESSTHANOREQUAL, 'notbetween' => DataValidation::OPERATOR_NOTBETWEEN, 'notequal' => DataValidation::OPERATOR_NOTEQUAL];

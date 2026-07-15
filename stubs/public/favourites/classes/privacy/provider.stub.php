@@ -29,6 +29,10 @@
  */
 namespace core_favourites\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\context;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\transform;
 /**
  * Privacy class for requesting user data.
  *

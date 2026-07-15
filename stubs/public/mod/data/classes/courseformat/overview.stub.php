@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\courseformat;
 
+use cm_info;
+use core\url;
+use mod_data\dates;
+use mod_data\manager;
+use core_calendar\output\humandate;
+use core\output\local\properties\text_align;
+use core_courseformat\local\overview\overviewitem;
+use core_courseformat\output\local\overview\overviewaction;
 /**
  * Database activity overview integration.
  *

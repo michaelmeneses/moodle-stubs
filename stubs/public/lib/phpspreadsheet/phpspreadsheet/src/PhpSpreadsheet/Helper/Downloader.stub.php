@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Helper;
 
+use PhpOffice\PhpSpreadsheet\Exception;
 /**
  * Assist downloading files when samples are run in browser.
  * Never run as part of unit tests, which are command line.

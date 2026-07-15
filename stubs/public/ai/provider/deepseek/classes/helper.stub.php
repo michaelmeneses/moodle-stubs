@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_deepseek;
 
+use core_ai\aimodel\base;
 /**
  * Helper class for the Deepseek provider.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_admin_presets\local\action;
 
+use stdClass;
+use tool_admin_presets\form\continue_form;
 /**
  * This class extends base class and handles rollback function.
  *

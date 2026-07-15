@@ -8,6 +8,11 @@
  */
 namespace core_reportbuilder\external;
 
+use renderer_base;
+use core\external\exporter;
+use core_reportbuilder\datasource;
+use core_reportbuilder\form\condition;
+use core_reportbuilder\local\report\filter;
 /**
  * Custom report conditions exporter class
  *

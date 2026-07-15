@@ -20,45 +20,54 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_filters;
-
-/**
- * Filter manager subclass that tracks how much work it does.
- *
- * @package core_filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class performance_measuring_filter_manager extends filter_manager
-{
-    /** @var int number of filter objects created. */
-    protected int $filterscreated = 0;
-    /** @var int number of calls to filter_text. */
-    protected int $textsfiltered = 0;
-    /** @var int number of calls to filter_string. */
-    protected int $stringsfiltered = 0;
-    #[\Override]
-    protected function unload_all_filters()
-    {
-    }
-    #[\Override]
-    protected function make_filter_object($filtername, $context, $localconfig)
-    {
-    }
-    #[\Override]
-    public function filter_text($text, $context, array $options = [], ?array $skipfilters = null)
-    {
-    }
-    #[\Override]
-    public function filter_string($string, $context)
-    {
-    }
+namespace core_filters {
     /**
-     * Return performance information, in the form required by {@see get_performance_info()}.
+     * Filter manager subclass that tracks how much work it does.
      *
-     * @return array the performance info.
+     * @package core_filters
+     * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function get_performance_summary(): array
+    class performance_measuring_filter_manager extends filter_manager
+    {
+        /** @var int number of filter objects created. */
+        protected int $filterscreated = 0;
+        /** @var int number of calls to filter_text. */
+        protected int $textsfiltered = 0;
+        /** @var int number of calls to filter_string. */
+        protected int $stringsfiltered = 0;
+        #[\Override]
+        protected function unload_all_filters()
+        {
+        }
+        #[\Override]
+        protected function make_filter_object($filtername, $context, $localconfig)
+        {
+        }
+        #[\Override]
+        public function filter_text($text, $context, array $options = [], ?array $skipfilters = null)
+        {
+        }
+        #[\Override]
+        public function filter_string($string, $context)
+        {
+        }
+        /**
+         * Return performance information, in the form required by {@see get_performance_info()}.
+         *
+         * @return array the performance info.
+         */
+        public function get_performance_summary(): array
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core_filters\performance_measuring_filter_manager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class performance_measuring_filter_manager extends \core_filters\performance_measuring_filter_manager
     {
     }
 }

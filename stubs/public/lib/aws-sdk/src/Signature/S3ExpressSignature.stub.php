@@ -8,6 +8,9 @@
  */
 namespace Aws\Signature;
 
+use Aws\Credentials\Credentials;
+use Aws\Credentials\CredentialsInterface;
+use Psr\Http\Message\RequestInterface;
 class S3ExpressSignature extends S3SignatureV4
 {
     public function signRequest(RequestInterface $request, CredentialsInterface $credentials, $signingService = 's3express')

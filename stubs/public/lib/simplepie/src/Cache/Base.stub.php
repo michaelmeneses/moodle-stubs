@@ -47,69 +47,78 @@
  * @link http://simplepie.org/ SimplePie
  * @license http://www.opensource.org/licenses/bsd-license.php BSD License
  */
-namespace SimplePie\Cache;
-
-/**
- * Base for cache objects
- *
- * Classes to be used with {@see \SimplePie\Cache::register()} are expected
- * to implement this interface.
- *
- * @package SimplePie
- * @subpackage Caching
- * @deprecated since SimplePie 1.8.0, use "Psr\SimpleCache\CacheInterface" instead
- */
-interface Base
-{
+namespace SimplePie\Cache {
     /**
-     * Feed cache type
+     * Base for cache objects
      *
-     * @var string
+     * Classes to be used with {@see \SimplePie\Cache::register()} are expected
+     * to implement this interface.
+     *
+     * @package SimplePie
+     * @subpackage Caching
+     * @deprecated since SimplePie 1.8.0, use "Psr\SimpleCache\CacheInterface" instead
      */
-    public const TYPE_FEED = 'spc';
+    interface Base
+    {
+        /**
+         * Feed cache type
+         *
+         * @var string
+         */
+        public const TYPE_FEED = 'spc';
+        /**
+         * Image cache type
+         *
+         * @var string
+         */
+        public const TYPE_IMAGE = 'spi';
+        /**
+         * Create a new cache object
+         *
+         * @param string $location Location string (from SimplePie::$cache_location)
+         * @param string $name Unique ID for the cache
+         * @param Base::TYPE_FEED|Base::TYPE_IMAGE $type Either TYPE_FEED for SimplePie data, or TYPE_IMAGE for image data
+         */
+        public function __construct($location, $name, $type);
+        /**
+         * Save data to the cache
+         *
+         * @param array|\SimplePie\SimplePie $data Data to store in the cache. If passed a SimplePie object, only cache the $data property
+         * @return bool Successfulness
+         */
+        public function save($data);
+        /**
+         * Retrieve the data saved to the cache
+         *
+         * @return array Data for SimplePie::$data
+         */
+        public function load();
+        /**
+         * Retrieve the last modified time for the cache
+         *
+         * @return int Timestamp
+         */
+        public function mtime();
+        /**
+         * Set the last modified time to the current time
+         *
+         * @return bool Success status
+         */
+        public function touch();
+        /**
+         * Remove the cache
+         *
+         * @return bool Success status
+         */
+        public function unlink();
+    }
+}
+namespace {
     /**
-     * Image cache type
-     *
-     * @var string
+     * Runtime class alias of \SimplePie\Cache\Base registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public const TYPE_IMAGE = 'spi';
-    /**
-     * Create a new cache object
-     *
-     * @param string $location Location string (from SimplePie::$cache_location)
-     * @param string $name Unique ID for the cache
-     * @param Base::TYPE_FEED|Base::TYPE_IMAGE $type Either TYPE_FEED for SimplePie data, or TYPE_IMAGE for image data
-     */
-    public function __construct($location, $name, $type);
-    /**
-     * Save data to the cache
-     *
-     * @param array|\SimplePie\SimplePie $data Data to store in the cache. If passed a SimplePie object, only cache the $data property
-     * @return bool Successfulness
-     */
-    public function save($data);
-    /**
-     * Retrieve the data saved to the cache
-     *
-     * @return array Data for SimplePie::$data
-     */
-    public function load();
-    /**
-     * Retrieve the last modified time for the cache
-     *
-     * @return int Timestamp
-     */
-    public function mtime();
-    /**
-     * Set the last modified time to the current time
-     *
-     * @return bool Success status
-     */
-    public function touch();
-    /**
-     * Remove the cache
-     *
-     * @return bool Success status
-     */
-    public function unlink();
+    interface SimplePie_Cache_Base extends \SimplePie\Cache\Base
+    {
+    }
 }

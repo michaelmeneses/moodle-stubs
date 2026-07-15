@@ -20,118 +20,130 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_table;
-
-/**
- * A table whose data is provided by SQL queries.
- *
- * @package   core_table
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class sql_table extends flexible_table
-{
-    /** @var string The SQL query to count records */
-    public $countsql = null;
-    /** @var array The parameters for the Count SQL */
-    public $countparams = null;
-    /** @var object sql for querying db. Has fields 'fields', 'from', 'where', 'params' */
-    public $sql = null;
-    /** @var array|\Traversable Data fetched from the db */
-    public $rawdata = null;
-    /** @var bool Overriding default for this */
-    public $is_sortable = true;
-    // phpcs:ignore moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
-    /** @var bool Overriding default for this */
-    public $is_collapsible = true;
-    // phpcs:ignore moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
+namespace core_table {
+    use flexible_table;
+    use moodle_recordset;
+    use stdClass;
     /**
-     * Create a new instance of the sql_table.
+     * A table whose data is provided by SQL queries.
      *
-     * @param string $uniqueid a string identifying this table.Used as a key in
-     *                          session  vars.
+     * @package   core_table
+     * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($uniqueid)
+    class sql_table extends flexible_table
     {
+        /** @var string The SQL query to count records */
+        public $countsql = null;
+        /** @var array The parameters for the Count SQL */
+        public $countparams = null;
+        /** @var object sql for querying db. Has fields 'fields', 'from', 'where', 'params' */
+        public $sql = null;
+        /** @var array|\Traversable Data fetched from the db */
+        public $rawdata = null;
+        /** @var bool Overriding default for this */
+        public $is_sortable = true;
+        // phpcs:ignore moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
+        /** @var bool Overriding default for this */
+        public $is_collapsible = true;
+        // phpcs:ignore moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
+        /**
+         * Create a new instance of the sql_table.
+         *
+         * @param string $uniqueid a string identifying this table.Used as a key in
+         *                          session  vars.
+         */
+        public function __construct($uniqueid)
+        {
+        }
+        /**
+         * Build the table from the fetched data.
+         *
+         * Take the data returned from the db_query and go through all the rows
+         * processing each col using either col_{columnname} method or other_cols
+         * method or if other_cols returns NULL then put the data straight into the
+         * table.
+         *
+         * After calling this function, don't forget to call close_recordset.
+         */
+        public function build_table()
+        {
+        }
+        /**
+         * Closes recordset (for use after building the table).
+         */
+        public function close_recordset()
+        {
+        }
+        /**
+         * Get any extra classes names to add to this row in the HTML.
+         *
+         * @param array $row the data for this row.
+         * @return string added to the class="" attribute of the tr.
+         */
+        public function get_row_class($row)
+        {
+        }
+        /**
+         * Set the SQL used to count records.
+         *
+         * This is only needed if you want to use different sql to count rows.
+         * Used for example when perhaps all db JOINS are not needed when counting
+         * records. You don't need to call this function the count_sql
+         * will be generated automatically.
+         *
+         * We need to count rows returned by the db seperately to the query itself
+         * as we need to know how many pages of data we have to display.
+         *
+         * @param string $sql
+         * @param null|array $params
+         */
+        public function set_count_sql($sql, ?array $params = null)
+        {
+        }
+        /**
+         * Set the sql to query the db. Query will be :
+         *      SELECT $fields FROM $from WHERE $where
+         * Of course you can use sub-queries, JOINS etc. by putting them in the
+         * appropriate clause of the query.
+         *
+         * @param string $fields
+         * @param string $from
+         * @param string $where
+         * @param array $params
+         */
+        public function set_sql($fields, $from, $where, array $params = [])
+        {
+        }
+        /**
+         * Query the db. Store results in the table object for use by build_table.
+         *
+         * @param int $pagesize size of page for paginated displayed table.
+         * @param bool $useinitialsbar do you want to use the initials bar. Bar
+         * will only be used if there is a fullname column defined for the table.
+         */
+        public function query_db($pagesize, $useinitialsbar = true)
+        {
+        }
+        /**
+         * Convenience method to call a number of methods for you to display the
+         * table.
+         *
+         * @param int $pagesize
+         * @param bool $useinitialsbar
+         * @param string $downloadhelpbutton
+         */
+        public function out($pagesize, $useinitialsbar, $downloadhelpbutton = '')
+        {
+        }
     }
+}
+namespace {
     /**
-     * Build the table from the fetched data.
-     *
-     * Take the data returned from the db_query and go through all the rows
-     * processing each col using either col_{columnname} method or other_cols
-     * method or if other_cols returns NULL then put the data straight into the
-     * table.
-     *
-     * After calling this function, don't forget to call close_recordset.
+     * Runtime class alias of \core_table\sql_table registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function build_table()
-    {
-    }
-    /**
-     * Closes recordset (for use after building the table).
-     */
-    public function close_recordset()
-    {
-    }
-    /**
-     * Get any extra classes names to add to this row in the HTML.
-     *
-     * @param array $row the data for this row.
-     * @return string added to the class="" attribute of the tr.
-     */
-    public function get_row_class($row)
-    {
-    }
-    /**
-     * Set the SQL used to count records.
-     *
-     * This is only needed if you want to use different sql to count rows.
-     * Used for example when perhaps all db JOINS are not needed when counting
-     * records. You don't need to call this function the count_sql
-     * will be generated automatically.
-     *
-     * We need to count rows returned by the db seperately to the query itself
-     * as we need to know how many pages of data we have to display.
-     *
-     * @param string $sql
-     * @param null|array $params
-     */
-    public function set_count_sql($sql, ?array $params = null)
-    {
-    }
-    /**
-     * Set the sql to query the db. Query will be :
-     *      SELECT $fields FROM $from WHERE $where
-     * Of course you can use sub-queries, JOINS etc. by putting them in the
-     * appropriate clause of the query.
-     *
-     * @param string $fields
-     * @param string $from
-     * @param string $where
-     * @param array $params
-     */
-    public function set_sql($fields, $from, $where, array $params = [])
-    {
-    }
-    /**
-     * Query the db. Store results in the table object for use by build_table.
-     *
-     * @param int $pagesize size of page for paginated displayed table.
-     * @param bool $useinitialsbar do you want to use the initials bar. Bar
-     * will only be used if there is a fullname column defined for the table.
-     */
-    public function query_db($pagesize, $useinitialsbar = true)
-    {
-    }
-    /**
-     * Convenience method to call a number of methods for you to display the
-     * table.
-     *
-     * @param int $pagesize
-     * @param bool $useinitialsbar
-     * @param string $downloadhelpbutton
-     */
-    public function out($pagesize, $useinitialsbar, $downloadhelpbutton = '')
+    class table_sql extends \core_table\sql_table
     {
     }
 }

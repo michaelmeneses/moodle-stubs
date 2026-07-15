@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace format_topics\output;
 
+use core_courseformat\output\section_renderer;
+use moodle_page;
 /**
  * Basic renderer for topics format.
  *

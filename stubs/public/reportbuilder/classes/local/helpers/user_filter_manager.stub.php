@@ -8,6 +8,8 @@
  */
 namespace core_reportbuilder\local\helpers;
 
+use core_reportbuilder\local\models\user_filter;
+use core_text;
 /**
  * This class handles the setting and retrieving of a users' filter values for given reports
  *

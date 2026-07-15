@@ -29,6 +29,10 @@
  */
 namespace mod_data\external;
 
+use core\external\exporter;
+use renderer_base;
+use core_external\external_files;
+use core_external\util as external_util;
 /**
  * Class for exporting content associated to a record.
  *

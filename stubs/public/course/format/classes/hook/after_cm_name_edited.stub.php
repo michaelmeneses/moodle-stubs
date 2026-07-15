@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\hook;
 
+use core\hook\described_hook;
+use cm_info;
 /**
  * Hook for course-module name edited.
  *

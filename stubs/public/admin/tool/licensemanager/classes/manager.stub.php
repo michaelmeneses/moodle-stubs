@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_licensemanager;
 
+use tool_licensemanager\form\edit_license;
+use license_manager;
+use stdClass;
 /**
  * License manager, main controller for tool_licensemanager.
  *

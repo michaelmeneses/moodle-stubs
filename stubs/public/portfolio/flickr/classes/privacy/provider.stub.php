@@ -29,6 +29,7 @@
  */
 namespace portfolio_flickr\privacy;
 
+use core_privacy\local\metadata\collection;
 /**
  * Provider for the portfolio_flickr plugin.
  *

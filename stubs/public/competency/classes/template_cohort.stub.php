@@ -29,6 +29,8 @@
  */
 namespace core_competency;
 
+use lang_string;
+use core_competency\template;
 /**
  * Template cohort persistent.
  *

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\question\bank;
 
+use qbank_viewquestiontype\question_type_column;
 /**
  * Subclass to customise the view of the question bank for the quiz editing screen.
  *

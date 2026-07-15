@@ -8,6 +8,13 @@
  */
 namespace core_user\reportbuilder\datasource;
 
+use lang_string;
+use core_cohort\reportbuilder\local\entities\cohort;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\filters\boolean_select;
+use core_reportbuilder\local\helpers\database;
+use core_tag\reportbuilder\local\entities\tag;
 /**
  * Users datasource
  *

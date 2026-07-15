@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer;
 
+use ZipStream\ZipStream;
 class ZipStream3
 {
     /**

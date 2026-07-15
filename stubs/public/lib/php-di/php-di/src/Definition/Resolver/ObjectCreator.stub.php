@@ -8,6 +8,17 @@
  */
 namespace DI\Definition\Resolver;
 
+use DI\Definition\Definition;
+use DI\Definition\Exception\InvalidDefinition;
+use DI\Definition\ObjectDefinition;
+use DI\Definition\ObjectDefinition\PropertyInjection;
+use DI\DependencyException;
+use DI\Proxy\ProxyFactory;
+use Exception;
+use ProxyManager\Proxy\LazyLoadingInterface;
+use Psr\Container\NotFoundExceptionInterface;
+use ReflectionClass;
+use ReflectionProperty;
 /**
  * Create objects based on an object definition.
  *

@@ -30,6 +30,8 @@
  */
 namespace core_xapi;
 
+use stdClass;
+use moodle_url;
 /**
  * Class to translate Moodle objects to xAPI elements.
  *

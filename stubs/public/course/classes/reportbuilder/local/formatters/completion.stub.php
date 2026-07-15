@@ -8,6 +8,9 @@
  */
 namespace core_course\reportbuilder\local\formatters;
 
+use core_completion\progress;
+use core_reportbuilder\local\helpers\format;
+use stdClass;
 /**
  * Formatters for the course completion entity
  *

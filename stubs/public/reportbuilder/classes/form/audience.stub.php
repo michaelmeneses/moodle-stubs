@@ -8,6 +8,13 @@
  */
 namespace core_reportbuilder\form;
 
+use context;
+use core_form\dynamic_form;
+use core_reportbuilder\local\audiences\base;
+use core_reportbuilder\output\audience_heading_editable;
+use core_reportbuilder\permission;
+use moodle_url;
+use stdClass;
 /**
  * Dynamic audience form
  *

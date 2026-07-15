@@ -29,6 +29,8 @@
  */
 namespace core_tag\external;
 
+use core\external\exporter;
+use renderer_base;
 /**
  * Contains related class for displaying information of a tag area.
  *

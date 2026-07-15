@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Writer\Common\Helper;
 
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Common\Helper\FileSystemHelperInterface;
 /**
  * @internal
  */

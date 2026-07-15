@@ -8,6 +8,15 @@
  */
 namespace OpenSpout\Reader\ODS;
 
+use DOMElement;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Common\Helper\Escaper\ODS;
+use OpenSpout\Reader\Common\XMLProcessor;
+use OpenSpout\Reader\Exception\XMLProcessingException;
+use OpenSpout\Reader\ODS\Helper\CellValueFormatter;
+use OpenSpout\Reader\ODS\Helper\SettingsHelper;
+use OpenSpout\Reader\SheetIteratorInterface;
+use OpenSpout\Reader\Wrapper\XMLReader;
 /**
  * @implements SheetIteratorInterface<Sheet>
  */

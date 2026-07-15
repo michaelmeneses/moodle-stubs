@@ -29,6 +29,7 @@
  */
 namespace tool_templatelibrary\output;
 
+use plugin_renderer_base;
 /**
  * Renderer class for template library.
  *

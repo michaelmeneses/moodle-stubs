@@ -15,6 +15,14 @@
  */
 namespace setasign\Fpdi\PdfReader\DataStructure;
 
+use setasign\Fpdi\Math\Vector;
+use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use setasign\Fpdi\PdfParser\PdfParser;
+use setasign\Fpdi\PdfParser\PdfParserException;
+use setasign\Fpdi\PdfParser\Type\PdfArray;
+use setasign\Fpdi\PdfParser\Type\PdfNumeric;
+use setasign\Fpdi\PdfParser\Type\PdfType;
+use setasign\Fpdi\PdfParser\Type\PdfTypeException;
 /**
  * Class representing a rectangle
  */

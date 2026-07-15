@@ -29,6 +29,7 @@
  */
 namespace mod_forum\task;
 
+use html_writer;
 /**
  * Adhoc task to send moodle forum digests for the specified user.
  *

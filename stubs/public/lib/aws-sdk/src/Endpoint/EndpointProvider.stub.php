@@ -8,6 +8,7 @@
  */
 namespace Aws\Endpoint;
 
+use Aws\Exception\UnresolvedEndpointException;
 /**
  * Endpoint providers.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_grades\table;
 
+use core_admin\table\plugin_management_table;
+use core\url;
 /**
  * Table to manage grade penalty plugin.
  *

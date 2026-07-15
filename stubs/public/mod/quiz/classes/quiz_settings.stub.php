@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz;
 
+use cm_info;
+use coding_exception;
+use context;
+use context_module;
+use core_question\local\bank\question_version_status;
+use mod_quiz\question\bank\qbank_helper;
+use mod_quiz\question\display_options;
+use moodle_exception;
+use moodle_url;
+use question_bank;
+use stdClass;
 /**
  * A class encapsulating the settings for a quiz.
  *

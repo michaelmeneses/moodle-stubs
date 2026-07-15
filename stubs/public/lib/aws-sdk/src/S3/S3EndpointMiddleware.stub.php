@@ -8,6 +8,15 @@
  */
 namespace Aws\S3;
 
+use Aws\Arn\ArnParser;
+use Aws\Arn\ObjectLambdaAccessPointArn;
+use Aws\ClientResolver;
+use Aws\CommandInterface;
+use Aws\Endpoint\EndpointProvider;
+use Aws\Endpoint\PartitionEndpointProvider;
+use GuzzleHttp\Exception\InvalidArgumentException;
+use GuzzleHttp\Psr7\Uri;
+use Psr\Http\Message\RequestInterface;
 /**
  * Used to update the URL used for S3 requests to support:
  * S3 Accelerate, S3 DualStack or Both. It will build to

@@ -8,6 +8,10 @@
  */
 namespace Kevinrob\GuzzleCache\Storage;
 
+use Kevinrob\GuzzleCache\CacheEntry;
+use League\Flysystem\Filesystem;
+use League\Flysystem\FilesystemAdapter;
+use League\Flysystem\FilesystemException;
 class FlysystemStorage implements CacheStorageInterface
 {
     /**

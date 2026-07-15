@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qtype_ordering\output;
 
+use question_attempt;
+use question_display_options;
 /**
  * Create the question formulation, controls ready for output.
  *

@@ -8,6 +8,14 @@
  */
 namespace core_reportbuilder\external\reports;
 
+use core_reportbuilder\manager;
+use core_external\external_api;
+use core_external\external_value;
+use core_external\external_single_structure;
+use core_external\external_function_parameters;
+use core_external\external_warnings;
+use core_reportbuilder\permission;
+use core_reportbuilder\external\{custom_report_data_exporter, custom_report_details_exporter};
 /**
  * External method for retrieving custom report content
  *

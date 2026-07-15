@@ -20,196 +20,205 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * The cache dummy store.
- *
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core_cache
- */
-class dummy_cachestore extends store
-{
+namespace core_cache {
     /**
-     * The name of this store.
-     * @var string
-     */
-    protected $name;
-    /**
-     * Gets set to true if this store is going to store data.
-     * This happens when the definition doesn't require static acceleration as the loader will not be storing information and
-     * something has to.
-     * @var bool
-     */
-    protected $persist = false;
-    /**
-     * The stored data array
-     * @var array
-     */
-    protected $store = [];
-    /**
-     * Cache definition
-     * @var definition
-     */
-    protected $definition;
-    /**
-     * Constructs a dummy store instance.
-     * @param string $name
-     * @param array $configuration
-     */
-    public function __construct($name = 'Dummy store', array $configuration = [])
-    {
-    }
-    /**
-     * Returns true if this store plugin is usable.
-     * @return bool
-     */
-    public static function are_requirements_met()
-    {
-    }
-    /**
-     * Returns true if the user can add an instance.
-     * @return bool
-     */
-    public static function can_add_instance()
-    {
-    }
-    /**
-     * Returns the supported features.
-     * @param array $configuration
-     * @return int
-     */
-    public static function get_supported_features(array $configuration = [])
-    {
-    }
-    /**
-     * Returns the supported mode.
-     * @param array $configuration
-     * @return int
-     */
-    public static function get_supported_modes(array $configuration = [])
-    {
-    }
-    /**
-     * Initialises the store instance for a definition.
-     * @param definition $definition
-     */
-    public function initialise(definition $definition)
-    {
-    }
-    /**
-     * Returns true if this has been initialised.
-     * @return bool
-     */
-    public function is_initialised()
-    {
-    }
-    /**
-     * Returns true the given mode is supported.
-     * @param int $mode
-     * @return bool
-     */
-    public static function is_supported_mode($mode)
-    {
-    }
-    /**
-     * Returns the data for the given key
-     * @param string $key
-     * @return string|false
-     */
-    public function get($key)
-    {
-    }
-    /**
-     * Gets' the values for many keys
-     * @param array $keys
-     * @return bool
-     */
-    public function get_many($keys)
-    {
-    }
-    /**
-     * Sets an item in the cache
-     * @param string $key
-     * @param mixed $data
-     * @return bool
-     */
-    public function set($key, $data)
-    {
-    }
-    /**
-     * Sets many items in the cache
-     * @param array $keyvaluearray
-     * @return int
-     */
-    public function set_many(array $keyvaluearray)
-    {
-    }
-    /**
-     * Deletes an item from the cache
-     * @param string $key
-     * @return bool
-     */
-    public function delete($key)
-    {
-    }
-    /**
-     * Deletes many items from the cache
-     * @param array $keys
-     * @return bool
-     */
-    public function delete_many(array $keys)
-    {
-    }
-    /**
-     * Deletes all of the items from the cache.
-     * @return bool
-     */
-    public function purge()
-    {
-    }
-    /**
-     * Performs any necessary clean up when the store instance is being deleted.
+     * The cache dummy store.
      *
-     * @deprecated since 3.2
-     * @see dummy_cachestore::instance_deleted()
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core_cache
      */
-    public function cleanup()
+    class dummy_cachestore extends store
     {
+        /**
+         * The name of this store.
+         * @var string
+         */
+        protected $name;
+        /**
+         * Gets set to true if this store is going to store data.
+         * This happens when the definition doesn't require static acceleration as the loader will not be storing information and
+         * something has to.
+         * @var bool
+         */
+        protected $persist = false;
+        /**
+         * The stored data array
+         * @var array
+         */
+        protected $store = [];
+        /**
+         * Cache definition
+         * @var definition
+         */
+        protected $definition;
+        /**
+         * Constructs a dummy store instance.
+         * @param string $name
+         * @param array $configuration
+         */
+        public function __construct($name = 'Dummy store', array $configuration = [])
+        {
+        }
+        /**
+         * Returns true if this store plugin is usable.
+         * @return bool
+         */
+        public static function are_requirements_met()
+        {
+        }
+        /**
+         * Returns true if the user can add an instance.
+         * @return bool
+         */
+        public static function can_add_instance()
+        {
+        }
+        /**
+         * Returns the supported features.
+         * @param array $configuration
+         * @return int
+         */
+        public static function get_supported_features(array $configuration = [])
+        {
+        }
+        /**
+         * Returns the supported mode.
+         * @param array $configuration
+         * @return int
+         */
+        public static function get_supported_modes(array $configuration = [])
+        {
+        }
+        /**
+         * Initialises the store instance for a definition.
+         * @param definition $definition
+         */
+        public function initialise(definition $definition)
+        {
+        }
+        /**
+         * Returns true if this has been initialised.
+         * @return bool
+         */
+        public function is_initialised()
+        {
+        }
+        /**
+         * Returns true the given mode is supported.
+         * @param int $mode
+         * @return bool
+         */
+        public static function is_supported_mode($mode)
+        {
+        }
+        /**
+         * Returns the data for the given key
+         * @param string $key
+         * @return string|false
+         */
+        public function get($key)
+        {
+        }
+        /**
+         * Gets' the values for many keys
+         * @param array $keys
+         * @return bool
+         */
+        public function get_many($keys)
+        {
+        }
+        /**
+         * Sets an item in the cache
+         * @param string $key
+         * @param mixed $data
+         * @return bool
+         */
+        public function set($key, $data)
+        {
+        }
+        /**
+         * Sets many items in the cache
+         * @param array $keyvaluearray
+         * @return int
+         */
+        public function set_many(array $keyvaluearray)
+        {
+        }
+        /**
+         * Deletes an item from the cache
+         * @param string $key
+         * @return bool
+         */
+        public function delete($key)
+        {
+        }
+        /**
+         * Deletes many items from the cache
+         * @param array $keys
+         * @return bool
+         */
+        public function delete_many(array $keys)
+        {
+        }
+        /**
+         * Deletes all of the items from the cache.
+         * @return bool
+         */
+        public function purge()
+        {
+        }
+        /**
+         * Performs any necessary clean up when the store instance is being deleted.
+         *
+         * @deprecated since 3.2
+         * @see dummy_cachestore::instance_deleted()
+         */
+        public function cleanup()
+        {
+        }
+        /**
+         * Performs any necessary operation when the store instance is being deleted.
+         *
+         * This method may be called before the store has been initialised.
+         *
+         * @since Moodle 3.2
+         */
+        public function instance_deleted()
+        {
+        }
+        /**
+         * Generates an instance of the cache store that can be used for testing.
+         *
+         * @param definition $definition
+         * @return self
+         */
+        public static function initialise_test_instance(definition $definition)
+        {
+        }
+        /**
+         * Generates the appropriate configuration required for unit testing.
+         *
+         * @return array Array of unit test configuration data to be used by initialise().
+         */
+        public static function unit_test_configuration()
+        {
+        }
+        /**
+         * Returns the name of this instance.
+         * @return string
+         */
+        public function my_name()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Performs any necessary operation when the store instance is being deleted.
-     *
-     * This method may be called before the store has been initialised.
-     *
-     * @since Moodle 3.2
+     * Runtime class alias of \core_cache\dummy_cachestore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function instance_deleted()
-    {
-    }
-    /**
-     * Generates an instance of the cache store that can be used for testing.
-     *
-     * @param definition $definition
-     * @return self
-     */
-    public static function initialise_test_instance(definition $definition)
-    {
-    }
-    /**
-     * Generates the appropriate configuration required for unit testing.
-     *
-     * @return array Array of unit test configuration data to be used by initialise().
-     */
-    public static function unit_test_configuration()
-    {
-    }
-    /**
-     * Returns the name of this instance.
-     * @return string
-     */
-    public function my_name()
+    class cachestore_dummy extends \core_cache\dummy_cachestore
     {
     }
 }

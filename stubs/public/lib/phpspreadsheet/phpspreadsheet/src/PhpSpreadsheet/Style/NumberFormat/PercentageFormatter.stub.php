@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 
+use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 class PercentageFormatter extends BaseFormatter
 {
     /** @param float|int $value */

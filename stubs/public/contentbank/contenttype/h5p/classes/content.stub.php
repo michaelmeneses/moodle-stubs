@@ -29,6 +29,8 @@
  */
 namespace contenttype_h5p;
 
+use core\notification;
+use core_h5p\factory;
 /**
  * H5P Content manager class
  *

@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat;
 
+use core\event\course_module_updated;
+use cm_info;
+use section_info;
+use stdClass;
+use course_modinfo;
+use moodle_exception;
+use context_module;
+use context_course;
 /**
  * Contains the core course state actions.
  *

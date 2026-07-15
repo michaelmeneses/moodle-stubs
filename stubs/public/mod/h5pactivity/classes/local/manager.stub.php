@@ -30,6 +30,16 @@
  */
 namespace mod_h5pactivity\local;
 
+use mod_h5pactivity\local\report\participants;
+use mod_h5pactivity\local\report\attempts;
+use mod_h5pactivity\local\report\results;
+use context_module;
+use cm_info;
+use moodle_recordset;
+use core_user;
+use stdClass;
+use core\dml\sql_join;
+use mod_h5pactivity\event\course_module_viewed;
 /**
  * Class manager for H5P activity
  *

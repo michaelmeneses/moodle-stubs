@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\NumberFormat\Wizard;
 
+use Stringable;
 abstract class DateTimeWizard implements Stringable, Wizard
 {
     protected const NO_ESCAPING_NEEDED = "\$+-/():!^&'~{}<>= ";

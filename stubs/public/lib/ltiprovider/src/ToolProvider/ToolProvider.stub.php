@@ -8,6 +8,12 @@
  */
 namespace IMSGlobal\LTI\ToolProvider;
 
+use IMSGlobal\LTI\Profile\Item;
+use IMSGlobal\LTI\ToolProvider\DataConnector\DataConnector;
+use IMSGlobal\LTI\ToolProvider\MediaType;
+use IMSGlobal\LTI\Profile;
+use IMSGlobal\LTI\HTTPMessage;
+use IMSGlobal\LTI\OAuth;
 /**
  * Class to represent an LTI Tool Provider
  *

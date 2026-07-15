@@ -8,6 +8,7 @@
  */
 namespace DI\Definition\Helper;
 
+use DI\Definition\AutowireDefinition;
 /**
  * Helps defining how to create an instance of a class using autowiring.
  *

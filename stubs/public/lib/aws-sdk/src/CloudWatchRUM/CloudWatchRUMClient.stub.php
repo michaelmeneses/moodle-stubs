@@ -8,6 +8,7 @@
  */
 namespace Aws\CloudWatchRUM;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **CloudWatch RUM** service.
  * @method \Aws\Result batchCreateRumMetricDefinitions(array $args = [])

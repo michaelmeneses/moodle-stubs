@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Common\Entity\Cell;
 
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Style\Style;
 final class NumericCell extends Cell
 {
     private readonly float|int $value;

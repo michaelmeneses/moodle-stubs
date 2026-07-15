@@ -20,52 +20,63 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Basis for all plugin renderers.
- *
- * @copyright Petr Skoda (skodak)
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class plugin_renderer_base extends renderer_base
-{
+namespace core\output {
+    use core\exception\coding_exception;
+    use moodle_page;
     /**
-     * @var renderer_base|core_renderer A reference to the current renderer.
-     * The renderer provided here will be determined by the page but will in 90%
-     * of cases by the {@see core_renderer}
-     */
-    protected $output;
-    /**
-     * Constructor method, calls the parent constructor
+     * Basis for all plugin renderers.
      *
-     * @param moodle_page $page
-     * @param string $target one of rendering target constants
+     * @copyright Petr Skoda (skodak)
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function __construct(moodle_page $page, $target)
+    class plugin_renderer_base extends renderer_base
     {
+        /**
+         * @var renderer_base|core_renderer A reference to the current renderer.
+         * The renderer provided here will be determined by the page but will in 90%
+         * of cases by the {@see core_renderer}
+         */
+        protected $output;
+        /**
+         * Constructor method, calls the parent constructor
+         *
+         * @param moodle_page $page
+         * @param string $target one of rendering target constants
+         */
+        public function __construct(moodle_page $page, $target)
+        {
+        }
+        /**
+         * Renders the provided widget and returns the HTML to display it.
+         *
+         * @param renderable $widget instance with renderable interface
+         * @return string
+         */
+        public function render(renderable $widget)
+        {
+        }
+        /**
+         * Magic method used to pass calls otherwise meant for the standard renderer
+         * to it to ensure we don't go causing unnecessary grief.
+         *
+         * @param string $method
+         * @param array $arguments
+         * @return mixed
+         */
+        public function __call($method, $arguments)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Renders the provided widget and returns the HTML to display it.
-     *
-     * @param renderable $widget instance with renderable interface
-     * @return string
+     * Runtime class alias of \core\output\plugin_renderer_base registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function render(renderable $widget)
-    {
-    }
-    /**
-     * Magic method used to pass calls otherwise meant for the standard renderer
-     * to it to ensure we don't go causing unnecessary grief.
-     *
-     * @param string $method
-     * @param array $arguments
-     * @return mixed
-     */
-    public function __call($method, $arguments)
+    class plugin_renderer_base extends \core\output\plugin_renderer_base
     {
     }
 }

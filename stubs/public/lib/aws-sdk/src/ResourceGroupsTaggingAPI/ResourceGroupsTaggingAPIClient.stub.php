@@ -8,6 +8,7 @@
  */
 namespace Aws\ResourceGroupsTaggingAPI;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Resource Groups Tagging API** service.
  * @method \Aws\Result describeReportCreation(array $args = [])

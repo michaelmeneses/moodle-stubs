@@ -29,6 +29,13 @@
  */
 namespace auth_oauth2;
 
+use pix_icon;
+use moodle_url;
+use core_text;
+use context_system;
+use stdClass;
+use core\oauth2\issuer;
+use core\oauth2\client;
 /**
  * Plugin for oauth2 authentication.
  *

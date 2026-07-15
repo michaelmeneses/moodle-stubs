@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\output;
 
+use tool_brickfield\accessibility;
+use plugin_renderer_base;
+use moodle_url;
+use tabobject;
+use tabtree;
+use html_writer;
+use tool_brickfield\analysis;
+use tool_brickfield\local\tool\filter;
+use tool_brickfield\local\tool\tool;
+use tool_brickfield\manager;
+use tool_brickfield\scheduler;
 /**
  * tool_brickfield renderer
  *

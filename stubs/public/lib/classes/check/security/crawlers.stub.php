@@ -34,6 +34,8 @@
  */
 namespace core\check\security;
 
+use core\check\check;
+use core\check\result;
 /**
  * Verifies web crawler (search engine) access
  *

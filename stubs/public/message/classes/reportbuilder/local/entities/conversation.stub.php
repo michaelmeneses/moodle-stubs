@@ -8,6 +8,12 @@
  */
 namespace core_message\reportbuilder\local\entities;
 
+use core\lang_string;
+use core_message\api;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{boolean_select, date, select, text};
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Conversation entity
  *

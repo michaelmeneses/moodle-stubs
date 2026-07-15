@@ -20,27 +20,38 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\action_menu;
-
-/**
- * A primary action menu action
- *
- * @package core
- * @category output
- * @copyright 2013 Sam Hemelryk
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class link_primary extends link
-{
+namespace core\output\action_menu {
+    use core\output\pix_icon;
+    use moodle_url;
     /**
-     * Constructs the object.
+     * A primary action menu action
      *
-     * @param moodle_url $url
-     * @param pix_icon|null $icon
-     * @param string $text
-     * @param array $attributes
+     * @package core
+     * @category output
+     * @copyright 2013 Sam Hemelryk
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct(moodle_url $url, ?pix_icon $icon, $text, array $attributes = [])
+    class link_primary extends link
+    {
+        /**
+         * Constructs the object.
+         *
+         * @param moodle_url $url
+         * @param pix_icon|null $icon
+         * @param string $text
+         * @param array $attributes
+         */
+        public function __construct(moodle_url $url, ?pix_icon $icon, $text, array $attributes = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\action_menu\link_primary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class action_menu_link_primary extends \core\output\action_menu\link_primary
     {
     }
 }

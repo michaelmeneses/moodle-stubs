@@ -29,6 +29,8 @@
  */
 namespace tool_task\check;
 
+use core\check\check;
+use core\check\result;
 /**
  * Task fail delay check
  *

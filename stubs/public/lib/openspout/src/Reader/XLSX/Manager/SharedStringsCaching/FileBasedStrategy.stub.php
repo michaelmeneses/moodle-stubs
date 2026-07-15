@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Reader\XLSX\Manager\SharedStringsCaching;
 
+use OpenSpout\Common\Helper\FileSystemHelper;
+use OpenSpout\Reader\Exception\SharedStringNotFoundException;
 /**
  * This class implements the file-based caching strategy for shared strings.
  * Shared strings are stored in small files (with a max number of strings per file).

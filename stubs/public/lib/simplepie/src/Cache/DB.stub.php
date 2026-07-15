@@ -47,26 +47,35 @@
  * @link http://simplepie.org/ SimplePie
  * @license http://www.opensource.org/licenses/bsd-license.php BSD License
  */
-namespace SimplePie\Cache;
-
-/**
- * Base class for database-based caches
- *
- * @package SimplePie
- * @subpackage Caching
- * @deprecated since SimplePie 1.8.0, use implementation of "Psr\SimpleCache\CacheInterface" instead
- */
-abstract class DB implements Base
-{
+namespace SimplePie\Cache {
     /**
-     * Helper for database conversion
+     * Base class for database-based caches
      *
-     * Converts a given {@see SimplePie} object into data to be stored
-     *
-     * @param \SimplePie\SimplePie $data
-     * @return array First item is the serialized data for storage, second item is the unique ID for this item
+     * @package SimplePie
+     * @subpackage Caching
+     * @deprecated since SimplePie 1.8.0, use implementation of "Psr\SimpleCache\CacheInterface" instead
      */
-    protected static function prepare_simplepie_object_for_cache($data)
+    abstract class DB implements Base
+    {
+        /**
+         * Helper for database conversion
+         *
+         * Converts a given {@see SimplePie} object into data to be stored
+         *
+         * @param \SimplePie\SimplePie $data
+         * @return array First item is the serialized data for storage, second item is the unique ID for this item
+         */
+        protected static function prepare_simplepie_object_for_cache($data)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \SimplePie\Cache\DB registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    abstract class SimplePie_Cache_DB extends \SimplePie\Cache\DB
     {
     }
 }
