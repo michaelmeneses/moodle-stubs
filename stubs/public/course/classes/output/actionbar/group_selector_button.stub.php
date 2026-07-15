@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\output\actionbar;
 
+use context;
+use core\output\named_templatable;
+use core\output\renderable;
+use core\output\renderer_base;
 /**
  * Renderable class for the group selection button state.
  *

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\CmekSettings;
+use Google\Service\Logging\Settings;
 /**
  * The "v2" collection of methods.
  * Typical usage is:

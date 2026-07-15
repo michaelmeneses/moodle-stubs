@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\ListUtilizationReportsResponse;
+use Google\Service\VMMigrationService\Operation;
+use Google\Service\VMMigrationService\UtilizationReport;
 /**
  * The "utilizationReports" collection of methods.
  * Typical usage is:

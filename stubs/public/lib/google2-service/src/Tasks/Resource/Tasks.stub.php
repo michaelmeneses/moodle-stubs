@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Tasks\Resource;
 
+use Google\Service\Tasks\Task;
+use Google\Service\Tasks\Tasks as TasksModel;
 /**
  * The "tasks" collection of methods.
  * Typical usage is:

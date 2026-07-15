@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\BulkEditSitesRequest;
+use Google\Service\DisplayVideo\BulkEditSitesResponse;
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\ListSitesResponse;
+use Google\Service\DisplayVideo\ReplaceSitesRequest;
+use Google\Service\DisplayVideo\ReplaceSitesResponse;
+use Google\Service\DisplayVideo\Site;
 /**
  * The "sites" collection of methods.
  * Typical usage is:

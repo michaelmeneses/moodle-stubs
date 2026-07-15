@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Datastream\Resource;
 
+use Google\Service\Datastream\ConnectionProfile;
+use Google\Service\Datastream\DiscoverConnectionProfileRequest;
+use Google\Service\Datastream\DiscoverConnectionProfileResponse;
+use Google\Service\Datastream\ListConnectionProfilesResponse;
+use Google\Service\Datastream\Operation;
 /**
  * The "connectionProfiles" collection of methods.
  * Typical usage is:

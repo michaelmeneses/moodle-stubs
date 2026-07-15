@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Calendar\Resource;
 
+use Google\Service\Calendar\Acl as AclModel;
+use Google\Service\Calendar\AclRule;
+use Google\Service\Calendar\Channel;
 /**
  * The "acl" collection of methods.
  * Typical usage is:

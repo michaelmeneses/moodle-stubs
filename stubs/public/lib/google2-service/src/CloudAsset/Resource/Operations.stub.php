@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudAsset\Resource;
 
+use Google\Service\CloudAsset\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

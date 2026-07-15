@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Dataproc\Resource;
 
+use Google\Service\Dataproc\AnalyzeBatchRequest;
+use Google\Service\Dataproc\Batch;
+use Google\Service\Dataproc\DataprocEmpty;
+use Google\Service\Dataproc\ListBatchesResponse;
+use Google\Service\Dataproc\Operation;
 /**
  * The "batches" collection of methods.
  * Typical usage is:

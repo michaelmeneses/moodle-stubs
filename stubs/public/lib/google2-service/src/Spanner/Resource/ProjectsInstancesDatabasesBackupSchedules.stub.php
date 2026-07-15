@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Spanner\Resource;
 
+use Google\Service\Spanner\BackupSchedule;
+use Google\Service\Spanner\GetIamPolicyRequest;
+use Google\Service\Spanner\ListBackupSchedulesResponse;
+use Google\Service\Spanner\Policy;
+use Google\Service\Spanner\SetIamPolicyRequest;
+use Google\Service\Spanner\SpannerEmpty;
+use Google\Service\Spanner\TestIamPermissionsRequest;
+use Google\Service\Spanner\TestIamPermissionsResponse;
 /**
  * The "backupSchedules" collection of methods.
  * Typical usage is:

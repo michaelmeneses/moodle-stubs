@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudAlloyDBAdmin\Resource;
 
+use Google\Service\CloudAlloyDBAdmin\ListSupportedDatabaseFlagsResponse;
 /**
  * The "supportedDatabaseFlags" collection of methods.
  * Typical usage is:

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Datastream\Resource;
 
+use Google\Service\Datastream\ListStreamObjectsResponse;
+use Google\Service\Datastream\LookupStreamObjectRequest;
+use Google\Service\Datastream\StartBackfillJobRequest;
+use Google\Service\Datastream\StartBackfillJobResponse;
+use Google\Service\Datastream\StopBackfillJobRequest;
+use Google\Service\Datastream\StopBackfillJobResponse;
+use Google\Service\Datastream\StreamObject;
 /**
  * The "objects" collection of methods.
  * Typical usage is:

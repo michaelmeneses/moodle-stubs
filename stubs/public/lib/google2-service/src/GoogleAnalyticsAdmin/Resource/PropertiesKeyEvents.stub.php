@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GoogleAnalyticsAdmin\Resource;
 
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaKeyEvent;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListKeyEventsResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
 /**
  * The "keyEvents" collection of methods.
  * Typical usage is:

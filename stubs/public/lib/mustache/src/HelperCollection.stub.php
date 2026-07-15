@@ -16,6 +16,8 @@
  */
 namespace Mustache;
 
+use Mustache\Exception\InvalidArgumentException;
+use Mustache\Exception\UnknownHelperException;
 /**
  * A collection of helpers for a Mustache instance.
  */

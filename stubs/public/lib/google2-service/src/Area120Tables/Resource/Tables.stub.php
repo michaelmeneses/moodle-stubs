@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Area120Tables\Resource;
 
+use Google\Service\Area120Tables\ListTablesResponse;
+use Google\Service\Area120Tables\Table;
 /**
  * The "tables" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Cloudbilling\Resource;
 
+use Google\Service\Cloudbilling\ListServicesResponse;
 /**
  * The "services" collection of methods.
  * Typical usage is:

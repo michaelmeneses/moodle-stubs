@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudSearch\Resource;
 
+use Google\Service\CloudSearch\Media as MediaModel;
 /**
  * The "media" collection of methods.
  * Typical usage is:

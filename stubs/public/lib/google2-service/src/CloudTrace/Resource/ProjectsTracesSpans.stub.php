@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudTrace\Resource;
 
+use Google\Service\CloudTrace\Span;
 /**
  * The "spans" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadRagFileRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadRagFileResponse;
 /**
  * The "media" collection of methods.
  * Typical usage is:

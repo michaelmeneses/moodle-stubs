@@ -23,6 +23,10 @@
  */
 namespace Google\Service\GoogleAnalyticsAdmin\Resource;
 
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaArchiveCustomMetricRequest;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaCustomMetric;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListCustomMetricsResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
 /**
  * The "customMetrics" collection of methods.
  * Typical usage is:

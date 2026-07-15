@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ChromeManagement\Resource;
 
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ChromeBrowserProfile;
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ListChromeBrowserProfilesResponse;
+use Google\Service\ChromeManagement\GoogleProtobufEmpty;
 /**
  * The "profiles" collection of methods.
  * Typical usage is:

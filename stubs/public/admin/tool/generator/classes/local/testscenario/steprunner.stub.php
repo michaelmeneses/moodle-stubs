@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace tool_generator\local\testscenario;
 
+use behat_base;
+use Behat\Gherkin\Node\StepNode;
 /**
  * Class to validate and process a scenario step.
  *

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\GroupLicense;
+use Google\Service\AndroidEnterprise\GroupLicensesListResponse;
 /**
  * The "grouplicenses" collection of methods.
  * Typical usage is:

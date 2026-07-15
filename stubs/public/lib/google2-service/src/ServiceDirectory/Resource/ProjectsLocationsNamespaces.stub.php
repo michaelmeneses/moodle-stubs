@@ -23,6 +23,14 @@
  */
 namespace Google\Service\ServiceDirectory\Resource;
 
+use Google\Service\ServiceDirectory\GetIamPolicyRequest;
+use Google\Service\ServiceDirectory\ListNamespacesResponse;
+use Google\Service\ServiceDirectory\Policy;
+use Google\Service\ServiceDirectory\ServicedirectoryEmpty;
+use Google\Service\ServiceDirectory\ServicedirectoryNamespace;
+use Google\Service\ServiceDirectory\SetIamPolicyRequest;
+use Google\Service\ServiceDirectory\TestIamPermissionsRequest;
+use Google\Service\ServiceDirectory\TestIamPermissionsResponse;
 /**
  * The "namespaces" collection of methods.
  * Typical usage is:

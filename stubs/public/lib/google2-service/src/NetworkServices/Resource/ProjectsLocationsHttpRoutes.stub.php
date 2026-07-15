@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\HttpRoute;
+use Google\Service\NetworkServices\ListHttpRoutesResponse;
+use Google\Service\NetworkServices\Operation;
 /**
  * The "httpRoutes" collection of methods.
  * Typical usage is:

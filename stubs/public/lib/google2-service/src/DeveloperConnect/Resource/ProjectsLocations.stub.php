@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DeveloperConnect\Resource;
 
+use Google\Service\DeveloperConnect\ListLocationsResponse;
+use Google\Service\DeveloperConnect\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

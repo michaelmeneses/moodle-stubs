@@ -23,6 +23,23 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\ApplyAdminConsentsRequest;
+use Google\Service\CloudHealthcare\ApplyConsentsRequest;
+use Google\Service\CloudHealthcare\DeidentifyFhirStoreRequest;
+use Google\Service\CloudHealthcare\ExplainDataAccessResponse;
+use Google\Service\CloudHealthcare\ExportResourcesRequest;
+use Google\Service\CloudHealthcare\FhirStore;
+use Google\Service\CloudHealthcare\FhirStoreMetrics;
+use Google\Service\CloudHealthcare\HealthcareEmpty;
+use Google\Service\CloudHealthcare\HttpBody;
+use Google\Service\CloudHealthcare\ImportResourcesRequest;
+use Google\Service\CloudHealthcare\ListFhirStoresResponse;
+use Google\Service\CloudHealthcare\Operation;
+use Google\Service\CloudHealthcare\Policy;
+use Google\Service\CloudHealthcare\RollbackFhirResourcesRequest;
+use Google\Service\CloudHealthcare\SetIamPolicyRequest;
+use Google\Service\CloudHealthcare\TestIamPermissionsRequest;
+use Google\Service\CloudHealthcare\TestIamPermissionsResponse;
 /**
  * The "fhirStores" collection of methods.
  * Typical usage is:

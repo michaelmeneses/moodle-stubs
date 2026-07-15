@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

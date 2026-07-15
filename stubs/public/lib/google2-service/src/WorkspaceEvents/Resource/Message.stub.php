@@ -23,6 +23,8 @@
  */
 namespace Google\Service\WorkspaceEvents\Resource;
 
+use Google\Service\WorkspaceEvents\SendMessageRequest;
+use Google\Service\WorkspaceEvents\StreamResponse;
 /**
  * The "message" collection of methods.
  * Typical usage is:

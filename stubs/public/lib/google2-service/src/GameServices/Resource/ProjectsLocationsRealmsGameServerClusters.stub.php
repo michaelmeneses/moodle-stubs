@@ -23,6 +23,12 @@
  */
 namespace Google\Service\GameServices\Resource;
 
+use Google\Service\GameServices\GameServerCluster;
+use Google\Service\GameServices\ListGameServerClustersResponse;
+use Google\Service\GameServices\Operation;
+use Google\Service\GameServices\PreviewCreateGameServerClusterResponse;
+use Google\Service\GameServices\PreviewDeleteGameServerClusterResponse;
+use Google\Service\GameServices\PreviewUpdateGameServerClusterResponse;
 /**
  * The "gameServerClusters" collection of methods.
  * Typical usage is:

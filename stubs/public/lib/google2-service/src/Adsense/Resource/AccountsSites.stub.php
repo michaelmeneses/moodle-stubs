@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Adsense\Resource;
 
+use Google\Service\Adsense\ListSitesResponse;
+use Google\Service\Adsense\Site;
 /**
  * The "sites" collection of methods.
  * Typical usage is:

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_user\output\myprofile;
 
+use core\output\html_writer;
 /**
  * Users' my profile renderer
  *

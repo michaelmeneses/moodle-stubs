@@ -23,6 +23,14 @@
  */
 namespace Google\Service\DataCatalog\Resource;
 
+use Google\Service\DataCatalog\DatacatalogEmpty;
+use Google\Service\DataCatalog\GetIamPolicyRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListPolicyTagsResponse;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1PolicyTag;
+use Google\Service\DataCatalog\Policy;
+use Google\Service\DataCatalog\SetIamPolicyRequest;
+use Google\Service\DataCatalog\TestIamPermissionsRequest;
+use Google\Service\DataCatalog\TestIamPermissionsResponse;
 /**
  * The "policyTags" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Contentwarehouse\Resource;
 
+use Google\Service\Contentwarehouse\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

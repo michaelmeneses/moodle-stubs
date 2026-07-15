@@ -23,6 +23,8 @@
  */
 namespace Google\Service\RemoteBuildExecution\Resource;
 
+use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecuteRequest;
+use Google\Service\RemoteBuildExecution\GoogleLongrunningOperation;
 /**
  * The "actions" collection of methods.
  * Typical usage is:

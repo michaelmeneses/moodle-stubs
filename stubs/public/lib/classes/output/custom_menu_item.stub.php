@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\context\system as context_system;
+use moodle_url;
+use stdClass;
 /**
  * Custom menu item
  *

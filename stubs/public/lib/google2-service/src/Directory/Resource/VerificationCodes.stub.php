@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\VerificationCodes as VerificationCodesModel;
 /**
  * The "verificationCodes" collection of methods.
  * Typical usage is:

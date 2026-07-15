@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Eventarc\Resource;
 
+use Google\Service\Eventarc\EventarcEmpty;
+use Google\Service\Eventarc\GoogleLongrunningCancelOperationRequest;
+use Google\Service\Eventarc\GoogleLongrunningListOperationsResponse;
+use Google\Service\Eventarc\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Texttospeech\Resource;
 
+use Google\Service\Texttospeech\CancelOperationRequest;
+use Google\Service\Texttospeech\TexttospeechEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

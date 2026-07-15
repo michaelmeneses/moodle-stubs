@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListIntegrationTemplateVersionsResponse;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

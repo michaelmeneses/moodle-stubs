@@ -23,6 +23,7 @@
  */
 namespace Google\Service\RemoteBuildExecution\Resource;
 
+use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ActionResult;
 /**
  * The "actionResults" collection of methods.
  * Typical usage is:

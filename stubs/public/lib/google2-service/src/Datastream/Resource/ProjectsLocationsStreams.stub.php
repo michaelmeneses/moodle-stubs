@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Datastream\Resource;
 
+use Google\Service\Datastream\ListStreamsResponse;
+use Google\Service\Datastream\Operation;
+use Google\Service\Datastream\RunStreamRequest;
+use Google\Service\Datastream\Stream;
 /**
  * The "streams" collection of methods.
  * Typical usage is:

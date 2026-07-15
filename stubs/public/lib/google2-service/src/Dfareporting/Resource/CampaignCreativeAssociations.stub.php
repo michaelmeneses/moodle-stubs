@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\CampaignCreativeAssociation;
+use Google\Service\Dfareporting\CampaignCreativeAssociationsListResponse;
 /**
  * The "campaignCreativeAssociations" collection of methods.
  * Typical usage is:

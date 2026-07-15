@@ -23,6 +23,12 @@
  */
 namespace Google\Service\StreetViewPublish\Resource;
 
+use Google\Service\StreetViewPublish\BatchDeletePhotosRequest;
+use Google\Service\StreetViewPublish\BatchDeletePhotosResponse;
+use Google\Service\StreetViewPublish\BatchGetPhotosResponse;
+use Google\Service\StreetViewPublish\BatchUpdatePhotosRequest;
+use Google\Service\StreetViewPublish\BatchUpdatePhotosResponse;
+use Google\Service\StreetViewPublish\ListPhotosResponse;
 /**
  * The "photos" collection of methods.
  * Typical usage is:

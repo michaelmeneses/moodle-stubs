@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\DownloadFileResponse;
 /**
  * The "media" collection of methods.
  * Typical usage is:

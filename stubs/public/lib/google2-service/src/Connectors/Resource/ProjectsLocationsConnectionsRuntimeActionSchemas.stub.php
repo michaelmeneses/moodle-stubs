@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\ListRuntimeActionSchemasResponse;
 /**
  * The "runtimeActionSchemas" collection of methods.
  * Typical usage is:

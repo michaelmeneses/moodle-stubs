@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_statistics\output;
 
+use qbank_statistics\helper;
 /**
  * Description
  *

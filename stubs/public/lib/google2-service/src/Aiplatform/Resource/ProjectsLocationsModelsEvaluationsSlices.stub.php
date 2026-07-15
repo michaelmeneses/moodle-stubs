@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelEvaluationSlicesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationSlice;
 /**
  * The "slices" collection of methods.
  * Typical usage is:

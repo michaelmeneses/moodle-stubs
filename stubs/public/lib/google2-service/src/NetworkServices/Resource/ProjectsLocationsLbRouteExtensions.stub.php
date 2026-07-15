@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\LbRouteExtension;
+use Google\Service\NetworkServices\ListLbRouteExtensionsResponse;
+use Google\Service\NetworkServices\Operation;
 /**
  * The "lbRouteExtensions" collection of methods.
  * Typical usage is:

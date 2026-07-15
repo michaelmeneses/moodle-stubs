@@ -8,6 +8,17 @@
  */
 namespace Composer\Pcre\PHPStan;
 
+use PHPStan\Analyser\Scope;
+use PHPStan\Type\ArrayType;
+use PHPStan\Type\Constant\ConstantArrayType;
+use PHPStan\Type\Constant\ConstantIntegerType;
+use PHPStan\Type\IntersectionType;
+use PHPStan\Type\TypeCombinator;
+use PHPStan\Type\Type;
+use PhpParser\Node\Arg;
+use PHPStan\Type\Php\RegexArrayShapeMatcher;
+use PHPStan\Type\TypeTraverser;
+use PHPStan\Type\UnionType;
 final class PregMatchFlags
 {
     public static function getType(?Arg $flagsArg, Scope $scope): ?Type

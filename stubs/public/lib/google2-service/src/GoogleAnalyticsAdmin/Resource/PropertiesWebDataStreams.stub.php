@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GoogleAnalyticsAdmin\Resource;
 
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaWebDataStream;
+use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
 /**
  * The "webDataStreams" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1FeedbackThread;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListFeedbackThreadsResponse;
+use Google\Service\DataLabeling\GoogleProtobufEmpty;
 /**
  * The "feedbackThreads" collection of methods.
  * Typical usage is:

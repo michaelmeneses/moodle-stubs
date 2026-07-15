@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\Action;
+use Google\Service\Connectors\ExecuteActionRequest;
+use Google\Service\Connectors\ExecuteActionResponse;
+use Google\Service\Connectors\ListActionsResponse;
 /**
  * The "actions" collection of methods.
  * Typical usage is:

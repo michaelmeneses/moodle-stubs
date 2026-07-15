@@ -23,6 +23,17 @@
  */
 namespace Google\Service\AnalyticsHub\Resource;
 
+use Google\Service\AnalyticsHub\AnalyticshubEmpty;
+use Google\Service\AnalyticsHub\DataExchange;
+use Google\Service\AnalyticsHub\GetIamPolicyRequest;
+use Google\Service\AnalyticsHub\ListDataExchangesResponse;
+use Google\Service\AnalyticsHub\ListSharedResourceSubscriptionsResponse;
+use Google\Service\AnalyticsHub\Operation;
+use Google\Service\AnalyticsHub\Policy;
+use Google\Service\AnalyticsHub\SetIamPolicyRequest;
+use Google\Service\AnalyticsHub\SubscribeDataExchangeRequest;
+use Google\Service\AnalyticsHub\TestIamPermissionsRequest;
+use Google\Service\AnalyticsHub\TestIamPermissionsResponse;
 /**
  * The "dataExchanges" collection of methods.
  * Typical usage is:

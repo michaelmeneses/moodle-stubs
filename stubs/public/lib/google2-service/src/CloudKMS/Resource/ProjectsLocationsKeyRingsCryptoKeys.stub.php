@@ -23,6 +23,17 @@
  */
 namespace Google\Service\CloudKMS\Resource;
 
+use Google\Service\CloudKMS\CryptoKey;
+use Google\Service\CloudKMS\DecryptRequest;
+use Google\Service\CloudKMS\DecryptResponse;
+use Google\Service\CloudKMS\EncryptRequest;
+use Google\Service\CloudKMS\EncryptResponse;
+use Google\Service\CloudKMS\ListCryptoKeysResponse;
+use Google\Service\CloudKMS\Policy;
+use Google\Service\CloudKMS\SetIamPolicyRequest;
+use Google\Service\CloudKMS\TestIamPermissionsRequest;
+use Google\Service\CloudKMS\TestIamPermissionsResponse;
+use Google\Service\CloudKMS\UpdateCryptoKeyPrimaryVersionRequest;
 /**
  * The "cryptoKeys" collection of methods.
  * Typical usage is:

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DataprocMetastore\Resource;
 
+use Google\Service\DataprocMetastore\Federation;
+use Google\Service\DataprocMetastore\ListFederationsResponse;
+use Google\Service\DataprocMetastore\Operation;
+use Google\Service\DataprocMetastore\Policy;
+use Google\Service\DataprocMetastore\SetIamPolicyRequest;
+use Google\Service\DataprocMetastore\TestIamPermissionsRequest;
+use Google\Service\DataprocMetastore\TestIamPermissionsResponse;
 /**
  * The "federations" collection of methods.
  * Typical usage is:

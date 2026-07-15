@@ -23,6 +23,9 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\ExascaleDbStorageVault;
+use Google\Service\OracleDatabase\ListExascaleDbStorageVaultsResponse;
+use Google\Service\OracleDatabase\Operation;
 /**
  * The "exascaleDbStorageVaults" collection of methods.
  * Typical usage is:

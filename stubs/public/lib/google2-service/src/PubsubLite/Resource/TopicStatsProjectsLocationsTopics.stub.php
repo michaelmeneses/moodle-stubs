@@ -23,6 +23,12 @@
  */
 namespace Google\Service\PubsubLite\Resource;
 
+use Google\Service\PubsubLite\ComputeHeadCursorRequest;
+use Google\Service\PubsubLite\ComputeHeadCursorResponse;
+use Google\Service\PubsubLite\ComputeMessageStatsRequest;
+use Google\Service\PubsubLite\ComputeMessageStatsResponse;
+use Google\Service\PubsubLite\ComputeTimeCursorRequest;
+use Google\Service\PubsubLite\ComputeTimeCursorResponse;
 /**
  * The "topics" collection of methods.
  * Typical usage is:

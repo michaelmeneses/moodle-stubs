@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\ReservationSubBlocksGetResponse;
+use Google\Service\Compute\ReservationSubBlocksListResponse;
+use Google\Service\Compute\ReservationSubBlocksReportFaultyRequest;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
+use Google\Service\Compute\ZoneSetNestedPolicyRequest;
 /**
  * The "reservationSubBlocks" collection of methods.
  * Typical usage is:

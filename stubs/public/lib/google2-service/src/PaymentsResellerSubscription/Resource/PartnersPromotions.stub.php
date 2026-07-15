@@ -23,6 +23,9 @@
  */
 namespace Google\Service\PaymentsResellerSubscription\Resource;
 
+use Google\Service\PaymentsResellerSubscription\FindEligiblePromotionsRequest;
+use Google\Service\PaymentsResellerSubscription\FindEligiblePromotionsResponse;
+use Google\Service\PaymentsResellerSubscription\ListPromotionsResponse;
 /**
  * The "promotions" collection of methods.
  * Typical usage is:

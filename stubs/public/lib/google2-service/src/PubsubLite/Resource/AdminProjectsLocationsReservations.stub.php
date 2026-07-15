@@ -23,6 +23,9 @@
  */
 namespace Google\Service\PubsubLite\Resource;
 
+use Google\Service\PubsubLite\ListReservationsResponse;
+use Google\Service\PubsubLite\PubsubliteEmpty;
+use Google\Service\PubsubLite\Reservation;
 /**
  * The "reservations" collection of methods.
  * Typical usage is:

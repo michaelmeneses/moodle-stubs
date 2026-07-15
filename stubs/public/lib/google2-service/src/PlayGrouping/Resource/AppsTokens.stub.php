@@ -23,6 +23,8 @@
  */
 namespace Google\Service\PlayGrouping\Resource;
 
+use Google\Service\PlayGrouping\VerifyTokenRequest;
+use Google\Service\PlayGrouping\VerifyTokenResponse;
 /**
  * The "tokens" collection of methods.
  * Typical usage is:

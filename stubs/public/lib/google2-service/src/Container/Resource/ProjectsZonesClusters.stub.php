@@ -23,6 +23,24 @@
  */
 namespace Google\Service\Container\Resource;
 
+use Google\Service\Container\Cluster;
+use Google\Service\Container\ClusterUpgradeInfo;
+use Google\Service\Container\CompleteIPRotationRequest;
+use Google\Service\Container\CreateClusterRequest;
+use Google\Service\Container\ListClustersResponse;
+use Google\Service\Container\Operation;
+use Google\Service\Container\SetAddonsConfigRequest;
+use Google\Service\Container\SetLabelsRequest;
+use Google\Service\Container\SetLegacyAbacRequest;
+use Google\Service\Container\SetLocationsRequest;
+use Google\Service\Container\SetLoggingServiceRequest;
+use Google\Service\Container\SetMaintenancePolicyRequest;
+use Google\Service\Container\SetMasterAuthRequest;
+use Google\Service\Container\SetMonitoringServiceRequest;
+use Google\Service\Container\SetNetworkPolicyRequest;
+use Google\Service\Container\StartIPRotationRequest;
+use Google\Service\Container\UpdateClusterRequest;
+use Google\Service\Container\UpdateMasterRequest;
 /**
  * The "clusters" collection of methods.
  * Typical usage is:

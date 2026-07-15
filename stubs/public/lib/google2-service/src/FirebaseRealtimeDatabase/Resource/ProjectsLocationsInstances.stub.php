@@ -23,6 +23,11 @@
  */
 namespace Google\Service\FirebaseRealtimeDatabase\Resource;
 
+use Google\Service\FirebaseRealtimeDatabase\DatabaseInstance;
+use Google\Service\FirebaseRealtimeDatabase\DisableDatabaseInstanceRequest;
+use Google\Service\FirebaseRealtimeDatabase\ListDatabaseInstancesResponse;
+use Google\Service\FirebaseRealtimeDatabase\ReenableDatabaseInstanceRequest;
+use Google\Service\FirebaseRealtimeDatabase\UndeleteDatabaseInstanceRequest;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

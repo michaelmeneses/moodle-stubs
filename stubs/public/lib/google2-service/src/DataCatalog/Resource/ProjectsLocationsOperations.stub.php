@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DataCatalog\Resource;
 
+use Google\Service\DataCatalog\DatacatalogEmpty;
+use Google\Service\DataCatalog\ListOperationsResponse;
+use Google\Service\DataCatalog\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

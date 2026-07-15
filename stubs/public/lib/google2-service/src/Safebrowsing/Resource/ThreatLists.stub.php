@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Safebrowsing\Resource;
 
+use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ListThreatListsResponse;
 /**
  * The "threatLists" collection of methods.
  * Typical usage is:

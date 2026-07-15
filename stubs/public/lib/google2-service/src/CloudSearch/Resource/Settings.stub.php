@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudSearch\Resource;
 
+use Google\Service\CloudSearch\CustomerSettings;
+use Google\Service\CloudSearch\Operation;
 /**
  * The "settings" collection of methods.
  * Typical usage is:

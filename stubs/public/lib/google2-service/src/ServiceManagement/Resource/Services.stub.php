@@ -23,6 +23,17 @@
  */
 namespace Google\Service\ServiceManagement\Resource;
 
+use Google\Service\ServiceManagement\GenerateConfigReportRequest;
+use Google\Service\ServiceManagement\GenerateConfigReportResponse;
+use Google\Service\ServiceManagement\GetIamPolicyRequest;
+use Google\Service\ServiceManagement\ListServicesResponse;
+use Google\Service\ServiceManagement\ManagedService;
+use Google\Service\ServiceManagement\Operation;
+use Google\Service\ServiceManagement\Policy;
+use Google\Service\ServiceManagement\Service;
+use Google\Service\ServiceManagement\SetIamPolicyRequest;
+use Google\Service\ServiceManagement\TestIamPermissionsRequest;
+use Google\Service\ServiceManagement\TestIamPermissionsResponse;
 /**
  * The "services" collection of methods.
  * Typical usage is:

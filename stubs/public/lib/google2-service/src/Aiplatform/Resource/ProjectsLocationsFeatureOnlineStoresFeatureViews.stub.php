@@ -23,6 +23,22 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureView;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchFeatureValuesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchFeatureValuesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateFetchAccessTokenRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateFetchAccessTokenResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListFeatureViewsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchNearestEntitiesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchNearestEntitiesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SyncFeatureViewRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SyncFeatureViewResponse;
+use Google\Service\Aiplatform\GoogleIamV1Policy;
+use Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Aiplatform\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "featureViews" collection of methods.
  * Typical usage is:

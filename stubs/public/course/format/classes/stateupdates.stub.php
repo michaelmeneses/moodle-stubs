@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat;
 
+use coding_exception;
+use core_courseformat\base as course_format;
+use renderer_base;
+use stdClass;
+use course_modinfo;
+use JsonSerializable;
 /**
  * Class to track state actions.
  *

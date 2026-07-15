@@ -23,6 +23,7 @@
  */
 namespace Google\Service\PolicyAnalyzer\Resource;
 
+use Google\Service\PolicyAnalyzer\GoogleCloudPolicyanalyzerV1QueryActivityResponse;
 /**
  * The "activities" collection of methods.
  * Typical usage is:

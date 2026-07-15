@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\RoleAssignment;
+use Google\Service\Directory\RoleAssignments as RoleAssignmentsModel;
 /**
  * The "roleAssignments" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Firebaseappcheck\Resource;
 
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchUpdateServicesRequest;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchUpdateServicesResponse;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ListServicesResponse;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1Service;
 /**
  * The "services" collection of methods.
  * Typical usage is:

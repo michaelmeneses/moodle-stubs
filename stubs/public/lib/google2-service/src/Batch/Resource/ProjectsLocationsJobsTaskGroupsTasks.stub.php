@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Batch\Resource;
 
+use Google\Service\Batch\ListTasksResponse;
+use Google\Service\Batch\Task;
 /**
  * The "tasks" collection of methods.
  * Typical usage is:

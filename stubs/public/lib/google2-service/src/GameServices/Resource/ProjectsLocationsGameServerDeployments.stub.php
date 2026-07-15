@@ -23,6 +23,10 @@
  */
 namespace Google\Service\GameServices\Resource;
 
+use Google\Service\GameServices\Policy;
+use Google\Service\GameServices\SetIamPolicyRequest;
+use Google\Service\GameServices\TestIamPermissionsRequest;
+use Google\Service\GameServices\TestIamPermissionsResponse;
 /**
  * The "gameServerDeployments" collection of methods.
  * Typical usage is:

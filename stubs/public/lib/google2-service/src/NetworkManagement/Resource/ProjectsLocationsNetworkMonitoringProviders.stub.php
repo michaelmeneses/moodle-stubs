@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkManagement\Resource;
 
+use Google\Service\NetworkManagement\ListNetworkMonitoringProvidersResponse;
+use Google\Service\NetworkManagement\NetworkMonitoringProvider;
+use Google\Service\NetworkManagement\Operation;
 /**
  * The "networkMonitoringProviders" collection of methods.
  * Typical usage is:

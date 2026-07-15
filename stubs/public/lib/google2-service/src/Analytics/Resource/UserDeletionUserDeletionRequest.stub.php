@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\UserDeletionRequest;
 /**
  * The "userDeletionRequest" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\AppDetails;
 /**
  * The "details" collection of methods.
  * Typical usage is:

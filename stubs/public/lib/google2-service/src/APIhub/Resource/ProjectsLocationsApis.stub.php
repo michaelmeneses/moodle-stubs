@@ -23,6 +23,9 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\ApihubEmpty;
+use Google\Service\APIhub\GoogleCloudApihubV1Api;
+use Google\Service\APIhub\GoogleCloudApihubV1ListApisResponse;
 /**
  * The "apis" collection of methods.
  * Typical usage is:

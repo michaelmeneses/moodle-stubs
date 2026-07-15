@@ -29,6 +29,10 @@
  */
 namespace assignsubmission_file\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\writer;
+use core_privacy\local\request\contextlist;
+use mod_assign\privacy\assign_plugin_request_data;
 /**
  * Privacy class for requesting user data.
  *

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\ListServiceBindingsResponse;
+use Google\Service\NetworkServices\Operation;
+use Google\Service\NetworkServices\ServiceBinding;
 /**
  * The "serviceBindings" collection of methods.
  * Typical usage is:

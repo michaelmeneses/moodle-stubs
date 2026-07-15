@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProduct;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataProductsResponse;
+use Google\Service\CloudDataplex\GoogleIamV1Policy;
+use Google\Service\CloudDataplex\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\CloudDataplex\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\CloudDataplex\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\CloudDataplex\GoogleLongrunningOperation;
 /**
  * The "dataProducts" collection of methods.
  * Typical usage is:

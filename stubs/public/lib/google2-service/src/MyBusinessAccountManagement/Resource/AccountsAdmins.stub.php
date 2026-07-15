@@ -23,6 +23,9 @@
  */
 namespace Google\Service\MyBusinessAccountManagement\Resource;
 
+use Google\Service\MyBusinessAccountManagement\Admin;
+use Google\Service\MyBusinessAccountManagement\ListAccountAdminsResponse;
+use Google\Service\MyBusinessAccountManagement\MybusinessaccountmanagementEmpty;
 /**
  * The "admins" collection of methods.
  * Typical usage is:

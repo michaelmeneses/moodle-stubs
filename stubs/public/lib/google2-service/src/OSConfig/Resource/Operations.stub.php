@@ -23,6 +23,8 @@
  */
 namespace Google\Service\OSConfig\Resource;
 
+use Google\Service\OSConfig\ListOperationsResponse;
+use Google\Service\OSConfig\OsconfigEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

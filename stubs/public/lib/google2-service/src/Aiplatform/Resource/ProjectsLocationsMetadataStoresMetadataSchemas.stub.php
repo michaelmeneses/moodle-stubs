@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMetadataSchemasResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1MetadataSchema;
 /**
  * The "metadataSchemas" collection of methods.
  * Typical usage is:

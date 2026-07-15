@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudBillingBudget\Resource;
 
+use Google\Service\CloudBillingBudget\GoogleCloudBillingBudgetsV1Budget;
+use Google\Service\CloudBillingBudget\GoogleCloudBillingBudgetsV1ListBudgetsResponse;
+use Google\Service\CloudBillingBudget\GoogleProtobufEmpty;
 /**
  * The "budgets" collection of methods.
  * Typical usage is:

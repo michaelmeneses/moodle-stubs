@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudSearch\Resource;
 
+use Google\Service\CloudSearch\ListSearchApplicationsResponse;
+use Google\Service\CloudSearch\Operation;
+use Google\Service\CloudSearch\ResetSearchApplicationRequest;
+use Google\Service\CloudSearch\SearchApplication;
 /**
  * The "searchapplications" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Firebaseappcheck\Resource;
 
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchUpdateResourcePoliciesRequest;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchUpdateResourcePoliciesResponse;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ListResourcePoliciesResponse;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ResourcePolicy;
+use Google\Service\Firebaseappcheck\GoogleProtobufEmpty;
 /**
  * The "resourcePolicies" collection of methods.
  * Typical usage is:

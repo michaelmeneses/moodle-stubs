@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\ListNetworkUsageResponse;
+use Google\Service\Baremetalsolution\ListNetworksResponse;
+use Google\Service\Baremetalsolution\Network;
+use Google\Service\Baremetalsolution\Operation;
+use Google\Service\Baremetalsolution\RenameNetworkRequest;
 /**
  * The "networks" collection of methods.
  * Typical usage is:

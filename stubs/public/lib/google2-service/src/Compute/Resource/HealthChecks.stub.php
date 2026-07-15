@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\HealthCheck;
+use Google\Service\Compute\HealthCheckList;
+use Google\Service\Compute\HealthChecksAggregatedList;
+use Google\Service\Compute\Operation;
 /**
  * The "healthChecks" collection of methods.
  * Typical usage is:

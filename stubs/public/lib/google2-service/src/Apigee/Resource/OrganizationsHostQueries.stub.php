@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleApiHttpBody;
+use Google\Service\Apigee\GoogleCloudApigeeV1AsyncQuery;
+use Google\Service\Apigee\GoogleCloudApigeeV1AsyncQueryResultView;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListAsyncQueriesResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1Query;
 /**
  * The "hostQueries" collection of methods.
  * Typical usage is:

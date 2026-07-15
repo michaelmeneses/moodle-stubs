@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DataCatalog\Resource;
 
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry;
 /**
  * The "entries" collection of methods.
  * Typical usage is:

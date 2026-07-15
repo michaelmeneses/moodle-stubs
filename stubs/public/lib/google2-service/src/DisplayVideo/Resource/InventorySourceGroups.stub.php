@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\InventorySourceGroup;
+use Google\Service\DisplayVideo\ListInventorySourceGroupsResponse;
 /**
  * The "inventorySourceGroups" collection of methods.
  * Typical usage is:

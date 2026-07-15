@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Dataflow\Resource;
 
+use Google\Service\Dataflow\CreateJobFromTemplateRequest;
+use Google\Service\Dataflow\GetTemplateResponse;
+use Google\Service\Dataflow\Job;
+use Google\Service\Dataflow\LaunchTemplateParameters;
+use Google\Service\Dataflow\LaunchTemplateResponse;
 /**
  * The "templates" collection of methods.
  * Typical usage is:

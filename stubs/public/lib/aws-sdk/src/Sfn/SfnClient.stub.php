@@ -8,6 +8,7 @@
  */
 namespace Aws\Sfn;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Step Functions** service.
  * @method \Aws\Result createActivity(array $args = [])

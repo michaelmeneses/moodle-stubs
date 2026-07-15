@@ -23,6 +23,8 @@
  */
 namespace Google\Service\RealTimeBidding\Resource;
 
+use Google\Service\RealTimeBidding\Endpoint;
+use Google\Service\RealTimeBidding\ListEndpointsResponse;
 /**
  * The "endpoints" collection of methods.
  * Typical usage is:

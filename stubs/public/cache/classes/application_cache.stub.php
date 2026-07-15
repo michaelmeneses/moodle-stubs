@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache;
 
+use core\exception\coding_exception;
+use core\exception\moodle_exception;
 /**
  * An application cache.
  *

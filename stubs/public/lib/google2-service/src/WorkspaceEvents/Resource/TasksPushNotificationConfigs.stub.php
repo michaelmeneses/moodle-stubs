@@ -23,6 +23,9 @@
  */
 namespace Google\Service\WorkspaceEvents\Resource;
 
+use Google\Service\WorkspaceEvents\ListTaskPushNotificationConfigResponse;
+use Google\Service\WorkspaceEvents\TaskPushNotificationConfig;
+use Google\Service\WorkspaceEvents\WorkspaceeventsEmpty;
 /**
  * The "pushNotificationConfigs" collection of methods.
  * Typical usage is:

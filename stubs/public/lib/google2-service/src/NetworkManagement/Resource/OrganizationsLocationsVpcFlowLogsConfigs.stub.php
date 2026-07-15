@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkManagement\Resource;
 
+use Google\Service\NetworkManagement\ListVpcFlowLogsConfigsResponse;
+use Google\Service\NetworkManagement\Operation;
+use Google\Service\NetworkManagement\VpcFlowLogsConfig;
 /**
  * The "vpcFlowLogsConfigs" collection of methods.
  * Typical usage is:

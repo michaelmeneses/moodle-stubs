@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdMob\Resource;
 
+use Google\Service\AdMob\GenerateMediationReportRequest;
+use Google\Service\AdMob\GenerateMediationReportResponse;
 /**
  * The "mediationReport" collection of methods.
  * Typical usage is:

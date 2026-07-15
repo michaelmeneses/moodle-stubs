@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Assuredworkloads\Resource;
 
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateRequest;
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ListWorkloadUpdatesResponse;
+use Google\Service\Assuredworkloads\GoogleLongrunningOperation;
 /**
  * The "updates" collection of methods.
  * Typical usage is:

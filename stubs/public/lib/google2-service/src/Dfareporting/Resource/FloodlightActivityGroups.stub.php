@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\FloodlightActivityGroup;
+use Google\Service\Dfareporting\FloodlightActivityGroupsListResponse;
 /**
  * The "floodlightActivityGroups" collection of methods.
  * Typical usage is:

@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Contentwarehouse\Resource;
 
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DeleteDocumentRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1Document;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1GetDocumentRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentResponse;
+use Google\Service\Contentwarehouse\GoogleProtobufEmpty;
 /**
  * The "referenceId" collection of methods.
  * Typical usage is:

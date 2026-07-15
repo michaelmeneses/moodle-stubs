@@ -23,6 +23,16 @@
  */
 namespace Google\Service\CloudIdentity\Resource;
 
+use Google\Service\CloudIdentity\CheckTransitiveMembershipResponse;
+use Google\Service\CloudIdentity\ListMembershipsResponse;
+use Google\Service\CloudIdentity\LookupMembershipNameResponse;
+use Google\Service\CloudIdentity\Membership;
+use Google\Service\CloudIdentity\ModifyMembershipRolesRequest;
+use Google\Service\CloudIdentity\ModifyMembershipRolesResponse;
+use Google\Service\CloudIdentity\Operation;
+use Google\Service\CloudIdentity\SearchDirectGroupsResponse;
+use Google\Service\CloudIdentity\SearchTransitiveGroupsResponse;
+use Google\Service\CloudIdentity\SearchTransitiveMembershipsResponse;
 /**
  * The "memberships" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\GoogleCloudApihubV1Addon;
+use Google\Service\APIhub\GoogleCloudApihubV1ListAddonsResponse;
+use Google\Service\APIhub\GoogleCloudApihubV1ManageAddonConfigRequest;
+use Google\Service\APIhub\GoogleLongrunningOperation;
 /**
  * The "addons" collection of methods.
  * Typical usage is:

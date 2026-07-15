@@ -23,6 +23,15 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\BatchCreateRepositoriesRequest;
+use Google\Service\CloudBuild\FetchGitRefsResponse;
+use Google\Service\CloudBuild\FetchReadTokenRequest;
+use Google\Service\CloudBuild\FetchReadTokenResponse;
+use Google\Service\CloudBuild\FetchReadWriteTokenRequest;
+use Google\Service\CloudBuild\FetchReadWriteTokenResponse;
+use Google\Service\CloudBuild\ListRepositoriesResponse;
+use Google\Service\CloudBuild\Operation;
+use Google\Service\CloudBuild\Repository;
 /**
  * The "repositories" collection of methods.
  * Typical usage is:

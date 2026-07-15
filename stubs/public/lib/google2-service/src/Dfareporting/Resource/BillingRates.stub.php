@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\BillingRatesListResponse;
 /**
  * The "billingRates" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\ArtifactregistryEmpty;
+use Google\Service\ArtifactRegistry\ListTagsResponse;
+use Google\Service\ArtifactRegistry\Tag;
 /**
  * The "tags" collection of methods.
  * Typical usage is:

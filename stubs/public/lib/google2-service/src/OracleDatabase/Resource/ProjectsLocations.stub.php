@@ -23,6 +23,8 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\ListLocationsResponse;
+use Google\Service\OracleDatabase\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

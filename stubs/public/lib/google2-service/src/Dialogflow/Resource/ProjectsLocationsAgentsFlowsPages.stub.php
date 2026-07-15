@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListPagesResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Page;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "pages" collection of methods.
  * Typical usage is:

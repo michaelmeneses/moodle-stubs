@@ -23,6 +23,8 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\ListPluggableDatabasesResponse;
+use Google\Service\OracleDatabase\PluggableDatabase;
 /**
  * The "pluggableDatabases" collection of methods.
  * Typical usage is:

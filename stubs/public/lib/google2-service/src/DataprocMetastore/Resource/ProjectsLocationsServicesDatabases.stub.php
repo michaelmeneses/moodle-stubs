@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataprocMetastore\Resource;
 
+use Google\Service\DataprocMetastore\Policy;
+use Google\Service\DataprocMetastore\SetIamPolicyRequest;
 /**
  * The "databases" collection of methods.
  * Typical usage is:

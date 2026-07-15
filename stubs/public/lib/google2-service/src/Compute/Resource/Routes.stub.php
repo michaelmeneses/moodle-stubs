@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Route;
+use Google\Service\Compute\RouteList;
 /**
  * The "routes" collection of methods.
  * Typical usage is:

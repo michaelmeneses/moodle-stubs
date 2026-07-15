@@ -23,6 +23,9 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\ListReportConfigsResponse;
+use Google\Service\MigrationCenterAPI\Operation;
+use Google\Service\MigrationCenterAPI\ReportConfig;
 /**
  * The "reportConfigs" collection of methods.
  * Typical usage is:

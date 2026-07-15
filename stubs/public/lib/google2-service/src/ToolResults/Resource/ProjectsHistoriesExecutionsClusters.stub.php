@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ToolResults\Resource;
 
+use Google\Service\ToolResults\ListScreenshotClustersResponse;
+use Google\Service\ToolResults\ScreenshotCluster;
 /**
  * The "clusters" collection of methods.
  * Typical usage is:

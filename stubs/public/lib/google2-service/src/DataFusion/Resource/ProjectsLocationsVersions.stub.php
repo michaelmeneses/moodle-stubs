@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DataFusion\Resource;
 
+use Google\Service\DataFusion\ListAvailableVersionsResponse;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

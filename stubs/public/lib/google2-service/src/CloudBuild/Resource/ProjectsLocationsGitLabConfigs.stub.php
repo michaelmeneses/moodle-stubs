@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\CloudbuildEmpty;
+use Google\Service\CloudBuild\GitLabConfig;
+use Google\Service\CloudBuild\ListGitLabConfigsResponse;
+use Google\Service\CloudBuild\Operation;
+use Google\Service\CloudBuild\RemoveGitLabConnectedRepositoryRequest;
 /**
  * The "gitLabConfigs" collection of methods.
  * Typical usage is:

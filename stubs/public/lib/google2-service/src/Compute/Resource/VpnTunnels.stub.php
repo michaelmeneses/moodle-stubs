@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RegionSetLabelsRequest;
+use Google\Service\Compute\VpnTunnel;
+use Google\Service\Compute\VpnTunnelAggregatedList;
+use Google\Service\Compute\VpnTunnelList;
 /**
  * The "vpnTunnels" collection of methods.
  * Typical usage is:

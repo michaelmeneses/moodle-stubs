@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ListVmwareEngineNetworksResponse;
+use Google\Service\VMwareEngine\Operation;
+use Google\Service\VMwareEngine\VmwareEngineNetwork;
 /**
  * The "vmwareEngineNetworks" collection of methods.
  * Typical usage is:

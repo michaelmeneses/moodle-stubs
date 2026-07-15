@@ -23,6 +23,15 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\Cluster;
+use Google\Service\VMwareEngine\ListClustersResponse;
+use Google\Service\VMwareEngine\MountDatastoreRequest;
+use Google\Service\VMwareEngine\Operation;
+use Google\Service\VMwareEngine\Policy;
+use Google\Service\VMwareEngine\SetIamPolicyRequest;
+use Google\Service\VMwareEngine\TestIamPermissionsRequest;
+use Google\Service\VMwareEngine\TestIamPermissionsResponse;
+use Google\Service\VMwareEngine\UnmountDatastoreRequest;
 /**
  * The "clusters" collection of methods.
  * Typical usage is:

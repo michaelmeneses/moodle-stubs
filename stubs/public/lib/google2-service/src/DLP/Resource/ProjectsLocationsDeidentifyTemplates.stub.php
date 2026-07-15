@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2CreateDeidentifyTemplateRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2DeidentifyTemplate;
+use Google\Service\DLP\GooglePrivacyDlpV2ListDeidentifyTemplatesResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2UpdateDeidentifyTemplateRequest;
+use Google\Service\DLP\GoogleProtobufEmpty;
 /**
  * The "deidentifyTemplates" collection of methods.
  * Typical usage is:

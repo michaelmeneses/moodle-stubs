@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\ExecuteToolRequest;
+use Google\Service\Connectors\ExecuteToolResponse;
+use Google\Service\Connectors\ListToolsResponse;
 /**
  * The "tools" collection of methods.
  * Typical usage is:

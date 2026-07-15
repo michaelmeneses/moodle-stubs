@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProvisionProjectRequest;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

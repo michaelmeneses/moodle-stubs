@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\task;
 
+use core\task\adhoc_task;
+use core\task\manager;
+use core\task\logging_trait;
+use core\task\stored_progress_task_trait;
 /**
  * Asynchronously reset a course
  *

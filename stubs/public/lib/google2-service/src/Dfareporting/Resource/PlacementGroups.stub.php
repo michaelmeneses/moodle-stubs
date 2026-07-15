@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\PlacementGroup;
+use Google\Service\Dfareporting\PlacementGroupsListResponse;
 /**
  * The "placementGroups" collection of methods.
  * Typical usage is:

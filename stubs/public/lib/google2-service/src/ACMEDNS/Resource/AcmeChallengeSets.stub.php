@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ACMEDNS\Resource;
 
+use Google\Service\ACMEDNS\AcmeChallengeSet;
+use Google\Service\ACMEDNS\RotateChallengesRequest;
 /**
  * The "acmeChallengeSets" collection of methods.
  * Typical usage is:

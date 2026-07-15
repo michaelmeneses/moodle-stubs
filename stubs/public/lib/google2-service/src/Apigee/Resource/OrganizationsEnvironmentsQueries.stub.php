@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleApiHttpBody;
+use Google\Service\Apigee\GoogleCloudApigeeV1AsyncQuery;
+use Google\Service\Apigee\GoogleCloudApigeeV1GetAsyncQueryResultUrlResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListAsyncQueriesResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1Query;
 /**
  * The "queries" collection of methods.
  * Typical usage is:

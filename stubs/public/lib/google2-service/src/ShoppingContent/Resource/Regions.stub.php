@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\ListRegionsResponse;
+use Google\Service\ShoppingContent\Region;
 /**
  * The "regions" collection of methods.
  * Typical usage is:

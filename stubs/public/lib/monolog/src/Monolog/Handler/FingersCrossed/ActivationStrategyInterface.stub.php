@@ -16,6 +16,7 @@
  */
 namespace Monolog\Handler\FingersCrossed;
 
+use Monolog\LogRecord;
 /**
  * Interface for activation strategies for the FingersCrossedHandler.
  *

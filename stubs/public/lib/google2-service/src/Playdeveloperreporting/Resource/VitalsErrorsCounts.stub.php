@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Playdeveloperreporting\Resource;
 
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1ErrorCountMetricSet;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryErrorCountMetricSetRequest;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryErrorCountMetricSetResponse;
 /**
  * The "counts" collection of methods.
  * Typical usage is:

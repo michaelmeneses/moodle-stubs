@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudSearch\Resource;
 
+use Google\Service\CloudSearch\DebugResponse;
+use Google\Service\CloudSearch\RemoveActivityRequest;
+use Google\Service\CloudSearch\RemoveActivityResponse;
+use Google\Service\CloudSearch\SearchRequest;
+use Google\Service\CloudSearch\SearchResponse;
+use Google\Service\CloudSearch\SuggestRequest;
+use Google\Service\CloudSearch\SuggestResponse;
 /**
  * The "query" collection of methods.
  * Typical usage is:

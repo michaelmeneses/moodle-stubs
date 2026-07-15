@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AreaInsights\Resource;
 
+use Google\Service\AreaInsights\ComputeInsightsRequest;
+use Google\Service\AreaInsights\ComputeInsightsResponse;
 /**
  * The "v1" collection of methods.
  * Typical usage is:

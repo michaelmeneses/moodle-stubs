@@ -8,6 +8,11 @@
  */
 namespace DI\Definition\Resolver;
 
+use DI\Definition\Definition;
+use DI\Definition\Exception\InvalidDefinition;
+use DI\Definition\ObjectDefinition\MethodInjection;
+use ReflectionMethod;
+use ReflectionParameter;
 /**
  * Resolves parameters for a function call.
  *

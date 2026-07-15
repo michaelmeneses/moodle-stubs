@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\GoogleLongrunningOperation;
+use Google\Service\Networkconnectivity\ListRegionalEndpointsResponse;
+use Google\Service\Networkconnectivity\RegionalEndpoint;
 /**
  * The "regionalEndpoints" collection of methods.
  * Typical usage is:

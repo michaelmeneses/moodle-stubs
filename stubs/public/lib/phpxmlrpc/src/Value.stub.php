@@ -8,6 +8,11 @@
  */
 namespace PhpXmlRpc;
 
+use PhpXmlRpc\Exception\StateErrorException;
+use PhpXmlRpc\Exception\TypeErrorException;
+use PhpXmlRpc\Exception\ValueErrorException;
+use PhpXmlRpc\Traits\CharsetEncoderAware;
+use PhpXmlRpc\Traits\DeprecationLogger;
 /**
  * This class enables the creation of values for XML-RPC, by encapsulating plain php values.
  *

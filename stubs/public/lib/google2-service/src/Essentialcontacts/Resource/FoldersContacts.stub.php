@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Essentialcontacts\Resource;
 
+use Google\Service\Essentialcontacts\GoogleCloudEssentialcontactsV1ComputeContactsResponse;
+use Google\Service\Essentialcontacts\GoogleCloudEssentialcontactsV1Contact;
+use Google\Service\Essentialcontacts\GoogleCloudEssentialcontactsV1ListContactsResponse;
+use Google\Service\Essentialcontacts\GoogleCloudEssentialcontactsV1SendTestMessageRequest;
+use Google\Service\Essentialcontacts\GoogleProtobufEmpty;
 /**
  * The "contacts" collection of methods.
  * Typical usage is:

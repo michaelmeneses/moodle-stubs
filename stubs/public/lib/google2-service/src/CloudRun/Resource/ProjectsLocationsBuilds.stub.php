@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\GoogleCloudRunV2SubmitBuildRequest;
+use Google\Service\CloudRun\GoogleCloudRunV2SubmitBuildResponse;
 /**
  * The "builds" collection of methods.
  * Typical usage is:

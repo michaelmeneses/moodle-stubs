@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\BaremetalsolutionEmpty;
+use Google\Service\Baremetalsolution\ListSnapshotSchedulePoliciesResponse;
+use Google\Service\Baremetalsolution\SnapshotSchedulePolicy;
 /**
  * The "snapshotSchedulePolicies" collection of methods.
  * Typical usage is:

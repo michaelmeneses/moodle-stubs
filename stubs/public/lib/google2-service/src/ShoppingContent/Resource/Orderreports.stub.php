@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\OrderreportsListDisbursementsResponse;
+use Google\Service\ShoppingContent\OrderreportsListTransactionsResponse;
 /**
  * The "orderreports" collection of methods.
  * Typical usage is:

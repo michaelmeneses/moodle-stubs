@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradereport_singleview\report;
 
+use context_course;
+use grade_report;
+use moodle_url;
+use renderer_base;
+use stdClass;
 /**
  * This class is the main class that must be implemented by a grade report plugin.
  *

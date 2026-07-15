@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource;
 
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ListLocationsResponse;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

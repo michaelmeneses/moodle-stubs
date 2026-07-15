@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\GrpcRoute;
+use Google\Service\NetworkServices\ListGrpcRoutesResponse;
+use Google\Service\NetworkServices\Operation;
 /**
  * The "grpcRoutes" collection of methods.
  * Typical usage is:

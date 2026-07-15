@@ -23,6 +23,7 @@
  */
 namespace Google\Service;
 
+use Google\Client;
 /**
  * Service definition for Clouderrorreporting (v1beta1).
  *

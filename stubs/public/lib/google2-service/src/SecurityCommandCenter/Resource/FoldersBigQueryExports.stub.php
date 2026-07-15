@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1BigQueryExport;
+use Google\Service\SecurityCommandCenter\ListBigQueryExportsResponse;
+use Google\Service\SecurityCommandCenter\SecuritycenterEmpty;
 /**
  * The "bigQueryExports" collection of methods.
  * Typical usage is:

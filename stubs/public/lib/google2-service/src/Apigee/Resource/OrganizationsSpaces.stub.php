@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ListSpacesResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1Space;
+use Google\Service\Apigee\GoogleIamV1Policy;
+use Google\Service\Apigee\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Apigee\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\Apigee\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "spaces" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\ListRevisionsResponse;
+use Google\Service\CloudRun\Revision;
+use Google\Service\CloudRun\Status;
 /**
  * The "revisions" collection of methods.
  * Typical usage is:

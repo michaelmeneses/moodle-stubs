@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Iam\Resource;
 
+use Google\Service\Iam\QueryTestablePermissionsRequest;
+use Google\Service\Iam\QueryTestablePermissionsResponse;
 /**
  * The "permissions" collection of methods.
  * Typical usage is:

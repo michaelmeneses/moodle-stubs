@@ -23,6 +23,9 @@
  */
 namespace Google\Service\BinaryAuthorization\Resource;
 
+use Google\Service\BinaryAuthorization\BinaryauthorizationEmpty;
+use Google\Service\BinaryAuthorization\ListPlatformPoliciesResponse;
+use Google\Service\BinaryAuthorization\PlatformPolicy;
 /**
  * The "policies" collection of methods.
  * Typical usage is:

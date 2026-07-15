@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Dataflow\Resource;
 
+use Google\Service\Dataflow\GetDebugConfigRequest;
+use Google\Service\Dataflow\GetDebugConfigResponse;
+use Google\Service\Dataflow\SendDebugCaptureRequest;
+use Google\Service\Dataflow\SendDebugCaptureResponse;
 /**
  * The "debug" collection of methods.
  * Typical usage is:

@@ -8,6 +8,14 @@
  */
 namespace OpenSpout\Reader\ODS\Helper;
 
+use DateInterval;
+use DateTimeImmutable;
+use DOMElement;
+use DOMNode;
+use DOMText;
+use Exception;
+use OpenSpout\Common\Helper\Escaper\ODS;
+use OpenSpout\Reader\Exception\InvalidValueException;
 /**
  * @internal
  */

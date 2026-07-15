@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Bigquery\Resource;
 
+use Google\Service\Bigquery\GetQueryResultsResponse;
+use Google\Service\Bigquery\Job;
+use Google\Service\Bigquery\JobCancelResponse;
+use Google\Service\Bigquery\JobList;
+use Google\Service\Bigquery\QueryRequest;
+use Google\Service\Bigquery\QueryResponse;
 /**
  * The "jobs" collection of methods.
  * Typical usage is:

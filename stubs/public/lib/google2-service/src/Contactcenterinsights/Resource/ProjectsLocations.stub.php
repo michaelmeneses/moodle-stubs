@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkDeleteFeedbackLabelsRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkDownloadFeedbackLabelsRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkUploadFeedbackLabelsRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1EncryptionSpec;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAllFeedbackLabelsResponse;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryMetricsRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Settings;
+use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

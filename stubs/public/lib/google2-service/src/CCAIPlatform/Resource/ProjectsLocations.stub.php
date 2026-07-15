@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CCAIPlatform\Resource;
 
+use Google\Service\CCAIPlatform\ContactCenterQuota;
+use Google\Service\CCAIPlatform\GenerateShiftsRequest;
+use Google\Service\CCAIPlatform\ListLocationsResponse;
+use Google\Service\CCAIPlatform\Location;
+use Google\Service\CCAIPlatform\Operation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

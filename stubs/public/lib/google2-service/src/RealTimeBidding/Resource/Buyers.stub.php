@@ -23,6 +23,9 @@
  */
 namespace Google\Service\RealTimeBidding\Resource;
 
+use Google\Service\RealTimeBidding\Buyer;
+use Google\Service\RealTimeBidding\GetRemarketingTagResponse;
+use Google\Service\RealTimeBidding\ListBuyersResponse;
 /**
  * The "buyers" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ToolResults\Resource;
 
+use Google\Service\ToolResults\ListStepThumbnailsResponse;
 /**
  * The "thumbnails" collection of methods.
  * Typical usage is:

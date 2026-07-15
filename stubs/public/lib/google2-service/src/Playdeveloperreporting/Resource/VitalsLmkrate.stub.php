@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Playdeveloperreporting\Resource;
 
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1LmkRateMetricSet;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetRequest;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetResponse;
 /**
  * The "lmkrate" collection of methods.
  * Typical usage is:

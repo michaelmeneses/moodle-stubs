@@ -23,6 +23,20 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\DetachLunRequest;
+use Google\Service\Baremetalsolution\DisableHyperthreadingRequest;
+use Google\Service\Baremetalsolution\DisableInteractiveSerialConsoleRequest;
+use Google\Service\Baremetalsolution\EnableHyperthreadingRequest;
+use Google\Service\Baremetalsolution\EnableInteractiveSerialConsoleRequest;
+use Google\Service\Baremetalsolution\Instance;
+use Google\Service\Baremetalsolution\ListInstancesResponse;
+use Google\Service\Baremetalsolution\LoadInstanceAuthInfoResponse;
+use Google\Service\Baremetalsolution\Operation;
+use Google\Service\Baremetalsolution\ReimageInstanceRequest;
+use Google\Service\Baremetalsolution\RenameInstanceRequest;
+use Google\Service\Baremetalsolution\ResetInstanceRequest;
+use Google\Service\Baremetalsolution\StartInstanceRequest;
+use Google\Service\Baremetalsolution\StopInstanceRequest;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

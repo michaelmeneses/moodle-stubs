@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1Keystore;
 /**
  * The "keystores" collection of methods.
  * Typical usage is:

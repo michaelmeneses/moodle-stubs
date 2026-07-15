@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdSenseHost\Resource;
 
+use Google\Service\AdSenseHost\UrlChannel;
+use Google\Service\AdSenseHost\UrlChannels as UrlChannelsModel;
 /**
  * The "urlchannels" collection of methods.
  * Typical usage is:

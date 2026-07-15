@@ -23,6 +23,12 @@
  */
 namespace Google\Service\CloudCommercePartnerProcurementService\Resource;
 
+use Google\Service\CloudCommercePartnerProcurementService\Account;
+use Google\Service\CloudCommercePartnerProcurementService\ApproveAccountRequest;
+use Google\Service\CloudCommercePartnerProcurementService\CloudcommerceprocurementEmpty;
+use Google\Service\CloudCommercePartnerProcurementService\ListAccountsResponse;
+use Google\Service\CloudCommercePartnerProcurementService\RejectAccountRequest;
+use Google\Service\CloudCommercePartnerProcurementService\ResetAccountRequest;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

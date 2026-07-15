@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\EditCustomerMatchMembersRequest;
+use Google\Service\DisplayVideo\EditCustomerMatchMembersResponse;
+use Google\Service\DisplayVideo\FirstPartyAndPartnerAudience;
+use Google\Service\DisplayVideo\ListFirstPartyAndPartnerAudiencesResponse;
 /**
  * The "firstPartyAndPartnerAudiences" collection of methods.
  * Typical usage is:

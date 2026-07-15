@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Firewall;
+use Google\Service\Compute\FirewallList;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "firewalls" collection of methods.
  * Typical usage is:

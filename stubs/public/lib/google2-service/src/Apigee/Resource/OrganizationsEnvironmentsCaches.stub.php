@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "caches" collection of methods.
  * Typical usage is:

@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Dataset;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportDataRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportDataRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDatasetsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchDataItemsResponse;
+use Google\Service\Aiplatform\GoogleIamV1Policy;
+use Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Aiplatform\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "datasets" collection of methods.
  * Typical usage is:

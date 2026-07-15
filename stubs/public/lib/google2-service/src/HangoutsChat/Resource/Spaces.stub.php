@@ -23,6 +23,13 @@
  */
 namespace Google\Service\HangoutsChat\Resource;
 
+use Google\Service\HangoutsChat\ChatEmpty;
+use Google\Service\HangoutsChat\CompleteImportSpaceRequest;
+use Google\Service\HangoutsChat\CompleteImportSpaceResponse;
+use Google\Service\HangoutsChat\ListSpacesResponse;
+use Google\Service\HangoutsChat\SearchSpacesResponse;
+use Google\Service\HangoutsChat\SetUpSpaceRequest;
+use Google\Service\HangoutsChat\Space;
 /**
  * The "spaces" collection of methods.
  * Typical usage is:

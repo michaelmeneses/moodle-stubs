@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\ListAuthorizedDomainsResponse;
 /**
  * The "authorizeddomains" collection of methods.
  * Typical usage is:

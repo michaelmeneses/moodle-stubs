@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Assuredworkloads\Resource;
 
+use Google\Service\Assuredworkloads\GoogleLongrunningListOperationsResponse;
+use Google\Service\Assuredworkloads\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

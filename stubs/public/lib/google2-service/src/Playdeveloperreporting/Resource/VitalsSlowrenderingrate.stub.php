@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Playdeveloperreporting\Resource;
 
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QuerySlowRenderingRateMetricSetRequest;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QuerySlowRenderingRateMetricSetResponse;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1SlowRenderingRateMetricSet;
 /**
  * The "slowrenderingrate" collection of methods.
  * Typical usage is:

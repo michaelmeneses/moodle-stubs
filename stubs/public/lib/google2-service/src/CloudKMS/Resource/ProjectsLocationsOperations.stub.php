@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudKMS\Resource;
 
+use Google\Service\CloudKMS\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

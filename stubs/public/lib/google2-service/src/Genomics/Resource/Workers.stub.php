@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Genomics\Resource;
 
+use Google\Service\Genomics\CheckInRequest;
+use Google\Service\Genomics\CheckInResponse;
 /**
  * The "workers" collection of methods.
  * Typical usage is:

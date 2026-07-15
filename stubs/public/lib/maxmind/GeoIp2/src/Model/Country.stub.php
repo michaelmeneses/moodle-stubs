@@ -8,6 +8,11 @@
  */
 namespace GeoIp2\Model;
 
+use GeoIp2\Record\Continent;
+use GeoIp2\Record\Country as CountryRecord;
+use GeoIp2\Record\MaxMind;
+use GeoIp2\Record\RepresentedCountry;
+use GeoIp2\Record\Traits;
 /**
  * Model class for the data returned by GeoIP2 Country web service and database.
  *

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\BackupPlanRevision;
+use Google\Service\Backupdr\ListBackupPlanRevisionsResponse;
 /**
  * The "revisions" collection of methods.
  * Typical usage is:

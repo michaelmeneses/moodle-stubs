@@ -23,6 +23,8 @@
  */
 namespace Google\Service\APIManagement\Resource;
 
+use Google\Service\APIManagement\ApiOperation;
+use Google\Service\APIManagement\ListApiOperationsResponse;
 /**
  * The "apiOperations" collection of methods.
  * Typical usage is:

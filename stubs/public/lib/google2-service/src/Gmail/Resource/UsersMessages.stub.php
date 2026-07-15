@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\BatchDeleteMessagesRequest;
+use Google\Service\Gmail\BatchModifyMessagesRequest;
+use Google\Service\Gmail\ListMessagesResponse;
+use Google\Service\Gmail\Message;
+use Google\Service\Gmail\ModifyMessageRequest;
 /**
  * The "messages" collection of methods.
  * Typical usage is:

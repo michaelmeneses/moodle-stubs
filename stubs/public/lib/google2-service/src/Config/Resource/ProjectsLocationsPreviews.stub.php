@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Config\Resource;
 
+use Google\Service\Config\ExportPreviewResultRequest;
+use Google\Service\Config\ExportPreviewResultResponse;
+use Google\Service\Config\ListPreviewsResponse;
+use Google\Service\Config\Operation;
+use Google\Service\Config\Preview;
 /**
  * The "previews" collection of methods.
  * Typical usage is:

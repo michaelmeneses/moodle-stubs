@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\InventoryItem;
+use Google\Service\Dfareporting\InventoryItemsListResponse;
 /**
  * The "inventoryItems" collection of methods.
  * Typical usage is:

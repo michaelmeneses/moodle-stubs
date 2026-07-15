@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\AssignedInventorySource;
+use Google\Service\DisplayVideo\BulkEditAssignedInventorySourcesRequest;
+use Google\Service\DisplayVideo\BulkEditAssignedInventorySourcesResponse;
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\ListAssignedInventorySourcesResponse;
 /**
  * The "assignedInventorySources" collection of methods.
  * Typical usage is:

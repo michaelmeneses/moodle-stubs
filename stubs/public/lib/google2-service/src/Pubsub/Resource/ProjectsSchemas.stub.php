@@ -23,6 +23,20 @@
  */
 namespace Google\Service\Pubsub\Resource;
 
+use Google\Service\Pubsub\CommitSchemaRequest;
+use Google\Service\Pubsub\ListSchemaRevisionsResponse;
+use Google\Service\Pubsub\ListSchemasResponse;
+use Google\Service\Pubsub\Policy;
+use Google\Service\Pubsub\PubsubEmpty;
+use Google\Service\Pubsub\RollbackSchemaRequest;
+use Google\Service\Pubsub\Schema;
+use Google\Service\Pubsub\SetIamPolicyRequest;
+use Google\Service\Pubsub\TestIamPermissionsRequest;
+use Google\Service\Pubsub\TestIamPermissionsResponse;
+use Google\Service\Pubsub\ValidateMessageRequest;
+use Google\Service\Pubsub\ValidateMessageResponse;
+use Google\Service\Pubsub\ValidateSchemaRequest;
+use Google\Service\Pubsub\ValidateSchemaResponse;
 /**
  * The "schemas" collection of methods.
  * Typical usage is:

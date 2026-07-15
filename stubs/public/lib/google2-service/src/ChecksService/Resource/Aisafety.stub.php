@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ChecksService\Resource;
 
+use Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentRequest;
+use Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentResponse;
 /**
  * The "aisafety" collection of methods.
  * Typical usage is:

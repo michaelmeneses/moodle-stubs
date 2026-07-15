@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\FloodlightActivity;
+use Google\Service\DisplayVideo\ListFloodlightActivitiesResponse;
 /**
  * The "floodlightActivities" collection of methods.
  * Typical usage is:

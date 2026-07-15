@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\exception\coding_exception;
+use core_table\output\html_table;
+use core_table\output\html_table_cell;
+use core_table\output\html_table_row;
+use core_text;
+use moodle_url;
 /**
  * Simple html output class
  *

@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation;
 
+use ArrayIterator;
+use Countable;
+use IteratorAggregate;
+use Traversable;
 /**
  * Navigation node collection
  *

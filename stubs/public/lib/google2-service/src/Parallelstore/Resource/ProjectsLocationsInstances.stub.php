@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Parallelstore\Resource;
 
+use Google\Service\Parallelstore\ExportDataRequest;
+use Google\Service\Parallelstore\ImportDataRequest;
+use Google\Service\Parallelstore\Instance;
+use Google\Service\Parallelstore\ListInstancesResponse;
+use Google\Service\Parallelstore\Operation;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

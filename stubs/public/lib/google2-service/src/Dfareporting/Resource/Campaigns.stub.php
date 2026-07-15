@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\Campaign;
+use Google\Service\Dfareporting\CampaignsListResponse;
 /**
  * The "campaigns" collection of methods.
  * Typical usage is:

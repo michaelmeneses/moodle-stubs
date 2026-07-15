@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Storage\Resource;
 
+use Google\Service\Storage\ManagedFolder;
+use Google\Service\Storage\ManagedFolders as ManagedFoldersModel;
+use Google\Service\Storage\Policy;
+use Google\Service\Storage\TestIamPermissionsResponse;
 /**
  * The "managedFolders" collection of methods.
  * Typical usage is:

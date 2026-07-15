@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\BuildTrigger;
+use Google\Service\CloudBuild\CloudbuildEmpty;
+use Google\Service\CloudBuild\HttpBody;
+use Google\Service\CloudBuild\ListBuildTriggersResponse;
+use Google\Service\CloudBuild\Operation;
+use Google\Service\CloudBuild\ReceiveTriggerWebhookResponse;
+use Google\Service\CloudBuild\RepoSource;
 /**
  * The "triggers" collection of methods.
  * Typical usage is:

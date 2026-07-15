@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\ProvisioningConfig;
+use Google\Service\Baremetalsolution\SubmitProvisioningConfigRequest;
+use Google\Service\Baremetalsolution\SubmitProvisioningConfigResponse;
 /**
  * The "provisioningConfigs" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\MyBusinessAccountManagement\Resource;
 
+use Google\Service\MyBusinessAccountManagement\AcceptInvitationRequest;
+use Google\Service\MyBusinessAccountManagement\DeclineInvitationRequest;
+use Google\Service\MyBusinessAccountManagement\ListInvitationsResponse;
+use Google\Service\MyBusinessAccountManagement\MybusinessaccountmanagementEmpty;
 /**
  * The "invitations" collection of methods.
  * Typical usage is:

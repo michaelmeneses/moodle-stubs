@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListTransitionRouteGroupsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TransitionRouteGroup;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "transitionRouteGroups" collection of methods.
  * Typical usage is:

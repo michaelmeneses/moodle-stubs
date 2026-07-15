@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\plugins;
 
+use admin_externalpage;
+use core_component;
+use core_text;
+use mod_bigbluebuttonbn\extension;
+use moodle_url;
+use core_admin\admin_search;
 /**
  * Admin external page that displays a list of the installed extension plugins.
  *

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DeployFlowRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Environment;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListEnvironmentsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RunContinuousTestRequest;
+use Google\Service\Dialogflow\GoogleLongrunningOperation;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "environments" collection of methods.
  * Typical usage is:

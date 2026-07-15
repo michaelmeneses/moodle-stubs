@@ -23,6 +23,14 @@
  */
 namespace Google\Service\CloudMachineLearningEngine\Resource;
 
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1CancelJobRequest;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Job;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListJobsResponse;
+use Google\Service\CloudMachineLearningEngine\GoogleIamV1Policy;
+use Google\Service\CloudMachineLearningEngine\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\CloudMachineLearningEngine\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\CloudMachineLearningEngine\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\CloudMachineLearningEngine\GoogleProtobufEmpty;
 /**
  * The "jobs" collection of methods.
  * Typical usage is:

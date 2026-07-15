@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Appengine\Resource;
 
+use Google\Service\Appengine\ListServicesResponse;
+use Google\Service\Appengine\Operation;
+use Google\Service\Appengine\Service;
 /**
  * The "services" collection of methods.
  * Typical usage is:

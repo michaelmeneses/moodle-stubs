@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Advisorynotifications\Resource;
 
+use Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1ListNotificationsResponse;
+use Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1Notification;
 /**
  * The "notifications" collection of methods.
  * Typical usage is:

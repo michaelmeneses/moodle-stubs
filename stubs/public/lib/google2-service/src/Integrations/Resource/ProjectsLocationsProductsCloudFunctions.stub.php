@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateCloudFunctionRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateCloudFunctionResponse;
 /**
  * The "cloudFunctions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Adsense\Resource;
 
+use Google\Service\Adsense\AdUnit;
+use Google\Service\Adsense\AdUnitAdCode;
+use Google\Service\Adsense\ListAdUnitsResponse;
+use Google\Service\Adsense\ListLinkedCustomChannelsResponse;
 /**
  * The "adunits" collection of methods.
  * Typical usage is:

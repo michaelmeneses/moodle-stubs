@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Safebrowsing\Resource;
 
+use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest;
+use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse;
 /**
  * The "threatListUpdates" collection of methods.
  * Typical usage is:

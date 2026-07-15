@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AdExchangeBuyer\Resource;
 
+use Google\Service\AdExchangeBuyer\CreateOrdersRequest;
+use Google\Service\AdExchangeBuyer\CreateOrdersResponse;
+use Google\Service\AdExchangeBuyer\GetOrdersResponse;
+use Google\Service\AdExchangeBuyer\Proposal;
 /**
  * The "proposals" collection of methods.
  * Typical usage is:

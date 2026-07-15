@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GoogleAnalyticsAdmin\Resource;
 
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret;
+use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
 /**
  * The "measurementProtocolSecrets" collection of methods.
  * Typical usage is:

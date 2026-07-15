@@ -23,6 +23,8 @@
  */
 namespace Google\Service\RecommendationsAI\Resource;
 
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1Catalog;
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListCatalogsResponse;
 /**
  * The "catalogs" collection of methods.
  * Typical usage is:

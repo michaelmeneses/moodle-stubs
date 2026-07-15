@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Appengine\Resource;
 
+use Google\Service\Appengine\Application;
+use Google\Service\Appengine\Operation;
 /**
  * The "applications" collection of methods.
  * Typical usage is:

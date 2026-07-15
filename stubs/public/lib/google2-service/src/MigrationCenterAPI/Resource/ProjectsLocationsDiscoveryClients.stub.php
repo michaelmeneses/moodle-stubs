@@ -23,6 +23,10 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\DiscoveryClient;
+use Google\Service\MigrationCenterAPI\ListDiscoveryClientsResponse;
+use Google\Service\MigrationCenterAPI\Operation;
+use Google\Service\MigrationCenterAPI\SendDiscoveryClientHeartbeatRequest;
 /**
  * The "discoveryClients" collection of methods.
  * Typical usage is:

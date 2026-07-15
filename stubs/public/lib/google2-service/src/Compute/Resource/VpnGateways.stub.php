@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RegionSetLabelsRequest;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
+use Google\Service\Compute\VpnGateway;
+use Google\Service\Compute\VpnGatewayAggregatedList;
+use Google\Service\Compute\VpnGatewayList;
+use Google\Service\Compute\VpnGatewaysGetStatusResponse;
 /**
  * The "vpnGateways" collection of methods.
  * Typical usage is:

@@ -23,6 +23,24 @@
  */
 namespace Google\Service\BigtableAdmin\Resource;
 
+use Google\Service\BigtableAdmin\BigtableadminEmpty;
+use Google\Service\BigtableAdmin\CheckConsistencyRequest;
+use Google\Service\BigtableAdmin\CheckConsistencyResponse;
+use Google\Service\BigtableAdmin\CreateTableRequest;
+use Google\Service\BigtableAdmin\DropRowRangeRequest;
+use Google\Service\BigtableAdmin\GenerateConsistencyTokenRequest;
+use Google\Service\BigtableAdmin\GenerateConsistencyTokenResponse;
+use Google\Service\BigtableAdmin\GetIamPolicyRequest;
+use Google\Service\BigtableAdmin\ListTablesResponse;
+use Google\Service\BigtableAdmin\ModifyColumnFamiliesRequest;
+use Google\Service\BigtableAdmin\Operation;
+use Google\Service\BigtableAdmin\Policy;
+use Google\Service\BigtableAdmin\RestoreTableRequest;
+use Google\Service\BigtableAdmin\SetIamPolicyRequest;
+use Google\Service\BigtableAdmin\Table;
+use Google\Service\BigtableAdmin\TestIamPermissionsRequest;
+use Google\Service\BigtableAdmin\TestIamPermissionsResponse;
+use Google\Service\BigtableAdmin\UndeleteTableRequest;
 /**
  * The "tables" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\ListTlsInspectionPoliciesResponse;
+use Google\Service\NetworkSecurity\Operation;
+use Google\Service\NetworkSecurity\TlsInspectionPolicy;
 /**
  * The "tlsInspectionPolicies" collection of methods.
  * Typical usage is:

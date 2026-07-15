@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\NetworkProfile;
+use Google\Service\Compute\NetworkProfilesListResponse;
 /**
  * The "networkProfiles" collection of methods.
  * Typical usage is:

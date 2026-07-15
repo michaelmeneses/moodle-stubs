@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\HttpBody;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

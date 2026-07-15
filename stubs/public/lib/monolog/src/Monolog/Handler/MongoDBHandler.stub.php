@@ -16,6 +16,13 @@
  */
 namespace Monolog\Handler;
 
+use MongoDB\Driver\BulkWrite;
+use MongoDB\Driver\Manager;
+use MongoDB\Client;
+use Monolog\Level;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\MongoDBFormatter;
+use Monolog\LogRecord;
 /**
  * Logs to a MongoDB database.
  *

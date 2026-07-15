@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GKEHub\Resource;
 
+use Google\Service\GKEHub\ListMembershipBindingsResponse;
+use Google\Service\GKEHub\MembershipBinding;
+use Google\Service\GKEHub\Operation;
 /**
  * The "bindings" collection of methods.
  * Typical usage is:

@@ -8,6 +8,10 @@
  */
 namespace Matrix\Operators;
 
+use Matrix\Div0Exception;
+use Matrix\Exception;
+use Matrix\Matrix;
+use Matrix\Functions;
 class Division extends Multiplication
 {
     /**

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\Cluster;
+use Google\Service\ManagedKafka\ListClustersResponse;
+use Google\Service\ManagedKafka\Operation;
 /**
  * The "clusters" collection of methods.
  * Typical usage is:

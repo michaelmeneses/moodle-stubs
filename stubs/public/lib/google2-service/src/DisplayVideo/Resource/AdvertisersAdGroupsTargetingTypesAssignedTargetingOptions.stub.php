@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\AssignedTargetingOption;
+use Google\Service\DisplayVideo\ListAdGroupAssignedTargetingOptionsResponse;
 /**
  * The "assignedTargetingOptions" collection of methods.
  * Typical usage is:

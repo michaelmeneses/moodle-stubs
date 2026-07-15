@@ -23,6 +23,7 @@
  */
 namespace Google\Service\MapsPlaces\Resource;
 
+use Google\Service\MapsPlaces\GoogleMapsPlacesV1PhotoMedia;
 /**
  * The "photos" collection of methods.
  * Typical usage is:

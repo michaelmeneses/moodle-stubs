@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation;
 
+use core\output\action_link;
+use core\output\pix_icon;
+use core\url;
 /**
  * Simple class used to output a navigation branch in XML
  *

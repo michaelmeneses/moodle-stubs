@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\AddMessageRequest;
+use Google\Service\Walletobjects\GiftCardObject as GiftCardObjectModel;
+use Google\Service\Walletobjects\GiftCardObjectAddMessageResponse;
+use Google\Service\Walletobjects\GiftCardObjectListResponse;
 /**
  * The "giftcardobject" collection of methods.
  * Typical usage is:

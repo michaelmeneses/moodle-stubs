@@ -23,6 +23,10 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\FetchNetworkPolicyExternalAddressesResponse;
+use Google\Service\VMwareEngine\ListNetworkPoliciesResponse;
+use Google\Service\VMwareEngine\NetworkPolicy;
+use Google\Service\VMwareEngine\Operation;
 /**
  * The "networkPolicies" collection of methods.
  * Typical usage is:

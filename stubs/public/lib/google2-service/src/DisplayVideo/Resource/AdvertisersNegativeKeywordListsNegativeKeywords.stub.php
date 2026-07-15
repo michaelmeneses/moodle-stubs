@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\BulkEditNegativeKeywordsRequest;
+use Google\Service\DisplayVideo\BulkEditNegativeKeywordsResponse;
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\ListNegativeKeywordsResponse;
+use Google\Service\DisplayVideo\NegativeKeyword;
+use Google\Service\DisplayVideo\ReplaceNegativeKeywordsRequest;
+use Google\Service\DisplayVideo\ReplaceNegativeKeywordsResponse;
 /**
  * The "negativeKeywords" collection of methods.
  * Typical usage is:

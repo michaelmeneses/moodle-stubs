@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Changelog;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListChangelogsResponse;
 /**
  * The "changelogs" collection of methods.
  * Typical usage is:

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\exception;
 
+use core\router\response\access_denied_response;
 /**
  * An exception to describe the case where access has been denied to a resource.
  *

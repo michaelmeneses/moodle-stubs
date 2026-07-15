@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\StorageInfo;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\Listing;
+use Google\Service\AndroidPublisher\ListingsListResponse;
 /**
  * The "listings" collection of methods.
  * Typical usage is:

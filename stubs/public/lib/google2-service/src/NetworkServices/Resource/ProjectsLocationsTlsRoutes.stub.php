@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\ListTlsRoutesResponse;
+use Google\Service\NetworkServices\Operation;
+use Google\Service\NetworkServices\TlsRoute;
 /**
  * The "tlsRoutes" collection of methods.
  * Typical usage is:

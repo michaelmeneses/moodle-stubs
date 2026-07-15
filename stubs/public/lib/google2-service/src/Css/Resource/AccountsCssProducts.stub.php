@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Css\Resource;
 
+use Google\Service\Css\CssProduct;
+use Google\Service\Css\ListCssProductsResponse;
 /**
  * The "cssProducts" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Task;
 
+use Google\Service\Exception as GoogleServiceException;
+use Google\Task\Exception as GoogleTaskException;
 /**
  * A task runner with exponential backoff support.
  *

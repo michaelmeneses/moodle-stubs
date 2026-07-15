@@ -23,6 +23,7 @@
  */
 namespace Google\Service\HomeGraphService\Resource;
 
+use Google\Service\HomeGraphService\HomegraphEmpty;
 /**
  * The "agentUsers" collection of methods.
  * Typical usage is:

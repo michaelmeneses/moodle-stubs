@@ -16,6 +16,8 @@
  */
 namespace Mustache\Loader;
 
+use Mustache\Exception\UnknownTemplateException;
+use Mustache\Loader;
 /**
  * A Mustache Template cascading loader implementation, which delegates to other
  * Loader instances.

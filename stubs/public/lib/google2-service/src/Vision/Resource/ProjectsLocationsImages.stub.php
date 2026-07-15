@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Vision\Resource;
 
+use Google\Service\Vision\AsyncBatchAnnotateImagesRequest;
+use Google\Service\Vision\BatchAnnotateImagesRequest;
+use Google\Service\Vision\BatchAnnotateImagesResponse;
+use Google\Service\Vision\Operation;
 /**
  * The "images" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Deployment;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListDeploymentsResponse;
 /**
  * The "deployments" collection of methods.
  * Typical usage is:

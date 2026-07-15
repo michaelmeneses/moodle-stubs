@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\UnsampledReport;
+use Google\Service\Analytics\UnsampledReports;
 /**
  * The "unsampledReports" collection of methods.
  * Typical usage is:

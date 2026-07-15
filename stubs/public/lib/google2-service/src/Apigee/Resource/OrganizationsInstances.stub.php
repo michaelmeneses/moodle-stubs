@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1Instance;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListInstancesResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1ReportInstanceStatusRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1ReportInstanceStatusResponse;
+use Google\Service\Apigee\GoogleLongrunningOperation;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

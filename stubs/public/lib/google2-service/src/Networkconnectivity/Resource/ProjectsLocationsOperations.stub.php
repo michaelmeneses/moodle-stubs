@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\GoogleLongrunningCancelOperationRequest;
+use Google\Service\Networkconnectivity\GoogleLongrunningListOperationsResponse;
+use Google\Service\Networkconnectivity\GoogleLongrunningOperation;
+use Google\Service\Networkconnectivity\NetworkconnectivityEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

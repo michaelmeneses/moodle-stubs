@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\CalendarModeAdviceRequest;
+use Google\Service\Compute\CalendarModeAdviceResponse;
 /**
  * The "advice" collection of methods.
  * Typical usage is:

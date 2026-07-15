@@ -8,6 +8,7 @@
  */
 namespace Aws\Kafka;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Managed Streaming for Kafka** service.
  * @method \Aws\Result batchAssociateScramSecret(array $args = [])

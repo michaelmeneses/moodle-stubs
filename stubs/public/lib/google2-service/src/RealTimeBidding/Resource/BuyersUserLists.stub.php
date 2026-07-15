@@ -23,6 +23,11 @@
  */
 namespace Google\Service\RealTimeBidding\Resource;
 
+use Google\Service\RealTimeBidding\CloseUserListRequest;
+use Google\Service\RealTimeBidding\GetRemarketingTagResponse;
+use Google\Service\RealTimeBidding\ListUserListsResponse;
+use Google\Service\RealTimeBidding\OpenUserListRequest;
+use Google\Service\RealTimeBidding\UserList;
 /**
  * The "userLists" collection of methods.
  * Typical usage is:

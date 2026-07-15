@@ -23,6 +23,8 @@
  */
 namespace Google\Service\FirebaseAppDistribution\Resource;
 
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1UploadReleaseRequest;
+use Google\Service\FirebaseAppDistribution\GoogleLongrunningOperation;
 /**
  * The "media" collection of methods.
  * Typical usage is:

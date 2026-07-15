@@ -8,6 +8,9 @@
  */
 namespace Aws\Crypto;
 
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\AppendStream;
+use GuzzleHttp\Psr7\Stream;
 trait EncryptionTrait
 {
     private static $allowedOptions = ['Cipher' => true, 'KeySize' => true, 'Aad' => true];

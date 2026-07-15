@@ -23,6 +23,14 @@
  */
 namespace Google\Service\CloudWorkstations\Resource;
 
+use Google\Service\CloudWorkstations\ListUsableWorkstationConfigsResponse;
+use Google\Service\CloudWorkstations\ListWorkstationConfigsResponse;
+use Google\Service\CloudWorkstations\Operation;
+use Google\Service\CloudWorkstations\Policy;
+use Google\Service\CloudWorkstations\SetIamPolicyRequest;
+use Google\Service\CloudWorkstations\TestIamPermissionsRequest;
+use Google\Service\CloudWorkstations\TestIamPermissionsResponse;
+use Google\Service\CloudWorkstations\WorkstationConfig;
 /**
  * The "workstationConfigs" collection of methods.
  * Typical usage is:

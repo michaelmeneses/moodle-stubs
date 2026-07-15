@@ -23,6 +23,18 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\ActivateOneTimeProductOfferRequest;
+use Google\Service\AndroidPublisher\BatchDeleteOneTimeProductOffersRequest;
+use Google\Service\AndroidPublisher\BatchGetOneTimeProductOffersRequest;
+use Google\Service\AndroidPublisher\BatchGetOneTimeProductOffersResponse;
+use Google\Service\AndroidPublisher\BatchUpdateOneTimeProductOfferStatesRequest;
+use Google\Service\AndroidPublisher\BatchUpdateOneTimeProductOfferStatesResponse;
+use Google\Service\AndroidPublisher\BatchUpdateOneTimeProductOffersRequest;
+use Google\Service\AndroidPublisher\BatchUpdateOneTimeProductOffersResponse;
+use Google\Service\AndroidPublisher\CancelOneTimeProductOfferRequest;
+use Google\Service\AndroidPublisher\DeactivateOneTimeProductOfferRequest;
+use Google\Service\AndroidPublisher\ListOneTimeProductOffersResponse;
+use Google\Service\AndroidPublisher\OneTimeProductOffer;
 /**
  * The "offers" collection of methods.
  * Typical usage is:

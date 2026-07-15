@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\exception;
 
+use core\clock;
+use core\di;
+use core\exception\moodle_exception;
 /**
  * Exception thrown when a course reset takes too long
  *

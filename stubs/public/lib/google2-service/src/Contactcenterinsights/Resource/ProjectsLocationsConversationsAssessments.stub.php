@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1AppealAssessmentRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Assessment;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1FinalizeAssessmentRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAssessmentsResponse;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1PublishAssessmentRequest;
+use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
 /**
  * The "assessments" collection of methods.
  * Typical usage is:

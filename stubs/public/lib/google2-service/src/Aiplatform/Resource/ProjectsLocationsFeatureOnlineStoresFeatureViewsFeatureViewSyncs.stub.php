@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewSync;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListFeatureViewSyncsResponse;
 /**
  * The "featureViewSyncs" collection of methods.
  * Typical usage is:

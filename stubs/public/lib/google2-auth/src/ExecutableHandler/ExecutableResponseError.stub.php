@@ -23,6 +23,7 @@
  */
 namespace Google\Auth\ExecutableHandler;
 
+use Error;
 class ExecutableResponseError extends Error
 {
     public function __construct(string $message, string $executableErrorCode = 'INVALID_EXECUTABLE_RESPONSE')

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\ActivateConsentRequest;
+use Google\Service\CloudHealthcare\Consent;
+use Google\Service\CloudHealthcare\HealthcareEmpty;
+use Google\Service\CloudHealthcare\ListConsentRevisionsResponse;
+use Google\Service\CloudHealthcare\ListConsentsResponse;
+use Google\Service\CloudHealthcare\RejectConsentRequest;
+use Google\Service\CloudHealthcare\RevokeConsentRequest;
 /**
  * The "consents" collection of methods.
  * Typical usage is:

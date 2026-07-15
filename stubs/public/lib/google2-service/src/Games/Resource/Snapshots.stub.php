@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\Snapshot;
+use Google\Service\Games\SnapshotListResponse;
 /**
  * The "snapshots" collection of methods.
  * Typical usage is:

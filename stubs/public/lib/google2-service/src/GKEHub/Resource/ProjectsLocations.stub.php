@@ -23,6 +23,8 @@
  */
 namespace Google\Service\GKEHub\Resource;
 
+use Google\Service\GKEHub\ListLocationsResponse;
+use Google\Service\GKEHub\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

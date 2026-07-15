@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\SchemaConfig;
+use Google\Service\ManagedKafka\UpdateSchemaConfigRequest;
 /**
  * The "config" collection of methods.
  * Typical usage is:

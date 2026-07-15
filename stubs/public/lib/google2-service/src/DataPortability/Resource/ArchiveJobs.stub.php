@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DataPortability\Resource;
 
+use Google\Service\DataPortability\CancelPortabilityArchiveRequest;
+use Google\Service\DataPortability\CancelPortabilityArchiveResponse;
+use Google\Service\DataPortability\PortabilityArchiveState;
+use Google\Service\DataPortability\RetryPortabilityArchiveRequest;
+use Google\Service\DataPortability\RetryPortabilityArchiveResponse;
 /**
  * The "archiveJobs" collection of methods.
  * Typical usage is:

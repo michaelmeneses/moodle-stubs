@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1LabelVideoRequest;
+use Google\Service\DataLabeling\GoogleLongrunningOperation;
 /**
  * The "video" collection of methods.
  * Typical usage is:

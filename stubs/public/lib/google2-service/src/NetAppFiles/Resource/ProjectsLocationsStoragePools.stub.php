@@ -23,6 +23,11 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\ListStoragePoolsResponse;
+use Google\Service\NetAppFiles\Operation;
+use Google\Service\NetAppFiles\StoragePool;
+use Google\Service\NetAppFiles\SwitchActiveReplicaZoneRequest;
+use Google\Service\NetAppFiles\ValidateDirectoryServiceRequest;
 /**
  * The "storagePools" collection of methods.
  * Typical usage is:

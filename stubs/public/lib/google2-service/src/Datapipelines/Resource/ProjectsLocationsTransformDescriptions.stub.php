@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Datapipelines\Resource;
 
+use Google\Service\Datapipelines\GoogleCloudDatapipelinesV1BatchGetTransformDescriptionsResponse;
+use Google\Service\Datapipelines\GoogleCloudDatapipelinesV1TransformDescription;
 /**
  * The "transformDescriptions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,12 @@
  */
 namespace Google\Service\RapidMigrationAssessment\Resource;
 
+use Google\Service\RapidMigrationAssessment\Collector;
+use Google\Service\RapidMigrationAssessment\ListCollectorsResponse;
+use Google\Service\RapidMigrationAssessment\Operation;
+use Google\Service\RapidMigrationAssessment\PauseCollectorRequest;
+use Google\Service\RapidMigrationAssessment\RegisterCollectorRequest;
+use Google\Service\RapidMigrationAssessment\ResumeCollectorRequest;
 /**
  * The "collectors" collection of methods.
  * Typical usage is:

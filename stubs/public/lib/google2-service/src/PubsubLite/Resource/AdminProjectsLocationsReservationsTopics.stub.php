@@ -23,6 +23,7 @@
  */
 namespace Google\Service\PubsubLite\Resource;
 
+use Google\Service\PubsubLite\ListReservationTopicsResponse;
 /**
  * The "topics" collection of methods.
  * Typical usage is:

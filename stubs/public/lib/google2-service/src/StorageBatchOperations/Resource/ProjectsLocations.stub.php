@@ -23,6 +23,8 @@
  */
 namespace Google\Service\StorageBatchOperations\Resource;
 
+use Google\Service\StorageBatchOperations\ListLocationsResponse;
+use Google\Service\StorageBatchOperations\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

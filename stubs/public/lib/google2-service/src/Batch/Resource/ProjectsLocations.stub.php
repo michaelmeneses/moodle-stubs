@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Batch\Resource;
 
+use Google\Service\Batch\ListLocationsResponse;
+use Google\Service\Batch\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

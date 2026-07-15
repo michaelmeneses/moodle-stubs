@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Artifact;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1LineageSubgraph;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListArtifactsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1PurgeArtifactsRequest;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "artifacts" collection of methods.
  * Typical usage is:

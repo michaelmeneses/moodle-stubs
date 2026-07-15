@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\GoogleLongrunningListOperationsResponse;
+use Google\Service\CloudRun\GoogleLongrunningOperation;
+use Google\Service\CloudRun\GoogleLongrunningWaitOperationRequest;
+use Google\Service\CloudRun\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

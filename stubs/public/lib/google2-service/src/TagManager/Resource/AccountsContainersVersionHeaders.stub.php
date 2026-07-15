@@ -23,6 +23,8 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\ContainerVersionHeader;
+use Google\Service\TagManager\ListContainerVersionsResponse;
 /**
  * The "version_headers" collection of methods.
  * Typical usage is:

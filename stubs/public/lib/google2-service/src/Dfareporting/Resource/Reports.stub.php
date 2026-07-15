@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\DfareportingFile;
+use Google\Service\Dfareporting\Report;
+use Google\Service\Dfareporting\ReportList;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

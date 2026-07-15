@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Eventarc\Resource;
 
+use Google\Service\Eventarc\GoogleChannelConfig;
+use Google\Service\Eventarc\ListLocationsResponse;
+use Google\Service\Eventarc\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CertificateManager\Resource;
 
+use Google\Service\CertificateManager\ListTrustConfigsResponse;
+use Google\Service\CertificateManager\Operation;
+use Google\Service\CertificateManager\TrustConfig;
 /**
  * The "trustConfigs" collection of methods.
  * Typical usage is:

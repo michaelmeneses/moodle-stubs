@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\check;
 
+use core\output\html_writer;
 /**
  * A table of check results.
  *

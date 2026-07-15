@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Eventarc\Resource;
 
+use Google\Service\Eventarc\ChannelConnection;
+use Google\Service\Eventarc\GoogleLongrunningOperation;
+use Google\Service\Eventarc\ListChannelConnectionsResponse;
+use Google\Service\Eventarc\Policy;
+use Google\Service\Eventarc\SetIamPolicyRequest;
+use Google\Service\Eventarc\TestIamPermissionsRequest;
+use Google\Service\Eventarc\TestIamPermissionsResponse;
 /**
  * The "channelConnections" collection of methods.
  * Typical usage is:

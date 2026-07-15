@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\ListRemoteTransportProfilesResponse;
+use Google\Service\Networkconnectivity\RemoteTransportProfile;
 /**
  * The "remoteTransportProfiles" collection of methods.
  * Typical usage is:

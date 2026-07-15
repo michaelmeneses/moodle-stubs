@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\ExecuteEventRequestContent;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteEventResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteIntegrationsRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteIntegrationsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListIntegrationsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaScheduleIntegrationsRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaScheduleIntegrationsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSearchIntegrationsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTestIntegrationsRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTestIntegrationsResponse;
+use Google\Service\Integrations\GoogleProtobufEmpty;
 /**
  * The "integrations" collection of methods.
  * Typical usage is:

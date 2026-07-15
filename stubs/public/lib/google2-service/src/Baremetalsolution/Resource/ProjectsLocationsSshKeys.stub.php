@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\BaremetalsolutionEmpty;
+use Google\Service\Baremetalsolution\ListSSHKeysResponse;
+use Google\Service\Baremetalsolution\SSHKey;
 /**
  * The "sshKeys" collection of methods.
  * Typical usage is:

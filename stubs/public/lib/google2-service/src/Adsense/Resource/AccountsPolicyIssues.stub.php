@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Adsense\Resource;
 
+use Google\Service\Adsense\ListPolicyIssuesResponse;
+use Google\Service\Adsense\PolicyIssue;
 /**
  * The "policyIssues" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Iam\Resource;
 
+use Google\Service\Iam\CreateRoleRequest;
+use Google\Service\Iam\ListRolesResponse;
+use Google\Service\Iam\Role;
+use Google\Service\Iam\UndeleteRoleRequest;
 /**
  * The "roles" collection of methods.
  * Typical usage is:

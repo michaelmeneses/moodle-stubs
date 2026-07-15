@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Dataproc\Resource;
 
+use Google\Service\Dataproc\NodeGroup;
+use Google\Service\Dataproc\Operation;
+use Google\Service\Dataproc\RepairNodeGroupRequest;
+use Google\Service\Dataproc\ResizeNodeGroupRequest;
 /**
  * The "nodeGroups" collection of methods.
  * Typical usage is:

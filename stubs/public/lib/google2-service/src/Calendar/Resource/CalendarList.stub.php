@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Calendar\Resource;
 
+use Google\Service\Calendar\CalendarList as CalendarListModel;
+use Google\Service\Calendar\CalendarListEntry;
+use Google\Service\Calendar\Channel;
 /**
  * The "calendarList" collection of methods.
  * Typical usage is:

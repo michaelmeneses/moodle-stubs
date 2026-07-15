@@ -16,6 +16,14 @@
  */
 namespace Monolog\Handler;
 
+use Elastic\Transport\Exception\TransportException;
+use Elastica\Document;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\ElasticaFormatter;
+use Monolog\Level;
+use Elastica\Client;
+use Elastica\Exception\ExceptionInterface;
+use Monolog\LogRecord;
 /**
  * Elastic Search handler
  *

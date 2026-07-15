@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Appengine\Resource;
 
+use Google\Service\Appengine\DomainMapping;
+use Google\Service\Appengine\ListDomainMappingsResponse;
+use Google\Service\Appengine\Operation;
 /**
  * The "domainMappings" collection of methods.
  * Typical usage is:

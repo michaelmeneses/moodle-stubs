@@ -23,6 +23,7 @@
  */
 namespace Google\Service\WebRisk\Resource;
 
+use Google\Service\WebRisk\GoogleCloudWebriskV1ComputeThreatListDiffResponse;
 /**
  * The "threatLists" collection of methods.
  * Typical usage is:

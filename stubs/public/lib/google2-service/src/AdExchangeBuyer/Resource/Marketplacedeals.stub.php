@@ -23,6 +23,13 @@
  */
 namespace Google\Service\AdExchangeBuyer\Resource;
 
+use Google\Service\AdExchangeBuyer\AddOrderDealsRequest;
+use Google\Service\AdExchangeBuyer\AddOrderDealsResponse;
+use Google\Service\AdExchangeBuyer\DeleteOrderDealsRequest;
+use Google\Service\AdExchangeBuyer\DeleteOrderDealsResponse;
+use Google\Service\AdExchangeBuyer\EditAllOrderDealsRequest;
+use Google\Service\AdExchangeBuyer\EditAllOrderDealsResponse;
+use Google\Service\AdExchangeBuyer\GetOrderDealsResponse;
 /**
  * The "marketplacedeals" collection of methods.
  * Typical usage is:

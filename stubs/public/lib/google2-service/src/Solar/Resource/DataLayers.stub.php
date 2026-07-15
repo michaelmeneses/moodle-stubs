@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Solar\Resource;
 
+use Google\Service\Solar\DataLayers as DataLayersModel;
 /**
  * The "dataLayers" collection of methods.
  * Typical usage is:

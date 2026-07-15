@@ -32,6 +32,8 @@
  */
 namespace qbank_editquestion;
 
+use core_question\local\bank\question_version_status;
+use qbank_editquestion\output\add_new_question;
 /**
  * Class editquestion_helper for methods related to add/edit/copy
  *

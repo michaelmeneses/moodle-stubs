@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Address;
+use Google\Service\Compute\AddressList;
+use Google\Service\Compute\GlobalAddressesMoveRequest;
+use Google\Service\Compute\GlobalSetLabelsRequest;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "globalAddresses" collection of methods.
  * Typical usage is:

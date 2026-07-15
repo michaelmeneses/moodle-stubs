@@ -23,6 +23,12 @@
  */
 namespace Google\Service\FirebaseAppDistribution\Resource;
 
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchAddTestersRequest;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchAddTestersResponse;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchRemoveTestersRequest;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchRemoveTestersResponse;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ListTestersResponse;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1Tester;
 /**
  * The "testers" collection of methods.
  * Typical usage is:

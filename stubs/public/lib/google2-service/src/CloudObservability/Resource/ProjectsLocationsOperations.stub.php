@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudObservability\Resource;
 
+use Google\Service\CloudObservability\CancelOperationRequest;
+use Google\Service\CloudObservability\ListOperationsResponse;
+use Google\Service\CloudObservability\ObservabilityEmpty;
+use Google\Service\CloudObservability\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

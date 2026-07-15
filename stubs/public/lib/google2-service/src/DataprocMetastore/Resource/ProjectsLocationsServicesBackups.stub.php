@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DataprocMetastore\Resource;
 
+use Google\Service\DataprocMetastore\GoogleCloudMetastoreV2Backup;
+use Google\Service\DataprocMetastore\GoogleCloudMetastoreV2ListBackupsResponse;
+use Google\Service\DataprocMetastore\GoogleLongrunningOperation;
 /**
  * The "backups" collection of methods.
  * Typical usage is:

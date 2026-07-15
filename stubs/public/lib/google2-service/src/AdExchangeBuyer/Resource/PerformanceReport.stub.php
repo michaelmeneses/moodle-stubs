@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AdExchangeBuyer\Resource;
 
+use Google\Service\AdExchangeBuyer\PerformanceReportList;
 /**
  * The "performanceReport" collection of methods.
  * Typical usage is:

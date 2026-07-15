@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Document\Resource;
 
+use Google\Service\Document\GoogleCloudDocumentaiV1GenerateSchemaVersionRequest;
+use Google\Service\Document\GoogleCloudDocumentaiV1GenerateSchemaVersionResponse;
+use Google\Service\Document\GoogleCloudDocumentaiV1ListSchemaVersionsResponse;
+use Google\Service\Document\GoogleCloudDocumentaiV1SchemaVersion;
+use Google\Service\Document\GoogleLongrunningOperation;
 /**
  * The "schemaVersions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudSupport\Resource;
 
+use Google\Service\CloudSupport\SearchCaseClassificationsResponse;
 /**
  * The "caseClassifications" collection of methods.
  * Typical usage is:

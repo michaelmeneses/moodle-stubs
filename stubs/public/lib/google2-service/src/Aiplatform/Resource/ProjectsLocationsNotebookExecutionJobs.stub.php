@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListNotebookExecutionJobsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookExecutionJob;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "notebookExecutionJobs" collection of methods.
  * Typical usage is:

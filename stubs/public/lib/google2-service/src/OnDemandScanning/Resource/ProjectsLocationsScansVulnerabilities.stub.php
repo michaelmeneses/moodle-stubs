@@ -23,6 +23,7 @@
  */
 namespace Google\Service\OnDemandScanning\Resource;
 
+use Google\Service\OnDemandScanning\ListVulnerabilitiesResponseV1;
 /**
  * The "vulnerabilities" collection of methods.
  * Typical usage is:

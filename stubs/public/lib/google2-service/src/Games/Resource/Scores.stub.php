@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\LeaderboardScores;
+use Google\Service\Games\PlayerLeaderboardScoreListResponse;
+use Google\Service\Games\PlayerScoreListResponse;
+use Google\Service\Games\PlayerScoreResponse;
+use Google\Service\Games\PlayerScoreSubmissionList;
 /**
  * The "scores" collection of methods.
  * Typical usage is:

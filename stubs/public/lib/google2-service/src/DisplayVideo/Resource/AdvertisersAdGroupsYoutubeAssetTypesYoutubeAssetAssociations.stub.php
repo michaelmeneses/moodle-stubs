@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\ListYoutubeAssetAssociationsResponse;
+use Google\Service\DisplayVideo\YoutubeAssetAssociation;
 /**
  * The "youtubeAssetAssociations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,16 @@
  */
 namespace Google\Service\Dataproc\Resource;
 
+use Google\Service\Dataproc\DataprocEmpty;
+use Google\Service\Dataproc\GetIamPolicyRequest;
+use Google\Service\Dataproc\InstantiateWorkflowTemplateRequest;
+use Google\Service\Dataproc\ListWorkflowTemplatesResponse;
+use Google\Service\Dataproc\Operation;
+use Google\Service\Dataproc\Policy;
+use Google\Service\Dataproc\SetIamPolicyRequest;
+use Google\Service\Dataproc\TestIamPermissionsRequest;
+use Google\Service\Dataproc\TestIamPermissionsResponse;
+use Google\Service\Dataproc\WorkflowTemplate;
 /**
  * The "workflowTemplates" collection of methods.
  * Typical usage is:

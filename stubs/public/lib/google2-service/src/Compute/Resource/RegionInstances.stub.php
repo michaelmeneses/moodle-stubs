@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\BulkInsertInstanceResource;
+use Google\Service\Compute\Operation;
 /**
  * The "regionInstances" collection of methods.
  * Typical usage is:

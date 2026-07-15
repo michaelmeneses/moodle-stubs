@@ -23,6 +23,16 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployIndexRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployedIndex;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1FindNeighborsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1FindNeighborsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexEndpoint;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListIndexEndpointsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadIndexDatapointsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadIndexDatapointsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1UndeployIndexRequest;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "indexEndpoints" collection of methods.
  * Typical usage is:

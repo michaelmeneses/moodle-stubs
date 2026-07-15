@@ -23,6 +23,10 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\CancelOperationRequest;
+use Google\Service\OracleDatabase\ListOperationsResponse;
+use Google\Service\OracleDatabase\Operation;
+use Google\Service\OracleDatabase\OracledatabaseEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

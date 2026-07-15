@@ -29,6 +29,11 @@
  */
 namespace core_competency\external;
 
+use context_system;
+use renderer_base;
+use core_competency\evidence;
+use core_competency\user_competency;
+use core_user\external\user_summary_exporter;
 /**
  * Class for exporting evidence data.
  *

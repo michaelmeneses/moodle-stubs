@@ -23,6 +23,8 @@
  */
 namespace Google\Service\TPU\Resource;
 
+use Google\Service\TPU\ListRuntimeVersionsResponse;
+use Google\Service\TPU\RuntimeVersion;
 /**
  * The "runtimeVersions" collection of methods.
  * Typical usage is:

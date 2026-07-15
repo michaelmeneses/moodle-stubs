@@ -23,6 +23,14 @@
  */
 namespace Google\Service\HomeGraphService\Resource;
 
+use Google\Service\HomeGraphService\QueryRequest;
+use Google\Service\HomeGraphService\QueryResponse;
+use Google\Service\HomeGraphService\ReportStateAndNotificationRequest;
+use Google\Service\HomeGraphService\ReportStateAndNotificationResponse;
+use Google\Service\HomeGraphService\RequestSyncDevicesRequest;
+use Google\Service\HomeGraphService\RequestSyncDevicesResponse;
+use Google\Service\HomeGraphService\SyncRequest;
+use Google\Service\HomeGraphService\SyncResponse;
 /**
  * The "devices" collection of methods.
  * Typical usage is:

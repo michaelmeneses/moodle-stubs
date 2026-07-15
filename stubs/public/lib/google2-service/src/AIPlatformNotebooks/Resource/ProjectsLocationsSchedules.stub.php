@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AIPlatformNotebooks\Resource;
 
+use Google\Service\AIPlatformNotebooks\ListSchedulesResponse;
+use Google\Service\AIPlatformNotebooks\Operation;
+use Google\Service\AIPlatformNotebooks\Schedule;
+use Google\Service\AIPlatformNotebooks\TriggerScheduleRequest;
 /**
  * The "schedules" collection of methods.
  * Typical usage is:

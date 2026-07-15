@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Autoscaler;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RegionAutoscalerList;
 /**
  * The "regionAutoscalers" collection of methods.
  * Typical usage is:

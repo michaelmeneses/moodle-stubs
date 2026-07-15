@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1MuteConfig;
+use Google\Service\SecurityCommandCenter\SecuritycenterEmpty;
 /**
  * The "muteConfigs" collection of methods.
  * Typical usage is:

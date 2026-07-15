@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchCreateTargetSitesRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListTargetSitesResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1TargetSite;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "targetSites" collection of methods.
  * Typical usage is:

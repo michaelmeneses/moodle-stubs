@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1FetchSitemapsResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Sitemap;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "sitemaps" collection of methods.
  * Typical usage is:

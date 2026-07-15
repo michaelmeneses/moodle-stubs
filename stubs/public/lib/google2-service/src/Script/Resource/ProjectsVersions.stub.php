@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Script\Resource;
 
+use Google\Service\Script\ListVersionsResponse;
+use Google\Service\Script\Version;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

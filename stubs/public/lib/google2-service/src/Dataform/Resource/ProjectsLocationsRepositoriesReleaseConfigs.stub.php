@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dataform\Resource;
 
+use Google\Service\Dataform\DataformEmpty;
+use Google\Service\Dataform\ListReleaseConfigsResponse;
+use Google\Service\Dataform\ReleaseConfig;
 /**
  * The "releaseConfigs" collection of methods.
  * Typical usage is:

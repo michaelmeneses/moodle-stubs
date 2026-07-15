@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudComposer\Resource;
 
+use Google\Service\CloudComposer\ComposerEmpty;
+use Google\Service\CloudComposer\ListUserWorkloadsSecretsResponse;
+use Google\Service\CloudComposer\UserWorkloadsSecret;
 /**
  * The "userWorkloadsSecrets" collection of methods.
  * Typical usage is:

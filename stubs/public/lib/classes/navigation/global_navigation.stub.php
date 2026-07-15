@@ -22,6 +22,26 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation;
 
+use cm_info;
+use section_info;
+use core\component;
+use core\context\course as context_course;
+use core\context\coursecat as context_coursecat;
+use core\context\module as context_module;
+use core\context\system as context_system;
+use core\context\user as context_user;
+use core\context_helper;
+use core\exception\coding_exception;
+use core\output\action_link;
+use core\output\actions\component_action;
+use core\output\pix_icon;
+use core\url;
+use core_cache\cache;
+use core_cache\session_cache;
+use core_course_category;
+use course_modinfo;
+use moodle_page;
+use stdClass;
 /**
  * The global navigation class used for... the global navigation
  *

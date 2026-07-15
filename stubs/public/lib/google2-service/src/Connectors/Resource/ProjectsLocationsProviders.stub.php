@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\Policy;
+use Google\Service\Connectors\SetIamPolicyRequest;
+use Google\Service\Connectors\TestIamPermissionsRequest;
+use Google\Service\Connectors\TestIamPermissionsResponse;
 /**
  * The "providers" collection of methods.
  * Typical usage is:

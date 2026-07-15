@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ApigeeRegistry\Resource;
 
+use Google\Service\ApigeeRegistry\ApigeeregistryEmpty;
+use Google\Service\ApigeeRegistry\CancelOperationRequest;
+use Google\Service\ApigeeRegistry\ListOperationsResponse;
+use Google\Service\ApigeeRegistry\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

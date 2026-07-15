@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListPersistentResourcesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1PersistentResource;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RebootPersistentResourceRequest;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "persistentResources" collection of methods.
  * Typical usage is:

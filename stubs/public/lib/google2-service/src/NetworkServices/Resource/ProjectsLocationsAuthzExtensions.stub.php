@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\AuthzExtension;
+use Google\Service\NetworkServices\ListAuthzExtensionsResponse;
+use Google\Service\NetworkServices\Operation;
 /**
  * The "authzExtensions" collection of methods.
  * Typical usage is:

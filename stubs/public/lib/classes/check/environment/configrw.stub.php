@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\check\environment;
 
+use core\check\check;
+use core\check\result;
 /**
  * Verifies config.php is not writable anymore after installation
  *

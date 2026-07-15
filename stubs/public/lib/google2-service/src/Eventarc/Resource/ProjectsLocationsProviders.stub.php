@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Eventarc\Resource;
 
+use Google\Service\Eventarc\ListProvidersResponse;
+use Google\Service\Eventarc\Provider;
 /**
  * The "providers" collection of methods.
  * Typical usage is:

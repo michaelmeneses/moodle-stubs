@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1DnsZone;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListDnsZonesResponse;
+use Google\Service\Apigee\GoogleLongrunningOperation;
 /**
  * The "dnsZones" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ChecksService\Resource;
 
+use Google\Service\ChecksService\GoogleChecksReportV1alphaListReportsResponse;
+use Google\Service\ChecksService\GoogleChecksReportV1alphaReport;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

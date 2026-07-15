@@ -23,6 +23,8 @@
  */
 namespace Google\Service\NetworkManagement\Resource;
 
+use Google\Service\NetworkManagement\ListMonitoringPointsResponse;
+use Google\Service\NetworkManagement\MonitoringPoint;
 /**
  * The "monitoringPoints" collection of methods.
  * Typical usage is:

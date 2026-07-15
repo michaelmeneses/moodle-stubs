@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\DatafeedStatus;
+use Google\Service\ShoppingContent\DatafeedstatusesCustomBatchRequest;
+use Google\Service\ShoppingContent\DatafeedstatusesCustomBatchResponse;
+use Google\Service\ShoppingContent\DatafeedstatusesListResponse;
 /**
  * The "datafeedstatuses" collection of methods.
  * Typical usage is:

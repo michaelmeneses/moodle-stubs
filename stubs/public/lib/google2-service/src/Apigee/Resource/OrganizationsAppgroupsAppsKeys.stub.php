@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1AppGroupAppKey;
+use Google\Service\Apigee\GoogleCloudApigeeV1UpdateAppGroupAppKeyRequest;
 /**
  * The "keys" collection of methods.
  * Typical usage is:

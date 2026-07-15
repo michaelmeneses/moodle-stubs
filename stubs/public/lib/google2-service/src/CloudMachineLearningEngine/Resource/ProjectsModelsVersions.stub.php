@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudMachineLearningEngine\Resource;
 
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListVersionsResponse;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SetDefaultVersionRequest;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version;
+use Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

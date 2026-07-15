@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataCatalog\Resource;
 
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1SearchCatalogRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1SearchCatalogResponse;
 /**
  * The "catalog" collection of methods.
  * Typical usage is:

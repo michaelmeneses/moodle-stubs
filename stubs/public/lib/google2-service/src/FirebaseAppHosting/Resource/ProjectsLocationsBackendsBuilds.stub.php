@@ -23,6 +23,9 @@
  */
 namespace Google\Service\FirebaseAppHosting\Resource;
 
+use Google\Service\FirebaseAppHosting\Build;
+use Google\Service\FirebaseAppHosting\ListBuildsResponse;
+use Google\Service\FirebaseAppHosting\Operation;
 /**
  * The "builds" collection of methods.
  * Typical usage is:

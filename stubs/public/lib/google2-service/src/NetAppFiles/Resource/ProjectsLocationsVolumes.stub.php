@@ -23,6 +23,11 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\ListVolumesResponse;
+use Google\Service\NetAppFiles\Operation;
+use Google\Service\NetAppFiles\RestoreBackupFilesRequest;
+use Google\Service\NetAppFiles\RevertVolumeRequest;
+use Google\Service\NetAppFiles\Volume;
 /**
  * The "volumes" collection of methods.
  * Typical usage is:

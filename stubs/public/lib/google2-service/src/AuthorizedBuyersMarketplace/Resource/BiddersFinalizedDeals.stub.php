@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AuthorizedBuyersMarketplace\Resource;
 
+use Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal;
+use Google\Service\AuthorizedBuyersMarketplace\ListFinalizedDealsResponse;
+use Google\Service\AuthorizedBuyersMarketplace\SetReadyToServeRequest;
 /**
  * The "finalizedDeals" collection of methods.
  * Typical usage is:

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation;
 
+use core\context\module as context_module;
+use core\context\course as context_course;
+use core\context_helper;
+use core\url;
+use moodle_page;
 /**
  * The global navigation class used especially for AJAX requests.
  *

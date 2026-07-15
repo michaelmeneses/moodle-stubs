@@ -23,6 +23,8 @@
  */
 namespace Google\Service\MyBusinessAccountManagement\Resource;
 
+use Google\Service\MyBusinessAccountManagement\MybusinessaccountmanagementEmpty;
+use Google\Service\MyBusinessAccountManagement\TransferLocationRequest;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

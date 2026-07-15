@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Contentwarehouse\Resource;
 
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListRuleSetsResponse;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RuleSet;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateRuleSetRequest;
+use Google\Service\Contentwarehouse\GoogleProtobufEmpty;
 /**
  * The "ruleSets" collection of methods.
  * Typical usage is:

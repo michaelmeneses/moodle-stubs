@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\CreateSdfDownloadTaskRequest;
+use Google\Service\DisplayVideo\Operation;
 /**
  * The "sdfdownloadtasks" collection of methods.
  * Typical usage is:

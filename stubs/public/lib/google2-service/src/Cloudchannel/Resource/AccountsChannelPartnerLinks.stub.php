@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Cloudchannel\Resource;
 
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ChannelPartnerLink;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListChannelPartnerLinksResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1UpdateChannelPartnerLinkRequest;
 /**
  * The "channelPartnerLinks" collection of methods.
  * Typical usage is:

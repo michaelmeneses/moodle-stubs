@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\ExternalTransaction;
+use Google\Service\AndroidPublisher\RefundExternalTransactionRequest;
 /**
  * The "externaltransactions" collection of methods.
  * Typical usage is:

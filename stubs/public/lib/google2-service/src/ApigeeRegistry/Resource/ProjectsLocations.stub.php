@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ApigeeRegistry\Resource;
 
+use Google\Service\ApigeeRegistry\ListLocationsResponse;
+use Google\Service\ApigeeRegistry\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

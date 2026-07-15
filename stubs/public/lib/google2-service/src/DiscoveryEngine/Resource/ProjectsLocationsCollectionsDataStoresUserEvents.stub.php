@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleApiHttpBody;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportUserEventsRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeUserEventsRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1UserEvent;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "userEvents" collection of methods.
  * Typical usage is:

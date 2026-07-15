@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\ConsumerGroup;
+use Google\Service\ManagedKafka\ListConsumerGroupsResponse;
+use Google\Service\ManagedKafka\ManagedkafkaEmpty;
 /**
  * The "consumerGroups" collection of methods.
  * Typical usage is:

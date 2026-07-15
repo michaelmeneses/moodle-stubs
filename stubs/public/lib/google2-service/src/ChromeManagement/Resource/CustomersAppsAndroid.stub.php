@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ChromeManagement\Resource;
 
+use Google\Service\ChromeManagement\GoogleChromeManagementV1AppDetails;
 /**
  * The "android" collection of methods.
  * Typical usage is:

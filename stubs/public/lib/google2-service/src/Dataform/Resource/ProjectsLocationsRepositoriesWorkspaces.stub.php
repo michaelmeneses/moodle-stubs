@@ -23,6 +23,41 @@
  */
 namespace Google\Service\Dataform\Resource;
 
+use Google\Service\Dataform\CommitWorkspaceChangesRequest;
+use Google\Service\Dataform\CommitWorkspaceChangesResponse;
+use Google\Service\Dataform\DataformEmpty;
+use Google\Service\Dataform\FetchFileDiffResponse;
+use Google\Service\Dataform\FetchFileGitStatusesResponse;
+use Google\Service\Dataform\FetchGitAheadBehindResponse;
+use Google\Service\Dataform\InstallNpmPackagesRequest;
+use Google\Service\Dataform\InstallNpmPackagesResponse;
+use Google\Service\Dataform\ListWorkspacesResponse;
+use Google\Service\Dataform\MakeDirectoryRequest;
+use Google\Service\Dataform\MakeDirectoryResponse;
+use Google\Service\Dataform\MoveDirectoryRequest;
+use Google\Service\Dataform\MoveDirectoryResponse;
+use Google\Service\Dataform\MoveFileRequest;
+use Google\Service\Dataform\MoveFileResponse;
+use Google\Service\Dataform\Policy;
+use Google\Service\Dataform\PullGitCommitsRequest;
+use Google\Service\Dataform\PullGitCommitsResponse;
+use Google\Service\Dataform\PushGitCommitsRequest;
+use Google\Service\Dataform\PushGitCommitsResponse;
+use Google\Service\Dataform\QueryDirectoryContentsResponse;
+use Google\Service\Dataform\ReadFileResponse;
+use Google\Service\Dataform\RemoveDirectoryRequest;
+use Google\Service\Dataform\RemoveDirectoryResponse;
+use Google\Service\Dataform\RemoveFileRequest;
+use Google\Service\Dataform\RemoveFileResponse;
+use Google\Service\Dataform\ResetWorkspaceChangesRequest;
+use Google\Service\Dataform\ResetWorkspaceChangesResponse;
+use Google\Service\Dataform\SearchFilesResponse;
+use Google\Service\Dataform\SetIamPolicyRequest;
+use Google\Service\Dataform\TestIamPermissionsRequest;
+use Google\Service\Dataform\TestIamPermissionsResponse;
+use Google\Service\Dataform\Workspace;
+use Google\Service\Dataform\WriteFileRequest;
+use Google\Service\Dataform\WriteFileResponse;
 /**
  * The "workspaces" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\GoogleCloudRunV2CancelExecutionRequest;
+use Google\Service\CloudRun\GoogleCloudRunV2Execution;
+use Google\Service\CloudRun\GoogleCloudRunV2ExportStatusResponse;
+use Google\Service\CloudRun\GoogleCloudRunV2ListExecutionsResponse;
+use Google\Service\CloudRun\GoogleLongrunningOperation;
 /**
  * The "executions" collection of methods.
  * Typical usage is:

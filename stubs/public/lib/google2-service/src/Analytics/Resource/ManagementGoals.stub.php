@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\Goal;
+use Google\Service\Analytics\Goals;
 /**
  * The "goals" collection of methods.
  * Typical usage is:

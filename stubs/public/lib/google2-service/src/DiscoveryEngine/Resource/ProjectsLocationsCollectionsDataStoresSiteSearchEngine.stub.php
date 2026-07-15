@@ -23,6 +23,12 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchVerifyTargetSitesRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DisableAdvancedSiteSearchRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1EnableAdvancedSiteSearchRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1FetchDomainVerificationStatusResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RecrawlUrisRequest;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "siteSearchEngine" collection of methods.
  * Typical usage is:

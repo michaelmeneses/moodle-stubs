@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudSearch\Resource;
 
+use Google\Service\CloudSearch\GetDataSourceIndexStatsResponse;
 /**
  * The "datasources" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GameServices\Resource;
 
+use Google\Service\GameServices\GameServerConfig;
+use Google\Service\GameServices\ListGameServerConfigsResponse;
+use Google\Service\GameServices\Operation;
 /**
  * The "configs" collection of methods.
  * Typical usage is:

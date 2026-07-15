@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RegionTargetHttpsProxiesSetSslCertificatesRequest;
+use Google\Service\Compute\TargetHttpsProxy;
+use Google\Service\Compute\TargetHttpsProxyList;
+use Google\Service\Compute\UrlMapReference;
 /**
  * The "regionTargetHttpsProxies" collection of methods.
  * Typical usage is:

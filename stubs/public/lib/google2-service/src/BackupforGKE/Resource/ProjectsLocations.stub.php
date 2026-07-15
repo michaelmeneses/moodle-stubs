@@ -23,6 +23,8 @@
  */
 namespace Google\Service\BackupforGKE\Resource;
 
+use Google\Service\BackupforGKE\ListLocationsResponse;
+use Google\Service\BackupforGKE\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

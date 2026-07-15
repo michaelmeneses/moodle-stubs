@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1DataCollector;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListDataCollectorsResponse;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "datacollectors" collection of methods.
  * Typical usage is:

@@ -8,6 +8,7 @@
  */
 namespace Slim\Exception;
 
+use function implode;
 class HttpMethodNotAllowedException extends HttpSpecializedException
 {
     /**

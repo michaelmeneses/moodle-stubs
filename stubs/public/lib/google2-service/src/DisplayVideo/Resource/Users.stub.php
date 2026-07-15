@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\BulkEditAssignedUserRolesRequest;
+use Google\Service\DisplayVideo\BulkEditAssignedUserRolesResponse;
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\ListUsersResponse;
+use Google\Service\DisplayVideo\User;
 /**
  * The "users" collection of methods.
  * Typical usage is:

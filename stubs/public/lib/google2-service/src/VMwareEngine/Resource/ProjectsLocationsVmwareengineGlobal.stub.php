@@ -23,6 +23,7 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\DnsBindPermission;
 /**
  * The "global" collection of methods.
  * Typical usage is:

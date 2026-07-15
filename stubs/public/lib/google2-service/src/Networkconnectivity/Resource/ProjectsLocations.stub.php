@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\CheckConsumerConfigRequest;
+use Google\Service\Networkconnectivity\CheckConsumerConfigResponse;
+use Google\Service\Networkconnectivity\ListLocationsResponse;
+use Google\Service\Networkconnectivity\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ApiKeysService\Resource;
 
+use Google\Service\ApiKeysService\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\FirebaseDynamicLinks\Resource;
 
+use Google\Service\FirebaseDynamicLinks\DynamicLinkStats;
+use Google\Service\FirebaseDynamicLinks\GetIosPostInstallAttributionRequest;
+use Google\Service\FirebaseDynamicLinks\GetIosPostInstallAttributionResponse;
+use Google\Service\FirebaseDynamicLinks\GetIosReopenAttributionRequest;
+use Google\Service\FirebaseDynamicLinks\GetIosReopenAttributionResponse;
 /**
  * The "v1" collection of methods.
  * Typical usage is:

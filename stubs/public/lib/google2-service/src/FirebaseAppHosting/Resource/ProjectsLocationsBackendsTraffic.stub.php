@@ -23,6 +23,8 @@
  */
 namespace Google\Service\FirebaseAppHosting\Resource;
 
+use Google\Service\FirebaseAppHosting\Operation;
+use Google\Service\FirebaseAppHosting\Traffic;
 /**
  * The "traffic" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\ApihubEmpty;
+use Google\Service\APIhub\GoogleCloudApihubV1ListVersionsResponse;
+use Google\Service\APIhub\GoogleCloudApihubV1Version;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\AddOnContext;
+use Google\Service\Classroom\ClassroomEmpty;
+use Google\Service\Classroom\CourseWorkMaterial;
+use Google\Service\Classroom\ListCourseWorkMaterialResponse;
 /**
  * The "courseWorkMaterials" collection of methods.
  * Typical usage is:

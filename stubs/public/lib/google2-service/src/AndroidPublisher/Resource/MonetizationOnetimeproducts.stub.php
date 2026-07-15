@@ -23,6 +23,12 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\BatchDeleteOneTimeProductsRequest;
+use Google\Service\AndroidPublisher\BatchGetOneTimeProductsResponse;
+use Google\Service\AndroidPublisher\BatchUpdateOneTimeProductsRequest;
+use Google\Service\AndroidPublisher\BatchUpdateOneTimeProductsResponse;
+use Google\Service\AndroidPublisher\ListOneTimeProductsResponse;
+use Google\Service\AndroidPublisher\OneTimeProduct;
 /**
  * The "onetimeproducts" collection of methods.
  * Typical usage is:

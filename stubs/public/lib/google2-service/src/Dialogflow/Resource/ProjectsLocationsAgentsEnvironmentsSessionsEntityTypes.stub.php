@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListSessionEntityTypesResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SessionEntityType;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "entityTypes" collection of methods.
  * Typical usage is:

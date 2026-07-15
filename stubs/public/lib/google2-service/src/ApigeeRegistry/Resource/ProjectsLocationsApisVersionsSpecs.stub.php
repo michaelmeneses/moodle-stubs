@@ -23,6 +23,17 @@
  */
 namespace Google\Service\ApigeeRegistry\Resource;
 
+use Google\Service\ApigeeRegistry\ApiSpec;
+use Google\Service\ApigeeRegistry\ApigeeregistryEmpty;
+use Google\Service\ApigeeRegistry\HttpBody;
+use Google\Service\ApigeeRegistry\ListApiSpecRevisionsResponse;
+use Google\Service\ApigeeRegistry\ListApiSpecsResponse;
+use Google\Service\ApigeeRegistry\Policy;
+use Google\Service\ApigeeRegistry\RollbackApiSpecRequest;
+use Google\Service\ApigeeRegistry\SetIamPolicyRequest;
+use Google\Service\ApigeeRegistry\TagApiSpecRevisionRequest;
+use Google\Service\ApigeeRegistry\TestIamPermissionsRequest;
+use Google\Service\ApigeeRegistry\TestIamPermissionsResponse;
 /**
  * The "specs" collection of methods.
  * Typical usage is:

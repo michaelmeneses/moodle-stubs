@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CertificateAuthorityService\Resource;
 
+use Google\Service\CertificateAuthorityService\CancelOperationRequest;
+use Google\Service\CertificateAuthorityService\ListOperationsResponse;
+use Google\Service\CertificateAuthorityService\Operation;
+use Google\Service\CertificateAuthorityService\PrivatecaEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

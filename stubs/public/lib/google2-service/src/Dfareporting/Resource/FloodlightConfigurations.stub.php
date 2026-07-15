@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\FloodlightConfiguration;
+use Google\Service\Dfareporting\FloodlightConfigurationsListResponse;
 /**
  * The "floodlightConfigurations" collection of methods.
  * Typical usage is:

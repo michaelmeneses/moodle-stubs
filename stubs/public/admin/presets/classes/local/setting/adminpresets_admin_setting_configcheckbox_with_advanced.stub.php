@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_adminpresets\local\setting;
 
+use admin_setting;
 /**
  * Checkbox with an advanced checkbox that controls an additional $name.'_adv' config setting.
  *

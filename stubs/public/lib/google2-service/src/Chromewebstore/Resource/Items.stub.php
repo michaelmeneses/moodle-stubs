@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Chromewebstore\Resource;
 
+use Google\Service\Chromewebstore\Item;
+use Google\Service\Chromewebstore\Item2;
+use Google\Service\Chromewebstore\PublishRequest;
 /**
  * The "items" collection of methods.
  * Typical usage is:

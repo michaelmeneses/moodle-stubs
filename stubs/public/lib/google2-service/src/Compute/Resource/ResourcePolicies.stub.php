@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\RegionSetPolicyRequest;
+use Google\Service\Compute\ResourcePolicy;
+use Google\Service\Compute\ResourcePolicyAggregatedList;
+use Google\Service\Compute\ResourcePolicyList;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "resourcePolicies" collection of methods.
  * Typical usage is:

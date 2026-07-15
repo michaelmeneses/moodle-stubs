@@ -23,6 +23,11 @@
  */
 namespace Google\Service\BigQueryDataTransfer\Resource;
 
+use Google\Service\BigQueryDataTransfer\BigquerydatatransferEmpty;
+use Google\Service\BigQueryDataTransfer\EnrollDataSourcesRequest;
+use Google\Service\BigQueryDataTransfer\ListLocationsResponse;
+use Google\Service\BigQueryDataTransfer\Location;
+use Google\Service\BigQueryDataTransfer\UnenrollDataSourcesRequest;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

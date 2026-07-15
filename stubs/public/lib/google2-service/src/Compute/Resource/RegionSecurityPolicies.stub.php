@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RegionSetLabelsRequest;
+use Google\Service\Compute\SecurityPolicy;
+use Google\Service\Compute\SecurityPolicyList;
+use Google\Service\Compute\SecurityPolicyRule;
 /**
  * The "regionSecurityPolicies" collection of methods.
  * Typical usage is:

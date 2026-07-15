@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared\Trend;
 
+use Matrix\Matrix;
+use PhpOffice\PhpSpreadsheet\Exception as SpreadsheetException;
 // Phpstan and Scrutinizer seem to have legitimate complaints.
 // $this->slope is specified where an array is expected in several places.
 // But it seems that it should always be float.

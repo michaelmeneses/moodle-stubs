@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\PreviewFeature;
+use Google\Service\Compute\PreviewFeatureList;
 /**
  * The "previewFeatures" collection of methods.
  * Typical usage is:

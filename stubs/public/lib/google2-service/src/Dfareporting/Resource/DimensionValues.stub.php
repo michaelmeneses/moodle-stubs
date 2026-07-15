@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\DimensionValueList;
+use Google\Service\Dfareporting\DimensionValueRequest;
 /**
  * The "dimensionValues" collection of methods.
  * Typical usage is:

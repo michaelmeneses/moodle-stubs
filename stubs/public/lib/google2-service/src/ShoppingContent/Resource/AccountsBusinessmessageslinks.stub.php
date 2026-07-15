@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\BusinessMessagesLink;
+use Google\Service\ShoppingContent\ListBusinessMessagesLinksResponse;
 /**
  * The "businessmessageslinks" collection of methods.
  * Typical usage is:

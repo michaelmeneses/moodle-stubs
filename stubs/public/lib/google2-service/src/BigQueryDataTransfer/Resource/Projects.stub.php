@@ -23,6 +23,8 @@
  */
 namespace Google\Service\BigQueryDataTransfer\Resource;
 
+use Google\Service\BigQueryDataTransfer\BigquerydatatransferEmpty;
+use Google\Service\BigQueryDataTransfer\EnrollDataSourcesRequest;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

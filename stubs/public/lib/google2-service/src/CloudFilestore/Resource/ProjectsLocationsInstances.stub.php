@@ -23,6 +23,14 @@
  */
 namespace Google\Service\CloudFilestore\Resource;
 
+use Google\Service\CloudFilestore\Instance;
+use Google\Service\CloudFilestore\ListInstancesResponse;
+use Google\Service\CloudFilestore\Operation;
+use Google\Service\CloudFilestore\PauseReplicaRequest;
+use Google\Service\CloudFilestore\PromoteReplicaRequest;
+use Google\Service\CloudFilestore\RestoreInstanceRequest;
+use Google\Service\CloudFilestore\ResumeReplicaRequest;
+use Google\Service\CloudFilestore\RevertInstanceRequest;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Translate\Resource;
 
+use Google\Service\Translate\ListExamplesResponse;
 /**
  * The "examples" collection of methods.
  * Typical usage is:

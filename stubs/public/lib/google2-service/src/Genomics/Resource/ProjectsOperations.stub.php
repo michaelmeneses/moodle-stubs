@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Genomics\Resource;
 
+use Google\Service\Genomics\CancelOperationRequest;
+use Google\Service\Genomics\GenomicsEmpty;
+use Google\Service\Genomics\ListOperationsResponse;
+use Google\Service\Genomics\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

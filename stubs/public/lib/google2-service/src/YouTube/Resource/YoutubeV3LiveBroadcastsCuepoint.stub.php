@@ -23,6 +23,7 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\Cuepoint;
 /**
  * The "cuepoint" collection of methods.
  * Typical usage is:

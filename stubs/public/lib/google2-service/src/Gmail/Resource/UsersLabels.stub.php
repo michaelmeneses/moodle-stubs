@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\Label;
+use Google\Service\Gmail\ListLabelsResponse;
 /**
  * The "labels" collection of methods.
  * Typical usage is:

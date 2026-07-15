@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AccessApproval\Resource;
 
+use Google\Service\AccessApproval\AccessApprovalServiceAccount;
+use Google\Service\AccessApproval\AccessApprovalSettings;
+use Google\Service\AccessApproval\AccessapprovalEmpty;
 /**
  * The "organizations" collection of methods.
  * Typical usage is:

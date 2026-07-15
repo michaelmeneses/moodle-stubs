@@ -23,6 +23,43 @@
  */
 namespace Google\Service\IdentityToolkit\Resource;
 
+use Google\Service\IdentityToolkit\CreateAuthUriResponse;
+use Google\Service\IdentityToolkit\DeleteAccountResponse;
+use Google\Service\IdentityToolkit\DownloadAccountResponse;
+use Google\Service\IdentityToolkit\EmailLinkSigninResponse;
+use Google\Service\IdentityToolkit\GetAccountInfoResponse;
+use Google\Service\IdentityToolkit\GetOobConfirmationCodeResponse;
+use Google\Service\IdentityToolkit\GetRecaptchaParamResponse;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyCreateAuthUriRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyDeleteAccountRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyDownloadAccountRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyEmailLinkSigninRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyGetAccountInfoRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyGetProjectConfigResponse;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyGetPublicKeysResponse;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyResetPasswordRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySendVerificationCodeRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySendVerificationCodeResponse;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySetAccountInfoRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySetProjectConfigRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySetProjectConfigResponse;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySignOutUserRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySignOutUserResponse;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySignupNewUserRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyUploadAccountRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyVerifyAssertionRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyVerifyCustomTokenRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyVerifyPasswordRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest;
+use Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse;
+use Google\Service\IdentityToolkit\Relyingparty as RelyingpartyModel;
+use Google\Service\IdentityToolkit\ResetPasswordResponse;
+use Google\Service\IdentityToolkit\SetAccountInfoResponse;
+use Google\Service\IdentityToolkit\SignupNewUserResponse;
+use Google\Service\IdentityToolkit\UploadAccountResponse;
+use Google\Service\IdentityToolkit\VerifyAssertionResponse;
+use Google\Service\IdentityToolkit\VerifyCustomTokenResponse;
+use Google\Service\IdentityToolkit\VerifyPasswordResponse;
 /**
  * The "relyingparty" collection of methods.
  * Typical usage is:

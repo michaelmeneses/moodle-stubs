@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Doubleclicksearch\Resource;
 
+use Google\Service\Doubleclicksearch\ConversionList;
+use Google\Service\Doubleclicksearch\UpdateAvailabilityRequest;
+use Google\Service\Doubleclicksearch\UpdateAvailabilityResponse;
 /**
  * The "conversion" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DeploymentManager\Resource;
 
+use Google\Service\DeploymentManager\Manifest;
+use Google\Service\DeploymentManager\ManifestsListResponse;
 /**
  * The "manifests" collection of methods.
  * Typical usage is:

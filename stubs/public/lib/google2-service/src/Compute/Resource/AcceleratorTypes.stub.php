@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\AcceleratorType;
+use Google\Service\Compute\AcceleratorTypeAggregatedList;
+use Google\Service\Compute\AcceleratorTypeList;
 /**
  * The "acceleratorTypes" collection of methods.
  * Typical usage is:

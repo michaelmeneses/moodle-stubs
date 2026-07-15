@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudOSLogin\Resource;
 
+use Google\Service\CloudOSLogin\SshPublicKey;
 /**
  * The "sshPublicKey" collection of methods.
  * Typical usage is:

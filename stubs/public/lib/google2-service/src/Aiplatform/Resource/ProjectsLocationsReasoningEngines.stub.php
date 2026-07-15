@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleApiHttpBody;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListReasoningEnginesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1QueryReasoningEngineRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1QueryReasoningEngineResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngine;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamQueryReasoningEngineRequest;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "reasoningEngines" collection of methods.
  * Typical usage is:

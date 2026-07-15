@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\ListTcpRoutesResponse;
+use Google\Service\NetworkServices\Operation;
+use Google\Service\NetworkServices\TcpRoute;
 /**
  * The "tcpRoutes" collection of methods.
  * Typical usage is:

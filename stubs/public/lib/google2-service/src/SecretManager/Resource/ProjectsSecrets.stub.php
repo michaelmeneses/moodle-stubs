@@ -23,6 +23,15 @@
  */
 namespace Google\Service\SecretManager\Resource;
 
+use Google\Service\SecretManager\AddSecretVersionRequest;
+use Google\Service\SecretManager\ListSecretsResponse;
+use Google\Service\SecretManager\Policy;
+use Google\Service\SecretManager\Secret;
+use Google\Service\SecretManager\SecretVersion;
+use Google\Service\SecretManager\SecretmanagerEmpty;
+use Google\Service\SecretManager\SetIamPolicyRequest;
+use Google\Service\SecretManager\TestIamPermissionsRequest;
+use Google\Service\SecretManager\TestIamPermissionsResponse;
 /**
  * The "secrets" collection of methods.
  * Typical usage is:

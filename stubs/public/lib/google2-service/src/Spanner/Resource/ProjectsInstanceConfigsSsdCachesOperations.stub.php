@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Spanner\Resource;
 
+use Google\Service\Spanner\ListOperationsResponse;
+use Google\Service\Spanner\Operation;
+use Google\Service\Spanner\SpannerEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

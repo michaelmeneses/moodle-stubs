@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\BooksCloudloadingResource;
+use Google\Service\Books\BooksEmpty;
 /**
  * The "cloudloading" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SecretManager\Resource;
 
+use Google\Service\SecretManager\ListLocationsResponse;
+use Google\Service\SecretManager\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

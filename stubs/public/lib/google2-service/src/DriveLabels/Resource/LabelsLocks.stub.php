@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DriveLabels\Resource;
 
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelLocksResponse;
 /**
  * The "locks" collection of methods.
  * Typical usage is:

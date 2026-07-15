@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_awsbedrock;
 
+use core_ai\aimodel\base;
+use MoodleQuickForm;
 /**
  * Generic AWS Bedrock model definition.
  *

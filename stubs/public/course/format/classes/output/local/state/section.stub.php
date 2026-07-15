@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\state;
 
+use core_availability\info_section;
+use core_courseformat\base as course_format;
+use section_info;
+use renderable;
+use stdClass;
+use context_course;
 /**
  * Contains the ajax update section structure.
  *

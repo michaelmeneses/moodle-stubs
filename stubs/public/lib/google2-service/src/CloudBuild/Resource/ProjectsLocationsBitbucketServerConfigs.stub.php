@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\BitbucketServerConfig;
+use Google\Service\CloudBuild\CloudbuildEmpty;
+use Google\Service\CloudBuild\ListBitbucketServerConfigsResponse;
+use Google\Service\CloudBuild\Operation;
+use Google\Service\CloudBuild\RemoveBitbucketServerConnectedRepositoryRequest;
 /**
  * The "bitbucketServerConfigs" collection of methods.
  * Typical usage is:

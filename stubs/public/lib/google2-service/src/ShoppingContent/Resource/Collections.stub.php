@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\Collection;
+use Google\Service\ShoppingContent\ListCollectionsResponse;
 /**
  * The "collections" collection of methods.
  * Typical usage is:

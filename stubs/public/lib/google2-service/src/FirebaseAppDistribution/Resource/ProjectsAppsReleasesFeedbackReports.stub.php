@@ -23,6 +23,9 @@
  */
 namespace Google\Service\FirebaseAppDistribution\Resource;
 
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1FeedbackReport;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ListFeedbackReportsResponse;
+use Google\Service\FirebaseAppDistribution\GoogleProtobufEmpty;
 /**
  * The "feedbackReports" collection of methods.
  * Typical usage is:

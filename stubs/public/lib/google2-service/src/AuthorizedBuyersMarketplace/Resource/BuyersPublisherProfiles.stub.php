@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AuthorizedBuyersMarketplace\Resource;
 
+use Google\Service\AuthorizedBuyersMarketplace\ListPublisherProfilesResponse;
+use Google\Service\AuthorizedBuyersMarketplace\PublisherProfile;
 /**
  * The "publisherProfiles" collection of methods.
  * Typical usage is:

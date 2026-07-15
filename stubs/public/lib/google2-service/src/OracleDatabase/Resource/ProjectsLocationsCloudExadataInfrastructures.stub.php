@@ -23,6 +23,9 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\CloudExadataInfrastructure;
+use Google\Service\OracleDatabase\ListCloudExadataInfrastructuresResponse;
+use Google\Service\OracleDatabase\Operation;
 /**
  * The "cloudExadataInfrastructures" collection of methods.
  * Typical usage is:

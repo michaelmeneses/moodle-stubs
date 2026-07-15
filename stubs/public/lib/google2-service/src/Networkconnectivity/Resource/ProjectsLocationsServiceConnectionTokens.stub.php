@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\GoogleLongrunningOperation;
+use Google\Service\Networkconnectivity\ListServiceConnectionTokensResponse;
+use Google\Service\Networkconnectivity\ServiceConnectionToken;
 /**
  * The "serviceConnectionTokens" collection of methods.
  * Typical usage is:

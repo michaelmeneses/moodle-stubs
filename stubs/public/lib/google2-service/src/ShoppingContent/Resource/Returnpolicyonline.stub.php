@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\ListReturnPolicyOnlineResponse;
+use Google\Service\ShoppingContent\ReturnPolicyOnline as ReturnPolicyOnlineModel;
 /**
  * The "returnpolicyonline" collection of methods.
  * Typical usage is:

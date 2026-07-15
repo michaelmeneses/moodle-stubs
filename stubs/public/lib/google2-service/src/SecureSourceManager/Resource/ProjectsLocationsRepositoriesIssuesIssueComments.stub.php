@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SecureSourceManager\Resource;
 
+use Google\Service\SecureSourceManager\IssueComment;
+use Google\Service\SecureSourceManager\ListIssueCommentsResponse;
+use Google\Service\SecureSourceManager\Operation;
 /**
  * The "issueComments" collection of methods.
  * Typical usage is:

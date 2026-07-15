@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\ClassroomEmpty;
+use Google\Service\Classroom\Guardian;
+use Google\Service\Classroom\ListGuardiansResponse;
 /**
  * The "guardians" collection of methods.
  * Typical usage is:

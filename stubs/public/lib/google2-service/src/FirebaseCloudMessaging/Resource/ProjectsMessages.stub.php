@@ -23,6 +23,8 @@
  */
 namespace Google\Service\FirebaseCloudMessaging\Resource;
 
+use Google\Service\FirebaseCloudMessaging\Message;
+use Google\Service\FirebaseCloudMessaging\SendMessageRequest;
 /**
  * The "messages" collection of methods.
  * Typical usage is:

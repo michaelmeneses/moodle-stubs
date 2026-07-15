@@ -23,6 +23,10 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\ExadbVmCluster;
+use Google\Service\OracleDatabase\ListExadbVmClustersResponse;
+use Google\Service\OracleDatabase\Operation;
+use Google\Service\OracleDatabase\RemoveVirtualMachineExadbVmClusterRequest;
 /**
  * The "exadbVmClusters" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\VideoCategoryListResponse;
 /**
  * The "videoCategories" collection of methods.
  * Typical usage is:

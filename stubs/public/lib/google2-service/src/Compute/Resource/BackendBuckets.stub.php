@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\BackendBucket;
+use Google\Service\Compute\BackendBucketList;
+use Google\Service\Compute\GlobalSetPolicyRequest;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\SecurityPolicyReference;
+use Google\Service\Compute\SignedUrlKey;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "backendBuckets" collection of methods.
  * Typical usage is:

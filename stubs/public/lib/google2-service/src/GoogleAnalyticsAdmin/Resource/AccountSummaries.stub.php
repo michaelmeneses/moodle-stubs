@@ -23,6 +23,7 @@
  */
 namespace Google\Service\GoogleAnalyticsAdmin\Resource;
 
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListAccountSummariesResponse;
 /**
  * The "accountSummaries" collection of methods.
  * Typical usage is:

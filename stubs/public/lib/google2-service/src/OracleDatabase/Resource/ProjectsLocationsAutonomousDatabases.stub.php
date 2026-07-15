@@ -23,6 +23,17 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\AutonomousDatabase;
+use Google\Service\OracleDatabase\FailoverAutonomousDatabaseRequest;
+use Google\Service\OracleDatabase\GenerateAutonomousDatabaseWalletRequest;
+use Google\Service\OracleDatabase\GenerateAutonomousDatabaseWalletResponse;
+use Google\Service\OracleDatabase\ListAutonomousDatabasesResponse;
+use Google\Service\OracleDatabase\Operation;
+use Google\Service\OracleDatabase\RestartAutonomousDatabaseRequest;
+use Google\Service\OracleDatabase\RestoreAutonomousDatabaseRequest;
+use Google\Service\OracleDatabase\StartAutonomousDatabaseRequest;
+use Google\Service\OracleDatabase\StopAutonomousDatabaseRequest;
+use Google\Service\OracleDatabase\SwitchoverAutonomousDatabaseRequest;
 /**
  * The "autonomousDatabases" collection of methods.
  * Typical usage is:

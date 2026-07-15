@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\TvCampaignSummariesListResponse;
 /**
  * The "tvCampaignSummaries" collection of methods.
  * Typical usage is:

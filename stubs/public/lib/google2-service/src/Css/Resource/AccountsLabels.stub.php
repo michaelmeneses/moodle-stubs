@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Css\Resource;
 
+use Google\Service\Css\AccountLabel;
+use Google\Service\Css\CssEmpty;
+use Google\Service\Css\ListAccountLabelsResponse;
 /**
  * The "labels" collection of methods.
  * Typical usage is:

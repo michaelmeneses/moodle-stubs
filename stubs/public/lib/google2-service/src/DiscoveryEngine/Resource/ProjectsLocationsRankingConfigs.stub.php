@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RankRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RankResponse;
 /**
  * The "rankingConfigs" collection of methods.
  * Typical usage is:

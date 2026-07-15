@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DeploymentManager\Resource;
 
+use Google\Service\DeploymentManager\TypesListResponse;
 /**
  * The "types" collection of methods.
  * Typical usage is:

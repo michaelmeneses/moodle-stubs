@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\ListSavedQueriesResponse;
+use Google\Service\Logging\LoggingEmpty;
+use Google\Service\Logging\SavedQuery;
 /**
  * The "savedQueries" collection of methods.
  * Typical usage is:

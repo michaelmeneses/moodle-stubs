@@ -23,6 +23,7 @@
  */
 namespace Google\Service\SASPortalTesting\Resource;
 
+use Google\Service\SASPortalTesting\SasPortalDeployment;
 /**
  * The "deployments" collection of methods.
  * Typical usage is:

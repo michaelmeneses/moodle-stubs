@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\ListMonitoredResourceDescriptorsResponse;
+use Google\Service\Monitoring\MonitoredResourceDescriptor;
 /**
  * The "monitoredResourceDescriptors" collection of methods.
  * Typical usage is:

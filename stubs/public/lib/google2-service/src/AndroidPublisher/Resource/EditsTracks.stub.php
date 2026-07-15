@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\Track;
+use Google\Service\AndroidPublisher\TrackConfig;
+use Google\Service\AndroidPublisher\TracksListResponse;
 /**
  * The "tracks" collection of methods.
  * Typical usage is:

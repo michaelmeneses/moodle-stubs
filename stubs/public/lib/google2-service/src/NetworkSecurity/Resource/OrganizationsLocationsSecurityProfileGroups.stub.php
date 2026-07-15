@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\ListSecurityProfileGroupsResponse;
+use Google\Service\NetworkSecurity\Operation;
+use Google\Service\NetworkSecurity\SecurityProfileGroup;
 /**
  * The "securityProfileGroups" collection of methods.
  * Typical usage is:

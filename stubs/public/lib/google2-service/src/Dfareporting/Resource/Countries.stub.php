@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\CountriesListResponse;
+use Google\Service\Dfareporting\Country;
 /**
  * The "countries" collection of methods.
  * Typical usage is:

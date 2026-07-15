@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dataform\Resource;
 
+use Google\Service\Dataform\Policy;
+use Google\Service\Dataform\SetIamPolicyRequest;
 /**
  * The "commentThreads" collection of methods.
  * Typical usage is:

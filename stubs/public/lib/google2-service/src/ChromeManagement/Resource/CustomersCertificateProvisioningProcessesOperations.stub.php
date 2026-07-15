@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ChromeManagement\Resource;
 
+use Google\Service\ChromeManagement\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

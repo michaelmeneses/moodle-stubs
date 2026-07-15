@@ -29,6 +29,13 @@
  */
 namespace tool_dataprivacy\external;
 
+use core\external\persistent_exporter;
+use core_user;
+use core_user\external\user_summary_exporter;
+use renderer_base;
+use tool_dataprivacy\api;
+use tool_dataprivacy\data_request;
+use tool_dataprivacy\local\helper;
 /**
  * Class for exporting user evidence with all competencies.
  *

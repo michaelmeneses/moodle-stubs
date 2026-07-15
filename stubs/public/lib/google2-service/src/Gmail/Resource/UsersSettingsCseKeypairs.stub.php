@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\CseKeyPair;
+use Google\Service\Gmail\DisableCseKeyPairRequest;
+use Google\Service\Gmail\EnableCseKeyPairRequest;
+use Google\Service\Gmail\ListCseKeyPairsResponse;
+use Google\Service\Gmail\ObliterateCseKeyPairRequest;
 /**
  * The "keypairs" collection of methods.
  * Typical usage is:

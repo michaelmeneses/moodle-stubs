@@ -31,6 +31,7 @@
  */
 namespace core_badges\output;
 
+use renderable;
 /**
  * Collection of all badges for view.php page
  *

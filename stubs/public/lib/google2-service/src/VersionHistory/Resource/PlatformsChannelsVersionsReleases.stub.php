@@ -23,6 +23,7 @@
  */
 namespace Google\Service\VersionHistory\Resource;
 
+use Google\Service\VersionHistory\ListReleasesResponse;
 /**
  * The "releases" collection of methods.
  * Typical usage is:

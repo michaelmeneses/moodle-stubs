@@ -23,6 +23,12 @@
  */
 namespace Google\Service\CloudRedis\Resource;
 
+use Google\Service\CloudRedis\BackupClusterRequest;
+use Google\Service\CloudRedis\CertificateAuthority;
+use Google\Service\CloudRedis\Cluster;
+use Google\Service\CloudRedis\ListClustersResponse;
+use Google\Service\CloudRedis\Operation;
+use Google\Service\CloudRedis\RescheduleClusterMaintenanceRequest;
 /**
  * The "clusters" collection of methods.
  * Typical usage is:

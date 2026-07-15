@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudTalentSolution\Resource;
 
+use Google\Service\CloudTalentSolution\ClientEvent;
 /**
  * The "clientEvents" collection of methods.
  * Typical usage is:

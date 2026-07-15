@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AppHub\Resource;
 
+use Google\Service\AppHub\DiscoveredWorkload;
+use Google\Service\AppHub\ListDiscoveredWorkloadsResponse;
+use Google\Service\AppHub\LookupDiscoveredWorkloadResponse;
 /**
  * The "discoveredWorkloads" collection of methods.
  * Typical usage is:

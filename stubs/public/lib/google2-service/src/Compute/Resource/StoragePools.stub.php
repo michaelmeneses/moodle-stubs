@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\StoragePool;
+use Google\Service\Compute\StoragePoolAggregatedList;
+use Google\Service\Compute\StoragePoolList;
+use Google\Service\Compute\StoragePoolListDisks;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
+use Google\Service\Compute\ZoneSetPolicyRequest;
 /**
  * The "storagePools" collection of methods.
  * Typical usage is:

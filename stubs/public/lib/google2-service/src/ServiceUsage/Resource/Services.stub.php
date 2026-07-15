@@ -23,6 +23,13 @@
  */
 namespace Google\Service\ServiceUsage\Resource;
 
+use Google\Service\ServiceUsage\BatchEnableServicesRequest;
+use Google\Service\ServiceUsage\BatchGetServicesResponse;
+use Google\Service\ServiceUsage\DisableServiceRequest;
+use Google\Service\ServiceUsage\EnableServiceRequest;
+use Google\Service\ServiceUsage\GoogleApiServiceusageV1Service;
+use Google\Service\ServiceUsage\ListServicesResponse;
+use Google\Service\ServiceUsage\Operation;
 /**
  * The "services" collection of methods.
  * Typical usage is:

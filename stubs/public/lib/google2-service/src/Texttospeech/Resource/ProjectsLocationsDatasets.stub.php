@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Texttospeech\Resource;
 
+use Google\Service\Texttospeech\ImportDataRequest;
+use Google\Service\Texttospeech\Operation;
 /**
  * The "datasets" collection of methods.
  * Typical usage is:

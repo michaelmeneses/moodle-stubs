@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudSupport\Resource;
 
+use Google\Service\CloudSupport\Comment;
+use Google\Service\CloudSupport\ListCommentsResponse;
 /**
  * The "comments" collection of methods.
  * Typical usage is:

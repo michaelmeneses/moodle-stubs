@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadExecutionResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecution;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListExecutionsResponse;
 /**
  * The "executions" collection of methods.
  * Typical usage is:

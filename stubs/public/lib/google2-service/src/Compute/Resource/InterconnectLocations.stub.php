@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InterconnectLocation;
+use Google\Service\Compute\InterconnectLocationList;
 /**
  * The "interconnectLocations" collection of methods.
  * Typical usage is:

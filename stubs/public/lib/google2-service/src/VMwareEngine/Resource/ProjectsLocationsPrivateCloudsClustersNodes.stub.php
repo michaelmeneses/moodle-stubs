@@ -23,6 +23,8 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ListNodesResponse;
+use Google\Service\VMwareEngine\Node;
 /**
  * The "nodes" collection of methods.
  * Typical usage is:

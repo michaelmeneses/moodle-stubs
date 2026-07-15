@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentGroupAttachment;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListEnvironmentGroupAttachmentsResponse;
+use Google\Service\Apigee\GoogleLongrunningOperation;
 /**
  * The "attachments" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudOSLogin\Resource;
 
+use Google\Service\CloudOSLogin\ImportSshPublicKeyResponse;
+use Google\Service\CloudOSLogin\LoginProfile;
+use Google\Service\CloudOSLogin\SshPublicKey;
 /**
  * The "users" collection of methods.
  * Typical usage is:

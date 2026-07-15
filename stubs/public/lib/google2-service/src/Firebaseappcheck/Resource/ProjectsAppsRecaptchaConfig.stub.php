@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Firebaseappcheck\Resource;
 
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaBatchGetRecaptchaConfigsResponse;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaRecaptchaConfig;
 /**
  * The "recaptchaConfig" collection of methods.
  * Typical usage is:

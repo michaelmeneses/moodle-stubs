@@ -8,6 +8,11 @@
  */
 namespace tool_admin_presets\reportbuilder\local\entities;
 
+use lang_string;
+use core\output\inplace_editable;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\text;
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Admin preset entity
  *

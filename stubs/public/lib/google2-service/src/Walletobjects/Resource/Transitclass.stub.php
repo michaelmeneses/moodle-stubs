@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\AddMessageRequest;
+use Google\Service\Walletobjects\TransitClass as TransitClassModel;
+use Google\Service\Walletobjects\TransitClassAddMessageResponse;
+use Google\Service\Walletobjects\TransitClassListResponse;
 /**
  * The "transitclass" collection of methods.
  * Typical usage is:

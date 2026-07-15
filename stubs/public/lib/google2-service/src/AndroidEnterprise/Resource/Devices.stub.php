@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\Device;
+use Google\Service\AndroidEnterprise\DeviceState;
+use Google\Service\AndroidEnterprise\DevicesListResponse;
 /**
  * The "devices" collection of methods.
  * Typical usage is:

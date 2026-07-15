@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\ConversionSource;
+use Google\Service\ShoppingContent\ListConversionSourcesResponse;
+use Google\Service\ShoppingContent\UndeleteConversionSourceRequest;
 /**
  * The "conversionsources" collection of methods.
  * Typical usage is:

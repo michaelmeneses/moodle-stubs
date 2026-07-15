@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\ThirdPartyLink;
+use Google\Service\YouTube\ThirdPartyLinkListResponse;
 /**
  * The "thirdPartyLinks" collection of methods.
  * Typical usage is:

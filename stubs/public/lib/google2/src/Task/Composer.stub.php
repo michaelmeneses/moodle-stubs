@@ -23,6 +23,10 @@
  */
 namespace Google\Task;
 
+use Composer\Script\Event;
+use InvalidArgumentException;
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Finder\Finder;
 class Composer
 {
     /**

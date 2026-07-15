@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DeveloperConnect\Resource;
 
+use Google\Service\DeveloperConnect\FetchAccessTokenRequest;
+use Google\Service\DeveloperConnect\FetchAccessTokenResponse;
+use Google\Service\DeveloperConnect\FinishOAuthResponse;
+use Google\Service\DeveloperConnect\ListUsersResponse;
+use Google\Service\DeveloperConnect\Operation;
+use Google\Service\DeveloperConnect\StartOAuthResponse;
+use Google\Service\DeveloperConnect\User;
 /**
  * The "users" collection of methods.
  * Typical usage is:

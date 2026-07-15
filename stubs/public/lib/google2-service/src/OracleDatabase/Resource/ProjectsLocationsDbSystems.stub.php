@@ -23,6 +23,9 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\DbSystem;
+use Google\Service\OracleDatabase\ListDbSystemsResponse;
+use Google\Service\OracleDatabase\Operation;
 /**
  * The "dbSystems" collection of methods.
  * Typical usage is:

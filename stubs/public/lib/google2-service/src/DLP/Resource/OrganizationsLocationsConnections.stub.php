@@ -23,6 +23,12 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2Connection;
+use Google\Service\DLP\GooglePrivacyDlpV2CreateConnectionRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2ListConnectionsResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2SearchConnectionsResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2UpdateConnectionRequest;
+use Google\Service\DLP\GoogleProtobufEmpty;
 /**
  * The "connections" collection of methods.
  * Typical usage is:

@@ -16,6 +16,7 @@
  */
 namespace Monolog\Processor;
 
+use Monolog\LogRecord;
 /**
  * Injects sys_getloadavg in all records @see https://www.php.net/manual/en/function.sys-getloadavg.php
  *

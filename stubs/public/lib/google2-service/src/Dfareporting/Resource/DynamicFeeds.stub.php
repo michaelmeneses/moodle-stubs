@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\DynamicFeed;
+use Google\Service\Dfareporting\DynamicFeedsInsertRequest;
 /**
  * The "dynamicFeeds" collection of methods.
  * Typical usage is:

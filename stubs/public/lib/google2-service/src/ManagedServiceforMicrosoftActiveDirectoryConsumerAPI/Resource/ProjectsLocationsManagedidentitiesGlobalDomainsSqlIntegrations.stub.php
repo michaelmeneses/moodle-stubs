@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource;
 
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ListSqlIntegrationsResponse;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\SqlIntegration;
 /**
  * The "sqlIntegrations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ChromeManagement\Resource;
 
+use Google\Service\ChromeManagement\GoogleLongrunningCancelOperationRequest;
+use Google\Service\ChromeManagement\GoogleLongrunningListOperationsResponse;
+use Google\Service\ChromeManagement\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

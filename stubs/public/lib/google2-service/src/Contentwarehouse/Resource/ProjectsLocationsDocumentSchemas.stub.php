@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Contentwarehouse\Resource;
 
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DocumentSchema;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListDocumentSchemasResponse;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentSchemaRequest;
+use Google\Service\Contentwarehouse\GoogleProtobufEmpty;
 /**
  * The "documentSchemas" collection of methods.
  * Typical usage is:

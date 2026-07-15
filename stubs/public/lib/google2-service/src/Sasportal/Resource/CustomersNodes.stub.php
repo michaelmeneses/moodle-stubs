@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Sasportal\Resource;
 
+use Google\Service\Sasportal\SasPortalEmpty;
+use Google\Service\Sasportal\SasPortalListNodesResponse;
+use Google\Service\Sasportal\SasPortalMoveNodeRequest;
+use Google\Service\Sasportal\SasPortalNode;
+use Google\Service\Sasportal\SasPortalOperation;
 /**
  * The "nodes" collection of methods.
  * Typical usage is:

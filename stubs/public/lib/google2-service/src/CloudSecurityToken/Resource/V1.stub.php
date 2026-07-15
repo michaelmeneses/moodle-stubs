@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudSecurityToken\Resource;
 
+use Google\Service\CloudSecurityToken\GoogleIdentityStsV1ExchangeTokenRequest;
+use Google\Service\CloudSecurityToken\GoogleIdentityStsV1ExchangeTokenResponse;
 /**
  * The "v1" collection of methods.
  * Typical usage is:

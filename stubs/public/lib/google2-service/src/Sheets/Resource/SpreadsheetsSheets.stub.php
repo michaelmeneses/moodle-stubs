@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Sheets\Resource;
 
+use Google\Service\Sheets\CopySheetToAnotherSpreadsheetRequest;
+use Google\Service\Sheets\SheetProperties;
 /**
  * The "sheets" collection of methods.
  * Typical usage is:

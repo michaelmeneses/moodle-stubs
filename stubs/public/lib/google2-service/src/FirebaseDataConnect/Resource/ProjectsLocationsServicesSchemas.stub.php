@@ -23,6 +23,9 @@
  */
 namespace Google\Service\FirebaseDataConnect\Resource;
 
+use Google\Service\FirebaseDataConnect\ListSchemasResponse;
+use Google\Service\FirebaseDataConnect\Operation;
+use Google\Service\FirebaseDataConnect\Schema;
 /**
  * The "schemas" collection of methods.
  * Typical usage is:

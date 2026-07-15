@@ -8,6 +8,11 @@
  */
 namespace Aws\Multipart;
 
+use Aws\AwsClientInterface as Client;
+use Aws\Exception\AwsException;
+use GuzzleHttp\Psr7;
+use InvalidArgumentException as IAE;
+use Psr\Http\Message\StreamInterface as Stream;
 abstract class AbstractUploader extends AbstractUploadManager
 {
     /** @var Stream Source of the data to be uploaded. */

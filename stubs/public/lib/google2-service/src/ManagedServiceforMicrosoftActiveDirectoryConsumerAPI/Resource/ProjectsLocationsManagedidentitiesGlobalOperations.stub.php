@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource;
 
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\CancelOperationRequest;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ListOperationsResponse;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ManagedidentitiesEmpty;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

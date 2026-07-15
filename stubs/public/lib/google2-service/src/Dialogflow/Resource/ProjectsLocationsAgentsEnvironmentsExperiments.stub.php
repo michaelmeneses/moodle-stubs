@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Experiment;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListExperimentsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3StartExperimentRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3StopExperimentRequest;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "experiments" collection of methods.
  * Typical usage is:

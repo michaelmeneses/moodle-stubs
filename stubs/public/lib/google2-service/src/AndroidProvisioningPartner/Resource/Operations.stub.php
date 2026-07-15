@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AndroidProvisioningPartner\Resource;
 
+use Google\Service\AndroidProvisioningPartner\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

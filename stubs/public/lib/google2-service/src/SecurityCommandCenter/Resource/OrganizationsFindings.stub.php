@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\BulkMuteFindingsRequest;
+use Google\Service\SecurityCommandCenter\Operation;
 /**
  * The "findings" collection of methods.
  * Typical usage is:

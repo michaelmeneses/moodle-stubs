@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudAlloyDBAdmin\Resource;
 
+use Google\Service\CloudAlloyDBAdmin\AlloydbEmpty;
+use Google\Service\CloudAlloyDBAdmin\CancelOperationRequest;
+use Google\Service\CloudAlloyDBAdmin\ListOperationsResponse;
+use Google\Service\CloudAlloyDBAdmin\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

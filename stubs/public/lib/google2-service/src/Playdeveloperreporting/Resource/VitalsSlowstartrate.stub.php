@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Playdeveloperreporting\Resource;
 
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QuerySlowStartRateMetricSetRequest;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QuerySlowStartRateMetricSetResponse;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1SlowStartRateMetricSet;
 /**
  * The "slowstartrate" collection of methods.
  * Typical usage is:

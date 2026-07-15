@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1UserStore;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "userStores" collection of methods.
  * Typical usage is:

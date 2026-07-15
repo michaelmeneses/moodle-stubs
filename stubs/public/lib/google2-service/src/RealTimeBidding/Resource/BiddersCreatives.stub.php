@@ -23,6 +23,9 @@
  */
 namespace Google\Service\RealTimeBidding\Resource;
 
+use Google\Service\RealTimeBidding\ListCreativesResponse;
+use Google\Service\RealTimeBidding\WatchCreativesRequest;
+use Google\Service\RealTimeBidding\WatchCreativesResponse;
 /**
  * The "creatives" collection of methods.
  * Typical usage is:

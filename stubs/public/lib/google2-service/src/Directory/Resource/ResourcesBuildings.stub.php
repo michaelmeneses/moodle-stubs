@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\Building;
+use Google\Service\Directory\Buildings;
 /**
  * The "buildings" collection of methods.
  * Typical usage is:

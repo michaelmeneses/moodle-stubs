@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportRagFilesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListRagFilesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFile;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "ragFiles" collection of methods.
  * Typical usage is:

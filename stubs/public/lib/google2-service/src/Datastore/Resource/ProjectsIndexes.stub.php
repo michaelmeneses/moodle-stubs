@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Datastore\Resource;
 
+use Google\Service\Datastore\GoogleDatastoreAdminV1Index;
+use Google\Service\Datastore\GoogleDatastoreAdminV1ListIndexesResponse;
+use Google\Service\Datastore\GoogleLongrunningOperation;
 /**
  * The "indexes" collection of methods.
  * Typical usage is:

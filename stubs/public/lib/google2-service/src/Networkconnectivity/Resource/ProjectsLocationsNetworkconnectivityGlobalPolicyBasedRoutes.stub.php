@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\GoogleLongrunningOperation;
+use Google\Service\Networkconnectivity\ListPolicyBasedRoutesResponse;
+use Google\Service\Networkconnectivity\Policy;
+use Google\Service\Networkconnectivity\PolicyBasedRoute;
+use Google\Service\Networkconnectivity\SetIamPolicyRequest;
+use Google\Service\Networkconnectivity\TestIamPermissionsRequest;
+use Google\Service\Networkconnectivity\TestIamPermissionsResponse;
 /**
  * The "policyBasedRoutes" collection of methods.
  * Typical usage is:

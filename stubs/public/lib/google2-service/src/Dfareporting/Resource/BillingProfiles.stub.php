@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\BillingProfile;
+use Google\Service\Dfareporting\BillingProfilesListResponse;
 /**
  * The "billingProfiles" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\Client;
+use Google\Service\TagManager\ListClientsResponse;
+use Google\Service\TagManager\RevertClientResponse;
 /**
  * The "clients" collection of methods.
  * Typical usage is:

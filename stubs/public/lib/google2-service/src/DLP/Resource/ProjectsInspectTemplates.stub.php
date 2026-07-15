@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2CreateInspectTemplateRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2InspectTemplate;
+use Google\Service\DLP\GooglePrivacyDlpV2ListInspectTemplatesResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2UpdateInspectTemplateRequest;
+use Google\Service\DLP\GoogleProtobufEmpty;
 /**
  * The "inspectTemplates" collection of methods.
  * Typical usage is:

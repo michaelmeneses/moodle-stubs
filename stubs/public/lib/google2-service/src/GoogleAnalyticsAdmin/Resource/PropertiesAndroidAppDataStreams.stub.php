@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GoogleAnalyticsAdmin\Resource;
 
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAndroidAppDataStream;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
 /**
  * The "androidAppDataStreams" collection of methods.
  * Typical usage is:

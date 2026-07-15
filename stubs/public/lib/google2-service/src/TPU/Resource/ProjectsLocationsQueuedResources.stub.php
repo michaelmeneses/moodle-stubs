@@ -23,6 +23,10 @@
  */
 namespace Google\Service\TPU\Resource;
 
+use Google\Service\TPU\ListQueuedResourcesResponse;
+use Google\Service\TPU\Operation;
+use Google\Service\TPU\QueuedResource;
+use Google\Service\TPU\ResetQueuedResourceRequest;
 /**
  * The "queuedResources" collection of methods.
  * Typical usage is:

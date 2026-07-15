@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Security;
 
+use PhpOffice\PhpSpreadsheet\Reader;
 class XmlScanner
 {
     private const ENCODING_PATTERN = '/encoding\s*=\s*(["\'])(.+?)\1/s';

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Forms\Resource;
 
+use Google\Service\Forms\CreateWatchRequest;
+use Google\Service\Forms\FormsEmpty;
+use Google\Service\Forms\ListWatchesResponse;
+use Google\Service\Forms\RenewWatchRequest;
+use Google\Service\Forms\Watch;
 /**
  * The "watches" collection of methods.
  * Typical usage is:

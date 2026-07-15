@@ -23,6 +23,13 @@
  */
 namespace Google\Service\MapsPlaces\Resource;
 
+use Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesRequest;
+use Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesResponse;
+use Google\Service\MapsPlaces\GoogleMapsPlacesV1Place;
+use Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchNearbyRequest;
+use Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchNearbyResponse;
+use Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextRequest;
+use Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextResponse;
 /**
  * The "places" collection of methods.
  * Typical usage is:

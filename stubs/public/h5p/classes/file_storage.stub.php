@@ -29,6 +29,10 @@
  */
 namespace core_h5p;
 
+use stored_file;
+use Moodle\H5PCore;
+use Moodle\H5peditorFile;
+use Moodle\H5PFileStorage;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * Class to handle storage and export of H5P Content.

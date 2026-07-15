@@ -23,6 +23,10 @@
  */
 namespace Google\Service\SecurityPosture\Resource;
 
+use Google\Service\SecurityPosture\CancelOperationRequest;
+use Google\Service\SecurityPosture\ListOperationsResponse;
+use Google\Service\SecurityPosture\Operation;
+use Google\Service\SecurityPosture\SecuritypostureEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -17,6 +17,7 @@
  */
 namespace MatthiasMullie\Minify\Exceptions;
 
+use MatthiasMullie\Minify\Exception;
 /**
  * Basic Exception Class.
  *

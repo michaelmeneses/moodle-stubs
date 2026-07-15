@@ -23,6 +23,14 @@
  */
 namespace Google\Service\GKEOnPrem\Resource;
 
+use Google\Service\GKEOnPrem\BareMetalNodePool;
+use Google\Service\GKEOnPrem\EnrollBareMetalNodePoolRequest;
+use Google\Service\GKEOnPrem\ListBareMetalNodePoolsResponse;
+use Google\Service\GKEOnPrem\Operation;
+use Google\Service\GKEOnPrem\Policy;
+use Google\Service\GKEOnPrem\SetIamPolicyRequest;
+use Google\Service\GKEOnPrem\TestIamPermissionsRequest;
+use Google\Service\GKEOnPrem\TestIamPermissionsResponse;
 /**
  * The "bareMetalNodePools" collection of methods.
  * Typical usage is:

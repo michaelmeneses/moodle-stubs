@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\ListUptimeCheckConfigsResponse;
+use Google\Service\Monitoring\MonitoringEmpty;
+use Google\Service\Monitoring\UptimeCheckConfig;
 /**
  * The "uptimeCheckConfigs" collection of methods.
  * Typical usage is:

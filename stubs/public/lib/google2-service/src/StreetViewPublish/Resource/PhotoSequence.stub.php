@@ -23,6 +23,10 @@
  */
 namespace Google\Service\StreetViewPublish\Resource;
 
+use Google\Service\StreetViewPublish\Operation;
+use Google\Service\StreetViewPublish\PhotoSequence as PhotoSequenceModel;
+use Google\Service\StreetViewPublish\StreetviewpublishEmpty;
+use Google\Service\StreetViewPublish\UploadRef;
 /**
  * The "photoSequence" collection of methods.
  * Typical usage is:

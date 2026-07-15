@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GKEHub\Resource;
 
+use Google\Service\GKEHub\ListScopeRBACRoleBindingsResponse;
+use Google\Service\GKEHub\Operation;
+use Google\Service\GKEHub\RBACRoleBinding;
 /**
  * The "rbacrolebindings" collection of methods.
  * Typical usage is:

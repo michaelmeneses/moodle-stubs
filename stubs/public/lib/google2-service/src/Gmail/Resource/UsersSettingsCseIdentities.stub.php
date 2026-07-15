@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\CseIdentity;
+use Google\Service\Gmail\ListCseIdentitiesResponse;
 /**
  * The "identities" collection of methods.
  * Typical usage is:

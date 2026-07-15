@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\ListPythonPackagesResponse;
+use Google\Service\ArtifactRegistry\PythonPackage;
 /**
  * The "pythonPackages" collection of methods.
  * Typical usage is:

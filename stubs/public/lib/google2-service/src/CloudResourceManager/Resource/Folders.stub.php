@@ -23,6 +23,17 @@
  */
 namespace Google\Service\CloudResourceManager\Resource;
 
+use Google\Service\CloudResourceManager\Folder;
+use Google\Service\CloudResourceManager\GetIamPolicyRequest;
+use Google\Service\CloudResourceManager\ListFoldersResponse;
+use Google\Service\CloudResourceManager\MoveFolderRequest;
+use Google\Service\CloudResourceManager\Operation;
+use Google\Service\CloudResourceManager\Policy;
+use Google\Service\CloudResourceManager\SearchFoldersResponse;
+use Google\Service\CloudResourceManager\SetIamPolicyRequest;
+use Google\Service\CloudResourceManager\TestIamPermissionsRequest;
+use Google\Service\CloudResourceManager\TestIamPermissionsResponse;
+use Google\Service\CloudResourceManager\UndeleteFolderRequest;
 /**
  * The "folders" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\MyBusinessBusinessInformation\Resource;
 
+use Google\Service\MyBusinessBusinessInformation\SearchGoogleLocationsRequest;
+use Google\Service\MyBusinessBusinessInformation\SearchGoogleLocationsResponse;
 /**
  * The "googleLocations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\WorkloadManager\Resource;
 
+use Google\Service\WorkloadManager\WorkloadProfileHealth;
 /**
  * The "healthes" collection of methods.
  * Typical usage is:

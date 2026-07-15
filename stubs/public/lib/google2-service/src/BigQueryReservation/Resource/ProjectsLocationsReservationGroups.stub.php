@@ -23,6 +23,9 @@
  */
 namespace Google\Service\BigQueryReservation\Resource;
 
+use Google\Service\BigQueryReservation\BigqueryreservationEmpty;
+use Google\Service\BigQueryReservation\ListReservationGroupsResponse;
+use Google\Service\BigQueryReservation\ReservationGroup;
 /**
  * The "reservationGroups" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\PublicDelegatedPrefix;
+use Google\Service\Compute\PublicDelegatedPrefixAggregatedList;
+use Google\Service\Compute\PublicDelegatedPrefixList;
 /**
  * The "publicDelegatedPrefixes" collection of methods.
  * Typical usage is:

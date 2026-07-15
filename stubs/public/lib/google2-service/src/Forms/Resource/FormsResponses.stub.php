@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Forms\Resource;
 
+use Google\Service\Forms\FormResponse;
+use Google\Service\Forms\ListFormResponsesResponse;
 /**
  * The "responses" collection of methods.
  * Typical usage is:

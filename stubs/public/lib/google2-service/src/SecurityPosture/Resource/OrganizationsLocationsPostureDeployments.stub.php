@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SecurityPosture\Resource;
 
+use Google\Service\SecurityPosture\ListPostureDeploymentsResponse;
+use Google\Service\SecurityPosture\Operation;
+use Google\Service\SecurityPosture\PostureDeployment;
 /**
  * The "postureDeployments" collection of methods.
  * Typical usage is:

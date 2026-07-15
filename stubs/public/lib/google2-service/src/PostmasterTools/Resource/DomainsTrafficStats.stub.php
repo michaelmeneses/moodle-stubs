@@ -23,6 +23,8 @@
  */
 namespace Google\Service\PostmasterTools\Resource;
 
+use Google\Service\PostmasterTools\ListTrafficStatsResponse;
+use Google\Service\PostmasterTools\TrafficStats;
 /**
  * The "trafficStats" collection of methods.
  * Typical usage is:

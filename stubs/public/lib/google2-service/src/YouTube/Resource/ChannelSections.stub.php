@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\ChannelSection;
+use Google\Service\YouTube\ChannelSectionListResponse;
 /**
  * The "channelSections" collection of methods.
  * Typical usage is:

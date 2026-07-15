@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\CancelOperationRequest;
+use Google\Service\ManagedKafka\ListOperationsResponse;
+use Google\Service\ManagedKafka\ManagedkafkaEmpty;
+use Google\Service\ManagedKafka\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

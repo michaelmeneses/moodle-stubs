@@ -8,6 +8,7 @@
  */
 namespace Aws\MWAAServerless;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AmazonMWAAServerless** service.
  * @method \Aws\Result createWorkflow(array $args = [])

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\TPU\Resource;
 
+use Google\Service\TPU\ListOperationsResponse;
+use Google\Service\TPU\Operation;
+use Google\Service\TPU\TpuEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\BatchCreateResourceValueConfigsRequest;
+use Google\Service\SecurityCommandCenter\BatchCreateResourceValueConfigsResponse;
+use Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1ResourceValueConfig;
+use Google\Service\SecurityCommandCenter\ListResourceValueConfigsResponse;
+use Google\Service\SecurityCommandCenter\SecuritycenterEmpty;
 /**
  * The "resourceValueConfigs" collection of methods.
  * Typical usage is:

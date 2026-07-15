@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1CustomReport;
+use Google\Service\Apigee\GoogleCloudApigeeV1DeleteCustomReportResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListCustomReportsResponse;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

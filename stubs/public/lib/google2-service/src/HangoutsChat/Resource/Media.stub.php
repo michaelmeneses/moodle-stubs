@@ -23,6 +23,9 @@
  */
 namespace Google\Service\HangoutsChat\Resource;
 
+use Google\Service\HangoutsChat\Media as MediaModel;
+use Google\Service\HangoutsChat\UploadAttachmentRequest;
+use Google\Service\HangoutsChat\UploadAttachmentResponse;
 /**
  * The "media" collection of methods.
  * Typical usage is:

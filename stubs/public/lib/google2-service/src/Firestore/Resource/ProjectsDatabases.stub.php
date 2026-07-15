@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Firestore\Resource;
 
+use Google\Service\Firestore\GoogleFirestoreAdminV1BulkDeleteDocumentsRequest;
+use Google\Service\Firestore\GoogleFirestoreAdminV1CloneDatabaseRequest;
+use Google\Service\Firestore\GoogleFirestoreAdminV1Database;
+use Google\Service\Firestore\GoogleFirestoreAdminV1ExportDocumentsRequest;
+use Google\Service\Firestore\GoogleFirestoreAdminV1ImportDocumentsRequest;
+use Google\Service\Firestore\GoogleFirestoreAdminV1ListDatabasesResponse;
+use Google\Service\Firestore\GoogleFirestoreAdminV1RestoreDatabaseRequest;
+use Google\Service\Firestore\GoogleLongrunningOperation;
 /**
  * The "databases" collection of methods.
  * Typical usage is:

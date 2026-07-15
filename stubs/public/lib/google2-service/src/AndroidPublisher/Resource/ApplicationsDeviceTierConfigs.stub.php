@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\DeviceTierConfig;
+use Google\Service\AndroidPublisher\ListDeviceTierConfigsResponse;
 /**
  * The "deviceTierConfigs" collection of methods.
  * Typical usage is:

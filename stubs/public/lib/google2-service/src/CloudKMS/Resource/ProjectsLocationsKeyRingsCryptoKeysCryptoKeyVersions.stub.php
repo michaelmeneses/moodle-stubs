@@ -23,6 +23,26 @@
  */
 namespace Google\Service\CloudKMS\Resource;
 
+use Google\Service\CloudKMS\AsymmetricDecryptRequest;
+use Google\Service\CloudKMS\AsymmetricDecryptResponse;
+use Google\Service\CloudKMS\AsymmetricSignRequest;
+use Google\Service\CloudKMS\AsymmetricSignResponse;
+use Google\Service\CloudKMS\CryptoKeyVersion;
+use Google\Service\CloudKMS\DecapsulateRequest;
+use Google\Service\CloudKMS\DecapsulateResponse;
+use Google\Service\CloudKMS\DestroyCryptoKeyVersionRequest;
+use Google\Service\CloudKMS\ImportCryptoKeyVersionRequest;
+use Google\Service\CloudKMS\ListCryptoKeyVersionsResponse;
+use Google\Service\CloudKMS\MacSignRequest;
+use Google\Service\CloudKMS\MacSignResponse;
+use Google\Service\CloudKMS\MacVerifyRequest;
+use Google\Service\CloudKMS\MacVerifyResponse;
+use Google\Service\CloudKMS\PublicKey;
+use Google\Service\CloudKMS\RawDecryptRequest;
+use Google\Service\CloudKMS\RawDecryptResponse;
+use Google\Service\CloudKMS\RawEncryptRequest;
+use Google\Service\CloudKMS\RawEncryptResponse;
+use Google\Service\CloudKMS\RestoreCryptoKeyVersionRequest;
 /**
  * The "cryptoKeyVersions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Clouderrorreporting\Resource;
 
+use Google\Service\Clouderrorreporting\ListGroupStatsResponse;
 /**
  * The "groupStats" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\DynamicTargetingKey;
+use Google\Service\Dfareporting\DynamicTargetingKeysListResponse;
 /**
  * The "dynamicTargetingKeys" collection of methods.
  * Typical usage is:

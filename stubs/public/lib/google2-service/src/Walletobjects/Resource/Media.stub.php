@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\Media as MediaModel;
+use Google\Service\Walletobjects\TransitObjectUploadRotatingBarcodeValuesRequest;
+use Google\Service\Walletobjects\TransitObjectUploadRotatingBarcodeValuesResponse;
 /**
  * The "media" collection of methods.
  * Typical usage is:

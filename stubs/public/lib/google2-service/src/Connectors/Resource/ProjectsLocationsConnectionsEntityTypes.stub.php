@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\EntityType;
+use Google\Service\Connectors\ListEntityTypesResponse;
 /**
  * The "entityTypes" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\RequestReviewShoppingAdsRequest;
+use Google\Service\ShoppingContent\ShoppingAdsProgramStatus;
 /**
  * The "shoppingadsprogram" collection of methods.
  * Typical usage is:

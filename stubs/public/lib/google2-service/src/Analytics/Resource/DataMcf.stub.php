@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\McfData;
 /**
  * The "mcf" collection of methods.
  * Typical usage is:

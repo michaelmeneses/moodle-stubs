@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ChecksService\Resource;
 
+use Google\Service\ChecksService\GoogleChecksAccountV1alphaApp;
+use Google\Service\ChecksService\GoogleChecksAccountV1alphaListAppsResponse;
 /**
  * The "apps" collection of methods.
  * Typical usage is:

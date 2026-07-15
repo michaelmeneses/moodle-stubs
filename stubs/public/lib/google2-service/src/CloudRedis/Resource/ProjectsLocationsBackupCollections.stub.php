@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudRedis\Resource;
 
+use Google\Service\CloudRedis\BackupCollection;
+use Google\Service\CloudRedis\ListBackupCollectionsResponse;
 /**
  * The "backupCollections" collection of methods.
  * Typical usage is:

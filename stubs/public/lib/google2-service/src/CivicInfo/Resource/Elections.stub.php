@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CivicInfo\Resource;
 
+use Google\Service\CivicInfo\CivicinfoApiprotosV2ElectionsQueryResponse;
+use Google\Service\CivicInfo\CivicinfoApiprotosV2VoterInfoResponse;
 /**
  * The "elections" collection of methods.
  * Typical usage is:

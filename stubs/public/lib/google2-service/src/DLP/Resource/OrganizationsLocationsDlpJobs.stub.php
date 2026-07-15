@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2ListDlpJobsResponse;
 /**
  * The "dlpJobs" collection of methods.
  * Typical usage is:

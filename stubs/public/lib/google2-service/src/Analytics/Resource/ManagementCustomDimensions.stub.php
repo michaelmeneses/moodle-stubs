@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\CustomDimension;
+use Google\Service\Analytics\CustomDimensions;
 /**
  * The "customDimensions" collection of methods.
  * Typical usage is:

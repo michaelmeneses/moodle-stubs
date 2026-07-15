@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\GenerateRecommendationsResponse;
+use Google\Service\ShoppingContent\ReportInteractionRequest;
 /**
  * The "recommendations" collection of methods.
  * Typical usage is:

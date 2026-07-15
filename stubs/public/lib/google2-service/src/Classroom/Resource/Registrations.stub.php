@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\ClassroomEmpty;
+use Google\Service\Classroom\Registration;
 /**
  * The "registrations" collection of methods.
  * Typical usage is:

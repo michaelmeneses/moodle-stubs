@@ -23,6 +23,8 @@
  */
 namespace Google\Service\BinaryAuthorization\Resource;
 
+use Google\Service\BinaryAuthorization\EvaluateGkePolicyRequest;
+use Google\Service\BinaryAuthorization\EvaluateGkePolicyResponse;
 /**
  * The "policies" collection of methods.
  * Typical usage is:

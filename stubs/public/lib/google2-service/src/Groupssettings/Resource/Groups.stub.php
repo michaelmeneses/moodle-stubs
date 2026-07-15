@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Groupssettings\Resource;
 
+use Google\Service\Groupssettings\Groups as GroupsModel;
 /**
  * The "groups" collection of methods.
  * Typical usage is:

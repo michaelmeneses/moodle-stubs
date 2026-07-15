@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudIdentity\Resource;
 
+use Google\Service\CloudIdentity\AddIdpCredentialRequest;
+use Google\Service\CloudIdentity\IdpCredential;
+use Google\Service\CloudIdentity\ListIdpCredentialsResponse;
+use Google\Service\CloudIdentity\Operation;
 /**
  * The "idpCredentials" collection of methods.
  * Typical usage is:

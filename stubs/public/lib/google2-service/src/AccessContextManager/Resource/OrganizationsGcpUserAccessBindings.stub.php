@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AccessContextManager\Resource;
 
+use Google\Service\AccessContextManager\GcpUserAccessBinding;
+use Google\Service\AccessContextManager\ListGcpUserAccessBindingsResponse;
+use Google\Service\AccessContextManager\Operation;
 /**
  * The "gcpUserAccessBindings" collection of methods.
  * Typical usage is:

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\GoogleLongrunningOperation;
+use Google\Service\Networkconnectivity\ListServiceConnectionPoliciesResponse;
+use Google\Service\Networkconnectivity\Policy;
+use Google\Service\Networkconnectivity\ServiceConnectionPolicy;
+use Google\Service\Networkconnectivity\SetIamPolicyRequest;
+use Google\Service\Networkconnectivity\TestIamPermissionsRequest;
+use Google\Service\Networkconnectivity\TestIamPermissionsResponse;
 /**
  * The "serviceConnectionPolicies" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ServiceNetworking\Resource;
 
+use Google\Service\ServiceNetworking\ConsumerConfig;
+use Google\Service\ServiceNetworking\Operation;
+use Google\Service\ServiceNetworking\UpdateConsumerConfigRequest;
+use Google\Service\ServiceNetworking\VpcServiceControls;
 /**
  * The "networks" collection of methods.
  * Typical usage is:

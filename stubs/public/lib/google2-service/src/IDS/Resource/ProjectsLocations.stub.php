@@ -23,6 +23,8 @@
  */
 namespace Google\Service\IDS\Resource;
 
+use Google\Service\IDS\ListLocationsResponse;
+use Google\Service\IDS\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

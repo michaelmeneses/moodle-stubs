@@ -23,6 +23,12 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1IdentityMappingStore;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportIdentityMappingsRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListIdentityMappingStoresResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListIdentityMappingsResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequest;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "identityMappingStores" collection of methods.
  * Typical usage is:

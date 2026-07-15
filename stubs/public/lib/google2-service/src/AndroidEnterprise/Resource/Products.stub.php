@@ -23,6 +23,12 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\AppRestrictionsSchema;
+use Google\Service\AndroidEnterprise\Product;
+use Google\Service\AndroidEnterprise\ProductPermissions;
+use Google\Service\AndroidEnterprise\ProductsApproveRequest;
+use Google\Service\AndroidEnterprise\ProductsGenerateApprovalUrlResponse;
+use Google\Service\AndroidEnterprise\ProductsListResponse;
 /**
  * The "products" collection of methods.
  * Typical usage is:

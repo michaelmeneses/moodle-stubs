@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDataItemsResponse;
 /**
  * The "dataItems" collection of methods.
  * Typical usage is:

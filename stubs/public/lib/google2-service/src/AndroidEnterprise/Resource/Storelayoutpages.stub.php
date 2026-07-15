@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\StoreLayoutPagesListResponse;
+use Google\Service\AndroidEnterprise\StorePage;
 /**
  * The "storelayoutpages" collection of methods.
  * Typical usage is:

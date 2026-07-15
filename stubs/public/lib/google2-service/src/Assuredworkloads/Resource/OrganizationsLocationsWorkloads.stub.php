@@ -23,6 +23,16 @@
  */
 namespace Google\Service\Assuredworkloads\Resource;
 
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1AnalyzeWorkloadMoveResponse;
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1EnableComplianceUpdatesResponse;
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1EnableResourceMonitoringResponse;
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ListWorkloadsResponse;
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1MutatePartnerPermissionsRequest;
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1RestrictAllowedResourcesRequest;
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1RestrictAllowedResourcesResponse;
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1Workload;
+use Google\Service\Assuredworkloads\GoogleLongrunningOperation;
+use Google\Service\Assuredworkloads\GoogleProtobufEmpty;
 /**
  * The "workloads" collection of methods.
  * Typical usage is:

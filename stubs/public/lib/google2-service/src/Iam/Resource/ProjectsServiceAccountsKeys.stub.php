@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Iam\Resource;
 
+use Google\Service\Iam\CreateServiceAccountKeyRequest;
+use Google\Service\Iam\DisableServiceAccountKeyRequest;
+use Google\Service\Iam\EnableServiceAccountKeyRequest;
+use Google\Service\Iam\IamEmpty;
+use Google\Service\Iam\ListServiceAccountKeysResponse;
+use Google\Service\Iam\ServiceAccountKey;
+use Google\Service\Iam\UploadServiceAccountKeyRequest;
 /**
  * The "keys" collection of methods.
  * Typical usage is:

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\BackupforGKE\Resource;
 
+use Google\Service\BackupforGKE\GoogleLongrunningOperation;
+use Google\Service\BackupforGKE\ListRestorePlansResponse;
+use Google\Service\BackupforGKE\Policy;
+use Google\Service\BackupforGKE\RestorePlan;
+use Google\Service\BackupforGKE\SetIamPolicyRequest;
+use Google\Service\BackupforGKE\TestIamPermissionsRequest;
+use Google\Service\BackupforGKE\TestIamPermissionsResponse;
 /**
  * The "restorePlans" collection of methods.
  * Typical usage is:

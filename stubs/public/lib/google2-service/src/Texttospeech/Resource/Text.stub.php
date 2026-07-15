@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Texttospeech\Resource;
 
+use Google\Service\Texttospeech\SynthesizeSpeechRequest;
+use Google\Service\Texttospeech\SynthesizeSpeechResponse;
 /**
  * The "text" collection of methods.
  * Typical usage is:

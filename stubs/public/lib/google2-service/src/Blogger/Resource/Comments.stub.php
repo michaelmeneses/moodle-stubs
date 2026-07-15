@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Blogger\Resource;
 
+use Google\Service\Blogger\Comment;
+use Google\Service\Blogger\CommentList;
 /**
  * The "comments" collection of methods.
  * Typical usage is:

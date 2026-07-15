@@ -23,6 +23,7 @@
  */
 namespace Google\Service\PolyService\Resource;
 
+use Google\Service\PolyService\ListLikedAssetsResponse;
 /**
  * The "likedassets" collection of methods.
  * Typical usage is:

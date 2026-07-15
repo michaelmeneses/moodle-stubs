@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InstanceTemplate;
+use Google\Service\Compute\InstanceTemplateList;
+use Google\Service\Compute\Operation;
 /**
  * The "regionInstanceTemplates" collection of methods.
  * Typical usage is:

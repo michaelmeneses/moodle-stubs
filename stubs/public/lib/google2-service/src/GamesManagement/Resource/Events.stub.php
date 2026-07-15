@@ -23,6 +23,7 @@
  */
 namespace Google\Service\GamesManagement\Resource;
 
+use Google\Service\GamesManagement\EventsResetMultipleForAllRequest;
 /**
  * The "events" collection of methods.
  * Typical usage is:

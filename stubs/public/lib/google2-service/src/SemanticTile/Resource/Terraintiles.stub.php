@@ -23,6 +23,7 @@
  */
 namespace Google\Service\SemanticTile\Resource;
 
+use Google\Service\SemanticTile\TerrainTile;
 /**
  * The "terraintiles" collection of methods.
  * Typical usage is:

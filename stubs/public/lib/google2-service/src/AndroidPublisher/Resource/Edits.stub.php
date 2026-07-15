@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\AppEdit;
 /**
  * The "edits" collection of methods.
  * Typical usage is:

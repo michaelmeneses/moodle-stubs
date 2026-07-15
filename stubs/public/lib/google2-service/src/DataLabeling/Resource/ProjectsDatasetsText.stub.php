@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1LabelTextRequest;
+use Google\Service\DataLabeling\GoogleLongrunningOperation;
 /**
  * The "text" collection of methods.
  * Typical usage is:

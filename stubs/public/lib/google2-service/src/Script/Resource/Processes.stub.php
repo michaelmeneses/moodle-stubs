@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Script\Resource;
 
+use Google\Service\Script\ListScriptProcessesResponse;
+use Google\Service\Script\ListUserProcessesResponse;
 /**
  * The "processes" collection of methods.
  * Typical usage is:

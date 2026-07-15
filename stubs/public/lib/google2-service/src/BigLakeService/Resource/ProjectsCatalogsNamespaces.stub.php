@@ -23,6 +23,8 @@
  */
 namespace Google\Service\BigLakeService\Resource;
 
+use Google\Service\BigLakeService\Policy;
+use Google\Service\BigLakeService\SetIamPolicyRequest;
 /**
  * The "namespaces" collection of methods.
  * Typical usage is:

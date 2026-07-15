@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DriveActivity\Resource;
 
+use Google\Service\DriveActivity\QueryDriveActivityRequest;
+use Google\Service\DriveActivity\QueryDriveActivityResponse;
 /**
  * The "activity" collection of methods.
  * Typical usage is:

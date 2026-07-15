@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CertificateAuthorityService\Resource;
 
+use Google\Service\CertificateAuthorityService\Certificate;
+use Google\Service\CertificateAuthorityService\ListCertificatesResponse;
+use Google\Service\CertificateAuthorityService\RevokeCertificateRequest;
 /**
  * The "certificates" collection of methods.
  * Typical usage is:

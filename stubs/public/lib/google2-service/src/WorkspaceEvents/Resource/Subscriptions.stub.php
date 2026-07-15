@@ -23,6 +23,10 @@
  */
 namespace Google\Service\WorkspaceEvents\Resource;
 
+use Google\Service\WorkspaceEvents\ListSubscriptionsResponse;
+use Google\Service\WorkspaceEvents\Operation;
+use Google\Service\WorkspaceEvents\ReactivateSubscriptionRequest;
+use Google\Service\WorkspaceEvents\Subscription;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

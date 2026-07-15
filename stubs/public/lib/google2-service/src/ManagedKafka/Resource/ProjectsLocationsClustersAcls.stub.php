@@ -23,6 +23,12 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\Acl;
+use Google\Service\ManagedKafka\AclEntry;
+use Google\Service\ManagedKafka\AddAclEntryResponse;
+use Google\Service\ManagedKafka\ListAclsResponse;
+use Google\Service\ManagedKafka\ManagedkafkaEmpty;
+use Google\Service\ManagedKafka\RemoveAclEntryResponse;
 /**
  * The "acls" collection of methods.
  * Typical usage is:

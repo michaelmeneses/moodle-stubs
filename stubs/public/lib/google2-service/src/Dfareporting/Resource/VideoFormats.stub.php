@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\VideoFormat;
+use Google\Service\Dfareporting\VideoFormatsListResponse;
 /**
  * The "videoFormats" collection of methods.
  * Typical usage is:

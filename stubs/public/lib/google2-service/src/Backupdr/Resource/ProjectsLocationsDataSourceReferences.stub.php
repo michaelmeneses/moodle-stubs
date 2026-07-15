@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\DataSourceReference;
+use Google\Service\Backupdr\FetchDataSourceReferencesForResourceTypeResponse;
+use Google\Service\Backupdr\ListDataSourceReferencesResponse;
 /**
  * The "dataSourceReferences" collection of methods.
  * Typical usage is:

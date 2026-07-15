@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1App;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListAppsResponse;
 /**
  * The "apps" collection of methods.
  * Typical usage is:

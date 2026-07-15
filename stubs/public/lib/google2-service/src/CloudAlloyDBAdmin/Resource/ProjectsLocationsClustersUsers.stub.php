@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudAlloyDBAdmin\Resource;
 
+use Google\Service\CloudAlloyDBAdmin\AlloydbEmpty;
+use Google\Service\CloudAlloyDBAdmin\ListUsersResponse;
+use Google\Service\CloudAlloyDBAdmin\User;
 /**
  * The "users" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationSet;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEvaluationSetsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "evaluationSets" collection of methods.
  * Typical usage is:

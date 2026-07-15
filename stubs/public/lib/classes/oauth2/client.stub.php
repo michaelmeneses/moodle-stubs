@@ -29,6 +29,9 @@
  */
 namespace core\oauth2;
 
+use moodle_url;
+use moodle_exception;
+use stdClass;
 /**
  * Configurable oauth2 client class. URLs come from DB and access tokens from either DB (system accounts) or session (users').
  *

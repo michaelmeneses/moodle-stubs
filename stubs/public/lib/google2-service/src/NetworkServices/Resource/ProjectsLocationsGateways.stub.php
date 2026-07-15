@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\Gateway;
+use Google\Service\NetworkServices\ListGatewaysResponse;
+use Google\Service\NetworkServices\Operation;
 /**
  * The "gateways" collection of methods.
  * Typical usage is:

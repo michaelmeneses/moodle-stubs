@@ -23,6 +23,12 @@
  */
 namespace Google\Service\SQLAdmin\Resource;
 
+use Google\Service\SQLAdmin\Operation;
+use Google\Service\SQLAdmin\SslCert;
+use Google\Service\SQLAdmin\SslCertsCreateEphemeralRequest;
+use Google\Service\SQLAdmin\SslCertsInsertRequest;
+use Google\Service\SQLAdmin\SslCertsInsertResponse;
+use Google\Service\SQLAdmin\SslCertsListResponse;
 /**
  * The "sslCerts" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ApiCategory;
+use Google\Service\Apigee\GoogleCloudApigeeV1ApiCategoryResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1DeleteResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListApiCategoriesResponse;
 /**
  * The "apicategories" collection of methods.
  * Typical usage is:

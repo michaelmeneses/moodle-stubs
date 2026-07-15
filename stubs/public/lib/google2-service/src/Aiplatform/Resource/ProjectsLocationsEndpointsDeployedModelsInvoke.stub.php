@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleApiHttpBody;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1InvokeRequest;
 /**
  * The "invoke" collection of methods.
  * Typical usage is:

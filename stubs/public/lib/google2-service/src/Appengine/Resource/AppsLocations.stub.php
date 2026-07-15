@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Appengine\Resource;
 
+use Google\Service\Appengine\ListLocationsResponse;
+use Google\Service\Appengine\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

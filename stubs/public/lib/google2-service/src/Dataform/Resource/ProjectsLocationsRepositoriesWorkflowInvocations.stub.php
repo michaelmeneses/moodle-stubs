@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Dataform\Resource;
 
+use Google\Service\Dataform\CancelWorkflowInvocationRequest;
+use Google\Service\Dataform\CancelWorkflowInvocationResponse;
+use Google\Service\Dataform\DataformEmpty;
+use Google\Service\Dataform\ListWorkflowInvocationsResponse;
+use Google\Service\Dataform\QueryWorkflowInvocationActionsResponse;
+use Google\Service\Dataform\WorkflowInvocation;
 /**
  * The "workflowInvocations" collection of methods.
  * Typical usage is:

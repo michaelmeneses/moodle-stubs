@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Firebaseappcheck\Resource;
 
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetPlayIntegrityConfigsResponse;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1PlayIntegrityConfig;
 /**
  * The "playIntegrityConfig" collection of methods.
  * Typical usage is:

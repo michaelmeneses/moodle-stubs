@@ -23,6 +23,9 @@
  */
 namespace Google\Service\MyBusinessQA\Resource;
 
+use Google\Service\MyBusinessQA\ListQuestionsResponse;
+use Google\Service\MyBusinessQA\MybusinessqandaEmpty;
+use Google\Service\MyBusinessQA\Question;
 /**
  * The "questions" collection of methods.
  * Typical usage is:

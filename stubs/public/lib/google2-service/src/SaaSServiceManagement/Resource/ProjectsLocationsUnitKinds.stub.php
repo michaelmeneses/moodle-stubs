@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SaaSServiceManagement\Resource;
 
+use Google\Service\SaaSServiceManagement\ListUnitKindsResponse;
+use Google\Service\SaaSServiceManagement\SaasservicemgmtEmpty;
+use Google\Service\SaaSServiceManagement\UnitKind;
 /**
  * The "unitKinds" collection of methods.
  * Typical usage is:

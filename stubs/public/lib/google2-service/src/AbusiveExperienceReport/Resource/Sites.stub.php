@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AbusiveExperienceReport\Resource;
 
+use Google\Service\AbusiveExperienceReport\SiteSummaryResponse;
 /**
  * The "sites" collection of methods.
  * Typical usage is:

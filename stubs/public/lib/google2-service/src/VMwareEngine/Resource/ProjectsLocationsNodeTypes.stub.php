@@ -23,6 +23,8 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ListNodeTypesResponse;
+use Google\Service\VMwareEngine\NodeType;
 /**
  * The "nodeTypes" collection of methods.
  * Typical usage is:

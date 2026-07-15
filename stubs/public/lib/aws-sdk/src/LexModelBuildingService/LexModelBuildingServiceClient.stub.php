@@ -8,6 +8,7 @@
  */
 namespace Aws\LexModelBuildingService;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Lex Model Building Service** service.
  * @method \Aws\Result createBotVersion(array $args = [])

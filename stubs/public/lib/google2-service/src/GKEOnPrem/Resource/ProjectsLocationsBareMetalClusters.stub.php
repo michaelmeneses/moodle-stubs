@@ -23,6 +23,15 @@
  */
 namespace Google\Service\GKEOnPrem\Resource;
 
+use Google\Service\GKEOnPrem\BareMetalCluster;
+use Google\Service\GKEOnPrem\EnrollBareMetalClusterRequest;
+use Google\Service\GKEOnPrem\ListBareMetalClustersResponse;
+use Google\Service\GKEOnPrem\Operation;
+use Google\Service\GKEOnPrem\Policy;
+use Google\Service\GKEOnPrem\QueryBareMetalVersionConfigResponse;
+use Google\Service\GKEOnPrem\SetIamPolicyRequest;
+use Google\Service\GKEOnPrem\TestIamPermissionsRequest;
+use Google\Service\GKEOnPrem\TestIamPermissionsResponse;
 /**
  * The "bareMetalClusters" collection of methods.
  * Typical usage is:

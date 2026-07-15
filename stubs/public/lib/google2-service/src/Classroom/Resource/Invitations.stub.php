@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\ClassroomEmpty;
+use Google\Service\Classroom\Invitation;
+use Google\Service\Classroom\ListInvitationsResponse;
 /**
  * The "invitations" collection of methods.
  * Typical usage is:

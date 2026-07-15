@@ -23,6 +23,14 @@
  */
 namespace Google\Service\BigQueryConnectionService\Resource;
 
+use Google\Service\BigQueryConnectionService\BigqueryconnectionEmpty;
+use Google\Service\BigQueryConnectionService\Connection;
+use Google\Service\BigQueryConnectionService\GetIamPolicyRequest;
+use Google\Service\BigQueryConnectionService\ListConnectionsResponse;
+use Google\Service\BigQueryConnectionService\Policy;
+use Google\Service\BigQueryConnectionService\SetIamPolicyRequest;
+use Google\Service\BigQueryConnectionService\TestIamPermissionsRequest;
+use Google\Service\BigQueryConnectionService\TestIamPermissionsResponse;
 /**
  * The "connections" collection of methods.
  * Typical usage is:

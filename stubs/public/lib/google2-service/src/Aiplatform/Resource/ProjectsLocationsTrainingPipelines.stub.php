@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CancelTrainingPipelineRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTrainingPipelinesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1TrainingPipeline;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "trainingPipelines" collection of methods.
  * Typical usage is:

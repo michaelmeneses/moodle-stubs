@@ -23,6 +23,19 @@
  */
 namespace Google\Service\CloudDeploy\Resource;
 
+use Google\Service\CloudDeploy\AdvanceRolloutRequest;
+use Google\Service\CloudDeploy\AdvanceRolloutResponse;
+use Google\Service\CloudDeploy\ApproveRolloutRequest;
+use Google\Service\CloudDeploy\ApproveRolloutResponse;
+use Google\Service\CloudDeploy\CancelRolloutRequest;
+use Google\Service\CloudDeploy\CancelRolloutResponse;
+use Google\Service\CloudDeploy\IgnoreJobRequest;
+use Google\Service\CloudDeploy\IgnoreJobResponse;
+use Google\Service\CloudDeploy\ListRolloutsResponse;
+use Google\Service\CloudDeploy\Operation;
+use Google\Service\CloudDeploy\RetryJobRequest;
+use Google\Service\CloudDeploy\RetryJobResponse;
+use Google\Service\CloudDeploy\Rollout;
 /**
  * The "rollouts" collection of methods.
  * Typical usage is:

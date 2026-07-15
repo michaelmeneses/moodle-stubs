@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AlertCenter\Resource;
 
+use Google\Service\AlertCenter\Settings;
 /**
  * The "v1beta1" collection of methods.
  * Typical usage is:

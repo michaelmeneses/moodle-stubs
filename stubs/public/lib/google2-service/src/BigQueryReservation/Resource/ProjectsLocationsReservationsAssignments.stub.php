@@ -23,6 +23,14 @@
  */
 namespace Google\Service\BigQueryReservation\Resource;
 
+use Google\Service\BigQueryReservation\Assignment;
+use Google\Service\BigQueryReservation\BigqueryreservationEmpty;
+use Google\Service\BigQueryReservation\ListAssignmentsResponse;
+use Google\Service\BigQueryReservation\MoveAssignmentRequest;
+use Google\Service\BigQueryReservation\Policy;
+use Google\Service\BigQueryReservation\SetIamPolicyRequest;
+use Google\Service\BigQueryReservation\TestIamPermissionsRequest;
+use Google\Service\BigQueryReservation\TestIamPermissionsResponse;
 /**
  * The "assignments" collection of methods.
  * Typical usage is:

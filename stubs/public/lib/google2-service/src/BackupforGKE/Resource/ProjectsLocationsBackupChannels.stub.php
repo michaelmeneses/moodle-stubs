@@ -23,6 +23,9 @@
  */
 namespace Google\Service\BackupforGKE\Resource;
 
+use Google\Service\BackupforGKE\BackupChannel;
+use Google\Service\BackupforGKE\GoogleLongrunningOperation;
+use Google\Service\BackupforGKE\ListBackupChannelsResponse;
 /**
  * The "backupChannels" collection of methods.
  * Typical usage is:

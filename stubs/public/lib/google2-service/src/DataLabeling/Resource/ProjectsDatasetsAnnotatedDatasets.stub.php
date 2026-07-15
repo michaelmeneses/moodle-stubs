@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1AnnotatedDataset;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListAnnotatedDatasetsResponse;
+use Google\Service\DataLabeling\GoogleProtobufEmpty;
 /**
  * The "annotatedDatasets" collection of methods.
  * Typical usage is:

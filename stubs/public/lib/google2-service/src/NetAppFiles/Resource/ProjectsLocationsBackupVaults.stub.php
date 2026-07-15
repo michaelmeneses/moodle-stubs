@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\BackupVault;
+use Google\Service\NetAppFiles\ListBackupVaultsResponse;
+use Google\Service\NetAppFiles\Operation;
 /**
  * The "backupVaults" collection of methods.
  * Typical usage is:

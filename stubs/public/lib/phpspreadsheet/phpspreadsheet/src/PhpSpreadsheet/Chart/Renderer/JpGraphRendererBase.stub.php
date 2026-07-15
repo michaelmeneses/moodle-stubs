@@ -8,6 +8,24 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Chart\Renderer;
 
+use AccBarPlot;
+use AccLinePlot;
+use BarPlot;
+use ContourPlot;
+use Graph;
+use GroupBarPlot;
+use LinePlot;
+use PhpOffice\PhpSpreadsheet\Chart\Chart;
+use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
+use PieGraph;
+use PiePlot;
+use PiePlot3D;
+use PiePlotC;
+use RadarGraph;
+use RadarPlot;
+use ScatterPlot;
+use Spline;
+use StockPlot;
 /**
  * Base class for different Jpgraph implementations as charts renderer.
  */

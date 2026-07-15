@@ -23,6 +23,14 @@
  */
 namespace Google\Service\BeyondCorp\Resource;
 
+use Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1AppConnection;
+use Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1ListAppConnectionsResponse;
+use Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponse;
+use Google\Service\BeyondCorp\GoogleIamV1Policy;
+use Google\Service\BeyondCorp\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\BeyondCorp\GoogleLongrunningOperation;
 /**
  * The "appConnections" collection of methods.
  * Typical usage is:

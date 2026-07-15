@@ -23,6 +23,10 @@
  */
 namespace Google\Service\PeopleService\Resource;
 
+use Google\Service\PeopleService\CopyOtherContactToMyContactsGroupRequest;
+use Google\Service\PeopleService\ListOtherContactsResponse;
+use Google\Service\PeopleService\Person;
+use Google\Service\PeopleService\SearchResponse;
 /**
  * The "otherContacts" collection of methods.
  * Typical usage is:

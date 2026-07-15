@@ -23,6 +23,27 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InstanceGroupManager;
+use Google\Service\Compute\InstanceGroupManagerAggregatedList;
+use Google\Service\Compute\InstanceGroupManagerList;
+use Google\Service\Compute\InstanceGroupManagersAbandonInstancesRequest;
+use Google\Service\Compute\InstanceGroupManagersApplyUpdatesRequest;
+use Google\Service\Compute\InstanceGroupManagersCreateInstancesRequest;
+use Google\Service\Compute\InstanceGroupManagersDeleteInstancesRequest;
+use Google\Service\Compute\InstanceGroupManagersDeletePerInstanceConfigsReq;
+use Google\Service\Compute\InstanceGroupManagersListErrorsResponse;
+use Google\Service\Compute\InstanceGroupManagersListManagedInstancesResponse;
+use Google\Service\Compute\InstanceGroupManagersListPerInstanceConfigsResp;
+use Google\Service\Compute\InstanceGroupManagersPatchPerInstanceConfigsReq;
+use Google\Service\Compute\InstanceGroupManagersRecreateInstancesRequest;
+use Google\Service\Compute\InstanceGroupManagersResumeInstancesRequest;
+use Google\Service\Compute\InstanceGroupManagersSetInstanceTemplateRequest;
+use Google\Service\Compute\InstanceGroupManagersSetTargetPoolsRequest;
+use Google\Service\Compute\InstanceGroupManagersStartInstancesRequest;
+use Google\Service\Compute\InstanceGroupManagersStopInstancesRequest;
+use Google\Service\Compute\InstanceGroupManagersSuspendInstancesRequest;
+use Google\Service\Compute\InstanceGroupManagersUpdatePerInstanceConfigsReq;
+use Google\Service\Compute\Operation;
 /**
  * The "instanceGroupManagers" collection of methods.
  * Typical usage is:

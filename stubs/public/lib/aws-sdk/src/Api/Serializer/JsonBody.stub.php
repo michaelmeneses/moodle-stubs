@@ -8,6 +8,10 @@
  */
 namespace Aws\Api\Serializer;
 
+use Aws\Api\Service;
+use Aws\Api\Shape;
+use Aws\Api\TimestampShape;
+use Aws\Exception\InvalidJsonException;
 /**
  * Formats the JSON body of a JSON-REST or JSON-RPC operation.
  * @internal

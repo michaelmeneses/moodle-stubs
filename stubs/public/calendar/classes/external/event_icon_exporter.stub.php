@@ -29,6 +29,9 @@
  */
 namespace core_calendar\external;
 
+use core\external\exporter;
+use core_calendar\local\event\entities\event_interface;
+use core_course\output\activity_icon;
 /**
  * Class for displaying a calendar event's icon.
  *

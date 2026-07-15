@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeCompletionSuggestionsRequest;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "completionSuggestions" collection of methods.
  * Typical usage is:

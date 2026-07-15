@@ -23,6 +23,20 @@
  */
 namespace Google\Service\PeopleService\Resource;
 
+use Google\Service\PeopleService\BatchCreateContactsRequest;
+use Google\Service\PeopleService\BatchCreateContactsResponse;
+use Google\Service\PeopleService\BatchDeleteContactsRequest;
+use Google\Service\PeopleService\BatchUpdateContactsRequest;
+use Google\Service\PeopleService\BatchUpdateContactsResponse;
+use Google\Service\PeopleService\DeleteContactPhotoResponse;
+use Google\Service\PeopleService\GetPeopleResponse;
+use Google\Service\PeopleService\ListDirectoryPeopleResponse;
+use Google\Service\PeopleService\PeopleEmpty;
+use Google\Service\PeopleService\Person;
+use Google\Service\PeopleService\SearchDirectoryPeopleResponse;
+use Google\Service\PeopleService\SearchResponse;
+use Google\Service\PeopleService\UpdateContactPhotoRequest;
+use Google\Service\PeopleService\UpdateContactPhotoResponse;
 /**
  * The "people" collection of methods.
  * Typical usage is:

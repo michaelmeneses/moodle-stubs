@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DeploymentManager\Resource;
 
+use Google\Service\DeploymentManager\Operation;
+use Google\Service\DeploymentManager\OperationsListResponse;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

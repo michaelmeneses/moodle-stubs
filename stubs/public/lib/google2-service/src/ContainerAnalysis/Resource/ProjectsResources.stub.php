@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ContainerAnalysis\Resource;
 
+use Google\Service\ContainerAnalysis\ExportSBOMRequest;
+use Google\Service\ContainerAnalysis\ExportSBOMResponse;
 /**
  * The "resources" collection of methods.
  * Typical usage is:

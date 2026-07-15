@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\PostalCode;
+use Google\Service\Dfareporting\PostalCodesListResponse;
 /**
  * The "postalCodes" collection of methods.
  * Typical usage is:

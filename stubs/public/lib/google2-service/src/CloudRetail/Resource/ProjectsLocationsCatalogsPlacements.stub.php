@@ -23,6 +23,12 @@
  */
 namespace Google\Service\CloudRetail\Resource;
 
+use Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchResponse;
+use Google\Service\CloudRetail\GoogleCloudRetailV2PredictRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2PredictResponse;
+use Google\Service\CloudRetail\GoogleCloudRetailV2SearchRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2SearchResponse;
 /**
  * The "placements" collection of methods.
  * Typical usage is:

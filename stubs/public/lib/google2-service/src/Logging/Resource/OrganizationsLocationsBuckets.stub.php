@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\ListBucketsResponse;
+use Google\Service\Logging\LogBucket;
+use Google\Service\Logging\LoggingEmpty;
+use Google\Service\Logging\Operation;
+use Google\Service\Logging\UndeleteBucketRequest;
 /**
  * The "buckets" collection of methods.
  * Typical usage is:

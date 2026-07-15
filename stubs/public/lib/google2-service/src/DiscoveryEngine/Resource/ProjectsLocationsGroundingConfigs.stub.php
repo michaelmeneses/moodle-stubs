@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingResponse;
 /**
  * The "groundingConfigs" collection of methods.
  * Typical usage is:

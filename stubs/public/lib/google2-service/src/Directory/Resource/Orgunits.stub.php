@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\OrgUnit;
+use Google\Service\Directory\OrgUnits as OrgUnitsModel;
 /**
  * The "orgunits" collection of methods.
  * Typical usage is:

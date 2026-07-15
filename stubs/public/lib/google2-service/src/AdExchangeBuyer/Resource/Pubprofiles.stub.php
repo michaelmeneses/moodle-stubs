@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AdExchangeBuyer\Resource;
 
+use Google\Service\AdExchangeBuyer\GetPublisherProfilesByAccountIdResponse;
 /**
  * The "pubprofiles" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\ListNotificationChannelDescriptorsResponse;
+use Google\Service\Monitoring\NotificationChannelDescriptor;
 /**
  * The "notificationChannelDescriptors" collection of methods.
  * Typical usage is:

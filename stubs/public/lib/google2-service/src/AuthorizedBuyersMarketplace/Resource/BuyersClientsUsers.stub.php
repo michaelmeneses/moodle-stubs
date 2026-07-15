@@ -23,6 +23,11 @@
  */
 namespace Google\Service\AuthorizedBuyersMarketplace\Resource;
 
+use Google\Service\AuthorizedBuyersMarketplace\ActivateClientUserRequest;
+use Google\Service\AuthorizedBuyersMarketplace\AuthorizedbuyersmarketplaceEmpty;
+use Google\Service\AuthorizedBuyersMarketplace\ClientUser;
+use Google\Service\AuthorizedBuyersMarketplace\DeactivateClientUserRequest;
+use Google\Service\AuthorizedBuyersMarketplace\ListClientUsersResponse;
 /**
  * The "users" collection of methods.
  * Typical usage is:

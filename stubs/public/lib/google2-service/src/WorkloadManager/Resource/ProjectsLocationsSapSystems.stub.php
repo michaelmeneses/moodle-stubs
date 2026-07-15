@@ -23,6 +23,7 @@
  */
 namespace Google\Service\WorkloadManager\Resource;
 
+use Google\Service\WorkloadManager\WorkloadmanagerEmpty;
 /**
  * The "sapSystems" collection of methods.
  * Typical usage is:

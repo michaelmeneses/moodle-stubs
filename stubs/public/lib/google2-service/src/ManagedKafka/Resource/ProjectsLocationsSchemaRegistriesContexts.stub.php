@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\Context;
+use Google\Service\ManagedKafka\HttpBody;
 /**
  * The "contexts" collection of methods.
  * Typical usage is:

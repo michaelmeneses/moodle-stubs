@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\Site;
+use Google\Service\Dfareporting\SitesListResponse;
 /**
  * The "sites" collection of methods.
  * Typical usage is:

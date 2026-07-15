@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaAgentFlow;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateAgentFlowRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateAgentFlowResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateAndUpdateAgentFlowRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateAndUpdateAgentFlowResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListAgentFlowsResponse;
+use Google\Service\Integrations\GoogleProtobufEmpty;
 /**
  * The "agentFlows" collection of methods.
  * Typical usage is:

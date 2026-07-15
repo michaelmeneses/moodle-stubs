@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Keep\Resource;
 
+use Google\Service\Keep\BatchCreatePermissionsRequest;
+use Google\Service\Keep\BatchCreatePermissionsResponse;
+use Google\Service\Keep\BatchDeletePermissionsRequest;
+use Google\Service\Keep\KeepEmpty;
 /**
  * The "permissions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\WebApp;
+use Google\Service\AndroidEnterprise\WebAppsListResponse;
 /**
  * The "webapps" collection of methods.
  * Typical usage is:

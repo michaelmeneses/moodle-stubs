@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\ListSendAsResponse;
+use Google\Service\Gmail\SendAs;
 /**
  * The "sendAs" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CertificateAuthorityService\Resource;
 
+use Google\Service\CertificateAuthorityService\Policy;
 /**
  * The "managedPkis" collection of methods.
  * Typical usage is:

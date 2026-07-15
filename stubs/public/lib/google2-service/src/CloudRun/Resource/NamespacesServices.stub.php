@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\ListServicesResponse;
+use Google\Service\CloudRun\Service;
+use Google\Service\CloudRun\Status;
 /**
  * The "services" collection of methods.
  * Typical usage is:

@@ -23,6 +23,16 @@
  */
 namespace Google\Service\ServiceConsumerManagement\Resource;
 
+use Google\Service\ServiceConsumerManagement\AddTenantProjectRequest;
+use Google\Service\ServiceConsumerManagement\ApplyTenantProjectConfigRequest;
+use Google\Service\ServiceConsumerManagement\AttachTenantProjectRequest;
+use Google\Service\ServiceConsumerManagement\CreateTenancyUnitRequest;
+use Google\Service\ServiceConsumerManagement\DeleteTenantProjectRequest;
+use Google\Service\ServiceConsumerManagement\ListTenancyUnitsResponse;
+use Google\Service\ServiceConsumerManagement\Operation;
+use Google\Service\ServiceConsumerManagement\RemoveTenantProjectRequest;
+use Google\Service\ServiceConsumerManagement\TenancyUnit;
+use Google\Service\ServiceConsumerManagement\UndeleteTenantProjectRequest;
 /**
  * The "tenancyUnits" collection of methods.
  * Typical usage is:

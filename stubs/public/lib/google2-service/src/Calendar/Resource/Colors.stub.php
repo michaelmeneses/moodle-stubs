@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Calendar\Resource;
 
+use Google\Service\Calendar\Colors as ColorsModel;
 /**
  * The "colors" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\ServiceAccountKey;
+use Google\Service\AndroidEnterprise\ServiceAccountKeysListResponse;
 /**
  * The "serviceaccountkeys" collection of methods.
  * Typical usage is:

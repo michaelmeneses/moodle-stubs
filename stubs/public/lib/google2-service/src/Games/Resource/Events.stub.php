@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\EventDefinitionListResponse;
+use Google\Service\Games\EventRecordRequest;
+use Google\Service\Games\EventUpdateResponse;
+use Google\Service\Games\PlayerEventListResponse;
 /**
  * The "events" collection of methods.
  * Typical usage is:

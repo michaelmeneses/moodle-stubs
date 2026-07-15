@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\ListLocationsResponse;
+use Google\Service\Baremetalsolution\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

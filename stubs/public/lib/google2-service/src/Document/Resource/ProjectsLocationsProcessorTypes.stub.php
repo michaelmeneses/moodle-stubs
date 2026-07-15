@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Document\Resource;
 
+use Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorTypesResponse;
+use Google\Service\Document\GoogleCloudDocumentaiV1ProcessorType;
 /**
  * The "processorTypes" collection of methods.
  * Typical usage is:

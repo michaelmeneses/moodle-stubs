@@ -23,6 +23,8 @@
  */
 namespace Google\Service\WorkflowExecutions\Resource;
 
+use Google\Service\WorkflowExecutions\Execution;
+use Google\Service\WorkflowExecutions\TriggerPubsubExecutionRequest;
 /**
  * The "workflows" collection of methods.
  * Typical usage is:

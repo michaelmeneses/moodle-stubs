@@ -23,6 +23,8 @@
  */
 namespace Google\Service\MyBusinessBusinessInformation\Resource;
 
+use Google\Service\MyBusinessBusinessInformation\BatchGetCategoriesResponse;
+use Google\Service\MyBusinessBusinessInformation\ListCategoriesResponse;
 /**
  * The "categories" collection of methods.
  * Typical usage is:

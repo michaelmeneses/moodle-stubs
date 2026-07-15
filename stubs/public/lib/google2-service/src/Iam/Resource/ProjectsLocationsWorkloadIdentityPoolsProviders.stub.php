@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Iam\Resource;
 
+use Google\Service\Iam\ListWorkloadIdentityPoolProvidersResponse;
+use Google\Service\Iam\Operation;
+use Google\Service\Iam\UndeleteWorkloadIdentityPoolProviderRequest;
+use Google\Service\Iam\WorkloadIdentityPoolProvider;
 /**
  * The "providers" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\ListHistoryResponse;
 /**
  * The "history" collection of methods.
  * Typical usage is:

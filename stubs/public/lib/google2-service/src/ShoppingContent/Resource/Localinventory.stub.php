@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\LocalInventory as LocalInventoryModel;
+use Google\Service\ShoppingContent\LocalinventoryCustomBatchRequest;
+use Google\Service\ShoppingContent\LocalinventoryCustomBatchResponse;
 /**
  * The "localinventory" collection of methods.
  * Typical usage is:

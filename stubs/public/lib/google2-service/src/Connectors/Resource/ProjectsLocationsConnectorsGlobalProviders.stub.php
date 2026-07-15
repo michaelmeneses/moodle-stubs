@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\ListProvidersResponse;
+use Google\Service\Connectors\Provider;
 /**
  * The "providers" collection of methods.
  * Typical usage is:

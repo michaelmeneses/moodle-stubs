@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\ListWasmPluginsResponse;
+use Google\Service\NetworkServices\Operation;
+use Google\Service\NetworkServices\WasmPlugin;
 /**
  * The "wasmPlugins" collection of methods.
  * Typical usage is:

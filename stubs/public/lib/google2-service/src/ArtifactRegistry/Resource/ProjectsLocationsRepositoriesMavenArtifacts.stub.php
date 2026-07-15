@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\ListMavenArtifactsResponse;
+use Google\Service\ArtifactRegistry\MavenArtifact;
 /**
  * The "mavenArtifacts" collection of methods.
  * Typical usage is:

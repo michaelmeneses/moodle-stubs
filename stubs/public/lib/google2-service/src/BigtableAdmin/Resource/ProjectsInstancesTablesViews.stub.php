@@ -23,6 +23,11 @@
  */
 namespace Google\Service\BigtableAdmin\Resource;
 
+use Google\Service\BigtableAdmin\GetIamPolicyRequest;
+use Google\Service\BigtableAdmin\Policy;
+use Google\Service\BigtableAdmin\SetIamPolicyRequest;
+use Google\Service\BigtableAdmin\TestIamPermissionsRequest;
+use Google\Service\BigtableAdmin\TestIamPermissionsResponse;
 /**
  * The "views" collection of methods.
  * Typical usage is:

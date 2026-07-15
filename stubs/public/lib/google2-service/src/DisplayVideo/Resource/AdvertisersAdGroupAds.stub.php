@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\AdGroupAd;
+use Google\Service\DisplayVideo\ListAdGroupAdsResponse;
 /**
  * The "adGroupAds" collection of methods.
  * Typical usage is:

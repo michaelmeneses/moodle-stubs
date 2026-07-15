@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1AnnotationSpecSet;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateAnnotationSpecSetRequest;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse;
+use Google\Service\DataLabeling\GoogleProtobufEmpty;
 /**
  * The "annotationSpecSets" collection of methods.
  * Typical usage is:

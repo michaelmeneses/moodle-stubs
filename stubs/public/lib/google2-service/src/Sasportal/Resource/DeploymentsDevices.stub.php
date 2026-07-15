@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Sasportal\Resource;
 
+use Google\Service\Sasportal\SasPortalDevice;
+use Google\Service\Sasportal\SasPortalEmpty;
+use Google\Service\Sasportal\SasPortalMoveDeviceRequest;
+use Google\Service\Sasportal\SasPortalOperation;
+use Google\Service\Sasportal\SasPortalSignDeviceRequest;
+use Google\Service\Sasportal\SasPortalUpdateSignedDeviceRequest;
 /**
  * The "devices" collection of methods.
  * Typical usage is:

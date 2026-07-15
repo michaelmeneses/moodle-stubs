@@ -23,6 +23,18 @@
  */
 namespace Google\Service\CloudIot\Resource;
 
+use Google\Service\CloudIot\BindDeviceToGatewayRequest;
+use Google\Service\CloudIot\BindDeviceToGatewayResponse;
+use Google\Service\CloudIot\CloudiotEmpty;
+use Google\Service\CloudIot\DeviceRegistry;
+use Google\Service\CloudIot\GetIamPolicyRequest;
+use Google\Service\CloudIot\ListDeviceRegistriesResponse;
+use Google\Service\CloudIot\Policy;
+use Google\Service\CloudIot\SetIamPolicyRequest;
+use Google\Service\CloudIot\TestIamPermissionsRequest;
+use Google\Service\CloudIot\TestIamPermissionsResponse;
+use Google\Service\CloudIot\UnbindDeviceFromGatewayRequest;
+use Google\Service\CloudIot\UnbindDeviceFromGatewayResponse;
 /**
  * The "registries" collection of methods.
  * Typical usage is:

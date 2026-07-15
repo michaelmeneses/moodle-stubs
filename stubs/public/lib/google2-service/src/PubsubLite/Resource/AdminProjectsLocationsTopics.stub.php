@@ -23,6 +23,10 @@
  */
 namespace Google\Service\PubsubLite\Resource;
 
+use Google\Service\PubsubLite\ListTopicsResponse;
+use Google\Service\PubsubLite\PubsubliteEmpty;
+use Google\Service\PubsubLite\Topic;
+use Google\Service\PubsubLite\TopicPartitions;
 /**
  * The "topics" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\PublicDelegatedPrefix;
+use Google\Service\Compute\PublicDelegatedPrefixList;
 /**
  * The "globalPublicDelegatedPrefixes" collection of methods.
  * Typical usage is:

@@ -8,6 +8,7 @@
  */
 namespace Aws\Route53GlobalResolver;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Route 53 Global Resolver** service.
  * @method \Aws\Result associateHostedZone(array $args = [])

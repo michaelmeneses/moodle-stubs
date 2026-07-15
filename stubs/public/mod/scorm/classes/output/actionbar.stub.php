@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_scorm\output;
 
+use renderable;
+use renderer_base;
+use templatable;
+use moodle_url;
+use url_select;
 /**
  * Render HTML elements for tertiary nav for scorm.
  *

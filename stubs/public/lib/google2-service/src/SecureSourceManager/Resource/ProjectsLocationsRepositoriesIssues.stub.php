@@ -23,6 +23,11 @@
  */
 namespace Google\Service\SecureSourceManager\Resource;
 
+use Google\Service\SecureSourceManager\CloseIssueRequest;
+use Google\Service\SecureSourceManager\Issue;
+use Google\Service\SecureSourceManager\ListIssuesResponse;
+use Google\Service\SecureSourceManager\OpenIssueRequest;
+use Google\Service\SecureSourceManager\Operation;
 /**
  * The "issues" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\Comment;
+use Google\Service\YouTube\CommentListResponse;
 /**
  * The "comments" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1Deployment;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "revisions" collection of methods.
  * Typical usage is:

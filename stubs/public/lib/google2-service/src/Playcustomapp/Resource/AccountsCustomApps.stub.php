@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Playcustomapp\Resource;
 
+use Google\Service\Playcustomapp\CustomApp;
 /**
  * The "customApps" collection of methods.
  * Typical usage is:

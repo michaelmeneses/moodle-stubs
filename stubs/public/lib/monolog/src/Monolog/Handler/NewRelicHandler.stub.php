@@ -16,6 +16,11 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\Utils;
+use Monolog\Formatter\NormalizerFormatter;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\LogRecord;
 /**
  * Class to record a log on a NewRelic application.
  * Enabling New Relic High Security mode may prevent capture of useful information.

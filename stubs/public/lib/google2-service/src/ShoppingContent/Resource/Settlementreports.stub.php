@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\SettlementReport;
+use Google\Service\ShoppingContent\SettlementreportsListResponse;
 /**
  * The "settlementreports" collection of methods.
  * Typical usage is:

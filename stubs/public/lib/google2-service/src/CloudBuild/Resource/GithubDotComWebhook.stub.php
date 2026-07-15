@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\CloudbuildEmpty;
+use Google\Service\CloudBuild\HttpBody;
 /**
  * The "githubDotComWebhook" collection of methods.
  * Typical usage is:

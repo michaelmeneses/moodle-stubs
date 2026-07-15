@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Apigateway\Resource;
 
+use Google\Service\Apigateway\ApigatewayCancelOperationRequest;
+use Google\Service\Apigateway\ApigatewayEmpty;
+use Google\Service\Apigateway\ApigatewayListOperationsResponse;
+use Google\Service\Apigateway\ApigatewayOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\GoogleCloudRunV2ListServicesResponse;
+use Google\Service\CloudRun\GoogleCloudRunV2Service;
+use Google\Service\CloudRun\GoogleIamV1Policy;
+use Google\Service\CloudRun\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\CloudRun\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\CloudRun\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\CloudRun\GoogleLongrunningOperation;
 /**
  * The "services" collection of methods.
  * Typical usage is:

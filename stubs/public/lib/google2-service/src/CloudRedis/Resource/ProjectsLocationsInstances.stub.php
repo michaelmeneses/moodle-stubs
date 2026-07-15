@@ -23,6 +23,15 @@
  */
 namespace Google\Service\CloudRedis\Resource;
 
+use Google\Service\CloudRedis\ExportInstanceRequest;
+use Google\Service\CloudRedis\FailoverInstanceRequest;
+use Google\Service\CloudRedis\ImportInstanceRequest;
+use Google\Service\CloudRedis\Instance;
+use Google\Service\CloudRedis\InstanceAuthString;
+use Google\Service\CloudRedis\ListInstancesResponse;
+use Google\Service\CloudRedis\Operation;
+use Google\Service\CloudRedis\RescheduleMaintenanceRequest;
+use Google\Service\CloudRedis\UpgradeInstanceRequest;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

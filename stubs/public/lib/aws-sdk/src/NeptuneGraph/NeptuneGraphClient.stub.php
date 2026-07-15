@@ -8,6 +8,7 @@
  */
 namespace Aws\NeptuneGraph;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Neptune Graph** service.
  * @method \Aws\Result cancelExportTask(array $args = [])

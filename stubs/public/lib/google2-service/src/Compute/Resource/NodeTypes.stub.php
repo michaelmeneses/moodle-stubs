@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\NodeType;
+use Google\Service\Compute\NodeTypeAggregatedList;
+use Google\Service\Compute\NodeTypeList;
 /**
  * The "nodeTypes" collection of methods.
  * Typical usage is:

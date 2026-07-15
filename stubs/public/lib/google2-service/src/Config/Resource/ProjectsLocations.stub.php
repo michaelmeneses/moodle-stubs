@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Config\Resource;
 
+use Google\Service\Config\AutoMigrationConfig;
+use Google\Service\Config\ListLocationsResponse;
+use Google\Service\Config\Location;
+use Google\Service\Config\Operation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

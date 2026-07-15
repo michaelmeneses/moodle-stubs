@@ -23,6 +23,8 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\ErrorFrame;
+use Google\Service\MigrationCenterAPI\ListErrorFramesResponse;
 /**
  * The "errorFrames" collection of methods.
  * Typical usage is:

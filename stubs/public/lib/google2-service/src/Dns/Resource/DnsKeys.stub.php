@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dns\Resource;
 
+use Google\Service\Dns\DnsKey;
+use Google\Service\Dns\DnsKeysListResponse;
 /**
  * The "dnsKeys" collection of methods.
  * Typical usage is:

@@ -16,6 +16,17 @@
  */
 namespace Monolog;
 
+use Closure;
+use DateTimeZone;
+use Fiber;
+use Monolog\Handler\HandlerInterface;
+use Monolog\Processor\ProcessorInterface;
+use Psr\Log\LoggerInterface;
+use Psr\Log\InvalidArgumentException;
+use Psr\Log\LogLevel;
+use Throwable;
+use Stringable;
+use WeakMap;
 /**
  * Monolog log channel
  *

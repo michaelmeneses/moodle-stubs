@@ -23,6 +23,8 @@
  */
 namespace Google\Service\PolicySimulator\Resource;
 
+use Google\Service\PolicySimulator\GoogleLongrunningListOperationsResponse;
+use Google\Service\PolicySimulator\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

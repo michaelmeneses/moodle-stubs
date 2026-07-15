@@ -23,6 +23,9 @@
  */
 namespace Google\Service\IDS\Resource;
 
+use Google\Service\IDS\Endpoint;
+use Google\Service\IDS\ListEndpointsResponse;
+use Google\Service\IDS\Operation;
 /**
  * The "endpoints" collection of methods.
  * Typical usage is:

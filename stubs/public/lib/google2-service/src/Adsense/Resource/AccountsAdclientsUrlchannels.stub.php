@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Adsense\Resource;
 
+use Google\Service\Adsense\ListUrlChannelsResponse;
+use Google\Service\Adsense\UrlChannel;
 /**
  * The "urlchannels" collection of methods.
  * Typical usage is:

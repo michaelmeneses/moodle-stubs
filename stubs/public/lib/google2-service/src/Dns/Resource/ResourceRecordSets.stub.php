@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dns\Resource;
 
+use Google\Service\Dns\ResourceRecordSet;
+use Google\Service\Dns\ResourceRecordSetsDeleteResponse;
+use Google\Service\Dns\ResourceRecordSetsListResponse;
 /**
  * The "resourceRecordSets" collection of methods.
  * Typical usage is:

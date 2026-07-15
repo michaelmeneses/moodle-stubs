@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\RegionSetPolicyRequest;
+use Google\Service\Compute\ServiceAttachment;
+use Google\Service\Compute\ServiceAttachmentAggregatedList;
+use Google\Service\Compute\ServiceAttachmentList;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "serviceAttachments" collection of methods.
  * Typical usage is:

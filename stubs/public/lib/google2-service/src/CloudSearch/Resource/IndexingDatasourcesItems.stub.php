@@ -23,6 +23,17 @@
  */
 namespace Google\Service\CloudSearch\Resource;
 
+use Google\Service\CloudSearch\DeleteQueueItemsRequest;
+use Google\Service\CloudSearch\IndexItemRequest;
+use Google\Service\CloudSearch\Item;
+use Google\Service\CloudSearch\ListItemsResponse;
+use Google\Service\CloudSearch\Operation;
+use Google\Service\CloudSearch\PollItemsRequest;
+use Google\Service\CloudSearch\PollItemsResponse;
+use Google\Service\CloudSearch\PushItemRequest;
+use Google\Service\CloudSearch\StartUploadItemRequest;
+use Google\Service\CloudSearch\UnreserveItemsRequest;
+use Google\Service\CloudSearch\UploadItemRef;
 /**
  * The "items" collection of methods.
  * Typical usage is:

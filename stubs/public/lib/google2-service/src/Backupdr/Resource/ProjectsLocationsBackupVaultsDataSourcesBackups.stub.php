@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\Backup;
+use Google\Service\Backupdr\FetchBackupsForResourceTypeResponse;
+use Google\Service\Backupdr\ListBackupsResponse;
+use Google\Service\Backupdr\Operation;
+use Google\Service\Backupdr\RestoreBackupRequest;
 /**
  * The "backups" collection of methods.
  * Typical usage is:

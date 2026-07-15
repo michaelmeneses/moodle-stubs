@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\CreateTimeSeriesRequest;
+use Google\Service\Monitoring\ListTimeSeriesResponse;
+use Google\Service\Monitoring\MonitoringEmpty;
+use Google\Service\Monitoring\QueryTimeSeriesRequest;
+use Google\Service\Monitoring\QueryTimeSeriesResponse;
 /**
  * The "timeSeries" collection of methods.
  * Typical usage is:

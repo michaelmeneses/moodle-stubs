@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Fitness\Resource;
 
+use Google\Service\Fitness\ListSessionsResponse;
+use Google\Service\Fitness\Session;
 /**
  * The "sessions" collection of methods.
  * Typical usage is:

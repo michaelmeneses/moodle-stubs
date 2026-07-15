@@ -23,6 +23,12 @@
  */
 namespace Google\Service\BackupforGKE\Resource;
 
+use Google\Service\BackupforGKE\ListVolumeBackupsResponse;
+use Google\Service\BackupforGKE\Policy;
+use Google\Service\BackupforGKE\SetIamPolicyRequest;
+use Google\Service\BackupforGKE\TestIamPermissionsRequest;
+use Google\Service\BackupforGKE\TestIamPermissionsResponse;
+use Google\Service\BackupforGKE\VolumeBackup;
 /**
  * The "volumeBackups" collection of methods.
  * Typical usage is:

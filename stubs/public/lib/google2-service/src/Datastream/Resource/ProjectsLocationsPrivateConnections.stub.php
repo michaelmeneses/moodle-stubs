@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Datastream\Resource;
 
+use Google\Service\Datastream\ListPrivateConnectionsResponse;
+use Google\Service\Datastream\Operation;
+use Google\Service\Datastream\PrivateConnection;
 /**
  * The "privateConnections" collection of methods.
  * Typical usage is:

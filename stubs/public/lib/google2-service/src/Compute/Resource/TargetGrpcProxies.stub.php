@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\TargetGrpcProxy;
+use Google\Service\Compute\TargetGrpcProxyList;
 /**
  * The "targetGrpcProxies" collection of methods.
  * Typical usage is:

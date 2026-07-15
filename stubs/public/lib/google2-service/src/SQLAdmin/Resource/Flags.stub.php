@@ -23,6 +23,7 @@
  */
 namespace Google\Service\SQLAdmin\Resource;
 
+use Google\Service\SQLAdmin\FlagsListResponse;
 /**
  * The "flags" collection of methods.
  * Typical usage is:

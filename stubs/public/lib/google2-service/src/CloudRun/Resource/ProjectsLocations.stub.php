@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\GoogleCloudRunV2ExportImageRequest;
+use Google\Service\CloudRun\GoogleCloudRunV2ExportImageResponse;
+use Google\Service\CloudRun\GoogleCloudRunV2Metadata;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

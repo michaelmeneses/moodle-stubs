@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Datapipelines\Resource;
 
+use Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ListPipelinesResponse;
+use Google\Service\Datapipelines\GoogleCloudDatapipelinesV1Pipeline;
+use Google\Service\Datapipelines\GoogleCloudDatapipelinesV1RunPipelineRequest;
+use Google\Service\Datapipelines\GoogleCloudDatapipelinesV1RunPipelineResponse;
+use Google\Service\Datapipelines\GoogleCloudDatapipelinesV1StopPipelineRequest;
+use Google\Service\Datapipelines\GoogleProtobufEmpty;
 /**
  * The "pipelines" collection of methods.
  * Typical usage is:

@@ -8,6 +8,8 @@
  */
 namespace GuzzleHttp\Psr7;
 
+use GuzzleHttp\Psr7\Exception\MalformedUriException;
+use Psr\Http\Message\UriInterface;
 /**
  * PSR-7 URI implementation.
  *

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Config\Resource;
 
+use Google\Service\Config\ExportRevisionStatefileRequest;
+use Google\Service\Config\ListRevisionsResponse;
+use Google\Service\Config\Revision;
+use Google\Service\Config\Statefile;
 /**
  * The "revisions" collection of methods.
  * Typical usage is:

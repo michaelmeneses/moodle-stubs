@@ -23,6 +23,10 @@
  */
 namespace Google\Service\GameServices\Resource;
 
+use Google\Service\GameServices\CancelOperationRequest;
+use Google\Service\GameServices\GameservicesEmpty;
+use Google\Service\GameServices\ListOperationsResponse;
+use Google\Service\GameServices\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

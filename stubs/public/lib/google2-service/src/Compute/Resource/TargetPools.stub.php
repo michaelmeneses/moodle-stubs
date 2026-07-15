@@ -23,6 +23,20 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InstanceReference;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\SecurityPolicyReference;
+use Google\Service\Compute\TargetPool;
+use Google\Service\Compute\TargetPoolAggregatedList;
+use Google\Service\Compute\TargetPoolInstanceHealth;
+use Google\Service\Compute\TargetPoolList;
+use Google\Service\Compute\TargetPoolsAddHealthCheckRequest;
+use Google\Service\Compute\TargetPoolsAddInstanceRequest;
+use Google\Service\Compute\TargetPoolsRemoveHealthCheckRequest;
+use Google\Service\Compute\TargetPoolsRemoveInstanceRequest;
+use Google\Service\Compute\TargetReference;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "targetPools" collection of methods.
  * Typical usage is:

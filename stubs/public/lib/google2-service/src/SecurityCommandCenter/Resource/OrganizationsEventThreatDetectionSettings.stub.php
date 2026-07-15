@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\ValidateEventThreatDetectionCustomModuleRequest;
+use Google\Service\SecurityCommandCenter\ValidateEventThreatDetectionCustomModuleResponse;
 /**
  * The "eventThreatDetectionSettings" collection of methods.
  * Typical usage is:

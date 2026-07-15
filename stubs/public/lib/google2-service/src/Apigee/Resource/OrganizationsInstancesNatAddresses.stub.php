@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ActivateNatAddressRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListNatAddressesResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1NatAddress;
+use Google\Service\Apigee\GoogleLongrunningOperation;
 /**
  * The "natAddresses" collection of methods.
  * Typical usage is:

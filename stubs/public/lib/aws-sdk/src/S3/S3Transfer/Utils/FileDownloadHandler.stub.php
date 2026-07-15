@@ -8,6 +8,8 @@
  */
 namespace Aws\S3\S3Transfer\Utils;
 
+use Aws\S3\S3Transfer\Exception\FileDownloadException;
+use Aws\S3\S3Transfer\Progress\AbstractTransferListener;
 final class FileDownloadHandler extends AbstractDownloadHandler
 {
     private const IDENTIFIER_LENGTH = 8;

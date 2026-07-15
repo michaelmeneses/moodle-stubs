@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudFunctions\Resource;
 
+use Google\Service\CloudFunctions\ListRuntimesResponse;
 /**
  * The "runtimes" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Clouderrorreporting\Resource;
 
+use Google\Service\Clouderrorreporting\ListEventsResponse;
 /**
  * The "events" collection of methods.
  * Typical usage is:

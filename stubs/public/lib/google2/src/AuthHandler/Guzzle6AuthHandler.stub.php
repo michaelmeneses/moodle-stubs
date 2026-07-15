@@ -8,6 +8,15 @@
  */
 namespace Google\AuthHandler;
 
+use Google\Auth\FetchAuthTokenCache;
+use Google\Auth\FetchAuthTokenInterface;
+use Google\Auth\HttpHandler\HttpHandlerFactory;
+use Google\Auth\Middleware\AuthTokenMiddleware;
+use Google\Auth\Middleware\ScopedAccessTokenMiddleware;
+use Google\Auth\Middleware\SimpleMiddleware;
+use GuzzleHttp\Client;
+use GuzzleHttp\ClientInterface;
+use Psr\Cache\CacheItemPoolInterface;
 /**
  * This supports Guzzle 6
  */

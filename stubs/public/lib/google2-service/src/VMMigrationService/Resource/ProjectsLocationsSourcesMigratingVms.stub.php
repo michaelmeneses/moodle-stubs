@@ -23,6 +23,14 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\ExtendMigrationRequest;
+use Google\Service\VMMigrationService\FinalizeMigrationRequest;
+use Google\Service\VMMigrationService\ListMigratingVmsResponse;
+use Google\Service\VMMigrationService\MigratingVm;
+use Google\Service\VMMigrationService\Operation;
+use Google\Service\VMMigrationService\PauseMigrationRequest;
+use Google\Service\VMMigrationService\ResumeMigrationRequest;
+use Google\Service\VMMigrationService\StartMigrationRequest;
 /**
  * The "migratingVms" collection of methods.
  * Typical usage is:

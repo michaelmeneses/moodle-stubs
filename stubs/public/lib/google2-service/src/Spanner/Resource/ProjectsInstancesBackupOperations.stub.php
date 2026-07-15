@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Spanner\Resource;
 
+use Google\Service\Spanner\ListBackupOperationsResponse;
 /**
  * The "backupOperations" collection of methods.
  * Typical usage is:

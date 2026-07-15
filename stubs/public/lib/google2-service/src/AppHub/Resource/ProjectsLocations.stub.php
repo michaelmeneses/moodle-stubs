@@ -23,6 +23,13 @@
  */
 namespace Google\Service\AppHub\Resource;
 
+use Google\Service\AppHub\Boundary;
+use Google\Service\AppHub\DetachServiceProjectAttachmentRequest;
+use Google\Service\AppHub\DetachServiceProjectAttachmentResponse;
+use Google\Service\AppHub\ListLocationsResponse;
+use Google\Service\AppHub\Location;
+use Google\Service\AppHub\LookupServiceProjectAttachmentResponse;
+use Google\Service\AppHub\Operation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

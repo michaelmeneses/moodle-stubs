@@ -8,6 +8,15 @@
  */
 namespace core_group\reportbuilder\local\entities;
 
+use core\{context, context_helper};
+use html_writer;
+use lang_string;
+use moodle_url;
+use stdClass;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{boolean_select, date, select, text};
+use core_reportbuilder\local\helpers\{custom_fields, format};
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Group entity
  *

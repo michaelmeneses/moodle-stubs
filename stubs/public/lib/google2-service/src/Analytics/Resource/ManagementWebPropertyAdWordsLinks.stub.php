@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\EntityAdWordsLink;
+use Google\Service\Analytics\EntityAdWordsLinks;
 /**
  * The "webPropertyAdWordsLinks" collection of methods.
  * Typical usage is:

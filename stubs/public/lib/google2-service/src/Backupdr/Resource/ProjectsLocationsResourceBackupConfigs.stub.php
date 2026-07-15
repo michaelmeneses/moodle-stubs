@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\ListResourceBackupConfigsResponse;
 /**
  * The "resourceBackupConfigs" collection of methods.
  * Typical usage is:

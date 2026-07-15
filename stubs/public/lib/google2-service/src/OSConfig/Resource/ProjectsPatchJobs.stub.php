@@ -23,6 +23,10 @@
  */
 namespace Google\Service\OSConfig\Resource;
 
+use Google\Service\OSConfig\CancelPatchJobRequest;
+use Google\Service\OSConfig\ExecutePatchJobRequest;
+use Google\Service\OSConfig\ListPatchJobsResponse;
+use Google\Service\OSConfig\PatchJob;
 /**
  * The "patchJobs" collection of methods.
  * Typical usage is:

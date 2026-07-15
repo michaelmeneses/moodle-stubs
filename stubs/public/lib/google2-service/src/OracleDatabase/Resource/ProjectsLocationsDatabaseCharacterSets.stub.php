@@ -23,6 +23,7 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\ListDatabaseCharacterSetsResponse;
 /**
  * The "databaseCharacterSets" collection of methods.
  * Typical usage is:

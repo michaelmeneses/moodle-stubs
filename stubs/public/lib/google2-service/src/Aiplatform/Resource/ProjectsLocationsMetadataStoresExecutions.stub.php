@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1AddExecutionEventsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1AddExecutionEventsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Execution;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1LineageSubgraph;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListExecutionsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1PurgeExecutionsRequest;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "executions" collection of methods.
  * Typical usage is:

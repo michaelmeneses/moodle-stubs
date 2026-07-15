@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\GeneratedApksListResponse;
 /**
  * The "generatedapks" collection of methods.
  * Typical usage is:

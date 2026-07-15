@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\SmartTap as SmartTapModel;
 /**
  * The "smarttap" collection of methods.
  * Typical usage is:

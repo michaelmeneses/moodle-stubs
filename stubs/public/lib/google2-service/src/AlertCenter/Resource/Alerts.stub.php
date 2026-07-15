@@ -23,6 +23,15 @@
  */
 namespace Google\Service\AlertCenter\Resource;
 
+use Google\Service\AlertCenter\Alert;
+use Google\Service\AlertCenter\AlertMetadata;
+use Google\Service\AlertCenter\AlertcenterEmpty;
+use Google\Service\AlertCenter\BatchDeleteAlertsRequest;
+use Google\Service\AlertCenter\BatchDeleteAlertsResponse;
+use Google\Service\AlertCenter\BatchUndeleteAlertsRequest;
+use Google\Service\AlertCenter\BatchUndeleteAlertsResponse;
+use Google\Service\AlertCenter\ListAlertsResponse;
+use Google\Service\AlertCenter\UndeleteAlertRequest;
 /**
  * The "alerts" collection of methods.
  * Typical usage is:

@@ -29,6 +29,10 @@
  */
 namespace scormreport_graphs;
 
+use context_module;
+use core\chart_bar;
+use core\chart_series;
+use moodle_url;
 /**
  * Main class to control the graphs reporting
  *

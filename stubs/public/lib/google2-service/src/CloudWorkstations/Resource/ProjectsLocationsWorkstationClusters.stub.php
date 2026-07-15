@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudWorkstations\Resource;
 
+use Google\Service\CloudWorkstations\ListWorkstationClustersResponse;
+use Google\Service\CloudWorkstations\Operation;
+use Google\Service\CloudWorkstations\WorkstationCluster;
 /**
  * The "workstationClusters" collection of methods.
  * Typical usage is:

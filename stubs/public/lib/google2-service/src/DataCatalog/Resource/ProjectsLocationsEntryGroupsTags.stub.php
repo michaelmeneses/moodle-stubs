@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DataCatalog\Resource;
 
+use Google\Service\DataCatalog\DatacatalogEmpty;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListTagsResponse;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1Tag;
 /**
  * The "tags" collection of methods.
  * Typical usage is:

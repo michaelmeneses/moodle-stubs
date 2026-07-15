@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Zone;
+use Google\Service\Compute\ZoneList;
 /**
  * The "zones" collection of methods.
  * Typical usage is:

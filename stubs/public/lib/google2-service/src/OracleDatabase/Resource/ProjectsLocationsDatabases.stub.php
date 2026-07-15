@@ -23,6 +23,8 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\Database;
+use Google\Service\OracleDatabase\ListDatabasesResponse;
 /**
  * The "databases" collection of methods.
  * Typical usage is:

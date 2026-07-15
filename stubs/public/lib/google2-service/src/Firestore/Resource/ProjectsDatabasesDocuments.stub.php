@@ -23,6 +23,30 @@
  */
 namespace Google\Service\Firestore\Resource;
 
+use Google\Service\Firestore\BatchGetDocumentsRequest;
+use Google\Service\Firestore\BatchGetDocumentsResponse;
+use Google\Service\Firestore\BatchWriteRequest;
+use Google\Service\Firestore\BatchWriteResponse;
+use Google\Service\Firestore\BeginTransactionRequest;
+use Google\Service\Firestore\BeginTransactionResponse;
+use Google\Service\Firestore\CommitRequest;
+use Google\Service\Firestore\CommitResponse;
+use Google\Service\Firestore\Document;
+use Google\Service\Firestore\FirestoreEmpty;
+use Google\Service\Firestore\ListCollectionIdsRequest;
+use Google\Service\Firestore\ListCollectionIdsResponse;
+use Google\Service\Firestore\ListDocumentsResponse;
+use Google\Service\Firestore\ListenRequest;
+use Google\Service\Firestore\ListenResponse;
+use Google\Service\Firestore\PartitionQueryRequest;
+use Google\Service\Firestore\PartitionQueryResponse;
+use Google\Service\Firestore\RollbackRequest;
+use Google\Service\Firestore\RunAggregationQueryRequest;
+use Google\Service\Firestore\RunAggregationQueryResponse;
+use Google\Service\Firestore\RunQueryRequest;
+use Google\Service\Firestore\RunQueryResponse;
+use Google\Service\Firestore\WriteRequest;
+use Google\Service\Firestore\WriteResponse;
 /**
  * The "documents" collection of methods.
  * Typical usage is:

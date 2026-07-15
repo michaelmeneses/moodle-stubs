@@ -23,6 +23,7 @@
  */
 namespace Google\Service\MyBusinessBusinessInformation\Resource;
 
+use Google\Service\MyBusinessBusinessInformation\ListAttributeMetadataResponse;
 /**
  * The "attributes" collection of methods.
  * Typical usage is:

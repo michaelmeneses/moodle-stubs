@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudShell\Resource;
 
+use Google\Service\CloudShell\CancelOperationRequest;
+use Google\Service\CloudShell\CloudshellEmpty;
+use Google\Service\CloudShell\ListOperationsResponse;
+use Google\Service\CloudShell\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

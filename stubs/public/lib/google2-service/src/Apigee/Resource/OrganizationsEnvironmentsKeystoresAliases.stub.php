@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleApiHttpBody;
+use Google\Service\Apigee\GoogleCloudApigeeV1Alias;
 /**
  * The "aliases" collection of methods.
  * Typical usage is:

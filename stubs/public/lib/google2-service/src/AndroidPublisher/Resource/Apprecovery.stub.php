@@ -23,6 +23,15 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\AddTargetingRequest;
+use Google\Service\AndroidPublisher\AddTargetingResponse;
+use Google\Service\AndroidPublisher\AppRecoveryAction;
+use Google\Service\AndroidPublisher\CancelAppRecoveryRequest;
+use Google\Service\AndroidPublisher\CancelAppRecoveryResponse;
+use Google\Service\AndroidPublisher\CreateDraftAppRecoveryRequest;
+use Google\Service\AndroidPublisher\DeployAppRecoveryRequest;
+use Google\Service\AndroidPublisher\DeployAppRecoveryResponse;
+use Google\Service\AndroidPublisher\ListAppRecoveriesResponse;
 /**
  * The "apprecovery" collection of methods.
  * Typical usage is:

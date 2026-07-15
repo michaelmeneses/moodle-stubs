@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudIot\Resource;
 
+use Google\Service\CloudIot\ListDevicesResponse;
 /**
  * The "devices" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Dataflow\Resource;
 
+use Google\Service\Dataflow\StageExecutionDetails;
 /**
  * The "stages" collection of methods.
  * Typical usage is:

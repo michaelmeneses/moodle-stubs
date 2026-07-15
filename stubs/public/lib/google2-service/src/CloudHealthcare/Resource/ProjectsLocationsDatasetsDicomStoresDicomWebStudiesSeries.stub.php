@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\SeriesMetrics;
 /**
  * The "series" collection of methods.
  * Typical usage is:

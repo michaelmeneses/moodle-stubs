@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchPredictionJob;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CancelBatchPredictionJobRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListBatchPredictionJobsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "batchPredictionJobs" collection of methods.
  * Typical usage is:

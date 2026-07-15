@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\Install;
+use Google\Service\AndroidEnterprise\InstallsListResponse;
 /**
  * The "installs" collection of methods.
  * Typical usage is:

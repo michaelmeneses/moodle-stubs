@@ -8,6 +8,12 @@
  */
 namespace core_message\reportbuilder\datasource;
 
+use core\lang_string;
+use core_message\reportbuilder\local\entities\{conversation, message};
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\filters\text;
+use core_reportbuilder\local\helpers\database;
 /**
  * Messages datasource
  *

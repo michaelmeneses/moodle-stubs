@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SecureSourceManager\Resource;
 
+use Google\Service\SecureSourceManager\BranchRule;
+use Google\Service\SecureSourceManager\ListBranchRulesResponse;
+use Google\Service\SecureSourceManager\Operation;
 /**
  * The "branchRules" collection of methods.
  * Typical usage is:

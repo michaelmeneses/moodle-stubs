@@ -23,6 +23,8 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\ListUserPermissionsResponse;
+use Google\Service\TagManager\UserPermission;
 /**
  * The "user_permissions" collection of methods.
  * Typical usage is:

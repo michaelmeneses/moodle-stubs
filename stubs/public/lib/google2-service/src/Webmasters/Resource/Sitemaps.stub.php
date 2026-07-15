@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Webmasters\Resource;
 
+use Google\Service\Webmasters\SitemapsListResponse;
+use Google\Service\Webmasters\WmxSitemap;
 /**
  * The "sitemaps" collection of methods.
  * Typical usage is:

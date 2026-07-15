@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\PacketMirroring;
+use Google\Service\Compute\PacketMirroringAggregatedList;
+use Google\Service\Compute\PacketMirroringList;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "packetMirrorings" collection of methods.
  * Typical usage is:

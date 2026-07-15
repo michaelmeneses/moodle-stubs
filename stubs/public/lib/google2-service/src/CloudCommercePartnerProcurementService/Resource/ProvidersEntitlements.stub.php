@@ -23,6 +23,14 @@
  */
 namespace Google\Service\CloudCommercePartnerProcurementService\Resource;
 
+use Google\Service\CloudCommercePartnerProcurementService\ApproveEntitlementPlanChangeRequest;
+use Google\Service\CloudCommercePartnerProcurementService\ApproveEntitlementRequest;
+use Google\Service\CloudCommercePartnerProcurementService\CloudcommerceprocurementEmpty;
+use Google\Service\CloudCommercePartnerProcurementService\Entitlement;
+use Google\Service\CloudCommercePartnerProcurementService\ListEntitlementsResponse;
+use Google\Service\CloudCommercePartnerProcurementService\RejectEntitlementPlanChangeRequest;
+use Google\Service\CloudCommercePartnerProcurementService\RejectEntitlementRequest;
+use Google\Service\CloudCommercePartnerProcurementService\SuspendEntitlementRequest;
 /**
  * The "entitlements" collection of methods.
  * Typical usage is:

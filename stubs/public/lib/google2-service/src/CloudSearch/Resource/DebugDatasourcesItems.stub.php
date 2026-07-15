@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudSearch\Resource;
 
+use Google\Service\CloudSearch\CheckAccessResponse;
+use Google\Service\CloudSearch\Principal;
+use Google\Service\CloudSearch\SearchItemsByViewUrlRequest;
+use Google\Service\CloudSearch\SearchItemsByViewUrlResponse;
 /**
  * The "items" collection of methods.
  * Typical usage is:

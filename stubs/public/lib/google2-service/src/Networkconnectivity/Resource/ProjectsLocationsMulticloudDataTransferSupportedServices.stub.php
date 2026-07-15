@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\ListMulticloudDataTransferSupportedServicesResponse;
+use Google\Service\Networkconnectivity\MulticloudDataTransferSupportedService;
 /**
  * The "multicloudDataTransferSupportedServices" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\BigtableAdmin\Resource;
 
+use Google\Service\BigtableAdmin\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

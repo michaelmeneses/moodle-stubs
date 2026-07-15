@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ServiceNetworking\Resource;
 
+use Google\Service\ServiceNetworking\DnsRecordSet;
 /**
  * The "dnsRecordSet" collection of methods.
  * Typical usage is:

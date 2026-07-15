@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataTransfer\Resource;
 
+use Google\Service\DataTransfer\DataTransfer;
+use Google\Service\DataTransfer\DataTransfersListResponse;
 /**
  * The "transfers" collection of methods.
  * Typical usage is:

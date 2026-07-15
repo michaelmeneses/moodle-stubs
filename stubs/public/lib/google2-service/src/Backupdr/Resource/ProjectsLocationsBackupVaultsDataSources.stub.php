@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\AbandonBackupRequest;
+use Google\Service\Backupdr\DataSource;
+use Google\Service\Backupdr\FetchAccessTokenRequest;
+use Google\Service\Backupdr\FetchAccessTokenResponse;
+use Google\Service\Backupdr\FinalizeBackupRequest;
+use Google\Service\Backupdr\InitiateBackupRequest;
+use Google\Service\Backupdr\InitiateBackupResponse;
+use Google\Service\Backupdr\ListDataSourcesResponse;
+use Google\Service\Backupdr\Operation;
+use Google\Service\Backupdr\RemoveDataSourceRequest;
+use Google\Service\Backupdr\SetInternalStatusRequest;
 /**
  * The "dataSources" collection of methods.
  * Typical usage is:

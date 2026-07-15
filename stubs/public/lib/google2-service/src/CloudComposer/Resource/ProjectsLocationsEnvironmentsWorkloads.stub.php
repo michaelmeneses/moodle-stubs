@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudComposer\Resource;
 
+use Google\Service\CloudComposer\ListWorkloadsResponse;
 /**
  * The "workloads" collection of methods.
  * Typical usage is:

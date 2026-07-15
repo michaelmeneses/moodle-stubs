@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\CustomBiddingAlgorithmRules;
+use Google\Service\DisplayVideo\ListCustomBiddingAlgorithmRulesResponse;
 /**
  * The "rules" collection of methods.
  * Typical usage is:

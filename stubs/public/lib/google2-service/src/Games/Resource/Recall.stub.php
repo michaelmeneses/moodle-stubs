@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\LinkPersonaRequest;
+use Google\Service\Games\LinkPersonaResponse;
+use Google\Service\Games\ResetPersonaRequest;
+use Google\Service\Games\ResetPersonaResponse;
+use Google\Service\Games\RetrieveDeveloperGamesLastPlayerTokenResponse;
+use Google\Service\Games\RetrieveGamesPlayerTokensResponse;
+use Google\Service\Games\RetrievePlayerTokensResponse;
+use Google\Service\Games\UnlinkPersonaRequest;
+use Google\Service\Games\UnlinkPersonaResponse;
 /**
  * The "recall" collection of methods.
  * Typical usage is:

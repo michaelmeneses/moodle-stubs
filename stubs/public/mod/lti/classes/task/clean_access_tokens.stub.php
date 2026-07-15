@@ -29,6 +29,7 @@
  */
 namespace mod_lti\task;
 
+use core\task\scheduled_task;
 /**
  * Class containing the scheduled task for lti module.
  *

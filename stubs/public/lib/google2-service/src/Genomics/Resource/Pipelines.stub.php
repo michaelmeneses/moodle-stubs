@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Genomics\Resource;
 
+use Google\Service\Genomics\Operation;
+use Google\Service\Genomics\RunPipelineRequest;
 /**
  * The "pipelines" collection of methods.
  * Typical usage is:

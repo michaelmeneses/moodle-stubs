@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Firestore\Resource;
 
+use Google\Service\Firestore\ListLocationsResponse;
+use Google\Service\Firestore\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

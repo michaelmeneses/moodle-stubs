@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\GlobalSetPolicyRequest;
+use Google\Service\Compute\InstanceTemplate;
+use Google\Service\Compute\InstanceTemplateAggregatedList;
+use Google\Service\Compute\InstanceTemplateList;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "instanceTemplates" collection of methods.
  * Typical usage is:

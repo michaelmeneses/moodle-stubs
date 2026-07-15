@@ -23,6 +23,24 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1AugmentPromptRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1AugmentPromptResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CorroborateContentRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CorroborateContentResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateDatasetRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateInstancesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateInstancesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateInstanceRubricsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateInstanceRubricsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateSyntheticDataRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateSyntheticDataResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RagEngineConfig;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveContextsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveContextsResponse;
+use Google\Service\Aiplatform\GoogleCloudLocationListLocationsResponse;
+use Google\Service\Aiplatform\GoogleCloudLocationLocation;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

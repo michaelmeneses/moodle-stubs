@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\hook\output;
 
+use moodle_url;
 /**
  * Allow augmentation of the moodle URL.
  *

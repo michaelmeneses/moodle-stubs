@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Adsense\Resource;
 
+use Google\Service\Adsense\Account;
+use Google\Service\Adsense\AdBlockingRecoveryTag;
+use Google\Service\Adsense\ListAccountsResponse;
+use Google\Service\Adsense\ListChildAccountsResponse;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

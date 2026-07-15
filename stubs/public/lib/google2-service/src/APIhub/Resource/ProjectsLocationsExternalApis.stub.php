@@ -23,6 +23,9 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\ApihubEmpty;
+use Google\Service\APIhub\GoogleCloudApihubV1ExternalApi;
+use Google\Service\APIhub\GoogleCloudApihubV1ListExternalApisResponse;
 /**
  * The "externalApis" collection of methods.
  * Typical usage is:

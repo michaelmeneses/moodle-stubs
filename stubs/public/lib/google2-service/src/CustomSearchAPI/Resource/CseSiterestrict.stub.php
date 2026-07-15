@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CustomSearchAPI\Resource;
 
+use Google\Service\CustomSearchAPI\Search;
 /**
  * The "siterestrict" collection of methods.
  * Typical usage is:

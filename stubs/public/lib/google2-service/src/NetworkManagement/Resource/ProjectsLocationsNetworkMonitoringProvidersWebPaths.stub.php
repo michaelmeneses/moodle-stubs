@@ -23,6 +23,8 @@
  */
 namespace Google\Service\NetworkManagement\Resource;
 
+use Google\Service\NetworkManagement\ListWebPathsResponse;
+use Google\Service\NetworkManagement\WebPath;
 /**
  * The "webPaths" collection of methods.
  * Typical usage is:

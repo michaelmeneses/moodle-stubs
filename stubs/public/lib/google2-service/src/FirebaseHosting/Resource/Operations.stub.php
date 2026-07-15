@@ -23,6 +23,9 @@
  */
 namespace Google\Service\FirebaseHosting\Resource;
 
+use Google\Service\FirebaseHosting\CancelOperationRequest;
+use Google\Service\FirebaseHosting\FirebasehostingEmpty;
+use Google\Service\FirebaseHosting\ListOperationsResponse;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

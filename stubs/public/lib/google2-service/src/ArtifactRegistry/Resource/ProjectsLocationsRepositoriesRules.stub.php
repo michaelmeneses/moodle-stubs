@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\ArtifactregistryEmpty;
+use Google\Service\ArtifactRegistry\GoogleDevtoolsArtifactregistryV1Rule;
+use Google\Service\ArtifactRegistry\ListRulesResponse;
 /**
  * The "rules" collection of methods.
  * Typical usage is:

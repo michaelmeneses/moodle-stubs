@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Dataflow\Resource;
 
+use Google\Service\Dataflow\ListJobMessagesResponse;
 /**
  * The "messages" collection of methods.
  * Typical usage is:

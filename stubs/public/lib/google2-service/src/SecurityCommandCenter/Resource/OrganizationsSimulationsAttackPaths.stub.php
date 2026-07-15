@@ -23,6 +23,7 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\ListAttackPathsResponse;
 /**
  * The "attackPaths" collection of methods.
  * Typical usage is:

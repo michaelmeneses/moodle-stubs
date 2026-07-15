@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AdExchangeBuyer\Resource;
 
+use Google\Service\AdExchangeBuyer\AddOrderNotesRequest;
+use Google\Service\AdExchangeBuyer\AddOrderNotesResponse;
+use Google\Service\AdExchangeBuyer\GetOrderNotesResponse;
 /**
  * The "marketplacenotes" collection of methods.
  * Typical usage is:

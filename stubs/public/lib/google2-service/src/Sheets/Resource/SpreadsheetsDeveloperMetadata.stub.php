@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Sheets\Resource;
 
+use Google\Service\Sheets\DeveloperMetadata;
+use Google\Service\Sheets\SearchDeveloperMetadataRequest;
+use Google\Service\Sheets\SearchDeveloperMetadataResponse;
 /**
  * The "developerMetadata" collection of methods.
  * Typical usage is:

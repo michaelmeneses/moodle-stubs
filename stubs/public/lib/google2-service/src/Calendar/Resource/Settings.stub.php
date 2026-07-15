@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Calendar\Resource;
 
+use Google\Service\Calendar\Channel;
+use Google\Service\Calendar\Setting;
+use Google\Service\Calendar\Settings as SettingsModel;
 /**
  * The "settings" collection of methods.
  * Typical usage is:

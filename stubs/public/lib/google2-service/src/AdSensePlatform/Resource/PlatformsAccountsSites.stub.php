@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AdSensePlatform\Resource;
 
+use Google\Service\AdSensePlatform\AdsenseplatformEmpty;
+use Google\Service\AdSensePlatform\ListSitesResponse;
+use Google\Service\AdSensePlatform\RequestSiteReviewResponse;
+use Google\Service\AdSensePlatform\Site;
 /**
  * The "sites" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMemoryRevisionsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryRevision;
 /**
  * The "revisions" collection of methods.
  * Typical usage is:

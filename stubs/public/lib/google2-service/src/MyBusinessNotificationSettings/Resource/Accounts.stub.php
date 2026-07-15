@@ -23,6 +23,7 @@
  */
 namespace Google\Service\MyBusinessNotificationSettings\Resource;
 
+use Google\Service\MyBusinessNotificationSettings\NotificationSetting;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

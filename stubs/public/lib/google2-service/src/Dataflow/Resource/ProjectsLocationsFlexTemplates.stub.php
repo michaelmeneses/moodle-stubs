@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dataflow\Resource;
 
+use Google\Service\Dataflow\LaunchFlexTemplateRequest;
+use Google\Service\Dataflow\LaunchFlexTemplateResponse;
 /**
  * The "flexTemplates" collection of methods.
  * Typical usage is:

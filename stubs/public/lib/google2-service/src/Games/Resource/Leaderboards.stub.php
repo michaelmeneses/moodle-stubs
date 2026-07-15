@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\Leaderboard;
+use Google\Service\Games\LeaderboardListResponse;
 /**
  * The "leaderboards" collection of methods.
  * Typical usage is:

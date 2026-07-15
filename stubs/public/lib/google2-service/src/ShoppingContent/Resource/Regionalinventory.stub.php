@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\RegionalInventory as RegionalInventoryModel;
+use Google\Service\ShoppingContent\RegionalinventoryCustomBatchRequest;
+use Google\Service\ShoppingContent\RegionalinventoryCustomBatchResponse;
 /**
  * The "regionalinventory" collection of methods.
  * Typical usage is:

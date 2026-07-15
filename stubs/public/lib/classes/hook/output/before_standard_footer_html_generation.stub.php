@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\hook\output;
 
+use renderer_base;
 /**
  * Hook to allow subscribers to add HTML content to the footer.
  *

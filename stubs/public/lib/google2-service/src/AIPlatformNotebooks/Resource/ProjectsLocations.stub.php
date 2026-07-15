@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AIPlatformNotebooks\Resource;
 
+use Google\Service\AIPlatformNotebooks\ListLocationsResponse;
+use Google\Service\AIPlatformNotebooks\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\TrackCountryAvailability;
 /**
  * The "countryavailability" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudMachineLearningEngine\Resource;
 
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListStudiesResponse;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Study;
+use Google\Service\CloudMachineLearningEngine\GoogleProtobufEmpty;
 /**
  * The "studies" collection of methods.
  * Typical usage is:

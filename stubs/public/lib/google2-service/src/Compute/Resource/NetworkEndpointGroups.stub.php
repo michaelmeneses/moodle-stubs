@@ -23,6 +23,16 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\NetworkEndpointGroup;
+use Google\Service\Compute\NetworkEndpointGroupAggregatedList;
+use Google\Service\Compute\NetworkEndpointGroupList;
+use Google\Service\Compute\NetworkEndpointGroupsAttachEndpointsRequest;
+use Google\Service\Compute\NetworkEndpointGroupsDetachEndpointsRequest;
+use Google\Service\Compute\NetworkEndpointGroupsListEndpointsRequest;
+use Google\Service\Compute\NetworkEndpointGroupsListNetworkEndpoints;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "networkEndpointGroups" collection of methods.
  * Typical usage is:

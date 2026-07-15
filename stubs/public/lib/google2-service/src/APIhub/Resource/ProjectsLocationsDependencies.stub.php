@@ -23,6 +23,9 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\ApihubEmpty;
+use Google\Service\APIhub\GoogleCloudApihubV1Dependency;
+use Google\Service\APIhub\GoogleCloudApihubV1ListDependenciesResponse;
 /**
  * The "dependencies" collection of methods.
  * Typical usage is:

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\route\controller;
 
+use core\router\schema\parameters\path_parameter;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Controller for serving ES module files.
  *

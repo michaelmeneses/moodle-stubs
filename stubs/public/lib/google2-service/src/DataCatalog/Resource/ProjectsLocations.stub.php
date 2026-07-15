@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataCatalog\Resource;
 
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1MigrationConfig;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1SetConfigRequest;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

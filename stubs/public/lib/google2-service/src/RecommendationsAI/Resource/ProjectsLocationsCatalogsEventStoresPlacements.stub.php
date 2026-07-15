@@ -23,6 +23,8 @@
  */
 namespace Google\Service\RecommendationsAI\Resource;
 
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PredictRequest;
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PredictResponse;
 /**
  * The "placements" collection of methods.
  * Typical usage is:

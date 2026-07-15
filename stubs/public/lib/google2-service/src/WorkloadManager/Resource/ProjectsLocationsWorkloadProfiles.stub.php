@@ -23,6 +23,8 @@
  */
 namespace Google\Service\WorkloadManager\Resource;
 
+use Google\Service\WorkloadManager\ListWorkloadProfilesResponse;
+use Google\Service\WorkloadManager\WorkloadProfile;
 /**
  * The "workloadProfiles" collection of methods.
  * Typical usage is:

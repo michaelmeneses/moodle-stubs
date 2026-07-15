@@ -23,6 +23,9 @@
  */
 namespace Google\Service\OSConfig\Resource;
 
+use Google\Service\OSConfig\GoogleCloudOsconfigV2ListPolicyOrchestratorsResponse;
+use Google\Service\OSConfig\GoogleCloudOsconfigV2PolicyOrchestrator;
+use Google\Service\OSConfig\Operation;
 /**
  * The "policyOrchestrators" collection of methods.
  * Typical usage is:

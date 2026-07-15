@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdMob\Resource;
 
+use Google\Service\AdMob\ListPublisherAccountsResponse;
+use Google\Service\AdMob\PublisherAccount;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

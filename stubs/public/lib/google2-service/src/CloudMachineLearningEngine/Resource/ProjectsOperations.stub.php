@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudMachineLearningEngine\Resource;
 
+use Google\Service\CloudMachineLearningEngine\GoogleLongrunningListOperationsResponse;
+use Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation;
+use Google\Service\CloudMachineLearningEngine\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

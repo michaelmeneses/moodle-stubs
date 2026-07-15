@@ -23,6 +23,19 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\AcceptHubSpokeRequest;
+use Google\Service\Networkconnectivity\AcceptSpokeUpdateRequest;
+use Google\Service\Networkconnectivity\GoogleLongrunningOperation;
+use Google\Service\Networkconnectivity\Hub;
+use Google\Service\Networkconnectivity\ListHubSpokesResponse;
+use Google\Service\Networkconnectivity\ListHubsResponse;
+use Google\Service\Networkconnectivity\Policy;
+use Google\Service\Networkconnectivity\QueryHubStatusResponse;
+use Google\Service\Networkconnectivity\RejectHubSpokeRequest;
+use Google\Service\Networkconnectivity\RejectSpokeUpdateRequest;
+use Google\Service\Networkconnectivity\SetIamPolicyRequest;
+use Google\Service\Networkconnectivity\TestIamPermissionsRequest;
+use Google\Service\Networkconnectivity\TestIamPermissionsResponse;
 /**
  * The "hubs" collection of methods.
  * Typical usage is:

@@ -29,6 +29,10 @@
  */
 namespace qtype_numerical\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\user_preference_provider;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem for qtype_numerical implementing user_preference_provider.
  *

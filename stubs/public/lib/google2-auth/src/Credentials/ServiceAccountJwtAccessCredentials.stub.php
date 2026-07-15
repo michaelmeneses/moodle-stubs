@@ -23,6 +23,12 @@
  */
 namespace Google\Auth\Credentials;
 
+use Google\Auth\CredentialsLoader;
+use Google\Auth\GetQuotaProjectInterface;
+use Google\Auth\OAuth2;
+use Google\Auth\ProjectIdProviderInterface;
+use Google\Auth\ServiceAccountSignerTrait;
+use Google\Auth\SignBlobInterface;
 /**
  * Authenticates requests using Google's Service Account credentials via
  * JWT Access.

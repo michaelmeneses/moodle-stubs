@@ -16,6 +16,10 @@
  */
 namespace Mustache\Logger;
 
+use Mustache\Exception\InvalidArgumentException;
+use Mustache\Exception\LogicException;
+use Mustache\Exception\RuntimeException;
+use Mustache\Logger;
 /**
  * A Mustache Stream Logger.
  *

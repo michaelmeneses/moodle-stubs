@@ -15,6 +15,11 @@
  */
 namespace setasign\Fpdi;
 
+use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use setasign\Fpdi\PdfParser\PdfParserException;
+use setasign\Fpdi\PdfParser\Type\PdfIndirectObject;
+use setasign\Fpdi\PdfParser\Type\PdfNull;
+use setasign\Fpdi\PdfParser\Type\PdfType;
 /**
  * This trait is used for the implementation of FPDI in FPDF and tFPDF.
  */

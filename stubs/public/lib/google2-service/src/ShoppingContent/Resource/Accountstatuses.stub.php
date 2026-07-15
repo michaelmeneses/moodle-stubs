@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\AccountStatus;
+use Google\Service\ShoppingContent\AccountstatusesCustomBatchRequest;
+use Google\Service\ShoppingContent\AccountstatusesCustomBatchResponse;
+use Google\Service\ShoppingContent\AccountstatusesListResponse;
 /**
  * The "accountstatuses" collection of methods.
  * Typical usage is:

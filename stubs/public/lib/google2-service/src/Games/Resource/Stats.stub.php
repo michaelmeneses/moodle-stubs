@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\StatsResponse;
 /**
  * The "stats" collection of methods.
  * Typical usage is:

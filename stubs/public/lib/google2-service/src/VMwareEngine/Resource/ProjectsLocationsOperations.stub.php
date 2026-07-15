@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ListOperationsResponse;
+use Google\Service\VMwareEngine\Operation;
+use Google\Service\VMwareEngine\VmwareengineEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

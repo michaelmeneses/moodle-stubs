@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\ListRoutesResponse;
+use Google\Service\Networkconnectivity\Route;
 /**
  * The "routes" collection of methods.
  * Typical usage is:

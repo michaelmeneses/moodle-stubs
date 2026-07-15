@@ -23,6 +23,10 @@
  */
 namespace Google\Service\SecureSourceManager\Resource;
 
+use Google\Service\SecureSourceManager\CancelOperationRequest;
+use Google\Service\SecureSourceManager\ListOperationsResponse;
+use Google\Service\SecureSourceManager\Operation;
+use Google\Service\SecureSourceManager\SecuresourcemanagerEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

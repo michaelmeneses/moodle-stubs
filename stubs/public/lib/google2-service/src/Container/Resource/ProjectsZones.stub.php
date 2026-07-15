@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Container\Resource;
 
+use Google\Service\Container\ServerConfig;
 /**
  * The "zones" collection of methods.
  * Typical usage is:

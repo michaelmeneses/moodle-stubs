@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Calendar\Resource;
 
+use Google\Service\Calendar\Channel;
+use Google\Service\Calendar\Event;
+use Google\Service\Calendar\Events as EventsModel;
 /**
  * The "events" collection of methods.
  * Typical usage is:

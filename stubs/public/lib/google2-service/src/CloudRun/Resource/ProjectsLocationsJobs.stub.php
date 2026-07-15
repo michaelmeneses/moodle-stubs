@@ -23,6 +23,14 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\GoogleCloudRunV2Job;
+use Google\Service\CloudRun\GoogleCloudRunV2ListJobsResponse;
+use Google\Service\CloudRun\GoogleCloudRunV2RunJobRequest;
+use Google\Service\CloudRun\GoogleIamV1Policy;
+use Google\Service\CloudRun\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\CloudRun\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\CloudRun\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\CloudRun\GoogleLongrunningOperation;
 /**
  * The "jobs" collection of methods.
  * Typical usage is:

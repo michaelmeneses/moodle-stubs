@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Libraryagent\Resource;
 
+use Google\Service\Libraryagent\GoogleExampleLibraryagentV1Book;
+use Google\Service\Libraryagent\GoogleExampleLibraryagentV1ListBooksResponse;
 /**
  * The "books" collection of methods.
  * Typical usage is:

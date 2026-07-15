@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CloudKMS\Resource;
 
+use Google\Service\CloudKMS\EkmConfig;
+use Google\Service\CloudKMS\GenerateRandomBytesRequest;
+use Google\Service\CloudKMS\GenerateRandomBytesResponse;
+use Google\Service\CloudKMS\ListLocationsResponse;
+use Google\Service\CloudKMS\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

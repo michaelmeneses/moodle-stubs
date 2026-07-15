@@ -23,6 +23,11 @@
  */
 namespace Google\Service\AccessApproval\Resource;
 
+use Google\Service\AccessApproval\ApprovalRequest;
+use Google\Service\AccessApproval\ApproveApprovalRequestMessage;
+use Google\Service\AccessApproval\DismissApprovalRequestMessage;
+use Google\Service\AccessApproval\InvalidateApprovalRequestMessage;
+use Google\Service\AccessApproval\ListApprovalRequestsResponse;
 /**
  * The "approvalRequests" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\HangoutsChat\Resource;
 
+use Google\Service\HangoutsChat\ChatEmpty;
+use Google\Service\HangoutsChat\ListMessagesResponse;
+use Google\Service\HangoutsChat\Message;
 /**
  * The "messages" collection of methods.
  * Typical usage is:

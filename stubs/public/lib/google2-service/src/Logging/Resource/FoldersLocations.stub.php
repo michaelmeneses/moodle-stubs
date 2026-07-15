@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\ListLocationsResponse;
+use Google\Service\Logging\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

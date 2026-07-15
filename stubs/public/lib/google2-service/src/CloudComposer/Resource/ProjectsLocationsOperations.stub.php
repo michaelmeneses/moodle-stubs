@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudComposer\Resource;
 
+use Google\Service\CloudComposer\ComposerEmpty;
+use Google\Service\CloudComposer\ListOperationsResponse;
+use Google\Service\CloudComposer\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

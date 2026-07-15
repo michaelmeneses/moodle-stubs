@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InterconnectRemoteLocation;
+use Google\Service\Compute\InterconnectRemoteLocationList;
 /**
  * The "interconnectRemoteLocations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SearchConsole\Resource;
 
+use Google\Service\SearchConsole\InspectUrlIndexRequest;
+use Google\Service\SearchConsole\InspectUrlIndexResponse;
 /**
  * The "index" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\BigtableAdmin\Resource;
 
+use Google\Service\BigtableAdmin\BigtableadminEmpty;
+use Google\Service\BigtableAdmin\Cluster;
+use Google\Service\BigtableAdmin\ListClustersResponse;
+use Google\Service\BigtableAdmin\Operation;
 /**
  * The "clusters" collection of methods.
  * Typical usage is:

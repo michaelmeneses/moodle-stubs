@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudDeploy\Resource;
 
+use Google\Service\CloudDeploy\CancelOperationRequest;
+use Google\Service\CloudDeploy\ClouddeployEmpty;
+use Google\Service\CloudDeploy\ListOperationsResponse;
+use Google\Service\CloudDeploy\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

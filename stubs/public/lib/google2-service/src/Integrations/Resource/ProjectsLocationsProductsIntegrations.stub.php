@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteIntegrationsRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteIntegrationsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListIntegrationsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaScheduleIntegrationsRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaScheduleIntegrationsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTestIntegrationsRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTestIntegrationsResponse;
 /**
  * The "integrations" collection of methods.
  * Typical usage is:

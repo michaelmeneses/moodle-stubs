@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DataCatalog\Resource;
 
+use Google\Service\DataCatalog\DatacatalogEmpty;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1RenameTagTemplateFieldRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1TagTemplateField;
 /**
  * The "fields" collection of methods.
  * Typical usage is:

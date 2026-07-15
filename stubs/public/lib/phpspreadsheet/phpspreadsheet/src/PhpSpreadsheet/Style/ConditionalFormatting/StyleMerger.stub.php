@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting;
 
+use PhpOffice\PhpSpreadsheet\Style\Border;
+use PhpOffice\PhpSpreadsheet\Style\Borders;
+use PhpOffice\PhpSpreadsheet\Style\Fill;
+use PhpOffice\PhpSpreadsheet\Style\Font;
+use PhpOffice\PhpSpreadsheet\Style\Style;
 class StyleMerger
 {
     protected Style $baseStyle;

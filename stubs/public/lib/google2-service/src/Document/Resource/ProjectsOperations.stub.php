@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Document\Resource;
 
+use Google\Service\Document\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

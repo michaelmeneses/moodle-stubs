@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Pubsub\Resource;
 
+use Google\Service\Pubsub\CreateSnapshotRequest;
+use Google\Service\Pubsub\ListSnapshotsResponse;
+use Google\Service\Pubsub\Policy;
+use Google\Service\Pubsub\PubsubEmpty;
+use Google\Service\Pubsub\SetIamPolicyRequest;
+use Google\Service\Pubsub\Snapshot;
+use Google\Service\Pubsub\TestIamPermissionsRequest;
+use Google\Service\Pubsub\TestIamPermissionsResponse;
+use Google\Service\Pubsub\UpdateSnapshotRequest;
 /**
  * The "snapshots" collection of methods.
  * Typical usage is:

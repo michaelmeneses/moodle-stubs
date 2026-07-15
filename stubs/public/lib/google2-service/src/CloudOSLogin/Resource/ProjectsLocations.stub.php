@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudOSLogin\Resource;
 
+use Google\Service\CloudOSLogin\SignSshPublicKeyRequest;
+use Google\Service\CloudOSLogin\SignSshPublicKeyResponse;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

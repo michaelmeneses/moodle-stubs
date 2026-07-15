@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_awsbedrock;
 
+use Aws\Exception\AwsException;
+use Aws\Result;
+use core_ai\process_base;
 /**
  * Class process text generation.
  *

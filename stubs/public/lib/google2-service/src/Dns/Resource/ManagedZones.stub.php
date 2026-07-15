@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Dns\Resource;
 
+use Google\Service\Dns\GoogleIamV1GetIamPolicyRequest;
+use Google\Service\Dns\GoogleIamV1Policy;
+use Google\Service\Dns\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Dns\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\Dns\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\Dns\ManagedZone;
+use Google\Service\Dns\ManagedZonesListResponse;
+use Google\Service\Dns\Operation;
 /**
  * The "managedZones" collection of methods.
  * Typical usage is:

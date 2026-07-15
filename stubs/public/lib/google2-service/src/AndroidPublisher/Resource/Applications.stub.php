@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\SafetyLabelsUpdateRequest;
+use Google\Service\AndroidPublisher\SafetyLabelsUpdateResponse;
 /**
  * The "applications" collection of methods.
  * Typical usage is:

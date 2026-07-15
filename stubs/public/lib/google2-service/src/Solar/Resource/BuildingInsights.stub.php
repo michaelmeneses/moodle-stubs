@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Solar\Resource;
 
+use Google\Service\Solar\BuildingInsights as BuildingInsightsModel;
 /**
  * The "buildingInsights" collection of methods.
  * Typical usage is:

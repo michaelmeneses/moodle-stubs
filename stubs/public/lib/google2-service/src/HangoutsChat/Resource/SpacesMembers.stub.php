@@ -23,6 +23,8 @@
  */
 namespace Google\Service\HangoutsChat\Resource;
 
+use Google\Service\HangoutsChat\ListMembershipsResponse;
+use Google\Service\HangoutsChat\Membership;
 /**
  * The "members" collection of methods.
  * Typical usage is:

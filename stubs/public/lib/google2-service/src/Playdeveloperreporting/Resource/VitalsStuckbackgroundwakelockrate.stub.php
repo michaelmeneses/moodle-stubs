@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Playdeveloperreporting\Resource;
 
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryStuckBackgroundWakelockRateMetricSetRequest;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryStuckBackgroundWakelockRateMetricSetResponse;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1StuckBackgroundWakelockRateMetricSet;
 /**
  * The "stuckbackgroundwakelockrate" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SA360\Resource;
 
+use Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCustomColumn;
+use Google\Service\SA360\GoogleAdsSearchads360V0ServicesListCustomColumnsResponse;
 /**
  * The "customColumns" collection of methods.
  * Typical usage is:

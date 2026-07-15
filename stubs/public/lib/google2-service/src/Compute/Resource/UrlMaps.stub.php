@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\CacheInvalidationRule;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\UrlMap;
+use Google\Service\Compute\UrlMapList;
+use Google\Service\Compute\UrlMapsAggregatedList;
+use Google\Service\Compute\UrlMapsValidateRequest;
+use Google\Service\Compute\UrlMapsValidateResponse;
 /**
  * The "urlMaps" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Cloudchannel\Resource;
 
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListSubscribersResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberResponse;
 /**
  * The "integrators" collection of methods.
  * Typical usage is:

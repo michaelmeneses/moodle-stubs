@@ -8,6 +8,9 @@
  */
 namespace Kevinrob\GuzzleCache\Storage;
 
+use Psr\Cache\CacheItemInterface;
+use Psr\Cache\CacheItemPoolInterface;
+use Kevinrob\GuzzleCache\CacheEntry;
 class Psr6CacheStorage implements CacheStorageInterface
 {
     /**

@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1Deployment;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListDeploymentsResponse;
+use Google\Service\Apigee\GoogleIamV1Policy;
+use Google\Service\Apigee\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Apigee\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\Apigee\GoogleIamV1TestIamPermissionsResponse;
 /**
  * The "deployments" collection of methods.
  * Typical usage is:

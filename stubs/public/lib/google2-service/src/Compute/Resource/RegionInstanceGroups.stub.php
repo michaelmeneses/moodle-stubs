@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InstanceGroup;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RegionInstanceGroupList;
+use Google\Service\Compute\RegionInstanceGroupsListInstances;
+use Google\Service\Compute\RegionInstanceGroupsListInstancesRequest;
+use Google\Service\Compute\RegionInstanceGroupsSetNamedPortsRequest;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "regionInstanceGroups" collection of methods.
  * Typical usage is:

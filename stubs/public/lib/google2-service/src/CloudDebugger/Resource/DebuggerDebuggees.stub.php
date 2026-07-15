@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudDebugger\Resource;
 
+use Google\Service\CloudDebugger\ListDebuggeesResponse;
 /**
  * The "debuggees" collection of methods.
  * Typical usage is:

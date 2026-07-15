@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\ReservationBlocksGetResponse;
+use Google\Service\Compute\ReservationBlocksListResponse;
+use Google\Service\Compute\ReservationsBlocksPerformMaintenanceRequest;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
+use Google\Service\Compute\ZoneSetNestedPolicyRequest;
 /**
  * The "reservationBlocks" collection of methods.
  * Typical usage is:

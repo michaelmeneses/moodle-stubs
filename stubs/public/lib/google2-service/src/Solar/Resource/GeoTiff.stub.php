@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Solar\Resource;
 
+use Google\Service\Solar\HttpBody;
 /**
  * The "geoTiff" collection of methods.
  * Typical usage is:

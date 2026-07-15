@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\DiskType;
+use Google\Service\Compute\RegionDiskTypeList;
 /**
  * The "regionDiskTypes" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Bigquery\Resource;
 
+use Google\Service\Bigquery\Dataset;
+use Google\Service\Bigquery\DatasetList;
+use Google\Service\Bigquery\UndeleteDatasetRequest;
 /**
  * The "datasets" collection of methods.
  * Typical usage is:

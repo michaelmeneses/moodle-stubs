@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Translate\Resource;
 
+use Google\Service\Translate\DetectLanguageRequest;
+use Google\Service\Translate\DetectLanguageResponse;
+use Google\Service\Translate\RomanizeTextRequest;
+use Google\Service\Translate\RomanizeTextResponse;
+use Google\Service\Translate\SupportedLanguages;
+use Google\Service\Translate\TranslateTextRequest;
+use Google\Service\Translate\TranslateTextResponse;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

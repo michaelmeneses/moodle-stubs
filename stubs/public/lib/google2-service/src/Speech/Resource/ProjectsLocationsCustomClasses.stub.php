@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Speech\Resource;
 
+use Google\Service\Speech\CreateCustomClassRequest;
+use Google\Service\Speech\CustomClass;
+use Google\Service\Speech\ListCustomClassesResponse;
+use Google\Service\Speech\SpeechEmpty;
 /**
  * The "customClasses" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Adsense\Resource;
 
+use Google\Service\Adsense\ListPaymentsResponse;
 /**
  * The "payments" collection of methods.
  * Typical usage is:

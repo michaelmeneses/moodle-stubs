@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Adsense\Resource;
 
+use Google\Service\Adsense\AdClient;
+use Google\Service\Adsense\AdClientAdCode;
+use Google\Service\Adsense\ListAdClientsResponse;
 /**
  * The "adclients" collection of methods.
  * Typical usage is:

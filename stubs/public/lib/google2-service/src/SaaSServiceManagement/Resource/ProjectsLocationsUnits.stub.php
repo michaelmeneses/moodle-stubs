@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SaaSServiceManagement\Resource;
 
+use Google\Service\SaaSServiceManagement\ListUnitsResponse;
+use Google\Service\SaaSServiceManagement\SaasservicemgmtEmpty;
+use Google\Service\SaaSServiceManagement\Unit;
 /**
  * The "units" collection of methods.
  * Typical usage is:

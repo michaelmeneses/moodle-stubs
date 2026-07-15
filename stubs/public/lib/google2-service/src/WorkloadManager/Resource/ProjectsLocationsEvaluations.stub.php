@@ -23,6 +23,9 @@
  */
 namespace Google\Service\WorkloadManager\Resource;
 
+use Google\Service\WorkloadManager\Evaluation;
+use Google\Service\WorkloadManager\ListEvaluationsResponse;
+use Google\Service\WorkloadManager\Operation;
 /**
  * The "evaluations" collection of methods.
  * Typical usage is:

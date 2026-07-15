@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Keep\Resource;
 
+use Google\Service\Keep\KeepEmpty;
+use Google\Service\Keep\ListNotesResponse;
+use Google\Service\Keep\Note;
 /**
  * The "notes" collection of methods.
  * Typical usage is:

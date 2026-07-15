@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\ListTargetProjectsResponse;
+use Google\Service\VMMigrationService\Operation;
+use Google\Service\VMMigrationService\TargetProject;
 /**
  * The "targetProjects" collection of methods.
  * Typical usage is:

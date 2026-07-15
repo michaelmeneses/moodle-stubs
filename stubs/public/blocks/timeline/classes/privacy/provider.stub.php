@@ -29,6 +29,7 @@
  */
 namespace block_timeline\privacy;
 
+use core_privacy\local\metadata\collection;
 /**
  * Privacy Subsystem for block_timeline.
  *

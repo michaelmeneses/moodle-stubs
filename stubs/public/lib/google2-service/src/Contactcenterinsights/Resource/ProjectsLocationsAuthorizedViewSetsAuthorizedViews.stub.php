@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1AuthorizedView;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAuthorizedViewsResponse;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryMetricsRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1SearchAuthorizedViewsResponse;
+use Google\Service\Contactcenterinsights\GoogleIamV1Policy;
+use Google\Service\Contactcenterinsights\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Contactcenterinsights\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\Contactcenterinsights\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
+use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
 /**
  * The "authorizedViews" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\ListImpressionMetricsResponse;
 /**
  * The "impressionMetrics" collection of methods.
  * Typical usage is:

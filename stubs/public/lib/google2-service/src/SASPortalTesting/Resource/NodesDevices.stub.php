@@ -23,6 +23,14 @@
  */
 namespace Google\Service\SASPortalTesting\Resource;
 
+use Google\Service\SASPortalTesting\SasPortalCreateSignedDeviceRequest;
+use Google\Service\SASPortalTesting\SasPortalDevice;
+use Google\Service\SASPortalTesting\SasPortalEmpty;
+use Google\Service\SASPortalTesting\SasPortalListDevicesResponse;
+use Google\Service\SASPortalTesting\SasPortalMoveDeviceRequest;
+use Google\Service\SASPortalTesting\SasPortalOperation;
+use Google\Service\SASPortalTesting\SasPortalSignDeviceRequest;
+use Google\Service\SASPortalTesting\SasPortalUpdateSignedDeviceRequest;
 /**
  * The "devices" collection of methods.
  * Typical usage is:

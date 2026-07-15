@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SQLAdmin\Resource;
 
+use Google\Service\SQLAdmin\Operation;
+use Google\Service\SQLAdmin\User;
+use Google\Service\SQLAdmin\UsersListResponse;
 /**
  * The "users" collection of methods.
  * Typical usage is:

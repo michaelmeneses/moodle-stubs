@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadTestCaseResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteTestCaseRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteTestCasesRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteTestCasesResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTestCasesResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTakeoverTestCaseEditLockRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTestCase;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadTestCaseRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadTestCaseResponse;
+use Google\Service\Integrations\GoogleProtobufEmpty;
 /**
  * The "testCases" collection of methods.
  * Typical usage is:

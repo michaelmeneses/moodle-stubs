@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Autoscaler;
+use Google\Service\Compute\AutoscalerAggregatedList;
+use Google\Service\Compute\AutoscalerList;
+use Google\Service\Compute\Operation;
 /**
  * The "autoscalers" collection of methods.
  * Typical usage is:

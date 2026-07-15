@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign\plugininfo;
 
+use core\plugininfo\base;
+use core_plugin_manager;
+use moodle_url;
 /**
  * Assign feedback subplugin info class.
  *

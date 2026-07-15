@@ -23,6 +23,13 @@
  */
 namespace Google\Service\RecommendationsAI\Resource;
 
+use Google\Service\RecommendationsAI\GoogleApiHttpBody;
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest;
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListUserEventsResponse;
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest;
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1RejoinUserEventsRequest;
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1UserEvent;
+use Google\Service\RecommendationsAI\GoogleLongrunningOperation;
 /**
  * The "userEvents" collection of methods.
  * Typical usage is:

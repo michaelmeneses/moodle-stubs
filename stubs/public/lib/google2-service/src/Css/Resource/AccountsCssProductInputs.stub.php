@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Css\Resource;
 
+use Google\Service\Css\CssEmpty;
+use Google\Service\Css\CssProductInput;
 /**
  * The "cssProductInputs" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Sheets\Resource;
 
+use Google\Service\Sheets\BatchUpdateSpreadsheetRequest;
+use Google\Service\Sheets\BatchUpdateSpreadsheetResponse;
+use Google\Service\Sheets\GetSpreadsheetByDataFilterRequest;
+use Google\Service\Sheets\Spreadsheet;
 /**
  * The "spreadsheets" collection of methods.
  * Typical usage is:

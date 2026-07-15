@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Licensing\Resource;
 
+use Google\Service\Licensing\LicenseAssignment;
+use Google\Service\Licensing\LicenseAssignmentInsert;
+use Google\Service\Licensing\LicenseAssignmentList;
+use Google\Service\Licensing\LicensingEmpty;
 /**
  * The "licenseAssignments" collection of methods.
  * Typical usage is:

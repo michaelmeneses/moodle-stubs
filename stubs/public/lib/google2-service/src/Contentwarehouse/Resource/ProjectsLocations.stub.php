@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Contentwarehouse\Resource;
 
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1InitializeProjectRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ProjectStatus;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineRequest;
+use Google\Service\Contentwarehouse\GoogleLongrunningOperation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

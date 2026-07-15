@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudIot\Resource;
 
+use Google\Service\CloudIot\CloudiotEmpty;
+use Google\Service\CloudIot\Device;
+use Google\Service\CloudIot\DeviceConfig;
+use Google\Service\CloudIot\ListDevicesResponse;
+use Google\Service\CloudIot\ModifyCloudToDeviceConfigRequest;
+use Google\Service\CloudIot\SendCommandToDeviceRequest;
+use Google\Service\CloudIot\SendCommandToDeviceResponse;
 /**
  * The "devices" collection of methods.
  * Typical usage is:

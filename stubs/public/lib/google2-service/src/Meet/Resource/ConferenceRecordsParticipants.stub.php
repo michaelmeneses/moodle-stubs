@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Meet\Resource;
 
+use Google\Service\Meet\ListParticipantsResponse;
+use Google\Service\Meet\Participant;
 /**
  * The "participants" collection of methods.
  * Typical usage is:

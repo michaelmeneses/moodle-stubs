@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AppHub\Resource;
 
+use Google\Service\AppHub\ApphubEmpty;
+use Google\Service\AppHub\CancelOperationRequest;
+use Google\Service\AppHub\ListOperationsResponse;
+use Google\Service\AppHub\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

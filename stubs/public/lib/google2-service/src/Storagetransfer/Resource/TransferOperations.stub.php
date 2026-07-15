@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Storagetransfer\Resource;
 
+use Google\Service\Storagetransfer\CancelOperationRequest;
+use Google\Service\Storagetransfer\ListOperationsResponse;
+use Google\Service\Storagetransfer\Operation;
+use Google\Service\Storagetransfer\PauseTransferOperationRequest;
+use Google\Service\Storagetransfer\ResumeTransferOperationRequest;
+use Google\Service\Storagetransfer\StoragetransferEmpty;
 /**
  * The "transferOperations" collection of methods.
  * Typical usage is:

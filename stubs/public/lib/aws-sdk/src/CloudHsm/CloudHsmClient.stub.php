@@ -8,6 +8,10 @@
  */
 namespace Aws\CloudHsm;
 
+use Aws\Api\ApiProvider;
+use Aws\Api\DocModel;
+use Aws\Api\Service;
+use Aws\AwsClient;
 /**
  * This client is used to interact with **AWS CloudHSM**.
  *

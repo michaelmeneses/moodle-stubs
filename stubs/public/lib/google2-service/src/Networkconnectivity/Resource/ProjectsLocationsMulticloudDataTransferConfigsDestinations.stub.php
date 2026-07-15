@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\Destination;
+use Google\Service\Networkconnectivity\GoogleLongrunningOperation;
+use Google\Service\Networkconnectivity\ListDestinationsResponse;
 /**
  * The "destinations" collection of methods.
  * Typical usage is:

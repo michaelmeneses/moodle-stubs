@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\Subscription;
+use Google\Service\YouTube\SubscriptionListResponse;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

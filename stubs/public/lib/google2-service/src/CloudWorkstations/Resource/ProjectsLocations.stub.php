@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudWorkstations\Resource;
 
+use Google\Service\CloudWorkstations\ListLocationsResponse;
+use Google\Service\CloudWorkstations\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

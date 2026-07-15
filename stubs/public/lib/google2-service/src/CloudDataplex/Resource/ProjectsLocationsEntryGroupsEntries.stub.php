@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1Entry;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListEntriesResponse;
 /**
  * The "entries" collection of methods.
  * Typical usage is:

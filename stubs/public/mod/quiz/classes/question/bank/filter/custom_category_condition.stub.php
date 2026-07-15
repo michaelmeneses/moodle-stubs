@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\question\bank\filter;
 
+use qbank_managecategories\helper;
 /**
  * A custom filter condition for quiz to select question categories.
  *

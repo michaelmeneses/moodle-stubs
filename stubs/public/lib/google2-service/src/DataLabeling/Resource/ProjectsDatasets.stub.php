@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateDatasetRequest;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Dataset;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ExportDataRequest;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImportDataRequest;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListDatasetsResponse;
+use Google\Service\DataLabeling\GoogleLongrunningOperation;
+use Google\Service\DataLabeling\GoogleProtobufEmpty;
 /**
  * The "datasets" collection of methods.
  * Typical usage is:

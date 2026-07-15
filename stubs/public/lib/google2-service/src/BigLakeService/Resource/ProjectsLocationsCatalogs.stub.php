@@ -23,6 +23,8 @@
  */
 namespace Google\Service\BigLakeService\Resource;
 
+use Google\Service\BigLakeService\Catalog;
+use Google\Service\BigLakeService\ListCatalogsResponse;
 /**
  * The "catalogs" collection of methods.
  * Typical usage is:

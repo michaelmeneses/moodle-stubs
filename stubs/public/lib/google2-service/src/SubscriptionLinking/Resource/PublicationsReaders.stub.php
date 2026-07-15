@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SubscriptionLinking\Resource;
 
+use Google\Service\SubscriptionLinking\DeleteReaderResponse;
+use Google\Service\SubscriptionLinking\Reader;
+use Google\Service\SubscriptionLinking\ReaderEntitlements;
 /**
  * The "readers" collection of methods.
  * Typical usage is:

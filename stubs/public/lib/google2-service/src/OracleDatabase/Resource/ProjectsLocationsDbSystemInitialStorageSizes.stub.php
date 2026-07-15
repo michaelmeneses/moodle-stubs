@@ -23,6 +23,7 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\ListDbSystemInitialStorageSizesResponse;
 /**
  * The "dbSystemInitialStorageSizes" collection of methods.
  * Typical usage is:

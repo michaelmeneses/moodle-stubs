@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\HostGroup;
+use Google\Service\NetAppFiles\ListHostGroupsResponse;
+use Google\Service\NetAppFiles\Operation;
 /**
  * The "hostGroups" collection of methods.
  * Typical usage is:

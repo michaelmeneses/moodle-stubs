@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\ListValuedResourcesResponse;
+use Google\Service\SecurityCommandCenter\ValuedResource;
 /**
  * The "valuedResources" collection of methods.
  * Typical usage is:

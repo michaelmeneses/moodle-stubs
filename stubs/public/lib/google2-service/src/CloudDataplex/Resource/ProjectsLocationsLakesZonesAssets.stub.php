@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1Asset;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListAssetsResponse;
+use Google\Service\CloudDataplex\GoogleIamV1Policy;
+use Google\Service\CloudDataplex\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\CloudDataplex\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\CloudDataplex\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\CloudDataplex\GoogleLongrunningOperation;
 /**
  * The "assets" collection of methods.
  * Typical usage is:

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\GlobalSetPolicyRequest;
+use Google\Service\Compute\License;
+use Google\Service\Compute\LicensesListResponse;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "licenses" collection of methods.
  * Typical usage is:

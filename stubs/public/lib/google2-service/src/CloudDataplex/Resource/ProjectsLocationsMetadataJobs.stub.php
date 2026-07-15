@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\DataplexEmpty;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1CancelMetadataJobRequest;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListMetadataJobsResponse;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1MetadataJob;
+use Google\Service\CloudDataplex\GoogleLongrunningOperation;
 /**
  * The "metadataJobs" collection of methods.
  * Typical usage is:

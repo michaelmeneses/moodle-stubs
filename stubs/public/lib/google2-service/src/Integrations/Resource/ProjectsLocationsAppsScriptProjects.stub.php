@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectResponse;
 /**
  * The "appsScriptProjects" collection of methods.
  * Typical usage is:

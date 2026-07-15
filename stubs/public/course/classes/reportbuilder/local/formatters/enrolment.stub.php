@@ -8,6 +8,8 @@
  */
 namespace core_course\reportbuilder\local\formatters;
 
+use core\lang_string;
+use core_user\output\status_field;
 /**
  * Formatters for the course enrolment entity
  *

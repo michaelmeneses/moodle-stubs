@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\Size;
+use Google\Service\Dfareporting\SizesListResponse;
 /**
  * The "sizes" collection of methods.
  * Typical usage is:

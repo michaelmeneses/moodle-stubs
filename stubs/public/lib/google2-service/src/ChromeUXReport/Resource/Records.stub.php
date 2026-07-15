@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ChromeUXReport\Resource;
 
+use Google\Service\ChromeUXReport\QueryHistoryRequest;
+use Google\Service\ChromeUXReport\QueryHistoryResponse;
+use Google\Service\ChromeUXReport\QueryRequest;
+use Google\Service\ChromeUXReport\QueryResponse;
 /**
  * The "records" collection of methods.
  * Typical usage is:

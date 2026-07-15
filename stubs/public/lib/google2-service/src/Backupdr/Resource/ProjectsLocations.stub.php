@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\ListLocationsResponse;
+use Google\Service\Backupdr\Location;
+use Google\Service\Backupdr\Trial;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudSupport\Resource;
 
+use Google\Service\CloudSupport\Attachment;
+use Google\Service\CloudSupport\CreateAttachmentRequest;
 /**
  * The "attachments" collection of methods.
  * Typical usage is:

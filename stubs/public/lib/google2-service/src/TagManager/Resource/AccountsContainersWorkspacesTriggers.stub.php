@@ -23,6 +23,9 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\ListTriggersResponse;
+use Google\Service\TagManager\RevertTriggerResponse;
+use Google\Service\TagManager\Trigger;
 /**
  * The "triggers" collection of methods.
  * Typical usage is:

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign;
 
+use core\shortlink_handler_interface;
 /**
  * Shortlink handler for mod_assign.
  *

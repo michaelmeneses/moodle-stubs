@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\ClassroomEmpty;
+use Google\Service\Classroom\ListStudentSubmissionsResponse;
+use Google\Service\Classroom\ModifyAttachmentsRequest;
+use Google\Service\Classroom\ReclaimStudentSubmissionRequest;
+use Google\Service\Classroom\ReturnStudentSubmissionRequest;
+use Google\Service\Classroom\StudentSubmission;
+use Google\Service\Classroom\TurnInStudentSubmissionRequest;
 /**
  * The "studentSubmissions" collection of methods.
  * Typical usage is:

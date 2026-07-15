@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Iam\Resource;
 
+use Google\Service\Iam\ListRolesResponse;
+use Google\Service\Iam\QueryGrantableRolesRequest;
+use Google\Service\Iam\QueryGrantableRolesResponse;
+use Google\Service\Iam\Role;
 /**
  * The "roles" collection of methods.
  * Typical usage is:

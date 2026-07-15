@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Cloudchannel\Resource;
 
+use Google\Service\Cloudchannel\GoogleCloudChannelV1CustomerRepricingConfig;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListCustomerRepricingConfigsResponse;
+use Google\Service\Cloudchannel\GoogleProtobufEmpty;
 /**
  * The "customerRepricingConfigs" collection of methods.
  * Typical usage is:

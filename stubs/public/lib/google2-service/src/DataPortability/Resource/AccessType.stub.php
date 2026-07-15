@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataPortability\Resource;
 
+use Google\Service\DataPortability\CheckAccessTypeRequest;
+use Google\Service\DataPortability\CheckAccessTypeResponse;
 /**
  * The "accessType" collection of methods.
  * Typical usage is:

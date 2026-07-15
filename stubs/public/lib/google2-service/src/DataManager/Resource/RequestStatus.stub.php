@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DataManager\Resource;
 
+use Google\Service\DataManager\RetrieveRequestStatusResponse;
 /**
  * The "requestStatus" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportModelEvaluationRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelEvaluationsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluation;
 /**
  * The "evaluations" collection of methods.
  * Typical usage is:

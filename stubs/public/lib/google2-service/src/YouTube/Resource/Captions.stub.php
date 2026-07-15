@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\Caption;
+use Google\Service\YouTube\CaptionListResponse;
 /**
  * The "captions" collection of methods.
  * Typical usage is:

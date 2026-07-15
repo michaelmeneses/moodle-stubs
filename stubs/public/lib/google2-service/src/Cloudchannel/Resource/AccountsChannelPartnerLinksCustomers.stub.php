@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Cloudchannel\Resource;
 
+use Google\Service\Cloudchannel\GoogleCloudChannelV1Customer;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ImportCustomerRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListCustomersResponse;
+use Google\Service\Cloudchannel\GoogleProtobufEmpty;
 /**
  * The "customers" collection of methods.
  * Typical usage is:

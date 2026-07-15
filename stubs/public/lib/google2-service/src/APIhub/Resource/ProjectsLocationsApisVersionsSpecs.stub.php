@@ -23,6 +23,12 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\ApihubEmpty;
+use Google\Service\APIhub\GoogleCloudApihubV1FetchAdditionalSpecContentResponse;
+use Google\Service\APIhub\GoogleCloudApihubV1LintSpecRequest;
+use Google\Service\APIhub\GoogleCloudApihubV1ListSpecsResponse;
+use Google\Service\APIhub\GoogleCloudApihubV1Spec;
+use Google\Service\APIhub\GoogleCloudApihubV1SpecContents;
 /**
  * The "specs" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\BackupPlanAssociation;
+use Google\Service\Backupdr\FetchBackupPlanAssociationsForResourceTypeResponse;
+use Google\Service\Backupdr\ListBackupPlanAssociationsResponse;
+use Google\Service\Backupdr\Operation;
+use Google\Service\Backupdr\TriggerBackupRequest;
 /**
  * The "backupPlanAssociations" collection of methods.
  * Typical usage is:

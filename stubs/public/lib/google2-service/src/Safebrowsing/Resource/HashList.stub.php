@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Safebrowsing\Resource;
 
+use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5HashList;
 /**
  * The "hashList" collection of methods.
  * Typical usage is:

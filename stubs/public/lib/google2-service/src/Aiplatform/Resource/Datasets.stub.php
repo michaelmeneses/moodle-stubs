@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Dataset;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDatasetsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "datasets" collection of methods.
  * Typical usage is:

@@ -23,6 +23,14 @@
  */
 namespace Google\Service\BackupforGKE\Resource;
 
+use Google\Service\BackupforGKE\Backup;
+use Google\Service\BackupforGKE\GetBackupIndexDownloadUrlResponse;
+use Google\Service\BackupforGKE\GoogleLongrunningOperation;
+use Google\Service\BackupforGKE\ListBackupsResponse;
+use Google\Service\BackupforGKE\Policy;
+use Google\Service\BackupforGKE\SetIamPolicyRequest;
+use Google\Service\BackupforGKE\TestIamPermissionsRequest;
+use Google\Service\BackupforGKE\TestIamPermissionsResponse;
 /**
  * The "backups" collection of methods.
  * Typical usage is:

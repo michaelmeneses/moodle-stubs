@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_previewquestion\output;
 
+use context;
+use qbank_previewquestion\helper;
+use qbank_previewquestion\question_preview_options;
 /**
  * Class renderer for rendering preview url
  *

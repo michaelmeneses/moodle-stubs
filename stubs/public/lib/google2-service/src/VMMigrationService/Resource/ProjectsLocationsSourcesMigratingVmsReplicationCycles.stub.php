@@ -23,6 +23,8 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\ListReplicationCyclesResponse;
+use Google\Service\VMMigrationService\ReplicationCycle;
 /**
  * The "replicationCycles" collection of methods.
  * Typical usage is:

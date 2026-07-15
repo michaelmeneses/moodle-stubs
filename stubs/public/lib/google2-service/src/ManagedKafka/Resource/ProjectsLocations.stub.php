@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\ListLocationsResponse;
+use Google\Service\ManagedKafka\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

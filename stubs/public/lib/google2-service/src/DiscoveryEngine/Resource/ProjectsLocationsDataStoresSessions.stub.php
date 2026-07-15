@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListSessionsResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Session;
+use Google\Service\DiscoveryEngine\GoogleProtobufEmpty;
 /**
  * The "sessions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\AccountLabel;
+use Google\Service\ShoppingContent\ListAccountLabelsResponse;
 /**
  * The "labels" collection of methods.
  * Typical usage is:

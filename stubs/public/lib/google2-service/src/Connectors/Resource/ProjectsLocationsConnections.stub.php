@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\CheckReadinessResponse;
+use Google\Service\Connectors\CheckStatusResponse;
+use Google\Service\Connectors\ExchangeAuthCodeRequest;
+use Google\Service\Connectors\ExchangeAuthCodeResponse;
+use Google\Service\Connectors\ExecuteSqlQueryRequest;
+use Google\Service\Connectors\ExecuteSqlQueryResponse;
+use Google\Service\Connectors\RefreshAccessTokenRequest;
+use Google\Service\Connectors\RefreshAccessTokenResponse;
 /**
  * The "connections" collection of methods.
  * Typical usage is:

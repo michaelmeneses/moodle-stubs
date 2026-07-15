@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DatasetVersion;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDatasetVersionsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "datasetVersions" collection of methods.
  * Typical usage is:

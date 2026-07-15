@@ -29,6 +29,7 @@
  */
 namespace mod_workshop\plugininfo;
 
+use core\plugininfo\base;
 class workshopeval extends base
 {
     public function is_uninstall_allowed()

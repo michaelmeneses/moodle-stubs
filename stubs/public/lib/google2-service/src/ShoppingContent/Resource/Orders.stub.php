@@ -23,6 +23,45 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\CaptureOrderRequest;
+use Google\Service\ShoppingContent\CaptureOrderResponse;
+use Google\Service\ShoppingContent\Order;
+use Google\Service\ShoppingContent\OrdersAcknowledgeRequest;
+use Google\Service\ShoppingContent\OrdersAcknowledgeResponse;
+use Google\Service\ShoppingContent\OrdersAdvanceTestOrderResponse;
+use Google\Service\ShoppingContent\OrdersCancelLineItemRequest;
+use Google\Service\ShoppingContent\OrdersCancelLineItemResponse;
+use Google\Service\ShoppingContent\OrdersCancelRequest;
+use Google\Service\ShoppingContent\OrdersCancelResponse;
+use Google\Service\ShoppingContent\OrdersCancelTestOrderByCustomerRequest;
+use Google\Service\ShoppingContent\OrdersCancelTestOrderByCustomerResponse;
+use Google\Service\ShoppingContent\OrdersCreateTestOrderRequest;
+use Google\Service\ShoppingContent\OrdersCreateTestOrderResponse;
+use Google\Service\ShoppingContent\OrdersCreateTestReturnRequest;
+use Google\Service\ShoppingContent\OrdersCreateTestReturnResponse;
+use Google\Service\ShoppingContent\OrdersGetByMerchantOrderIdResponse;
+use Google\Service\ShoppingContent\OrdersGetTestOrderTemplateResponse;
+use Google\Service\ShoppingContent\OrdersInStoreRefundLineItemRequest;
+use Google\Service\ShoppingContent\OrdersInStoreRefundLineItemResponse;
+use Google\Service\ShoppingContent\OrdersListResponse;
+use Google\Service\ShoppingContent\OrdersRefundItemRequest;
+use Google\Service\ShoppingContent\OrdersRefundItemResponse;
+use Google\Service\ShoppingContent\OrdersRefundOrderRequest;
+use Google\Service\ShoppingContent\OrdersRefundOrderResponse;
+use Google\Service\ShoppingContent\OrdersRejectReturnLineItemRequest;
+use Google\Service\ShoppingContent\OrdersRejectReturnLineItemResponse;
+use Google\Service\ShoppingContent\OrdersReturnRefundLineItemRequest;
+use Google\Service\ShoppingContent\OrdersReturnRefundLineItemResponse;
+use Google\Service\ShoppingContent\OrdersSetLineItemMetadataRequest;
+use Google\Service\ShoppingContent\OrdersSetLineItemMetadataResponse;
+use Google\Service\ShoppingContent\OrdersShipLineItemsRequest;
+use Google\Service\ShoppingContent\OrdersShipLineItemsResponse;
+use Google\Service\ShoppingContent\OrdersUpdateLineItemShippingDetailsRequest;
+use Google\Service\ShoppingContent\OrdersUpdateLineItemShippingDetailsResponse;
+use Google\Service\ShoppingContent\OrdersUpdateMerchantOrderIdRequest;
+use Google\Service\ShoppingContent\OrdersUpdateMerchantOrderIdResponse;
+use Google\Service\ShoppingContent\OrdersUpdateShipmentRequest;
+use Google\Service\ShoppingContent\OrdersUpdateShipmentResponse;
 /**
  * The "orders" collection of methods.
  * Typical usage is:

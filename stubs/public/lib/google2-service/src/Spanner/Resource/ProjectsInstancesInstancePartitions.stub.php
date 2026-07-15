@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Spanner\Resource;
 
+use Google\Service\Spanner\CreateInstancePartitionRequest;
+use Google\Service\Spanner\InstancePartition;
+use Google\Service\Spanner\ListInstancePartitionsResponse;
+use Google\Service\Spanner\Operation;
+use Google\Service\Spanner\SpannerEmpty;
+use Google\Service\Spanner\UpdateInstancePartitionRequest;
 /**
  * The "instancePartitions" collection of methods.
  * Typical usage is:

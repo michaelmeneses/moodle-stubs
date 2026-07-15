@@ -23,6 +23,8 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\Announcement;
+use Google\Service\VMwareEngine\ListAnnouncementsResponse;
 /**
  * The "announcements" collection of methods.
  * Typical usage is:

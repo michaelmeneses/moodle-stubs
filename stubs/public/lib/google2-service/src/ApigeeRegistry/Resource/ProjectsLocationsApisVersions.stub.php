@@ -23,6 +23,13 @@
  */
 namespace Google\Service\ApigeeRegistry\Resource;
 
+use Google\Service\ApigeeRegistry\ApiVersion;
+use Google\Service\ApigeeRegistry\ApigeeregistryEmpty;
+use Google\Service\ApigeeRegistry\ListApiVersionsResponse;
+use Google\Service\ApigeeRegistry\Policy;
+use Google\Service\ApigeeRegistry\SetIamPolicyRequest;
+use Google\Service\ApigeeRegistry\TestIamPermissionsRequest;
+use Google\Service\ApigeeRegistry\TestIamPermissionsResponse;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

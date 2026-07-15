@@ -23,6 +23,13 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\GetIamPolicyRequest;
+use Google\Service\SecurityCommandCenter\ListSourcesResponse;
+use Google\Service\SecurityCommandCenter\Policy;
+use Google\Service\SecurityCommandCenter\SetIamPolicyRequest;
+use Google\Service\SecurityCommandCenter\Source;
+use Google\Service\SecurityCommandCenter\TestIamPermissionsRequest;
+use Google\Service\SecurityCommandCenter\TestIamPermissionsResponse;
 /**
  * The "sources" collection of methods.
  * Typical usage is:

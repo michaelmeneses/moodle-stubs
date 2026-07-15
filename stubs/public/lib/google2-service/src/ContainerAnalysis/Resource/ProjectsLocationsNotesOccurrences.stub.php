@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ContainerAnalysis\Resource;
 
+use Google\Service\ContainerAnalysis\ListNoteOccurrencesResponse;
 /**
  * The "occurrences" collection of methods.
  * Typical usage is:

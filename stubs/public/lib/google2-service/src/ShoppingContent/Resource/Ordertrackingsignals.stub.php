@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\OrderTrackingSignal;
 /**
  * The "ordertrackingsignals" collection of methods.
  * Typical usage is:

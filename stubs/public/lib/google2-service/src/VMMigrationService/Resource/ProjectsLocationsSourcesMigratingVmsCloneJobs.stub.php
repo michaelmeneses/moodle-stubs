@@ -23,6 +23,10 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\CancelCloneJobRequest;
+use Google\Service\VMMigrationService\CloneJob;
+use Google\Service\VMMigrationService\ListCloneJobsResponse;
+use Google\Service\VMMigrationService\Operation;
 /**
  * The "cloneJobs" collection of methods.
  * Typical usage is:

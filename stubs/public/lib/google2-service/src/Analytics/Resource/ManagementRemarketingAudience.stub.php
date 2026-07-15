@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\RemarketingAudience;
+use Google\Service\Analytics\RemarketingAudiences;
 /**
  * The "remarketingAudience" collection of methods.
  * Typical usage is:

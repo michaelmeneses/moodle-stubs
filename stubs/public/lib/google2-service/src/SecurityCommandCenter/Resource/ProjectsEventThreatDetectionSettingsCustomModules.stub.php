@@ -23,6 +23,10 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\EventThreatDetectionCustomModule;
+use Google\Service\SecurityCommandCenter\ListDescendantEventThreatDetectionCustomModulesResponse;
+use Google\Service\SecurityCommandCenter\ListEventThreatDetectionCustomModulesResponse;
+use Google\Service\SecurityCommandCenter\SecuritycenterEmpty;
 /**
  * The "customModules" collection of methods.
  * Typical usage is:

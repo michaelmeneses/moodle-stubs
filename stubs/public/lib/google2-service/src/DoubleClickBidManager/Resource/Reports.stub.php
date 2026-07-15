@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DoubleClickBidManager\Resource;
 
+use Google\Service\DoubleClickBidManager\ListReportsResponse;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

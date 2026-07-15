@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Firebaseappcheck\Resource;
 
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetDeviceCheckConfigsResponse;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1DeviceCheckConfig;
 /**
  * The "deviceCheckConfig" collection of methods.
  * Typical usage is:

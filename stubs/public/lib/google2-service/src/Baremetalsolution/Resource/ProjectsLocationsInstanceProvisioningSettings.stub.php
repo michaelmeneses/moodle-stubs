@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\FetchInstanceProvisioningSettingsResponse;
 /**
  * The "instanceProvisioningSettings" collection of methods.
  * Typical usage is:

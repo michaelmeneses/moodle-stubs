@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudSearch\Resource;
 
+use Google\Service\CloudSearch\InitializeCustomerRequest;
+use Google\Service\CloudSearch\Operation;
 /**
  * The "v1" collection of methods.
  * Typical usage is:

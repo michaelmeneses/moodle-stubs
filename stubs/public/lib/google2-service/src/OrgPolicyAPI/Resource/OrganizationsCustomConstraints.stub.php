@@ -23,6 +23,9 @@
  */
 namespace Google\Service\OrgPolicyAPI\Resource;
 
+use Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2CustomConstraint;
+use Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ListCustomConstraintsResponse;
+use Google\Service\OrgPolicyAPI\GoogleProtobufEmpty;
 /**
  * The "customConstraints" collection of methods.
  * Typical usage is:

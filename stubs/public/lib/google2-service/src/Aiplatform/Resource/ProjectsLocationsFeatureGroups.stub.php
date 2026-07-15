@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureGroup;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListFeatureGroupsResponse;
+use Google\Service\Aiplatform\GoogleIamV1Policy;
+use Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Aiplatform\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "featureGroups" collection of methods.
  * Typical usage is:

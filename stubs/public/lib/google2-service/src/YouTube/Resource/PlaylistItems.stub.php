@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\PlaylistItem;
+use Google\Service\YouTube\PlaylistItemListResponse;
 /**
  * The "playlistItems" collection of methods.
  * Typical usage is:

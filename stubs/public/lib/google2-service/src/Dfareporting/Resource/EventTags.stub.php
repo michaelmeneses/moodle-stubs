@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\EventTag;
+use Google\Service\Dfareporting\EventTagsListResponse;
 /**
  * The "eventTags" collection of methods.
  * Typical usage is:

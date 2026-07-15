@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_subsection\task;
 
+use core\task\adhoc_task;
+use core_courseformat\formatactions;
 /**
  * A task to migrate to text and media and remove existing descriptions from subsection instances.
  *

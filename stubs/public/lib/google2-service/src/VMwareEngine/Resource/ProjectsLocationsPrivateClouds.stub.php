@@ -23,6 +23,19 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\AcceleratePrivateCloudDeletionRequest;
+use Google\Service\VMwareEngine\Credentials;
+use Google\Service\VMwareEngine\DnsForwarding;
+use Google\Service\VMwareEngine\ListPrivateCloudsResponse;
+use Google\Service\VMwareEngine\Operation;
+use Google\Service\VMwareEngine\Policy;
+use Google\Service\VMwareEngine\PrivateCloud;
+use Google\Service\VMwareEngine\ResetNsxCredentialsRequest;
+use Google\Service\VMwareEngine\ResetVcenterCredentialsRequest;
+use Google\Service\VMwareEngine\SetIamPolicyRequest;
+use Google\Service\VMwareEngine\TestIamPermissionsRequest;
+use Google\Service\VMwareEngine\TestIamPermissionsResponse;
+use Google\Service\VMwareEngine\UndeletePrivateCloudRequest;
 /**
  * The "privateClouds" collection of methods.
  * Typical usage is:

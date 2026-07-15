@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\AddOnContext;
 /**
  * The "posts" collection of methods.
  * Typical usage is:

@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\output;
 
+use core\output\select_menu;
+use core_question\local\bank\navigation_node_base;
+use core_question\local\bank\plugin_features_base;
+use moodle_url;
+use renderer_base;
+use templatable;
+use renderable;
 /**
  * Rendered HTML elements for tertiary nav for Question bank.
  *

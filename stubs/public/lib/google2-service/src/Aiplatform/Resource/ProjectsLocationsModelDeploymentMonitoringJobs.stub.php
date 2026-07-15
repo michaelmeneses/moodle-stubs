@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelDeploymentMonitoringJobsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelDeploymentMonitoringJob;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1PauseModelDeploymentMonitoringJobRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ResumeModelDeploymentMonitoringJobRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "modelDeploymentMonitoringJobs" collection of methods.
  * Typical usage is:

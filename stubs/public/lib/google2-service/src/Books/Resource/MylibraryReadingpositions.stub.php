@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\BooksEmpty;
+use Google\Service\Books\ReadingPosition;
 /**
  * The "readingpositions" collection of methods.
  * Typical usage is:

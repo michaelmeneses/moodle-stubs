@@ -23,6 +23,11 @@
  */
 namespace Google\Service\AnalyticsHub\Resource;
 
+use Google\Service\AnalyticsHub\AnalyticshubEmpty;
+use Google\Service\AnalyticsHub\ApproveQueryTemplateRequest;
+use Google\Service\AnalyticsHub\ListQueryTemplatesResponse;
+use Google\Service\AnalyticsHub\QueryTemplate;
+use Google\Service\AnalyticsHub\SubmitQueryTemplateRequest;
 /**
  * The "queryTemplates" collection of methods.
  * Typical usage is:

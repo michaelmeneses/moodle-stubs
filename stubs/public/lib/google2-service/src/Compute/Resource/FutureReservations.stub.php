@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\FutureReservation;
+use Google\Service\Compute\FutureReservationsAggregatedListResponse;
+use Google\Service\Compute\FutureReservationsListResponse;
+use Google\Service\Compute\Operation;
 /**
  * The "futureReservations" collection of methods.
  * Typical usage is:

@@ -31,6 +31,8 @@
  */
 namespace core\check\security;
 
+use core\check\check;
+use core\check\result;
 /**
  * Verifies open profiles - originally open by default, not anymore because spammer abused it a lot
  *

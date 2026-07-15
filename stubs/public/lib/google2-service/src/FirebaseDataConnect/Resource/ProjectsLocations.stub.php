@@ -23,6 +23,8 @@
  */
 namespace Google\Service\FirebaseDataConnect\Resource;
 
+use Google\Service\FirebaseDataConnect\ListLocationsResponse;
+use Google\Service\FirebaseDataConnect\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

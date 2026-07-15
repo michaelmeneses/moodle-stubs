@@ -23,6 +23,10 @@
  */
 namespace Google\Service\GameServices\Resource;
 
+use Google\Service\GameServices\ListRealmsResponse;
+use Google\Service\GameServices\Operation;
+use Google\Service\GameServices\PreviewRealmUpdateResponse;
+use Google\Service\GameServices\Realm;
 /**
  * The "realms" collection of methods.
  * Typical usage is:

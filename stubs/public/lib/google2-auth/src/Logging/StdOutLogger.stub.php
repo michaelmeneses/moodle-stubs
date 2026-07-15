@@ -23,6 +23,11 @@
  */
 namespace Google\Auth\Logging;
 
+use InvalidArgumentException;
+use Psr\Log\LoggerInterface;
+use Psr\Log\LoggerTrait;
+use Psr\Log\LogLevel;
+use Stringable;
 /**
  * A basic logger class to log into stdOut for GCP logging.
  *

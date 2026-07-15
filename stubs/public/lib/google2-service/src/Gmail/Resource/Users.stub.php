@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\Profile;
+use Google\Service\Gmail\WatchRequest;
+use Google\Service\Gmail\WatchResponse;
 /**
  * The "users" collection of methods.
  * Typical usage is:

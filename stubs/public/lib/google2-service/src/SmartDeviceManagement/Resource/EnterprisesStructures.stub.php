@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SmartDeviceManagement\Resource;
 
+use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ListStructuresResponse;
+use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1Structure;
 /**
  * The "structures" collection of methods.
  * Typical usage is:

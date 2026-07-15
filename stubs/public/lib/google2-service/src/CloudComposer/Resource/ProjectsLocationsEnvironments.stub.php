@@ -23,6 +23,21 @@
  */
 namespace Google\Service\CloudComposer\Resource;
 
+use Google\Service\CloudComposer\CheckUpgradeRequest;
+use Google\Service\CloudComposer\DatabaseFailoverRequest;
+use Google\Service\CloudComposer\Environment;
+use Google\Service\CloudComposer\ExecuteAirflowCommandRequest;
+use Google\Service\CloudComposer\ExecuteAirflowCommandResponse;
+use Google\Service\CloudComposer\FetchDatabasePropertiesResponse;
+use Google\Service\CloudComposer\ListEnvironmentsResponse;
+use Google\Service\CloudComposer\LoadSnapshotRequest;
+use Google\Service\CloudComposer\Operation;
+use Google\Service\CloudComposer\PollAirflowCommandRequest;
+use Google\Service\CloudComposer\PollAirflowCommandResponse;
+use Google\Service\CloudComposer\RestartWebServerRequest;
+use Google\Service\CloudComposer\SaveSnapshotRequest;
+use Google\Service\CloudComposer\StopAirflowCommandRequest;
+use Google\Service\CloudComposer\StopAirflowCommandResponse;
 /**
  * The "environments" collection of methods.
  * Typical usage is:

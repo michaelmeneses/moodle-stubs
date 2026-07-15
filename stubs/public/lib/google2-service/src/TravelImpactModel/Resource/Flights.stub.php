@@ -23,6 +23,12 @@
  */
 namespace Google\Service\TravelImpactModel\Resource;
 
+use Google\Service\TravelImpactModel\ComputeFlightEmissionsRequest;
+use Google\Service\TravelImpactModel\ComputeFlightEmissionsResponse;
+use Google\Service\TravelImpactModel\ComputeScope3FlightEmissionsRequest;
+use Google\Service\TravelImpactModel\ComputeScope3FlightEmissionsResponse;
+use Google\Service\TravelImpactModel\ComputeTypicalFlightEmissionsRequest;
+use Google\Service\TravelImpactModel\ComputeTypicalFlightEmissionsResponse;
 /**
  * The "flights" collection of methods.
  * Typical usage is:

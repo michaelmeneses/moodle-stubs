@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\StoragePoolType;
+use Google\Service\Compute\StoragePoolTypeAggregatedList;
+use Google\Service\Compute\StoragePoolTypeList;
 /**
  * The "storagePoolTypes" collection of methods.
  * Typical usage is:

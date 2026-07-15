@@ -8,6 +8,8 @@
  */
 namespace ZipStream\Stream;
 
+use RuntimeException;
+use Throwable;
 /**
  * Stream wrapper that allows writing data to a callback function.
  *

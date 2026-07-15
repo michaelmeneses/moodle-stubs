@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\EditGuaranteedOrderReadAccessorsRequest;
+use Google\Service\DisplayVideo\EditGuaranteedOrderReadAccessorsResponse;
+use Google\Service\DisplayVideo\GuaranteedOrder;
+use Google\Service\DisplayVideo\ListGuaranteedOrdersResponse;
 /**
  * The "guaranteedOrders" collection of methods.
  * Typical usage is:

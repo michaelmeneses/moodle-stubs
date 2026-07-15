@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CompleteQueryResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DataStore;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListDataStoresResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SiteSearchEngine;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "dataStores" collection of methods.
  * Typical usage is:

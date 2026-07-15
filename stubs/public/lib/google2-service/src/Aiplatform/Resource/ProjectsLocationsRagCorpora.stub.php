@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListRagCorporaResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RagCorpus;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "ragCorpora" collection of methods.
  * Typical usage is:

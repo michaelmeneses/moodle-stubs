@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Cloudbilling\Resource;
 
+use Google\Service\Cloudbilling\ProjectBillingInfo;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

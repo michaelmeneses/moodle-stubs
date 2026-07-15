@@ -23,6 +23,14 @@
  */
 namespace Google\Service\NetworkManagement\Resource;
 
+use Google\Service\NetworkManagement\ConnectivityTest;
+use Google\Service\NetworkManagement\ListConnectivityTestsResponse;
+use Google\Service\NetworkManagement\Operation;
+use Google\Service\NetworkManagement\Policy;
+use Google\Service\NetworkManagement\RerunConnectivityTestRequest;
+use Google\Service\NetworkManagement\SetIamPolicyRequest;
+use Google\Service\NetworkManagement\TestIamPermissionsRequest;
+use Google\Service\NetworkManagement\TestIamPermissionsResponse;
 /**
  * The "connectivityTests" collection of methods.
  * Typical usage is:

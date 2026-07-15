@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ChromeManagement\Resource;
 
+use Google\Service\ChromeManagement\GoogleChromeManagementV1ListTelemetryEventsResponse;
 /**
  * The "events" collection of methods.
  * Typical usage is:

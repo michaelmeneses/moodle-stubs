@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ToolResults\Resource;
 
+use Google\Service\ToolResults\BatchCreatePerfSamplesRequest;
+use Google\Service\ToolResults\BatchCreatePerfSamplesResponse;
+use Google\Service\ToolResults\ListPerfSamplesResponse;
 /**
  * The "samples" collection of methods.
  * Typical usage is:

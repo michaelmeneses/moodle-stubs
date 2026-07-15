@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportPlaybookRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportPlaybookRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListPlaybooksResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Playbook;
+use Google\Service\Dialogflow\GoogleLongrunningOperation;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "playbooks" collection of methods.
  * Typical usage is:

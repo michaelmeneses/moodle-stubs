@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListQaScorecardsResponse;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaScorecard;
+use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
 /**
  * The "qaScorecards" collection of methods.
  * Typical usage is:

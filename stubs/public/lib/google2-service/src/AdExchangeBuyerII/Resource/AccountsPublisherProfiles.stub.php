@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\ListPublisherProfilesResponse;
+use Google\Service\AdExchangeBuyerII\PublisherProfile;
 /**
  * The "publisherProfiles" collection of methods.
  * Typical usage is:

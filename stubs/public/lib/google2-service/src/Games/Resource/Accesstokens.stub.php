@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\GeneratePlayGroupingApiTokenResponse;
+use Google\Service\Games\GenerateRecallPlayGroupingApiTokenResponse;
 /**
  * The "accesstokens" collection of methods.
  * Typical usage is:

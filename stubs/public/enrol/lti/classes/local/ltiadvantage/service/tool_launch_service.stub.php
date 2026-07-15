@@ -22,6 +22,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\service;
 
+use enrol_lti\helper;
+use enrol_lti\local\ltiadvantage\entity\context;
+use enrol_lti\local\ltiadvantage\entity\deployment;
+use enrol_lti\local\ltiadvantage\entity\migration_claim;
+use enrol_lti\local\ltiadvantage\entity\resource_link;
+use enrol_lti\local\ltiadvantage\entity\user;
+use enrol_lti\local\ltiadvantage\repository\application_registration_repository;
+use enrol_lti\local\ltiadvantage\repository\context_repository;
+use enrol_lti\local\ltiadvantage\repository\deployment_repository;
+use enrol_lti\local\ltiadvantage\repository\legacy_consumer_repository;
+use enrol_lti\local\ltiadvantage\repository\resource_link_repository;
+use enrol_lti\local\ltiadvantage\repository\user_repository;
+use Packback\Lti1p3\LtiMessageLaunch;
 /**
  * Class tool_launch_service.
  *

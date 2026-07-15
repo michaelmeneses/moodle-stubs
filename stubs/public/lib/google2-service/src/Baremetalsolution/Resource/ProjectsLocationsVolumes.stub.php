@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\EvictVolumeRequest;
+use Google\Service\Baremetalsolution\ListVolumesResponse;
+use Google\Service\Baremetalsolution\Operation;
+use Google\Service\Baremetalsolution\RenameVolumeRequest;
+use Google\Service\Baremetalsolution\ResizeVolumeRequest;
+use Google\Service\Baremetalsolution\Volume;
 /**
  * The "volumes" collection of methods.
  * Typical usage is:

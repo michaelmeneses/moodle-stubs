@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\external;
 
+use core\context\course as context_course;
+use core_courseformat\output\local\overview\overviewtable;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_single_structure;
+use core_external\external_value;
+use stdClass;
+use core\output\renderer_helper;
 /**
  * Class get_overview_information
  *

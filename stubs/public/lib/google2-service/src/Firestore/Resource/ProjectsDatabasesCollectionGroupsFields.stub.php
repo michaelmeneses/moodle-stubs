@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Firestore\Resource;
 
+use Google\Service\Firestore\GoogleFirestoreAdminV1Field;
+use Google\Service\Firestore\GoogleFirestoreAdminV1ListFieldsResponse;
+use Google\Service\Firestore\GoogleLongrunningOperation;
 /**
  * The "fields" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AnalyticsReporting\Resource;
 
+use Google\Service\AnalyticsReporting\GetReportsRequest;
+use Google\Service\AnalyticsReporting\GetReportsResponse;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

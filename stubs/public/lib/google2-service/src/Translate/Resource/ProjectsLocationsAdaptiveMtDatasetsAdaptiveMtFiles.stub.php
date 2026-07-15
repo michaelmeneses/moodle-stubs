@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Translate\Resource;
 
+use Google\Service\Translate\AdaptiveMtFile;
+use Google\Service\Translate\ListAdaptiveMtFilesResponse;
+use Google\Service\Translate\TranslateEmpty;
 /**
  * The "adaptiveMtFiles" collection of methods.
  * Typical usage is:

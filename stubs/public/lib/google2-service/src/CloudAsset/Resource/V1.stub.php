@@ -23,6 +23,19 @@
  */
 namespace Google\Service\CloudAsset\Resource;
 
+use Google\Service\CloudAsset\AnalyzeIamPolicyLongrunningRequest;
+use Google\Service\CloudAsset\AnalyzeIamPolicyResponse;
+use Google\Service\CloudAsset\AnalyzeMoveResponse;
+use Google\Service\CloudAsset\AnalyzeOrgPoliciesResponse;
+use Google\Service\CloudAsset\AnalyzeOrgPolicyGovernedAssetsResponse;
+use Google\Service\CloudAsset\AnalyzeOrgPolicyGovernedContainersResponse;
+use Google\Service\CloudAsset\BatchGetAssetsHistoryResponse;
+use Google\Service\CloudAsset\ExportAssetsRequest;
+use Google\Service\CloudAsset\Operation;
+use Google\Service\CloudAsset\QueryAssetsRequest;
+use Google\Service\CloudAsset\QueryAssetsResponse;
+use Google\Service\CloudAsset\SearchAllIamPoliciesResponse;
+use Google\Service\CloudAsset\SearchAllResourcesResponse;
 /**
  * The "v1" collection of methods.
  * Typical usage is:

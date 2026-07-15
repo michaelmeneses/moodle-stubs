@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\ImageFamilyView;
 /**
  * The "imageFamilyViews" collection of methods.
  * Typical usage is:

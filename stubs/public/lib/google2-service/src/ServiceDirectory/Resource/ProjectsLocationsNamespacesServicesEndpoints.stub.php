@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ServiceDirectory\Resource;
 
+use Google\Service\ServiceDirectory\Endpoint;
+use Google\Service\ServiceDirectory\ListEndpointsResponse;
+use Google\Service\ServiceDirectory\ServicedirectoryEmpty;
 /**
  * The "endpoints" collection of methods.
  * Typical usage is:

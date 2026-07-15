@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Iam\Resource;
 
+use Google\Service\Iam\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

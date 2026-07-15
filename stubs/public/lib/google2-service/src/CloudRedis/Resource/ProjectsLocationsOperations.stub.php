@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudRedis\Resource;
 
+use Google\Service\CloudRedis\ListOperationsResponse;
+use Google\Service\CloudRedis\Operation;
+use Google\Service\CloudRedis\RedisEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

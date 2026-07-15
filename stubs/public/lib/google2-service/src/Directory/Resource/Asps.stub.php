@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\Asp;
+use Google\Service\Directory\Asps as AspsModel;
 /**
  * The "asps" collection of methods.
  * Typical usage is:

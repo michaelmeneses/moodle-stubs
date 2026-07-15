@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\ListUrlListsResponse;
+use Google\Service\NetworkSecurity\Operation;
+use Google\Service\NetworkSecurity\UrlList;
 /**
  * The "urlLists" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Vault\Resource;
 
+use Google\Service\Vault\HeldAccount;
+use Google\Service\Vault\ListHeldAccountsResponse;
+use Google\Service\Vault\VaultEmpty;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\TPU\Resource;
 
+use Google\Service\TPU\GenerateServiceIdentityRequest;
+use Google\Service\TPU\GenerateServiceIdentityResponse;
+use Google\Service\TPU\ListLocationsResponse;
+use Google\Service\TPU\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

@@ -16,6 +16,10 @@
  */
 namespace Monolog\Processor;
 
+use Monolog\Level;
+use Monolog\Logger;
+use Psr\Log\LogLevel;
+use Monolog\LogRecord;
 /**
  * Injects line/file:class/function where the log message came from
  *

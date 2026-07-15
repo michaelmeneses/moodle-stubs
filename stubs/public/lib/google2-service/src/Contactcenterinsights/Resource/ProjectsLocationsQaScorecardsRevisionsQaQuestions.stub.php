@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListQaQuestionsResponse;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaQuestion;
+use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
 /**
  * The "qaQuestions" collection of methods.
  * Typical usage is:

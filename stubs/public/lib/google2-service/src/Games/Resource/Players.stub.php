@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\GetMultipleApplicationPlayerIdsResponse;
+use Google\Service\Games\Player;
+use Google\Service\Games\PlayerListResponse;
+use Google\Service\Games\ScopedPlayerIds;
 /**
  * The "players" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2ListProjectDataProfilesResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2ProjectDataProfile;
 /**
  * The "projectDataProfiles" collection of methods.
  * Typical usage is:

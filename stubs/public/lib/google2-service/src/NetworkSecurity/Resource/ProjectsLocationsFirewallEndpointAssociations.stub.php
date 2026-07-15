@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\FirewallEndpointAssociation;
+use Google\Service\NetworkSecurity\ListFirewallEndpointAssociationsResponse;
+use Google\Service\NetworkSecurity\Operation;
 /**
  * The "firewallEndpointAssociations" collection of methods.
  * Typical usage is:

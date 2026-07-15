@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\ChromeOsDevice;
+use Google\Service\Directory\ChromeOsDeviceAction;
+use Google\Service\Directory\ChromeOsDevices as ChromeOsDevicesModel;
+use Google\Service\Directory\ChromeOsMoveDevicesToOu;
 /**
  * The "chromeosdevices" collection of methods.
  * Typical usage is:

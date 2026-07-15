@@ -23,6 +23,8 @@
  */
 namespace Google\Service\BeyondCorp\Resource;
 
+use Google\Service\BeyondCorp\GoogleCloudLocationListLocationsResponse;
+use Google\Service\BeyondCorp\GoogleCloudLocationLocation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

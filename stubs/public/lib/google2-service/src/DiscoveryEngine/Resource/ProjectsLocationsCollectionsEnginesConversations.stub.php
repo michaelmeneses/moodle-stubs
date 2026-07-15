@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Conversation;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ConverseConversationRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ConverseConversationResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListConversationsResponse;
+use Google\Service\DiscoveryEngine\GoogleProtobufEmpty;
 /**
  * The "conversations" collection of methods.
  * Typical usage is:

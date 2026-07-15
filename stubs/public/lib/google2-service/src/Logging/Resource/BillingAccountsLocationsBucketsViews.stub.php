@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\ListViewsResponse;
+use Google\Service\Logging\LogView;
+use Google\Service\Logging\LoggingEmpty;
 /**
  * The "views" collection of methods.
  * Typical usage is:

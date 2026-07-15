@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Datastream\Resource;
 
+use Google\Service\Datastream\CancelOperationRequest;
+use Google\Service\Datastream\DatastreamEmpty;
+use Google\Service\Datastream\ListOperationsResponse;
+use Google\Service\Datastream\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

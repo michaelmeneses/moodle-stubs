@@ -8,6 +8,7 @@
  */
 namespace GuzzleHttp\Psr7;
 
+use Psr\Http\Message\UriInterface;
 /**
  * Provides methods to normalize and compare URIs.
  *

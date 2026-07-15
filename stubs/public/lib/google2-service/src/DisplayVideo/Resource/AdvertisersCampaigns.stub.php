@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\BulkListCampaignAssignedTargetingOptionsResponse;
+use Google\Service\DisplayVideo\Campaign;
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\ListCampaignsResponse;
 /**
  * The "campaigns" collection of methods.
  * Typical usage is:

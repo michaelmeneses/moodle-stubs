@@ -23,6 +23,9 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\ListOdbNetworksResponse;
+use Google\Service\OracleDatabase\OdbNetwork;
+use Google\Service\OracleDatabase\Operation;
 /**
  * The "odbNetworks" collection of methods.
  * Typical usage is:

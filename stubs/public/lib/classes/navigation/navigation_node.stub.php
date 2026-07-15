@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation;
 
+use core\context_helper;
+use core\exception\coding_exception;
+use core\output\action_link;
+use core\output\pix_icon;
+use core\output\renderable;
+use core\output\tabobject;
+use core\url;
 /**
  * This class is used to represent a node in a navigation tree
  *

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudResourceManager\Resource;
 
+use Google\Service\CloudResourceManager\ListEffectiveTagsResponse;
 /**
  * The "effectiveTags" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudIAP\Resource;
 
+use Google\Service\CloudIAP\Brand;
+use Google\Service\CloudIAP\ListBrandsResponse;
 /**
  * The "brands" collection of methods.
  * Typical usage is:

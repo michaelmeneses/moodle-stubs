@@ -23,6 +23,8 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\ContainerVersion;
+use Google\Service\TagManager\PublishContainerVersionResponse;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

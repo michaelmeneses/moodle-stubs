@@ -23,6 +23,11 @@
  */
 namespace Google\Service\RecommendationsAI\Resource;
 
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1CatalogItem;
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest;
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListCatalogItemsResponse;
+use Google\Service\RecommendationsAI\GoogleLongrunningOperation;
+use Google\Service\RecommendationsAI\GoogleProtobufEmpty;
 /**
  * The "catalogItems" collection of methods.
  * Typical usage is:

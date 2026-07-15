@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Datalineage\Resource;
 
+use Google\Service\Datalineage\GoogleLongrunningCancelOperationRequest;
+use Google\Service\Datalineage\GoogleLongrunningListOperationsResponse;
+use Google\Service\Datalineage\GoogleLongrunningOperation;
+use Google\Service\Datalineage\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

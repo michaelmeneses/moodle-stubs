@@ -23,6 +23,8 @@
  */
 namespace Google\Service\OSConfig\Resource;
 
+use Google\Service\OSConfig\Inventory;
+use Google\Service\OSConfig\ListInventoriesResponse;
 /**
  * The "inventories" collection of methods.
  * Typical usage is:

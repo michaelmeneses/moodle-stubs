@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchPredictionJob;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListBatchPredictionJobsResponse;
 /**
  * The "batchPredictionJobs" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Firebasestorage\Resource;
 
+use Google\Service\Firebasestorage\DefaultBucket;
 /**
  * The "defaultBucket" collection of methods.
  * Typical usage is:

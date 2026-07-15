@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\PlaylistImage;
+use Google\Service\YouTube\PlaylistImageListResponse;
 /**
  * The "playlistImages" collection of methods.
  * Typical usage is:

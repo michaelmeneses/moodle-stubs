@@ -23,6 +23,8 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\GoogleCloudApihubV1HostProjectRegistration;
+use Google\Service\APIhub\GoogleCloudApihubV1ListHostProjectRegistrationsResponse;
 /**
  * The "hostProjectRegistrations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,34 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleApiHttpBody;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ComputeTokensRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ComputeTokensResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CountTokensRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CountTokensResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployModelRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DirectPredictRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DirectPredictResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DirectRawPredictRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DirectRawPredictResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Endpoint;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplainRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplainResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchPredictOperationRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateContentRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateContentResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEndpointsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1MutateDeployedModelRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictLongRunningRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RawPredictRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamRawPredictRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamingPredictRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamingPredictResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1UndeployModelRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1UpdateEndpointLongRunningRequest;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "endpoints" collection of methods.
  * Typical usage is:

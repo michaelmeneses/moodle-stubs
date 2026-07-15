@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\ListProvisioningQuotasResponse;
 /**
  * The "provisioningQuotas" collection of methods.
  * Typical usage is:

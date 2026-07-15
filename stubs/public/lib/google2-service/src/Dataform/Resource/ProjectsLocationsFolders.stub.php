@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Dataform\Resource;
 
+use Google\Service\Dataform\Policy;
+use Google\Service\Dataform\SetIamPolicyRequest;
+use Google\Service\Dataform\TestIamPermissionsRequest;
+use Google\Service\Dataform\TestIamPermissionsResponse;
 /**
  * The "folders" collection of methods.
  * Typical usage is:

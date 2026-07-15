@@ -23,6 +23,12 @@
  */
 namespace Google\Service\PeopleService\Resource;
 
+use Google\Service\PeopleService\BatchGetContactGroupsResponse;
+use Google\Service\PeopleService\ContactGroup;
+use Google\Service\PeopleService\CreateContactGroupRequest;
+use Google\Service\PeopleService\ListContactGroupsResponse;
+use Google\Service\PeopleService\PeopleEmpty;
+use Google\Service\PeopleService\UpdateContactGroupRequest;
 /**
  * The "contactGroups" collection of methods.
  * Typical usage is:

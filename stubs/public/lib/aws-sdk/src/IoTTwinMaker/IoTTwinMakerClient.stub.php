@@ -8,6 +8,7 @@
  */
 namespace Aws\IoTTwinMaker;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS IoT TwinMaker** service.
  * @method \Aws\Result batchPutPropertyValues(array $args = [])

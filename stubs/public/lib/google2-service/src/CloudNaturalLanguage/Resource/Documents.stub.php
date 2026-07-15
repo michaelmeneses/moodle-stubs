@@ -23,6 +23,16 @@
  */
 namespace Google\Service\CloudNaturalLanguage\Resource;
 
+use Google\Service\CloudNaturalLanguage\AnalyzeEntitiesRequest;
+use Google\Service\CloudNaturalLanguage\AnalyzeEntitiesResponse;
+use Google\Service\CloudNaturalLanguage\AnalyzeSentimentRequest;
+use Google\Service\CloudNaturalLanguage\AnalyzeSentimentResponse;
+use Google\Service\CloudNaturalLanguage\AnnotateTextRequest;
+use Google\Service\CloudNaturalLanguage\AnnotateTextResponse;
+use Google\Service\CloudNaturalLanguage\ClassifyTextRequest;
+use Google\Service\CloudNaturalLanguage\ClassifyTextResponse;
+use Google\Service\CloudNaturalLanguage\ModerateTextRequest;
+use Google\Service\CloudNaturalLanguage\ModerateTextResponse;
 /**
  * The "documents" collection of methods.
  * Typical usage is:

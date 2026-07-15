@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\ProductPurchaseV2;
 /**
  * The "productsv2" collection of methods.
  * Typical usage is:

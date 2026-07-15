@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Reseller\Resource;
 
+use Google\Service\Reseller\Customer;
 /**
  * The "customers" collection of methods.
  * Typical usage is:

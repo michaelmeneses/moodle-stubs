@@ -23,6 +23,13 @@
  */
 namespace Google\Service\RemoteBuildExecution\Resource;
 
+use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchReadBlobsRequest;
+use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchReadBlobsResponse;
+use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest;
+use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse;
+use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FindMissingBlobsRequest;
+use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FindMissingBlobsResponse;
+use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2GetTreeResponse;
 /**
  * The "blobs" collection of methods.
  * Typical usage is:

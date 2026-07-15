@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ApiKeysService\Resource;
 
+use Google\Service\ApiKeysService\V2LookupKeyResponse;
 /**
  * The "keys" collection of methods.
  * Typical usage is:

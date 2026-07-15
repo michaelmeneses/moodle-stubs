@@ -16,6 +16,7 @@
  */
 namespace Mustache;
 
+use Psr\Log\LoggerInterface;
 /**
  * Mustache Cache interface.
  *

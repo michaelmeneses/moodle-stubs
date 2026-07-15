@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListCustomModelsResponse;
 /**
  * The "customModels" collection of methods.
  * Typical usage is:

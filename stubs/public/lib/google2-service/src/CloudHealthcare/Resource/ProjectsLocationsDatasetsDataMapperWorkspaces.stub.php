@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\Policy;
+use Google\Service\CloudHealthcare\SetIamPolicyRequest;
+use Google\Service\CloudHealthcare\TestIamPermissionsRequest;
+use Google\Service\CloudHealthcare\TestIamPermissionsResponse;
 /**
  * The "dataMapperWorkspaces" collection of methods.
  * Typical usage is:

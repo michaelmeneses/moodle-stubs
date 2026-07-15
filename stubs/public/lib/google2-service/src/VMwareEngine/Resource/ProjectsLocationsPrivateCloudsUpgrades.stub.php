@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ListUpgradesResponse;
+use Google\Service\VMwareEngine\Operation;
+use Google\Service\VMwareEngine\Upgrade;
 /**
  * The "upgrades" collection of methods.
  * Typical usage is:

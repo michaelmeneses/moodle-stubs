@@ -23,6 +23,11 @@
  */
 namespace Google\Service\SecurityPosture\Resource;
 
+use Google\Service\SecurityPosture\ExtractPostureRequest;
+use Google\Service\SecurityPosture\ListPostureRevisionsResponse;
+use Google\Service\SecurityPosture\ListPosturesResponse;
+use Google\Service\SecurityPosture\Operation;
+use Google\Service\SecurityPosture\Posture;
 /**
  * The "postures" collection of methods.
  * Typical usage is:

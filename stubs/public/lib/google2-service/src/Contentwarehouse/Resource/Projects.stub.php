@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Contentwarehouse\Resource;
 
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FetchAclRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FetchAclResponse;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SetAclRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SetAclResponse;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

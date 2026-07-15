@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GKEHub\Resource;
 
+use Google\Service\GKEHub\ListMembershipFeaturesResponse;
+use Google\Service\GKEHub\MembershipFeature;
+use Google\Service\GKEHub\Operation;
 /**
  * The "features" collection of methods.
  * Typical usage is:

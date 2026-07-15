@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\Creative;
+use Google\Service\Dfareporting\CreativesListResponse;
 /**
  * The "creatives" collection of methods.
  * Typical usage is:

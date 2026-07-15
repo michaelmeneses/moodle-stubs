@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchReadFeatureValuesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Featurestore;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListFeaturestoresResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchFeaturesResponse;
+use Google\Service\Aiplatform\GoogleIamV1Policy;
+use Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Aiplatform\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "featurestores" collection of methods.
  * Typical usage is:

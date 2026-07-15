@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\HashClientIdRequest;
+use Google\Service\Analytics\HashClientIdResponse;
 /**
  * The "clientId" collection of methods.
  * Typical usage is:

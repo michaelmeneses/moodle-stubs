@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AirQuality\Resource;
 
+use Google\Service\AirQuality\LookupForecastRequest;
+use Google\Service\AirQuality\LookupForecastResponse;
 /**
  * The "forecast" collection of methods.
  * Typical usage is:

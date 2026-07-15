@@ -23,6 +23,9 @@
  */
 namespace Google\Auth\Cache;
 
+use ErrorException;
+use Psr\Cache\CacheItemInterface;
+use Psr\Cache\CacheItemPoolInterface;
 class FileSystemCacheItemPool implements CacheItemPoolInterface
 {
     /**

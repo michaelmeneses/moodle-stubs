@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\BulkListInsertionOrderAssignedTargetingOptionsResponse;
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\InsertionOrder;
+use Google\Service\DisplayVideo\ListInsertionOrdersResponse;
 /**
  * The "insertionOrders" collection of methods.
  * Typical usage is:

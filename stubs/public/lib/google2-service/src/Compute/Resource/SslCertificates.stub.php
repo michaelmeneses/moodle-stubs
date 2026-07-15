@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\SslCertificate;
+use Google\Service\Compute\SslCertificateAggregatedList;
+use Google\Service\Compute\SslCertificateList;
 /**
  * The "sslCertificates" collection of methods.
  * Typical usage is:

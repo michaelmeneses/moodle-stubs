@@ -23,6 +23,13 @@
  */
 namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource;
 
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ListPeeringsResponse;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Operation;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Peering;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Policy;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\SetIamPolicyRequest;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\TestIamPermissionsRequest;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\TestIamPermissionsResponse;
 /**
  * The "peerings" collection of methods.
  * Typical usage is:

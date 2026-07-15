@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CloudSupport\Resource;
 
+use Google\Service\CloudSupport\CloseCaseRequest;
+use Google\Service\CloudSupport\CloudsupportCase;
+use Google\Service\CloudSupport\EscalateCaseRequest;
+use Google\Service\CloudSupport\ListCasesResponse;
+use Google\Service\CloudSupport\SearchCasesResponse;
 /**
  * The "cases" collection of methods.
  * Typical usage is:

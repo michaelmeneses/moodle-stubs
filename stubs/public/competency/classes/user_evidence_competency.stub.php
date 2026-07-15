@@ -32,6 +32,8 @@
  */
 namespace core_competency;
 
+use stdClass;
+use lang_string;
 /**
  * User evidence competency persistent class.
  *

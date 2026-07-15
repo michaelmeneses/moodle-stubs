@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudMemorystoreforMemcached\Resource;
 
+use Google\Service\CloudMemorystoreforMemcached\ListLocationsResponse;
+use Google\Service\CloudMemorystoreforMemcached\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

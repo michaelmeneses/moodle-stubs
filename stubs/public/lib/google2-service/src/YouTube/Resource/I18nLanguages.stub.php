@@ -23,6 +23,7 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\I18nLanguageListResponse;
 /**
  * The "i18nLanguages" collection of methods.
  * Typical usage is:

@@ -8,6 +8,7 @@
  */
 namespace Aws\S3\S3Transfer\Utils;
 
+use Aws\S3\S3Transfer\Progress\AbstractTransferListener;
 abstract class AbstractDownloadHandler extends AbstractTransferListener
 {
     /**

@@ -16,6 +16,10 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\Logger;
+use Psr\Log\LogLevel;
+use Monolog\LogRecord;
 /**
  * Used for testing purposes.
  *

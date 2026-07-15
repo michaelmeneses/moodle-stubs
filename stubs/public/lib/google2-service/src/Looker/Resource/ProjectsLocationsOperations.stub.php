@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Looker\Resource;
 
+use Google\Service\Looker\CancelOperationRequest;
+use Google\Service\Looker\ListOperationsResponse;
+use Google\Service\Looker\LookerEmpty;
+use Google\Service\Looker\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

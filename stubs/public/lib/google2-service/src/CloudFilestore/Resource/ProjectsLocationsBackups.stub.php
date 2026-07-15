@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudFilestore\Resource;
 
+use Google\Service\CloudFilestore\Backup;
+use Google\Service\CloudFilestore\ListBackupsResponse;
+use Google\Service\CloudFilestore\Operation;
 /**
  * The "backups" collection of methods.
  * Typical usage is:

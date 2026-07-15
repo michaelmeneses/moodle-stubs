@@ -23,6 +23,7 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\I18nRegionListResponse;
 /**
  * The "i18nRegions" collection of methods.
  * Typical usage is:

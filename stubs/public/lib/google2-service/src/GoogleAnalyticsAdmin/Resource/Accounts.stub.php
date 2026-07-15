@@ -23,6 +23,16 @@
  */
 namespace Google\Service\GoogleAnalyticsAdmin\Resource;
 
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaDataSharingSettings;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListAccountsResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaProvisionAccountTicketResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaRunAccessReportRequest;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaRunAccessReportResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

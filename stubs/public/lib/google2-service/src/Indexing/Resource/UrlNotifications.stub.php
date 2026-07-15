@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Indexing\Resource;
 
+use Google\Service\Indexing\PublishUrlNotificationResponse;
+use Google\Service\Indexing\UrlNotification;
+use Google\Service\Indexing\UrlNotificationMetadata;
 /**
  * The "urlNotifications" collection of methods.
  * Typical usage is:

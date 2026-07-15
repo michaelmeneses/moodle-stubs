@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1LabelImageRequest;
+use Google\Service\DataLabeling\GoogleLongrunningOperation;
 /**
  * The "image" collection of methods.
  * Typical usage is:

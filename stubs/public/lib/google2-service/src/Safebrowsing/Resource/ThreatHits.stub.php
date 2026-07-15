@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Safebrowsing\Resource;
 
+use Google\Service\Safebrowsing\GoogleProtobufEmpty;
+use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatHit;
 /**
  * The "threatHits" collection of methods.
  * Typical usage is:

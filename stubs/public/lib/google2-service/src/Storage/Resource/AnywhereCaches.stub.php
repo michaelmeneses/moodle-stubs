@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Storage\Resource;
 
+use Google\Service\Storage\AnywhereCache;
+use Google\Service\Storage\AnywhereCaches as AnywhereCachesModel;
+use Google\Service\Storage\GoogleLongrunningOperation;
 /**
  * The "anywhereCaches" collection of methods.
  * Typical usage is:

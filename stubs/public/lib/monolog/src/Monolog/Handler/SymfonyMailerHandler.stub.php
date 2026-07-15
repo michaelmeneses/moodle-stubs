@@ -16,6 +16,15 @@
  */
 namespace Monolog\Handler;
 
+use Closure;
+use Monolog\Level;
+use Monolog\LogRecord;
+use Monolog\Utils;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\LineFormatter;
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Mailer\Transport\TransportInterface;
+use Symfony\Component\Mime\Email;
 /**
  * SymfonyMailerHandler uses Symfony's Mailer component to send the emails
  *

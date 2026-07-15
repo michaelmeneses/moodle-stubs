@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\Seriesmembership as SeriesmembershipModel;
 /**
  * The "membership" collection of methods.
  * Typical usage is:

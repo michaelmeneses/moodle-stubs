@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListNasTrialDetailsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1NasTrialDetail;
 /**
  * The "nasTrialDetails" collection of methods.
  * Typical usage is:

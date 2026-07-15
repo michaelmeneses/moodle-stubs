@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudObservability\Resource;
 
+use Google\Service\CloudObservability\Scope;
 /**
  * The "scopes" collection of methods.
  * Typical usage is:

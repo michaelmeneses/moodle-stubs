@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1SetAddonEnablementRequest;
+use Google\Service\Apigee\GoogleLongrunningOperation;
 /**
  * The "addonsConfig" collection of methods.
  * Typical usage is:

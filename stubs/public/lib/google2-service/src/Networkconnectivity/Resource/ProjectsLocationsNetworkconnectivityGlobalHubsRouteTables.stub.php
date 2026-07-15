@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\ListRouteTablesResponse;
+use Google\Service\Networkconnectivity\RouteTable;
 /**
  * The "routeTables" collection of methods.
  * Typical usage is:

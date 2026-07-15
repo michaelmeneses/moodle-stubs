@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\InterceptDeployment;
+use Google\Service\NetworkSecurity\ListInterceptDeploymentsResponse;
+use Google\Service\NetworkSecurity\Operation;
 /**
  * The "interceptDeployments" collection of methods.
  * Typical usage is:

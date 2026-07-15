@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\CopyLogEntriesRequest;
+use Google\Service\Logging\ListLogEntriesRequest;
+use Google\Service\Logging\ListLogEntriesResponse;
+use Google\Service\Logging\Operation;
+use Google\Service\Logging\TailLogEntriesRequest;
+use Google\Service\Logging\TailLogEntriesResponse;
+use Google\Service\Logging\WriteLogEntriesRequest;
+use Google\Service\Logging\WriteLogEntriesResponse;
 /**
  * The "entries" collection of methods.
  * Typical usage is:

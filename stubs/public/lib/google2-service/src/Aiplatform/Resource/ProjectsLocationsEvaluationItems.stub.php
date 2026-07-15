@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationItem;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEvaluationItemsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "evaluationItems" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\AuthHandler;
 
+use Exception;
+use GuzzleHttp\ClientInterface;
 class AuthHandlerFactory
 {
     /**

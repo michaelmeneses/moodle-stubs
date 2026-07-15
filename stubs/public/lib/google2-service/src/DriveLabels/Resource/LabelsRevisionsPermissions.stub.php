@@ -23,6 +23,12 @@
  */
 namespace Google\Service\DriveLabels\Resource;
 
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2BatchDeleteLabelPermissionsRequest;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2BatchUpdateLabelPermissionsRequest;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2BatchUpdateLabelPermissionsResponse;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelPermission;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelPermissionsResponse;
+use Google\Service\DriveLabels\GoogleProtobufEmpty;
 /**
  * The "permissions" collection of methods.
  * Typical usage is:

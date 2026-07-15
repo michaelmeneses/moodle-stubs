@@ -23,6 +23,7 @@
  */
 namespace Google\Service\HangoutsChat\Resource;
 
+use Google\Service\HangoutsChat\Message;
 /**
  * The "conversations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\FirebaseRules\Resource;
 
+use Google\Service\FirebaseRules\FirebaserulesEmpty;
+use Google\Service\FirebaseRules\GetReleaseExecutableResponse;
+use Google\Service\FirebaseRules\ListReleasesResponse;
+use Google\Service\FirebaseRules\Release;
+use Google\Service\FirebaseRules\UpdateReleaseRequest;
 /**
  * The "releases" collection of methods.
  * Typical usage is:

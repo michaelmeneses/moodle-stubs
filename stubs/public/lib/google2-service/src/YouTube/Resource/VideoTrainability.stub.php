@@ -23,6 +23,7 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\VideoTrainability as VideoTrainabilityModel;
 /**
  * The "videoTrainability" collection of methods.
  * Typical usage is:

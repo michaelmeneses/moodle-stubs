@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Document\Resource;
 
+use Google\Service\Document\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

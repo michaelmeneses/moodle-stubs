@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudDeploy\Resource;
 
+use Google\Service\CloudDeploy\ListTargetsResponse;
+use Google\Service\CloudDeploy\Operation;
+use Google\Service\CloudDeploy\Policy;
+use Google\Service\CloudDeploy\SetIamPolicyRequest;
+use Google\Service\CloudDeploy\Target;
+use Google\Service\CloudDeploy\TestIamPermissionsRequest;
+use Google\Service\CloudDeploy\TestIamPermissionsResponse;
 /**
  * The "targets" collection of methods.
  * Typical usage is:

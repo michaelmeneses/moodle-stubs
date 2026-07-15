@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Cell;
 
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use Stringable;
 /**
  * @implements AddressRange<int>
  */

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityFeedbackResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1SecurityFeedback;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "securityFeedback" collection of methods.
  * Typical usage is:

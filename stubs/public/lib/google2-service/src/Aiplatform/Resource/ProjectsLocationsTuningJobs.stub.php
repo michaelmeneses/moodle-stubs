@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CancelTuningJobRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTuningJobsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RebaseTunedModelRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1TuningJob;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "tuningJobs" collection of methods.
  * Typical usage is:

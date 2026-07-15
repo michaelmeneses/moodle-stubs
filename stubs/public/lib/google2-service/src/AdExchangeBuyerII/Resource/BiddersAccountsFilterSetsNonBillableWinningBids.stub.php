@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\ListNonBillableWinningBidsResponse;
 /**
  * The "nonBillableWinningBids" collection of methods.
  * Typical usage is:

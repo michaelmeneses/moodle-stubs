@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Localservices\Resource;
 
+use Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse;
 /**
  * The "detailedLeadReports" collection of methods.
  * Typical usage is:

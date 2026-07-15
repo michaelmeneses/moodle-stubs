@@ -23,6 +23,17 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\AddAddressGroupItemsRequest;
+use Google\Service\NetworkSecurity\AddressGroup;
+use Google\Service\NetworkSecurity\CloneAddressGroupItemsRequest;
+use Google\Service\NetworkSecurity\GoogleIamV1Policy;
+use Google\Service\NetworkSecurity\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\NetworkSecurity\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\NetworkSecurity\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\NetworkSecurity\ListAddressGroupReferencesResponse;
+use Google\Service\NetworkSecurity\ListAddressGroupsResponse;
+use Google\Service\NetworkSecurity\Operation;
+use Google\Service\NetworkSecurity\RemoveAddressGroupItemsRequest;
 /**
  * The "addressGroups" collection of methods.
  * Typical usage is:

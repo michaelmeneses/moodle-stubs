@@ -23,6 +23,19 @@
  */
 namespace Google\Service\CloudRetail\Resource;
 
+use Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig;
+use Google\Service\CloudRetail\GoogleCloudRetailV2Catalog;
+use Google\Service\CloudRetail\GoogleCloudRetailV2CompleteQueryResponse;
+use Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig;
+use Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchCustomizationConfig;
+use Google\Service\CloudRetail\GoogleCloudRetailV2ExportAnalyticsMetricsRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2GenerativeQuestionConfig;
+use Google\Service\CloudRetail\GoogleCloudRetailV2GenerativeQuestionsFeatureConfig;
+use Google\Service\CloudRetail\GoogleCloudRetailV2GetDefaultBranchResponse;
+use Google\Service\CloudRetail\GoogleCloudRetailV2ListCatalogsResponse;
+use Google\Service\CloudRetail\GoogleCloudRetailV2SetDefaultBranchRequest;
+use Google\Service\CloudRetail\GoogleLongrunningOperation;
+use Google\Service\CloudRetail\GoogleProtobufEmpty;
 /**
  * The "catalogs" collection of methods.
  * Typical usage is:

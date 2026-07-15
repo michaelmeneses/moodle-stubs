@@ -23,6 +23,12 @@
  */
 namespace Google\Service\SecureSourceManager\Resource;
 
+use Google\Service\SecureSourceManager\BatchCreatePullRequestCommentsRequest;
+use Google\Service\SecureSourceManager\ListPullRequestCommentsResponse;
+use Google\Service\SecureSourceManager\Operation;
+use Google\Service\SecureSourceManager\PullRequestComment;
+use Google\Service\SecureSourceManager\ResolvePullRequestCommentsRequest;
+use Google\Service\SecureSourceManager\UnresolvePullRequestCommentsRequest;
 /**
  * The "pullRequestComments" collection of methods.
  * Typical usage is:

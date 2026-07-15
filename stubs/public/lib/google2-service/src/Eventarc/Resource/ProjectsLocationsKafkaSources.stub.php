@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Eventarc\Resource;
 
+use Google\Service\Eventarc\Policy;
+use Google\Service\Eventarc\SetIamPolicyRequest;
+use Google\Service\Eventarc\TestIamPermissionsRequest;
+use Google\Service\Eventarc\TestIamPermissionsResponse;
 /**
  * The "kafkaSources" collection of methods.
  * Typical usage is:

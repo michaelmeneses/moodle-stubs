@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Drive\Resource;
 
+use Google\Service\Drive\Permission;
+use Google\Service\Drive\PermissionList;
 /**
  * The "permissions" collection of methods.
  * Typical usage is:

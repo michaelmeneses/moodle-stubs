@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Iam\Resource;
 
+use Google\Service\Iam\GoogleIamV2ListPoliciesResponse;
+use Google\Service\Iam\GoogleIamV2Policy;
+use Google\Service\Iam\GoogleLongrunningOperation;
 /**
  * The "policies" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CertificateManager\Resource;
 
+use Google\Service\CertificateManager\CertificateIssuanceConfig;
+use Google\Service\CertificateManager\ListCertificateIssuanceConfigsResponse;
+use Google\Service\CertificateManager\Operation;
 /**
  * The "certificateIssuanceConfigs" collection of methods.
  * Typical usage is:

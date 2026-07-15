@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Merchant\Resource;
 
+use Google\Service\Merchant\ListMerchantReviewsResponse;
+use Google\Service\Merchant\MerchantReview;
+use Google\Service\Merchant\MerchantapiEmpty;
 /**
  * The "merchantReviews" collection of methods.
  * Typical usage is:

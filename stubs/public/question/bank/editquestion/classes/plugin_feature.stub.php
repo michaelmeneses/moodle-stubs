@@ -30,6 +30,9 @@
  */
 namespace qbank_editquestion;
 
+use core\context;
+use core_question\local\bank\view;
+use qbank_editquestion\output\add_new_question;
 /**
  * Class columns is the entrypoint for the columns.
  *

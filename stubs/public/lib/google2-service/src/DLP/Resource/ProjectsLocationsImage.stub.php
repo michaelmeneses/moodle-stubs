@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2RedactImageRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2RedactImageResponse;
 /**
  * The "image" collection of methods.
  * Typical usage is:

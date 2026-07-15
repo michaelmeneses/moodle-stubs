@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\ClientUserInvitation;
+use Google\Service\AdExchangeBuyerII\ListClientUserInvitationsResponse;
 /**
  * The "invitations" collection of methods.
  * Typical usage is:

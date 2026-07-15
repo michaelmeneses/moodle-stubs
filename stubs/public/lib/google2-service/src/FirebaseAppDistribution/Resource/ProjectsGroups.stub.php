@@ -23,6 +23,11 @@
  */
 namespace Google\Service\FirebaseAppDistribution\Resource;
 
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchJoinGroupRequest;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchLeaveGroupRequest;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1Group;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ListGroupsResponse;
+use Google\Service\FirebaseAppDistribution\GoogleProtobufEmpty;
 /**
  * The "groups" collection of methods.
  * Typical usage is:

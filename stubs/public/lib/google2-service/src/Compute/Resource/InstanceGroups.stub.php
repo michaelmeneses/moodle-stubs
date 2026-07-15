@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InstanceGroup;
+use Google\Service\Compute\InstanceGroupAggregatedList;
+use Google\Service\Compute\InstanceGroupList;
+use Google\Service\Compute\InstanceGroupsAddInstancesRequest;
+use Google\Service\Compute\InstanceGroupsListInstances;
+use Google\Service\Compute\InstanceGroupsListInstancesRequest;
+use Google\Service\Compute\InstanceGroupsRemoveInstancesRequest;
+use Google\Service\Compute\InstanceGroupsSetNamedPortsRequest;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "instanceGroups" collection of methods.
  * Typical usage is:

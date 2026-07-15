@@ -23,6 +23,10 @@
  */
 namespace Google\Service\SiteVerification\Resource;
 
+use Google\Service\SiteVerification\SiteVerificationWebResourceGettokenRequest;
+use Google\Service\SiteVerification\SiteVerificationWebResourceGettokenResponse;
+use Google\Service\SiteVerification\SiteVerificationWebResourceListResponse;
+use Google\Service\SiteVerification\SiteVerificationWebResourceResource;
 /**
  * The "webResource" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudIdentity\Resource;
 
+use Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ClientState;
+use Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ListClientStatesResponse;
+use Google\Service\CloudIdentity\Operation;
 /**
  * The "clientStates" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AppHub\Resource;
 
+use Google\Service\AppHub\ListServiceProjectAttachmentsResponse;
+use Google\Service\AppHub\Operation;
+use Google\Service\AppHub\ServiceProjectAttachment;
 /**
  * The "serviceProjectAttachments" collection of methods.
  * Typical usage is:

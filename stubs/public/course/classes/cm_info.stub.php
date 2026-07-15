@@ -22,6 +22,21 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course;
 
+use ArrayIterator;
+use core\exception\coding_exception;
+use IteratorAggregate;
+use stdClass;
+use Traversable;
+use core\url;
+use core\output\core_renderer;
+use core\output\renderer_base;
+use core\lang_string;
+use section_info;
+use core\context\module as context_module;
+use core\context\course as context_course;
+use core_courseformat\output\activitybadge;
+use core\component;
+use core\output\html_writer;
 /**
  * Data about a single module on a course.
  *

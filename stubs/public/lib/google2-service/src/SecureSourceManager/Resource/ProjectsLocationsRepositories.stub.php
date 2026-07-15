@@ -23,6 +23,15 @@
  */
 namespace Google\Service\SecureSourceManager\Resource;
 
+use Google\Service\SecureSourceManager\FetchBlobResponse;
+use Google\Service\SecureSourceManager\FetchTreeResponse;
+use Google\Service\SecureSourceManager\ListRepositoriesResponse;
+use Google\Service\SecureSourceManager\Operation;
+use Google\Service\SecureSourceManager\Policy;
+use Google\Service\SecureSourceManager\Repository;
+use Google\Service\SecureSourceManager\SetIamPolicyRequest;
+use Google\Service\SecureSourceManager\TestIamPermissionsRequest;
+use Google\Service\SecureSourceManager\TestIamPermissionsResponse;
 /**
  * The "repositories" collection of methods.
  * Typical usage is:

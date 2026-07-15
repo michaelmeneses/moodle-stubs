@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\AchievementIncrementResponse;
+use Google\Service\Games\AchievementRevealResponse;
+use Google\Service\Games\AchievementSetStepsAtLeastResponse;
+use Google\Service\Games\AchievementUnlockResponse;
+use Google\Service\Games\AchievementUpdateMultipleRequest;
+use Google\Service\Games\AchievementUpdateMultipleResponse;
+use Google\Service\Games\PlayerAchievementListResponse;
 /**
  * The "achievements" collection of methods.
  * Typical usage is:

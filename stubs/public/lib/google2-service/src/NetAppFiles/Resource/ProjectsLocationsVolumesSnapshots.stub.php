@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\ListSnapshotsResponse;
+use Google\Service\NetAppFiles\Operation;
+use Google\Service\NetAppFiles\Snapshot;
 /**
  * The "snapshots" collection of methods.
  * Typical usage is:

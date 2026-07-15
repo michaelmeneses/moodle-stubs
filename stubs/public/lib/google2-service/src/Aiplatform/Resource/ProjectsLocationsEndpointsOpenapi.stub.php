@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleApiHttpBody;
 /**
  * The "openapi" collection of methods.
  * Typical usage is:

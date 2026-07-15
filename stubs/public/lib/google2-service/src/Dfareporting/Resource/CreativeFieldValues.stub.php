@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\CreativeFieldValue;
+use Google\Service\Dfareporting\CreativeFieldValuesListResponse;
 /**
  * The "creativeFieldValues" collection of methods.
  * Typical usage is:

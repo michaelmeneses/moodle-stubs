@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_grades\output;
 
+use moodle_url;
+use html_writer;
 /**
  * Renderable class for the action bar elements in the gradebook setup pages.
  *

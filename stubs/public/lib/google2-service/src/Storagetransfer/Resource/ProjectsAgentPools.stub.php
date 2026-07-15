@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Storagetransfer\Resource;
 
+use Google\Service\Storagetransfer\AgentPool;
+use Google\Service\Storagetransfer\ListAgentPoolsResponse;
+use Google\Service\Storagetransfer\StoragetransferEmpty;
 /**
  * The "agentPools" collection of methods.
  * Typical usage is:

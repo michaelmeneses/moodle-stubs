@@ -23,6 +23,17 @@
  */
 namespace Google\Service\CloudRetail\Resource;
 
+use Google\Service\CloudRetail\GoogleCloudRetailV2AddFulfillmentPlacesRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2AddLocalInventoriesRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2ImportProductsRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2ListProductsResponse;
+use Google\Service\CloudRetail\GoogleCloudRetailV2Product;
+use Google\Service\CloudRetail\GoogleCloudRetailV2PurgeProductsRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2RemoveFulfillmentPlacesRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2RemoveLocalInventoriesRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2SetInventoryRequest;
+use Google\Service\CloudRetail\GoogleLongrunningOperation;
+use Google\Service\CloudRetail\GoogleProtobufEmpty;
 /**
  * The "products" collection of methods.
  * Typical usage is:

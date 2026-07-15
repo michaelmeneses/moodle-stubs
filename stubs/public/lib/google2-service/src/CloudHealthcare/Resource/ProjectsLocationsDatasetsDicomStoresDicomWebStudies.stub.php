@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\Operation;
+use Google\Service\CloudHealthcare\SetBlobStorageSettingsRequest;
+use Google\Service\CloudHealthcare\StudyMetrics;
 /**
  * The "studies" collection of methods.
  * Typical usage is:

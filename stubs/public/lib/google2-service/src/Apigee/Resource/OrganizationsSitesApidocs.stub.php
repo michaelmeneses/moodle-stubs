@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ApiDoc;
+use Google\Service\Apigee\GoogleCloudApigeeV1ApiDocDocumentation;
+use Google\Service\Apigee\GoogleCloudApigeeV1ApiDocDocumentationResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1ApiDocResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1DeleteResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListApiDocsResponse;
 /**
  * The "apidocs" collection of methods.
  * Typical usage is:

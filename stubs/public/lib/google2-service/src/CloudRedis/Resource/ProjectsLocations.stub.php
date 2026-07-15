@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudRedis\Resource;
 
+use Google\Service\CloudRedis\ListLocationsResponse;
+use Google\Service\CloudRedis\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Datalineage\Resource;
 
+use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesRequest;
+use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesResponse;
+use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ProcessOpenLineageRunEventResponse;
+use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1SearchLinksRequest;
+use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1SearchLinksResponse;
+use Google\Service\Datalineage\ProcessOpenLineageRunEventRequestContent;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

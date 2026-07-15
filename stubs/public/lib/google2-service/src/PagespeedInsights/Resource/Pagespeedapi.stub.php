@@ -23,6 +23,7 @@
  */
 namespace Google\Service\PagespeedInsights\Resource;
 
+use Google\Service\PagespeedInsights\PagespeedApiPagespeedResponseV5;
 /**
  * The "pagespeedapi" collection of methods.
  * Typical usage is:

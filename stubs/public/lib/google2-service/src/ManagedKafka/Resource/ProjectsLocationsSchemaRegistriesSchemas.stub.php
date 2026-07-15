@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\HttpBody;
+use Google\Service\ManagedKafka\Schema;
 /**
  * The "schemas" collection of methods.
  * Typical usage is:

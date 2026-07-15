@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\GoogleLongrunningCancelOperationRequest;
+use Google\Service\CloudRun\RunEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,19 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadTemplateResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaImportTemplateRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaImportTemplateResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTemplatesResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSearchTemplatesResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaShareTemplateRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTemplate;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUnshareTemplateRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadTemplateRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadTemplateResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUseTemplateRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUseTemplateResponse;
+use Google\Service\Integrations\GoogleProtobufEmpty;
 /**
  * The "templates" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\AccountTicket;
+use Google\Service\Analytics\AccountTreeRequest;
+use Google\Service\Analytics\AccountTreeResponse;
 /**
  * The "provisioning" collection of methods.
  * Typical usage is:

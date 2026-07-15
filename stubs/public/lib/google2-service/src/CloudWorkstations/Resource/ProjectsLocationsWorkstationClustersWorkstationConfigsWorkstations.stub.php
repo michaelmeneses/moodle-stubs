@@ -23,6 +23,18 @@
  */
 namespace Google\Service\CloudWorkstations\Resource;
 
+use Google\Service\CloudWorkstations\GenerateAccessTokenRequest;
+use Google\Service\CloudWorkstations\GenerateAccessTokenResponse;
+use Google\Service\CloudWorkstations\ListUsableWorkstationsResponse;
+use Google\Service\CloudWorkstations\ListWorkstationsResponse;
+use Google\Service\CloudWorkstations\Operation;
+use Google\Service\CloudWorkstations\Policy;
+use Google\Service\CloudWorkstations\SetIamPolicyRequest;
+use Google\Service\CloudWorkstations\StartWorkstationRequest;
+use Google\Service\CloudWorkstations\StopWorkstationRequest;
+use Google\Service\CloudWorkstations\TestIamPermissionsRequest;
+use Google\Service\CloudWorkstations\TestIamPermissionsResponse;
+use Google\Service\CloudWorkstations\Workstation;
 /**
  * The "workstations" collection of methods.
  * Typical usage is:

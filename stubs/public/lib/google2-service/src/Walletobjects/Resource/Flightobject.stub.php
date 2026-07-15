@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\AddMessageRequest;
+use Google\Service\Walletobjects\FlightObject as FlightObjectModel;
+use Google\Service\Walletobjects\FlightObjectAddMessageResponse;
+use Google\Service\Walletobjects\FlightObjectListResponse;
 /**
  * The "flightobject" collection of methods.
  * Typical usage is:

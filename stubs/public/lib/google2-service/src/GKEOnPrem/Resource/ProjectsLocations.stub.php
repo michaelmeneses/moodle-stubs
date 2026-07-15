@@ -23,6 +23,8 @@
  */
 namespace Google\Service\GKEOnPrem\Resource;
 
+use Google\Service\GKEOnPrem\ListLocationsResponse;
+use Google\Service\GKEOnPrem\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

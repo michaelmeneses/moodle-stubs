@@ -23,6 +23,12 @@
  */
 namespace Google\Service\CloudScheduler\Resource;
 
+use Google\Service\CloudScheduler\CloudschedulerEmpty;
+use Google\Service\CloudScheduler\Job;
+use Google\Service\CloudScheduler\ListJobsResponse;
+use Google\Service\CloudScheduler\PauseJobRequest;
+use Google\Service\CloudScheduler\ResumeJobRequest;
+use Google\Service\CloudScheduler\RunJobRequest;
 /**
  * The "jobs" collection of methods.
  * Typical usage is:

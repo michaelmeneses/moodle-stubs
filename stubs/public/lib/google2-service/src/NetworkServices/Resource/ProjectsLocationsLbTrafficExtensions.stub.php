@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\LbTrafficExtension;
+use Google\Service\NetworkServices\ListLbTrafficExtensionsResponse;
+use Google\Service\NetworkServices\Operation;
 /**
  * The "lbTrafficExtensions" collection of methods.
  * Typical usage is:

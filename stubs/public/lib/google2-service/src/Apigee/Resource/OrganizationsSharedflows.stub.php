@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleApiHttpBody;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListSharedFlowsResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1MoveSharedFlowRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1SharedFlow;
+use Google\Service\Apigee\GoogleCloudApigeeV1SharedFlowRevision;
 /**
  * The "sharedflows" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Looker\Resource;
 
+use Google\Service\Looker\InstanceBackup;
+use Google\Service\Looker\ListInstanceBackupsResponse;
+use Google\Service\Looker\Operation;
 /**
  * The "backups" collection of methods.
  * Typical usage is:

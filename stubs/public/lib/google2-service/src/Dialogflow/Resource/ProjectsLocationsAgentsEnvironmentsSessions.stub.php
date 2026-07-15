@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DetectIntentRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DetectIntentResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillIntentRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillIntentResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3MatchIntentRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3MatchIntentResponse;
 /**
  * The "sessions" collection of methods.
  * Typical usage is:

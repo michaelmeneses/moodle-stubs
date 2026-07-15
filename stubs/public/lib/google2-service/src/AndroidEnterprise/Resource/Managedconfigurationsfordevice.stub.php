@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\ManagedConfiguration;
+use Google\Service\AndroidEnterprise\ManagedConfigurationsForDeviceListResponse;
 /**
  * The "managedconfigurationsfordevice" collection of methods.
  * Typical usage is:

@@ -23,6 +23,15 @@
  */
 namespace Google\Service\CloudDeploy\Resource;
 
+use Google\Service\CloudDeploy\DeliveryPipeline;
+use Google\Service\CloudDeploy\ListDeliveryPipelinesResponse;
+use Google\Service\CloudDeploy\Operation;
+use Google\Service\CloudDeploy\Policy;
+use Google\Service\CloudDeploy\RollbackTargetRequest;
+use Google\Service\CloudDeploy\RollbackTargetResponse;
+use Google\Service\CloudDeploy\SetIamPolicyRequest;
+use Google\Service\CloudDeploy\TestIamPermissionsRequest;
+use Google\Service\CloudDeploy\TestIamPermissionsResponse;
 /**
  * The "deliveryPipelines" collection of methods.
  * Typical usage is:

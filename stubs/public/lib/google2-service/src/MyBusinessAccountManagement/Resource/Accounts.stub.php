@@ -23,6 +23,8 @@
  */
 namespace Google\Service\MyBusinessAccountManagement\Resource;
 
+use Google\Service\MyBusinessAccountManagement\Account;
+use Google\Service\MyBusinessAccountManagement\ListAccountsResponse;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

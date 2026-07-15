@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\ListThreadsResponse;
+use Google\Service\Gmail\ModifyThreadRequest;
+use Google\Service\Gmail\Thread;
 /**
  * The "threads" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Drive\Resource;
 
+use Google\Service\Drive\Approval;
+use Google\Service\Drive\ApprovalList;
 /**
  * The "approvals" collection of methods.
  * Typical usage is:

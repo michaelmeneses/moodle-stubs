@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Workflows\Resource;
 
+use Google\Service\Workflows\ListWorkflowRevisionsResponse;
+use Google\Service\Workflows\ListWorkflowsResponse;
+use Google\Service\Workflows\Operation;
+use Google\Service\Workflows\Workflow;
 /**
  * The "workflows" collection of methods.
  * Typical usage is:

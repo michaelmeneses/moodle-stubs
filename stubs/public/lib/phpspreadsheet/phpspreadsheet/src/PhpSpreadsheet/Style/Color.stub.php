@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style;
 
+use PhpOffice\PhpSpreadsheet\Theme;
 class Color extends Supervisor
 {
     const NAMED_COLORS = ['Black', 'White', 'Red', 'Green', 'Blue', 'Yellow', 'Magenta', 'Cyan'];

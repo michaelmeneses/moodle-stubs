@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SaaSServiceManagement\Resource;
 
+use Google\Service\SaaSServiceManagement\ListRolloutsResponse;
+use Google\Service\SaaSServiceManagement\Rollout;
+use Google\Service\SaaSServiceManagement\SaasservicemgmtEmpty;
 /**
  * The "rollouts" collection of methods.
  * Typical usage is:

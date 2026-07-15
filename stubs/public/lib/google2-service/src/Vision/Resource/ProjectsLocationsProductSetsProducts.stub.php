@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Vision\Resource;
 
+use Google\Service\Vision\ListProductsInProductSetResponse;
 /**
  * The "products" collection of methods.
  * Typical usage is:

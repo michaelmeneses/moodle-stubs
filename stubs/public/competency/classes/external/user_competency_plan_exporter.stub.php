@@ -29,6 +29,9 @@
  */
 namespace core_competency\external;
 
+use context_system;
+use renderer_base;
+use stdClass;
 /**
  * Class for exporting plan competency data.
  *

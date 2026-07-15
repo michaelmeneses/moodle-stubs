@@ -23,6 +23,17 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\LiaOmnichannelExperience;
+use Google\Service\ShoppingContent\LiaSettings as LiaSettingsModel;
+use Google\Service\ShoppingContent\LiasettingsCustomBatchRequest;
+use Google\Service\ShoppingContent\LiasettingsCustomBatchResponse;
+use Google\Service\ShoppingContent\LiasettingsGetAccessibleGmbAccountsResponse;
+use Google\Service\ShoppingContent\LiasettingsListPosDataProvidersResponse;
+use Google\Service\ShoppingContent\LiasettingsListResponse;
+use Google\Service\ShoppingContent\LiasettingsRequestGmbAccessResponse;
+use Google\Service\ShoppingContent\LiasettingsRequestInventoryVerificationResponse;
+use Google\Service\ShoppingContent\LiasettingsSetInventoryVerificationContactResponse;
+use Google\Service\ShoppingContent\LiasettingsSetPosDataProviderResponse;
 /**
  * The "liasettings" collection of methods.
  * Typical usage is:

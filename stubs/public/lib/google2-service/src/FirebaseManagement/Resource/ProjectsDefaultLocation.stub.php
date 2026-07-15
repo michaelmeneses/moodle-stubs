@@ -23,6 +23,8 @@
  */
 namespace Google\Service\FirebaseManagement\Resource;
 
+use Google\Service\FirebaseManagement\FinalizeDefaultLocationRequest;
+use Google\Service\FirebaseManagement\Operation;
 /**
  * The "defaultLocation" collection of methods.
  * Typical usage is:

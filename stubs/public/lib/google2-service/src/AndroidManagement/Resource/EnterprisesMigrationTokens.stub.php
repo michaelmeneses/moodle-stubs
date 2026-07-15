@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidManagement\Resource;
 
+use Google\Service\AndroidManagement\ListMigrationTokensResponse;
+use Google\Service\AndroidManagement\MigrationToken;
 /**
  * The "migrationTokens" collection of methods.
  * Typical usage is:

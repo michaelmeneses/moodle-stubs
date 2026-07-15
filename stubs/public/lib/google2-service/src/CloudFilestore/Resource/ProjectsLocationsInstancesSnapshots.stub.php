@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudFilestore\Resource;
 
+use Google\Service\CloudFilestore\ListSnapshotsResponse;
+use Google\Service\CloudFilestore\Operation;
+use Google\Service\CloudFilestore\Snapshot;
 /**
  * The "snapshots" collection of methods.
  * Typical usage is:

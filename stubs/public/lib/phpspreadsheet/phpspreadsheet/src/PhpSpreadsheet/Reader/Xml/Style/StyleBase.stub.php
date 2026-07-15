@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xml\Style;
 
+use SimpleXMLElement;
 abstract class StyleBase
 {
     /** @param string[] $styleList */

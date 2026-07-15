@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1KeyValueEntry;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListKeyValueEntriesResponse;
 /**
  * The "entries" collection of methods.
  * Typical usage is:

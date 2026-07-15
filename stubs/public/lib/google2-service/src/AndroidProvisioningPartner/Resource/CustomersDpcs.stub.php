@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AndroidProvisioningPartner\Resource;
 
+use Google\Service\AndroidProvisioningPartner\CustomerListDpcsResponse;
 /**
  * The "dpcs" collection of methods.
  * Typical usage is:

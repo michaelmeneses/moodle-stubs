@@ -23,6 +23,26 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InstanceGroupManager;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RegionInstanceGroupManagerDeleteInstanceConfigReq;
+use Google\Service\Compute\RegionInstanceGroupManagerList;
+use Google\Service\Compute\RegionInstanceGroupManagerPatchInstanceConfigReq;
+use Google\Service\Compute\RegionInstanceGroupManagerUpdateInstanceConfigReq;
+use Google\Service\Compute\RegionInstanceGroupManagersAbandonInstancesRequest;
+use Google\Service\Compute\RegionInstanceGroupManagersApplyUpdatesRequest;
+use Google\Service\Compute\RegionInstanceGroupManagersCreateInstancesRequest;
+use Google\Service\Compute\RegionInstanceGroupManagersDeleteInstancesRequest;
+use Google\Service\Compute\RegionInstanceGroupManagersListErrorsResponse;
+use Google\Service\Compute\RegionInstanceGroupManagersListInstanceConfigsResp;
+use Google\Service\Compute\RegionInstanceGroupManagersListInstancesResponse;
+use Google\Service\Compute\RegionInstanceGroupManagersRecreateRequest;
+use Google\Service\Compute\RegionInstanceGroupManagersResumeInstancesRequest;
+use Google\Service\Compute\RegionInstanceGroupManagersSetTargetPoolsRequest;
+use Google\Service\Compute\RegionInstanceGroupManagersSetTemplateRequest;
+use Google\Service\Compute\RegionInstanceGroupManagersStartInstancesRequest;
+use Google\Service\Compute\RegionInstanceGroupManagersStopInstancesRequest;
+use Google\Service\Compute\RegionInstanceGroupManagersSuspendInstancesRequest;
 /**
  * The "regionInstanceGroupManagers" collection of methods.
  * Typical usage is:

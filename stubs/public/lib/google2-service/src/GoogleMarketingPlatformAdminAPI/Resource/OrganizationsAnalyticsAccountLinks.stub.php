@@ -23,6 +23,11 @@
  */
 namespace Google\Service\GoogleMarketingPlatformAdminAPI\Resource;
 
+use Google\Service\GoogleMarketingPlatformAdminAPI\AnalyticsAccountLink;
+use Google\Service\GoogleMarketingPlatformAdminAPI\ListAnalyticsAccountLinksResponse;
+use Google\Service\GoogleMarketingPlatformAdminAPI\MarketingplatformadminEmpty;
+use Google\Service\GoogleMarketingPlatformAdminAPI\SetPropertyServiceLevelRequest;
+use Google\Service\GoogleMarketingPlatformAdminAPI\SetPropertyServiceLevelResponse;
 /**
  * The "analyticsAccountLinks" collection of methods.
  * Typical usage is:

@@ -30,6 +30,12 @@
  */
 namespace core_block\privacy;
 
+use context;
+use context_block;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
 /**
  * Data provider class.
  *

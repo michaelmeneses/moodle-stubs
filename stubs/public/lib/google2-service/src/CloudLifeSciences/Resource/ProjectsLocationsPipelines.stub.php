@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudLifeSciences\Resource;
 
+use Google\Service\CloudLifeSciences\Operation;
+use Google\Service\CloudLifeSciences\RunPipelineRequest;
 /**
  * The "pipelines" collection of methods.
  * Typical usage is:

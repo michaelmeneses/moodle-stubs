@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Vision\Resource;
 
+use Google\Service\Vision\AddProductToProductSetRequest;
+use Google\Service\Vision\ImportProductSetsRequest;
+use Google\Service\Vision\ListProductSetsResponse;
+use Google\Service\Vision\Operation;
+use Google\Service\Vision\ProductSet;
+use Google\Service\Vision\RemoveProductFromProductSetRequest;
+use Google\Service\Vision\VisionEmpty;
 /**
  * The "productSets" collection of methods.
  * Typical usage is:

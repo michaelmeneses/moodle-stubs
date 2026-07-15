@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListSchedulesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1PauseScheduleRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ResumeScheduleRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Schedule;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "schedules" collection of methods.
  * Typical usage is:

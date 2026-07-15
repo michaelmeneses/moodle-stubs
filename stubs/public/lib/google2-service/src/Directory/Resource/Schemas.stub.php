@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\Schema;
+use Google\Service\Directory\Schemas as SchemasModel;
 /**
  * The "schemas" collection of methods.
  * Typical usage is:

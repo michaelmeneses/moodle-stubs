@@ -23,6 +23,7 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\GoogleCloudApihubV1Definition;
 /**
  * The "definitions" collection of methods.
  * Typical usage is:

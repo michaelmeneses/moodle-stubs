@@ -23,6 +23,10 @@
  */
 namespace Google\Service\APIManagement\Resource;
 
+use Google\Service\APIManagement\ApiObservation;
+use Google\Service\APIManagement\BatchEditTagsApiObservationsRequest;
+use Google\Service\APIManagement\BatchEditTagsApiObservationsResponse;
+use Google\Service\APIManagement\ListApiObservationsResponse;
 /**
  * The "apiObservations" collection of methods.
  * Typical usage is:

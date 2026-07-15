@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Translate\Resource;
 
+use Google\Service\Translate\AdaptiveMtDataset;
+use Google\Service\Translate\ImportAdaptiveMtFileRequest;
+use Google\Service\Translate\ImportAdaptiveMtFileResponse;
+use Google\Service\Translate\ListAdaptiveMtDatasetsResponse;
+use Google\Service\Translate\TranslateEmpty;
 /**
  * The "adaptiveMtDatasets" collection of methods.
  * Typical usage is:

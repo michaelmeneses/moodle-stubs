@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Config\Resource;
 
+use Google\Service\Config\ListTerraformVersionsResponse;
+use Google\Service\Config\TerraformVersion;
 /**
  * The "terraformVersions" collection of methods.
  * Typical usage is:

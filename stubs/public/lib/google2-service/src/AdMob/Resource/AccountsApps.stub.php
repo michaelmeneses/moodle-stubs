@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AdMob\Resource;
 
+use Google\Service\AdMob\ListAppsResponse;
 /**
  * The "apps" collection of methods.
  * Typical usage is:

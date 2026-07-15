@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Commitment;
+use Google\Service\Compute\CommitmentAggregatedList;
+use Google\Service\Compute\CommitmentList;
+use Google\Service\Compute\Operation;
 /**
  * The "regionCommitments" collection of methods.
  * Typical usage is:

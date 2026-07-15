@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DataCatalog\Resource;
 
+use Google\Service\DataCatalog\DatacatalogEmpty;
+use Google\Service\DataCatalog\GetIamPolicyRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1TagTemplate;
+use Google\Service\DataCatalog\Policy;
+use Google\Service\DataCatalog\SetIamPolicyRequest;
+use Google\Service\DataCatalog\TestIamPermissionsRequest;
+use Google\Service\DataCatalog\TestIamPermissionsResponse;
 /**
  * The "tagTemplates" collection of methods.
  * Typical usage is:

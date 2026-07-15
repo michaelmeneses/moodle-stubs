@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Vault\Resource;
 
+use Google\Service\Vault\Export;
+use Google\Service\Vault\ListExportsResponse;
+use Google\Service\Vault\VaultEmpty;
 /**
  * The "exports" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\CancelOperationRequest;
+use Google\Service\NetAppFiles\GoogleProtobufEmpty;
+use Google\Service\NetAppFiles\ListOperationsResponse;
+use Google\Service\NetAppFiles\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

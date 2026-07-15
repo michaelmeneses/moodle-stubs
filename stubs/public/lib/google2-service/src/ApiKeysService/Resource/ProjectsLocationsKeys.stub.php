@@ -23,6 +23,11 @@
  */
 namespace Google\Service\ApiKeysService\Resource;
 
+use Google\Service\ApiKeysService\Operation;
+use Google\Service\ApiKeysService\V2GetKeyStringResponse;
+use Google\Service\ApiKeysService\V2Key;
+use Google\Service\ApiKeysService\V2ListKeysResponse;
+use Google\Service\ApiKeysService\V2UndeleteKeyRequest;
 /**
  * The "keys" collection of methods.
  * Typical usage is:

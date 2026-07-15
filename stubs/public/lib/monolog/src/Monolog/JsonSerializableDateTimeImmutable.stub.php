@@ -16,6 +16,7 @@
  */
 namespace Monolog;
 
+use DateTimeZone;
 /**
  * Overrides default json encoding of date time objects
  *

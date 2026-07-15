@@ -23,6 +23,9 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\CustomTemplate;
+use Google\Service\TagManager\ListTemplatesResponse;
+use Google\Service\TagManager\RevertTemplateResponse;
 /**
  * The "templates" collection of methods.
  * Typical usage is:

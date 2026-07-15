@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\DnsThreatDetector;
+use Google\Service\NetworkSecurity\ListDnsThreatDetectorsResponse;
+use Google\Service\NetworkSecurity\NetworksecurityEmpty;
 /**
  * The "dnsThreatDetectors" collection of methods.
  * Typical usage is:

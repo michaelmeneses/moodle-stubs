@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Firestore\Resource;
 
+use Google\Service\Firestore\FirestoreEmpty;
+use Google\Service\Firestore\GoogleFirestoreAdminV1Index;
+use Google\Service\Firestore\GoogleFirestoreAdminV1ListIndexesResponse;
+use Google\Service\Firestore\GoogleLongrunningOperation;
 /**
  * The "indexes" collection of methods.
  * Typical usage is:

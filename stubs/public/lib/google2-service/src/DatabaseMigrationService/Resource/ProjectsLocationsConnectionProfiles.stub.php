@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DatabaseMigrationService\Resource;
 
+use Google\Service\DatabaseMigrationService\ConnectionProfile;
+use Google\Service\DatabaseMigrationService\ListConnectionProfilesResponse;
+use Google\Service\DatabaseMigrationService\Operation;
+use Google\Service\DatabaseMigrationService\Policy;
+use Google\Service\DatabaseMigrationService\SetIamPolicyRequest;
+use Google\Service\DatabaseMigrationService\TestIamPermissionsRequest;
+use Google\Service\DatabaseMigrationService\TestIamPermissionsResponse;
 /**
  * The "connectionProfiles" collection of methods.
  * Typical usage is:

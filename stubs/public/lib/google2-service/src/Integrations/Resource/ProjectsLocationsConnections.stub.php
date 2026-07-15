@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaConnectionSchemaMetadata;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListConnectionsResponse;
 /**
  * The "connections" collection of methods.
  * Typical usage is:

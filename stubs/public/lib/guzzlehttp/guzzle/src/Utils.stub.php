@@ -8,6 +8,12 @@
  */
 namespace GuzzleHttp;
 
+use GuzzleHttp\Exception\InvalidArgumentException;
+use GuzzleHttp\Handler\CurlHandler;
+use GuzzleHttp\Handler\CurlMultiHandler;
+use GuzzleHttp\Handler\Proxy;
+use GuzzleHttp\Handler\StreamHandler;
+use Psr\Http\Message\UriInterface;
 final class Utils
 {
     /**

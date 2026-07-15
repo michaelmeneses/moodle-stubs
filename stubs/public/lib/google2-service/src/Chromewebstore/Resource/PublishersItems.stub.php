@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Chromewebstore\Resource;
 
+use Google\Service\Chromewebstore\CancelSubmissionRequest;
+use Google\Service\Chromewebstore\CancelSubmissionResponse;
+use Google\Service\Chromewebstore\FetchItemStatusResponse;
+use Google\Service\Chromewebstore\PublishItemRequest;
+use Google\Service\Chromewebstore\PublishItemResponse;
+use Google\Service\Chromewebstore\SetPublishedDeployPercentageRequest;
+use Google\Service\Chromewebstore\SetPublishedDeployPercentageResponse;
 /**
  * The "items" collection of methods.
  * Typical usage is:

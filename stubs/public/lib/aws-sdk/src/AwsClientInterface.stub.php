@@ -8,6 +8,8 @@
  */
 namespace Aws;
 
+use Psr\Http\Message\UriInterface;
+use GuzzleHttp\Promise\PromiseInterface;
 /**
  * Represents an AWS client.
  */

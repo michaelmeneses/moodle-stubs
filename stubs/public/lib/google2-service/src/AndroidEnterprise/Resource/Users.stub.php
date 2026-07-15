@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\AuthenticationToken;
+use Google\Service\AndroidEnterprise\ProductSet;
+use Google\Service\AndroidEnterprise\User;
+use Google\Service\AndroidEnterprise\UsersListResponse;
 /**
  * The "users" collection of methods.
  * Typical usage is:

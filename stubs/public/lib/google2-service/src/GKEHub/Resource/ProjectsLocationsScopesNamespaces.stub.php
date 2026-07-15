@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GKEHub\Resource;
 
+use Google\Service\GKEHub\GkehubNamespace;
+use Google\Service\GKEHub\ListScopeNamespacesResponse;
+use Google\Service\GKEHub\Operation;
 /**
  * The "namespaces" collection of methods.
  * Typical usage is:

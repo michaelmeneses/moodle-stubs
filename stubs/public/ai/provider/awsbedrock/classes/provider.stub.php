@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_awsbedrock;
 
+use Aws\BedrockRuntime\BedrockRuntimeClient;
+use core_ai\form\action_settings_form;
 /**
  * Class provider.
  *

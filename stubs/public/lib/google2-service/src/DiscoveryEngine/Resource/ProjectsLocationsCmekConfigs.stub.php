@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CmekConfig;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListCmekConfigsResponse;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "cmekConfigs" collection of methods.
  * Typical usage is:

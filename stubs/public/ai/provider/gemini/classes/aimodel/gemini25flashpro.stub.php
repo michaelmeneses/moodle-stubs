@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_gemini\aimodel;
 
+use core_ai\aimodel\base;
+use MoodleQuickForm;
 /**
  * Gemini 2.5 Flash Pro AI model.
  *

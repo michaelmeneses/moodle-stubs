@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\ActivateManualTriggerRequest;
+use Google\Service\DisplayVideo\DeactivateManualTriggerRequest;
+use Google\Service\DisplayVideo\ListManualTriggersResponse;
+use Google\Service\DisplayVideo\ManualTrigger;
 /**
  * The "manualTriggers" collection of methods.
  * Typical usage is:

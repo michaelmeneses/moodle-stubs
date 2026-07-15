@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\ListNpmPackagesResponse;
+use Google\Service\ArtifactRegistry\NpmPackage;
 /**
  * The "npmPackages" collection of methods.
  * Typical usage is:

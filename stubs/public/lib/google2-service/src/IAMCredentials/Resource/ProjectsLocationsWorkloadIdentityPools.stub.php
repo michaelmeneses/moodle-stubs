@@ -23,6 +23,7 @@
  */
 namespace Google\Service\IAMCredentials\Resource;
 
+use Google\Service\IAMCredentials\WorkloadIdentityPoolAllowedLocations;
 /**
  * The "workloadIdentityPools" collection of methods.
  * Typical usage is:

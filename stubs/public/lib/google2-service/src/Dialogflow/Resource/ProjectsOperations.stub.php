@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleLongrunningListOperationsResponse;
+use Google\Service\Dialogflow\GoogleLongrunningOperation;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

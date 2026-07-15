@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\MobileCarrier;
+use Google\Service\Dfareporting\MobileCarriersListResponse;
 /**
  * The "mobileCarriers" collection of methods.
  * Typical usage is:

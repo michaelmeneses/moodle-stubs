@@ -23,6 +23,9 @@
  */
 namespace Google\Service\RecaptchaEnterprise\Resource;
 
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentRequest;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentResponse;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1Assessment;
 /**
  * The "assessments" collection of methods.
  * Typical usage is:

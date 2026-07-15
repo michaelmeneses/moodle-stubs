@@ -23,6 +23,12 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\EncryptVolumesRequest;
+use Google\Service\NetAppFiles\KmsConfig;
+use Google\Service\NetAppFiles\ListKmsConfigsResponse;
+use Google\Service\NetAppFiles\Operation;
+use Google\Service\NetAppFiles\VerifyKmsConfigRequest;
+use Google\Service\NetAppFiles\VerifyKmsConfigResponse;
 /**
  * The "kmsConfigs" collection of methods.
  * Typical usage is:

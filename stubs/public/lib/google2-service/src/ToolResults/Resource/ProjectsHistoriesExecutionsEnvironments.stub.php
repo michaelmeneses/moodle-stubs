@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ToolResults\Resource;
 
+use Google\Service\ToolResults\Environment;
+use Google\Service\ToolResults\ListEnvironmentsResponse;
 /**
  * The "environments" collection of methods.
  * Typical usage is:

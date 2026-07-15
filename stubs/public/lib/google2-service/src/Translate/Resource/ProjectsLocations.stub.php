@@ -23,6 +23,22 @@
  */
 namespace Google\Service\Translate\Resource;
 
+use Google\Service\Translate\AdaptiveMtTranslateRequest;
+use Google\Service\Translate\AdaptiveMtTranslateResponse;
+use Google\Service\Translate\BatchTranslateDocumentRequest;
+use Google\Service\Translate\BatchTranslateTextRequest;
+use Google\Service\Translate\DetectLanguageRequest;
+use Google\Service\Translate\DetectLanguageResponse;
+use Google\Service\Translate\ListLocationsResponse;
+use Google\Service\Translate\Location;
+use Google\Service\Translate\Operation;
+use Google\Service\Translate\RomanizeTextRequest;
+use Google\Service\Translate\RomanizeTextResponse;
+use Google\Service\Translate\SupportedLanguages;
+use Google\Service\Translate\TranslateDocumentRequest;
+use Google\Service\Translate\TranslateDocumentResponse;
+use Google\Service\Translate\TranslateTextRequest;
+use Google\Service\Translate\TranslateTextResponse;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

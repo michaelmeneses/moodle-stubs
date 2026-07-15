@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Evaluation;
 /**
  * The "evaluations" collection of methods.
  * Typical usage is:

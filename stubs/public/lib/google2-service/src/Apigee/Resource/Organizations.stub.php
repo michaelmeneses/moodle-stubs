@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ControlPlaneAccess;
+use Google\Service\Apigee\GoogleCloudApigeeV1GetSyncAuthorizationRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1IngressConfig;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListOrganizationsResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1Organization;
+use Google\Service\Apigee\GoogleCloudApigeeV1OrganizationProjectMapping;
+use Google\Service\Apigee\GoogleCloudApigeeV1RuntimeConfig;
+use Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings;
+use Google\Service\Apigee\GoogleCloudApigeeV1SetAddonsRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization;
+use Google\Service\Apigee\GoogleLongrunningOperation;
 /**
  * The "organizations" collection of methods.
  * Typical usage is:

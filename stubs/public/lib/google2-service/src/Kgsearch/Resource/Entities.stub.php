@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Kgsearch\Resource;
 
+use Google\Service\Kgsearch\SearchResponse;
 /**
  * The "entities" collection of methods.
  * Typical usage is:

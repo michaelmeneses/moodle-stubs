@@ -23,6 +23,8 @@
  */
 namespace Google\Service\BusinessProfilePerformance\Resource;
 
+use Google\Service\BusinessProfilePerformance\FetchMultiDailyMetricsTimeSeriesResponse;
+use Google\Service\BusinessProfilePerformance\GetDailyMetricsTimeSeriesResponse;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

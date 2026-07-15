@@ -29,6 +29,10 @@
  */
 namespace tool_dataprivacy\output;
 
+use coding_exception;
+use html_writer;
+use moodle_exception;
+use plugin_renderer_base;
 /**
  * Renderer class for tool_dataprivacy.
  *

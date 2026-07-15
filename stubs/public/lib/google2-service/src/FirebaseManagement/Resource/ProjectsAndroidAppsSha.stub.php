@@ -23,6 +23,9 @@
  */
 namespace Google\Service\FirebaseManagement\Resource;
 
+use Google\Service\FirebaseManagement\FirebaseEmpty;
+use Google\Service\FirebaseManagement\ListShaCertificatesResponse;
+use Google\Service\FirebaseManagement\ShaCertificate;
 /**
  * The "sha" collection of methods.
  * Typical usage is:

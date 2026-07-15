@@ -23,6 +23,7 @@
  */
 namespace Google\Service\HangoutsChat\Resource;
 
+use Google\Service\HangoutsChat\ThreadReadState;
 /**
  * The "threads" collection of methods.
  * Typical usage is:

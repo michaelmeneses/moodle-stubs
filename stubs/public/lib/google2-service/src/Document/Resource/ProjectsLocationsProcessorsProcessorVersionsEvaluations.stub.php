@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Document\Resource;
 
+use Google\Service\Document\GoogleCloudDocumentaiV1Evaluation;
+use Google\Service\Document\GoogleCloudDocumentaiV1ListEvaluationsResponse;
 /**
  * The "evaluations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudRetail\Resource;
 
+use Google\Service\CloudRetail\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

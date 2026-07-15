@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Safebrowsing\Resource;
 
+use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse;
 /**
  * The "encodedUpdates" collection of methods.
  * Typical usage is:

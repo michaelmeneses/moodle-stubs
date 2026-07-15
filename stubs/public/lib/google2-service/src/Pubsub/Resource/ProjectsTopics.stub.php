@@ -23,6 +23,16 @@
  */
 namespace Google\Service\Pubsub\Resource;
 
+use Google\Service\Pubsub\ListTopicsResponse;
+use Google\Service\Pubsub\Policy;
+use Google\Service\Pubsub\PublishRequest;
+use Google\Service\Pubsub\PublishResponse;
+use Google\Service\Pubsub\PubsubEmpty;
+use Google\Service\Pubsub\SetIamPolicyRequest;
+use Google\Service\Pubsub\TestIamPermissionsRequest;
+use Google\Service\Pubsub\TestIamPermissionsResponse;
+use Google\Service\Pubsub\Topic;
+use Google\Service\Pubsub\UpdateTopicRequest;
 /**
  * The "topics" collection of methods.
  * Typical usage is:

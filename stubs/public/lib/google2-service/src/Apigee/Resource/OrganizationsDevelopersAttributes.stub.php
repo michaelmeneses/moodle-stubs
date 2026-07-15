@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1Attribute;
+use Google\Service\Apigee\GoogleCloudApigeeV1Attributes;
 /**
  * The "attributes" collection of methods.
  * Typical usage is:

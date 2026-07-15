@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ParameterManager\Resource;
 
+use Google\Service\ParameterManager\ListLocationsResponse;
+use Google\Service\ParameterManager\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

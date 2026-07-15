@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\DirectoryChromeosdevicesCommand;
 /**
  * The "commands" collection of methods.
  * Typical usage is:

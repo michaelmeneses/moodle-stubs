@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleLongrunningCancelOperationRequest;
+use Google\Service\DiscoveryEngine\GoogleLongrunningListOperationsResponse;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
+use Google\Service\DiscoveryEngine\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

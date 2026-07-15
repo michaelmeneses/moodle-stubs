@@ -23,6 +23,12 @@
  */
 namespace Google\Service\FirebaseAppDistribution\Resource;
 
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchDeleteReleasesRequest;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1DistributeReleaseRequest;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1DistributeReleaseResponse;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ListReleasesResponse;
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1Release;
+use Google\Service\FirebaseAppDistribution\GoogleProtobufEmpty;
 /**
  * The "releases" collection of methods.
  * Typical usage is:

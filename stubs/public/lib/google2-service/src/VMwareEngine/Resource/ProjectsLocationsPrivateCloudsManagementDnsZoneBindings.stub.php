@@ -23,6 +23,10 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ListManagementDnsZoneBindingsResponse;
+use Google\Service\VMwareEngine\ManagementDnsZoneBinding;
+use Google\Service\VMwareEngine\Operation;
+use Google\Service\VMwareEngine\RepairManagementDnsZoneBindingRequest;
 /**
  * The "managementDnsZoneBindings" collection of methods.
  * Typical usage is:

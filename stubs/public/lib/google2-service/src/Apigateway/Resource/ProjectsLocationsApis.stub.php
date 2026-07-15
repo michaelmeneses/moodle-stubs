@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Apigateway\Resource;
 
+use Google\Service\Apigateway\ApigatewayApi;
+use Google\Service\Apigateway\ApigatewayListApisResponse;
+use Google\Service\Apigateway\ApigatewayOperation;
+use Google\Service\Apigateway\ApigatewayPolicy;
+use Google\Service\Apigateway\ApigatewaySetIamPolicyRequest;
+use Google\Service\Apigateway\ApigatewayTestIamPermissionsRequest;
+use Google\Service\Apigateway\ApigatewayTestIamPermissionsResponse;
 /**
  * The "apis" collection of methods.
  * Typical usage is:

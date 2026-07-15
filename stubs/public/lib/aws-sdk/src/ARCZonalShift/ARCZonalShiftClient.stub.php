@@ -8,6 +8,7 @@
  */
 namespace Aws\ARCZonalShift;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS ARC - Zonal Shift** service.
  * @method \Aws\Result cancelPracticeRun(array $args = [])

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\BusinessProfilePerformance\Resource;
 
+use Google\Service\BusinessProfilePerformance\ListSearchKeywordImpressionsMonthlyResponse;
 /**
  * The "monthly" collection of methods.
  * Typical usage is:

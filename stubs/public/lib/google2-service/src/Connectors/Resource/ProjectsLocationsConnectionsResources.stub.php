@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\GetResourceResponse;
+use Google\Service\Connectors\ListResourcesResponse;
 /**
  * The "resources" collection of methods.
  * Typical usage is:

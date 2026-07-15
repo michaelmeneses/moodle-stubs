@@ -23,6 +23,7 @@
  */
 namespace Google\Service\WorkspaceEvents\Resource;
 
+use Google\Service\WorkspaceEvents\AgentCard;
 /**
  * The "v1" collection of methods.
  * Typical usage is:

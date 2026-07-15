@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\SetPassUpdateNoticeRequest;
+use Google\Service\Walletobjects\SetPassUpdateNoticeResponse;
 /**
  * The "privateContent" collection of methods.
  * Typical usage is:

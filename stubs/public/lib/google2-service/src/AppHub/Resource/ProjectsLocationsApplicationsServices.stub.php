@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AppHub\Resource;
 
+use Google\Service\AppHub\ListServicesResponse;
+use Google\Service\AppHub\Operation;
+use Google\Service\AppHub\Service;
 /**
  * The "services" collection of methods.
  * Typical usage is:

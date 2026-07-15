@@ -17,6 +17,8 @@
  */
 namespace ScssPhp\ScssPhp;
 
+use Exception;
+use ScssPhp\ScssPhp\Version;
 /**
  * The scss cache manager.
  *

@@ -8,6 +8,9 @@
  */
 namespace mod_quiz\event;
 
+use core\event\base;
+use core\exception\coding_exception;
+use core\url;
 /**
  * This event is fired when the filter condition of a slot
  * using the question set references table is updated.

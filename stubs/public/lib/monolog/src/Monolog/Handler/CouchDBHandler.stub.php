@@ -16,6 +16,10 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\JsonFormatter;
+use Monolog\Level;
+use Monolog\LogRecord;
 /**
  * CouchDB handler
  *

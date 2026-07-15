@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\GlobalSetLabelsRequest;
+use Google\Service\Compute\GlobalSetPolicyRequest;
+use Google\Service\Compute\MachineImage;
+use Google\Service\Compute\MachineImageList;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "machineImages" collection of methods.
  * Typical usage is:

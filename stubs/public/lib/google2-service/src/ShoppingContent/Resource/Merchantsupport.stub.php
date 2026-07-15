@@ -23,6 +23,12 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\RenderAccountIssuesRequestPayload;
+use Google\Service\ShoppingContent\RenderAccountIssuesResponse;
+use Google\Service\ShoppingContent\RenderProductIssuesRequestPayload;
+use Google\Service\ShoppingContent\RenderProductIssuesResponse;
+use Google\Service\ShoppingContent\TriggerActionPayload;
+use Google\Service\ShoppingContent\TriggerActionResponse;
 /**
  * The "merchantsupport" collection of methods.
  * Typical usage is:

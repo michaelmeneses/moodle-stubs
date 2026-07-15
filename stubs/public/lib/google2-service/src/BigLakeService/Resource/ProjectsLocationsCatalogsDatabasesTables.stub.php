@@ -23,6 +23,9 @@
  */
 namespace Google\Service\BigLakeService\Resource;
 
+use Google\Service\BigLakeService\ListTablesResponse;
+use Google\Service\BigLakeService\RenameTableRequest;
+use Google\Service\BigLakeService\Table;
 /**
  * The "tables" collection of methods.
  * Typical usage is:

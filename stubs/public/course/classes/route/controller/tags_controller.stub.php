@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\route\controller;
 
+use core\exception\moodle_exception;
+use core\router\parameters\query_returnurl;
+use core\router\route;
+use core\router\require_login;
+use core\router\util;
+use core_course\form\tags_form;
+use core_tag_tag;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Tag management for courses.
  *

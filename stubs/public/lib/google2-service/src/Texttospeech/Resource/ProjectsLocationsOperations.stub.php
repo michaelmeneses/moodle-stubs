@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Texttospeech\Resource;
 
+use Google\Service\Texttospeech\ListOperationsResponse;
+use Google\Service\Texttospeech\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

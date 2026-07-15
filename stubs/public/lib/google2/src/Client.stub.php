@@ -23,6 +23,35 @@
  */
 namespace Google;
 
+use BadMethodCallException;
+use DomainException;
+use Google\AccessToken\Revoke;
+use Google\AccessToken\Verify;
+use Google\Auth\ApplicationDefaultCredentials;
+use Google\Auth\Cache\MemoryCacheItemPool;
+use Google\Auth\Credentials\ServiceAccountCredentials;
+use Google\Auth\Credentials\UserRefreshCredentials;
+use Google\Auth\CredentialsLoader;
+use Google\Auth\FetchAuthTokenCache;
+use Google\Auth\FetchAuthTokenInterface;
+use Google\Auth\GetUniverseDomainInterface;
+use Google\Auth\HttpHandler\HttpHandlerFactory;
+use Google\Auth\OAuth2;
+use Google\AuthHandler\AuthHandlerFactory;
+use Google\Http\REST;
+use GuzzleHttp\Client as GuzzleClient;
+use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Ring\Client\StreamHandler;
+use InvalidArgumentException;
+use LogicException;
+use Monolog\Handler\StreamHandler as MonologStreamHandler;
+use Monolog\Handler\SyslogHandler as MonologSyslogHandler;
+use Monolog\Logger;
+use Psr\Cache\CacheItemPoolInterface;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Log\LoggerInterface;
+use UnexpectedValueException;
 /**
  * The Google API Client
  * https://github.com/google/google-api-php-client

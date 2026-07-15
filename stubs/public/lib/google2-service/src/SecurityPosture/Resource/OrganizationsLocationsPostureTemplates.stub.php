@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SecurityPosture\Resource;
 
+use Google\Service\SecurityPosture\ListPostureTemplatesResponse;
+use Google\Service\SecurityPosture\PostureTemplate;
 /**
  * The "postureTemplates" collection of methods.
  * Typical usage is:

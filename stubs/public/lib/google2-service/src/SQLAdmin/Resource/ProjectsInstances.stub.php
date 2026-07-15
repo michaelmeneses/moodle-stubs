@@ -23,6 +23,15 @@
  */
 namespace Google\Service\SQLAdmin\Resource;
 
+use Google\Service\SQLAdmin\Operation;
+use Google\Service\SQLAdmin\PerformDiskShrinkContext;
+use Google\Service\SQLAdmin\SqlInstancesGetDiskShrinkConfigResponse;
+use Google\Service\SQLAdmin\SqlInstancesGetLatestRecoveryTimeResponse;
+use Google\Service\SQLAdmin\SqlInstancesRescheduleMaintenanceRequestBody;
+use Google\Service\SQLAdmin\SqlInstancesResetReplicaSizeRequest;
+use Google\Service\SQLAdmin\SqlInstancesStartExternalSyncRequest;
+use Google\Service\SQLAdmin\SqlInstancesVerifyExternalSyncSettingsRequest;
+use Google\Service\SQLAdmin\SqlInstancesVerifyExternalSyncSettingsResponse;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

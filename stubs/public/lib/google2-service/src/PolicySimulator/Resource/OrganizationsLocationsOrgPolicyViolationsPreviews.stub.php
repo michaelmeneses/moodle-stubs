@@ -23,6 +23,9 @@
  */
 namespace Google\Service\PolicySimulator\Resource;
 
+use Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ListOrgPolicyViolationsPreviewsResponse;
+use Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1OrgPolicyViolationsPreview;
+use Google\Service\PolicySimulator\GoogleLongrunningOperation;
 /**
  * The "orgPolicyViolationsPreviews" collection of methods.
  * Typical usage is:

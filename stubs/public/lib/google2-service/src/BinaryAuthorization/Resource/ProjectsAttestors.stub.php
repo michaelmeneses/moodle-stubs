@@ -23,6 +23,15 @@
  */
 namespace Google\Service\BinaryAuthorization\Resource;
 
+use Google\Service\BinaryAuthorization\Attestor;
+use Google\Service\BinaryAuthorization\BinaryauthorizationEmpty;
+use Google\Service\BinaryAuthorization\IamPolicy;
+use Google\Service\BinaryAuthorization\ListAttestorsResponse;
+use Google\Service\BinaryAuthorization\SetIamPolicyRequest;
+use Google\Service\BinaryAuthorization\TestIamPermissionsRequest;
+use Google\Service\BinaryAuthorization\TestIamPermissionsResponse;
+use Google\Service\BinaryAuthorization\ValidateAttestationOccurrenceRequest;
+use Google\Service\BinaryAuthorization\ValidateAttestationOccurrenceResponse;
 /**
  * The "attestors" collection of methods.
  * Typical usage is:

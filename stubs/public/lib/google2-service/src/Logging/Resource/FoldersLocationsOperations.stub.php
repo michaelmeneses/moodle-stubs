@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\CancelOperationRequest;
+use Google\Service\Logging\ListOperationsResponse;
+use Google\Service\Logging\LoggingEmpty;
+use Google\Service\Logging\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

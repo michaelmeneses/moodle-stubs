@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Playdeveloperreporting\Resource;
 
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1ListAnomaliesResponse;
 /**
  * The "anomalies" collection of methods.
  * Typical usage is:

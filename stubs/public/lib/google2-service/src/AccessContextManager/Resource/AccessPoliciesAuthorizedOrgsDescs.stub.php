@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AccessContextManager\Resource;
 
+use Google\Service\AccessContextManager\AuthorizedOrgsDesc;
+use Google\Service\AccessContextManager\ListAuthorizedOrgsDescsResponse;
+use Google\Service\AccessContextManager\Operation;
 /**
  * The "authorizedOrgsDescs" collection of methods.
  * Typical usage is:

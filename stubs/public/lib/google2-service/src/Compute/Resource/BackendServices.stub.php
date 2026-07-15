@@ -23,6 +23,19 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\BackendService;
+use Google\Service\Compute\BackendServiceAggregatedList;
+use Google\Service\Compute\BackendServiceGroupHealth;
+use Google\Service\Compute\BackendServiceList;
+use Google\Service\Compute\BackendServiceListUsable;
+use Google\Service\Compute\GlobalSetPolicyRequest;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\ResourceGroupReference;
+use Google\Service\Compute\SecurityPolicyReference;
+use Google\Service\Compute\SignedUrlKey;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "backendServices" collection of methods.
  * Typical usage is:

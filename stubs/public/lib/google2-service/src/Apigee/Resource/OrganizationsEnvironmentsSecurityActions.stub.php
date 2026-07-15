@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1DisableSecurityActionRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1EnableSecurityActionRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityActionsResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1SecurityAction;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "securityActions" collection of methods.
  * Typical usage is:

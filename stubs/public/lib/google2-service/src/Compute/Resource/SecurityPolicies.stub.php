@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\GlobalSetLabelsRequest;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\SecurityPoliciesAggregatedList;
+use Google\Service\Compute\SecurityPoliciesListPreconfiguredExpressionSetsResponse;
+use Google\Service\Compute\SecurityPolicy;
+use Google\Service\Compute\SecurityPolicyList;
+use Google\Service\Compute\SecurityPolicyRule;
 /**
  * The "securityPolicies" collection of methods.
  * Typical usage is:

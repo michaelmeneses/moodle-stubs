@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Reader\XLSX\Manager;
 
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Reader\Wrapper\XMLReader;
 /**
  * @internal
  */

@@ -22,6 +22,20 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cohort\reportbuilder\local\systemreports;
 
+use context;
+use context_coursecat;
+use context_system;
+use core_reportbuilder\local\aggregation\count;
+use core_cohort\reportbuilder\local\entities\{cohort, cohort_member};
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\local\report\action;
+use core_reportbuilder\local\report\column;
+use html_writer;
+use lang_string;
+use moodle_url;
+use pix_icon;
+use core_reportbuilder\system_report;
+use stdClass;
 /**
  * Cohorts system report class implementation
  *

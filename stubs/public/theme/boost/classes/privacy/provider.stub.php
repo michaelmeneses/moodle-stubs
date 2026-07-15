@@ -29,6 +29,7 @@
  */
 namespace theme_boost\privacy;
 
+use core_privacy\local\metadata\collection;
 /**
  * The boost theme stores a user preference data.
  *

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SA360\Resource;
 
+use Google\Service\SA360\GoogleAdsSearchads360V0ResourcesSearchAds360Field;
+use Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsRequest;
+use Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsResponse;
 /**
  * The "searchAds360Fields" collection of methods.
  * Typical usage is:

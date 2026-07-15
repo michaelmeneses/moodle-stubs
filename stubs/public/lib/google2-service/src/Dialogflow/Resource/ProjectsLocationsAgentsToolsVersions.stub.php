@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListToolVersionsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestoreToolVersionRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestoreToolVersionResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolVersion;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

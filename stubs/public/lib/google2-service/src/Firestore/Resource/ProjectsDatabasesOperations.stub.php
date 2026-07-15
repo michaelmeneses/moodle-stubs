@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Firestore\Resource;
 
+use Google\Service\Firestore\FirestoreEmpty;
+use Google\Service\Firestore\GoogleLongrunningCancelOperationRequest;
+use Google\Service\Firestore\GoogleLongrunningListOperationsResponse;
+use Google\Service\Firestore\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

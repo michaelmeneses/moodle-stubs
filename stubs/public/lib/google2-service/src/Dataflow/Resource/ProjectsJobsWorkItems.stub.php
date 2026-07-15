@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Dataflow\Resource;
 
+use Google\Service\Dataflow\LeaseWorkItemRequest;
+use Google\Service\Dataflow\LeaseWorkItemResponse;
+use Google\Service\Dataflow\ReportWorkItemStatusRequest;
+use Google\Service\Dataflow\ReportWorkItemStatusResponse;
 /**
  * The "workItems" collection of methods.
  * Typical usage is:

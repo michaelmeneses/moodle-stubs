@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Firebaseappcheck\Resource;
 
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationRequest;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse;
 /**
  * The "oauthClients" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\SASPortalTesting\Resource;
 
+use Google\Service\SASPortalTesting\SasPortalNode;
 /**
  * The "nodes" collection of methods.
  * Typical usage is:

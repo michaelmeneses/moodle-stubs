@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Script\Resource;
 
+use Google\Service\Script\ExecutionRequest;
+use Google\Service\Script\Operation;
 /**
  * The "scripts" collection of methods.
  * Typical usage is:

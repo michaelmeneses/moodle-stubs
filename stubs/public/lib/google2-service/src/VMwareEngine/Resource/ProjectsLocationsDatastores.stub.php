@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\Datastore;
+use Google\Service\VMwareEngine\ListDatastoresResponse;
+use Google\Service\VMwareEngine\Operation;
 /**
  * The "datastores" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\SASPortalTesting\Resource;
 
+use Google\Service\SASPortalTesting\SasPortalEmpty;
+use Google\Service\SASPortalTesting\SasPortalListNodesResponse;
+use Google\Service\SASPortalTesting\SasPortalMoveNodeRequest;
+use Google\Service\SASPortalTesting\SasPortalNode;
+use Google\Service\SASPortalTesting\SasPortalOperation;
 /**
  * The "nodes" collection of methods.
  * Typical usage is:

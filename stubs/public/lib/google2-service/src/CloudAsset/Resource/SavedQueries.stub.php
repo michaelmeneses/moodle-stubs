@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudAsset\Resource;
 
+use Google\Service\CloudAsset\CloudassetEmpty;
+use Google\Service\CloudAsset\ListSavedQueriesResponse;
+use Google\Service\CloudAsset\SavedQuery;
 /**
  * The "savedQueries" collection of methods.
  * Typical usage is:

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace core;
 
+use stdClass;
+use coding_exception;
 /**
  * Context maintenance and helper methods.
  *

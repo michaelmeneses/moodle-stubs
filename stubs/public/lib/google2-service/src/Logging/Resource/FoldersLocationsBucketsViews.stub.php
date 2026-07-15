@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\GetIamPolicyRequest;
+use Google\Service\Logging\ListViewsResponse;
+use Google\Service\Logging\LogView;
+use Google\Service\Logging\LoggingEmpty;
+use Google\Service\Logging\Policy;
+use Google\Service\Logging\SetIamPolicyRequest;
+use Google\Service\Logging\TestIamPermissionsRequest;
+use Google\Service\Logging\TestIamPermissionsResponse;
 /**
  * The "views" collection of methods.
  * Typical usage is:

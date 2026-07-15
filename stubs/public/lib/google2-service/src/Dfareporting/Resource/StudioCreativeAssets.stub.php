@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\DfareportingStudioCreativeAssetsInsertRequest;
+use Google\Service\Dfareporting\StudioCreativeAssetsResponse;
 /**
  * The "studioCreativeAssets" collection of methods.
  * Typical usage is:

@@ -8,6 +8,44 @@
  */
 namespace Aws;
 
+use Aws\Api\ApiProvider;
+use Aws\Api\Service;
+use Aws\Api\Validator;
+use Aws\Auth\AuthResolver;
+use Aws\Auth\AuthSchemeResolver;
+use Aws\Auth\AuthSchemeResolverInterface;
+use Aws\ClientSideMonitoring\ApiCallAttemptMonitoringMiddleware;
+use Aws\ClientSideMonitoring\ApiCallMonitoringMiddleware;
+use Aws\ClientSideMonitoring\Configuration;
+use Aws\Configuration\ConfigurationResolver;
+use Aws\Credentials\CredentialProvider;
+use Aws\Credentials\Credentials;
+use Aws\Credentials\CredentialsInterface;
+use Aws\DefaultsMode\ConfigurationInterface as ConfigModeInterface;
+use Aws\DefaultsMode\ConfigurationProvider as ConfigModeProvider;
+use Aws\Endpoint\EndpointProvider;
+use Aws\Endpoint\PartitionEndpointProvider;
+use Aws\Endpoint\UseDualstackEndpoint\Configuration as UseDualStackEndpointConfiguration;
+use Aws\Endpoint\UseDualstackEndpoint\ConfigurationInterface as UseDualStackEndpointConfigurationInterface;
+use Aws\Endpoint\UseDualstackEndpoint\ConfigurationProvider as UseDualStackConfigProvider;
+use Aws\Endpoint\UseFipsEndpoint\Configuration as UseFipsEndpointConfiguration;
+use Aws\Endpoint\UseFipsEndpoint\ConfigurationInterface as UseFipsEndpointConfigurationInterface;
+use Aws\Endpoint\UseFipsEndpoint\ConfigurationProvider as UseFipsConfigProvider;
+use Aws\EndpointDiscovery\ConfigurationInterface;
+use Aws\EndpointDiscovery\ConfigurationProvider;
+use Aws\EndpointV2\EndpointDefinitionProvider;
+use Aws\Exception\AwsException;
+use Aws\Exception\InvalidRegionException;
+use Aws\Retry\ConfigurationInterface as RetryConfigInterface;
+use Aws\Retry\ConfigurationProvider as RetryConfigProvider;
+use Aws\Signature\SignatureProvider;
+use Aws\Token\Token;
+use Aws\Token\TokenInterface;
+use Aws\Token\BedrockTokenProvider;
+use Aws\Token\TokenProvider;
+use GuzzleHttp\Promise\PromiseInterface;
+use InvalidArgumentException as IAE;
+use Psr\Http\Message\RequestInterface;
 /**
  * @internal Resolves a hash of client arguments to construct a client.
  */

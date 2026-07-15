@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3EntityType;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportEntityTypesRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportEntityTypesRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListEntityTypesResponse;
+use Google\Service\Dialogflow\GoogleLongrunningOperation;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "entityTypes" collection of methods.
  * Typical usage is:

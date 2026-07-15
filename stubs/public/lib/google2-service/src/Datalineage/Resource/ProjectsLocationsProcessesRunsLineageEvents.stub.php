@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Datalineage\Resource;
 
+use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1LineageEvent;
+use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ListLineageEventsResponse;
+use Google\Service\Datalineage\GoogleProtobufEmpty;
 /**
  * The "lineageEvents" collection of methods.
  * Typical usage is:

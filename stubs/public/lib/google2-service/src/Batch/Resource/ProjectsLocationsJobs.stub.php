@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Batch\Resource;
 
+use Google\Service\Batch\CancelJobRequest;
+use Google\Service\Batch\Job;
+use Google\Service\Batch\ListJobsResponse;
+use Google\Service\Batch\Operation;
 /**
  * The "jobs" collection of methods.
  * Typical usage is:

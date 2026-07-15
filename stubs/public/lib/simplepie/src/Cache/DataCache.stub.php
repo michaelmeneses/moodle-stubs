@@ -49,6 +49,7 @@
  */
 namespace SimplePie\Cache;
 
+use InvalidArgumentException;
 /**
  * Subset of PSR-16 Cache client for caching data arrays
  *

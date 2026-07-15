@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Adsense\Resource;
 
+use Google\Service\Adsense\AdsenseEmpty;
+use Google\Service\Adsense\CustomChannel;
+use Google\Service\Adsense\ListCustomChannelsResponse;
+use Google\Service\Adsense\ListLinkedAdUnitsResponse;
 /**
  * The "customchannels" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Recommender\Resource;
 
+use Google\Service\Recommender\GoogleCloudRecommenderV1Insight;
+use Google\Service\Recommender\GoogleCloudRecommenderV1ListInsightsResponse;
+use Google\Service\Recommender\GoogleCloudRecommenderV1MarkInsightAcceptedRequest;
 /**
  * The "insights" collection of methods.
  * Typical usage is:

@@ -23,6 +23,12 @@
  */
 namespace Google\Service\CloudKMS\Resource;
 
+use Google\Service\CloudKMS\ImportJob;
+use Google\Service\CloudKMS\ListImportJobsResponse;
+use Google\Service\CloudKMS\Policy;
+use Google\Service\CloudKMS\SetIamPolicyRequest;
+use Google\Service\CloudKMS\TestIamPermissionsRequest;
+use Google\Service\CloudKMS\TestIamPermissionsResponse;
 /**
  * The "importJobs" collection of methods.
  * Typical usage is:

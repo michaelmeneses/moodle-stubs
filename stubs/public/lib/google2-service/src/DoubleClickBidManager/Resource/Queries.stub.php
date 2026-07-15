@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DoubleClickBidManager\Resource;
 
+use Google\Service\DoubleClickBidManager\ListQueriesResponse;
+use Google\Service\DoubleClickBidManager\Query;
+use Google\Service\DoubleClickBidManager\Report;
+use Google\Service\DoubleClickBidManager\RunQueryRequest;
 /**
  * The "queries" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\Datafeed;
+use Google\Service\ShoppingContent\DatafeedsCustomBatchRequest;
+use Google\Service\ShoppingContent\DatafeedsCustomBatchResponse;
+use Google\Service\ShoppingContent\DatafeedsFetchNowResponse;
+use Google\Service\ShoppingContent\DatafeedsListResponse;
 /**
  * The "datafeeds" collection of methods.
  * Typical usage is:

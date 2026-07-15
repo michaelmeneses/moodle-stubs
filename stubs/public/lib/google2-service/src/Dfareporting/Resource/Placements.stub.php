@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\Placement;
+use Google\Service\Dfareporting\PlacementsGenerateTagsResponse;
+use Google\Service\Dfareporting\PlacementsListResponse;
 /**
  * The "placements" collection of methods.
  * Typical usage is:

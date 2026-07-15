@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\CompatibleFields;
+use Google\Service\Dfareporting\Report;
 /**
  * The "compatibleFields" collection of methods.
  * Typical usage is:

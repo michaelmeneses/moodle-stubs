@@ -23,6 +23,27 @@
  */
 namespace Google\Service\Dataproc\Resource;
 
+use Google\Service\Dataproc\AccessSparkApplicationEnvironmentInfoResponse;
+use Google\Service\Dataproc\AccessSparkApplicationJobResponse;
+use Google\Service\Dataproc\AccessSparkApplicationResponse;
+use Google\Service\Dataproc\AccessSparkApplicationSqlQueryResponse;
+use Google\Service\Dataproc\AccessSparkApplicationSqlSparkPlanGraphResponse;
+use Google\Service\Dataproc\AccessSparkApplicationStageAttemptResponse;
+use Google\Service\Dataproc\AccessSparkApplicationStageRddOperationGraphResponse;
+use Google\Service\Dataproc\SearchSparkApplicationExecutorStageSummaryResponse;
+use Google\Service\Dataproc\SearchSparkApplicationExecutorsResponse;
+use Google\Service\Dataproc\SearchSparkApplicationJobsResponse;
+use Google\Service\Dataproc\SearchSparkApplicationSqlQueriesResponse;
+use Google\Service\Dataproc\SearchSparkApplicationStageAttemptTasksResponse;
+use Google\Service\Dataproc\SearchSparkApplicationStageAttemptsResponse;
+use Google\Service\Dataproc\SearchSparkApplicationStagesResponse;
+use Google\Service\Dataproc\SearchSparkApplicationsResponse;
+use Google\Service\Dataproc\SummarizeSparkApplicationExecutorsResponse;
+use Google\Service\Dataproc\SummarizeSparkApplicationJobsResponse;
+use Google\Service\Dataproc\SummarizeSparkApplicationStageAttemptTasksResponse;
+use Google\Service\Dataproc\SummarizeSparkApplicationStagesResponse;
+use Google\Service\Dataproc\WriteSparkApplicationContextRequest;
+use Google\Service\Dataproc\WriteSparkApplicationContextResponse;
 /**
  * The "sparkApplications" collection of methods.
  * Typical usage is:

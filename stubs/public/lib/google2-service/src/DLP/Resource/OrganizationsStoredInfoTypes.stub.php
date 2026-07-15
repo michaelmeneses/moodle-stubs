@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2CreateStoredInfoTypeRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2ListStoredInfoTypesResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2StoredInfoType;
+use Google\Service\DLP\GooglePrivacyDlpV2UpdateStoredInfoTypeRequest;
+use Google\Service\DLP\GoogleProtobufEmpty;
 /**
  * The "storedInfoTypes" collection of methods.
  * Typical usage is:

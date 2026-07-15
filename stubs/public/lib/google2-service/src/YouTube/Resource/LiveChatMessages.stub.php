@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\LiveChatMessage;
+use Google\Service\YouTube\LiveChatMessageListResponse;
 /**
  * The "liveChatMessages" collection of methods.
  * Typical usage is:

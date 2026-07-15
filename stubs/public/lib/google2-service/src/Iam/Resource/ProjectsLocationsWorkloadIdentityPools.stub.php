@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Iam\Resource;
 
+use Google\Service\Iam\ListWorkloadIdentityPoolsResponse;
+use Google\Service\Iam\Operation;
+use Google\Service\Iam\UndeleteWorkloadIdentityPoolRequest;
+use Google\Service\Iam\WorkloadIdentityPool;
 /**
  * The "workloadIdentityPools" collection of methods.
  * Typical usage is:

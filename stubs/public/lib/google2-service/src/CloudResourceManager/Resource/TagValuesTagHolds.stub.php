@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudResourceManager\Resource;
 
+use Google\Service\CloudResourceManager\ListTagHoldsResponse;
+use Google\Service\CloudResourceManager\Operation;
+use Google\Service\CloudResourceManager\TagHold;
 /**
  * The "tagHolds" collection of methods.
  * Typical usage is:

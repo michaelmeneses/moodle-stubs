@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Tasks\Resource;
 
+use Google\Service\Tasks\TaskList;
+use Google\Service\Tasks\TaskLists as TaskListsModel;
 /**
  * The "tasklists" collection of methods.
  * Typical usage is:

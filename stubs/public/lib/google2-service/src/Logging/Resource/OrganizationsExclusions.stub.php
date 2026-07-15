@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\ListExclusionsResponse;
+use Google\Service\Logging\LogExclusion;
+use Google\Service\Logging\LoggingEmpty;
 /**
  * The "exclusions" collection of methods.
  * Typical usage is:

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace auth_lti\output;
 
+use core\output\notification;
 /**
  * Renderer class for auth_lti.
  *

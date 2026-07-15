@@ -23,6 +23,11 @@
  */
 namespace Google\Service\OSConfig\Resource;
 
+use Google\Service\OSConfig\ListPatchDeploymentsResponse;
+use Google\Service\OSConfig\OsconfigEmpty;
+use Google\Service\OSConfig\PatchDeployment;
+use Google\Service\OSConfig\PausePatchDeploymentRequest;
+use Google\Service\OSConfig\ResumePatchDeploymentRequest;
 /**
  * The "patchDeployments" collection of methods.
  * Typical usage is:

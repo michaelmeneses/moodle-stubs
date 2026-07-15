@@ -23,6 +23,8 @@
  */
 namespace Google\Service\NetworkManagement\Resource;
 
+use Google\Service\NetworkManagement\ListLocationsResponse;
+use Google\Service\NetworkManagement\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

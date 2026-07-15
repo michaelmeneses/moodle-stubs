@@ -8,6 +8,8 @@
  */
 namespace DI\Definition\Helper;
 
+use DI\Definition\DecoratorDefinition;
+use DI\Definition\FactoryDefinition;
 /**
  * Helps defining how to create an instance of a class using a factory (callable).
  *

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\Group;
+use Google\Service\Monitoring\ListGroupsResponse;
+use Google\Service\Monitoring\MonitoringEmpty;
 /**
  * The "groups" collection of methods.
  * Typical usage is:

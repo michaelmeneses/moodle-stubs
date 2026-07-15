@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ChromePolicy\Resource;
 
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ListPolicySchemasResponse;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicySchema;
 /**
  * The "policySchemas" collection of methods.
  * Typical usage is:

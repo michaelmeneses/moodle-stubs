@@ -29,6 +29,9 @@
  */
 namespace core_user\external;
 
+use context_system;
+use renderer_base;
+use moodle_url;
 /**
  * Class for exporting a user summary from an stdClass.
  *

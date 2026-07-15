@@ -23,6 +23,10 @@
  */
 namespace Google\Service\MyBusinessQA\Resource;
 
+use Google\Service\MyBusinessQA\Answer;
+use Google\Service\MyBusinessQA\ListAnswersResponse;
+use Google\Service\MyBusinessQA\MybusinessqandaEmpty;
+use Google\Service\MyBusinessQA\UpsertAnswerRequest;
 /**
  * The "answers" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\Channel;
 /**
  * The "channels" collection of methods.
  * Typical usage is:

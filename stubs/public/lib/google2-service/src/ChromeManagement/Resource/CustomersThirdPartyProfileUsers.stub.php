@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ChromeManagement\Resource;
 
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserRequest;
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserResponse;
 /**
  * The "thirdPartyProfileUsers" collection of methods.
  * Typical usage is:

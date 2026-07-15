@@ -23,6 +23,10 @@
  */
 namespace Google\Service\GKEHub\Resource;
 
+use Google\Service\GKEHub\GenerateMembershipRBACRoleBindingYAMLResponse;
+use Google\Service\GKEHub\ListMembershipRBACRoleBindingsResponse;
+use Google\Service\GKEHub\Operation;
+use Google\Service\GKEHub\RBACRoleBinding;
 /**
  * The "rbacrolebindings" collection of methods.
  * Typical usage is:

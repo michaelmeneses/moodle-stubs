@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\HttpBody;
+use Google\Service\CloudHealthcare\Operation;
 /**
  * The "studies" collection of methods.
  * Typical usage is:

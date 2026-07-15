@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CCAIPlatform\Resource;
 
+use Google\Service\CCAIPlatform\ContactCenter;
+use Google\Service\CCAIPlatform\ListContactCentersResponse;
+use Google\Service\CCAIPlatform\Operation;
 /**
  * The "contactCenters" collection of methods.
  * Typical usage is:

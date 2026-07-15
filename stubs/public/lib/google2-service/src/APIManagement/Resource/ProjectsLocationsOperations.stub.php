@@ -23,6 +23,10 @@
  */
 namespace Google\Service\APIManagement\Resource;
 
+use Google\Service\APIManagement\ApimEmpty;
+use Google\Service\APIManagement\CancelOperationRequest;
+use Google\Service\APIManagement\ListOperationsResponse;
+use Google\Service\APIManagement\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

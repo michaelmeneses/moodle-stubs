@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\ListNotificationConfigsResponse;
+use Google\Service\SecurityCommandCenter\NotificationConfig;
+use Google\Service\SecurityCommandCenter\SecuritycenterEmpty;
 /**
  * The "notificationConfigs" collection of methods.
  * Typical usage is:

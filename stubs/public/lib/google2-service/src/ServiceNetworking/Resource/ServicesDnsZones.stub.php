@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ServiceNetworking\Resource;
 
+use Google\Service\ServiceNetworking\AddDnsZoneRequest;
+use Google\Service\ServiceNetworking\Operation;
+use Google\Service\ServiceNetworking\RemoveDnsZoneRequest;
 /**
  * The "dnsZones" collection of methods.
  * Typical usage is:

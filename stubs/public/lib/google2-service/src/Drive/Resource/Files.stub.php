@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Drive\Resource;
 
+use Google\Service\Drive\Channel;
+use Google\Service\Drive\DriveFile;
+use Google\Service\Drive\FileList;
+use Google\Service\Drive\GeneratedIds;
+use Google\Service\Drive\LabelList;
+use Google\Service\Drive\ModifyLabelsRequest;
+use Google\Service\Drive\ModifyLabelsResponse;
+use Google\Service\Drive\Operation;
 /**
  * The "files" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudAlloyDBAdmin\Resource;
 
+use Google\Service\CloudAlloyDBAdmin\GoogleCloudLocationListLocationsResponse;
+use Google\Service\CloudAlloyDBAdmin\GoogleCloudLocationLocation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

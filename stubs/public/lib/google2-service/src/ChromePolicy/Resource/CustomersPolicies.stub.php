@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ChromePolicy\Resource;
 
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ResolveRequest;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ResolveResponse;
 /**
  * The "policies" collection of methods.
  * Typical usage is:

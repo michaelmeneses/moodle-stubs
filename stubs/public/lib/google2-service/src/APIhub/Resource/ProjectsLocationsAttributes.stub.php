@@ -23,6 +23,9 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\ApihubEmpty;
+use Google\Service\APIhub\GoogleCloudApihubV1Attribute;
+use Google\Service\APIhub\GoogleCloudApihubV1ListAttributesResponse;
 /**
  * The "attributes" collection of methods.
  * Typical usage is:

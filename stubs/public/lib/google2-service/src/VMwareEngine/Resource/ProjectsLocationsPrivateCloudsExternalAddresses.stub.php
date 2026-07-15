@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ExternalAddress;
+use Google\Service\VMwareEngine\ListExternalAddressesResponse;
+use Google\Service\VMwareEngine\Operation;
 /**
  * The "externalAddresses" collection of methods.
  * Typical usage is:

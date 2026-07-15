@@ -23,6 +23,14 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\ExportArtifactRequest;
+use Google\Service\ArtifactRegistry\ListRepositoriesResponse;
+use Google\Service\ArtifactRegistry\Operation;
+use Google\Service\ArtifactRegistry\Policy;
+use Google\Service\ArtifactRegistry\Repository;
+use Google\Service\ArtifactRegistry\SetIamPolicyRequest;
+use Google\Service\ArtifactRegistry\TestIamPermissionsRequest;
+use Google\Service\ArtifactRegistry\TestIamPermissionsResponse;
 /**
  * The "repositories" collection of methods.
  * Typical usage is:

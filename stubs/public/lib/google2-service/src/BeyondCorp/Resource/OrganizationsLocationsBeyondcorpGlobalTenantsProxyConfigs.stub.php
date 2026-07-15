@@ -23,6 +23,10 @@
  */
 namespace Google\Service\BeyondCorp\Resource;
 
+use Google\Service\BeyondCorp\GoogleIamV1Policy;
+use Google\Service\BeyondCorp\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsResponse;
 /**
  * The "proxyConfigs" collection of methods.
  * Typical usage is:

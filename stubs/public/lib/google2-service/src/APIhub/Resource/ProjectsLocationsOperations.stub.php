@@ -23,6 +23,10 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\ApihubEmpty;
+use Google\Service\APIhub\GoogleLongrunningCancelOperationRequest;
+use Google\Service\APIhub\GoogleLongrunningListOperationsResponse;
+use Google\Service\APIhub\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

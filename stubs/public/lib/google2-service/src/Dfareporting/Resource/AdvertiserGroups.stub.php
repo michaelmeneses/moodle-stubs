@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\AdvertiserGroup;
+use Google\Service\Dfareporting\AdvertiserGroupsListResponse;
 /**
  * The "advertiserGroups" collection of methods.
  * Typical usage is:

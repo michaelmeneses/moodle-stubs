@@ -23,6 +23,17 @@
  */
 namespace Google\Service\AnalyticsHub\Resource;
 
+use Google\Service\AnalyticsHub\AnalyticshubEmpty;
+use Google\Service\AnalyticsHub\GetIamPolicyRequest;
+use Google\Service\AnalyticsHub\ListListingsResponse;
+use Google\Service\AnalyticsHub\ListSharedResourceSubscriptionsResponse;
+use Google\Service\AnalyticsHub\Listing;
+use Google\Service\AnalyticsHub\Policy;
+use Google\Service\AnalyticsHub\SetIamPolicyRequest;
+use Google\Service\AnalyticsHub\SubscribeListingRequest;
+use Google\Service\AnalyticsHub\SubscribeListingResponse;
+use Google\Service\AnalyticsHub\TestIamPermissionsRequest;
+use Google\Service\AnalyticsHub\TestIamPermissionsResponse;
 /**
  * The "listings" collection of methods.
  * Typical usage is:

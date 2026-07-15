@@ -23,6 +23,12 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\ArchiveSubscriptionRequest;
+use Google\Service\AndroidPublisher\BatchGetSubscriptionsResponse;
+use Google\Service\AndroidPublisher\BatchUpdateSubscriptionsRequest;
+use Google\Service\AndroidPublisher\BatchUpdateSubscriptionsResponse;
+use Google\Service\AndroidPublisher\ListSubscriptionsResponse;
+use Google\Service\AndroidPublisher\Subscription;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

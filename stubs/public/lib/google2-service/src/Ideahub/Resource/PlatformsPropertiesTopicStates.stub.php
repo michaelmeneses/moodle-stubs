@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Ideahub\Resource;
 
+use Google\Service\Ideahub\GoogleSearchIdeahubV1betaTopicState;
 /**
  * The "topicStates" collection of methods.
  * Typical usage is:

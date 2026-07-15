@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Css\Resource;
 
+use Google\Service\Css\Account;
+use Google\Service\Css\ListChildAccountsResponse;
+use Google\Service\Css\UpdateAccountLabelsRequest;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

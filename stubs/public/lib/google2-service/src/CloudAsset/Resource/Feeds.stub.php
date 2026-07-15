@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CloudAsset\Resource;
 
+use Google\Service\CloudAsset\CloudassetEmpty;
+use Google\Service\CloudAsset\CreateFeedRequest;
+use Google\Service\CloudAsset\Feed;
+use Google\Service\CloudAsset\ListFeedsResponse;
+use Google\Service\CloudAsset\UpdateFeedRequest;
 /**
  * The "feeds" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\ListTimeSeriesResponse;
 /**
  * The "timeSeries" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Blogger\Resource;
 
+use Google\Service\Blogger\Pageviews as PageviewsModel;
 /**
  * The "pageViews" collection of methods.
  * Typical usage is:

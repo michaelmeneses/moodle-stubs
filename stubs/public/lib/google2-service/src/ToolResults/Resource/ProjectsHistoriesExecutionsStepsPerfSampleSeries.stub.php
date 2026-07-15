@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ToolResults\Resource;
 
+use Google\Service\ToolResults\ListPerfSampleSeriesResponse;
+use Google\Service\ToolResults\PerfSampleSeries;
 /**
  * The "perfSampleSeries" collection of methods.
  * Typical usage is:

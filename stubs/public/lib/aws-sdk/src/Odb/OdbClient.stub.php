@@ -8,6 +8,7 @@
  */
 namespace Aws\Odb;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **odb** service.
  * @method \Aws\Result acceptMarketplaceRegistration(array $args = [])

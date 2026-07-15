@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Blogger\Resource;
 
+use Google\Service\Blogger\Page;
+use Google\Service\Blogger\PageList;
 /**
  * The "pages" collection of methods.
  * Typical usage is:

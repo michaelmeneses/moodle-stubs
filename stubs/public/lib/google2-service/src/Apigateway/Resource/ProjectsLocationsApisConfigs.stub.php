@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Apigateway\Resource;
 
+use Google\Service\Apigateway\ApigatewayApiConfig;
+use Google\Service\Apigateway\ApigatewayListApiConfigsResponse;
+use Google\Service\Apigateway\ApigatewayOperation;
+use Google\Service\Apigateway\ApigatewayPolicy;
+use Google\Service\Apigateway\ApigatewaySetIamPolicyRequest;
+use Google\Service\Apigateway\ApigatewayTestIamPermissionsRequest;
+use Google\Service\Apigateway\ApigatewayTestIamPermissionsResponse;
 /**
  * The "configs" collection of methods.
  * Typical usage is:

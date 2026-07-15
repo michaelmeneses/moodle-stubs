@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\external\action_link_exporter;
+use core\output\actions\component_action;
+use moodle_url;
+use stdClass;
 /**
  * Data structure describing html link with special action attached.
  *

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\BackupforGKE\Resource;
 
+use Google\Service\BackupforGKE\GoogleLongrunningOperation;
+use Google\Service\BackupforGKE\ListRestoreChannelsResponse;
+use Google\Service\BackupforGKE\RestoreChannel;
 /**
  * The "restoreChannels" collection of methods.
  * Typical usage is:

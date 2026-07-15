@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_usertours\local\target;
 
+use tool_usertours\step;
 /**
  * Target base.
  *

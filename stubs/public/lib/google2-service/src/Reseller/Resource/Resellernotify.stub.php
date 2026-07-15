@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Reseller\Resource;
 
+use Google\Service\Reseller\ResellernotifyGetwatchdetailsResponse;
+use Google\Service\Reseller\ResellernotifyResource;
 /**
  * The "resellernotify" collection of methods.
  * Typical usage is:

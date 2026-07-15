@@ -8,6 +8,7 @@
  */
 namespace Aws\Wickr;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Wickr Admin API** service.
  * @method \Aws\Result batchCreateUser(array $args = [])

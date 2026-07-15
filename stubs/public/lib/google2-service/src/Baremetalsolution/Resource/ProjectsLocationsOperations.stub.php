@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

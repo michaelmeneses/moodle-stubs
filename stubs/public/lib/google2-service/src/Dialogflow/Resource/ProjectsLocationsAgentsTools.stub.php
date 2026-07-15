@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListToolsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Tool;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "tools" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\RapidMigrationAssessment\Resource;
 
+use Google\Service\RapidMigrationAssessment\Annotation;
+use Google\Service\RapidMigrationAssessment\Operation;
 /**
  * The "annotations" collection of methods.
  * Typical usage is:

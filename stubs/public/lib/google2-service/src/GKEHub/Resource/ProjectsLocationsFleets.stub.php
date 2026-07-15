@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GKEHub\Resource;
 
+use Google\Service\GKEHub\Fleet;
+use Google\Service\GKEHub\ListFleetsResponse;
+use Google\Service\GKEHub\Operation;
 /**
  * The "fleets" collection of methods.
  * Typical usage is:

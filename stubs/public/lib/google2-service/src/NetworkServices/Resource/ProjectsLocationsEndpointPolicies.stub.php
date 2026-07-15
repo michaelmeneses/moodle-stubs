@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\EndpointPolicy;
+use Google\Service\NetworkServices\ListEndpointPoliciesResponse;
+use Google\Service\NetworkServices\Operation;
 /**
  * The "endpointPolicies" collection of methods.
  * Typical usage is:

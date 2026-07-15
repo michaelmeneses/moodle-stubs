@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudIdentity\Resource;
 
+use Google\Service\CloudIdentity\InboundSsoAssignment;
+use Google\Service\CloudIdentity\ListInboundSsoAssignmentsResponse;
+use Google\Service\CloudIdentity\Operation;
 /**
  * The "inboundSsoAssignments" collection of methods.
  * Typical usage is:

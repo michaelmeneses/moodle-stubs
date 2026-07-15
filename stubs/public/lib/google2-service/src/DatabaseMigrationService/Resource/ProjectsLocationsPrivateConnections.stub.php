@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DatabaseMigrationService\Resource;
 
+use Google\Service\DatabaseMigrationService\ListPrivateConnectionsResponse;
+use Google\Service\DatabaseMigrationService\Operation;
+use Google\Service\DatabaseMigrationService\Policy;
+use Google\Service\DatabaseMigrationService\PrivateConnection;
+use Google\Service\DatabaseMigrationService\SetIamPolicyRequest;
+use Google\Service\DatabaseMigrationService\TestIamPermissionsRequest;
+use Google\Service\DatabaseMigrationService\TestIamPermissionsResponse;
 /**
  * The "privateConnections" collection of methods.
  * Typical usage is:

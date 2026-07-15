@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Reports\Resource;
 
+use Google\Service\Reports\UsageReports;
 /**
  * The "customerUsageReports" collection of methods.
  * Typical usage is:

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DeveloperConnect\Resource;
 
+use Google\Service\DeveloperConnect\Connection;
+use Google\Service\DeveloperConnect\DeveloperconnectEmpty;
+use Google\Service\DeveloperConnect\FetchGitHubInstallationsResponse;
+use Google\Service\DeveloperConnect\FetchLinkableGitRepositoriesResponse;
+use Google\Service\DeveloperConnect\ListConnectionsResponse;
+use Google\Service\DeveloperConnect\Operation;
+use Google\Service\DeveloperConnect\ProcessGitHubEnterpriseWebhookRequest;
 /**
  * The "connections" collection of methods.
  * Typical usage is:

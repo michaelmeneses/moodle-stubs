@@ -23,6 +23,8 @@
  */
 namespace Google\Service\PolicySimulator\Resource;
 
+use Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1Replay;
+use Google\Service\PolicySimulator\GoogleLongrunningOperation;
 /**
  * The "replays" collection of methods.
  * Typical usage is:

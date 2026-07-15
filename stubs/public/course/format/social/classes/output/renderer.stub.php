@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace format_social\output;
 
+use core_courseformat\output\section_renderer;
 /**
  * Renderer for outputting the social course format.
  *

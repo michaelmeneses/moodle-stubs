@@ -23,6 +23,13 @@
  */
 namespace Google\Service\SecureSourceManager\Resource;
 
+use Google\Service\SecureSourceManager\Instance;
+use Google\Service\SecureSourceManager\ListInstancesResponse;
+use Google\Service\SecureSourceManager\Operation;
+use Google\Service\SecureSourceManager\Policy;
+use Google\Service\SecureSourceManager\SetIamPolicyRequest;
+use Google\Service\SecureSourceManager\TestIamPermissionsRequest;
+use Google\Service\SecureSourceManager\TestIamPermissionsResponse;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

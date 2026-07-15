@@ -23,6 +23,9 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\ListSourcesResponse;
+use Google\Service\MigrationCenterAPI\Operation;
+use Google\Service\MigrationCenterAPI\Source;
 /**
  * The "sources" collection of methods.
  * Typical usage is:

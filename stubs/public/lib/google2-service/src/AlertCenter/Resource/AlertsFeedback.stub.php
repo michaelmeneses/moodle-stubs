@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AlertCenter\Resource;
 
+use Google\Service\AlertCenter\AlertFeedback;
+use Google\Service\AlertCenter\ListAlertFeedbackResponse;
 /**
  * The "feedback" collection of methods.
  * Typical usage is:

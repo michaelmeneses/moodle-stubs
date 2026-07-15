@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3CompareVersionsRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3CompareVersionsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListVersionsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3LoadVersionRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Version;
+use Google\Service\Dialogflow\GoogleLongrunningOperation;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

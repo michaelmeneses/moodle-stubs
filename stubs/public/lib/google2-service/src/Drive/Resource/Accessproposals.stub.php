@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Drive\Resource;
 
+use Google\Service\Drive\AccessProposal;
+use Google\Service\Drive\ListAccessProposalsResponse;
+use Google\Service\Drive\ResolveAccessProposalRequest;
 /**
  * The "accessproposals" collection of methods.
  * Typical usage is:

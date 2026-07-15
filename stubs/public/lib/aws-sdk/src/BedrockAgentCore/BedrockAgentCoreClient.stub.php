@@ -8,6 +8,7 @@
  */
 namespace Aws\BedrockAgentCore;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Bedrock AgentCore Data Plane Fronting Layer** service.
  * @method \Aws\Result batchCreateMemoryRecords(array $args = [])

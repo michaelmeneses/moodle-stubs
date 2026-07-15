@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\SslPolicyReference;
+use Google\Service\Compute\TargetHttpsProxiesSetCertificateMapRequest;
+use Google\Service\Compute\TargetHttpsProxiesSetQuicOverrideRequest;
+use Google\Service\Compute\TargetHttpsProxiesSetSslCertificatesRequest;
+use Google\Service\Compute\TargetHttpsProxy;
+use Google\Service\Compute\TargetHttpsProxyAggregatedList;
+use Google\Service\Compute\TargetHttpsProxyList;
+use Google\Service\Compute\UrlMapReference;
 /**
  * The "targetHttpsProxies" collection of methods.
  * Typical usage is:

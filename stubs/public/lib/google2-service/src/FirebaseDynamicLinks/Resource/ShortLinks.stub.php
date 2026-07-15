@@ -23,6 +23,8 @@
  */
 namespace Google\Service\FirebaseDynamicLinks\Resource;
 
+use Google\Service\FirebaseDynamicLinks\CreateShortDynamicLinkRequest;
+use Google\Service\FirebaseDynamicLinks\CreateShortDynamicLinkResponse;
 /**
  * The "shortLinks" collection of methods.
  * Typical usage is:

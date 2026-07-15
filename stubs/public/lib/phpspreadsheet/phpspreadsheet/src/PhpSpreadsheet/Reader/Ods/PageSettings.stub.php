@@ -8,6 +8,10 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Ods;
 
+use DOMDocument;
+use PhpOffice\PhpSpreadsheet\Worksheet\PageSetup;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use stdClass;
 class PageSettings
 {
     private string $officeNs = '';

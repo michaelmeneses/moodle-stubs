@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DomainsRDAP\Resource;
 
+use Google\Service\DomainsRDAP\RdapResponse;
 /**
  * The "entity" collection of methods.
  * Typical usage is:

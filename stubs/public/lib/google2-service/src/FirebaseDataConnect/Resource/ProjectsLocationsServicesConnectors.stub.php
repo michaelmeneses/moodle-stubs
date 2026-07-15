@@ -23,6 +23,15 @@
  */
 namespace Google\Service\FirebaseDataConnect\Resource;
 
+use Google\Service\FirebaseDataConnect\Connector;
+use Google\Service\FirebaseDataConnect\ExecuteMutationRequest;
+use Google\Service\FirebaseDataConnect\ExecuteMutationResponse;
+use Google\Service\FirebaseDataConnect\ExecuteQueryRequest;
+use Google\Service\FirebaseDataConnect\ExecuteQueryResponse;
+use Google\Service\FirebaseDataConnect\GraphqlResponse;
+use Google\Service\FirebaseDataConnect\ImpersonateRequest;
+use Google\Service\FirebaseDataConnect\ListConnectorsResponse;
+use Google\Service\FirebaseDataConnect\Operation;
 /**
  * The "connectors" collection of methods.
  * Typical usage is:

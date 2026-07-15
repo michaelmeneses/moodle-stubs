@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_awsbedrock\form;
 
+use aiprovider_awsbedrock\model_definition;
 /**
  * Generate text action provider settings form.
  *

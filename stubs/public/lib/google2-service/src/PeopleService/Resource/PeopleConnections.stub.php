@@ -23,6 +23,7 @@
  */
 namespace Google\Service\PeopleService\Resource;
 
+use Google\Service\PeopleService\ListConnectionsResponse;
 /**
  * The "connections" collection of methods.
  * Typical usage is:

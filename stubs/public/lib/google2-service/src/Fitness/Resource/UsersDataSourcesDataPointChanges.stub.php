@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Fitness\Resource;
 
+use Google\Service\Fitness\ListDataPointChangesResponse;
 /**
  * The "dataPointChanges" collection of methods.
  * Typical usage is:

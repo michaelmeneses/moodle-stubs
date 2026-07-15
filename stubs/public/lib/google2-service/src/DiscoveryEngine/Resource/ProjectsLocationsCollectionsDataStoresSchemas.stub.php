@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListSchemasResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Schema;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "schemas" collection of methods.
  * Typical usage is:

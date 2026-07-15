@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ChecksService\Resource;
 
+use Google\Service\ChecksService\GoogleChecksRepoScanV1alphaGenerateScanRequest;
+use Google\Service\ChecksService\GoogleChecksRepoScanV1alphaListRepoScansResponse;
+use Google\Service\ChecksService\GoogleChecksRepoScanV1alphaRepoScan;
+use Google\Service\ChecksService\Operation;
 /**
  * The "scans" collection of methods.
  * Typical usage is:

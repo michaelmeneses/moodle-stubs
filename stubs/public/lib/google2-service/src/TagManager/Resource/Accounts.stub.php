@@ -23,6 +23,8 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\Account;
+use Google\Service\TagManager\ListAccountsResponse;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

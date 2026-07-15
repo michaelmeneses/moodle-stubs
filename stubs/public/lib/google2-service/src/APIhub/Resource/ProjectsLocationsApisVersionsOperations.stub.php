@@ -23,6 +23,9 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\ApihubEmpty;
+use Google\Service\APIhub\GoogleCloudApihubV1ApiOperation;
+use Google\Service\APIhub\GoogleCloudApihubV1ListApiOperationsResponse;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\Adexchangebuyer2Empty;
+use Google\Service\AdExchangeBuyerII\FilterSet;
+use Google\Service\AdExchangeBuyerII\ListFilterSetsResponse;
 /**
  * The "filterSets" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\BooksVolumesRecommendedRateResponse;
+use Google\Service\Books\Volumes as VolumesModel;
 /**
  * The "recommended" collection of methods.
  * Typical usage is:

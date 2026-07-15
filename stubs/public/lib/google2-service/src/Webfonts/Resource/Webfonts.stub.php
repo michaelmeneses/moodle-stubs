@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Webfonts\Resource;
 
+use Google\Service\Webfonts\WebfontList;
 /**
  * The "webfonts" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AirQuality\Resource;
 
+use Google\Service\AirQuality\HttpBody;
 /**
  * The "heatmapTiles" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Slides\Resource;
 
+use Google\Service\Slides\BatchUpdatePresentationRequest;
+use Google\Service\Slides\BatchUpdatePresentationResponse;
+use Google\Service\Slides\Presentation;
 /**
  * The "presentations" collection of methods.
  * Typical usage is:

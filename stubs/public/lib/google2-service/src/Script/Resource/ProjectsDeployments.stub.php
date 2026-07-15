@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Script\Resource;
 
+use Google\Service\Script\Deployment;
+use Google\Service\Script\DeploymentConfig;
+use Google\Service\Script\ListDeploymentsResponse;
+use Google\Service\Script\ScriptEmpty;
+use Google\Service\Script\UpdateDeploymentRequest;
 /**
  * The "deployments" collection of methods.
  * Typical usage is:

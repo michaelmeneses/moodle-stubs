@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentGroup;
+use Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentGroupConfig;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListEnvironmentGroupsResponse;
+use Google\Service\Apigee\GoogleLongrunningOperation;
 /**
  * The "envgroups" collection of methods.
  * Typical usage is:

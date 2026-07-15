@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\AdAsset;
+use Google\Service\DisplayVideo\BulkCreateAdAssetsRequest;
+use Google\Service\DisplayVideo\BulkCreateAdAssetsResponse;
+use Google\Service\DisplayVideo\CreateAdAssetRequest;
+use Google\Service\DisplayVideo\ListAdAssetsResponse;
+use Google\Service\DisplayVideo\UploadAdAssetRequest;
+use Google\Service\DisplayVideo\UploadAdAssetResponse;
 /**
  * The "adAssets" collection of methods.
  * Typical usage is:

@@ -29,6 +29,10 @@
  */
 namespace auth_oauth2;
 
+use context_user;
+use stdClass;
+use moodle_exception;
+use moodle_url;
 /**
  * Static list of api methods for auth oauth2 configuration.
  *
@@ -38,11 +42,6 @@ namespace auth_oauth2;
  */
 class api
 {
-    /**
-     * @var string Interval string of the expiration duration
-     * @see https://www.php.net/manual/en/dateinterval.construct.php
-     */
-    public const CONFIRMTOKEN_EXPIRES = 'PT30M';
     /**
      * Remove all linked logins that are using issuers that have been deleted.
      *

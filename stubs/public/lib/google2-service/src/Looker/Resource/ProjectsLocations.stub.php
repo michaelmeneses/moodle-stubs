@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Looker\Resource;
 
+use Google\Service\Looker\ListLocationsResponse;
+use Google\Service\Looker\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\Backup;
+use Google\Service\NetAppFiles\ListBackupsResponse;
+use Google\Service\NetAppFiles\Operation;
 /**
  * The "backups" collection of methods.
  * Typical usage is:

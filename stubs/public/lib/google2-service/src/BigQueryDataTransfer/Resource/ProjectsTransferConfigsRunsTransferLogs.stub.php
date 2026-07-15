@@ -23,6 +23,7 @@
  */
 namespace Google\Service\BigQueryDataTransfer\Resource;
 
+use Google\Service\BigQueryDataTransfer\ListTransferLogsResponse;
 /**
  * The "transferLogs" collection of methods.
  * Typical usage is:

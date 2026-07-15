@@ -23,6 +23,14 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\EstablishPeeringRequest;
+use Google\Service\NetAppFiles\ListReplicationsResponse;
+use Google\Service\NetAppFiles\Operation;
+use Google\Service\NetAppFiles\Replication;
+use Google\Service\NetAppFiles\ResumeReplicationRequest;
+use Google\Service\NetAppFiles\ReverseReplicationDirectionRequest;
+use Google\Service\NetAppFiles\StopReplicationRequest;
+use Google\Service\NetAppFiles\SyncReplicationRequest;
 /**
  * The "replications" collection of methods.
  * Typical usage is:

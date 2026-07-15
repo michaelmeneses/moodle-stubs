@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Recommender\Resource;
 
+use Google\Service\Recommender\GoogleCloudRecommenderV1ListRecommendationsResponse;
+use Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationClaimedRequest;
+use Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationDismissedRequest;
+use Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationFailedRequest;
+use Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationSucceededRequest;
+use Google\Service\Recommender\GoogleCloudRecommenderV1Recommendation;
 /**
  * The "recommendations" collection of methods.
  * Typical usage is:

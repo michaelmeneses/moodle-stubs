@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use Attribute;
 /**
  * A JS-compatible regular expression to validate the format of a param.
  *

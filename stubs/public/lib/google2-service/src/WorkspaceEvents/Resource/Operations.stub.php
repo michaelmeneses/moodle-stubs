@@ -23,6 +23,7 @@
  */
 namespace Google\Service\WorkspaceEvents\Resource;
 
+use Google\Service\WorkspaceEvents\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

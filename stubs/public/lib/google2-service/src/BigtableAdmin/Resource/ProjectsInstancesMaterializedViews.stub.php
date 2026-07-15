@@ -23,6 +23,15 @@
  */
 namespace Google\Service\BigtableAdmin\Resource;
 
+use Google\Service\BigtableAdmin\BigtableadminEmpty;
+use Google\Service\BigtableAdmin\GetIamPolicyRequest;
+use Google\Service\BigtableAdmin\ListMaterializedViewsResponse;
+use Google\Service\BigtableAdmin\MaterializedView;
+use Google\Service\BigtableAdmin\Operation;
+use Google\Service\BigtableAdmin\Policy;
+use Google\Service\BigtableAdmin\SetIamPolicyRequest;
+use Google\Service\BigtableAdmin\TestIamPermissionsRequest;
+use Google\Service\BigtableAdmin\TestIamPermissionsResponse;
 /**
  * The "materializedViews" collection of methods.
  * Typical usage is:

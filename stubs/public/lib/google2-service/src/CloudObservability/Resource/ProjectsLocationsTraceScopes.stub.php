@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudObservability\Resource;
 
+use Google\Service\CloudObservability\ListTraceScopesResponse;
+use Google\Service\CloudObservability\ObservabilityEmpty;
+use Google\Service\CloudObservability\TraceScope;
 /**
  * The "traceScopes" collection of methods.
  * Typical usage is:

@@ -8,6 +8,10 @@
  */
 namespace OpenSpout\Reader\XLSX;
 
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Reader\Common\ColumnWidth;
+use OpenSpout\Reader\Common\XMLProcessor;
+use OpenSpout\Reader\Wrapper\XMLReader;
 final class SheetHeaderReader
 {
     public const XML_NODE_COL = 'col';

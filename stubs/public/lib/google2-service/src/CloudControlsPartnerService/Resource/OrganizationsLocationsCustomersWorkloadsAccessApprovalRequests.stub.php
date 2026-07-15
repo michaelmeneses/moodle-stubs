@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudControlsPartnerService\Resource;
 
+use Google\Service\CloudControlsPartnerService\ListAccessApprovalRequestsResponse;
 /**
  * The "accessApprovalRequests" collection of methods.
  * Typical usage is:

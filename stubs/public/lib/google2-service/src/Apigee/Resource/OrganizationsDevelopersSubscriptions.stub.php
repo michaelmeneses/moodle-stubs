@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1DeveloperSubscription;
+use Google\Service\Apigee\GoogleCloudApigeeV1ExpireDeveloperSubscriptionRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListDeveloperSubscriptionsResponse;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

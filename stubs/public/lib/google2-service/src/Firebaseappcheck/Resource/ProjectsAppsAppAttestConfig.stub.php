@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Firebaseappcheck\Resource;
 
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppAttestConfig;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetAppAttestConfigsResponse;
 /**
  * The "appAttestConfig" collection of methods.
  * Typical usage is:

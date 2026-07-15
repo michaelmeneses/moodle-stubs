@@ -23,6 +23,10 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\CancelCutoverJobRequest;
+use Google\Service\VMMigrationService\CutoverJob;
+use Google\Service\VMMigrationService\ListCutoverJobsResponse;
+use Google\Service\VMMigrationService\Operation;
 /**
  * The "cutoverJobs" collection of methods.
  * Typical usage is:

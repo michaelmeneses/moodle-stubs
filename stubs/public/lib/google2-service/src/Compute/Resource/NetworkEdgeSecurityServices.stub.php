@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\NetworkEdgeSecurityService;
+use Google\Service\Compute\NetworkEdgeSecurityServiceAggregatedList;
+use Google\Service\Compute\Operation;
 /**
  * The "networkEdgeSecurityServices" collection of methods.
  * Typical usage is:

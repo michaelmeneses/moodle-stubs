@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudMachineLearningEngine\Resource;
 
+use Google\Service\CloudMachineLearningEngine\GoogleApiHttpBody;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ExplainRequest;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1GetConfigResponse;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1PredictRequest;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

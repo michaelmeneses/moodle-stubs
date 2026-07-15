@@ -16,6 +16,7 @@
  */
 namespace Monolog\Processor;
 
+use Monolog\LogRecord;
 /**
  * Injects memory_get_peak_usage in all records
  *

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\MachineType;
+use Google\Service\Compute\MachineTypeAggregatedList;
+use Google\Service\Compute\MachineTypeList;
 /**
  * The "machineTypes" collection of methods.
  * Typical usage is:

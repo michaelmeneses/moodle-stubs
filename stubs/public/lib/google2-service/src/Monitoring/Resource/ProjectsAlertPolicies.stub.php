@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\AlertPolicy;
+use Google\Service\Monitoring\ListAlertPoliciesResponse;
+use Google\Service\Monitoring\MonitoringEmpty;
 /**
  * The "alertPolicies" collection of methods.
  * Typical usage is:

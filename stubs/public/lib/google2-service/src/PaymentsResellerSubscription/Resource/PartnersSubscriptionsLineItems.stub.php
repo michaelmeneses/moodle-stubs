@@ -23,6 +23,7 @@
  */
 namespace Google\Service\PaymentsResellerSubscription\Resource;
 
+use Google\Service\PaymentsResellerSubscription\SubscriptionLineItem;
 /**
  * The "lineItems" collection of methods.
  * Typical usage is:

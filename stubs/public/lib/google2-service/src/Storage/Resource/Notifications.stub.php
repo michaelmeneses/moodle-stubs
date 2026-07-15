@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Storage\Resource;
 
+use Google\Service\Storage\Notification;
+use Google\Service\Storage\Notifications as NotificationsModel;
 /**
  * The "notifications" collection of methods.
  * Typical usage is:

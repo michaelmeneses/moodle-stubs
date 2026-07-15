@@ -8,6 +8,10 @@
  */
 namespace mod_quiz\completion;
 
+use context_module;
+use core_completion\activity_custom_completion;
+use mod_quiz\quiz_settings;
+use mod_quiz\access_manager;
 /**
  * Activity custom completion subclass for the quiz activity.
  *

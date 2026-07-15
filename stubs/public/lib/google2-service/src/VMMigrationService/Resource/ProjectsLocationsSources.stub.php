@@ -23,6 +23,11 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\FetchInventoryResponse;
+use Google\Service\VMMigrationService\FetchStorageInventoryResponse;
+use Google\Service\VMMigrationService\ListSourcesResponse;
+use Google\Service\VMMigrationService\Operation;
+use Google\Service\VMMigrationService\Source;
 /**
  * The "sources" collection of methods.
  * Typical usage is:

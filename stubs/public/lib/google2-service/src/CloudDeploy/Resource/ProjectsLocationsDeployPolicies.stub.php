@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CloudDeploy\Resource;
 
+use Google\Service\CloudDeploy\DeployPolicy;
+use Google\Service\CloudDeploy\ListDeployPoliciesResponse;
+use Google\Service\CloudDeploy\Operation;
+use Google\Service\CloudDeploy\Policy;
+use Google\Service\CloudDeploy\SetIamPolicyRequest;
 /**
  * The "deployPolicies" collection of methods.
  * Typical usage is:

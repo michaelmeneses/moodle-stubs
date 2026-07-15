@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportIntentsRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportIntentsRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Intent;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListIntentsResponse;
+use Google\Service\Dialogflow\GoogleLongrunningOperation;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "intents" collection of methods.
  * Typical usage is:

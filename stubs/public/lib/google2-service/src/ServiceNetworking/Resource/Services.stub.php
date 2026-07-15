@@ -23,6 +23,13 @@
  */
 namespace Google\Service\ServiceNetworking\Resource;
 
+use Google\Service\ServiceNetworking\AddSubnetworkRequest;
+use Google\Service\ServiceNetworking\DisableVpcServiceControlsRequest;
+use Google\Service\ServiceNetworking\EnableVpcServiceControlsRequest;
+use Google\Service\ServiceNetworking\Operation;
+use Google\Service\ServiceNetworking\SearchRangeRequest;
+use Google\Service\ServiceNetworking\ValidateConsumerConfigRequest;
+use Google\Service\ServiceNetworking\ValidateConsumerConfigResponse;
 /**
  * The "services" collection of methods.
  * Typical usage is:

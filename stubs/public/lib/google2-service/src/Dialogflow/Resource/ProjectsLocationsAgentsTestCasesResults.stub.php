@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListTestCaseResultsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TestCaseResult;
 /**
  * The "results" collection of methods.
  * Typical usage is:

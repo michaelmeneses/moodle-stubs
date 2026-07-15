@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Sasportal\Resource;
 
+use Google\Service\Sasportal\SasPortalDeployment;
 /**
  * The "deployments" collection of methods.
  * Typical usage is:

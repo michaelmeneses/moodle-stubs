@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\Feature;
+use Google\Service\Directory\FeatureRename;
+use Google\Service\Directory\Features;
 /**
  * The "features" collection of methods.
  * Typical usage is:

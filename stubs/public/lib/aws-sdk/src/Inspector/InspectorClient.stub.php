@@ -8,6 +8,7 @@
  */
 namespace Aws\Inspector;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Inspector** service.
  *

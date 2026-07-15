@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\ListQuotaRulesResponse;
+use Google\Service\NetAppFiles\Operation;
+use Google\Service\NetAppFiles\QuotaRule;
 /**
  * The "quotaRules" collection of methods.
  * Typical usage is:

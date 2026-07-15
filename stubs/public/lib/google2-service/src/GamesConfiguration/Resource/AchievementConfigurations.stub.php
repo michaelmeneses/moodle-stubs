@@ -23,6 +23,8 @@
  */
 namespace Google\Service\GamesConfiguration\Resource;
 
+use Google\Service\GamesConfiguration\AchievementConfiguration;
+use Google\Service\GamesConfiguration\AchievementConfigurationListResponse;
 /**
  * The "achievementConfigurations" collection of methods.
  * Typical usage is:

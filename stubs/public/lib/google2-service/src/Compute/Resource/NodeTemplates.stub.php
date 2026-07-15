@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\NodeTemplate;
+use Google\Service\Compute\NodeTemplateAggregatedList;
+use Google\Service\Compute\NodeTemplateList;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\RegionSetPolicyRequest;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "nodeTemplates" collection of methods.
  * Typical usage is:

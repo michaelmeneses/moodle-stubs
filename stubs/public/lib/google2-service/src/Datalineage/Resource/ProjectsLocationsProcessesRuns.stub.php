@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Datalineage\Resource;
 
+use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ListRunsResponse;
+use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1Run;
+use Google\Service\Datalineage\GoogleLongrunningOperation;
 /**
  * The "runs" collection of methods.
  * Typical usage is:

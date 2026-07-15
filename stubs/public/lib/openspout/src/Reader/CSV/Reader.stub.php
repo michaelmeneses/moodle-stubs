@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Reader\CSV;
 
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Common\Helper\EncodingHelper;
+use OpenSpout\Reader\AbstractReader;
 /**
  * @extends AbstractReader<SheetIterator>
  */

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DriveLabels\Resource;
 
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UserCapabilities;
 /**
  * The "users" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataCatalog\Resource;
 
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1TagTemplateField;
 /**
  * The "enumValues" collection of methods.
  * Typical usage is:

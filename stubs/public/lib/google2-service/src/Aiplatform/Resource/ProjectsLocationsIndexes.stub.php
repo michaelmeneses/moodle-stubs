@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Index;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListIndexesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RemoveDatapointsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RemoveDatapointsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1UpsertDatapointsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1UpsertDatapointsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "indexes" collection of methods.
  * Typical usage is:

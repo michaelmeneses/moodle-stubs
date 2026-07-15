@@ -23,6 +23,9 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\ListPreferenceSetsResponse;
+use Google\Service\MigrationCenterAPI\Operation;
+use Google\Service\MigrationCenterAPI\PreferenceSet;
 /**
  * The "preferenceSets" collection of methods.
  * Typical usage is:

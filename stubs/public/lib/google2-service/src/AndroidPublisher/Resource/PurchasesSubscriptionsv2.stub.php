@@ -23,6 +23,11 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\CancelSubscriptionPurchaseRequest;
+use Google\Service\AndroidPublisher\CancelSubscriptionPurchaseResponse;
+use Google\Service\AndroidPublisher\RevokeSubscriptionPurchaseRequest;
+use Google\Service\AndroidPublisher\RevokeSubscriptionPurchaseResponse;
+use Google\Service\AndroidPublisher\SubscriptionPurchaseV2;
 /**
  * The "subscriptionsv2" collection of methods.
  * Typical usage is:

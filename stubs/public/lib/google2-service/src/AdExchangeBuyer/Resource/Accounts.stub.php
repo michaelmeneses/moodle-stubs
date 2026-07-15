@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdExchangeBuyer\Resource;
 
+use Google\Service\AdExchangeBuyer\Account;
+use Google\Service\AdExchangeBuyer\AccountsList;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

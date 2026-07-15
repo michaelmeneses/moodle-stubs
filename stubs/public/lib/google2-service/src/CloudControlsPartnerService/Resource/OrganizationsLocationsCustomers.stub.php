@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudControlsPartnerService\Resource;
 
+use Google\Service\CloudControlsPartnerService\CloudcontrolspartnerEmpty;
+use Google\Service\CloudControlsPartnerService\Customer;
+use Google\Service\CloudControlsPartnerService\ListCustomersResponse;
 /**
  * The "customers" collection of methods.
  * Typical usage is:

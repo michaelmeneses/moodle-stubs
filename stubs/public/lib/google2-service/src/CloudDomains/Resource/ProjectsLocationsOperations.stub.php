@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudDomains\Resource;
 
+use Google\Service\CloudDomains\ListOperationsResponse;
+use Google\Service\CloudDomains\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\PaymentsResellerSubscription\Resource;
 
+use Google\Service\PaymentsResellerSubscription\ListProductsResponse;
 /**
  * The "products" collection of methods.
  * Typical usage is:

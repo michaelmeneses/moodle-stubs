@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\AutoForwarding;
+use Google\Service\Gmail\ImapSettings;
+use Google\Service\Gmail\LanguageSettings;
+use Google\Service\Gmail\PopSettings;
+use Google\Service\Gmail\VacationSettings;
 /**
  * The "settings" collection of methods.
  * Typical usage is:

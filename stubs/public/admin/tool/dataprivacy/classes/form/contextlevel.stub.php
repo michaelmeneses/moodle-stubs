@@ -29,6 +29,9 @@
  */
 namespace tool_dataprivacy\form;
 
+use core\form\persistent;
+use tool_dataprivacy\api;
+use tool_dataprivacy\data_registry;
 /**
  * Context level data form.
  *

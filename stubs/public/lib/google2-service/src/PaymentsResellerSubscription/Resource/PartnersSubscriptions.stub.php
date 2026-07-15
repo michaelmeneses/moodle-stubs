@@ -23,6 +23,19 @@
  */
 namespace Google\Service\PaymentsResellerSubscription\Resource;
 
+use Google\Service\PaymentsResellerSubscription\CancelSubscriptionRequest;
+use Google\Service\PaymentsResellerSubscription\CancelSubscriptionResponse;
+use Google\Service\PaymentsResellerSubscription\EntitleSubscriptionRequest;
+use Google\Service\PaymentsResellerSubscription\EntitleSubscriptionResponse;
+use Google\Service\PaymentsResellerSubscription\ExtendSubscriptionRequest;
+use Google\Service\PaymentsResellerSubscription\ExtendSubscriptionResponse;
+use Google\Service\PaymentsResellerSubscription\ResumeSubscriptionRequest;
+use Google\Service\PaymentsResellerSubscription\ResumeSubscriptionResponse;
+use Google\Service\PaymentsResellerSubscription\Subscription;
+use Google\Service\PaymentsResellerSubscription\SuspendSubscriptionRequest;
+use Google\Service\PaymentsResellerSubscription\SuspendSubscriptionResponse;
+use Google\Service\PaymentsResellerSubscription\UndoCancelSubscriptionRequest;
+use Google\Service\PaymentsResellerSubscription\UndoCancelSubscriptionResponse;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

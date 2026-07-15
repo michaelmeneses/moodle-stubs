@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\CreateSchemaRegistryRequest;
+use Google\Service\ManagedKafka\ListSchemaRegistriesResponse;
+use Google\Service\ManagedKafka\ManagedkafkaEmpty;
+use Google\Service\ManagedKafka\SchemaRegistry;
 /**
  * The "schemaRegistries" collection of methods.
  * Typical usage is:

@@ -23,6 +23,16 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\AggregateAssetsValuesRequest;
+use Google\Service\MigrationCenterAPI\AggregateAssetsValuesResponse;
+use Google\Service\MigrationCenterAPI\Asset;
+use Google\Service\MigrationCenterAPI\BatchDeleteAssetsRequest;
+use Google\Service\MigrationCenterAPI\BatchUpdateAssetsRequest;
+use Google\Service\MigrationCenterAPI\BatchUpdateAssetsResponse;
+use Google\Service\MigrationCenterAPI\Frames;
+use Google\Service\MigrationCenterAPI\ListAssetsResponse;
+use Google\Service\MigrationCenterAPI\MigrationcenterEmpty;
+use Google\Service\MigrationCenterAPI\ReportAssetFramesResponse;
 /**
  * The "assets" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CloudIot\Resource;
 
+use Google\Service\CloudIot\GetIamPolicyRequest;
+use Google\Service\CloudIot\Policy;
+use Google\Service\CloudIot\SetIamPolicyRequest;
+use Google\Service\CloudIot\TestIamPermissionsRequest;
+use Google\Service\CloudIot\TestIamPermissionsResponse;
 /**
  * The "groups" collection of methods.
  * Typical usage is:

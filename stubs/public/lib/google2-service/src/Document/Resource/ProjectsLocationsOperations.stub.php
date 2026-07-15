@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Document\Resource;
 
+use Google\Service\Document\GoogleLongrunningListOperationsResponse;
+use Google\Service\Document\GoogleLongrunningOperation;
+use Google\Service\Document\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

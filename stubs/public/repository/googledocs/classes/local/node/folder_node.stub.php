@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace repository_googledocs\local\node;
 
+use repository_googledocs\helper;
 /**
  * Class used to represent a folder node in the googledocs repository.
  *

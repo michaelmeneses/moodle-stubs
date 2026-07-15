@@ -23,6 +23,15 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListTasksResponse;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1RunTaskRequest;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1RunTaskResponse;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1Task;
+use Google\Service\CloudDataplex\GoogleIamV1Policy;
+use Google\Service\CloudDataplex\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\CloudDataplex\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\CloudDataplex\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\CloudDataplex\GoogleLongrunningOperation;
 /**
  * The "tasks" collection of methods.
  * Typical usage is:

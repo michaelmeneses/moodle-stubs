@@ -23,6 +23,10 @@
  */
 namespace Google\Service\MyBusinessBusinessInformation\Resource;
 
+use Google\Service\MyBusinessBusinessInformation\Attributes as AttributesModel;
+use Google\Service\MyBusinessBusinessInformation\GoogleUpdatedLocation;
+use Google\Service\MyBusinessBusinessInformation\Location;
+use Google\Service\MyBusinessBusinessInformation\MybusinessbusinessinformationEmpty;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

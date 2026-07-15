@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureOnlineStore;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListFeatureOnlineStoresResponse;
+use Google\Service\Aiplatform\GoogleIamV1Policy;
+use Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Aiplatform\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "featureOnlineStores" collection of methods.
  * Typical usage is:

@@ -23,6 +23,16 @@
  */
 namespace Google\Service\CloudAlloyDBAdmin\Resource;
 
+use Google\Service\CloudAlloyDBAdmin\Cluster;
+use Google\Service\CloudAlloyDBAdmin\ExportClusterRequest;
+use Google\Service\CloudAlloyDBAdmin\ImportClusterRequest;
+use Google\Service\CloudAlloyDBAdmin\ListClustersResponse;
+use Google\Service\CloudAlloyDBAdmin\Operation;
+use Google\Service\CloudAlloyDBAdmin\PromoteClusterRequest;
+use Google\Service\CloudAlloyDBAdmin\RestoreClusterRequest;
+use Google\Service\CloudAlloyDBAdmin\RestoreFromCloudSQLRequest;
+use Google\Service\CloudAlloyDBAdmin\SwitchoverClusterRequest;
+use Google\Service\CloudAlloyDBAdmin\UpgradeClusterRequest;
 /**
  * The "clusters" collection of methods.
  * Typical usage is:

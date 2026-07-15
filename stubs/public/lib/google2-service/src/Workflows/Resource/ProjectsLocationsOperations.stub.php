@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Workflows\Resource;
 
+use Google\Service\Workflows\ListOperationsResponse;
+use Google\Service\Workflows\Operation;
+use Google\Service\Workflows\WorkflowsEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

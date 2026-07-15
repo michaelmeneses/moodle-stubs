@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Document\Resource;
 
+use Google\Service\Document\GoogleCloudDocumentaiV1ListSchemasResponse;
+use Google\Service\Document\GoogleCloudDocumentaiV1NextSchema;
+use Google\Service\Document\GoogleLongrunningOperation;
 /**
  * The "schemas" collection of methods.
  * Typical usage is:

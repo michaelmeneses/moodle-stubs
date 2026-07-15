@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\ListSmimeInfoResponse;
+use Google\Service\Gmail\SmimeInfo;
 /**
  * The "smimeInfo" collection of methods.
  * Typical usage is:

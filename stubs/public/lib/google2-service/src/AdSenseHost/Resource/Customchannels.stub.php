@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdSenseHost\Resource;
 
+use Google\Service\AdSenseHost\CustomChannel;
+use Google\Service\AdSenseHost\CustomChannels as CustomChannelsModel;
 /**
  * The "customchannels" collection of methods.
  * Typical usage is:

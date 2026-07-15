@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudIAP\Resource;
 
+use Google\Service\CloudIAP\IapEmpty;
+use Google\Service\CloudIAP\IdentityAwareProxyClient;
+use Google\Service\CloudIAP\ListIdentityAwareProxyClientsResponse;
+use Google\Service\CloudIAP\ResetIdentityAwareProxyClientSecretRequest;
 /**
  * The "identityAwareProxyClients" collection of methods.
  * Typical usage is:

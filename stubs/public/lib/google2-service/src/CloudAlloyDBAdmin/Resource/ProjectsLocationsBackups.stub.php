@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudAlloyDBAdmin\Resource;
 
+use Google\Service\CloudAlloyDBAdmin\Backup;
+use Google\Service\CloudAlloyDBAdmin\ListBackupsResponse;
+use Google\Service\CloudAlloyDBAdmin\Operation;
 /**
  * The "backups" collection of methods.
  * Typical usage is:

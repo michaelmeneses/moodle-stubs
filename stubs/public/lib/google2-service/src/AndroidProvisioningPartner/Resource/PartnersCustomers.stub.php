@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AndroidProvisioningPartner\Resource;
 
+use Google\Service\AndroidProvisioningPartner\Company;
+use Google\Service\AndroidProvisioningPartner\CreateCustomerRequest;
+use Google\Service\AndroidProvisioningPartner\ListCustomersResponse;
 /**
  * The "customers" collection of methods.
  * Typical usage is:

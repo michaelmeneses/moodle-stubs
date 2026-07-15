@@ -23,6 +23,12 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1EvaluationJob;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListEvaluationJobsResponse;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1PauseEvaluationJobRequest;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ResumeEvaluationJobRequest;
+use Google\Service\DataLabeling\GoogleProtobufEmpty;
 /**
  * The "evaluationJobs" collection of methods.
  * Typical usage is:

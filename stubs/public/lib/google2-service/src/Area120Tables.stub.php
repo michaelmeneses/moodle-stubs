@@ -23,6 +23,7 @@
  */
 namespace Google\Service;
 
+use Google\Client;
 /**
 * Service definition for Area120Tables (v1alpha1).
 *

@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\external\columns;
 
+use core_external\external_api;
+use core_external\external_value;
+use core_external\external_function_parameters;
+use core_reportbuilder\manager;
+use core_reportbuilder\permission;
+use core_reportbuilder\local\helpers\report;
 /**
  * External method for re-ordering report columns
  *

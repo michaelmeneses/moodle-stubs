@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Vault\Resource;
 
+use Google\Service\Vault\CancelOperationRequest;
+use Google\Service\Vault\ListOperationsResponse;
+use Google\Service\Vault\Operation;
+use Google\Service\Vault\VaultEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

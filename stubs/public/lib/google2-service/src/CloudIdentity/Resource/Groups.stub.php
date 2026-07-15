@@ -23,6 +23,12 @@
  */
 namespace Google\Service\CloudIdentity\Resource;
 
+use Google\Service\CloudIdentity\Group;
+use Google\Service\CloudIdentity\ListGroupsResponse;
+use Google\Service\CloudIdentity\LookupGroupNameResponse;
+use Google\Service\CloudIdentity\Operation;
+use Google\Service\CloudIdentity\SearchGroupsResponse;
+use Google\Service\CloudIdentity\SecuritySettings;
 /**
  * The "groups" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Dns\Resource;
 
+use Google\Service\Dns\ResponsePolicyRule;
+use Google\Service\Dns\ResponsePolicyRulesListResponse;
+use Google\Service\Dns\ResponsePolicyRulesPatchResponse;
+use Google\Service\Dns\ResponsePolicyRulesUpdateResponse;
 /**
  * The "responsePolicyRules" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DatabaseMigrationService\Resource;
 
+use Google\Service\DatabaseMigrationService\FetchStaticIpsResponse;
+use Google\Service\DatabaseMigrationService\ListLocationsResponse;
+use Google\Service\DatabaseMigrationService\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

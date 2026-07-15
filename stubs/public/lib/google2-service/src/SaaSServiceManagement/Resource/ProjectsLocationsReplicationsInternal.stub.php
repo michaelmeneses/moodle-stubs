@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SaaSServiceManagement\Resource;
 
+use Google\Service\SaaSServiceManagement\ListReplicationsInternalResponse;
+use Google\Service\SaaSServiceManagement\ReplicationInternal;
+use Google\Service\SaaSServiceManagement\SaasservicemgmtEmpty;
 /**
  * The "replicationsInternal" collection of methods.
  * Typical usage is:

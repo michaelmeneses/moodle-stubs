@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCancelExecutionRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCancelExecutionResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadExecutionResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecution;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListExecutionsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaReplayExecutionRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaReplayExecutionResponse;
 /**
  * The "executions" collection of methods.
  * Typical usage is:

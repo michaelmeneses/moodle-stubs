@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\CustomMetric;
+use Google\Service\Analytics\CustomMetrics;
 /**
  * The "customMetrics" collection of methods.
  * Typical usage is:

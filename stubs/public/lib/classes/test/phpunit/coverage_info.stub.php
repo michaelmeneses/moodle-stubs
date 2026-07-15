@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\test\phpunit;
 
+use core\output\html_writer;
 /**
  * Coverage information for PHPUnit.
  *

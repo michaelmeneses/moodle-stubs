@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\DataplexEmpty;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1Entity;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListEntitiesResponse;
 /**
  * The "entities" collection of methods.
  * Typical usage is:

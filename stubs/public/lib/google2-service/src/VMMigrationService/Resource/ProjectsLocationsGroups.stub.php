@@ -23,6 +23,11 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\AddGroupMigrationRequest;
+use Google\Service\VMMigrationService\Group;
+use Google\Service\VMMigrationService\ListGroupsResponse;
+use Google\Service\VMMigrationService\Operation;
+use Google\Service\VMMigrationService\RemoveGroupMigrationRequest;
 /**
  * The "groups" collection of methods.
  * Typical usage is:

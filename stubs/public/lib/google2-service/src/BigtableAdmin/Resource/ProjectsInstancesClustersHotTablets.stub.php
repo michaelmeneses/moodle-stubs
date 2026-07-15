@@ -23,6 +23,7 @@
  */
 namespace Google\Service\BigtableAdmin\Resource;
 
+use Google\Service\BigtableAdmin\ListHotTabletsResponse;
 /**
  * The "hotTablets" collection of methods.
  * Typical usage is:

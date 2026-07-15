@@ -23,6 +23,12 @@
  */
 namespace Google\Service\AuthorizedBuyersMarketplace\Resource;
 
+use Google\Service\AuthorizedBuyersMarketplace\AcceptProposalRequest;
+use Google\Service\AuthorizedBuyersMarketplace\AddNoteRequest;
+use Google\Service\AuthorizedBuyersMarketplace\CancelNegotiationRequest;
+use Google\Service\AuthorizedBuyersMarketplace\ListProposalsResponse;
+use Google\Service\AuthorizedBuyersMarketplace\Proposal;
+use Google\Service\AuthorizedBuyersMarketplace\SendRfpRequest;
 /**
  * The "proposals" collection of methods.
  * Typical usage is:

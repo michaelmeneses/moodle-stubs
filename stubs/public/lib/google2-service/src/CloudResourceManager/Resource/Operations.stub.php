@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudResourceManager\Resource;
 
+use Google\Service\CloudResourceManager\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

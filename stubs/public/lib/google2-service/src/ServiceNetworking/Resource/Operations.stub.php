@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ServiceNetworking\Resource;
 
+use Google\Service\ServiceNetworking\CancelOperationRequest;
+use Google\Service\ServiceNetworking\ListOperationsResponse;
+use Google\Service\ServiceNetworking\Operation;
+use Google\Service\ServiceNetworking\ServicenetworkingEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

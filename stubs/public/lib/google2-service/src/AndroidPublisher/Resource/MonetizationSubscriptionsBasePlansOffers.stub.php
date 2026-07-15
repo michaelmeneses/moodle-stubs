@@ -23,6 +23,16 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\ActivateSubscriptionOfferRequest;
+use Google\Service\AndroidPublisher\BatchGetSubscriptionOffersRequest;
+use Google\Service\AndroidPublisher\BatchGetSubscriptionOffersResponse;
+use Google\Service\AndroidPublisher\BatchUpdateSubscriptionOfferStatesRequest;
+use Google\Service\AndroidPublisher\BatchUpdateSubscriptionOfferStatesResponse;
+use Google\Service\AndroidPublisher\BatchUpdateSubscriptionOffersRequest;
+use Google\Service\AndroidPublisher\BatchUpdateSubscriptionOffersResponse;
+use Google\Service\AndroidPublisher\DeactivateSubscriptionOfferRequest;
+use Google\Service\AndroidPublisher\ListSubscriptionOffersResponse;
+use Google\Service\AndroidPublisher\SubscriptionOffer;
 /**
  * The "offers" collection of methods.
  * Typical usage is:

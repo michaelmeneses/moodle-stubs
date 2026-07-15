@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course;
 
+use cm_info;
+use core_cache\cache;
+use core_courseformat\sectiondelegatemodule;
+use core\context\module as context_module;
+use core\context_helper;
+use core\exception\coding_exception;
+use core\exception\moodle_exception;
+use core\url;
+use section_info;
+use stdClass;
 /**
  * Information about a course that is cached in the course table 'modinfo' field (and then in
  * memory) in order to reduce the need for other database queries.

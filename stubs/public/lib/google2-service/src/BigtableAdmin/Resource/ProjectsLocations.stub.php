@@ -23,6 +23,7 @@
  */
 namespace Google\Service\BigtableAdmin\Resource;
 
+use Google\Service\BigtableAdmin\ListLocationsResponse;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

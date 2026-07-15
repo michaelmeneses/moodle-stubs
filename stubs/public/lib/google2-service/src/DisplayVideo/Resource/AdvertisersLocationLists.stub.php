@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\ListLocationListsResponse;
+use Google\Service\DisplayVideo\LocationList;
 /**
  * The "locationLists" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\AttributeDefinition;
+use Google\Service\CloudHealthcare\HealthcareEmpty;
+use Google\Service\CloudHealthcare\ListAttributeDefinitionsResponse;
 /**
  * The "attributeDefinitions" collection of methods.
  * Typical usage is:

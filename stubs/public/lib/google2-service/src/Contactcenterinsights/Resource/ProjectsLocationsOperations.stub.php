@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleLongrunningListOperationsResponse;
+use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
+use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

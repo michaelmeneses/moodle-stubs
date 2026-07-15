@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudIAP\Resource;
 
+use Google\Service\CloudIAP\IapEmpty;
+use Google\Service\CloudIAP\ListTunnelDestGroupsResponse;
+use Google\Service\CloudIAP\TunnelDestGroup;
 /**
  * The "destGroups" collection of methods.
  * Typical usage is:

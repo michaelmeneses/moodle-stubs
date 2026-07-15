@@ -23,6 +23,7 @@
  */
 namespace Google\Service\FirebaseManagement\Resource;
 
+use Google\Service\FirebaseManagement\ListAvailableProjectsResponse;
 /**
  * The "availableProjects" collection of methods.
  * Typical usage is:

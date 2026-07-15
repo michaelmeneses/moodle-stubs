@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateInstructionRequest;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Instruction;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListInstructionsResponse;
+use Google\Service\DataLabeling\GoogleLongrunningOperation;
+use Google\Service\DataLabeling\GoogleProtobufEmpty;
 /**
  * The "instructions" collection of methods.
  * Typical usage is:

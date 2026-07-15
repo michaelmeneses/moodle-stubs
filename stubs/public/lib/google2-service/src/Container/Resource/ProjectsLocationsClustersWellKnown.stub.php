@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Container\Resource;
 
+use Google\Service\Container\GetOpenIDConfigResponse;
 /**
  * The "well-known" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\ListGiVersionsResponse;
 /**
  * The "giVersions" collection of methods.
  * Typical usage is:

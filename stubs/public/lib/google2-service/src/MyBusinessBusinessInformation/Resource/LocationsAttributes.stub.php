@@ -23,6 +23,7 @@
  */
 namespace Google\Service\MyBusinessBusinessInformation\Resource;
 
+use Google\Service\MyBusinessBusinessInformation\Attributes as AttributesModel;
 /**
  * The "attributes" collection of methods.
  * Typical usage is:

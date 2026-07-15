@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\Order;
+use Google\Service\Dfareporting\OrdersListResponse;
 /**
  * The "orders" collection of methods.
  * Typical usage is:

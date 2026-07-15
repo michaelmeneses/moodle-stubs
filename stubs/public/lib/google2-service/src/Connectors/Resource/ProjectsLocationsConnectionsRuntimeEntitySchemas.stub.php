@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\ListRuntimeEntitySchemasResponse;
 /**
  * The "runtimeEntitySchemas" collection of methods.
  * Typical usage is:

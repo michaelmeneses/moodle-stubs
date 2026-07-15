@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListSfdcInstancesResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSfdcInstance;
+use Google\Service\Integrations\GoogleProtobufEmpty;
 /**
  * The "sfdcInstances" collection of methods.
  * Typical usage is:

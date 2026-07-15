@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign\event;
 
+use assign;
+use coding_exception;
+use stdClass;
 /**
  * The mod_assign submission removed event class.
  *

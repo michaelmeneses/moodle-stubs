@@ -23,6 +23,8 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\GtagConfig;
+use Google\Service\TagManager\ListGtagConfigResponse;
 /**
  * The "gtag_config" collection of methods.
  * Typical usage is:

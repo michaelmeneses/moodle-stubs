@@ -29,6 +29,8 @@
  */
 namespace mod_quiz\event;
 
+use core\exception\coding_exception;
+use core\url;
 /**
  * The mod_quiz slot created event class.
  *

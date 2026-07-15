@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Meet\Resource;
 
+use Google\Service\Meet\EndActiveConferenceRequest;
+use Google\Service\Meet\MeetEmpty;
+use Google\Service\Meet\Space;
 /**
  * The "spaces" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\FirebaseRules\Resource;
 
+use Google\Service\FirebaseRules\TestRulesetRequest;
+use Google\Service\FirebaseRules\TestRulesetResponse;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

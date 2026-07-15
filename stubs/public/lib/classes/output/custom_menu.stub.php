@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\exception\moodle_exception;
+use moodle_url;
 /**
  * Custom menu class
  *

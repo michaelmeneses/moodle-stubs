@@ -23,6 +23,7 @@
  */
 namespace Google\Service\VersionHistory\Resource;
 
+use Google\Service\VersionHistory\ListPlatformsResponse;
 /**
  * The "platforms" collection of methods.
  * Typical usage is:

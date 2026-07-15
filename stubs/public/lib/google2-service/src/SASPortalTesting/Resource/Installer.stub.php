@@ -23,6 +23,10 @@
  */
 namespace Google\Service\SASPortalTesting\Resource;
 
+use Google\Service\SASPortalTesting\SasPortalGenerateSecretRequest;
+use Google\Service\SASPortalTesting\SasPortalGenerateSecretResponse;
+use Google\Service\SASPortalTesting\SasPortalValidateInstallerRequest;
+use Google\Service\SASPortalTesting\SasPortalValidateInstallerResponse;
 /**
  * The "installer" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SQLAdmin\Resource;
 
+use Google\Service\SQLAdmin\SslCert;
+use Google\Service\SQLAdmin\SslCertsCreateEphemeralRequest;
 /**
  * The "createEphemeral" collection of methods.
  * Typical usage is:

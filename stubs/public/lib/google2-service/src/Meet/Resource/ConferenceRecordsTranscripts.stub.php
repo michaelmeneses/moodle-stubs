@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Meet\Resource;
 
+use Google\Service\Meet\ListTranscriptsResponse;
+use Google\Service\Meet\Transcript;
 /**
  * The "transcripts" collection of methods.
  * Typical usage is:

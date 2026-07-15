@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudDeploy\Resource;
 
+use Google\Service\CloudDeploy\Config;
+use Google\Service\CloudDeploy\ListLocationsResponse;
+use Google\Service\CloudDeploy\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

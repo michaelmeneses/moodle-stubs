@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\CombinedAudience;
+use Google\Service\DisplayVideo\ListCombinedAudiencesResponse;
 /**
  * The "combinedAudiences" collection of methods.
  * Typical usage is:

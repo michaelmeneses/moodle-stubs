@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1AddTrialMeasurementRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CheckTrialEarlyStoppingStateRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CompleteTrialRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListOptimalTrialsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListOptimalTrialsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTrialsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1StopTrialRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SuggestTrialsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Trial;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "trials" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\RemoteBuildExecution\Resource;
 
+use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2WaitExecutionRequest;
+use Google\Service\RemoteBuildExecution\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

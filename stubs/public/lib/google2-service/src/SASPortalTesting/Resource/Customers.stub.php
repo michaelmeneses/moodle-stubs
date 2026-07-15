@@ -23,6 +23,15 @@
  */
 namespace Google\Service\SASPortalTesting\Resource;
 
+use Google\Service\SASPortalTesting\SasPortalCustomer;
+use Google\Service\SASPortalTesting\SasPortalListCustomersResponse;
+use Google\Service\SASPortalTesting\SasPortalListGcpProjectDeploymentsResponse;
+use Google\Service\SASPortalTesting\SasPortalListLegacyOrganizationsResponse;
+use Google\Service\SASPortalTesting\SasPortalMigrateOrganizationRequest;
+use Google\Service\SASPortalTesting\SasPortalOperation;
+use Google\Service\SASPortalTesting\SasPortalProvisionDeploymentRequest;
+use Google\Service\SASPortalTesting\SasPortalProvisionDeploymentResponse;
+use Google\Service\SASPortalTesting\SasPortalSetupSasAnalyticsRequest;
 /**
  * The "customers" collection of methods.
  * Typical usage is:

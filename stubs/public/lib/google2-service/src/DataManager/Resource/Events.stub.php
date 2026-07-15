@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataManager\Resource;
 
+use Google\Service\DataManager\IngestEventsRequest;
+use Google\Service\DataManager\IngestEventsResponse;
 /**
  * The "events" collection of methods.
  * Typical usage is:

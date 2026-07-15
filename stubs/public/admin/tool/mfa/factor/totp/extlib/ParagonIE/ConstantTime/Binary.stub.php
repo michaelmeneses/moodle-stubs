@@ -8,6 +8,7 @@
  */
 namespace ParagonIE\ConstantTime;
 
+use TypeError;
 /**
  *  Copyright (c) 2016 - 2022 Paragon Initiative Enterprises.
  *  Copyright (c) 2014 Steve "Sc00bz" Thomas (steve at tobtu dot com)

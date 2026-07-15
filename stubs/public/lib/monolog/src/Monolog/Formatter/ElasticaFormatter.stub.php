@@ -16,6 +16,8 @@
  */
 namespace Monolog\Formatter;
 
+use Elastica\Document;
+use Monolog\LogRecord;
 /**
  * Format a log message into an Elastica Document
  *

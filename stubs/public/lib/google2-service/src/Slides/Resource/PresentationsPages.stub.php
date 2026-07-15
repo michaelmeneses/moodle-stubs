@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Slides\Resource;
 
+use Google\Service\Slides\Page;
+use Google\Service\Slides\Thumbnail;
 /**
  * The "pages" collection of methods.
  * Typical usage is:

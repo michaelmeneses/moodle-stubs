@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AdSenseHost\Resource;
 
+use Google\Service\AdSenseHost\AssociationSession;
 /**
  * The "associationsessions" collection of methods.
  * Typical usage is:

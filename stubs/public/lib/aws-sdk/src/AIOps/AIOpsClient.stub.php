@@ -8,6 +8,7 @@
  */
 namespace Aws\AIOps;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS AI Ops** service.
  * @method \Aws\Result createInvestigationGroup(array $args = [])

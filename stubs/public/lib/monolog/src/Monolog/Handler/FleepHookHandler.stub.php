@@ -16,6 +16,10 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\LineFormatter;
+use Monolog\Level;
+use Monolog\LogRecord;
 /**
  * Sends logs to Fleep.io using Webhook integrations
  *

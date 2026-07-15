@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DeveloperConnect\Resource;
 
+use Google\Service\DeveloperConnect\InsightsConfig;
+use Google\Service\DeveloperConnect\ListInsightsConfigsResponse;
+use Google\Service\DeveloperConnect\Operation;
 /**
  * The "insightsConfigs" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SASPortalTesting\Resource;
 
+use Google\Service\SASPortalTesting\SasPortalProvisionDeploymentRequest;
+use Google\Service\SASPortalTesting\SasPortalProvisionDeploymentResponse;
 /**
  * The "provisioning" collection of methods.
  * Typical usage is:

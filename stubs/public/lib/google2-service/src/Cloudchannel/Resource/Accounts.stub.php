@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Cloudchannel\Resource;
 
+use Google\Service\Cloudchannel\GoogleCloudChannelV1CheckCloudIdentityAccountsExistRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListSubscribersResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberResponse;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\Notification as NotificationModel;
 /**
  * The "notification" collection of methods.
  * Typical usage is:

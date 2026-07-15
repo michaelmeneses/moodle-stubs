@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Acceleratedmobilepageurl\Resource;
 
+use Google\Service\Acceleratedmobilepageurl\BatchGetAmpUrlsRequest;
+use Google\Service\Acceleratedmobilepageurl\BatchGetAmpUrlsResponse;
 /**
  * The "ampUrls" collection of methods.
  * Typical usage is:

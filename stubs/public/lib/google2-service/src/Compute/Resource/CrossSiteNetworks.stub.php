@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\CrossSiteNetwork;
+use Google\Service\Compute\CrossSiteNetworkList;
+use Google\Service\Compute\Operation;
 /**
  * The "crossSiteNetworks" collection of methods.
  * Typical usage is:

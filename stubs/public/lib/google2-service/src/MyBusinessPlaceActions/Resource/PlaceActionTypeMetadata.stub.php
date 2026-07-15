@@ -23,6 +23,7 @@
  */
 namespace Google\Service\MyBusinessPlaceActions\Resource;
 
+use Google\Service\MyBusinessPlaceActions\ListPlaceActionTypeMetadataResponse;
 /**
  * The "placeActionTypeMetadata" collection of methods.
  * Typical usage is:

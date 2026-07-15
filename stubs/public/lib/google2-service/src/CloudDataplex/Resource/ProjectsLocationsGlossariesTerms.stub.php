@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\DataplexEmpty;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1GlossaryTerm;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListGlossaryTermsResponse;
+use Google\Service\CloudDataplex\GoogleIamV1Policy;
+use Google\Service\CloudDataplex\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\CloudDataplex\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\CloudDataplex\GoogleIamV1TestIamPermissionsResponse;
 /**
  * The "terms" collection of methods.
  * Typical usage is:

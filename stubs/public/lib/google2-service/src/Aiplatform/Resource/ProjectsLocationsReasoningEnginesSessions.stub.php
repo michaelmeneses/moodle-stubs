@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1AppendEventResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListSessionsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Session;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SessionEvent;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "sessions" collection of methods.
  * Typical usage is:

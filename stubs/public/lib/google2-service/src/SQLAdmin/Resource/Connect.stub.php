@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SQLAdmin\Resource;
 
+use Google\Service\SQLAdmin\ConnectSettings;
+use Google\Service\SQLAdmin\GenerateEphemeralCertRequest;
+use Google\Service\SQLAdmin\GenerateEphemeralCertResponse;
 /**
  * The "connect" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\TPU\Resource;
 
+use Google\Service\TPU\ListTensorFlowVersionsResponse;
+use Google\Service\TPU\TensorFlowVersion;
 /**
  * The "tensorflowVersions" collection of methods.
  * Typical usage is:

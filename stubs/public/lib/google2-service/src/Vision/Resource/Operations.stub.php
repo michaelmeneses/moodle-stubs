@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Vision\Resource;
 
+use Google\Service\Vision\CancelOperationRequest;
+use Google\Service\Vision\ListOperationsResponse;
+use Google\Service\Vision\Operation;
+use Google\Service\Vision\VisionEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\InvideoBranding;
 /**
  * The "watermarks" collection of methods.
  * Typical usage is:

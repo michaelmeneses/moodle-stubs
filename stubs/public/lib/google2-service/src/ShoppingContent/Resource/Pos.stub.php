@@ -23,6 +23,14 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\PosCustomBatchRequest;
+use Google\Service\ShoppingContent\PosCustomBatchResponse;
+use Google\Service\ShoppingContent\PosInventoryRequest;
+use Google\Service\ShoppingContent\PosInventoryResponse;
+use Google\Service\ShoppingContent\PosListResponse;
+use Google\Service\ShoppingContent\PosSaleRequest;
+use Google\Service\ShoppingContent\PosSaleResponse;
+use Google\Service\ShoppingContent\PosStore;
 /**
  * The "pos" collection of methods.
  * Typical usage is:

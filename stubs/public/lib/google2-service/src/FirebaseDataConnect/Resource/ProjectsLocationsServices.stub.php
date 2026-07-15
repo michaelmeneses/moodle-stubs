@@ -23,6 +23,11 @@
  */
 namespace Google\Service\FirebaseDataConnect\Resource;
 
+use Google\Service\FirebaseDataConnect\GraphqlRequest;
+use Google\Service\FirebaseDataConnect\GraphqlResponse;
+use Google\Service\FirebaseDataConnect\ListServicesResponse;
+use Google\Service\FirebaseDataConnect\Operation;
+use Google\Service\FirebaseDataConnect\Service;
 /**
  * The "services" collection of methods.
  * Typical usage is:

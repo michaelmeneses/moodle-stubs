@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\ListLocationsResponse;
+use Google\Service\CloudBuild\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

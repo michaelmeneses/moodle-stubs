@@ -16,6 +16,9 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Swift;
+use Swift_Message;
 /**
  * MandrillHandler uses cURL to send the emails to the Mandrill API
  *

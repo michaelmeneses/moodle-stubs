@@ -8,6 +8,11 @@
  */
 namespace Aws\Ec2;
 
+use Aws\AwsClient;
+use Aws\Api\Service;
+use Aws\Api\DocModel;
+use Aws\Api\ApiProvider;
+use Aws\PresignUrlMiddleware;
 /**
  * Client used to interact with **Amazon EC2**.
  *

@@ -29,6 +29,7 @@
  */
 namespace customfield_textarea;
 
+use backup_nested_element;
 /**
  * Class data
  *

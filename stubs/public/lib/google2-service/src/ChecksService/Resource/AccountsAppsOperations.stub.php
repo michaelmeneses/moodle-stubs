@@ -23,6 +23,11 @@
  */
 namespace Google\Service\ChecksService\Resource;
 
+use Google\Service\ChecksService\CancelOperationRequest;
+use Google\Service\ChecksService\ChecksEmpty;
+use Google\Service\ChecksService\ListOperationsResponse;
+use Google\Service\ChecksService\Operation;
+use Google\Service\ChecksService\WaitOperationRequest;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

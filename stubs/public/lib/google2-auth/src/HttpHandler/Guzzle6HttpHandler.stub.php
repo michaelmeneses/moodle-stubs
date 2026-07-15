@@ -23,6 +23,12 @@
  */
 namespace Google\Auth\HttpHandler;
 
+use Google\Auth\Logging\LoggingTrait;
+use Google\Auth\Logging\RpcLogEvent;
+use GuzzleHttp\ClientInterface;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Log\LoggerInterface;
 class Guzzle6HttpHandler
 {
     use LoggingTrait;

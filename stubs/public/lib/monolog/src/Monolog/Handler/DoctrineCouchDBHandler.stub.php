@@ -16,6 +16,11 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\Formatter\NormalizerFormatter;
+use Monolog\Formatter\FormatterInterface;
+use Doctrine\CouchDB\CouchDBClient;
+use Monolog\LogRecord;
 /**
  * CouchDB handler for Doctrine CouchDB ODM
  *

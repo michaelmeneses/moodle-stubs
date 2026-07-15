@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityMonitoringConditionsResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1SecurityMonitoringCondition;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "securityMonitoringConditions" collection of methods.
  * Typical usage is:

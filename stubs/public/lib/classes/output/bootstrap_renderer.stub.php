@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use coding_exception;
 /**
  * This class solves the problem of how to initialise $OUTPUT.
  *

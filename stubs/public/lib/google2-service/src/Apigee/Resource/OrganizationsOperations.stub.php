@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleLongrunningListOperationsResponse;
+use Google\Service\Apigee\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

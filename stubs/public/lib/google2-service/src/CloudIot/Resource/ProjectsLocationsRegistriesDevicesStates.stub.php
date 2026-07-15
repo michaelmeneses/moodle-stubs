@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudIot\Resource;
 
+use Google\Service\CloudIot\ListDeviceStatesResponse;
 /**
  * The "states" collection of methods.
  * Typical usage is:

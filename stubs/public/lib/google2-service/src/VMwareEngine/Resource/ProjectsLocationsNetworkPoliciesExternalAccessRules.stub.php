@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ExternalAccessRule;
+use Google\Service\VMwareEngine\ListExternalAccessRulesResponse;
+use Google\Service\VMwareEngine\Operation;
 /**
  * The "externalAccessRules" collection of methods.
  * Typical usage is:

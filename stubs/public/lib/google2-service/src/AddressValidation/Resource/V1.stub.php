@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AddressValidation\Resource;
 
+use Google\Service\AddressValidation\GoogleMapsAddressvalidationV1ProvideValidationFeedbackRequest;
+use Google\Service\AddressValidation\GoogleMapsAddressvalidationV1ProvideValidationFeedbackResponse;
+use Google\Service\AddressValidation\GoogleMapsAddressvalidationV1ValidateAddressRequest;
+use Google\Service\AddressValidation\GoogleMapsAddressvalidationV1ValidateAddressResponse;
 /**
  * The "v1" collection of methods.
  * Typical usage is:

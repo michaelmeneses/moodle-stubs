@@ -23,6 +23,7 @@
  */
 namespace Google\Service\BinaryAuthorization\Resource;
 
+use Google\Service\BinaryAuthorization\Policy;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

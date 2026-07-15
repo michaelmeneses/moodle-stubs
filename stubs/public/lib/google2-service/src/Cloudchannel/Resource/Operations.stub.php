@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Cloudchannel\Resource;
 
+use Google\Service\Cloudchannel\GoogleLongrunningCancelOperationRequest;
+use Google\Service\Cloudchannel\GoogleLongrunningListOperationsResponse;
+use Google\Service\Cloudchannel\GoogleLongrunningOperation;
+use Google\Service\Cloudchannel\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

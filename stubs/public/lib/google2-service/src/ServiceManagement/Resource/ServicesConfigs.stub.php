@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ServiceManagement\Resource;
 
+use Google\Service\ServiceManagement\ListServiceConfigsResponse;
+use Google\Service\ServiceManagement\Operation;
+use Google\Service\ServiceManagement\Service;
+use Google\Service\ServiceManagement\SubmitConfigSourceRequest;
 /**
  * The "configs" collection of methods.
  * Typical usage is:

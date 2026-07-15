@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CreateDeploymentResourcePoolRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DeploymentResourcePool;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDeploymentResourcePoolsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1QueryDeployedModelsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "deploymentResourcePools" collection of methods.
  * Typical usage is:

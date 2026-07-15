@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ParameterManager\Resource;
 
+use Google\Service\ParameterManager\ListParametersResponse;
+use Google\Service\ParameterManager\Parameter;
+use Google\Service\ParameterManager\ParametermanagerEmpty;
 /**
  * The "parameters" collection of methods.
  * Typical usage is:

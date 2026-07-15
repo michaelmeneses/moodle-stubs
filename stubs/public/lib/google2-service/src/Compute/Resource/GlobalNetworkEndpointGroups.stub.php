@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\GlobalNetworkEndpointGroupsAttachEndpointsRequest;
+use Google\Service\Compute\GlobalNetworkEndpointGroupsDetachEndpointsRequest;
+use Google\Service\Compute\NetworkEndpointGroup;
+use Google\Service\Compute\NetworkEndpointGroupList;
+use Google\Service\Compute\NetworkEndpointGroupsListNetworkEndpoints;
+use Google\Service\Compute\Operation;
 /**
  * The "globalNetworkEndpointGroups" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\AccountSummaries;
 /**
  * The "accountSummaries" collection of methods.
  * Typical usage is:

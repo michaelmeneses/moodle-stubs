@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router;
 
+use core\exception\response_aware_exception;
+use core\router\response\exception_response;
+use Psr\Http\Message\ServerRequestInterface;
+use Slim\Handlers\ErrorHandler;
 /**
  * An Error Handler implementation for Moodle which is aware of the REST API.
  *

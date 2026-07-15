@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Document\Resource;
 
+use Google\Service\Document\GoogleCloudDocumentaiV1BatchProcessRequest;
+use Google\Service\Document\GoogleCloudDocumentaiV1DisableProcessorRequest;
+use Google\Service\Document\GoogleCloudDocumentaiV1EnableProcessorRequest;
+use Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorsResponse;
+use Google\Service\Document\GoogleCloudDocumentaiV1ProcessRequest;
+use Google\Service\Document\GoogleCloudDocumentaiV1ProcessResponse;
+use Google\Service\Document\GoogleCloudDocumentaiV1Processor;
+use Google\Service\Document\GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest;
+use Google\Service\Document\GoogleLongrunningOperation;
 /**
  * The "processors" collection of methods.
  * Typical usage is:

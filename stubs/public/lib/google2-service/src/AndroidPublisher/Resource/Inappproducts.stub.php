@@ -23,6 +23,12 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\InAppProduct;
+use Google\Service\AndroidPublisher\InappproductsBatchDeleteRequest;
+use Google\Service\AndroidPublisher\InappproductsBatchGetResponse;
+use Google\Service\AndroidPublisher\InappproductsBatchUpdateRequest;
+use Google\Service\AndroidPublisher\InappproductsBatchUpdateResponse;
+use Google\Service\AndroidPublisher\InappproductsListResponse;
 /**
  * The "inappproducts" collection of methods.
  * Typical usage is:

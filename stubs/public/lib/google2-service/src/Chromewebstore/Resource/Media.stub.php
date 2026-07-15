@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Chromewebstore\Resource;
 
+use Google\Service\Chromewebstore\UploadItemPackageRequest;
+use Google\Service\Chromewebstore\UploadItemPackageResponse;
 /**
  * The "media" collection of methods.
  * Typical usage is:

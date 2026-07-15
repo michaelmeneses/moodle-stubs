@@ -23,6 +23,16 @@
  */
 namespace Google\Service\Document\Resource;
 
+use Google\Service\Document\GoogleCloudDocumentaiV1BatchProcessRequest;
+use Google\Service\Document\GoogleCloudDocumentaiV1DeployProcessorVersionRequest;
+use Google\Service\Document\GoogleCloudDocumentaiV1EvaluateProcessorVersionRequest;
+use Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorVersionsResponse;
+use Google\Service\Document\GoogleCloudDocumentaiV1ProcessRequest;
+use Google\Service\Document\GoogleCloudDocumentaiV1ProcessResponse;
+use Google\Service\Document\GoogleCloudDocumentaiV1ProcessorVersion;
+use Google\Service\Document\GoogleCloudDocumentaiV1TrainProcessorVersionRequest;
+use Google\Service\Document\GoogleCloudDocumentaiV1UndeployProcessorVersionRequest;
+use Google\Service\Document\GoogleLongrunningOperation;
 /**
  * The "processorVersions" collection of methods.
  * Typical usage is:

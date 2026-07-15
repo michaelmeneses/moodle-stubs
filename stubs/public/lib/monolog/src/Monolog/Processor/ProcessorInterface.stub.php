@@ -16,6 +16,7 @@
  */
 namespace Monolog\Processor;
 
+use Monolog\LogRecord;
 /**
  * An optional interface to allow labelling Monolog processors.
  *

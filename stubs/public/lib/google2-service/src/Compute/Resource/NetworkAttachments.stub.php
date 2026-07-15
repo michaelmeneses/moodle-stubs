@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\NetworkAttachment;
+use Google\Service\Compute\NetworkAttachmentAggregatedList;
+use Google\Service\Compute\NetworkAttachmentList;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\RegionSetPolicyRequest;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "networkAttachments" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\Customer as CustomerModel;
 /**
  * The "customers" collection of methods.
  * Typical usage is:

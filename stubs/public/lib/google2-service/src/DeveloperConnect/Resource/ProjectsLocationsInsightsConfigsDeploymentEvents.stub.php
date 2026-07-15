@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DeveloperConnect\Resource;
 
+use Google\Service\DeveloperConnect\DeploymentEvent;
+use Google\Service\DeveloperConnect\ListDeploymentEventsResponse;
 /**
  * The "deploymentEvents" collection of methods.
  * Typical usage is:

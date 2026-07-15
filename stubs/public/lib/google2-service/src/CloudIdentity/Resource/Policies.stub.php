@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudIdentity\Resource;
 
+use Google\Service\CloudIdentity\ListPoliciesResponse;
+use Google\Service\CloudIdentity\Policy;
 /**
  * The "policies" collection of methods.
  * Typical usage is:

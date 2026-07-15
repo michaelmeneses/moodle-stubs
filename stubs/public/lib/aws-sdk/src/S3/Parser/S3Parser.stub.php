@@ -8,6 +8,16 @@
  */
 namespace Aws\S3\Parser;
 
+use Aws\Api\ErrorParser\XmlErrorParser;
+use Aws\Api\Parser\AbstractParser;
+use Aws\Api\Parser\Exception\ParserException;
+use Aws\Api\Service;
+use Aws\Api\StructureShape;
+use Aws\CommandInterface;
+use Aws\Exception\AwsException;
+use Aws\ResultInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * Custom S3 parser on top of the S3 protocol parser
  * for handling specific S3 parsing scenarios.

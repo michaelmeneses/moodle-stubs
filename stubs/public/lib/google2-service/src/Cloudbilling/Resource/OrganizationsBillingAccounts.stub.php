@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Cloudbilling\Resource;
 
+use Google\Service\Cloudbilling\BillingAccount;
+use Google\Service\Cloudbilling\ListBillingAccountsResponse;
 /**
  * The "billingAccounts" collection of methods.
  * Typical usage is:

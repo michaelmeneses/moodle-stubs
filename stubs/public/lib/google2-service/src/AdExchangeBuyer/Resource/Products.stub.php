@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdExchangeBuyer\Resource;
 
+use Google\Service\AdExchangeBuyer\GetOffersResponse;
+use Google\Service\AdExchangeBuyer\Product;
 /**
  * The "products" collection of methods.
  * Typical usage is:

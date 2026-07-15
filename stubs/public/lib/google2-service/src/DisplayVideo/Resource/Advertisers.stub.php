@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\Advertiser;
+use Google\Service\DisplayVideo\AuditAdvertiserResponse;
+use Google\Service\DisplayVideo\BulkEditAdvertiserAssignedTargetingOptionsRequest;
+use Google\Service\DisplayVideo\BulkEditAdvertiserAssignedTargetingOptionsResponse;
+use Google\Service\DisplayVideo\BulkListAdvertiserAssignedTargetingOptionsResponse;
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\ListAdvertisersResponse;
 /**
  * The "advertisers" collection of methods.
  * Typical usage is:

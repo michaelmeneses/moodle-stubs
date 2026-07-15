@@ -23,6 +23,8 @@
  */
 namespace Google\Service\BackupforGKE\Resource;
 
+use Google\Service\BackupforGKE\ListRestorePlanBindingsResponse;
+use Google\Service\BackupforGKE\RestorePlanBinding;
 /**
  * The "restorePlanBindings" collection of methods.
  * Typical usage is:

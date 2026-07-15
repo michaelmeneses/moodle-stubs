@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\test\phpunit;
 
+// phpcs:disable moodle.Commenting.ValidTags.Invalid
+// phpcs:disable moodle.PHP.ForbiddenFunctions.FoundWithAlternative
+// phpcs:disable moodle.Files.MoodleInternal.MoodleInternalGlobalState
+use stdClass;
 /**
  * A collection of utility methods for PHPUnit.
  *

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Storage\Resource;
 
+use Google\Service\Storage\ObjectAccessControl;
+use Google\Service\Storage\ObjectAccessControls as ObjectAccessControlsModel;
 /**
  * The "defaultObjectAccessControls" collection of methods.
  * Typical usage is:

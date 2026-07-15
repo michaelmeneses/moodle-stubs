@@ -23,6 +23,14 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\GoogleCloudApihubV1DisablePluginInstanceActionRequest;
+use Google\Service\APIhub\GoogleCloudApihubV1EnablePluginInstanceActionRequest;
+use Google\Service\APIhub\GoogleCloudApihubV1ExecutePluginInstanceActionRequest;
+use Google\Service\APIhub\GoogleCloudApihubV1ListPluginInstancesResponse;
+use Google\Service\APIhub\GoogleCloudApihubV1ManagePluginInstanceSourceDataRequest;
+use Google\Service\APIhub\GoogleCloudApihubV1ManagePluginInstanceSourceDataResponse;
+use Google\Service\APIhub\GoogleCloudApihubV1PluginInstance;
+use Google\Service\APIhub\GoogleLongrunningOperation;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

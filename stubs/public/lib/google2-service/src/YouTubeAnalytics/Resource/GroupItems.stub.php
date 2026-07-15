@@ -23,6 +23,9 @@
  */
 namespace Google\Service\YouTubeAnalytics\Resource;
 
+use Google\Service\YouTubeAnalytics\EmptyResponse;
+use Google\Service\YouTubeAnalytics\GroupItem;
+use Google\Service\YouTubeAnalytics\ListGroupItemsResponse;
 /**
  * The "groupItems" collection of methods.
  * Typical usage is:

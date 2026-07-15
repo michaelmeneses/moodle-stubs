@@ -23,6 +23,7 @@
  */
 namespace Google\Service\PolicySimulator\Resource;
 
+use Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ListOrgPolicyViolationsResponse;
 /**
  * The "orgPolicyViolations" collection of methods.
  * Typical usage is:

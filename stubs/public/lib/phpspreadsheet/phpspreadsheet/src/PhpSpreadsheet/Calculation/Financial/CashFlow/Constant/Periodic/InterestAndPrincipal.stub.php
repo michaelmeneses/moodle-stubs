@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Financial\CashFlow\Constant\Periodic;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Financial\Constants as FinancialConstants;
 class InterestAndPrincipal
 {
     protected float $interest;

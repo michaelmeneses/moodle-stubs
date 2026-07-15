@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Storage\Resource;
 
+use Google\Service\Storage\BucketAccessControl;
+use Google\Service\Storage\BucketAccessControls as BucketAccessControlsModel;
 /**
  * The "bucketAccessControls" collection of methods.
  * Typical usage is:

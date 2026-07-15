@@ -23,6 +23,7 @@
  */
 namespace Google\Service\RecaptchaEnterprise\Resource;
 
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListRelatedAccountGroupMembershipsResponse;
 /**
  * The "memberships" collection of methods.
  * Typical usage is:

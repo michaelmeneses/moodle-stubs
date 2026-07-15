@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ProvisionOrganizationRequest;
+use Google\Service\Apigee\GoogleLongrunningOperation;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

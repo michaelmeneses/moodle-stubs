@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdMob\Resource;
 
+use Google\Service\AdMob\GenerateNetworkReportRequest;
+use Google\Service\AdMob\GenerateNetworkReportResponse;
 /**
  * The "networkReport" collection of methods.
  * Typical usage is:

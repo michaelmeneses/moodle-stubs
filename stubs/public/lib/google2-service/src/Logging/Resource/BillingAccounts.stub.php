@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\CmekSettings;
+use Google\Service\Logging\Settings;
 /**
  * The "billingAccounts" collection of methods.
  * Typical usage is:

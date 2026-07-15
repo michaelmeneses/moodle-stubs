@@ -23,6 +23,16 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\FirewallPolicy;
+use Google\Service\Compute\FirewallPolicyAssociation;
+use Google\Service\Compute\FirewallPolicyList;
+use Google\Service\Compute\FirewallPolicyRule;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponse;
+use Google\Service\Compute\RegionSetPolicyRequest;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "regionNetworkFirewallPolicies" collection of methods.
  * Typical usage is:

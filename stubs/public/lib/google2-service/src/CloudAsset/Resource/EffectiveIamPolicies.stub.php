@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudAsset\Resource;
 
+use Google\Service\CloudAsset\BatchGetEffectiveIamPoliciesResponse;
 /**
  * The "effectiveIamPolicies" collection of methods.
  * Typical usage is:

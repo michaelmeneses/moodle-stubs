@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\Account;
+use Google\Service\Dfareporting\AccountsListResponse;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

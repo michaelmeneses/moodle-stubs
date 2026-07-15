@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\Creative;
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\ListCreativesResponse;
 /**
  * The "creatives" collection of methods.
  * Typical usage is:

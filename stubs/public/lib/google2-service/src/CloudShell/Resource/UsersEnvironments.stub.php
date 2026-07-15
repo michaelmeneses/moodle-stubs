@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudShell\Resource;
 
+use Google\Service\CloudShell\AddPublicKeyRequest;
+use Google\Service\CloudShell\AuthorizeEnvironmentRequest;
+use Google\Service\CloudShell\Environment;
+use Google\Service\CloudShell\GenerateAccessTokenResponse;
+use Google\Service\CloudShell\Operation;
+use Google\Service\CloudShell\RemovePublicKeyRequest;
+use Google\Service\CloudShell\StartEnvironmentRequest;
 /**
  * The "environments" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdExchangeBuyer\Resource;
 
+use Google\Service\AdExchangeBuyer\BillingInfo as BillingInfoModel;
+use Google\Service\AdExchangeBuyer\BillingInfoList;
 /**
  * The "billingInfo" collection of methods.
  * Typical usage is:

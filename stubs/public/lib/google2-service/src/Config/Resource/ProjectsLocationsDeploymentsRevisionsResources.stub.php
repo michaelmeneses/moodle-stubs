@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Config\Resource;
 
+use Google\Service\Config\ConfigResource;
+use Google\Service\Config\ListResourcesResponse;
 /**
  * The "resources" collection of methods.
  * Typical usage is:

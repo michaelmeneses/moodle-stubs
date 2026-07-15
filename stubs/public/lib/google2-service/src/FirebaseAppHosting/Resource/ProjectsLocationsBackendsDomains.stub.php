@@ -23,6 +23,9 @@
  */
 namespace Google\Service\FirebaseAppHosting\Resource;
 
+use Google\Service\FirebaseAppHosting\Domain;
+use Google\Service\FirebaseAppHosting\ListDomainsResponse;
+use Google\Service\FirebaseAppHosting\Operation;
 /**
  * The "domains" collection of methods.
  * Typical usage is:

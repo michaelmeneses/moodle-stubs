@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudDebugger\Resource;
 
+use Google\Service\CloudDebugger\ListActiveBreakpointsResponse;
+use Google\Service\CloudDebugger\UpdateActiveBreakpointRequest;
+use Google\Service\CloudDebugger\UpdateActiveBreakpointResponse;
 /**
  * The "breakpoints" collection of methods.
  * Typical usage is:

@@ -29,6 +29,7 @@
  */
 namespace core_question\local\bank;
 
+use core\plugininfo\qbank;
 /**
  * A question bank column which gathers together all the actions into a menu.
  *

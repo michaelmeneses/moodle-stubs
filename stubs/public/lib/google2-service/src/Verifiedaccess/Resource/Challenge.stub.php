@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Verifiedaccess\Resource;
 
+use Google\Service\Verifiedaccess\Challenge as ChallengeModel;
+use Google\Service\Verifiedaccess\VerifiedaccessEmpty;
+use Google\Service\Verifiedaccess\VerifyChallengeResponseRequest;
+use Google\Service\Verifiedaccess\VerifyChallengeResponseResult;
 /**
  * The "challenge" collection of methods.
  * Typical usage is:

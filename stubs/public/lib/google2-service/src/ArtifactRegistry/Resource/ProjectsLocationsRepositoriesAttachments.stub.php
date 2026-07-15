@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\Attachment;
+use Google\Service\ArtifactRegistry\ListAttachmentsResponse;
+use Google\Service\ArtifactRegistry\Operation;
 /**
  * The "attachments" collection of methods.
  * Typical usage is:

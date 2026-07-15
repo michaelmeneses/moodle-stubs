@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\Member;
+use Google\Service\Directory\Members as MembersModel;
+use Google\Service\Directory\MembersHasMember;
 /**
  * The "members" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Spanner\Resource;
 
+use Google\Service\Spanner\ListDatabaseRolesResponse;
+use Google\Service\Spanner\TestIamPermissionsRequest;
+use Google\Service\Spanner\TestIamPermissionsResponse;
 /**
  * The "databaseRoles" collection of methods.
  * Typical usage is:

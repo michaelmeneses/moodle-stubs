@@ -16,6 +16,7 @@
  */
 namespace Monolog\Formatter;
 
+use Monolog\LogRecord;
 /**
  * formats the record to be used in the FlowdockHandler
  *

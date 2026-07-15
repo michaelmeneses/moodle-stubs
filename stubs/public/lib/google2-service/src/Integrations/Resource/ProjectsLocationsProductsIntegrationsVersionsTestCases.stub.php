@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTestCasesResponse;
 /**
  * The "testCases" collection of methods.
  * Typical usage is:

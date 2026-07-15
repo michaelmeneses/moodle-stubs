@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Translate\Resource;
 
+use Google\Service\Translate\GlossaryEntry;
+use Google\Service\Translate\ListGlossaryEntriesResponse;
+use Google\Service\Translate\TranslateEmpty;
 /**
  * The "glossaryEntries" collection of methods.
  * Typical usage is:

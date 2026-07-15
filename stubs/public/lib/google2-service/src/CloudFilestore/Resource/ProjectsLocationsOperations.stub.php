@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudFilestore\Resource;
 
+use Google\Service\CloudFilestore\CancelOperationRequest;
+use Google\Service\CloudFilestore\FileEmpty;
+use Google\Service\CloudFilestore\ListOperationsResponse;
+use Google\Service\CloudFilestore\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

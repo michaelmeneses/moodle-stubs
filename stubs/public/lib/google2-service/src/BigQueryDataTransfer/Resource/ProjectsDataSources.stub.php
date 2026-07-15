@@ -23,6 +23,10 @@
  */
 namespace Google\Service\BigQueryDataTransfer\Resource;
 
+use Google\Service\BigQueryDataTransfer\CheckValidCredsRequest;
+use Google\Service\BigQueryDataTransfer\CheckValidCredsResponse;
+use Google\Service\BigQueryDataTransfer\DataSource;
+use Google\Service\BigQueryDataTransfer\ListDataSourcesResponse;
 /**
  * The "dataSources" collection of methods.
  * Typical usage is:

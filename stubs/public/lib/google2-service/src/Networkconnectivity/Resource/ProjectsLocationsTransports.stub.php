@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\GoogleLongrunningOperation;
+use Google\Service\Networkconnectivity\ListTransportsResponse;
+use Google\Service\Networkconnectivity\Transport;
 /**
  * The "transports" collection of methods.
  * Typical usage is:

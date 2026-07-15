@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\Review;
+use Google\Service\AndroidPublisher\ReviewsListResponse;
+use Google\Service\AndroidPublisher\ReviewsReplyRequest;
+use Google\Service\AndroidPublisher\ReviewsReplyResponse;
 /**
  * The "reviews" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\OnDemandScanning\Resource;
 
+use Google\Service\OnDemandScanning\AnalyzePackagesRequestV1;
+use Google\Service\OnDemandScanning\Operation;
 /**
  * The "scans" collection of methods.
  * Typical usage is:

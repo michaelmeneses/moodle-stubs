@@ -23,6 +23,19 @@
  */
 namespace Google\Service\Vault\Resource;
 
+use Google\Service\Vault\AddMatterPermissionsRequest;
+use Google\Service\Vault\CloseMatterRequest;
+use Google\Service\Vault\CloseMatterResponse;
+use Google\Service\Vault\CountArtifactsRequest;
+use Google\Service\Vault\ListMattersResponse;
+use Google\Service\Vault\Matter;
+use Google\Service\Vault\MatterPermission;
+use Google\Service\Vault\Operation;
+use Google\Service\Vault\RemoveMatterPermissionsRequest;
+use Google\Service\Vault\ReopenMatterRequest;
+use Google\Service\Vault\ReopenMatterResponse;
+use Google\Service\Vault\UndeleteMatterRequest;
+use Google\Service\Vault\VaultEmpty;
 /**
  * The "matters" collection of methods.
  * Typical usage is:

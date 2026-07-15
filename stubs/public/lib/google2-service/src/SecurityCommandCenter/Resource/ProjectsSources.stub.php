@@ -23,6 +23,7 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\ListSourcesResponse;
 /**
  * The "sources" collection of methods.
  * Typical usage is:

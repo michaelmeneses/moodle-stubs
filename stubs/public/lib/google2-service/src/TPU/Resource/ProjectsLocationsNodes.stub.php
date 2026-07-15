@@ -23,6 +23,13 @@
  */
 namespace Google\Service\TPU\Resource;
 
+use Google\Service\TPU\GetGuestAttributesRequest;
+use Google\Service\TPU\GetGuestAttributesResponse;
+use Google\Service\TPU\ListNodesResponse;
+use Google\Service\TPU\Node;
+use Google\Service\TPU\Operation;
+use Google\Service\TPU\StartNodeRequest;
+use Google\Service\TPU\StopNodeRequest;
 /**
  * The "nodes" collection of methods.
  * Typical usage is:

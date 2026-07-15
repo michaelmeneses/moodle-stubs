@@ -23,6 +23,20 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\NodeGroup;
+use Google\Service\Compute\NodeGroupAggregatedList;
+use Google\Service\Compute\NodeGroupList;
+use Google\Service\Compute\NodeGroupsAddNodesRequest;
+use Google\Service\Compute\NodeGroupsDeleteNodesRequest;
+use Google\Service\Compute\NodeGroupsListNodes;
+use Google\Service\Compute\NodeGroupsPerformMaintenanceRequest;
+use Google\Service\Compute\NodeGroupsSetNodeTemplateRequest;
+use Google\Service\Compute\NodeGroupsSimulateMaintenanceEventRequest;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
+use Google\Service\Compute\ZoneSetPolicyRequest;
 /**
  * The "nodeGroups" collection of methods.
  * Typical usage is:

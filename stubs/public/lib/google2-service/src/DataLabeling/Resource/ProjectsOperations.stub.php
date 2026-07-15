@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleLongrunningListOperationsResponse;
+use Google\Service\DataLabeling\GoogleLongrunningOperation;
+use Google\Service\DataLabeling\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

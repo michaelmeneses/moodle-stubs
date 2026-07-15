@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Vault\Resource;
 
+use Google\Service\Vault\ListSavedQueriesResponse;
+use Google\Service\Vault\SavedQuery;
+use Google\Service\Vault\VaultEmpty;
 /**
  * The "savedQueries" collection of methods.
  * Typical usage is:

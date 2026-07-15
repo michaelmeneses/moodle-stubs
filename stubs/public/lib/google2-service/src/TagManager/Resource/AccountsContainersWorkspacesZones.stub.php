@@ -23,6 +23,9 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\ListZonesResponse;
+use Google\Service\TagManager\RevertZoneResponse;
+use Google\Service\TagManager\Zone;
 /**
  * The "zones" collection of methods.
  * Typical usage is:

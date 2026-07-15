@@ -23,6 +23,8 @@
  */
 namespace Google\Auth\Cache;
 
+use Psr\Cache\CacheItemInterface;
+use Psr\Cache\CacheItemPoolInterface;
 /**
  * Simple in-memory cache implementation.
  */

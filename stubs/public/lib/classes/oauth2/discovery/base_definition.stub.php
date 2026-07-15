@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\oauth2\discovery;
 
+use curl;
+use stdClass;
+use moodle_exception;
+use core\oauth2\issuer;
+use core\oauth2\endpoint;
 /**
  * Class for provider discovery definition, to allow services easily discover and process information.
  * This abstract class is called from core\oauth2\api when discovery points need to be updated.

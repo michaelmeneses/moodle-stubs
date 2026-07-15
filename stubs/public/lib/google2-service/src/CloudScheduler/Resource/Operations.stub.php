@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudScheduler\Resource;
 
+use Google\Service\CloudScheduler\CancelOperationRequest;
+use Google\Service\CloudScheduler\CloudschedulerEmpty;
+use Google\Service\CloudScheduler\ListOperationsResponse;
+use Google\Service\CloudScheduler\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

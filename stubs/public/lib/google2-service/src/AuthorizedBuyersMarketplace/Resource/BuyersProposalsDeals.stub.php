@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AuthorizedBuyersMarketplace\Resource;
 
+use Google\Service\AuthorizedBuyersMarketplace\BatchUpdateDealsRequest;
+use Google\Service\AuthorizedBuyersMarketplace\BatchUpdateDealsResponse;
+use Google\Service\AuthorizedBuyersMarketplace\Deal;
+use Google\Service\AuthorizedBuyersMarketplace\ListDealsResponse;
 /**
  * The "deals" collection of methods.
  * Typical usage is:

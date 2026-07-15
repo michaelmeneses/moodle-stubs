@@ -23,6 +23,16 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\Reservation;
+use Google\Service\Compute\ReservationAggregatedList;
+use Google\Service\Compute\ReservationList;
+use Google\Service\Compute\ReservationsPerformMaintenanceRequest;
+use Google\Service\Compute\ReservationsResizeRequest;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
+use Google\Service\Compute\ZoneSetPolicyRequest;
 /**
  * The "reservations" collection of methods.
  * Typical usage is:

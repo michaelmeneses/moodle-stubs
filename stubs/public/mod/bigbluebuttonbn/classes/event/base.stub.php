@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\event;
 
+use coding_exception;
+use moodle_url;
 /**
  * The mod_bigbluebuttonbn abstract base event class. Most mod_bigbluebuttonbn events can extend this class.
  *

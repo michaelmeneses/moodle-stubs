@@ -8,6 +8,13 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Cell\Cell;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
+use PhpOffice\PhpSpreadsheet\Style\Conditional;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 class CellMatcher
 {
     public const COMPARISON_OPERATORS = [Conditional::OPERATOR_EQUAL => '=', Conditional::OPERATOR_GREATERTHAN => '>', Conditional::OPERATOR_GREATERTHANOREQUAL => '>=', Conditional::OPERATOR_LESSTHAN => '<', Conditional::OPERATOR_LESSTHANOREQUAL => '<=', Conditional::OPERATOR_NOTEQUAL => '<>'];

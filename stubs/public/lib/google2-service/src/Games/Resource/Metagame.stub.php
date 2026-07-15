@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\CategoryListResponse;
+use Google\Service\Games\MetagameConfig;
 /**
  * The "metagame" collection of methods.
  * Typical usage is:

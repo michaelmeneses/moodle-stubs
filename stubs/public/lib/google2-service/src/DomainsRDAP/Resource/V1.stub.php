@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DomainsRDAP\Resource;
 
+use Google\Service\DomainsRDAP\HttpBody;
+use Google\Service\DomainsRDAP\RdapResponse;
 /**
  * The "v1" collection of methods.
  * Typical usage is:

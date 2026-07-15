@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\Volumeannotation;
+use Google\Service\Books\Volumeannotations;
 /**
  * The "volumeAnnotations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SaaSServiceManagement\Resource;
 
+use Google\Service\SaaSServiceManagement\ListSaasResponse;
+use Google\Service\SaaSServiceManagement\Saas;
+use Google\Service\SaaSServiceManagement\SaasservicemgmtEmpty;
 /**
  * The "saas" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\RapidMigrationAssessment\Resource;
 
+use Google\Service\RapidMigrationAssessment\CancelOperationRequest;
+use Google\Service\RapidMigrationAssessment\ListOperationsResponse;
+use Google\Service\RapidMigrationAssessment\Operation;
+use Google\Service\RapidMigrationAssessment\RapidmigrationassessmentEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

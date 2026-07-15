@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use core\exception\moodle_exception;
 /**
  * Core setup functionality for Moodle.
  *

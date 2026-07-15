@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudLifeSciences\Resource;
 
+use Google\Service\CloudLifeSciences\CancelOperationRequest;
+use Google\Service\CloudLifeSciences\LifesciencesEmpty;
+use Google\Service\CloudLifeSciences\ListOperationsResponse;
+use Google\Service\CloudLifeSciences\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

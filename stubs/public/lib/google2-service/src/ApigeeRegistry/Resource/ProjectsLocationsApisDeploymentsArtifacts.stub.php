@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ApigeeRegistry\Resource;
 
+use Google\Service\ApigeeRegistry\ApigeeregistryEmpty;
+use Google\Service\ApigeeRegistry\Artifact;
+use Google\Service\ApigeeRegistry\HttpBody;
+use Google\Service\ApigeeRegistry\ListArtifactsResponse;
 /**
  * The "artifacts" collection of methods.
  * Typical usage is:

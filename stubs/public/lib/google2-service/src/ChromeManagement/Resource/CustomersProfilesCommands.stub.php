@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ChromeManagement\Resource;
 
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand;
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ListChromeBrowserProfileCommandsResponse;
 /**
  * The "commands" collection of methods.
  * Typical usage is:

@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\external;
 
+use core\notification;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_single_structure;
+use core_external\external_value;
+use core_external\external_warnings;
+use core_external\restricted_context_exception;
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\exceptions\bigbluebutton_exception;
+use mod_bigbluebuttonbn\logger;
+use mod_bigbluebuttonbn\meeting;
 /**
  * External service to end a meeting.
  *

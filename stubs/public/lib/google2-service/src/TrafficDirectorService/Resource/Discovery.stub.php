@@ -23,6 +23,8 @@
  */
 namespace Google\Service\TrafficDirectorService\Resource;
 
+use Google\Service\TrafficDirectorService\ClientStatusRequest;
+use Google\Service\TrafficDirectorService\ClientStatusResponse;
 /**
  * The "discovery" collection of methods.
  * Typical usage is:

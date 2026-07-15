@@ -29,6 +29,8 @@
  */
 namespace core;
 
+use coding_exception;
+use JsonSerializable;
 /**
  * Chart series class.
  *

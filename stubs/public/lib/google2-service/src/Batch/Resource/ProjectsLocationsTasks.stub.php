@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Batch\Resource;
 
+use Google\Service\Batch\Policy;
+use Google\Service\Batch\SetIamPolicyRequest;
+use Google\Service\Batch\TestIamPermissionsRequest;
+use Google\Service\Batch\TestIamPermissionsResponse;
 /**
  * The "tasks" collection of methods.
  * Typical usage is:

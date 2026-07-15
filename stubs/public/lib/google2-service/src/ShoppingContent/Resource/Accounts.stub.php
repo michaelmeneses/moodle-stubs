@@ -23,6 +23,21 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\Account;
+use Google\Service\ShoppingContent\AccountsAuthInfoResponse;
+use Google\Service\ShoppingContent\AccountsClaimWebsiteResponse;
+use Google\Service\ShoppingContent\AccountsCustomBatchRequest;
+use Google\Service\ShoppingContent\AccountsCustomBatchResponse;
+use Google\Service\ShoppingContent\AccountsLinkRequest;
+use Google\Service\ShoppingContent\AccountsLinkResponse;
+use Google\Service\ShoppingContent\AccountsListLinksResponse;
+use Google\Service\ShoppingContent\AccountsListResponse;
+use Google\Service\ShoppingContent\AccountsUpdateLabelsRequest;
+use Google\Service\ShoppingContent\AccountsUpdateLabelsResponse;
+use Google\Service\ShoppingContent\RequestPhoneVerificationRequest;
+use Google\Service\ShoppingContent\RequestPhoneVerificationResponse;
+use Google\Service\ShoppingContent\VerifyPhoneNumberRequest;
+use Google\Service\ShoppingContent\VerifyPhoneNumberResponse;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

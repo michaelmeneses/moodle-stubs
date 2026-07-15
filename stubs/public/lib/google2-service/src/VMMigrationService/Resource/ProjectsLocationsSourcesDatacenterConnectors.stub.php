@@ -23,6 +23,10 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\DatacenterConnector;
+use Google\Service\VMMigrationService\ListDatacenterConnectorsResponse;
+use Google\Service\VMMigrationService\Operation;
+use Google\Service\VMMigrationService\UpgradeApplianceRequest;
 /**
  * The "datacenterConnectors" collection of methods.
  * Typical usage is:

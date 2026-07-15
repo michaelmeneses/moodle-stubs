@@ -23,6 +23,31 @@
  */
 namespace Google\Service\SQLAdmin\Resource;
 
+use Google\Service\SQLAdmin\DatabaseInstance;
+use Google\Service\SQLAdmin\ExecuteSqlPayload;
+use Google\Service\SQLAdmin\InstancesAcquireSsrsLeaseRequest;
+use Google\Service\SQLAdmin\InstancesCloneRequest;
+use Google\Service\SQLAdmin\InstancesDemoteMasterRequest;
+use Google\Service\SQLAdmin\InstancesDemoteRequest;
+use Google\Service\SQLAdmin\InstancesExportRequest;
+use Google\Service\SQLAdmin\InstancesFailoverRequest;
+use Google\Service\SQLAdmin\InstancesImportRequest;
+use Google\Service\SQLAdmin\InstancesListEntraIdCertificatesResponse;
+use Google\Service\SQLAdmin\InstancesListResponse;
+use Google\Service\SQLAdmin\InstancesListServerCasResponse;
+use Google\Service\SQLAdmin\InstancesListServerCertificatesResponse;
+use Google\Service\SQLAdmin\InstancesPreCheckMajorVersionUpgradeRequest;
+use Google\Service\SQLAdmin\InstancesReencryptRequest;
+use Google\Service\SQLAdmin\InstancesRestoreBackupRequest;
+use Google\Service\SQLAdmin\InstancesRotateEntraIdCertificateRequest;
+use Google\Service\SQLAdmin\InstancesRotateServerCaRequest;
+use Google\Service\SQLAdmin\InstancesRotateServerCertificateRequest;
+use Google\Service\SQLAdmin\InstancesTruncateLogRequest;
+use Google\Service\SQLAdmin\Operation;
+use Google\Service\SQLAdmin\PointInTimeRestoreContext;
+use Google\Service\SQLAdmin\SqlInstancesAcquireSsrsLeaseResponse;
+use Google\Service\SQLAdmin\SqlInstancesExecuteSqlResponse;
+use Google\Service\SQLAdmin\SqlInstancesReleaseSsrsLeaseResponse;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

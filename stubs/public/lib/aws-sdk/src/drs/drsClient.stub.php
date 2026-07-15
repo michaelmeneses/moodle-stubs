@@ -8,6 +8,7 @@
  */
 namespace Aws\drs;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Elastic Disaster Recovery Service** service.
  * @method \Aws\Result associateSourceNetworkStack(array $args = [])

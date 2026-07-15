@@ -23,6 +23,11 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\ImportJob;
+use Google\Service\MigrationCenterAPI\ListImportJobsResponse;
+use Google\Service\MigrationCenterAPI\Operation;
+use Google\Service\MigrationCenterAPI\RunImportJobRequest;
+use Google\Service\MigrationCenterAPI\ValidateImportJobRequest;
 /**
  * The "importJobs" collection of methods.
  * Typical usage is:

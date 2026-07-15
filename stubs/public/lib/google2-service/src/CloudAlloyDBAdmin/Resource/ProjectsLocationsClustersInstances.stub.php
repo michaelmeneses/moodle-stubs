@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudAlloyDBAdmin\Resource;
 
+use Google\Service\CloudAlloyDBAdmin\ConnectionInfo;
+use Google\Service\CloudAlloyDBAdmin\FailoverInstanceRequest;
+use Google\Service\CloudAlloyDBAdmin\InjectFaultRequest;
+use Google\Service\CloudAlloyDBAdmin\Instance;
+use Google\Service\CloudAlloyDBAdmin\ListInstancesResponse;
+use Google\Service\CloudAlloyDBAdmin\Operation;
+use Google\Service\CloudAlloyDBAdmin\RestartInstanceRequest;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\FactCheckTools\Resource;
 
+use Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage;
+use Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse;
+use Google\Service\FactCheckTools\GoogleProtobufEmpty;
 /**
  * The "pages" collection of methods.
  * Typical usage is:

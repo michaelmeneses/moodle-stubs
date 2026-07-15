@@ -23,6 +23,11 @@
  */
 namespace Google\Service\SASPortalTesting\Resource;
 
+use Google\Service\SASPortalTesting\SasPortalGetPolicyRequest;
+use Google\Service\SASPortalTesting\SasPortalPolicy;
+use Google\Service\SASPortalTesting\SasPortalSetPolicyRequest;
+use Google\Service\SASPortalTesting\SasPortalTestPermissionsRequest;
+use Google\Service\SASPortalTesting\SasPortalTestPermissionsResponse;
 /**
  * The "policies" collection of methods.
  * Typical usage is:

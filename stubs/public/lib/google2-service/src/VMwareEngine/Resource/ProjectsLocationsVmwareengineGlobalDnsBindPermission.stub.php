@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\GrantDnsBindPermissionRequest;
+use Google\Service\VMwareEngine\Operation;
+use Google\Service\VMwareEngine\RevokeDnsBindPermissionRequest;
 /**
  * The "dnsBindPermission" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\ListMeshRouteViewsResponse;
+use Google\Service\NetworkServices\MeshRouteView;
 /**
  * The "routeViews" collection of methods.
  * Typical usage is:

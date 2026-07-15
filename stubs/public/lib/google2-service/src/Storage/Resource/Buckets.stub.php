@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Storage\Resource;
 
+use Google\Service\Storage\Bucket;
+use Google\Service\Storage\BucketStorageLayout;
+use Google\Service\Storage\Buckets as BucketsModel;
+use Google\Service\Storage\GoogleLongrunningOperation;
+use Google\Service\Storage\Policy;
+use Google\Service\Storage\RelocateBucketRequest;
+use Google\Service\Storage\TestIamPermissionsResponse;
 /**
  * The "buckets" collection of methods.
  * Typical usage is:

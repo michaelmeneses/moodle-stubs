@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1AddContextArtifactsAndExecutionsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1AddContextArtifactsAndExecutionsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1AddContextChildrenRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1AddContextChildrenResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Context;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1LineageSubgraph;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListContextsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1PurgeContextsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RemoveContextChildrenRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RemoveContextChildrenResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "contexts" collection of methods.
  * Typical usage is:

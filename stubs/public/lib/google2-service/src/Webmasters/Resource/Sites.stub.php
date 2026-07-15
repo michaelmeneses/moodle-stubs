@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Webmasters\Resource;
 
+use Google\Service\Webmasters\SitesListResponse;
+use Google\Service\Webmasters\WmxSite;
 /**
  * The "sites" collection of methods.
  * Typical usage is:

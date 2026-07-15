@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AndroidManagement\Resource;
 
+use Google\Service\AndroidManagement\AndroidmanagementEmpty;
+use Google\Service\AndroidManagement\EnrollmentToken;
+use Google\Service\AndroidManagement\ListEnrollmentTokensResponse;
 /**
  * The "enrollmentTokens" collection of methods.
  * Typical usage is:

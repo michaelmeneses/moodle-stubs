@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Texttospeech\Resource;
 
+use Google\Service\Texttospeech\ListVoicesResponse;
 /**
  * The "voices" collection of methods.
  * Typical usage is:

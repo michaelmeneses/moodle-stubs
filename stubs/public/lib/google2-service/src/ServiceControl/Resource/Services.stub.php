@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ServiceControl\Resource;
 
+use Google\Service\ServiceControl\CheckRequest;
+use Google\Service\ServiceControl\CheckResponse;
+use Google\Service\ServiceControl\ReportRequest;
+use Google\Service\ServiceControl\ReportResponse;
 /**
  * The "services" collection of methods.
  * Typical usage is:

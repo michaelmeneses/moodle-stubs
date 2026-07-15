@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateOpenApiSpecRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateOpenApiSpecResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGetClientResponse;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ParameterManager\Resource;
 
+use Google\Service\ParameterManager\ListParameterVersionsResponse;
+use Google\Service\ParameterManager\ParameterVersion;
+use Google\Service\ParameterManager\ParametermanagerEmpty;
+use Google\Service\ParameterManager\RenderParameterVersionResponse;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

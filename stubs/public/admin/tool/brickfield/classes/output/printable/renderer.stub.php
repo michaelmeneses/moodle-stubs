@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\output\printable;
 
+use tool_brickfield\local\tool\bfpdf;
+use core\chart_bar;
+use core\chart_pie;
+use core\chart_series;
+use tool_brickfield\accessibility;
+use tool_brickfield\area_base;
+use tool_brickfield\local\tool\filter;
+use tool_brickfield\manager;
 /**
  * tool_brickfield/printable renderer
  *

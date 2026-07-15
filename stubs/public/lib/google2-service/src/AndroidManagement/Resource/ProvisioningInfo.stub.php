@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AndroidManagement\Resource;
 
+use Google\Service\AndroidManagement\ProvisioningInfo as ProvisioningInfoModel;
 /**
  * The "provisioningInfo" collection of methods.
  * Typical usage is:

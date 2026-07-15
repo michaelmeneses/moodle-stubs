@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SaaSServiceManagement\Resource;
 
+use Google\Service\SaaSServiceManagement\ListUnitOperationsResponse;
+use Google\Service\SaaSServiceManagement\SaasservicemgmtEmpty;
+use Google\Service\SaaSServiceManagement\UnitOperation;
 /**
  * The "unitOperations" collection of methods.
  * Typical usage is:

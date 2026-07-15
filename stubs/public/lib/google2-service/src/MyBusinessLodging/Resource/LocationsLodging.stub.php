@@ -23,6 +23,7 @@
  */
 namespace Google\Service\MyBusinessLodging\Resource;
 
+use Google\Service\MyBusinessLodging\GetGoogleUpdatedLodgingResponse;
 /**
  * The "lodging" collection of methods.
  * Typical usage is:

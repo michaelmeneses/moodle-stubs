@@ -23,6 +23,9 @@
  */
 namespace Google\Service\BeyondCorp\Resource;
 
+use Google\Service\BeyondCorp\GoogleIamV1Policy;
+use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsResponse;
 /**
  * The "clientGateways" collection of methods.
  * Typical usage is:

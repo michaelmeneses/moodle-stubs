@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudControlsPartnerService\Resource;
 
+use Google\Service\CloudControlsPartnerService\EkmConnections;
+use Google\Service\CloudControlsPartnerService\ListWorkloadsResponse;
+use Google\Service\CloudControlsPartnerService\PartnerPermissions;
+use Google\Service\CloudControlsPartnerService\Workload;
 /**
  * The "workloads" collection of methods.
  * Typical usage is:

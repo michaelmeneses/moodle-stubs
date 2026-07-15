@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\AccountPermissionGroup;
+use Google\Service\Dfareporting\AccountPermissionGroupsListResponse;
 /**
  * The "accountPermissionGroups" collection of methods.
  * Typical usage is:

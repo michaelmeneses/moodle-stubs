@@ -29,6 +29,9 @@
  */
 namespace core_badges\output;
 
+use html_writer;
+use moodle_url;
+use table_sql;
 /**
  * Backpacks table class.
  *

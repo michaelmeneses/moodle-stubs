@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Forms\Resource;
 
+use Google\Service\Forms\BatchUpdateFormRequest;
+use Google\Service\Forms\BatchUpdateFormResponse;
+use Google\Service\Forms\Form;
+use Google\Service\Forms\SetPublishSettingsRequest;
+use Google\Service\Forms\SetPublishSettingsResponse;
 /**
  * The "forms" collection of methods.
  * Typical usage is:

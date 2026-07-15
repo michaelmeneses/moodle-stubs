@@ -23,6 +23,11 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\AddAssetsToGroupRequest;
+use Google\Service\MigrationCenterAPI\Group;
+use Google\Service\MigrationCenterAPI\ListGroupsResponse;
+use Google\Service\MigrationCenterAPI\Operation;
+use Google\Service\MigrationCenterAPI\RemoveAssetsFromGroupRequest;
 /**
  * The "groups" collection of methods.
  * Typical usage is:

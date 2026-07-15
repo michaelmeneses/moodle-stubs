@@ -23,6 +23,9 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\ListOdbSubnetsResponse;
+use Google\Service\OracleDatabase\OdbSubnet;
+use Google\Service\OracleDatabase\Operation;
 /**
  * The "odbSubnets" collection of methods.
  * Typical usage is:

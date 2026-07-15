@@ -23,6 +23,17 @@
  */
 namespace Google\Service\DriveLabels\Resource;
 
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequest;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DisableLabelRequest;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2EnableLabelRequest;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelPermission;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelsResponse;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2PublishLabelRequest;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UpdateLabelCopyModeRequest;
+use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UpdateLabelEnabledAppSettingsRequest;
+use Google\Service\DriveLabels\GoogleProtobufEmpty;
 /**
  * The "labels" collection of methods.
  * Typical usage is:

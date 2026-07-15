@@ -23,6 +23,13 @@
  */
 namespace Google\Service\BigQueryDataTransfer\Resource;
 
+use Google\Service\BigQueryDataTransfer\BigquerydatatransferEmpty;
+use Google\Service\BigQueryDataTransfer\ListTransferConfigsResponse;
+use Google\Service\BigQueryDataTransfer\ScheduleTransferRunsRequest;
+use Google\Service\BigQueryDataTransfer\ScheduleTransferRunsResponse;
+use Google\Service\BigQueryDataTransfer\StartManualTransferRunsRequest;
+use Google\Service\BigQueryDataTransfer\StartManualTransferRunsResponse;
+use Google\Service\BigQueryDataTransfer\TransferConfig;
 /**
  * The "transferConfigs" collection of methods.
  * Typical usage is:

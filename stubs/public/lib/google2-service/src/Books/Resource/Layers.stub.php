@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\Layersummaries;
+use Google\Service\Books\Layersummary;
 /**
  * The "layers" collection of methods.
  * Typical usage is:

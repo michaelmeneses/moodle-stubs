@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\ListServiceLevelObjectivesResponse;
+use Google\Service\Monitoring\MonitoringEmpty;
+use Google\Service\Monitoring\ServiceLevelObjective;
 /**
  * The "serviceLevelObjectives" collection of methods.
  * Typical usage is:

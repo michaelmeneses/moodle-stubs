@@ -23,6 +23,12 @@
  */
 namespace Google\Service\WorkflowExecutions\Resource;
 
+use Google\Service\WorkflowExecutions\CancelExecutionRequest;
+use Google\Service\WorkflowExecutions\DeleteExecutionHistoryRequest;
+use Google\Service\WorkflowExecutions\Execution;
+use Google\Service\WorkflowExecutions\ExportDataResponse;
+use Google\Service\WorkflowExecutions\ListExecutionsResponse;
+use Google\Service\WorkflowExecutions\WorkflowexecutionsEmpty;
 /**
  * The "executions" collection of methods.
  * Typical usage is:

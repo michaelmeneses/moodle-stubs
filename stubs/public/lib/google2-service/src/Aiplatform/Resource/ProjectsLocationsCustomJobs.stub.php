@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CancelCustomJobRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CustomJob;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListCustomJobsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "customJobs" collection of methods.
  * Typical usage is:

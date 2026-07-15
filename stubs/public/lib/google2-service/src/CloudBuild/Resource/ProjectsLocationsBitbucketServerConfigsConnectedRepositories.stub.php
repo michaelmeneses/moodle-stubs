@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\BatchCreateBitbucketServerConnectedRepositoriesRequest;
+use Google\Service\CloudBuild\Operation;
 /**
  * The "connectedRepositories" collection of methods.
  * Typical usage is:

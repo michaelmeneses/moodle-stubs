@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\DirectorySite;
+use Google\Service\Dfareporting\DirectorySitesListResponse;
 /**
  * The "directorySites" collection of methods.
  * Typical usage is:

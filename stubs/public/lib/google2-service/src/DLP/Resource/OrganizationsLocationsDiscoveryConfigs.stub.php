@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2CreateDiscoveryConfigRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2DiscoveryConfig;
+use Google\Service\DLP\GooglePrivacyDlpV2ListDiscoveryConfigsResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2UpdateDiscoveryConfigRequest;
+use Google\Service\DLP\GoogleProtobufEmpty;
 /**
  * The "discoveryConfigs" collection of methods.
  * Typical usage is:

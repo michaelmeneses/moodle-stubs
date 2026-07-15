@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\ListCreativeStatusBreakdownByCreativeResponse;
 /**
  * The "creatives" collection of methods.
  * Typical usage is:

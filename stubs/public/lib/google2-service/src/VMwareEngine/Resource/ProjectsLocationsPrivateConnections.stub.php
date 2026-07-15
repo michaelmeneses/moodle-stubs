@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ListPrivateConnectionsResponse;
+use Google\Service\VMwareEngine\Operation;
+use Google\Service\VMwareEngine\PrivateConnection;
 /**
  * The "privateConnections" collection of methods.
  * Typical usage is:

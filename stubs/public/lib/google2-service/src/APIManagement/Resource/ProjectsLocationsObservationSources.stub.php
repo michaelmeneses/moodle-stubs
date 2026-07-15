@@ -23,6 +23,9 @@
  */
 namespace Google\Service\APIManagement\Resource;
 
+use Google\Service\APIManagement\ListObservationSourcesResponse;
+use Google\Service\APIManagement\ObservationSource;
+use Google\Service\APIManagement\Operation;
 /**
  * The "observationSources" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudDeploy\Resource;
 
+use Google\Service\CloudDeploy\Automation;
+use Google\Service\CloudDeploy\ListAutomationsResponse;
+use Google\Service\CloudDeploy\Operation;
 /**
  * The "automations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Safebrowsing\Resource;
 
+use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5BatchGetHashListsResponse;
+use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5ListHashListsResponse;
 /**
  * The "hashLists" collection of methods.
  * Typical usage is:

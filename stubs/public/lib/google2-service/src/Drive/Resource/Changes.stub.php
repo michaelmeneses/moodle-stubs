@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Drive\Resource;
 
+use Google\Service\Drive\ChangeList;
+use Google\Service\Drive\Channel;
+use Google\Service\Drive\StartPageToken;
 /**
  * The "changes" collection of methods.
  * Typical usage is:

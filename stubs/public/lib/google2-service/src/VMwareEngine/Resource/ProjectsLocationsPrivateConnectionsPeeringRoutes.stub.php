@@ -23,6 +23,7 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ListPrivateConnectionPeeringRoutesResponse;
 /**
  * The "peeringRoutes" collection of methods.
  * Typical usage is:

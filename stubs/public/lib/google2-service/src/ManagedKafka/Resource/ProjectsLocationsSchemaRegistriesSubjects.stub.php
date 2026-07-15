@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\HttpBody;
+use Google\Service\ManagedKafka\LookupVersionRequest;
+use Google\Service\ManagedKafka\SchemaVersion;
 /**
  * The "subjects" collection of methods.
  * Typical usage is:

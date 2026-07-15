@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AuthorizedBuyersMarketplace\Resource;
 
+use Google\Service\AuthorizedBuyersMarketplace\ListAuctionPackagesResponse;
 /**
  * The "auctionPackages" collection of methods.
  * Typical usage is:

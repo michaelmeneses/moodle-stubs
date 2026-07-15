@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1CanaryEvaluation;
+use Google\Service\Apigee\GoogleLongrunningOperation;
 /**
  * The "canaryevaluations" collection of methods.
  * Typical usage is:

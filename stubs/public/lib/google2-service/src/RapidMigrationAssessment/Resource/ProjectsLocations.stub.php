@@ -23,6 +23,8 @@
  */
 namespace Google\Service\RapidMigrationAssessment\Resource;
 
+use Google\Service\RapidMigrationAssessment\ListLocationsResponse;
+use Google\Service\RapidMigrationAssessment\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

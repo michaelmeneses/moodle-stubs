@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudFilestore\Resource;
 
+use Google\Service\CloudFilestore\ListLocationsResponse;
+use Google\Service\CloudFilestore\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

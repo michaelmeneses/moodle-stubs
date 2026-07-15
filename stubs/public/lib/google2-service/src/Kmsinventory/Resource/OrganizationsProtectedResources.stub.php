@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Kmsinventory\Resource;
 
+use Google\Service\Kmsinventory\GoogleCloudKmsInventoryV1SearchProtectedResourcesResponse;
 /**
  * The "protectedResources" collection of methods.
  * Typical usage is:

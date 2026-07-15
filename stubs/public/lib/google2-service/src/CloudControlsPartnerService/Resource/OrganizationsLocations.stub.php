@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudControlsPartnerService\Resource;
 
+use Google\Service\CloudControlsPartnerService\Partner;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

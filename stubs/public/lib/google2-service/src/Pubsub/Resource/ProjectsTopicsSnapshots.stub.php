@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Pubsub\Resource;
 
+use Google\Service\Pubsub\ListTopicSnapshotsResponse;
 /**
  * The "snapshots" collection of methods.
  * Typical usage is:

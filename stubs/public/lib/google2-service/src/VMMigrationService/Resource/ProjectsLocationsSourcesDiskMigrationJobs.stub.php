@@ -23,6 +23,11 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\CancelDiskMigrationJobRequest;
+use Google\Service\VMMigrationService\DiskMigrationJob;
+use Google\Service\VMMigrationService\ListDiskMigrationJobsResponse;
+use Google\Service\VMMigrationService\Operation;
+use Google\Service\VMMigrationService\RunDiskMigrationJobRequest;
 /**
  * The "diskMigrationJobs" collection of methods.
  * Typical usage is:

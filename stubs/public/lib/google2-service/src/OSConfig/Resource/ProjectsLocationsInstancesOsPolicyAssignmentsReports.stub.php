@@ -23,6 +23,8 @@
  */
 namespace Google\Service\OSConfig\Resource;
 
+use Google\Service\OSConfig\ListOSPolicyAssignmentReportsResponse;
+use Google\Service\OSConfig\OSPolicyAssignmentReport;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

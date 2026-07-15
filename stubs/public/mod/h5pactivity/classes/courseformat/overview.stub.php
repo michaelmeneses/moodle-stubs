@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_h5pactivity\courseformat;
 
+use cm_info;
+use core_courseformat\local\overview\overviewitem;
+use core\output\action_link;
+use core\output\local\properties\text_align;
+use core\output\local\properties\button;
+use core\url;
+use core_courseformat\output\local\overview\overviewdialog;
+use mod_h5pactivity\local\manager;
 /**
  * H5P activity overview integration.
  *

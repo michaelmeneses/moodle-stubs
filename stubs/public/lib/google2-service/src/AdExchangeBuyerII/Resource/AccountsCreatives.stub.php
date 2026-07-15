@@ -23,6 +23,11 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\Adexchangebuyer2Empty;
+use Google\Service\AdExchangeBuyerII\Creative;
+use Google\Service\AdExchangeBuyerII\ListCreativesResponse;
+use Google\Service\AdExchangeBuyerII\StopWatchingCreativeRequest;
+use Google\Service\AdExchangeBuyerII\WatchCreativeRequest;
 /**
  * The "creatives" collection of methods.
  * Typical usage is:

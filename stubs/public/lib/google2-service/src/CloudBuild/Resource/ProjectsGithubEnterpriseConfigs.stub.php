@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\GitHubEnterpriseConfig;
+use Google\Service\CloudBuild\ListGithubEnterpriseConfigsResponse;
+use Google\Service\CloudBuild\Operation;
 /**
  * The "githubEnterpriseConfigs" collection of methods.
  * Typical usage is:

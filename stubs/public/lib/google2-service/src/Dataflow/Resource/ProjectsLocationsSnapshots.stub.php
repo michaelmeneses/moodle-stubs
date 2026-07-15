@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dataflow\Resource;
 
+use Google\Service\Dataflow\DeleteSnapshotResponse;
+use Google\Service\Dataflow\ListSnapshotsResponse;
+use Google\Service\Dataflow\Snapshot;
 /**
  * The "snapshots" collection of methods.
  * Typical usage is:

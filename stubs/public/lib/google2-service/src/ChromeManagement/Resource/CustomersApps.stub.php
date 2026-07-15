@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ChromeManagement\Resource;
 
+use Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeAppRequestsResponse;
+use Google\Service\ChromeManagement\GoogleChromeManagementV1FetchDevicesRequestingExtensionResponse;
+use Google\Service\ChromeManagement\GoogleChromeManagementV1FetchUsersRequestingExtensionResponse;
 /**
  * The "apps" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\GKEOnPrem\Resource;
 
+use Google\Service\GKEOnPrem\EnrollBareMetalStandaloneNodePoolRequest;
+use Google\Service\GKEOnPrem\Operation;
 /**
  * The "bareMetalStandaloneNodePools" collection of methods.
  * Typical usage is:

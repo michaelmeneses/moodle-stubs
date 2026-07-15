@@ -23,6 +23,7 @@
  */
 namespace Google\Service\FirebaseManagement\Resource;
 
+use Google\Service\FirebaseManagement\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

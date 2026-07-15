@@ -23,6 +23,25 @@
  */
 namespace Google\Service\Datastore\Resource;
 
+use Google\Service\Datastore\AllocateIdsRequest;
+use Google\Service\Datastore\AllocateIdsResponse;
+use Google\Service\Datastore\BeginTransactionRequest;
+use Google\Service\Datastore\BeginTransactionResponse;
+use Google\Service\Datastore\CommitRequest;
+use Google\Service\Datastore\CommitResponse;
+use Google\Service\Datastore\GoogleDatastoreAdminV1ExportEntitiesRequest;
+use Google\Service\Datastore\GoogleDatastoreAdminV1ImportEntitiesRequest;
+use Google\Service\Datastore\GoogleLongrunningOperation;
+use Google\Service\Datastore\LookupRequest;
+use Google\Service\Datastore\LookupResponse;
+use Google\Service\Datastore\ReserveIdsRequest;
+use Google\Service\Datastore\ReserveIdsResponse;
+use Google\Service\Datastore\RollbackRequest;
+use Google\Service\Datastore\RollbackResponse;
+use Google\Service\Datastore\RunAggregationQueryRequest;
+use Google\Service\Datastore\RunAggregationQueryResponse;
+use Google\Service\Datastore\RunQueryRequest;
+use Google\Service\Datastore\RunQueryResponse;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

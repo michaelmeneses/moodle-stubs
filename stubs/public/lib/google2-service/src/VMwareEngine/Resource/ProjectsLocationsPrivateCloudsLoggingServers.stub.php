@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ListLoggingServersResponse;
+use Google\Service\VMwareEngine\LoggingServer;
+use Google\Service\VMwareEngine\Operation;
 /**
  * The "loggingServers" collection of methods.
  * Typical usage is:

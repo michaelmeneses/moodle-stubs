@@ -23,6 +23,8 @@
  */
 namespace Google\Service\GKEOnPrem\Resource;
 
+use Google\Service\GKEOnPrem\ListOperationsResponse;
+use Google\Service\GKEOnPrem\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

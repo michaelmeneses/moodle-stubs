@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\DataplexEmpty;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListPartitionsResponse;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1Partition;
 /**
  * The "partitions" collection of methods.
  * Typical usage is:

@@ -29,6 +29,7 @@
  */
 namespace core_competency;
 
+use coding_exception;
 /**
  * Competency rule base abstract class.
  *

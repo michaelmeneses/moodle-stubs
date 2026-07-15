@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\BackupPolicy;
+use Google\Service\NetAppFiles\ListBackupPoliciesResponse;
+use Google\Service\NetAppFiles\Operation;
 /**
  * The "backupPolicies" collection of methods.
  * Typical usage is:

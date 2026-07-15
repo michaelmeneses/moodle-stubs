@@ -8,6 +8,7 @@
  */
 namespace Aws\S3\S3Transfer\Models;
 
+use Aws\Result;
 final class DownloadResult extends Result
 {
     private readonly mixed $downloadDataResult;

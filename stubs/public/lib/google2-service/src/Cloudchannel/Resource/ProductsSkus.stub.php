@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Cloudchannel\Resource;
 
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListSkusResponse;
 /**
  * The "skus" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\PubsubLite\Resource;
 
+use Google\Service\PubsubLite\CancelOperationRequest;
+use Google\Service\PubsubLite\ListOperationsResponse;
+use Google\Service\PubsubLite\Operation;
+use Google\Service\PubsubLite\PubsubliteEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

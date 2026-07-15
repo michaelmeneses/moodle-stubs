@@ -23,6 +23,8 @@
  */
 namespace Google\Service\PubsubLite\Resource;
 
+use Google\Service\PubsubLite\CommitCursorRequest;
+use Google\Service\PubsubLite\CommitCursorResponse;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

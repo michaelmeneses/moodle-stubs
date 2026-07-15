@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dataform\Resource;
 
+use Google\Service\Dataform\Config;
+use Google\Service\Dataform\ListLocationsResponse;
+use Google\Service\Dataform\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Firebaseappcheck\Resource;
 
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetSafetyNetConfigsResponse;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1SafetyNetConfig;
 /**
  * The "safetyNetConfig" collection of methods.
  * Typical usage is:

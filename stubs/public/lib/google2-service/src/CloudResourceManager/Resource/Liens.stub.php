@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudResourceManager\Resource;
 
+use Google\Service\CloudResourceManager\CloudresourcemanagerEmpty;
+use Google\Service\CloudResourceManager\Lien;
+use Google\Service\CloudResourceManager\ListLiensResponse;
 /**
  * The "liens" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Safebrowsing\Resource;
 
+use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FindThreatMatchesRequest;
+use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FindThreatMatchesResponse;
 /**
  * The "threatMatches" collection of methods.
  * Typical usage is:

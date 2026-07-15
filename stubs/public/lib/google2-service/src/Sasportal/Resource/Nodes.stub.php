@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Sasportal\Resource;
 
+use Google\Service\Sasportal\SasPortalNode;
 /**
  * The "nodes" collection of methods.
  * Typical usage is:

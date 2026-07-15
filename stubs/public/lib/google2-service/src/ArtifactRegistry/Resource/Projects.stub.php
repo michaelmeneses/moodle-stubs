@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\ProjectSettings;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

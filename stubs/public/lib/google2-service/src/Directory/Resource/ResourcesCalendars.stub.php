@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\CalendarResource;
+use Google\Service\Directory\CalendarResources;
 /**
  * The "calendars" collection of methods.
  * Typical usage is:

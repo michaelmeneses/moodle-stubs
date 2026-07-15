@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GamesManagement\Resource;
 
+use Google\Service\GamesManagement\AchievementResetAllResponse;
+use Google\Service\GamesManagement\AchievementResetMultipleForAllRequest;
+use Google\Service\GamesManagement\AchievementResetResponse;
 /**
  * The "achievements" collection of methods.
  * Typical usage is:

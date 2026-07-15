@@ -23,6 +23,13 @@
  */
 namespace Google\Service\BackupforGKE\Resource;
 
+use Google\Service\BackupforGKE\GoogleLongrunningOperation;
+use Google\Service\BackupforGKE\ListRestoresResponse;
+use Google\Service\BackupforGKE\Policy;
+use Google\Service\BackupforGKE\Restore;
+use Google\Service\BackupforGKE\SetIamPolicyRequest;
+use Google\Service\BackupforGKE\TestIamPermissionsRequest;
+use Google\Service\BackupforGKE\TestIamPermissionsResponse;
 /**
  * The "restores" collection of methods.
  * Typical usage is:

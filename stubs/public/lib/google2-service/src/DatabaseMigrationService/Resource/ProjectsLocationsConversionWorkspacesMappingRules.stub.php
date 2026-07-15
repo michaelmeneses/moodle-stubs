@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DatabaseMigrationService\Resource;
 
+use Google\Service\DatabaseMigrationService\DatamigrationEmpty;
+use Google\Service\DatabaseMigrationService\ImportMappingRulesRequest;
+use Google\Service\DatabaseMigrationService\ListMappingRulesResponse;
+use Google\Service\DatabaseMigrationService\MappingRule;
+use Google\Service\DatabaseMigrationService\Operation;
 /**
  * The "mappingRules" collection of methods.
  * Typical usage is:

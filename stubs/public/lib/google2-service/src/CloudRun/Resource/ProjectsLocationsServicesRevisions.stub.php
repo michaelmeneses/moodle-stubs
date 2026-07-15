@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\GoogleCloudRunV2ExportStatusResponse;
+use Google\Service\CloudRun\GoogleCloudRunV2ListRevisionsResponse;
+use Google\Service\CloudRun\GoogleCloudRunV2Revision;
+use Google\Service\CloudRun\GoogleLongrunningOperation;
 /**
  * The "revisions" collection of methods.
  * Typical usage is:

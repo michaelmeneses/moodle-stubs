@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\MobileApp;
+use Google\Service\Dfareporting\MobileAppsListResponse;
 /**
  * The "mobileApps" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Contentwarehouse\Resource;
 
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CreateDocumentLinkRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DeleteDocumentLinkRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DocumentLink;
+use Google\Service\Contentwarehouse\GoogleProtobufEmpty;
 /**
  * The "documentLinks" collection of methods.
  * Typical usage is:

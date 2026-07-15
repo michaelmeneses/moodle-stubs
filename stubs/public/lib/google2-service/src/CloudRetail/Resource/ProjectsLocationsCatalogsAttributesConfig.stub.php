@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudRetail\Resource;
 
+use Google\Service\CloudRetail\GoogleCloudRetailV2AddCatalogAttributeRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig;
+use Google\Service\CloudRetail\GoogleCloudRetailV2RemoveCatalogAttributeRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2ReplaceCatalogAttributeRequest;
 /**
  * The "attributesConfig" collection of methods.
  * Typical usage is:

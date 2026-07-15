@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\LookupRef;
 
+use PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
 class Lookup
 {
     use ArrayEnabled;

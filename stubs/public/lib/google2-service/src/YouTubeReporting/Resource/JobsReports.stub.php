@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTubeReporting\Resource;
 
+use Google\Service\YouTubeReporting\ListReportsResponse;
+use Google\Service\YouTubeReporting\Report;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

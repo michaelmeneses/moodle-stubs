@@ -23,6 +23,7 @@
  */
 namespace Google\Service\StreetViewPublish\Resource;
 
+use Google\Service\StreetViewPublish\ListPhotoSequencesResponse;
 /**
  * The "photoSequences" collection of methods.
  * Typical usage is:

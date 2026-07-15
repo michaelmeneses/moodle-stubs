@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\JwtInsertResponse;
+use Google\Service\Walletobjects\JwtResource;
 /**
  * The "jwt" collection of methods.
  * Typical usage is:

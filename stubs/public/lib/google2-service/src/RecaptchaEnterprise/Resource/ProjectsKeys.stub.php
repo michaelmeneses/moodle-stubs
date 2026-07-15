@@ -23,6 +23,17 @@
  */
 namespace Google\Service\RecaptchaEnterprise\Resource;
 
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AddIpOverrideRequest;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AddIpOverrideResponse;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1Key;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListIpOverridesResponse;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListKeysResponse;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1Metrics;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1MigrateKeyRequest;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1RemoveIpOverrideRequest;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1RemoveIpOverrideResponse;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1RetrieveLegacySecretKeyResponse;
+use Google\Service\RecaptchaEnterprise\GoogleProtobufEmpty;
 /**
  * The "keys" collection of methods.
  * Typical usage is:

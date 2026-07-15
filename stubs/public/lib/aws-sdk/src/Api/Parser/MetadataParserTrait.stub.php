@@ -8,6 +8,9 @@
  */
 namespace Aws\Api\Parser;
 
+use Aws\Api\DateTimeResult;
+use Aws\Api\Shape;
+use Psr\Http\Message\ResponseInterface;
 trait MetadataParserTrait
 {
     /**

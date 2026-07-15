@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AdExchangeBuyer\Resource;
 
+use Google\Service\AdExchangeBuyer\Creative;
+use Google\Service\AdExchangeBuyer\CreativeDealIds;
+use Google\Service\AdExchangeBuyer\CreativesList;
 /**
  * The "creatives" collection of methods.
  * Typical usage is:

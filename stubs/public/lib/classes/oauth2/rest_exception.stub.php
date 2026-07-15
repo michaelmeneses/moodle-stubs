@@ -29,6 +29,7 @@
  */
 namespace core\oauth2;
 
+use Exception;
 /**
  * Rest Exception class containing error code and message.
  *

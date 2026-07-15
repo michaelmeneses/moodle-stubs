@@ -16,6 +16,11 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\LogglyFormatter;
+use CurlHandle;
+use Monolog\LogRecord;
 /**
  * Sends errors to Loggly.
  *

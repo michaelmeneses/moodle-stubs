@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchMigrateResourcesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchMigratableResourcesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchMigratableResourcesResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "migratableResources" collection of methods.
  * Typical usage is:

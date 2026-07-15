@@ -29,6 +29,10 @@
  */
 namespace core_competency\external;
 
+use moodle_url;
+use renderer_base;
+use core_competency\external\performance_helper;
+use core_files\external\stored_file_exporter;
 /**
  * Class for exporting user_evidence data.
  *

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\BigQueryReservation\Resource;
 
+use Google\Service\BigQueryReservation\BiReservation;
+use Google\Service\BigQueryReservation\SearchAllAssignmentsResponse;
+use Google\Service\BigQueryReservation\SearchAssignmentsResponse;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

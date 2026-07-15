@@ -23,6 +23,10 @@
  */
 namespace Google\Service\BackupforGKE\Resource;
 
+use Google\Service\BackupforGKE\GkebackupEmpty;
+use Google\Service\BackupforGKE\GoogleLongrunningCancelOperationRequest;
+use Google\Service\BackupforGKE\GoogleLongrunningListOperationsResponse;
+use Google\Service\BackupforGKE\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

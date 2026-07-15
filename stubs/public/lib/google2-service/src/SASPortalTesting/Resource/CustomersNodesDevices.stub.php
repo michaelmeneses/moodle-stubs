@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SASPortalTesting\Resource;
 
+use Google\Service\SASPortalTesting\SasPortalCreateSignedDeviceRequest;
+use Google\Service\SASPortalTesting\SasPortalDevice;
+use Google\Service\SASPortalTesting\SasPortalListDevicesResponse;
 /**
  * The "devices" collection of methods.
  * Typical usage is:

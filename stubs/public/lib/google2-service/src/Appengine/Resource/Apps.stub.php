@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Appengine\Resource;
 
+use Google\Service\Appengine\Application;
+use Google\Service\Appengine\ListRuntimesResponse;
+use Google\Service\Appengine\Operation;
+use Google\Service\Appengine\RepairApplicationRequest;
 /**
  * The "apps" collection of methods.
  * Typical usage is:

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_mfa\output;
 
+use core\context\system;
+use tool_mfa\local\factor\object_factor;
+use tool_mfa\local\form\login_form;
+use html_writer;
+use tool_mfa\plugininfo\factor;
 /**
  * MFA renderer.
  *

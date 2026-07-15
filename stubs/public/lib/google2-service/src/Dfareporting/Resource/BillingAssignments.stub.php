@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\BillingAssignment;
+use Google\Service\Dfareporting\BillingAssignmentsListResponse;
 /**
  * The "billingAssignments" collection of methods.
  * Typical usage is:

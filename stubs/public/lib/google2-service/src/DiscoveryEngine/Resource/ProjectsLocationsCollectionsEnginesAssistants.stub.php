@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Assistant;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListAssistantsResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1StreamAssistRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1StreamAssistResponse;
+use Google\Service\DiscoveryEngine\GoogleProtobufEmpty;
 /**
  * The "assistants" collection of methods.
  * Typical usage is:

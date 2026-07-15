@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ToolResults\Resource;
 
+use Google\Service\ToolResults\PerfMetricsSummary;
 /**
  * The "perfMetricsSummary" collection of methods.
  * Typical usage is:

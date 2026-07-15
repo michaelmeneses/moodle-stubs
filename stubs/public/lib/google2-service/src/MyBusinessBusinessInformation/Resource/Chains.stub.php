@@ -23,6 +23,8 @@
  */
 namespace Google\Service\MyBusinessBusinessInformation\Resource;
 
+use Google\Service\MyBusinessBusinessInformation\Chain;
+use Google\Service\MyBusinessBusinessInformation\SearchChainsResponse;
 /**
  * The "chains" collection of methods.
  * Typical usage is:

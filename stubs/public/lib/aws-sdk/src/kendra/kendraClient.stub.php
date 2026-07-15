@@ -8,6 +8,7 @@
  */
 namespace Aws\kendra;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWSKendraFrontendService** service.
  * @method \Aws\Result associateEntitiesToExperience(array $args = [])

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ListNetworkPeeringsResponse;
+use Google\Service\VMwareEngine\NetworkPeering;
+use Google\Service\VMwareEngine\Operation;
 /**
  * The "networkPeerings" collection of methods.
  * Typical usage is:

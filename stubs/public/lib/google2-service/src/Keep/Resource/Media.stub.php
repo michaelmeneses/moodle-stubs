@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Keep\Resource;
 
+use Google\Service\Keep\Attachment;
 /**
  * The "media" collection of methods.
  * Typical usage is:

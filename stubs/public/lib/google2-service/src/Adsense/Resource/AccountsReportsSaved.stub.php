@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Adsense\Resource;
 
+use Google\Service\Adsense\HttpBody;
+use Google\Service\Adsense\ListSavedReportsResponse;
+use Google\Service\Adsense\ReportResult;
 /**
  * The "saved" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\MyBusinessVerifications\Resource;
 
+use Google\Service\MyBusinessVerifications\GenerateInstantVerificationTokenRequest;
+use Google\Service\MyBusinessVerifications\GenerateInstantVerificationTokenResponse;
 /**
  * The "verificationTokens" collection of methods.
  * Typical usage is:

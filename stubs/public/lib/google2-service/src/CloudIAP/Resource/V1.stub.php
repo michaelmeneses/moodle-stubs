@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudIAP\Resource;
 
+use Google\Service\CloudIAP\GetIamPolicyRequest;
+use Google\Service\CloudIAP\IapSettings;
+use Google\Service\CloudIAP\Policy;
+use Google\Service\CloudIAP\SetIamPolicyRequest;
+use Google\Service\CloudIAP\TestIamPermissionsRequest;
+use Google\Service\CloudIAP\TestIamPermissionsResponse;
+use Google\Service\CloudIAP\ValidateIapAttributeExpressionResponse;
 /**
  * The "v1" collection of methods.
  * Typical usage is:

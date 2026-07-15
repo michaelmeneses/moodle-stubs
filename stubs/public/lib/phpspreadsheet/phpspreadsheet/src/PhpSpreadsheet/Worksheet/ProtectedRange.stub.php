@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 class ProtectedRange
 {
     private string $name = '';

@@ -23,6 +23,19 @@
  */
 namespace Google\Service\Cloudchannel\Resource;
 
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ActivateEntitlementRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1CancelEntitlementRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeOfferRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeParametersRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeRenewalSettingsRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1CreateEntitlementRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1Entitlement;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListEntitlementChangesResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListEntitlementsResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1Offer;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1StartPaidServiceRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1SuspendEntitlementRequest;
+use Google\Service\Cloudchannel\GoogleLongrunningOperation;
 /**
  * The "entitlements" collection of methods.
  * Typical usage is:

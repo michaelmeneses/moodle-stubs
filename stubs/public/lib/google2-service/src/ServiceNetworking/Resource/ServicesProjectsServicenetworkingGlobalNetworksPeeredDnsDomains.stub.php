@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ServiceNetworking\Resource;
 
+use Google\Service\ServiceNetworking\ListPeeredDnsDomainsResponse;
+use Google\Service\ServiceNetworking\Operation;
+use Google\Service\ServiceNetworking\PeeredDnsDomain;
 /**
  * The "peeredDnsDomains" collection of methods.
  * Typical usage is:

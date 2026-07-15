@@ -29,6 +29,9 @@
  */
 namespace mod_lesson\output;
 
+use moodle_url;
+use templatable;
+use renderable;
 /**
  * Output the report action menu for this activity.
  *

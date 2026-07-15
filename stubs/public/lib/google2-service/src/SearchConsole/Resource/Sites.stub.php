@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SearchConsole\Resource;
 
+use Google\Service\SearchConsole\SitesListResponse;
+use Google\Service\SearchConsole\WmxSite;
 /**
  * The "sites" collection of methods.
  * Typical usage is:

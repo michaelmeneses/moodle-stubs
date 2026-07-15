@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ServiceNetworking\Resource;
 
+use Google\Service\ServiceNetworking\AddRolesRequest;
+use Google\Service\ServiceNetworking\Operation;
 /**
  * The "roles" collection of methods.
  * Typical usage is:

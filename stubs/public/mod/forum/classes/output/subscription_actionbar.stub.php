@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_forum\output;
 
+use moodle_url;
+use renderer_base;
+use url_select;
+use renderable;
+use templatable;
 /**
  * Renders the subscribers page for this activity.
  *

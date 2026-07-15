@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core_useragent;
+use moodle_url;
+use stdClass;
 /**
  * A renderer that generates output for ajax scripts.
  *

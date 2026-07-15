@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SaaSServiceManagement\Resource;
 
+use Google\Service\SaaSServiceManagement\ListRolloutKindsResponse;
+use Google\Service\SaaSServiceManagement\RolloutKind;
+use Google\Service\SaaSServiceManagement\SaasservicemgmtEmpty;
 /**
  * The "rolloutKinds" collection of methods.
  * Typical usage is:

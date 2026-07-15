@@ -23,6 +23,12 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\ApproveBuildRequest;
+use Google\Service\CloudBuild\Build;
+use Google\Service\CloudBuild\CancelBuildRequest;
+use Google\Service\CloudBuild\ListBuildsResponse;
+use Google\Service\CloudBuild\Operation;
+use Google\Service\CloudBuild\RetryBuildRequest;
 /**
  * The "builds" collection of methods.
  * Typical usage is:

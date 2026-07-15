@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\SubscriptionPurchase;
+use Google\Service\AndroidPublisher\SubscriptionPurchasesAcknowledgeRequest;
+use Google\Service\AndroidPublisher\SubscriptionPurchasesDeferRequest;
+use Google\Service\AndroidPublisher\SubscriptionPurchasesDeferResponse;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

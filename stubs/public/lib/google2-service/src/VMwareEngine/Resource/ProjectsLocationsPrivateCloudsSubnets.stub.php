@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\ListSubnetsResponse;
+use Google\Service\VMwareEngine\Operation;
+use Google\Service\VMwareEngine\Subnet;
 /**
  * The "subnets" collection of methods.
  * Typical usage is:

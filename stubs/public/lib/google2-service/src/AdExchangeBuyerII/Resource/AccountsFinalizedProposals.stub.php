@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\ListProposalsResponse;
+use Google\Service\AdExchangeBuyerII\PauseProposalDealsRequest;
+use Google\Service\AdExchangeBuyerII\Proposal;
+use Google\Service\AdExchangeBuyerII\ResumeProposalDealsRequest;
 /**
  * The "finalizedProposals" collection of methods.
  * Typical usage is:

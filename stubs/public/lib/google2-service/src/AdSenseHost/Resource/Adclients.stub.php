@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdSenseHost\Resource;
 
+use Google\Service\AdSenseHost\AdClient;
+use Google\Service\AdSenseHost\AdClients as AdClientsModel;
 /**
  * The "adclients" collection of methods.
  * Typical usage is:

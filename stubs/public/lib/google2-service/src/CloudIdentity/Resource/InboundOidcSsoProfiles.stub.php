@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudIdentity\Resource;
 
+use Google\Service\CloudIdentity\InboundOidcSsoProfile;
+use Google\Service\CloudIdentity\ListInboundOidcSsoProfilesResponse;
+use Google\Service\CloudIdentity\Operation;
 /**
  * The "inboundOidcSsoProfiles" collection of methods.
  * Typical usage is:

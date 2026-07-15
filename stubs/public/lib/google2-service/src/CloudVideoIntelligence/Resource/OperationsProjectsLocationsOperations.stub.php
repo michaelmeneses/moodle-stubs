@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudVideoIntelligence\Resource;
 
+use Google\Service\CloudVideoIntelligence\GoogleLongrunningOperation;
+use Google\Service\CloudVideoIntelligence\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

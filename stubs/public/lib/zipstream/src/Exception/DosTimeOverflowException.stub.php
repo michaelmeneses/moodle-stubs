@@ -8,6 +8,8 @@
  */
 namespace ZipStream\Exception;
 
+use DateTimeInterface;
+use ZipStream\Exception;
 /**
  * This Exception gets invoked if a DOS time is overflowing
  *

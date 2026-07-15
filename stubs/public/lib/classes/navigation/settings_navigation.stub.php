@@ -22,6 +22,25 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation;
 
+use admin_category;
+use admin_externalpage;
+use admin_settingpage;
+use core\component;
+use core\context;
+use core\context\course as context_course;
+use core\context\system as context_system;
+use core\context\user as context_user;
+use core\context_helper;
+use core\exception\coding_exception;
+use core\output\action_link;
+use core\output\pix_icon;
+use core\url;
+use core_contentbank\contentbank;
+use core_plugin_manager;
+use dml_missing_record_exception;
+use moodle_page;
+use part_of_admin_tree;
+use repository;
 /**
  * Class used to manage the settings option for the current page
  *

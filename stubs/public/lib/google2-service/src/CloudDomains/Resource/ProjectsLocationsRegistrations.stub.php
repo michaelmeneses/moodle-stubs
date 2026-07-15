@@ -23,6 +23,30 @@
  */
 namespace Google\Service\CloudDomains\Resource;
 
+use Google\Service\CloudDomains\AuthorizationCode;
+use Google\Service\CloudDomains\ConfigureContactSettingsRequest;
+use Google\Service\CloudDomains\ConfigureDnsSettingsRequest;
+use Google\Service\CloudDomains\ConfigureManagementSettingsRequest;
+use Google\Service\CloudDomains\ExportRegistrationRequest;
+use Google\Service\CloudDomains\ImportDomainRequest;
+use Google\Service\CloudDomains\InitiatePushTransferRequest;
+use Google\Service\CloudDomains\ListRegistrationsResponse;
+use Google\Service\CloudDomains\Operation;
+use Google\Service\CloudDomains\Policy;
+use Google\Service\CloudDomains\RegisterDomainRequest;
+use Google\Service\CloudDomains\Registration;
+use Google\Service\CloudDomains\RenewDomainRequest;
+use Google\Service\CloudDomains\ResetAuthorizationCodeRequest;
+use Google\Service\CloudDomains\RetrieveGoogleDomainsDnsRecordsResponse;
+use Google\Service\CloudDomains\RetrieveGoogleDomainsForwardingConfigResponse;
+use Google\Service\CloudDomains\RetrieveImportableDomainsResponse;
+use Google\Service\CloudDomains\RetrieveRegisterParametersResponse;
+use Google\Service\CloudDomains\RetrieveTransferParametersResponse;
+use Google\Service\CloudDomains\SearchDomainsResponse;
+use Google\Service\CloudDomains\SetIamPolicyRequest;
+use Google\Service\CloudDomains\TestIamPermissionsRequest;
+use Google\Service\CloudDomains\TestIamPermissionsResponse;
+use Google\Service\CloudDomains\TransferDomainRequest;
 /**
  * The "registrations" collection of methods.
  * Typical usage is:

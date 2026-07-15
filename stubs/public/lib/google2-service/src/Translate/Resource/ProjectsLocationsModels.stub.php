@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Translate\Resource;
 
+use Google\Service\Translate\ListModelsResponse;
+use Google\Service\Translate\Model;
+use Google\Service\Translate\Operation;
 /**
  * The "models" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataTransfer\Resource;
 
+use Google\Service\DataTransfer\Application;
+use Google\Service\DataTransfer\ApplicationsListResponse;
 /**
  * The "applications" collection of methods.
  * Typical usage is:

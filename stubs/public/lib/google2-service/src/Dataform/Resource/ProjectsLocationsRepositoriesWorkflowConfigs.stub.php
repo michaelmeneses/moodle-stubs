@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dataform\Resource;
 
+use Google\Service\Dataform\DataformEmpty;
+use Google\Service\Dataform\ListWorkflowConfigsResponse;
+use Google\Service\Dataform\WorkflowConfig;
 /**
  * The "workflowConfigs" collection of methods.
  * Typical usage is:

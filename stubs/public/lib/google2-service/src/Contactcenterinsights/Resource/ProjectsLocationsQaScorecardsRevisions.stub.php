@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1DeployQaScorecardRevisionRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListQaScorecardRevisionsResponse;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaScorecardRevision;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1TuneQaScorecardRevisionRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1UndeployQaScorecardRevisionRequest;
+use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
+use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
 /**
  * The "revisions" collection of methods.
  * Typical usage is:

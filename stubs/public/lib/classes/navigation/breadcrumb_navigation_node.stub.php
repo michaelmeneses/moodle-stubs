@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation;
 
+use core\exception\coding_exception;
 /**
  * Subclass of navigation_node allowing different rendering for the breadcrumbs
  * in particular adding extra metadata for search engine robots to leverage.

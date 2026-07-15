@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dataflow\Resource;
 
+use Google\Service\Dataflow\DeleteSnapshotResponse;
+use Google\Service\Dataflow\SendWorkerMessagesRequest;
+use Google\Service\Dataflow\SendWorkerMessagesResponse;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

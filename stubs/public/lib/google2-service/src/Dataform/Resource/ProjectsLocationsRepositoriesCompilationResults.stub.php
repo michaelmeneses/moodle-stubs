@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dataform\Resource;
 
+use Google\Service\Dataform\CompilationResult;
+use Google\Service\Dataform\ListCompilationResultsResponse;
+use Google\Service\Dataform\QueryCompilationResultActionsResponse;
 /**
  * The "compilationResults" collection of methods.
  * Typical usage is:

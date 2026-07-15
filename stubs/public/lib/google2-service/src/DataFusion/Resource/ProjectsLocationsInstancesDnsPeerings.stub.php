@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DataFusion\Resource;
 
+use Google\Service\DataFusion\DatafusionEmpty;
+use Google\Service\DataFusion\DnsPeering;
+use Google\Service\DataFusion\ListDnsPeeringsResponse;
 /**
  * The "dnsPeerings" collection of methods.
  * Typical usage is:

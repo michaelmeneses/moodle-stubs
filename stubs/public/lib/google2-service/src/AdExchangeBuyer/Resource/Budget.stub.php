@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AdExchangeBuyer\Resource;
 
+use Google\Service\AdExchangeBuyer\Budget as BudgetModel;
 /**
  * The "budget" collection of methods.
  * Typical usage is:

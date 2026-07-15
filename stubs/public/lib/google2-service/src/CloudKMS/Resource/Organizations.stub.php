@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudKMS\Resource;
 
+use Google\Service\CloudKMS\KeyAccessJustificationsPolicyConfig;
 /**
  * The "organizations" collection of methods.
  * Typical usage is:

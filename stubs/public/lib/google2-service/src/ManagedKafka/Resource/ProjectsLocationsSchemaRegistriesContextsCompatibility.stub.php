@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\CheckCompatibilityRequest;
+use Google\Service\ManagedKafka\CheckCompatibilityResponse;
 /**
  * The "compatibility" collection of methods.
  * Typical usage is:

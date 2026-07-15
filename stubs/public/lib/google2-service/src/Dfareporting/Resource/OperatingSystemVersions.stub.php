@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\OperatingSystemVersion;
+use Google\Service\Dfareporting\OperatingSystemVersionsListResponse;
 /**
  * The "operatingSystemVersions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\OperatingSystem;
+use Google\Service\Dfareporting\OperatingSystemsListResponse;
 /**
  * The "operatingSystems" collection of methods.
  * Typical usage is:

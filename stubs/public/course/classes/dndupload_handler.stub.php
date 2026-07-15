@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course;
 
+use core\component;
+use core\context\course as context_course;
+use core\exception\coding_exception;
+use repository;
+use stdClass;
 /**
  * Stores all the information about the available dndupload handlers
  *

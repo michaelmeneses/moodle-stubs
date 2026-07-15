@@ -23,6 +23,8 @@
  */
 namespace Google\Service\FirebaseAppHosting\Resource;
 
+use Google\Service\FirebaseAppHosting\ListLocationsResponse;
+use Google\Service\FirebaseAppHosting\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

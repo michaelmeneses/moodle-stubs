@@ -23,6 +23,17 @@
  */
 namespace Google\Service\CloudResourceManager\Resource;
 
+use Google\Service\CloudResourceManager\GetIamPolicyRequest;
+use Google\Service\CloudResourceManager\ListProjectsResponse;
+use Google\Service\CloudResourceManager\MoveProjectRequest;
+use Google\Service\CloudResourceManager\Operation;
+use Google\Service\CloudResourceManager\Policy;
+use Google\Service\CloudResourceManager\Project;
+use Google\Service\CloudResourceManager\SearchProjectsResponse;
+use Google\Service\CloudResourceManager\SetIamPolicyRequest;
+use Google\Service\CloudResourceManager\TestIamPermissionsRequest;
+use Google\Service\CloudResourceManager\TestIamPermissionsResponse;
+use Google\Service\CloudResourceManager\UndeleteProjectRequest;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\CreativeGroup;
+use Google\Service\Dfareporting\CreativeGroupsListResponse;
 /**
  * The "creativeGroups" collection of methods.
  * Typical usage is:

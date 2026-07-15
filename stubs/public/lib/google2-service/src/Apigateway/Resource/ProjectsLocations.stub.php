@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigateway\Resource;
 
+use Google\Service\Apigateway\ApigatewayListLocationsResponse;
+use Google\Service\Apigateway\ApigatewayLocation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

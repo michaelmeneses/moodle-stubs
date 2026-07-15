@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AdSensePlatform\Resource;
 
+use Google\Service\AdSensePlatform\Event;
 /**
  * The "events" collection of methods.
  * Typical usage is:

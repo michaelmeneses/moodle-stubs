@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DataManager\Resource;
 
+use Google\Service\DataManager\IngestAudienceMembersRequest;
+use Google\Service\DataManager\IngestAudienceMembersResponse;
+use Google\Service\DataManager\RemoveAudienceMembersRequest;
+use Google\Service\DataManager\RemoveAudienceMembersResponse;
 /**
  * The "audienceMembers" collection of methods.
  * Typical usage is:

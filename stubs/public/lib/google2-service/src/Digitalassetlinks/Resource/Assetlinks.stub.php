@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Digitalassetlinks\Resource;
 
+use Google\Service\Digitalassetlinks\BulkCheckRequest;
+use Google\Service\Digitalassetlinks\BulkCheckResponse;
+use Google\Service\Digitalassetlinks\CheckResponse;
 /**
  * The "assetlinks" collection of methods.
  * Typical usage is:

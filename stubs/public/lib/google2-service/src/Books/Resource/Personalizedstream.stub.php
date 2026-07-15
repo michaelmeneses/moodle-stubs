@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\Discoveryclusters;
 /**
  * The "personalizedstream" collection of methods.
  * Typical usage is:

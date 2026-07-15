@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\Token;
+use Google\Service\Directory\Tokens as TokensModel;
 /**
  * The "tokens" collection of methods.
  * Typical usage is:

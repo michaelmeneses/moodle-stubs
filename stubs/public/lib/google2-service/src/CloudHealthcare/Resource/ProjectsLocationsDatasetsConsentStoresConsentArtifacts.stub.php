@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\ConsentArtifact;
+use Google\Service\CloudHealthcare\HealthcareEmpty;
+use Google\Service\CloudHealthcare\ListConsentArtifactsResponse;
 /**
  * The "consentArtifacts" collection of methods.
  * Typical usage is:

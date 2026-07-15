@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\AnalyzeEntitiesRequest;
+use Google\Service\CloudHealthcare\AnalyzeEntitiesResponse;
 /**
  * The "nlp" collection of methods.
  * Typical usage is:

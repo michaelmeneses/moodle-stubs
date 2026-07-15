@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Bigquery\Resource;
 
+use Google\Service\Bigquery\GetIamPolicyRequest;
+use Google\Service\Bigquery\ListRoutinesResponse;
+use Google\Service\Bigquery\Policy;
+use Google\Service\Bigquery\Routine;
+use Google\Service\Bigquery\SetIamPolicyRequest;
+use Google\Service\Bigquery\TestIamPermissionsRequest;
+use Google\Service\Bigquery\TestIamPermissionsResponse;
 /**
  * The "routines" collection of methods.
  * Typical usage is:

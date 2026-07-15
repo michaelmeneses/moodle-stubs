@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ChromeManagement\Resource;
 
+use Google\Service\ChromeManagement\GoogleChromeManagementV1ListTelemetryNotificationConfigsResponse;
+use Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryNotificationConfig;
+use Google\Service\ChromeManagement\GoogleProtobufEmpty;
 /**
  * The "notificationConfigs" collection of methods.
  * Typical usage is:

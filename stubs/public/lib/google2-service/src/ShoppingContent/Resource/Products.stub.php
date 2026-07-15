@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\Product;
+use Google\Service\ShoppingContent\ProductsCustomBatchRequest;
+use Google\Service\ShoppingContent\ProductsCustomBatchResponse;
+use Google\Service\ShoppingContent\ProductsListResponse;
 /**
  * The "products" collection of methods.
  * Typical usage is:

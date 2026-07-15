@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudRetail\Resource;
 
+use Google\Service\CloudRetail\GoogleCloudRetailV2ListGenerativeQuestionConfigsResponse;
 /**
  * The "generativeQuestions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\BackendAuthenticationConfig;
+use Google\Service\NetworkSecurity\ListBackendAuthenticationConfigsResponse;
+use Google\Service\NetworkSecurity\Operation;
 /**
  * The "backendAuthenticationConfigs" collection of methods.
  * Typical usage is:

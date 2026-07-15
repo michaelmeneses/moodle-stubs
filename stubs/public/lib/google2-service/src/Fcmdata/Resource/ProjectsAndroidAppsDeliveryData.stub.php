@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Fcmdata\Resource;
 
+use Google\Service\Fcmdata\GoogleFirebaseFcmDataV1beta1ListAndroidDeliveryDataResponse;
 /**
  * The "deliveryData" collection of methods.
  * Typical usage is:

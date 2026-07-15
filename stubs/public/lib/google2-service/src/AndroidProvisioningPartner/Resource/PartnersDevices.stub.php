@@ -23,6 +23,23 @@
  */
 namespace Google\Service\AndroidProvisioningPartner\Resource;
 
+use Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty;
+use Google\Service\AndroidProvisioningPartner\ClaimDeviceRequest;
+use Google\Service\AndroidProvisioningPartner\ClaimDeviceResponse;
+use Google\Service\AndroidProvisioningPartner\ClaimDevicesRequest;
+use Google\Service\AndroidProvisioningPartner\Device;
+use Google\Service\AndroidProvisioningPartner\DeviceMetadata;
+use Google\Service\AndroidProvisioningPartner\FindDevicesByDeviceIdentifierRequest;
+use Google\Service\AndroidProvisioningPartner\FindDevicesByDeviceIdentifierResponse;
+use Google\Service\AndroidProvisioningPartner\FindDevicesByOwnerRequest;
+use Google\Service\AndroidProvisioningPartner\FindDevicesByOwnerResponse;
+use Google\Service\AndroidProvisioningPartner\GetDeviceSimLockStateRequest;
+use Google\Service\AndroidProvisioningPartner\GetDeviceSimLockStateResponse;
+use Google\Service\AndroidProvisioningPartner\Operation;
+use Google\Service\AndroidProvisioningPartner\UnclaimDeviceRequest;
+use Google\Service\AndroidProvisioningPartner\UnclaimDevicesRequest;
+use Google\Service\AndroidProvisioningPartner\UpdateDeviceMetadataInBatchRequest;
+use Google\Service\AndroidProvisioningPartner\UpdateDeviceMetadataRequest;
 /**
  * The "devices" collection of methods.
  * Typical usage is:

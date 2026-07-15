@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Appengine\Resource;
 
+use Google\Service\Appengine\AppengineEmpty;
+use Google\Service\Appengine\AuthorizedCertificate;
+use Google\Service\Appengine\ListAuthorizedCertificatesResponse;
 /**
  * The "authorizedCertificates" collection of methods.
  * Typical usage is:

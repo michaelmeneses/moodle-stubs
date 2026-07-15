@@ -23,6 +23,7 @@
  */
 namespace Google\Service\HangoutsChat\Resource;
 
+use Google\Service\HangoutsChat\SpaceNotificationSetting;
 /**
  * The "spaceNotificationSetting" collection of methods.
  * Typical usage is:

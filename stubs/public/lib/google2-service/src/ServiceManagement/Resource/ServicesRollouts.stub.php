@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ServiceManagement\Resource;
 
+use Google\Service\ServiceManagement\ListServiceRolloutsResponse;
+use Google\Service\ServiceManagement\Operation;
+use Google\Service\ServiceManagement\Rollout;
 /**
  * The "rollouts" collection of methods.
  * Typical usage is:

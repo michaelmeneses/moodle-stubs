@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\FetchMsComplianceMetadataRequest;
+use Google\Service\Backupdr\FetchMsComplianceMetadataResponse;
+use Google\Service\Backupdr\ListManagementServersResponse;
+use Google\Service\Backupdr\ManagementServer;
+use Google\Service\Backupdr\Operation;
+use Google\Service\Backupdr\Policy;
+use Google\Service\Backupdr\SetIamPolicyRequest;
+use Google\Service\Backupdr\TestIamPermissionsRequest;
+use Google\Service\Backupdr\TestIamPermissionsResponse;
 /**
  * The "managementServers" collection of methods.
  * Typical usage is:

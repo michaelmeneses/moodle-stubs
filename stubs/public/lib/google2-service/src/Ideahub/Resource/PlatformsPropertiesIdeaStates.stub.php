@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Ideahub\Resource;
 
+use Google\Service\Ideahub\GoogleSearchIdeahubV1betaIdeaState;
 /**
  * The "ideaStates" collection of methods.
  * Typical usage is:

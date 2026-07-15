@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\Entitlement;
+use Google\Service\AndroidEnterprise\EntitlementsListResponse;
 /**
  * The "entitlements" collection of methods.
  * Typical usage is:

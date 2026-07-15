@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListRuntimeEntitySchemasResponse;
 /**
  * The "runtimeEntitySchemas" collection of methods.
  * Typical usage is:

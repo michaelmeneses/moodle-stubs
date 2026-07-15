@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListLicenseConfigsUsageStatsResponse;
 /**
  * The "licenseConfigsUsageStats" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\ClassroomEmpty;
+use Google\Service\Classroom\ListTeachersResponse;
+use Google\Service\Classroom\Teacher;
 /**
  * The "teachers" collection of methods.
  * Typical usage is:

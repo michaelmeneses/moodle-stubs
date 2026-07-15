@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ToolResults\Resource;
 
+use Google\Service\ToolResults\Execution;
+use Google\Service\ToolResults\ListExecutionsResponse;
 /**
  * The "executions" collection of methods.
  * Typical usage is:

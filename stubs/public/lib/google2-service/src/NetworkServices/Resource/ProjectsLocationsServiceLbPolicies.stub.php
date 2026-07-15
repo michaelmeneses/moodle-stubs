@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\ListServiceLbPoliciesResponse;
+use Google\Service\NetworkServices\Operation;
+use Google\Service\NetworkServices\ServiceLbPolicy;
 /**
  * The "serviceLbPolicies" collection of methods.
  * Typical usage is:

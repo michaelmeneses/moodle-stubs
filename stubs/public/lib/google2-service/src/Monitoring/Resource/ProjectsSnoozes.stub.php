@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\ListSnoozesResponse;
+use Google\Service\Monitoring\Snooze;
 /**
  * The "snoozes" collection of methods.
  * Typical usage is:

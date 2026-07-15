@@ -29,6 +29,13 @@
  */
 namespace core_contentbank;
 
+use core_text;
+use stored_file;
+use stdClass;
+use coding_exception;
+use context;
+use moodle_url;
+use core\event\contentbank_content_updated;
 /**
  * Content manager class
  *

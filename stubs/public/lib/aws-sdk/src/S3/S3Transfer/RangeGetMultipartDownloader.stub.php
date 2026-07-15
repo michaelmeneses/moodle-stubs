@@ -8,6 +8,9 @@
  */
 namespace Aws\S3\S3Transfer;
 
+use Aws\CommandInterface;
+use Aws\Result;
+use Aws\ResultInterface;
 final class RangeGetMultipartDownloader extends AbstractMultipartDownloader
 {
     /**

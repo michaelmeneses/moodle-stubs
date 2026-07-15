@@ -8,6 +8,7 @@
  */
 namespace Aws\IoTAnalytics;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS IoT Analytics** service.
  * @method \Aws\Result batchPutMessage(array $args = [])

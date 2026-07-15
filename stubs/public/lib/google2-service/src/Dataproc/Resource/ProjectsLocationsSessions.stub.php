@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Dataproc\Resource;
 
+use Google\Service\Dataproc\ListSessionsResponse;
+use Google\Service\Dataproc\Operation;
+use Google\Service\Dataproc\Session;
+use Google\Service\Dataproc\TerminateSessionRequest;
 /**
  * The "sessions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\AndroidManagement\Resource;
 
+use Google\Service\AndroidManagement\AndroidmanagementEmpty;
+use Google\Service\AndroidManagement\ListPoliciesResponse;
+use Google\Service\AndroidManagement\ModifyPolicyApplicationsRequest;
+use Google\Service\AndroidManagement\ModifyPolicyApplicationsResponse;
+use Google\Service\AndroidManagement\Policy;
+use Google\Service\AndroidManagement\RemovePolicyApplicationsRequest;
+use Google\Service\AndroidManagement\RemovePolicyApplicationsResponse;
 /**
  * The "policies" collection of methods.
  * Typical usage is:

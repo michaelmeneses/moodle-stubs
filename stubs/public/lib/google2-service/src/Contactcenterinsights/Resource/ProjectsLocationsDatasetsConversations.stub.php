@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkDeleteConversationsRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsResponse;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Conversation;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IngestConversationsRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListConversationsResponse;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1SampleConversationsRequest;
+use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
+use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
 /**
  * The "conversations" collection of methods.
  * Typical usage is:

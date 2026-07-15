@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1InitializeEncryptionSpecRequest;
+use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
 /**
  * The "encryptionSpec" collection of methods.
  * Typical usage is:

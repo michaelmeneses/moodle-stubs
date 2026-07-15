@@ -23,6 +23,7 @@
  */
 namespace Google\Service\YouTubeReporting\Resource;
 
+use Google\Service\YouTubeReporting\ListReportTypesResponse;
 /**
  * The "reportTypes" collection of methods.
  * Typical usage is:

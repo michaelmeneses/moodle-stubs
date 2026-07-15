@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CertificateManager\Resource;
 
+use Google\Service\CertificateManager\Certificate;
+use Google\Service\CertificateManager\ListCertificatesResponse;
+use Google\Service\CertificateManager\Operation;
 /**
  * The "certificates" collection of methods.
  * Typical usage is:

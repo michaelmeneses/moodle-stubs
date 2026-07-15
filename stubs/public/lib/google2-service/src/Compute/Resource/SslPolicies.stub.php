@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\SslPoliciesAggregatedList;
+use Google\Service\Compute\SslPoliciesList;
+use Google\Service\Compute\SslPoliciesListAvailableFeaturesResponse;
+use Google\Service\Compute\SslPolicy;
 /**
  * The "sslPolicies" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\Volume;
+use Google\Service\Books\Volumes as VolumesModel;
 /**
  * The "volumes" collection of methods.
  * Typical usage is:

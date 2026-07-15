@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\ImportGoogetArtifactsRequest;
+use Google\Service\ArtifactRegistry\Operation;
+use Google\Service\ArtifactRegistry\UploadGoogetArtifactMediaResponse;
+use Google\Service\ArtifactRegistry\UploadGoogetArtifactRequest;
 /**
  * The "googetArtifacts" collection of methods.
  * Typical usage is:

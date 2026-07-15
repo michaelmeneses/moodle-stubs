@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\UserRolePermission;
+use Google\Service\Dfareporting\UserRolePermissionsListResponse;
 /**
  * The "userRolePermissions" collection of methods.
  * Typical usage is:

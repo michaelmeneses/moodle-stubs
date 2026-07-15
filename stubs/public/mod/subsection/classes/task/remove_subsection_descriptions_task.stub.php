@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_subsection\task;
 
+use core\task\adhoc_task;
+use mod_subsection\manager;
 /**
  * An ad-hoc task to remove existing descriptions from subsection instances.
  *

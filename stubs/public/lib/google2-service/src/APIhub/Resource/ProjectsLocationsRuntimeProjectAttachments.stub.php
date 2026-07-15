@@ -23,6 +23,9 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\ApihubEmpty;
+use Google\Service\APIhub\GoogleCloudApihubV1ListRuntimeProjectAttachmentsResponse;
+use Google\Service\APIhub\GoogleCloudApihubV1RuntimeProjectAttachment;
 /**
  * The "runtimeProjectAttachments" collection of methods.
  * Typical usage is:

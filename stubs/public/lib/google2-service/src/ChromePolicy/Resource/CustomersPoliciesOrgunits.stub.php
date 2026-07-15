@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ChromePolicy\Resource;
 
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1BatchInheritOrgUnitPoliciesRequest;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1BatchModifyOrgUnitPoliciesRequest;
+use Google\Service\ChromePolicy\GoogleProtobufEmpty;
 /**
  * The "orgunits" collection of methods.
  * Typical usage is:

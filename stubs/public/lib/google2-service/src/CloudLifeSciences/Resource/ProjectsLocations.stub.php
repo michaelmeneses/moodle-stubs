@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudLifeSciences\Resource;
 
+use Google\Service\CloudLifeSciences\ListLocationsResponse;
+use Google\Service\CloudLifeSciences\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

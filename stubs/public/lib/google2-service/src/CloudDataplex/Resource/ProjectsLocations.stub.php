@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1Entry;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1SearchEntriesResponse;
+use Google\Service\CloudDataplex\GoogleCloudLocationListLocationsResponse;
+use Google\Service\CloudDataplex\GoogleCloudLocationLocation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

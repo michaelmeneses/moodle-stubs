@@ -23,6 +23,10 @@
  */
 namespace Google\Service\WorkloadManager\Resource;
 
+use Google\Service\WorkloadManager\CancelOperationRequest;
+use Google\Service\WorkloadManager\ListOperationsResponse;
+use Google\Service\WorkloadManager\Operation;
+use Google\Service\WorkloadManager\WorkloadmanagerEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared\Escher\DgContainer\SpgrContainer;
 
+use PhpOffice\PhpSpreadsheet\Shared\Escher\DgContainer\SpgrContainer;
 class SpContainer
 {
     /**

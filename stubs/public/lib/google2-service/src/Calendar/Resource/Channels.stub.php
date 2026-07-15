@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Calendar\Resource;
 
+use Google\Service\Calendar\Channel;
 /**
  * The "channels" collection of methods.
  * Typical usage is:

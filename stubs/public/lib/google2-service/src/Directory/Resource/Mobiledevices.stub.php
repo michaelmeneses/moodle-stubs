@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\MobileDevice;
+use Google\Service\Directory\MobileDeviceAction;
+use Google\Service\Directory\MobileDevices as MobileDevicesModel;
 /**
  * The "mobiledevices" collection of methods.
  * Typical usage is:

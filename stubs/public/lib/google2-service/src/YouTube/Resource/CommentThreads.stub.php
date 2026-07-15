@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\CommentThread;
+use Google\Service\YouTube\CommentThreadListResponse;
 /**
  * The "commentThreads" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleApiHttpBody;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListEnvironmentResourcesResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1ResourceFile;
 /**
  * The "resourcefiles" collection of methods.
  * Typical usage is:

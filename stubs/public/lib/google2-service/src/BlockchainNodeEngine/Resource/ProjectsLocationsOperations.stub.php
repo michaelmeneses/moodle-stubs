@@ -23,6 +23,10 @@
  */
 namespace Google\Service\BlockchainNodeEngine\Resource;
 
+use Google\Service\BlockchainNodeEngine\CancelOperationRequest;
+use Google\Service\BlockchainNodeEngine\GoogleProtobufEmpty;
+use Google\Service\BlockchainNodeEngine\ListOperationsResponse;
+use Google\Service\BlockchainNodeEngine\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

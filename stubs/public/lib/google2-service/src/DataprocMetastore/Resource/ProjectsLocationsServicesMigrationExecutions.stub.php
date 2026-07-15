@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DataprocMetastore\Resource;
 
+use Google\Service\DataprocMetastore\ListMigrationExecutionsResponse;
+use Google\Service\DataprocMetastore\MigrationExecution;
+use Google\Service\DataprocMetastore\Operation;
 /**
  * The "migrationExecutions" collection of methods.
  * Typical usage is:

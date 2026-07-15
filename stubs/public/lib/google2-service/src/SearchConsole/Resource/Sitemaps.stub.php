@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SearchConsole\Resource;
 
+use Google\Service\SearchConsole\SitemapsListResponse;
+use Google\Service\SearchConsole\WmxSitemap;
 /**
  * The "sitemaps" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudTalentSolution\Resource;
 
+use Google\Service\CloudTalentSolution\CompleteQueryResponse;
+use Google\Service\CloudTalentSolution\JobsEmpty;
+use Google\Service\CloudTalentSolution\ListTenantsResponse;
+use Google\Service\CloudTalentSolution\Tenant;
 /**
  * The "tenants" collection of methods.
  * Typical usage is:

@@ -23,6 +23,12 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2DeidentifyContentRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2DeidentifyContentResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2InspectContentRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2InspectContentResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2ReidentifyContentRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2ReidentifyContentResponse;
 /**
  * The "content" collection of methods.
  * Typical usage is:

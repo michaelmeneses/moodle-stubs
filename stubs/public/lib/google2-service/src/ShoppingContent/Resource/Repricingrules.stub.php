@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\ListRepricingRulesResponse;
+use Google\Service\ShoppingContent\RepricingRule;
 /**
  * The "repricingrules" collection of methods.
  * Typical usage is:

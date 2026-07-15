@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTensorboardTimeSeriesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardBlobDataResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardTimeSeriesDataResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1TensorboardTimeSeries;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "timeSeries" collection of methods.
  * Typical usage is:

@@ -29,6 +29,7 @@
  */
 namespace core\task;
 
+use core_plugin_manager;
 /**
  * Class that updates all of the existing calendar events for modules that implement the *_refresh_events() hook.
  *

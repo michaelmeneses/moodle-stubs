@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudLocationListLocationsResponse;
+use Google\Service\Dialogflow\GoogleCloudLocationLocation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

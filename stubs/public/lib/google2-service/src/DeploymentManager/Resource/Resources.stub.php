@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DeploymentManager\Resource;
 
+use Google\Service\DeploymentManager\DeploymentmanagerResource;
+use Google\Service\DeploymentManager\ResourcesListResponse;
 /**
  * The "resources" collection of methods.
  * Typical usage is:

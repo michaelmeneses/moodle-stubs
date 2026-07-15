@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\GoogleAudience;
+use Google\Service\DisplayVideo\ListGoogleAudiencesResponse;
 /**
  * The "googleAudiences" collection of methods.
  * Typical usage is:

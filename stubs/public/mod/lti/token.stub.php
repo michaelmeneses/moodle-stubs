@@ -29,3 +29,4 @@
  */
 define('NO_DEBUG_DISPLAY', true);
 define('NO_MOODLE_COOKIES', true);
+use Firebase\JWT\JWT;

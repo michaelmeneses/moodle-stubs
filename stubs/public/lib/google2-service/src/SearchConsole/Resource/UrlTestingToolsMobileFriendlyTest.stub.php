@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SearchConsole\Resource;
 
+use Google\Service\SearchConsole\RunMobileFriendlyTestRequest;
+use Google\Service\SearchConsole\RunMobileFriendlyTestResponse;
 /**
  * The "mobileFriendlyTest" collection of methods.
  * Typical usage is:

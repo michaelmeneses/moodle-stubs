@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\SchemaMode;
+use Google\Service\ManagedKafka\UpdateSchemaModeRequest;
 /**
  * The "mode" collection of methods.
  * Typical usage is:

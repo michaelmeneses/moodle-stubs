@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_viewquestionname\output;
 
+use core\output\action_link;
+use core\output\inplace_editable;
+use core\output\named_templatable;
+use renderable;
 /**
  * Question in place editing api call.
  *

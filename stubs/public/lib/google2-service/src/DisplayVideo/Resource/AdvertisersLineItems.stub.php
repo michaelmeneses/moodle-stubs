@@ -23,6 +23,17 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\BulkEditAssignedTargetingOptionsRequest;
+use Google\Service\DisplayVideo\BulkEditAssignedTargetingOptionsResponse;
+use Google\Service\DisplayVideo\BulkListAssignedTargetingOptionsResponse;
+use Google\Service\DisplayVideo\BulkUpdateLineItemsRequest;
+use Google\Service\DisplayVideo\BulkUpdateLineItemsResponse;
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\DuplicateLineItemRequest;
+use Google\Service\DisplayVideo\DuplicateLineItemResponse;
+use Google\Service\DisplayVideo\GenerateDefaultLineItemRequest;
+use Google\Service\DisplayVideo\LineItem;
+use Google\Service\DisplayVideo\ListLineItemsResponse;
 /**
  * The "lineItems" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\WorkloadManager\Resource;
 
+use Google\Service\WorkloadManager\WorkloadmanagerEmpty;
+use Google\Service\WorkloadManager\WriteInsightRequest;
+use Google\Service\WorkloadManager\WriteInsightResponse;
 /**
  * The "insights" collection of methods.
  * Typical usage is:

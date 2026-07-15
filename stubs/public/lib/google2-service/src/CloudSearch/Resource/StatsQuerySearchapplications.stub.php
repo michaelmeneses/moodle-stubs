@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudSearch\Resource;
 
+use Google\Service\CloudSearch\GetSearchApplicationQueryStatsResponse;
 /**
  * The "searchapplications" collection of methods.
  * Typical usage is:

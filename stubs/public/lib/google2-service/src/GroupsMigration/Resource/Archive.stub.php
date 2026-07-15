@@ -23,6 +23,7 @@
  */
 namespace Google\Service\GroupsMigration\Resource;
 
+use Google\Service\GroupsMigration\Groups;
 /**
  * The "archive" collection of methods.
  * Typical usage is:

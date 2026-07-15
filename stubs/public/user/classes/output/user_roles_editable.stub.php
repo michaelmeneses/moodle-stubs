@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_user\output;
 
+use context_course;
+use core_user;
+use core_external\external_api;
+use coding_exception;
 /**
  * Class to display list of user roles.
  *

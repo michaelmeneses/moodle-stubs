@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\Role;
+use Google\Service\Directory\Roles as RolesModel;
 /**
  * The "roles" collection of methods.
  * Typical usage is:

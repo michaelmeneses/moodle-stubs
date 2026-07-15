@@ -23,6 +23,13 @@
  */
 namespace Google\Service\SecureSourceManager\Resource;
 
+use Google\Service\SecureSourceManager\ClosePullRequestRequest;
+use Google\Service\SecureSourceManager\ListPullRequestFileDiffsResponse;
+use Google\Service\SecureSourceManager\ListPullRequestsResponse;
+use Google\Service\SecureSourceManager\MergePullRequestRequest;
+use Google\Service\SecureSourceManager\OpenPullRequestRequest;
+use Google\Service\SecureSourceManager\Operation;
+use Google\Service\SecureSourceManager\PullRequest;
 /**
  * The "pullRequests" collection of methods.
  * Typical usage is:

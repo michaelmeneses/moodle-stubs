@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudTasks\Resource;
 
+use Google\Service\CloudTasks\BufferTaskRequest;
+use Google\Service\CloudTasks\BufferTaskResponse;
+use Google\Service\CloudTasks\CloudtasksEmpty;
+use Google\Service\CloudTasks\CreateTaskRequest;
+use Google\Service\CloudTasks\ListTasksResponse;
+use Google\Service\CloudTasks\RunTaskRequest;
+use Google\Service\CloudTasks\Task;
 /**
  * The "tasks" collection of methods.
  * Typical usage is:

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_gemini\aimodel;
 
+use core_ai\aimodel\base;
 /**
  * Imagen 4.0 Generate 001 AI model.
  *

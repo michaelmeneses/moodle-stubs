@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AccessContextManager\Resource;
 
+use Google\Service\AccessContextManager\ListSupportedServicesResponse;
+use Google\Service\AccessContextManager\SupportedService;
 /**
  * The "services" collection of methods.
  * Typical usage is:

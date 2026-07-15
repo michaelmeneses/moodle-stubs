@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CertificateManager\Resource;
 
+use Google\Service\CertificateManager\ListLocationsResponse;
+use Google\Service\CertificateManager\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

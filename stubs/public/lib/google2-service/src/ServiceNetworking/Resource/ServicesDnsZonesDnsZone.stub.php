@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ServiceNetworking\Resource;
 
+use Google\Service\ServiceNetworking\GetDnsZoneResponse;
 /**
  * The "dnsZone" collection of methods.
  * Typical usage is:

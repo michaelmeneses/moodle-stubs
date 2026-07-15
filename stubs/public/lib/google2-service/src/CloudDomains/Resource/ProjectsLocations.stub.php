@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudDomains\Resource;
 
+use Google\Service\CloudDomains\ListLocationsResponse;
+use Google\Service\CloudDomains\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

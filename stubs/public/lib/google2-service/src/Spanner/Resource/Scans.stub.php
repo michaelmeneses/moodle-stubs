@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Spanner\Resource;
 
+use Google\Service\Spanner\ListScansResponse;
 /**
  * The "scans" collection of methods.
  * Typical usage is:

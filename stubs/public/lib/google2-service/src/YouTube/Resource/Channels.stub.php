@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\Channel;
+use Google\Service\YouTube\ChannelListResponse;
 /**
  * The "channels" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SaaSServiceManagement\Resource;
 
+use Google\Service\SaaSServiceManagement\ListReleasesResponse;
+use Google\Service\SaaSServiceManagement\Release;
+use Google\Service\SaaSServiceManagement\SaasservicemgmtEmpty;
 /**
  * The "releases" collection of methods.
  * Typical usage is:

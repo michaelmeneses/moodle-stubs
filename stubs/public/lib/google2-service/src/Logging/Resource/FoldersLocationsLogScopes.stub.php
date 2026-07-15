@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\ListLogScopesResponse;
+use Google\Service\Logging\LogScope;
+use Google\Service\Logging\LoggingEmpty;
 /**
  * The "logScopes" collection of methods.
  * Typical usage is:

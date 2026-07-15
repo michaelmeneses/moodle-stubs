@@ -30,6 +30,14 @@
  */
 namespace tool_messageinbound\privacy;
 
+use context;
+use context_user;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\approved_userlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\writer;
 /**
  * Data provider class.
  *

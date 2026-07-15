@@ -23,6 +23,8 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\Destination;
+use Google\Service\TagManager\ListDestinationsResponse;
 /**
  * The "destinations" collection of methods.
  * Typical usage is:

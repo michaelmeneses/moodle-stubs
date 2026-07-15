@@ -8,6 +8,10 @@
  */
 namespace Slim\Routing;
 
+use Psr\Http\Message\ServerRequestInterface;
+use RuntimeException;
+use Slim\Interfaces\RouteInterface;
+use Slim\Interfaces\RouteParserInterface;
 /** @api */
 final class RouteContext
 {

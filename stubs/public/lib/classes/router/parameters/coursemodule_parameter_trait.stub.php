@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\parameters;
 
+use core\exception\not_found_exception;
+use core\param;
+use core\router\schema\example;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Trait for route parameters that pass a course module identifier, to attach the course module data and context to the request.
  *

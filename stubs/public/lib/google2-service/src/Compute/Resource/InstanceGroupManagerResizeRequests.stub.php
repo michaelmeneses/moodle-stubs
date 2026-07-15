@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InstanceGroupManagerResizeRequest;
+use Google\Service\Compute\InstanceGroupManagerResizeRequestsListResponse;
+use Google\Service\Compute\Operation;
 /**
  * The "instanceGroupManagerResizeRequests" collection of methods.
  * Typical usage is:

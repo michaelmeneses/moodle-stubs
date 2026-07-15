@@ -23,6 +23,10 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\ListLocationsResponse;
+use Google\Service\MigrationCenterAPI\Location;
+use Google\Service\MigrationCenterAPI\Operation;
+use Google\Service\MigrationCenterAPI\Settings;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

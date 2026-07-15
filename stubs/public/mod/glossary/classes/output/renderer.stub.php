@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_glossary\output;
 
+use core\output\html_writer;
+use moodle_url;
+use plugin_renderer_base;
+use stdClass;
 /**
  * Glossary renderer class.
  *

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\FloodlightActivitiesGenerateTagResponse;
+use Google\Service\Dfareporting\FloodlightActivitiesListResponse;
+use Google\Service\Dfareporting\FloodlightActivity;
 /**
  * The "floodlightActivities" collection of methods.
  * Typical usage is:

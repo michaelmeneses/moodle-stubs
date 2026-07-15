@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\UploadKfpArtifactMediaResponse;
+use Google\Service\ArtifactRegistry\UploadKfpArtifactRequest;
 /**
  * The "kfpArtifacts" collection of methods.
  * Typical usage is:

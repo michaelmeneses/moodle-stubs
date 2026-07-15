@@ -23,6 +23,16 @@
  */
 namespace Google\Service\CloudSourceRepositories\Resource;
 
+use Google\Service\CloudSourceRepositories\ListReposResponse;
+use Google\Service\CloudSourceRepositories\Operation;
+use Google\Service\CloudSourceRepositories\Policy;
+use Google\Service\CloudSourceRepositories\Repo;
+use Google\Service\CloudSourceRepositories\SetIamPolicyRequest;
+use Google\Service\CloudSourceRepositories\SourcerepoEmpty;
+use Google\Service\CloudSourceRepositories\SyncRepoRequest;
+use Google\Service\CloudSourceRepositories\TestIamPermissionsRequest;
+use Google\Service\CloudSourceRepositories\TestIamPermissionsResponse;
+use Google\Service\CloudSourceRepositories\UpdateRepoRequest;
 /**
  * The "repos" collection of methods.
  * Typical usage is:

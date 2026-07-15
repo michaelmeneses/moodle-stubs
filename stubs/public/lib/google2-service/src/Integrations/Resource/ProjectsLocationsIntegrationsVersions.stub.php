@@ -23,6 +23,18 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadIntegrationVersionResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadJsonPackageResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegrationVersion;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListIntegrationVersionsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaPublishIntegrationVersionRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaPublishIntegrationVersionResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTestIntegrationsRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTestIntegrationsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUnpublishIntegrationVersionRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse;
+use Google\Service\Integrations\GoogleProtobufEmpty;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportFlowRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Flow;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FlowValidationResult;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportFlowRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListFlowsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TrainFlowRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ValidateFlowRequest;
+use Google\Service\Dialogflow\GoogleLongrunningOperation;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "flows" collection of methods.
  * Typical usage is:

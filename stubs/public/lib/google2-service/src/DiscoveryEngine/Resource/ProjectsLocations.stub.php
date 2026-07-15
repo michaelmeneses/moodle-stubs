@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AclConfig;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CmekConfig;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DataConnector;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SetUpDataConnectorRequest;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

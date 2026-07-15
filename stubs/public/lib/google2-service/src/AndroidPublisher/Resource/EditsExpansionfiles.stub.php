@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\ExpansionFile;
+use Google\Service\AndroidPublisher\ExpansionFilesUploadResponse;
 /**
  * The "expansionfiles" collection of methods.
  * Typical usage is:

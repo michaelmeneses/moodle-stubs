@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SQLAdmin\Resource;
 
+use Google\Service\SQLAdmin\Operation;
+use Google\Service\SQLAdmin\OperationsListResponse;
+use Google\Service\SQLAdmin\SqladminEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

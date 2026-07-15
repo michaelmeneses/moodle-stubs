@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Region;
+use Google\Service\Compute\RegionList;
 /**
  * The "regions" collection of methods.
  * Typical usage is:

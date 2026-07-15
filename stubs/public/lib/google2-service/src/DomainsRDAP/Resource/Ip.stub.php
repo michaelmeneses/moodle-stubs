@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DomainsRDAP\Resource;
 
+use Google\Service\DomainsRDAP\RdapResponse;
 /**
  * The "ip" collection of methods.
  * Typical usage is:

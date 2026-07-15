@@ -23,6 +23,12 @@
  */
 namespace Google\Service\PlayableLocations\Resource;
 
+use Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3LogImpressionsRequest;
+use Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3LogImpressionsResponse;
+use Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3LogPlayerReportsRequest;
+use Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3LogPlayerReportsResponse;
+use Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest;
+use Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse;
 /**
  * The "v3" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1AnalysisRule;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAnalysisRulesResponse;
+use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
 /**
  * The "analysisRules" collection of methods.
  * Typical usage is:

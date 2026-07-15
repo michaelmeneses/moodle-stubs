@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dataproc\Resource;
 
+use Google\Service\Dataproc\DataprocEmpty;
+use Google\Service\Dataproc\ListSessionTemplatesResponse;
+use Google\Service\Dataproc\SessionTemplate;
 /**
  * The "sessionTemplates" collection of methods.
  * Typical usage is:

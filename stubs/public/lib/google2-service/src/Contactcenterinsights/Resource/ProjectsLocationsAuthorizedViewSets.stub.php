@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1AuthorizedViewSet;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAuthorizedViewSetsResponse;
+use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
 /**
  * The "authorizedViewSets" collection of methods.
  * Typical usage is:

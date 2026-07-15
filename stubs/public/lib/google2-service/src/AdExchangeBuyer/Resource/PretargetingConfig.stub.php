@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdExchangeBuyer\Resource;
 
+use Google\Service\AdExchangeBuyer\PretargetingConfig as PretargetingConfigModel;
+use Google\Service\AdExchangeBuyer\PretargetingConfigList;
 /**
  * The "pretargetingConfig" collection of methods.
  * Typical usage is:

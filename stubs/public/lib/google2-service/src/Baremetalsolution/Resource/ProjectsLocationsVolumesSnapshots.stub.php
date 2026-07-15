@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\BaremetalsolutionEmpty;
+use Google\Service\Baremetalsolution\ListVolumeSnapshotsResponse;
+use Google\Service\Baremetalsolution\Operation;
+use Google\Service\Baremetalsolution\RestoreVolumeSnapshotRequest;
+use Google\Service\Baremetalsolution\VolumeSnapshot;
 /**
  * The "snapshots" collection of methods.
  * Typical usage is:

@@ -23,6 +23,12 @@
  */
 namespace Google\Service\ApigeeRegistry\Resource;
 
+use Google\Service\ApigeeRegistry\Instance;
+use Google\Service\ApigeeRegistry\Operation;
+use Google\Service\ApigeeRegistry\Policy;
+use Google\Service\ApigeeRegistry\SetIamPolicyRequest;
+use Google\Service\ApigeeRegistry\TestIamPermissionsRequest;
+use Google\Service\ApigeeRegistry\TestIamPermissionsResponse;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

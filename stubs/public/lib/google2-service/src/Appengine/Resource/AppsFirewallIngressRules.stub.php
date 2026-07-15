@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Appengine\Resource;
 
+use Google\Service\Appengine\AppengineEmpty;
+use Google\Service\Appengine\BatchUpdateIngressRulesRequest;
+use Google\Service\Appengine\BatchUpdateIngressRulesResponse;
+use Google\Service\Appengine\FirewallRule;
+use Google\Service\Appengine\ListIngressRulesResponse;
 /**
  * The "ingressRules" collection of methods.
  * Typical usage is:

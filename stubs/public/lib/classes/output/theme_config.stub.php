@@ -22,6 +22,24 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use block_manager;
+use cache;
+use cache_store;
+use core_component;
+use core_cssparser;
+use core_minify;
+use core_php_time_limit;
+use core_rtlcss;
+use core_scss;
+use core_useragent;
+use core\context\system as context_system;
+use core\exception\coding_exception;
+use core\output\renderer_factory\renderer_factory_interface as renderer_factory;
+use core\output\renderer_factory\standard_renderer_factory;
+use dml_exception;
+use moodle_page;
+use moodle_url;
+use stdClass;
 // phpcs:disable moodle.NamingConventions.ValidVariableName.VariableNameUnderscore
 // phpcs:disable moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
 /**

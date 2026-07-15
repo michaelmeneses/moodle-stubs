@@ -23,6 +23,9 @@
  */
 namespace Google\Service\BlockchainNodeEngine\Resource;
 
+use Google\Service\BlockchainNodeEngine\BlockchainNode;
+use Google\Service\BlockchainNodeEngine\ListBlockchainNodesResponse;
+use Google\Service\BlockchainNodeEngine\Operation;
 /**
  * The "blockchainNodes" collection of methods.
  * Typical usage is:

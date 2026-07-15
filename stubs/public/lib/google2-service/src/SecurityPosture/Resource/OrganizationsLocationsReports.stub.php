@@ -23,6 +23,10 @@
  */
 namespace Google\Service\SecurityPosture\Resource;
 
+use Google\Service\SecurityPosture\CreateIaCValidationReportRequest;
+use Google\Service\SecurityPosture\ListReportsResponse;
+use Google\Service\SecurityPosture\Operation;
+use Google\Service\SecurityPosture\Report;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

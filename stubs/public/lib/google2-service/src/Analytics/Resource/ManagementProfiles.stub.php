@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\Profile;
+use Google\Service\Analytics\Profiles;
 /**
  * The "profiles" collection of methods.
  * Typical usage is:

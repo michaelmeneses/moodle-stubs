@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1Schema;
 /**
  * The "admin" collection of methods.
  * Typical usage is:

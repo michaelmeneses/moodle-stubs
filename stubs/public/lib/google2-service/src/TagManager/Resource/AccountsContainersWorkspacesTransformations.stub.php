@@ -23,6 +23,9 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\ListTransformationsResponse;
+use Google\Service\TagManager\RevertTransformationResponse;
+use Google\Service\TagManager\Transformation;
 /**
  * The "transformations" collection of methods.
  * Typical usage is:

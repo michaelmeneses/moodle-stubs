@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CivicInfo\Resource;
 
+use Google\Service\CivicInfo\CivicinfoApiprotosV2RepresentativeInfoData;
+use Google\Service\CivicInfo\CivicinfoApiprotosV2RepresentativeInfoResponse;
 /**
  * The "representatives" collection of methods.
  * Typical usage is:

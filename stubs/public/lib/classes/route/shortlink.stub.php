@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\route;
 
+use core\exception\coding_exception;
+use core\router\route;
+use core\router\util;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Shortlink route handler.
  *

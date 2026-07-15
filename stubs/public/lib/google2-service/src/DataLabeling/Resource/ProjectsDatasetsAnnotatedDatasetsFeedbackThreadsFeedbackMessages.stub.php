@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DataLabeling\Resource;
 
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1FeedbackMessage;
+use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListFeedbackMessagesResponse;
+use Google\Service\DataLabeling\GoogleLongrunningOperation;
+use Google\Service\DataLabeling\GoogleProtobufEmpty;
 /**
  * The "feedbackMessages" collection of methods.
  * Typical usage is:

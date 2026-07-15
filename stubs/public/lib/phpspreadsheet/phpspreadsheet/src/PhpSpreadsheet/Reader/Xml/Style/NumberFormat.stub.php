@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xml\Style;
 
+use SimpleXMLElement;
 class NumberFormat extends StyleBase
 {
     /** @return mixed[] */

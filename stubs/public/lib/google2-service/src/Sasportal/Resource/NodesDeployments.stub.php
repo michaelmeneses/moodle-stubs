@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Sasportal\Resource;
 
+use Google\Service\Sasportal\SasPortalDeployment;
+use Google\Service\Sasportal\SasPortalEmpty;
+use Google\Service\Sasportal\SasPortalListDeploymentsResponse;
+use Google\Service\Sasportal\SasPortalMoveDeploymentRequest;
+use Google\Service\Sasportal\SasPortalOperation;
 /**
  * The "deployments" collection of methods.
  * Typical usage is:

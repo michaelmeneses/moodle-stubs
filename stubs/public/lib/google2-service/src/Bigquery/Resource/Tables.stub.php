@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Bigquery\Resource;
 
+use Google\Service\Bigquery\GetIamPolicyRequest;
+use Google\Service\Bigquery\Policy;
+use Google\Service\Bigquery\SetIamPolicyRequest;
+use Google\Service\Bigquery\Table;
+use Google\Service\Bigquery\TableList;
+use Google\Service\Bigquery\TestIamPermissionsRequest;
+use Google\Service\Bigquery\TestIamPermissionsResponse;
 /**
  * The "tables" collection of methods.
  * Typical usage is:

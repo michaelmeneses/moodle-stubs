@@ -16,6 +16,8 @@
  */
 namespace Monolog\Formatter;
 
+use DateTimeInterface;
+use Monolog\LogRecord;
 /**
  * Encodes message information into JSON in a format compatible with Cloud logging.
  *

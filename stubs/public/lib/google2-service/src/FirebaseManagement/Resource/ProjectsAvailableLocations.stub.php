@@ -23,6 +23,7 @@
  */
 namespace Google\Service\FirebaseManagement\Resource;
 
+use Google\Service\FirebaseManagement\ListAvailableLocationsResponse;
 /**
  * The "availableLocations" collection of methods.
  * Typical usage is:

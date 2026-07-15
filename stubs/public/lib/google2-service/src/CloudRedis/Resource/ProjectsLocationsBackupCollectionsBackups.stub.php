@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudRedis\Resource;
 
+use Google\Service\CloudRedis\Backup;
+use Google\Service\CloudRedis\ExportBackupRequest;
+use Google\Service\CloudRedis\ListBackupsResponse;
+use Google\Service\CloudRedis\Operation;
 /**
  * The "backups" collection of methods.
  * Typical usage is:

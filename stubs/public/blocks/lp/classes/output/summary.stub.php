@@ -29,6 +29,17 @@
  */
 namespace block_lp\output;
 
+use core_competency\api;
+use core_competency\external\competency_exporter;
+use core_competency\external\plan_exporter;
+use core_competency\external\user_competency_exporter;
+use core_user\external\user_summary_exporter;
+use core_competency\plan;
+use core_competency\url;
+use renderable;
+use renderer_base;
+use templatable;
+use required_capability_exception;
 /**
  * Summary renderable class.
  *

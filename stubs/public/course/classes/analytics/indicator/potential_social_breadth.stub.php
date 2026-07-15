@@ -29,6 +29,7 @@
  */
 namespace core_course\analytics\indicator;
 
+use core_analytics\local\indicator\community_of_inquiry_activity;
 /**
  * Potential social breadth indicator.
  *

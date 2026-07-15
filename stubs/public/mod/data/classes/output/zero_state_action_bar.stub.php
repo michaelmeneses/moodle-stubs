@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use mod_data\manager;
+use moodle_url;
+use templatable;
+use renderable;
 /**
  * Renderable class for the action bar elements in the zero state (no fields created) pages in the database activity.
  *

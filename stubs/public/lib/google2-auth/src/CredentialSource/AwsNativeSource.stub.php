@@ -23,6 +23,10 @@
  */
 namespace Google\Auth\CredentialSource;
 
+use Google\Auth\ExternalAccountCredentialSourceInterface;
+use Google\Auth\HttpHandler\HttpClientCache;
+use Google\Auth\HttpHandler\HttpHandlerFactory;
+use GuzzleHttp\Psr7\Request;
 /**
  * Authenticates requests using AWS credentials.
  */

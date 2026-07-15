@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\ConnectorVersion;
+use Google\Service\Connectors\ListConnectorVersionsResponse;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

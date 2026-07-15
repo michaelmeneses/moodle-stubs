@@ -23,6 +23,8 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\GatewayRouteView;
+use Google\Service\NetworkServices\ListGatewayRouteViewsResponse;
 /**
  * The "routeViews" collection of methods.
  * Typical usage is:

@@ -8,6 +8,26 @@
  */
 namespace core_reportbuilder\local\entities;
 
+use core\{context, context_helper};
+use core\context\system;
+use core_component;
+use core_date;
+use core_user;
+use html_writer;
+use lang_string;
+use moodle_url;
+use stdClass;
+use theme_config;
+use core_user\fields;
+use core_reportbuilder\local\filters\boolean_select;
+use core_reportbuilder\local\filters\date;
+use core_reportbuilder\local\filters\select;
+use core_reportbuilder\local\filters\text;
+use core_reportbuilder\local\filters\user as user_filter;
+use core_reportbuilder\local\helpers\user_profile_fields;
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
 /**
  * User entity class implementation.
  *

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\ListReportsResponse;
+use Google\Service\MigrationCenterAPI\Operation;
+use Google\Service\MigrationCenterAPI\Report;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

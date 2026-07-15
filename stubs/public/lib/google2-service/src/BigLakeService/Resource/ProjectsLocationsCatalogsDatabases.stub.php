@@ -23,6 +23,8 @@
  */
 namespace Google\Service\BigLakeService\Resource;
 
+use Google\Service\BigLakeService\Database;
+use Google\Service\BigLakeService\ListDatabasesResponse;
 /**
  * The "databases" collection of methods.
  * Typical usage is:

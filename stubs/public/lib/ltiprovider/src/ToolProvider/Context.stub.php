@@ -8,6 +8,8 @@
  */
 namespace IMSGlobal\LTI\ToolProvider;
 
+use IMSGlobal\LTI\ToolProvider\DataConnector\DataConnector;
+use IMSGlobal\LTI\ToolProvider\Service;
 /**
  * Class to represent a tool consumer context
  *

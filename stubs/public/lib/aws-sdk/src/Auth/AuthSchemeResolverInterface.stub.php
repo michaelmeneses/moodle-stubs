@@ -8,6 +8,7 @@
  */
 namespace Aws\Auth;
 
+use Aws\Identity\IdentityInterface;
 /**
  * An AuthSchemeResolver object determines which auth scheme will be used for request signing.
  */

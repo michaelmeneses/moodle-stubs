@@ -23,6 +23,22 @@
  */
 namespace Google\Service\Sheets\Resource;
 
+use Google\Service\Sheets\AppendValuesResponse;
+use Google\Service\Sheets\BatchClearValuesByDataFilterRequest;
+use Google\Service\Sheets\BatchClearValuesByDataFilterResponse;
+use Google\Service\Sheets\BatchClearValuesRequest;
+use Google\Service\Sheets\BatchClearValuesResponse;
+use Google\Service\Sheets\BatchGetValuesByDataFilterRequest;
+use Google\Service\Sheets\BatchGetValuesByDataFilterResponse;
+use Google\Service\Sheets\BatchGetValuesResponse;
+use Google\Service\Sheets\BatchUpdateValuesByDataFilterRequest;
+use Google\Service\Sheets\BatchUpdateValuesByDataFilterResponse;
+use Google\Service\Sheets\BatchUpdateValuesRequest;
+use Google\Service\Sheets\BatchUpdateValuesResponse;
+use Google\Service\Sheets\ClearValuesRequest;
+use Google\Service\Sheets\ClearValuesResponse;
+use Google\Service\Sheets\UpdateValuesResponse;
+use Google\Service\Sheets\ValueRange;
 /**
  * The "values" collection of methods.
  * Typical usage is:

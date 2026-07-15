@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\OrderinvoicesCreateChargeInvoiceRequest;
+use Google\Service\ShoppingContent\OrderinvoicesCreateChargeInvoiceResponse;
+use Google\Service\ShoppingContent\OrderinvoicesCreateRefundInvoiceRequest;
+use Google\Service\ShoppingContent\OrderinvoicesCreateRefundInvoiceResponse;
 /**
  * The "orderinvoices" collection of methods.
  * Typical usage is:

@@ -23,6 +23,12 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\GoogleCloudApihubV1DisablePluginRequest;
+use Google\Service\APIhub\GoogleCloudApihubV1EnablePluginRequest;
+use Google\Service\APIhub\GoogleCloudApihubV1ListPluginsResponse;
+use Google\Service\APIhub\GoogleCloudApihubV1Plugin;
+use Google\Service\APIhub\GoogleCloudApihubV1StyleGuide;
+use Google\Service\APIhub\GoogleLongrunningOperation;
 /**
  * The "plugins" collection of methods.
  * Typical usage is:

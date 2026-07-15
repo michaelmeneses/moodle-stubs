@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\CustomList;
+use Google\Service\DisplayVideo\ListCustomListsResponse;
 /**
  * The "customLists" collection of methods.
  * Typical usage is:

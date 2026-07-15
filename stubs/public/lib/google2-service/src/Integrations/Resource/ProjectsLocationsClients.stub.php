@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaChangeCustomerConfigRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaChangeCustomerConfigResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDeprovisionClientRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaReplaceServiceAccountRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSwitchEncryptionRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSwitchVariableMaskingRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaToggleHttpRequest;
+use Google\Service\Integrations\GoogleProtobufEmpty;
 /**
  * The "clients" collection of methods.
  * Typical usage is:

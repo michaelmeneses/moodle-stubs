@@ -23,6 +23,9 @@
  */
 namespace Google\Service\StreetViewPublish\Resource;
 
+use Google\Service\StreetViewPublish\Photo as PhotoModel;
+use Google\Service\StreetViewPublish\StreetviewpublishEmpty;
+use Google\Service\StreetViewPublish\UploadRef;
 /**
  * The "photo" collection of methods.
  * Typical usage is:

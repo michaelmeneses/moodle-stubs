@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Storagetransfer\Resource;
 
+use Google\Service\Storagetransfer\ListTransferJobsResponse;
+use Google\Service\Storagetransfer\Operation;
+use Google\Service\Storagetransfer\RunTransferJobRequest;
+use Google\Service\Storagetransfer\StoragetransferEmpty;
+use Google\Service\Storagetransfer\TransferJob;
+use Google\Service\Storagetransfer\UpdateTransferJobRequest;
 /**
  * The "transferJobs" collection of methods.
  * Typical usage is:

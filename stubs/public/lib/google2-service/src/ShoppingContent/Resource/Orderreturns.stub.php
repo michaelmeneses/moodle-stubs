@@ -23,6 +23,14 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\MerchantOrderReturn;
+use Google\Service\ShoppingContent\OrderreturnsAcknowledgeRequest;
+use Google\Service\ShoppingContent\OrderreturnsAcknowledgeResponse;
+use Google\Service\ShoppingContent\OrderreturnsCreateOrderReturnRequest;
+use Google\Service\ShoppingContent\OrderreturnsCreateOrderReturnResponse;
+use Google\Service\ShoppingContent\OrderreturnsListResponse;
+use Google\Service\ShoppingContent\OrderreturnsProcessRequest;
+use Google\Service\ShoppingContent\OrderreturnsProcessResponse;
 /**
  * The "orderreturns" collection of methods.
  * Typical usage is:

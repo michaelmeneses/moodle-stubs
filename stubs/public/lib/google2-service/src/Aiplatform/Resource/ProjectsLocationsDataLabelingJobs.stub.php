@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CancelDataLabelingJobRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DataLabelingJob;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDataLabelingJobsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "dataLabelingJobs" collection of methods.
  * Typical usage is:

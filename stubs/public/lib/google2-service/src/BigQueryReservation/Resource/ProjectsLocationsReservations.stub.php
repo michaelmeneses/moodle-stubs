@@ -23,6 +23,14 @@
  */
 namespace Google\Service\BigQueryReservation\Resource;
 
+use Google\Service\BigQueryReservation\BigqueryreservationEmpty;
+use Google\Service\BigQueryReservation\FailoverReservationRequest;
+use Google\Service\BigQueryReservation\ListReservationsResponse;
+use Google\Service\BigQueryReservation\Policy;
+use Google\Service\BigQueryReservation\Reservation;
+use Google\Service\BigQueryReservation\SetIamPolicyRequest;
+use Google\Service\BigQueryReservation\TestIamPermissionsRequest;
+use Google\Service\BigQueryReservation\TestIamPermissionsResponse;
 /**
  * The "reservations" collection of methods.
  * Typical usage is:

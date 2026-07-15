@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Script\Resource;
 
+use Google\Service\Script\Content;
+use Google\Service\Script\CreateProjectRequest;
+use Google\Service\Script\Metrics;
+use Google\Service\Script\Project;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct;
+use Google\Service\Apigee\GoogleCloudApigeeV1Attributes;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListApiProductsResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1MoveApiProductRequest;
 /**
  * The "apiproducts" collection of methods.
  * Typical usage is:

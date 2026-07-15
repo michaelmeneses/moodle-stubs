@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InstanceSettings as InstanceSettingsModel;
+use Google\Service\Compute\Operation;
 /**
  * The "instanceSettings" collection of methods.
  * Typical usage is:

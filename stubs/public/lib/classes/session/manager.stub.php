@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\session;
 
+use core\clock;
+use core\di;
+use html_writer;
 /**
  * Session manager, this is the public Moodle API for sessions.
  *

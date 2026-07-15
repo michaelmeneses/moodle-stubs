@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_gemini;
 
+use core_ai\aimodel\base;
 /**
  * Helper class for the Gemini provider.
  *

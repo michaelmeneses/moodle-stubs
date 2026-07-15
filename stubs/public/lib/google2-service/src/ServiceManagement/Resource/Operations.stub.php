@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ServiceManagement\Resource;
 
+use Google\Service\ServiceManagement\ListOperationsResponse;
+use Google\Service\ServiceManagement\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

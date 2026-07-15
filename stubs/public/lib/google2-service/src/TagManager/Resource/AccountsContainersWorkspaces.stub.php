@@ -23,6 +23,16 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\BulkUpdateWorkspaceResponse;
+use Google\Service\TagManager\CreateContainerVersionRequestVersionOptions;
+use Google\Service\TagManager\CreateContainerVersionResponse;
+use Google\Service\TagManager\Entity;
+use Google\Service\TagManager\GetWorkspaceStatusResponse;
+use Google\Service\TagManager\ListWorkspacesResponse;
+use Google\Service\TagManager\ProposedChange;
+use Google\Service\TagManager\QuickPreviewResponse;
+use Google\Service\TagManager\SyncWorkspaceResponse;
+use Google\Service\TagManager\Workspace;
 /**
  * The "workspaces" collection of methods.
  * Typical usage is:

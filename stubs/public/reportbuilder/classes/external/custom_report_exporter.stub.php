@@ -8,6 +8,18 @@
  */
 namespace core_reportbuilder\external;
 
+use renderer_base;
+use core\persistent;
+use core\external\persistent_exporter;
+use core_reportbuilder\manager;
+use core_reportbuilder\datasource;
+use core_reportbuilder\form\filter as form_filter;
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\table\custom_report_table;
+use core_reportbuilder\table\custom_report_table_filterset;
+use core_reportbuilder\table\custom_report_table_view;
+use core_reportbuilder\table\custom_report_table_view_filterset;
+use core_table\local\filter\integer_filter;
 /**
  * Custom report exporter class
  *

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\AddOnContext;
+use Google\Service\Classroom\Announcement;
+use Google\Service\Classroom\ClassroomEmpty;
+use Google\Service\Classroom\ListAnnouncementsResponse;
+use Google\Service\Classroom\ModifyAnnouncementAssigneesRequest;
 /**
  * The "announcements" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ToolResults\Resource;
 
+use Google\Service\ToolResults\ProjectSettings;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

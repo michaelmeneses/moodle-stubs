@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\HttpBody;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

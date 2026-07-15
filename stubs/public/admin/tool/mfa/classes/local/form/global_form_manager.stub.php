@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_mfa\local\form;
 
+use tool_mfa\plugininfo\factor;
 /**
  * MFA login form
  *

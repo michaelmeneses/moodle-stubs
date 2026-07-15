@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityProfileRevisionsResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityProfilesResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfile;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "securityProfiles" collection of methods.
  * Typical usage is:

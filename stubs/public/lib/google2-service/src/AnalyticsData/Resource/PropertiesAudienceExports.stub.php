@@ -23,6 +23,11 @@
  */
 namespace Google\Service\AnalyticsData\Resource;
 
+use Google\Service\AnalyticsData\AudienceExport;
+use Google\Service\AnalyticsData\ListAudienceExportsResponse;
+use Google\Service\AnalyticsData\Operation;
+use Google\Service\AnalyticsData\QueryAudienceExportRequest;
+use Google\Service\AnalyticsData\QueryAudienceExportResponse;
 /**
  * The "audienceExports" collection of methods.
  * Typical usage is:

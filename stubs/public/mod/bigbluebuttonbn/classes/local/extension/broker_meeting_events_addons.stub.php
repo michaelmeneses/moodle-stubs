@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\extension;
 
+use mod_bigbluebuttonbn\instance;
 /**
  * A class to deal with broker addons in a subplugin
  *

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\ListRoutesResponse;
+use Google\Service\CloudRun\Route;
 /**
  * The "routes" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\AddMessageRequest;
+use Google\Service\Walletobjects\OfferObject as OfferObjectModel;
+use Google\Service\Walletobjects\OfferObjectAddMessageResponse;
+use Google\Service\Walletobjects\OfferObjectListResponse;
 /**
  * The "offerobject" collection of methods.
  * Typical usage is:

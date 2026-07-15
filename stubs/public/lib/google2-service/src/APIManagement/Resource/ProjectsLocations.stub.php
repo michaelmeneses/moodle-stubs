@@ -23,6 +23,10 @@
  */
 namespace Google\Service\APIManagement\Resource;
 
+use Google\Service\APIManagement\Entitlement;
+use Google\Service\APIManagement\ListApiObservationTagsResponse;
+use Google\Service\APIManagement\ListLocationsResponse;
+use Google\Service\APIManagement\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

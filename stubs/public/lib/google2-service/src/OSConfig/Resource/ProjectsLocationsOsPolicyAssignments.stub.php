@@ -23,6 +23,10 @@
  */
 namespace Google\Service\OSConfig\Resource;
 
+use Google\Service\OSConfig\ListOSPolicyAssignmentRevisionsResponse;
+use Google\Service\OSConfig\ListOSPolicyAssignmentsResponse;
+use Google\Service\OSConfig\OSPolicyAssignment;
+use Google\Service\OSConfig\Operation;
 /**
  * The "osPolicyAssignments" collection of methods.
  * Typical usage is:

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\local\exporter;
 
+use MoodleODSWorkbook;
+use MoodleODSWriter;
 /**
  * ODS entries exporter for mod_data.
  *

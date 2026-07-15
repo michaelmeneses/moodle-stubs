@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\NotificationEndpoint;
+use Google\Service\Compute\NotificationEndpointList;
+use Google\Service\Compute\Operation;
 /**
  * The "regionNotificationEndpoints" collection of methods.
  * Typical usage is:

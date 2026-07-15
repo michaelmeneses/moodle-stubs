@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\Bundle;
+use Google\Service\AndroidPublisher\BundlesListResponse;
 /**
  * The "bundles" collection of methods.
  * Typical usage is:

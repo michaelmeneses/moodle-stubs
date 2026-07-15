@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Datapipelines\Resource;
 
+use Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ListJobsResponse;
 /**
  * The "jobs" collection of methods.
  * Typical usage is:

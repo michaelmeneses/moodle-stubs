@@ -23,6 +23,17 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\Connector;
+use Google\Service\ManagedKafka\ListConnectorsResponse;
+use Google\Service\ManagedKafka\ManagedkafkaEmpty;
+use Google\Service\ManagedKafka\PauseConnectorRequest;
+use Google\Service\ManagedKafka\PauseConnectorResponse;
+use Google\Service\ManagedKafka\RestartConnectorRequest;
+use Google\Service\ManagedKafka\RestartConnectorResponse;
+use Google\Service\ManagedKafka\ResumeConnectorRequest;
+use Google\Service\ManagedKafka\ResumeConnectorResponse;
+use Google\Service\ManagedKafka\StopConnectorRequest;
+use Google\Service\ManagedKafka\StopConnectorResponse;
 /**
  * The "connectors" collection of methods.
  * Typical usage is:

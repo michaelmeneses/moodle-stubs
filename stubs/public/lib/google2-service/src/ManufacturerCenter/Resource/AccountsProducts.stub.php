@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ManufacturerCenter\Resource;
 
+use Google\Service\ManufacturerCenter\Attributes;
+use Google\Service\ManufacturerCenter\ListProductsResponse;
+use Google\Service\ManufacturerCenter\ManufacturersEmpty;
+use Google\Service\ManufacturerCenter\Product;
 /**
  * The "products" collection of methods.
  * Typical usage is:

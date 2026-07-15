@@ -23,6 +23,10 @@
  */
 namespace Google\Service\SmartDeviceManagement\Resource;
 
+use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1Device;
+use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest;
+use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse;
+use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ListDevicesResponse;
 /**
  * The "devices" collection of methods.
  * Typical usage is:

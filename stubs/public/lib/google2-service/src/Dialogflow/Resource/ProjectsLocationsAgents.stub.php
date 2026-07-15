@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentValidationResult;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportAgentRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListAgentsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestoreAgentRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ValidateAgentRequest;
+use Google\Service\Dialogflow\GoogleLongrunningOperation;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "agents" collection of methods.
  * Typical usage is:

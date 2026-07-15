@@ -23,6 +23,10 @@
  */
 namespace Google\Service\GKEHub\Resource;
 
+use Google\Service\GKEHub\CancelOperationRequest;
+use Google\Service\GKEHub\GkehubEmpty;
+use Google\Service\GKEHub\ListOperationsResponse;
+use Google\Service\GKEHub\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

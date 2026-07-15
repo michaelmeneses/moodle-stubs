@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\CustomBiddingAlgorithm;
+use Google\Service\DisplayVideo\CustomBiddingAlgorithmRulesRef;
+use Google\Service\DisplayVideo\CustomBiddingScriptRef;
+use Google\Service\DisplayVideo\ListCustomBiddingAlgorithmsResponse;
 /**
  * The "customBiddingAlgorithms" collection of methods.
  * Typical usage is:

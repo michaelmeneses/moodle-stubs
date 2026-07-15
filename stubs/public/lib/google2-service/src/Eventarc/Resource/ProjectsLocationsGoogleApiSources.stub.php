@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Eventarc\Resource;
 
+use Google\Service\Eventarc\GoogleApiSource;
+use Google\Service\Eventarc\GoogleLongrunningOperation;
+use Google\Service\Eventarc\ListGoogleApiSourcesResponse;
+use Google\Service\Eventarc\Policy;
+use Google\Service\Eventarc\SetIamPolicyRequest;
+use Google\Service\Eventarc\TestIamPermissionsRequest;
+use Google\Service\Eventarc\TestIamPermissionsResponse;
 /**
  * The "googleApiSources" collection of methods.
  * Typical usage is:

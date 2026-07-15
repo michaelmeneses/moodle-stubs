@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudRuntimeConfig\Resource;
 
+use Google\Service\CloudRuntimeConfig\CancelOperationRequest;
+use Google\Service\CloudRuntimeConfig\ListOperationsResponse;
+use Google\Service\CloudRuntimeConfig\RuntimeconfigEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Cloudchannel\Resource;
 
+use Google\Service\Cloudchannel\GoogleCloudChannelV1Customer;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ImportCustomerRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListCustomersResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableOffersResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableSkusResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ProvisionCloudIdentityRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1QueryEligibleBillingAccountsResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1TransferEntitlementsRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1TransferEntitlementsToGoogleRequest;
+use Google\Service\Cloudchannel\GoogleLongrunningOperation;
+use Google\Service\Cloudchannel\GoogleProtobufEmpty;
 /**
  * The "customers" collection of methods.
  * Typical usage is:

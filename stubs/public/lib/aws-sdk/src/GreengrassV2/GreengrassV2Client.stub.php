@@ -8,6 +8,7 @@
  */
 namespace Aws\GreengrassV2;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS IoT Greengrass V2** service.
  * @method \Aws\Result associateServiceRoleToAccount(array $args = [])

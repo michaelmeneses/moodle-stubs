@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\EvictLunRequest;
+use Google\Service\Baremetalsolution\ListLunsResponse;
+use Google\Service\Baremetalsolution\Lun;
+use Google\Service\Baremetalsolution\Operation;
 /**
  * The "luns" collection of methods.
  * Typical usage is:

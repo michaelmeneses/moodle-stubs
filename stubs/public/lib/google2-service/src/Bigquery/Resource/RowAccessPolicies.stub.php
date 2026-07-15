@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Bigquery\Resource;
 
+use Google\Service\Bigquery\BatchDeleteRowAccessPoliciesRequest;
+use Google\Service\Bigquery\GetIamPolicyRequest;
+use Google\Service\Bigquery\ListRowAccessPoliciesResponse;
+use Google\Service\Bigquery\Policy;
+use Google\Service\Bigquery\RowAccessPolicy;
+use Google\Service\Bigquery\TestIamPermissionsRequest;
+use Google\Service\Bigquery\TestIamPermissionsResponse;
 /**
  * The "rowAccessPolicies" collection of methods.
  * Typical usage is:

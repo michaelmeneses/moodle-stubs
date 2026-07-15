@@ -23,6 +23,7 @@
  */
 namespace Google\Service\WebRisk\Resource;
 
+use Google\Service\WebRisk\GoogleCloudWebriskV1Submission;
 /**
  * The "submissions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudComposer\Resource;
 
+use Google\Service\CloudComposer\ComposerEmpty;
+use Google\Service\CloudComposer\ListUserWorkloadsConfigMapsResponse;
+use Google\Service\CloudComposer\UserWorkloadsConfigMap;
 /**
  * The "userWorkloadsConfigMaps" collection of methods.
  * Typical usage is:

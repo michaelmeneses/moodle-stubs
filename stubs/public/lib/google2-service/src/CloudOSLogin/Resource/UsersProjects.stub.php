@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudOSLogin\Resource;
 
+use Google\Service\CloudOSLogin\OsloginEmpty;
+use Google\Service\CloudOSLogin\PosixAccount;
+use Google\Service\CloudOSLogin\ProvisionPosixAccountRequest;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

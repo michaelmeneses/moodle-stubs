@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudTrace\Resource;
 
+use Google\Service\CloudTrace\BatchWriteSpansRequest;
+use Google\Service\CloudTrace\CloudtraceEmpty;
 /**
  * The "traces" collection of methods.
  * Typical usage is:

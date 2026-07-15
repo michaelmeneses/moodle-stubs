@@ -23,6 +23,11 @@
  */
 namespace Google\Service\AndroidManagement\Resource;
 
+use Google\Service\AndroidManagement\AndroidmanagementEmpty;
+use Google\Service\AndroidManagement\Command;
+use Google\Service\AndroidManagement\Device;
+use Google\Service\AndroidManagement\ListDevicesResponse;
+use Google\Service\AndroidManagement\Operation;
 /**
  * The "devices" collection of methods.
  * Typical usage is:

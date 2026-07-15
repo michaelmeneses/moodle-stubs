@@ -8,6 +8,14 @@
  */
 namespace Aws\ClientSideMonitoring;
 
+use Aws\CommandInterface;
+use Aws\Exception\AwsException;
+use Aws\MonitoringEventsInterface;
+use Aws\ResponseContainerInterface;
+use Aws\ResultInterface;
+use GuzzleHttp\Promise;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * @internal
  */

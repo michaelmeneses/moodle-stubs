@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Transcoder\Resource;
 
+use Google\Service\Transcoder\JobTemplate;
+use Google\Service\Transcoder\ListJobTemplatesResponse;
+use Google\Service\Transcoder\TranscoderEmpty;
 /**
  * The "jobTemplates" collection of methods.
  * Typical usage is:

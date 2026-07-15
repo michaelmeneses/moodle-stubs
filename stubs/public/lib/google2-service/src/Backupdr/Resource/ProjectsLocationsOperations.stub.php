@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\BackupdrEmpty;
+use Google\Service\Backupdr\CancelOperationRequest;
+use Google\Service\Backupdr\ListOperationsResponse;
+use Google\Service\Backupdr\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

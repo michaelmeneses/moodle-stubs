@@ -23,6 +23,16 @@
  */
 namespace Google\Service\DataprocMetastore\Resource;
 
+use Google\Service\DataprocMetastore\GoogleCloudMetastoreV2AlterMetadataResourceLocationRequest;
+use Google\Service\DataprocMetastore\GoogleCloudMetastoreV2AlterTablePropertiesRequest;
+use Google\Service\DataprocMetastore\GoogleCloudMetastoreV2ExportMetadataRequest;
+use Google\Service\DataprocMetastore\GoogleCloudMetastoreV2ImportMetadataRequest;
+use Google\Service\DataprocMetastore\GoogleCloudMetastoreV2ListServicesResponse;
+use Google\Service\DataprocMetastore\GoogleCloudMetastoreV2MoveTableToDatabaseRequest;
+use Google\Service\DataprocMetastore\GoogleCloudMetastoreV2QueryMetadataRequest;
+use Google\Service\DataprocMetastore\GoogleCloudMetastoreV2RestoreServiceRequest;
+use Google\Service\DataprocMetastore\GoogleCloudMetastoreV2Service;
+use Google\Service\DataprocMetastore\GoogleLongrunningOperation;
 /**
  * The "services" collection of methods.
  * Typical usage is:

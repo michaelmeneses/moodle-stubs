@@ -23,6 +23,9 @@
  */
 namespace Google\Service\HangoutsChat\Resource;
 
+use Google\Service\HangoutsChat\ChatEmpty;
+use Google\Service\HangoutsChat\CustomEmoji;
+use Google\Service\HangoutsChat\ListCustomEmojisResponse;
 /**
  * The "customEmojis" collection of methods.
  * Typical usage is:

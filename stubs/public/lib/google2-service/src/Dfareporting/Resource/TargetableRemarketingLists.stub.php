@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\TargetableRemarketingList;
+use Google\Service\Dfareporting\TargetableRemarketingListsListResponse;
 /**
  * The "targetableRemarketingLists" collection of methods.
  * Typical usage is:

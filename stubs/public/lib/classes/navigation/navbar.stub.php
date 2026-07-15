@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation;
 
+use core\context\course as context_course;
+use core\context_helper;
+use core_course_category;
+use core\context\coursecat as context_coursecat;
+use core\output\action_link;
+use core\output\pix_icon;
+use core\url;
+use moodle_page;
 /**
  * Navbar class
  *

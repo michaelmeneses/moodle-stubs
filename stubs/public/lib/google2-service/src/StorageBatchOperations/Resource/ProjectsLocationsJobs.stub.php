@@ -23,6 +23,12 @@
  */
 namespace Google\Service\StorageBatchOperations\Resource;
 
+use Google\Service\StorageBatchOperations\CancelJobRequest;
+use Google\Service\StorageBatchOperations\CancelJobResponse;
+use Google\Service\StorageBatchOperations\Job;
+use Google\Service\StorageBatchOperations\ListJobsResponse;
+use Google\Service\StorageBatchOperations\Operation;
+use Google\Service\StorageBatchOperations\StoragebatchoperationsEmpty;
 /**
  * The "jobs" collection of methods.
  * Typical usage is:

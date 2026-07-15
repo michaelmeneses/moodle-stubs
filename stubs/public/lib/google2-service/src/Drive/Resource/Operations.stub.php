@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Drive\Resource;
 
+use Google\Service\Drive\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

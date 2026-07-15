@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Cloudbilling\Resource;
 
+use Google\Service\Cloudbilling\ListSkusResponse;
 /**
  * The "skus" collection of methods.
  * Typical usage is:

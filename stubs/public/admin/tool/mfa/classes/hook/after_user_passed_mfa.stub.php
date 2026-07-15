@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_mfa\hook;
 
+use core\hook\stoppable_trait;
 /**
  * Allow plugins to callback as soon possible after user has passed MFA.
  *

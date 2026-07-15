@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Firestore\Resource;
 
+use Google\Service\Firestore\FirestoreEmpty;
+use Google\Service\Firestore\GoogleFirestoreAdminV1Backup;
+use Google\Service\Firestore\GoogleFirestoreAdminV1ListBackupsResponse;
 /**
  * The "backups" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\GroupAssetsRequest;
+use Google\Service\SecurityCommandCenter\GroupAssetsResponse;
+use Google\Service\SecurityCommandCenter\ListAssetsResponse;
+use Google\Service\SecurityCommandCenter\SecurityMarks;
 /**
  * The "assets" collection of methods.
  * Typical usage is:

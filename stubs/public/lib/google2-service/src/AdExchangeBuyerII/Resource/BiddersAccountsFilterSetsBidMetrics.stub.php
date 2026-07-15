@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\ListBidMetricsResponse;
 /**
  * The "bidMetrics" collection of methods.
  * Typical usage is:

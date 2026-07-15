@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanJob;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1GenerateDataQualityRulesRequest;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1GenerateDataQualityRulesResponse;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataScanJobsResponse;
 /**
  * The "jobs" collection of methods.
  * Typical usage is:

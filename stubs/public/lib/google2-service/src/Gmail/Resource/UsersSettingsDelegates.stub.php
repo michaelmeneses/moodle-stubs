@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\Delegate;
+use Google\Service\Gmail\ListDelegatesResponse;
 /**
  * The "delegates" collection of methods.
  * Typical usage is:

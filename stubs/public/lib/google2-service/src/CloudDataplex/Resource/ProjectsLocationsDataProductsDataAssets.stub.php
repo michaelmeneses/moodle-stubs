@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1DataAsset;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataAssetsResponse;
+use Google\Service\CloudDataplex\GoogleLongrunningOperation;
 /**
  * The "dataAssets" collection of methods.
  * Typical usage is:

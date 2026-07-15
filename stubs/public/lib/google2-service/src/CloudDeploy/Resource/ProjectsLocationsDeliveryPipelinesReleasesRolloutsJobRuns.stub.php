@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudDeploy\Resource;
 
+use Google\Service\CloudDeploy\JobRun;
+use Google\Service\CloudDeploy\ListJobRunsResponse;
+use Google\Service\CloudDeploy\TerminateJobRunRequest;
+use Google\Service\CloudDeploy\TerminateJobRunResponse;
 /**
  * The "jobRuns" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\ChecksService\Resource;
 
+use Google\Service\ChecksService\ChecksEmpty;
+use Google\Service\ChecksService\FindPrivacyPolicyRequest;
+use Google\Service\ChecksService\ListPrivacyPoliciesResponse;
+use Google\Service\ChecksService\Operation;
+use Google\Service\ChecksService\PrivacyPolicy;
 /**
  * The "privacyPolicies" collection of methods.
  * Typical usage is:

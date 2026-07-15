@@ -23,6 +23,11 @@
  */
 namespace Google\Service\FirebaseAppDistribution\Resource;
 
+use Google\Service\FirebaseAppDistribution\GoogleLongrunningCancelOperationRequest;
+use Google\Service\FirebaseAppDistribution\GoogleLongrunningListOperationsResponse;
+use Google\Service\FirebaseAppDistribution\GoogleLongrunningOperation;
+use Google\Service\FirebaseAppDistribution\GoogleLongrunningWaitOperationRequest;
+use Google\Service\FirebaseAppDistribution\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

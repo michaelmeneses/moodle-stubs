@@ -23,6 +23,15 @@
  */
 namespace Google\Service\DeploymentManager\Resource;
 
+use Google\Service\DeploymentManager\Deployment;
+use Google\Service\DeploymentManager\DeploymentsCancelPreviewRequest;
+use Google\Service\DeploymentManager\DeploymentsListResponse;
+use Google\Service\DeploymentManager\DeploymentsStopRequest;
+use Google\Service\DeploymentManager\GlobalSetPolicyRequest;
+use Google\Service\DeploymentManager\Operation;
+use Google\Service\DeploymentManager\Policy;
+use Google\Service\DeploymentManager\TestPermissionsRequest;
+use Google\Service\DeploymentManager\TestPermissionsResponse;
 /**
  * The "deployments" collection of methods.
  * Typical usage is:

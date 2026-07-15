@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\Permission;
 /**
  * The "permissions" collection of methods.
  * Typical usage is:

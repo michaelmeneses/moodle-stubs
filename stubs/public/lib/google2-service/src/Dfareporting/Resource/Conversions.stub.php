@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\ConversionsBatchInsertRequest;
+use Google\Service\Dfareporting\ConversionsBatchInsertResponse;
+use Google\Service\Dfareporting\ConversionsBatchUpdateRequest;
+use Google\Service\Dfareporting\ConversionsBatchUpdateResponse;
 /**
  * The "conversions" collection of methods.
  * Typical usage is:

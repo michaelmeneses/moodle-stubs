@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\UploadGenericArtifactMediaResponse;
+use Google\Service\ArtifactRegistry\UploadGenericArtifactRequest;
 /**
  * The "genericArtifacts" collection of methods.
  * Typical usage is:

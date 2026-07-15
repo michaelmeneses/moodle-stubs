@@ -23,6 +23,8 @@
  */
 namespace Google\Service\HangoutsChat\Resource;
 
+use Google\Service\HangoutsChat\ListSpaceEventsResponse;
+use Google\Service\HangoutsChat\SpaceEvent;
 /**
  * The "spaceEvents" collection of methods.
  * Typical usage is:

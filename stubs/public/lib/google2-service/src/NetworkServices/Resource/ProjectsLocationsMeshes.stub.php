@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\ListMeshesResponse;
+use Google\Service\NetworkServices\Mesh;
+use Google\Service\NetworkServices\Operation;
 /**
  * The "meshes" collection of methods.
  * Typical usage is:

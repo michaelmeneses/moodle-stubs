@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Parallelstore\Resource;
 
+use Google\Service\Parallelstore\CancelOperationRequest;
+use Google\Service\Parallelstore\GoogleProtobufEmpty;
+use Google\Service\Parallelstore\ListOperationsResponse;
+use Google\Service\Parallelstore\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

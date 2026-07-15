@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Testing\Resource;
 
+use Google\Service\Testing\TestEnvironmentCatalog as TestEnvironmentCatalogModel;
 /**
  * The "testEnvironmentCatalog" collection of methods.
  * Typical usage is:

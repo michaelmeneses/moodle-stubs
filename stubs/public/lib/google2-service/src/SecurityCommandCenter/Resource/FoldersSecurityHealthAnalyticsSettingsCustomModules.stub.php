@@ -23,6 +23,12 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule;
+use Google\Service\SecurityCommandCenter\ListDescendantSecurityHealthAnalyticsCustomModulesResponse;
+use Google\Service\SecurityCommandCenter\ListSecurityHealthAnalyticsCustomModulesResponse;
+use Google\Service\SecurityCommandCenter\SecuritycenterEmpty;
+use Google\Service\SecurityCommandCenter\SimulateSecurityHealthAnalyticsCustomModuleRequest;
+use Google\Service\SecurityCommandCenter\SimulateSecurityHealthAnalyticsCustomModuleResponse;
 /**
  * The "customModules" collection of methods.
  * Typical usage is:

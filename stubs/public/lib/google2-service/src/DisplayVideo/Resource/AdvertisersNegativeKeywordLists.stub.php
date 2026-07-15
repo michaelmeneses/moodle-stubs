@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\ListNegativeKeywordListsResponse;
+use Google\Service\DisplayVideo\NegativeKeywordList;
 /**
  * The "negativeKeywordLists" collection of methods.
  * Typical usage is:

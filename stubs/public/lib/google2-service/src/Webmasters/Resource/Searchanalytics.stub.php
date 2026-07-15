@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Webmasters\Resource;
 
+use Google\Service\Webmasters\SearchAnalyticsQueryRequest;
+use Google\Service\Webmasters\SearchAnalyticsQueryResponse;
 /**
  * The "searchanalytics" collection of methods.
  * Typical usage is:

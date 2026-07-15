@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\StoreCluster;
+use Google\Service\AndroidEnterprise\StoreLayoutClustersListResponse;
 /**
  * The "storelayoutclusters" collection of methods.
  * Typical usage is:

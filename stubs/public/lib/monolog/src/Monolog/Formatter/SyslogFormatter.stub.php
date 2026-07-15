@@ -16,6 +16,8 @@
  */
 namespace Monolog\Formatter;
 
+use Monolog\Level;
+use Monolog\LogRecord;
 /**
  * Serializes a log message according to RFC 5424
  *

@@ -23,6 +23,18 @@
  */
 namespace Google\Service\DataCatalog\Resource;
 
+use Google\Service\DataCatalog\DatacatalogEmpty;
+use Google\Service\DataCatalog\GetIamPolicyRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ExportTaxonomiesResponse;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportTaxonomiesRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportTaxonomiesResponse;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListTaxonomiesResponse;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ReplaceTaxonomyRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1Taxonomy;
+use Google\Service\DataCatalog\Policy;
+use Google\Service\DataCatalog\SetIamPolicyRequest;
+use Google\Service\DataCatalog\TestIamPermissionsRequest;
+use Google\Service\DataCatalog\TestIamPermissionsResponse;
 /**
  * The "taxonomies" collection of methods.
  * Typical usage is:

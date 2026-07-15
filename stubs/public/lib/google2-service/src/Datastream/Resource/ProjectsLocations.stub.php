@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Datastream\Resource;
 
+use Google\Service\Datastream\FetchStaticIpsResponse;
+use Google\Service\Datastream\ListLocationsResponse;
+use Google\Service\Datastream\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

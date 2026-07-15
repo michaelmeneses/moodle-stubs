@@ -23,6 +23,8 @@
  */
 namespace Google\Service\FactCheckTools\Resource;
 
+use Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponse;
+use Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse;
 /**
  * The "claims" collection of methods.
  * Typical usage is:

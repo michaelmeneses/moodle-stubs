@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\Draft;
+use Google\Service\Gmail\ListDraftsResponse;
+use Google\Service\Gmail\Message;
 /**
  * The "drafts" collection of methods.
  * Typical usage is:

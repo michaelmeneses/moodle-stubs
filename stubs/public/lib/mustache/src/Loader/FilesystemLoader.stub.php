@@ -16,6 +16,9 @@
  */
 namespace Mustache\Loader;
 
+use Mustache\Exception\RuntimeException;
+use Mustache\Exception\UnknownTemplateException;
+use Mustache\Loader;
 /**
  * Mustache Template filesystem Loader implementation.
  *

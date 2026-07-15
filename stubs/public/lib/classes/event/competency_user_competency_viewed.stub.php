@@ -29,6 +29,9 @@
  */
 namespace core\event;
 
+use core\event\base;
+use core_competency\user_competency;
+use context_course;
 /**
  * User competency viewed event class.
  *

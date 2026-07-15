@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CancelNasJobRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListNasJobsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1NasJob;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "nasJobs" collection of methods.
  * Typical usage is:

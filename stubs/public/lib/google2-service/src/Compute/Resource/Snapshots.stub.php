@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\GlobalSetLabelsRequest;
+use Google\Service\Compute\GlobalSetPolicyRequest;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\Snapshot;
+use Google\Service\Compute\SnapshotList;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "snapshots" collection of methods.
  * Typical usage is:

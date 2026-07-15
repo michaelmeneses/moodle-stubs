@@ -23,6 +23,9 @@
  */
 namespace Google\Service\HangoutsChat\Resource;
 
+use Google\Service\HangoutsChat\ChatEmpty;
+use Google\Service\HangoutsChat\ListReactionsResponse;
+use Google\Service\HangoutsChat\Reaction;
 /**
  * The "reactions" collection of methods.
  * Typical usage is:

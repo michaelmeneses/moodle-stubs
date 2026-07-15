@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudMemorystoreforMemcached\Resource;
 
+use Google\Service\CloudMemorystoreforMemcached\CancelOperationRequest;
+use Google\Service\CloudMemorystoreforMemcached\ListOperationsResponse;
+use Google\Service\CloudMemorystoreforMemcached\MemcacheEmpty;
+use Google\Service\CloudMemorystoreforMemcached\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

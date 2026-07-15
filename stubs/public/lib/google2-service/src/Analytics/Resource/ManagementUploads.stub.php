@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\AnalyticsDataimportDeleteUploadDataRequest;
+use Google\Service\Analytics\Upload;
+use Google\Service\Analytics\Uploads;
 /**
  * The "uploads" collection of methods.
  * Typical usage is:

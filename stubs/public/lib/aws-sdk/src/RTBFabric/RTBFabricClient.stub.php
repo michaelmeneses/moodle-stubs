@@ -8,6 +8,7 @@
  */
 namespace Aws\RTBFabric;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **RTBFabric** service.
  * @method \Aws\Result acceptLink(array $args = [])

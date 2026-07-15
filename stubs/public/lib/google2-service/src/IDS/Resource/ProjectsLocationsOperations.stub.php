@@ -23,6 +23,10 @@
  */
 namespace Google\Service\IDS\Resource;
 
+use Google\Service\IDS\CancelOperationRequest;
+use Google\Service\IDS\IdsEmpty;
+use Google\Service\IDS\ListOperationsResponse;
+use Google\Service\IDS\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

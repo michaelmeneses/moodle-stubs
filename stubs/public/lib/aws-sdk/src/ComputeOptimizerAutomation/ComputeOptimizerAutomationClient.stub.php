@@ -8,6 +8,7 @@
  */
 namespace Aws\ComputeOptimizerAutomation;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Compute Optimizer Automation** service.
  * @method \Aws\Result associateAccounts(array $args = [])

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\GamesConfiguration\Resource;
 
+use Google\Service\GamesConfiguration\LeaderboardConfiguration;
+use Google\Service\GamesConfiguration\LeaderboardConfigurationListResponse;
 /**
  * The "leaderboardConfigurations" collection of methods.
  * Typical usage is:

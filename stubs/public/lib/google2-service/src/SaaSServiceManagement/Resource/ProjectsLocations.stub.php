@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SaaSServiceManagement\Resource;
 
+use Google\Service\SaaSServiceManagement\GoogleCloudLocationLocation;
+use Google\Service\SaaSServiceManagement\ListLocationsResponse;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

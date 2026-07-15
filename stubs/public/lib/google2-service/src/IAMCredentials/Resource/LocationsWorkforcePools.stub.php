@@ -23,6 +23,7 @@
  */
 namespace Google\Service\IAMCredentials\Resource;
 
+use Google\Service\IAMCredentials\WorkforcePoolAllowedLocations;
 /**
  * The "workforcePools" collection of methods.
  * Typical usage is:

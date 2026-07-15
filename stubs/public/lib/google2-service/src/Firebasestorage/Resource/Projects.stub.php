@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Firebasestorage\Resource;
 
+use Google\Service\Firebasestorage\DefaultBucket;
+use Google\Service\Firebasestorage\FirebasestorageEmpty;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

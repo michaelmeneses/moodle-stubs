@@ -23,6 +23,13 @@
  */
 namespace Google\Service\AccessContextManager\Resource;
 
+use Google\Service\AccessContextManager\CommitServicePerimetersRequest;
+use Google\Service\AccessContextManager\ListServicePerimetersResponse;
+use Google\Service\AccessContextManager\Operation;
+use Google\Service\AccessContextManager\ReplaceServicePerimetersRequest;
+use Google\Service\AccessContextManager\ServicePerimeter;
+use Google\Service\AccessContextManager\TestIamPermissionsRequest;
+use Google\Service\AccessContextManager\TestIamPermissionsResponse;
 /**
  * The "servicePerimeters" collection of methods.
  * Typical usage is:

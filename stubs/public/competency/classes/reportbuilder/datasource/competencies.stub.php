@@ -8,6 +8,13 @@
  */
 namespace core_competency\reportbuilder\datasource;
 
+use core\reportbuilder\local\entities\context;
+use core_cohort\reportbuilder\local\entities\cohort;
+use core_competency\reportbuilder\local\entities\{competency, framework, usercompetency};
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\filters\boolean_select;
+use core_reportbuilder\local\helpers\database;
 /**
  * Competencies datasource
  *

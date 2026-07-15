@@ -23,6 +23,9 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\ImportDataFile;
+use Google\Service\MigrationCenterAPI\ListImportDataFilesResponse;
+use Google\Service\MigrationCenterAPI\Operation;
 /**
  * The "importDataFiles" collection of methods.
  * Typical usage is:

@@ -23,6 +23,14 @@
  */
 namespace Google\Service\ChromePolicy\Resource;
 
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineCertificateRequest;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineCertificateResponse;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineNetworkRequest;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineNetworkResponse;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveCertificateRequest;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveCertificateResponse;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveNetworkRequest;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveNetworkResponse;
 /**
  * The "networks" collection of methods.
  * Typical usage is:

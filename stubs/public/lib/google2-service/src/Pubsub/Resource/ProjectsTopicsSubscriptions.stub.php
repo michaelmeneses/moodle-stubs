@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Pubsub\Resource;
 
+use Google\Service\Pubsub\ListTopicSubscriptionsResponse;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,22 @@
  */
 namespace Google\Service\Pubsub\Resource;
 
+use Google\Service\Pubsub\AcknowledgeRequest;
+use Google\Service\Pubsub\DetachSubscriptionResponse;
+use Google\Service\Pubsub\ListSubscriptionsResponse;
+use Google\Service\Pubsub\ModifyAckDeadlineRequest;
+use Google\Service\Pubsub\ModifyPushConfigRequest;
+use Google\Service\Pubsub\Policy;
+use Google\Service\Pubsub\PubsubEmpty;
+use Google\Service\Pubsub\PullRequest;
+use Google\Service\Pubsub\PullResponse;
+use Google\Service\Pubsub\SeekRequest;
+use Google\Service\Pubsub\SeekResponse;
+use Google\Service\Pubsub\SetIamPolicyRequest;
+use Google\Service\Pubsub\Subscription;
+use Google\Service\Pubsub\TestIamPermissionsRequest;
+use Google\Service\Pubsub\TestIamPermissionsResponse;
+use Google\Service\Pubsub\UpdateSubscriptionRequest;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

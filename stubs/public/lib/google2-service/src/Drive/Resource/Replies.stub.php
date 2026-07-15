@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Drive\Resource;
 
+use Google\Service\Drive\Reply;
+use Google\Service\Drive\ReplyList;
 /**
  * The "replies" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\ListTargetingOptionsResponse;
+use Google\Service\DisplayVideo\SearchTargetingOptionsRequest;
+use Google\Service\DisplayVideo\SearchTargetingOptionsResponse;
+use Google\Service\DisplayVideo\TargetingOption;
 /**
  * The "targetingOptions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\CancelImageImportJobRequest;
+use Google\Service\VMMigrationService\ImageImportJob;
+use Google\Service\VMMigrationService\ListImageImportJobsResponse;
+use Google\Service\VMMigrationService\Operation;
 /**
  * The "imageImportJobs" collection of methods.
  * Typical usage is:

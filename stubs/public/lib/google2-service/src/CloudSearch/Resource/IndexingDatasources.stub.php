@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudSearch\Resource;
 
+use Google\Service\CloudSearch\Operation;
+use Google\Service\CloudSearch\Schema;
+use Google\Service\CloudSearch\UpdateSchemaRequest;
 /**
  * The "datasources" collection of methods.
  * Typical usage is:

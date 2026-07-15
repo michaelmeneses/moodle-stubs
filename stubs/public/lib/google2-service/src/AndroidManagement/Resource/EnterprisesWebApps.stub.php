@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AndroidManagement\Resource;
 
+use Google\Service\AndroidManagement\AndroidmanagementEmpty;
+use Google\Service\AndroidManagement\ListWebAppsResponse;
+use Google\Service\AndroidManagement\WebApp;
 /**
  * The "webApps" collection of methods.
  * Typical usage is:

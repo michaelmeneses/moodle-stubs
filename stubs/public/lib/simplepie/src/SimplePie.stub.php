@@ -49,6 +49,15 @@
  */
 namespace SimplePie;
 
+use InvalidArgumentException;
+use Psr\SimpleCache\CacheInterface;
+use SimplePie\Cache\Base;
+use SimplePie\Cache\BaseDataCache;
+use SimplePie\Cache\CallableNameFilter;
+use SimplePie\Cache\DataCache;
+use SimplePie\Cache\NameFilter;
+use SimplePie\Cache\Psr16;
+use SimplePie\Content\Type\Sniffer;
 /**
  * SimplePie
  *

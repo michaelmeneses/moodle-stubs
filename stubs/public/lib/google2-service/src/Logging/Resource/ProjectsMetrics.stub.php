@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\ListLogMetricsResponse;
+use Google\Service\Logging\LogMetric;
+use Google\Service\Logging\LoggingEmpty;
 /**
  * The "metrics" collection of methods.
  * Typical usage is:

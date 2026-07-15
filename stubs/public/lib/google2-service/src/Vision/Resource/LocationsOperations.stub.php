@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Vision\Resource;
 
+use Google\Service\Vision\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

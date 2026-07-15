@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Area120Tables\Resource;
 
+use Google\Service\Area120Tables\Area120tablesEmpty;
+use Google\Service\Area120Tables\BatchCreateRowsRequest;
+use Google\Service\Area120Tables\BatchCreateRowsResponse;
+use Google\Service\Area120Tables\BatchDeleteRowsRequest;
+use Google\Service\Area120Tables\BatchUpdateRowsRequest;
+use Google\Service\Area120Tables\BatchUpdateRowsResponse;
+use Google\Service\Area120Tables\ListRowsResponse;
+use Google\Service\Area120Tables\Row;
 /**
  * The "rows" collection of methods.
  * Typical usage is:

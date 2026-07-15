@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1EndpointAttachment;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListEndpointAttachmentsResponse;
+use Google\Service\Apigee\GoogleLongrunningOperation;
 /**
  * The "endpointAttachments" collection of methods.
  * Typical usage is:

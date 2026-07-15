@@ -23,6 +23,18 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\NatIpInfoResponse;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RoutePolicy;
+use Google\Service\Compute\Router;
+use Google\Service\Compute\RouterAggregatedList;
+use Google\Service\Compute\RouterList;
+use Google\Service\Compute\RouterStatusResponse;
+use Google\Service\Compute\RoutersGetRoutePolicyResponse;
+use Google\Service\Compute\RoutersListBgpRoutes;
+use Google\Service\Compute\RoutersListRoutePolicies;
+use Google\Service\Compute\RoutersPreviewResponse;
+use Google\Service\Compute\VmEndpointNatMappingsList;
 /**
  * The "routers" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CCAIPlatform\Resource;
 
+use Google\Service\CCAIPlatform\CancelOperationRequest;
+use Google\Service\CCAIPlatform\ContactcenteraiplatformEmpty;
+use Google\Service\CCAIPlatform\ListOperationsResponse;
+use Google\Service\CCAIPlatform\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

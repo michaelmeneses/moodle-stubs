@@ -23,6 +23,7 @@
  */
 namespace Google\Service\FirebaseAppDistribution\Resource;
 
+use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1AabInfo;
 /**
  * The "apps" collection of methods.
  * Typical usage is:

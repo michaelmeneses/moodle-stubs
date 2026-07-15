@@ -16,6 +16,7 @@
  */
 namespace Mustache;
 
+use Mustache\Exception\UnknownTemplateException;
 interface Loader
 {
     /**

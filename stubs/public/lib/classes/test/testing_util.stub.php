@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\test;
 
+use testing_data_generator;
 /**
  * Testing utility classes.
  *

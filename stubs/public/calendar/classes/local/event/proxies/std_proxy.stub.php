@@ -29,6 +29,7 @@
  */
 namespace core_calendar\local\event\proxies;
 
+use core_calendar\local\event\exceptions\member_does_not_exist_exception;
 /**
  * stdClass proxy.
  *

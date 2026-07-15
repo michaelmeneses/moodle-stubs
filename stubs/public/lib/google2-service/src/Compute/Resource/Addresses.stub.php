@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Address;
+use Google\Service\Compute\AddressAggregatedList;
+use Google\Service\Compute\AddressList;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RegionAddressesMoveRequest;
+use Google\Service\Compute\RegionSetLabelsRequest;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "addresses" collection of methods.
  * Typical usage is:

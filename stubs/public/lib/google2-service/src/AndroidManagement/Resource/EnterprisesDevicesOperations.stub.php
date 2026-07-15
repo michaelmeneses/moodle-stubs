@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AndroidManagement\Resource;
 
+use Google\Service\AndroidManagement\AndroidmanagementEmpty;
+use Google\Service\AndroidManagement\ListOperationsResponse;
+use Google\Service\AndroidManagement\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

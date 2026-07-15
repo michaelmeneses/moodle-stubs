@@ -8,6 +8,7 @@
  */
 namespace libphonenumber;
 
+use RuntimeException;
 /**
  * @internal
  */

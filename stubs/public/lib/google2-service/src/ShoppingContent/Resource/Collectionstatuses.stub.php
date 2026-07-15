@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\CollectionStatus;
+use Google\Service\ShoppingContent\ListCollectionStatusesResponse;
 /**
  * The "collectionstatuses" collection of methods.
  * Typical usage is:

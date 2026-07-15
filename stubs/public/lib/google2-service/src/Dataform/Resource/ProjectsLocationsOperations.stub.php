@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Dataform\Resource;
 
+use Google\Service\Dataform\CancelOperationRequest;
+use Google\Service\Dataform\DataformEmpty;
+use Google\Service\Dataform\ListOperationsResponse;
+use Google\Service\Dataform\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

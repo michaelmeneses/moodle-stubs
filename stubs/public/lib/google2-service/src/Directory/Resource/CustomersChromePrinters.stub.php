@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\AdminEmpty;
+use Google\Service\Directory\BatchCreatePrintersRequest;
+use Google\Service\Directory\BatchCreatePrintersResponse;
+use Google\Service\Directory\BatchDeletePrintersRequest;
+use Google\Service\Directory\BatchDeletePrintersResponse;
+use Google\Service\Directory\ListPrinterModelsResponse;
+use Google\Service\Directory\ListPrintersResponse;
+use Google\Service\Directory\Printer;
 /**
  * The "printers" collection of methods.
  * Typical usage is:

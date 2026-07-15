@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GoogleAnalyticsAdmin\Resource;
 
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaFirebaseLink;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListFirebaseLinksResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
 /**
  * The "firebaseLinks" collection of methods.
  * Typical usage is:

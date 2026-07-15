@@ -16,6 +16,7 @@
  */
 namespace Monolog\Formatter;
 
+use Monolog\LogRecord;
 /**
  * Formats data into an associative array of scalar (+ null) values.
  * Objects and arrays will be JSON encoded.

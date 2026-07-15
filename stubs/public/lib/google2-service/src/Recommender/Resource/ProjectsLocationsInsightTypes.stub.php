@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Recommender\Resource;
 
+use Google\Service\Recommender\GoogleCloudRecommenderV1InsightTypeConfig;
 /**
  * The "insightTypes" collection of methods.
  * Typical usage is:

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\ShippingSettings as ShippingSettingsModel;
+use Google\Service\ShoppingContent\ShippingsettingsCustomBatchRequest;
+use Google\Service\ShoppingContent\ShippingsettingsCustomBatchResponse;
+use Google\Service\ShoppingContent\ShippingsettingsGetSupportedCarriersResponse;
+use Google\Service\ShoppingContent\ShippingsettingsGetSupportedHolidaysResponse;
+use Google\Service\ShoppingContent\ShippingsettingsGetSupportedPickupServicesResponse;
+use Google\Service\ShoppingContent\ShippingsettingsListResponse;
 /**
  * The "shippingsettings" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Bigquery\Resource;
 
+use Google\Service\Bigquery\TableDataInsertAllRequest;
+use Google\Service\Bigquery\TableDataInsertAllResponse;
+use Google\Service\Bigquery\TableDataList;
 /**
  * The "tabledata" collection of methods.
  * Typical usage is:

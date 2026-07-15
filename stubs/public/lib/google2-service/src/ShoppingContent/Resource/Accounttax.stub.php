@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\AccountTax as AccountTaxModel;
+use Google\Service\ShoppingContent\AccounttaxCustomBatchRequest;
+use Google\Service\ShoppingContent\AccounttaxCustomBatchResponse;
+use Google\Service\ShoppingContent\AccounttaxListResponse;
 /**
  * The "accounttax" collection of methods.
  * Typical usage is:

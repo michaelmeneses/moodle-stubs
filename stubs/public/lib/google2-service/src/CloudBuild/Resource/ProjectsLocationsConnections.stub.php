@@ -23,6 +23,16 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\CloudbuildEmpty;
+use Google\Service\CloudBuild\Connection;
+use Google\Service\CloudBuild\FetchLinkableRepositoriesResponse;
+use Google\Service\CloudBuild\HttpBody;
+use Google\Service\CloudBuild\ListConnectionsResponse;
+use Google\Service\CloudBuild\Operation;
+use Google\Service\CloudBuild\Policy;
+use Google\Service\CloudBuild\SetIamPolicyRequest;
+use Google\Service\CloudBuild\TestIamPermissionsRequest;
+use Google\Service\CloudBuild\TestIamPermissionsResponse;
 /**
  * The "connections" collection of methods.
  * Typical usage is:

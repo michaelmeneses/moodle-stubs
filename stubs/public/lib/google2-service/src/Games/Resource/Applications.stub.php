@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\Application;
+use Google\Service\Games\ApplicationVerifyResponse;
+use Google\Service\Games\EndPoint;
 /**
  * The "applications" collection of methods.
  * Typical usage is:

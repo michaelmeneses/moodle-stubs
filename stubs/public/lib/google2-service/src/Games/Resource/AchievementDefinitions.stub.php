@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\AchievementDefinitionsListResponse;
 /**
  * The "achievementDefinitions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,12 @@
  */
 namespace Google\Service\AuthorizedBuyersMarketplace\Resource;
 
+use Google\Service\AuthorizedBuyersMarketplace\AuctionPackage;
+use Google\Service\AuthorizedBuyersMarketplace\ListAuctionPackagesResponse;
+use Google\Service\AuthorizedBuyersMarketplace\SubscribeAuctionPackageRequest;
+use Google\Service\AuthorizedBuyersMarketplace\SubscribeClientsRequest;
+use Google\Service\AuthorizedBuyersMarketplace\UnsubscribeAuctionPackageRequest;
+use Google\Service\AuthorizedBuyersMarketplace\UnsubscribeClientsRequest;
 /**
  * The "auctionPackages" collection of methods.
  * Typical usage is:

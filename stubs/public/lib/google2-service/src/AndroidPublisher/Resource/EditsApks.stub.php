@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\Apk;
+use Google\Service\AndroidPublisher\ApksAddExternallyHostedRequest;
+use Google\Service\AndroidPublisher\ApksAddExternallyHostedResponse;
+use Google\Service\AndroidPublisher\ApksListResponse;
 /**
  * The "apks" collection of methods.
  * Typical usage is:

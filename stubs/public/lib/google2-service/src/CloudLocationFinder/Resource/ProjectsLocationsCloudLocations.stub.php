@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudLocationFinder\Resource;
 
+use Google\Service\CloudLocationFinder\CloudLocation;
+use Google\Service\CloudLocationFinder\ListCloudLocationsResponse;
+use Google\Service\CloudLocationFinder\SearchCloudLocationsResponse;
 /**
  * The "cloudLocations" collection of methods.
  * Typical usage is:

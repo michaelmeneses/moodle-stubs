@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Playdeveloperreporting\Resource;
 
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1CrashRateMetricSet;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryCrashRateMetricSetRequest;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryCrashRateMetricSetResponse;
 /**
  * The "crashrate" collection of methods.
  * Typical usage is:

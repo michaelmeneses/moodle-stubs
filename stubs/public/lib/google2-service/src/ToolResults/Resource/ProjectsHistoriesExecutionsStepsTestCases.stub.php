@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ToolResults\Resource;
 
+use Google\Service\ToolResults\ListTestCasesResponse;
+use Google\Service\ToolResults\TestCase;
 /**
  * The "testCases" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Cloudchannel\Resource;
 
+use Google\Service\Cloudchannel\GoogleCloudChannelV1FetchReportResultsRequest;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1FetchReportResultsResponse;
 /**
  * The "reportJobs" collection of methods.
  * Typical usage is:

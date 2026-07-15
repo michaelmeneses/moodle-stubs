@@ -23,6 +23,31 @@
  */
 namespace Google\Service\Spanner\Resource;
 
+use Google\Service\Spanner\AdaptMessageRequest;
+use Google\Service\Spanner\AdaptMessageResponse;
+use Google\Service\Spanner\AdapterSession;
+use Google\Service\Spanner\BatchCreateSessionsRequest;
+use Google\Service\Spanner\BatchCreateSessionsResponse;
+use Google\Service\Spanner\BatchWriteRequest;
+use Google\Service\Spanner\BatchWriteResponse;
+use Google\Service\Spanner\BeginTransactionRequest;
+use Google\Service\Spanner\CommitRequest;
+use Google\Service\Spanner\CommitResponse;
+use Google\Service\Spanner\CreateSessionRequest;
+use Google\Service\Spanner\ExecuteBatchDmlRequest;
+use Google\Service\Spanner\ExecuteBatchDmlResponse;
+use Google\Service\Spanner\ExecuteSqlRequest;
+use Google\Service\Spanner\ListSessionsResponse;
+use Google\Service\Spanner\PartialResultSet;
+use Google\Service\Spanner\PartitionQueryRequest;
+use Google\Service\Spanner\PartitionReadRequest;
+use Google\Service\Spanner\PartitionResponse;
+use Google\Service\Spanner\ReadRequest;
+use Google\Service\Spanner\ResultSet;
+use Google\Service\Spanner\RollbackRequest;
+use Google\Service\Spanner\Session;
+use Google\Service\Spanner\SpannerEmpty;
+use Google\Service\Spanner\Transaction;
 /**
  * The "sessions" collection of methods.
  * Typical usage is:

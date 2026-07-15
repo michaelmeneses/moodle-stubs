@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1AssignNotebookRuntimeRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListNotebookRuntimesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookRuntime;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1StartNotebookRuntimeRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1StopNotebookRuntimeRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1UpgradeNotebookRuntimeRequest;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "notebookRuntimes" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Auth\Middleware;
 
+use Google\Auth\CacheTrait;
+use Psr\Cache\CacheItemPoolInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * ScopedAccessTokenMiddleware is a Guzzle Middleware that adds an Authorization
  * header provided by a closure.

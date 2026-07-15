@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\CancelOperationRequest;
+use Google\Service\CloudHealthcare\HealthcareEmpty;
+use Google\Service\CloudHealthcare\ListOperationsResponse;
+use Google\Service\CloudHealthcare\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Datalineage\Resource;
 
+use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ListProcessesResponse;
+use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1Process;
+use Google\Service\Datalineage\GoogleLongrunningOperation;
 /**
  * The "processes" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudDeploy\Resource;
 
+use Google\Service\CloudDeploy\AutomationRun;
+use Google\Service\CloudDeploy\CancelAutomationRunRequest;
+use Google\Service\CloudDeploy\CancelAutomationRunResponse;
+use Google\Service\CloudDeploy\ListAutomationRunsResponse;
 /**
  * The "automationRuns" collection of methods.
  * Typical usage is:

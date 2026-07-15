@@ -23,6 +23,8 @@
  */
 namespace Google\Service\PolicyTroubleshooter\Resource;
 
+use Google\Service\PolicyTroubleshooter\GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest;
+use Google\Service\PolicyTroubleshooter\GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse;
 /**
  * The "iam" collection of methods.
  * Typical usage is:

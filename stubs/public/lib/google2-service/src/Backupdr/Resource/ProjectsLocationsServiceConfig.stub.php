@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\InitializeServiceRequest;
+use Google\Service\Backupdr\Operation;
 /**
  * The "serviceConfig" collection of methods.
  * Typical usage is:

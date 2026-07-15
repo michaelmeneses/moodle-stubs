@@ -23,6 +23,9 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\ListVariablesResponse;
+use Google\Service\TagManager\RevertVariableResponse;
+use Google\Service\TagManager\Variable;
 /**
  * The "variables" collection of methods.
  * Typical usage is:

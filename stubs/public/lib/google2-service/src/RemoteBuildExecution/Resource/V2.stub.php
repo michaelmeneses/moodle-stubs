@@ -23,6 +23,7 @@
  */
 namespace Google\Service\RemoteBuildExecution\Resource;
 
+use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ServerCapabilities;
 /**
  * The "v2" collection of methods.
  * Typical usage is:

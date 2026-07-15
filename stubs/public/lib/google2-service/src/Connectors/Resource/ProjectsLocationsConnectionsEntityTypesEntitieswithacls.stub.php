@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\Operation;
 /**
  * The "entitieswithacls" collection of methods.
  * Typical usage is:

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\form;
 
+use moodleform;
+use stdClass;
 /**
  * Form endorsement for editing.
  *

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use lang_string;
 /**
  * Class allowing to quick edit a title inline
  *

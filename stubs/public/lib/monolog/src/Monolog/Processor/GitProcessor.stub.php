@@ -16,6 +16,10 @@
  */
 namespace Monolog\Processor;
 
+use Monolog\Level;
+use Monolog\Logger;
+use Psr\Log\LogLevel;
+use Monolog\LogRecord;
 /**
  * Injects Git branch and Git commit SHA in all records
  *

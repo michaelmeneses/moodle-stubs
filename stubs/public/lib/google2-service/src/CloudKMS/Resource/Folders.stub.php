@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudKMS\Resource;
 
+use Google\Service\CloudKMS\AutokeyConfig;
+use Google\Service\CloudKMS\KeyAccessJustificationsPolicyConfig;
 /**
  * The "folders" collection of methods.
  * Typical usage is:

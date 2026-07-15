@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\AddMessageRequest;
+use Google\Service\Walletobjects\GenericObject as GenericObjectModel;
+use Google\Service\Walletobjects\GenericObjectAddMessageResponse;
+use Google\Service\Walletobjects\GenericObjectListResponse;
 /**
  * The "genericobject" collection of methods.
  * Typical usage is:

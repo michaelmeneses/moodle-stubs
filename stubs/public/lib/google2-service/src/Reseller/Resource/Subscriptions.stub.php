@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Reseller\Resource;
 
+use Google\Service\Reseller\ChangePlanRequest;
+use Google\Service\Reseller\RenewalSettings;
+use Google\Service\Reseller\Seats;
+use Google\Service\Reseller\Subscription;
+use Google\Service\Reseller\Subscriptions as SubscriptionsModel;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

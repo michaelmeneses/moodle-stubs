@@ -23,6 +23,8 @@
  */
 namespace Google\Service\PlayGrouping\Resource;
 
+use Google\Service\PlayGrouping\CreateOrUpdateTagsRequest;
+use Google\Service\PlayGrouping\CreateOrUpdateTagsResponse;
 /**
  * The "tags" collection of methods.
  * Typical usage is:

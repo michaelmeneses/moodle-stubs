@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\Filter;
+use Google\Service\Gmail\ListFiltersResponse;
 /**
  * The "filters" collection of methods.
  * Typical usage is:

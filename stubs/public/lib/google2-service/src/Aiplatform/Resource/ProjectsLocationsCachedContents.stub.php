@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CachedContent;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListCachedContentsResponse;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "cachedContents" collection of methods.
  * Typical usage is:

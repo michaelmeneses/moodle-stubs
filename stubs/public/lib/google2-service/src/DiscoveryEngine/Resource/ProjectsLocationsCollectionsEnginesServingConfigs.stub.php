@@ -23,6 +23,15 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListServingConfigsResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RecommendRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RecommendResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ServingConfig;
+use Google\Service\DiscoveryEngine\GoogleProtobufEmpty;
 /**
  * The "servingConfigs" collection of methods.
  * Typical usage is:

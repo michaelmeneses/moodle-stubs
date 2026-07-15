@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\output;
 
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\helpers\roles;
+use moodle_url;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * Renderable for the instance notification updated message
  *

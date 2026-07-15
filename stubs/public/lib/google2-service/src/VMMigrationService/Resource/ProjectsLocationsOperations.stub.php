@@ -23,6 +23,10 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\CancelOperationRequest;
+use Google\Service\VMMigrationService\ListOperationsResponse;
+use Google\Service\VMMigrationService\Operation;
+use Google\Service\VMMigrationService\VmmigrationEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

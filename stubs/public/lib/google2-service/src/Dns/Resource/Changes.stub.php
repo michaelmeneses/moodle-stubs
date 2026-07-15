@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dns\Resource;
 
+use Google\Service\Dns\Change;
+use Google\Service\Dns\ChangesListResponse;
 /**
  * The "changes" collection of methods.
  * Typical usage is:

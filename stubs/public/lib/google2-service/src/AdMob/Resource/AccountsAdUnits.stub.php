@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AdMob\Resource;
 
+use Google\Service\AdMob\ListAdUnitsResponse;
 /**
  * The "adUnits" collection of methods.
  * Typical usage is:

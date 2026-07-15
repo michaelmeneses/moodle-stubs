@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudProfiler\Resource;
 
+use Google\Service\CloudProfiler\CreateProfileRequest;
+use Google\Service\CloudProfiler\ListProfilesResponse;
+use Google\Service\CloudProfiler\Profile;
 /**
  * The "profiles" collection of methods.
  * Typical usage is:

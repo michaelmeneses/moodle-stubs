@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\BatchDeletePurchaseOptionsRequest;
+use Google\Service\AndroidPublisher\BatchUpdatePurchaseOptionStatesRequest;
+use Google\Service\AndroidPublisher\BatchUpdatePurchaseOptionStatesResponse;
 /**
  * The "purchaseOptions" collection of methods.
  * Typical usage is:

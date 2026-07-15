@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1EffectiveSecurityHealthAnalyticsCustomModule;
+use Google\Service\SecurityCommandCenter\ListEffectiveSecurityHealthAnalyticsCustomModulesResponse;
 /**
  * The "effectiveCustomModules" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\CancelOperationRequest;
+use Google\Service\CloudBuild\CloudbuildEmpty;
+use Google\Service\CloudBuild\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

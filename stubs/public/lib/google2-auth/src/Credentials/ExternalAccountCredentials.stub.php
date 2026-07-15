@@ -23,6 +23,23 @@
  */
 namespace Google\Auth\Credentials;
 
+use Google\Auth\CredentialSource\AwsNativeSource;
+use Google\Auth\CredentialSource\ExecutableSource;
+use Google\Auth\CredentialSource\FileSource;
+use Google\Auth\CredentialSource\UrlSource;
+use Google\Auth\ExecutableHandler\ExecutableHandler;
+use Google\Auth\ExternalAccountCredentialSourceInterface;
+use Google\Auth\FetchAuthTokenInterface;
+use Google\Auth\GetQuotaProjectInterface;
+use Google\Auth\GetUniverseDomainInterface;
+use Google\Auth\HttpHandler\HttpClientCache;
+use Google\Auth\HttpHandler\HttpHandlerFactory;
+use Google\Auth\OAuth2;
+use Google\Auth\ProjectIdProviderInterface;
+use Google\Auth\UpdateMetadataInterface;
+use Google\Auth\UpdateMetadataTrait;
+use GuzzleHttp\Psr7\Request;
+use InvalidArgumentException;
 /**
  * **IMPORTANT**:
  * This class does not validate the credential configuration. A security

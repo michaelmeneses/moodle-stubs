@@ -23,6 +23,10 @@
  */
 namespace Google\Service\StorageBatchOperations\Resource;
 
+use Google\Service\StorageBatchOperations\CancelOperationRequest;
+use Google\Service\StorageBatchOperations\ListOperationsResponse;
+use Google\Service\StorageBatchOperations\Operation;
+use Google\Service\StorageBatchOperations\StoragebatchoperationsEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

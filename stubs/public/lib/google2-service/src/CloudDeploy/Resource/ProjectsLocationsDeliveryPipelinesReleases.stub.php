@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CloudDeploy\Resource;
 
+use Google\Service\CloudDeploy\AbandonReleaseRequest;
+use Google\Service\CloudDeploy\AbandonReleaseResponse;
+use Google\Service\CloudDeploy\ListReleasesResponse;
+use Google\Service\CloudDeploy\Operation;
+use Google\Service\CloudDeploy\Release;
 /**
  * The "releases" collection of methods.
  * Typical usage is:

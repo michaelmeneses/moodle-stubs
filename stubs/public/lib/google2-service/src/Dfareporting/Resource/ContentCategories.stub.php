@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\ContentCategoriesListResponse;
+use Google\Service\Dfareporting\ContentCategory;
 /**
  * The "contentCategories" collection of methods.
  * Typical usage is:

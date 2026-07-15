@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudMachineLearningEngine\Resource;
 
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListLocationsResponse;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\TargetingTemplate;
+use Google\Service\Dfareporting\TargetingTemplatesListResponse;
 /**
  * The "targetingTemplates" collection of methods.
  * Typical usage is:

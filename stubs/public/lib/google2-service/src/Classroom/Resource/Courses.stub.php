@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\ClassroomEmpty;
+use Google\Service\Classroom\Course;
+use Google\Service\Classroom\GradingPeriodSettings;
+use Google\Service\Classroom\ListCoursesResponse;
 /**
  * The "courses" collection of methods.
  * Typical usage is:

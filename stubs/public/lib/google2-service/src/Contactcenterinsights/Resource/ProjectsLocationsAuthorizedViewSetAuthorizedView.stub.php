@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsResponse;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryMetricsRequest;
+use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
 /**
  * The "authorizedView" collection of methods.
  * Typical usage is:

@@ -23,6 +23,12 @@
  */
 namespace Google\Service\AuthorizedBuyersMarketplace\Resource;
 
+use Google\Service\AuthorizedBuyersMarketplace\AddCreativeRequest;
+use Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal;
+use Google\Service\AuthorizedBuyersMarketplace\ListFinalizedDealsResponse;
+use Google\Service\AuthorizedBuyersMarketplace\PauseFinalizedDealRequest;
+use Google\Service\AuthorizedBuyersMarketplace\ResumeFinalizedDealRequest;
+use Google\Service\AuthorizedBuyersMarketplace\SetReadyToServeRequest;
 /**
  * The "finalizedDeals" collection of methods.
  * Typical usage is:

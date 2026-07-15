@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Doubleclicksearch\Resource;
 
+use Google\Service\Doubleclicksearch\SavedColumnList;
 /**
  * The "savedColumns" collection of methods.
  * Typical usage is:

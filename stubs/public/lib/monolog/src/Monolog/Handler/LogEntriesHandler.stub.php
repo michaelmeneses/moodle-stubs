@@ -16,6 +16,8 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\LogRecord;
 /**
  * @author Robert Kaufmann III <rok3@rok3.me>
  */

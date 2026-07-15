@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Appengine\Resource;
 
+use Google\Service\Appengine\ListAuthorizedDomainsResponse;
 /**
  * The "authorizedDomains" collection of methods.
  * Typical usage is:

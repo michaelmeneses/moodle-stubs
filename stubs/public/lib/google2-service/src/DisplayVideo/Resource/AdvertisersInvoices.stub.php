@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\ListInvoicesResponse;
+use Google\Service\DisplayVideo\LookupInvoiceCurrencyResponse;
 /**
  * The "invoices" collection of methods.
  * Typical usage is:

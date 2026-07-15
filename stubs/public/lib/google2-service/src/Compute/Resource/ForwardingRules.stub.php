@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\ForwardingRule;
+use Google\Service\Compute\ForwardingRuleAggregatedList;
+use Google\Service\Compute\ForwardingRuleList;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RegionSetLabelsRequest;
+use Google\Service\Compute\TargetReference;
 /**
  * The "forwardingRules" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListSpecialistPoolsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1SpecialistPool;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "specialistPools" collection of methods.
  * Typical usage is:

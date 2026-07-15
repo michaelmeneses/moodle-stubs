@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\Connector;
+use Google\Service\Connectors\ListConnectorsResponse;
 /**
  * The "connectors" collection of methods.
  * Typical usage is:

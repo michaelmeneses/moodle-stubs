@@ -23,6 +23,15 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2ActivateJobTriggerRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2CreateJobTriggerRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2DlpJob;
+use Google\Service\DLP\GooglePrivacyDlpV2HybridInspectJobTriggerRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2HybridInspectResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2JobTrigger;
+use Google\Service\DLP\GooglePrivacyDlpV2ListJobTriggersResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2UpdateJobTriggerRequest;
+use Google\Service\DLP\GoogleProtobufEmpty;
 /**
  * The "jobTriggers" collection of methods.
  * Typical usage is:

@@ -23,6 +23,18 @@
  */
 namespace Google\Service\Container\Resource;
 
+use Google\Service\Container\CompleteNodePoolUpgradeRequest;
+use Google\Service\Container\ContainerEmpty;
+use Google\Service\Container\CreateNodePoolRequest;
+use Google\Service\Container\ListNodePoolsResponse;
+use Google\Service\Container\NodePool;
+use Google\Service\Container\NodePoolUpgradeInfo;
+use Google\Service\Container\Operation;
+use Google\Service\Container\RollbackNodePoolUpgradeRequest;
+use Google\Service\Container\SetNodePoolAutoscalingRequest;
+use Google\Service\Container\SetNodePoolManagementRequest;
+use Google\Service\Container\SetNodePoolSizeRequest;
+use Google\Service\Container\UpdateNodePoolRequest;
 /**
  * The "nodePools" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AirQuality\Resource;
 
+use Google\Service\AirQuality\LookupCurrentConditionsRequest;
+use Google\Service\AirQuality\LookupCurrentConditionsResponse;
 /**
  * The "currentConditions" collection of methods.
  * Typical usage is:

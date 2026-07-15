@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\ListUptimeCheckIpsResponse;
 /**
  * The "uptimeCheckIps" collection of methods.
  * Typical usage is:

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\SecurityPolicyReference;
+use Google\Service\Compute\TargetInstance;
+use Google\Service\Compute\TargetInstanceAggregatedList;
+use Google\Service\Compute\TargetInstanceList;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "targetInstances" collection of methods.
  * Typical usage is:

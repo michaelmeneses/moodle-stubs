@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DatabaseMigrationService\Resource;
 
+use Google\Service\DatabaseMigrationService\CancelOperationRequest;
+use Google\Service\DatabaseMigrationService\DatamigrationEmpty;
+use Google\Service\DatabaseMigrationService\ListOperationsResponse;
+use Google\Service\DatabaseMigrationService\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

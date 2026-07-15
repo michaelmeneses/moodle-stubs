@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DeveloperConnect\Resource;
 
+use Google\Service\DeveloperConnect\AccountConnector;
+use Google\Service\DeveloperConnect\ListAccountConnectorsResponse;
+use Google\Service\DeveloperConnect\Operation;
 /**
  * The "accountConnectors" collection of methods.
  * Typical usage is:

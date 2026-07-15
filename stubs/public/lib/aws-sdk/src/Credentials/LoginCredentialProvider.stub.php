@@ -8,6 +8,11 @@
  */
 namespace Aws\Credentials;
 
+use Aws\Configuration\ConfigurationResolver;
+use Aws\Exception\CredentialsException;
+use Aws\Signin\SigninClient;
+use Aws\Signin\Exception\SigninException;
+use GuzzleHttp\Promise;
 /**
  * Credential provider for login using console credentials
  */

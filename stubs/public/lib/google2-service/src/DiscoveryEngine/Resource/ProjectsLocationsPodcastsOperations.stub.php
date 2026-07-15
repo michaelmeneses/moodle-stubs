@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

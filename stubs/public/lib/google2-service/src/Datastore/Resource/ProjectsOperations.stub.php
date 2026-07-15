@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Datastore\Resource;
 
+use Google\Service\Datastore\DatastoreEmpty;
+use Google\Service\Datastore\GoogleLongrunningListOperationsResponse;
+use Google\Service\Datastore\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

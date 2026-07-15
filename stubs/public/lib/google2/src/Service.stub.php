@@ -23,6 +23,8 @@
  */
 namespace Google;
 
+use Google\Http\Batch;
+use TypeError;
 class Service
 {
     public $batchPath;

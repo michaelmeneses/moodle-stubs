@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudResourceManager\Resource;
 
+use Google\Service\CloudResourceManager\Capability;
+use Google\Service\CloudResourceManager\Operation;
 /**
  * The "capabilities" collection of methods.
  * Typical usage is:

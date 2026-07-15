@@ -23,6 +23,21 @@
  */
 namespace Google\Service\DatabaseMigrationService\Resource;
 
+use Google\Service\DatabaseMigrationService\ApplyConversionWorkspaceRequest;
+use Google\Service\DatabaseMigrationService\CommitConversionWorkspaceRequest;
+use Google\Service\DatabaseMigrationService\ConversionWorkspace;
+use Google\Service\DatabaseMigrationService\ConvertConversionWorkspaceRequest;
+use Google\Service\DatabaseMigrationService\DescribeConversionWorkspaceRevisionsResponse;
+use Google\Service\DatabaseMigrationService\DescribeDatabaseEntitiesResponse;
+use Google\Service\DatabaseMigrationService\ListConversionWorkspacesResponse;
+use Google\Service\DatabaseMigrationService\Operation;
+use Google\Service\DatabaseMigrationService\Policy;
+use Google\Service\DatabaseMigrationService\RollbackConversionWorkspaceRequest;
+use Google\Service\DatabaseMigrationService\SearchBackgroundJobsResponse;
+use Google\Service\DatabaseMigrationService\SeedConversionWorkspaceRequest;
+use Google\Service\DatabaseMigrationService\SetIamPolicyRequest;
+use Google\Service\DatabaseMigrationService\TestIamPermissionsRequest;
+use Google\Service\DatabaseMigrationService\TestIamPermissionsResponse;
 /**
  * The "conversionWorkspaces" collection of methods.
  * Typical usage is:

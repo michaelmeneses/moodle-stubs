@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CertificateManager\Resource;
 
+use Google\Service\CertificateManager\DnsAuthorization;
+use Google\Service\CertificateManager\ListDnsAuthorizationsResponse;
+use Google\Service\CertificateManager\Operation;
 /**
  * The "dnsAuthorizations" collection of methods.
  * Typical usage is:

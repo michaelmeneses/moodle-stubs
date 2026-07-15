@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Playdeveloperreporting\Resource;
 
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1ExcessiveWakeupRateMetricSet;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryExcessiveWakeupRateMetricSetRequest;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryExcessiveWakeupRateMetricSetResponse;
 /**
  * The "excessivewakeuprate" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Kmsinventory\Resource;
 
+use Google\Service\Kmsinventory\GoogleCloudKmsInventoryV1ListCryptoKeysResponse;
 /**
  * The "cryptoKeys" collection of methods.
  * Typical usage is:

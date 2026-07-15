@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Drive\Resource;
 
+use Google\Service\Drive\TeamDrive;
+use Google\Service\Drive\TeamDriveList;
 /**
  * The "teamdrives" collection of methods.
  * Typical usage is:

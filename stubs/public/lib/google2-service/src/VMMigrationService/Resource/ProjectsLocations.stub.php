@@ -23,6 +23,8 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\ListLocationsResponse;
+use Google\Service\VMMigrationService\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

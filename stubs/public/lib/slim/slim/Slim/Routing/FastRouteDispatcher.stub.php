@@ -8,6 +8,7 @@
  */
 namespace Slim\Routing;
 
+use FastRoute\Dispatcher\GroupCountBased;
 class FastRouteDispatcher extends GroupCountBased
 {
     /**

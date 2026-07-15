@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListSavedQueriesResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "savedQueries" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ContainerAnalysis\Resource;
 
+use Google\Service\ContainerAnalysis\ListScanConfigsResponse;
+use Google\Service\ContainerAnalysis\ScanConfig;
 /**
  * The "scanConfigs" collection of methods.
  * Typical usage is:

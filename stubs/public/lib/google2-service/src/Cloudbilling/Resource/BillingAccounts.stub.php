@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Cloudbilling\Resource;
 
+use Google\Service\Cloudbilling\BillingAccount;
+use Google\Service\Cloudbilling\ListBillingAccountsResponse;
+use Google\Service\Cloudbilling\MoveBillingAccountRequest;
+use Google\Service\Cloudbilling\Policy;
+use Google\Service\Cloudbilling\SetIamPolicyRequest;
+use Google\Service\Cloudbilling\TestIamPermissionsRequest;
+use Google\Service\Cloudbilling\TestIamPermissionsResponse;
 /**
  * The "billingAccounts" collection of methods.
  * Typical usage is:

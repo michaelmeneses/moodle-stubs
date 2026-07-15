@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Testing\Resource;
 
+use Google\Service\Testing\CancelTestMatrixResponse;
+use Google\Service\Testing\TestMatrix;
 /**
  * The "testMatrices" collection of methods.
  * Typical usage is:

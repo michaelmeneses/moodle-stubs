@@ -23,6 +23,8 @@
  */
 namespace Google\Service\BeyondCorp\Resource;
 
+use Google\Service\BeyondCorp\GoogleIamV1Policy;
+use Google\Service\BeyondCorp\GoogleIamV1SetIamPolicyRequest;
 /**
  * The "securityGateways" collection of methods.
  * Typical usage is:

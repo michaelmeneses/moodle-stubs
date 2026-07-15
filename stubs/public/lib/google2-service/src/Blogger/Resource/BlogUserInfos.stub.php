@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Blogger\Resource;
 
+use Google\Service\Blogger\BlogUserInfo;
 /**
  * The "blogUserInfos" collection of methods.
  * Typical usage is:

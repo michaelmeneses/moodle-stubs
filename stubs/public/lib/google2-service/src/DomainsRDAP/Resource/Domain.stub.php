@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DomainsRDAP\Resource;
 
+use Google\Service\DomainsRDAP\HttpBody;
 /**
  * The "domain" collection of methods.
  * Typical usage is:

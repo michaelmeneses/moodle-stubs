@@ -23,6 +23,16 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BatchDeleteTestCasesRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BatchRunTestCasesRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3CalculateCoverageResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportTestCasesRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportTestCasesRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListTestCasesResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RunTestCaseRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TestCase;
+use Google\Service\Dialogflow\GoogleLongrunningOperation;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "testCases" collection of methods.
  * Typical usage is:

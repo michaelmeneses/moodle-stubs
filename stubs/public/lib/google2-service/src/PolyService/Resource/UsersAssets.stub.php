@@ -23,6 +23,7 @@
  */
 namespace Google\Service\PolyService\Resource;
 
+use Google\Service\PolyService\ListUserAssetsResponse;
 /**
  * The "assets" collection of methods.
  * Typical usage is:

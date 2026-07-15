@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_message\external;
 
+use context_system;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_value;
 /**
  * Webservice to enable or disable the default notification.
  *

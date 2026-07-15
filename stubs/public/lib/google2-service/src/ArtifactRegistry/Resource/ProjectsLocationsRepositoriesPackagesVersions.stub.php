@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\BatchDeleteVersionsRequest;
+use Google\Service\ArtifactRegistry\ListVersionsResponse;
+use Google\Service\ArtifactRegistry\Operation;
+use Google\Service\ArtifactRegistry\Version;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

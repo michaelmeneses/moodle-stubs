@@ -23,6 +23,20 @@
  */
 namespace Google\Service\Dataform\Resource;
 
+use Google\Service\Dataform\CommitRepositoryChangesRequest;
+use Google\Service\Dataform\CommitRepositoryChangesResponse;
+use Google\Service\Dataform\ComputeRepositoryAccessTokenStatusResponse;
+use Google\Service\Dataform\DataformEmpty;
+use Google\Service\Dataform\FetchRemoteBranchesResponse;
+use Google\Service\Dataform\FetchRepositoryHistoryResponse;
+use Google\Service\Dataform\ListRepositoriesResponse;
+use Google\Service\Dataform\Policy;
+use Google\Service\Dataform\QueryRepositoryDirectoryContentsResponse;
+use Google\Service\Dataform\ReadRepositoryFileResponse;
+use Google\Service\Dataform\Repository;
+use Google\Service\Dataform\SetIamPolicyRequest;
+use Google\Service\Dataform\TestIamPermissionsRequest;
+use Google\Service\Dataform\TestIamPermissionsResponse;
 /**
  * The "repositories" collection of methods.
  * Typical usage is:

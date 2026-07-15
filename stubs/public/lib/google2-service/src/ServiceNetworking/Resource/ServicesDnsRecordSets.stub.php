@@ -23,6 +23,12 @@
  */
 namespace Google\Service\ServiceNetworking\Resource;
 
+use Google\Service\ServiceNetworking\AddDnsRecordSetRequest;
+use Google\Service\ServiceNetworking\DnsRecordSet;
+use Google\Service\ServiceNetworking\ListDnsRecordSetsResponse;
+use Google\Service\ServiceNetworking\Operation;
+use Google\Service\ServiceNetworking\RemoveDnsRecordSetRequest;
+use Google\Service\ServiceNetworking\UpdateDnsRecordSetRequest;
 /**
  * The "dnsRecordSets" collection of methods.
  * Typical usage is:

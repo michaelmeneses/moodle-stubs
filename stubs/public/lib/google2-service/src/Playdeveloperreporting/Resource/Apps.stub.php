@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Playdeveloperreporting\Resource;
 
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1ReleaseFilterOptions;
+use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1SearchAccessibleAppsResponse;
 /**
  * The "apps" collection of methods.
  * Typical usage is:

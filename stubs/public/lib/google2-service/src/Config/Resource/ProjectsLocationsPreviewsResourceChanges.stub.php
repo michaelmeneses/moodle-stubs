@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Config\Resource;
 
+use Google\Service\Config\ListResourceChangesResponse;
+use Google\Service\Config\ResourceChange;
 /**
  * The "resourceChanges" collection of methods.
  * Typical usage is:

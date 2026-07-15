@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Document\Resource;
 
+use Google\Service\Document\GoogleCloudDocumentaiV1FetchProcessorTypesResponse;
+use Google\Service\Document\GoogleCloudLocationListLocationsResponse;
+use Google\Service\Document\GoogleCloudLocationLocation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

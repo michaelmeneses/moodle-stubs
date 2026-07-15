@@ -23,6 +23,12 @@
  */
 namespace Google\Service\FirebaseManagement\Resource;
 
+use Google\Service\FirebaseManagement\AndroidApp;
+use Google\Service\FirebaseManagement\AndroidAppConfig;
+use Google\Service\FirebaseManagement\ListAndroidAppsResponse;
+use Google\Service\FirebaseManagement\Operation;
+use Google\Service\FirebaseManagement\RemoveAndroidAppRequest;
+use Google\Service\FirebaseManagement\UndeleteAndroidAppRequest;
 /**
  * The "androidApps" collection of methods.
  * Typical usage is:

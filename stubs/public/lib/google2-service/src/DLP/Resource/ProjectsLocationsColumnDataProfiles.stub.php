@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2ColumnDataProfile;
+use Google\Service\DLP\GooglePrivacyDlpV2ListColumnDataProfilesResponse;
 /**
  * The "columnDataProfiles" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponse;
 /**
  * The "completionConfig" collection of methods.
  * Typical usage is:

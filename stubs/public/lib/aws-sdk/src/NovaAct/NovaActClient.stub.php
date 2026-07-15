@@ -8,6 +8,7 @@
  */
 namespace Aws\NovaAct;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Nova Act Service** service.
  * @method \Aws\Result createAct(array $args = [])

@@ -8,6 +8,13 @@
  */
 namespace Aws\S3\S3Transfer\Models;
 
+use Aws\S3\S3ClientInterface;
+use Aws\S3\S3Transfer\Exception\S3TransferException;
+use Aws\S3\S3Transfer\Progress\AbstractTransferListener;
+use Aws\S3\S3Transfer\S3TransferManager;
+use Aws\S3\S3Transfer\Utils\AbstractDownloadHandler;
+use Aws\S3\S3Transfer\Utils\FileDownloadHandler;
+use Aws\S3\S3Transfer\Utils\StreamDownloadHandler;
 final class DownloadRequest extends AbstractTransferRequest
 {
     public static array $configKeys = ['response_checksum_validation' => 'string', 'multipart_download_type' => 'string', 'track_progress' => 'bool', 'target_part_size_bytes' => 'int'];

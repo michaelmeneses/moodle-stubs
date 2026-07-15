@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\ListOperationsResponse;
+use Google\Service\SecurityCommandCenter\Operation;
+use Google\Service\SecurityCommandCenter\SecuritycenterEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

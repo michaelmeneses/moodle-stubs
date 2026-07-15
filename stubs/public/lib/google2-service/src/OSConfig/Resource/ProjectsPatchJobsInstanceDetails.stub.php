@@ -23,6 +23,7 @@
  */
 namespace Google\Service\OSConfig\Resource;
 
+use Google\Service\OSConfig\ListPatchJobInstanceDetailsResponse;
 /**
  * The "instanceDetails" collection of methods.
  * Typical usage is:

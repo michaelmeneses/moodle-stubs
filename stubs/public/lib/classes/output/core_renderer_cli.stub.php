@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core_text;
+use core\check\result as check_result;
 /**
  * A renderer that generates output for command-line scripts.
  *

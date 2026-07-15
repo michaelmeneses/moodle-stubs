@@ -23,6 +23,13 @@
  */
 namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource;
 
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Backup;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ListBackupsResponse;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Operation;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Policy;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\SetIamPolicyRequest;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\TestIamPermissionsRequest;
+use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\TestIamPermissionsResponse;
 /**
  * The "backups" collection of methods.
  * Typical usage is:

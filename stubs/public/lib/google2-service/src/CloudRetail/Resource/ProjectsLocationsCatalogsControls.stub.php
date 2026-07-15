@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudRetail\Resource;
 
+use Google\Service\CloudRetail\GoogleCloudRetailV2Control;
+use Google\Service\CloudRetail\GoogleCloudRetailV2ListControlsResponse;
+use Google\Service\CloudRetail\GoogleProtobufEmpty;
 /**
  * The "controls" collection of methods.
  * Typical usage is:

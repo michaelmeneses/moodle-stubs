@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ServerlessVPCAccess\Resource;
 
+use Google\Service\ServerlessVPCAccess\ListOperationsResponse;
+use Google\Service\ServerlessVPCAccess\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

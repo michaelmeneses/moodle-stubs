@@ -23,6 +23,8 @@
  */
 namespace Google\Service\SA360\Resource;
 
+use Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360Request;
+use Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360Response;
 /**
  * The "searchAds360" collection of methods.
  * Typical usage is:

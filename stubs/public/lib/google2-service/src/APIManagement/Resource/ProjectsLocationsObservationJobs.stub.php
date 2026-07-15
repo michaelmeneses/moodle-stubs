@@ -23,6 +23,11 @@
  */
 namespace Google\Service\APIManagement\Resource;
 
+use Google\Service\APIManagement\DisableObservationJobRequest;
+use Google\Service\APIManagement\EnableObservationJobRequest;
+use Google\Service\APIManagement\ListObservationJobsResponse;
+use Google\Service\APIManagement\ObservationJob;
+use Google\Service\APIManagement\Operation;
 /**
  * The "observationJobs" collection of methods.
  * Typical usage is:

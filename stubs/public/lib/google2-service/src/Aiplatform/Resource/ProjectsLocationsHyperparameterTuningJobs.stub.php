@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CancelHyperparameterTuningJobRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1HyperparameterTuningJob;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListHyperparameterTuningJobsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "hyperparameterTuningJobs" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\UserPhoto;
 /**
  * The "photos" collection of methods.
  * Typical usage is:

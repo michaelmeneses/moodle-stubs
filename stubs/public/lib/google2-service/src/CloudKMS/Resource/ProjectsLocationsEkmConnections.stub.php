@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudKMS\Resource;
 
+use Google\Service\CloudKMS\EkmConnection;
+use Google\Service\CloudKMS\ListEkmConnectionsResponse;
+use Google\Service\CloudKMS\Policy;
+use Google\Service\CloudKMS\SetIamPolicyRequest;
+use Google\Service\CloudKMS\TestIamPermissionsRequest;
+use Google\Service\CloudKMS\TestIamPermissionsResponse;
+use Google\Service\CloudKMS\VerifyConnectivityResponse;
 /**
  * The "ekmConnections" collection of methods.
  * Typical usage is:

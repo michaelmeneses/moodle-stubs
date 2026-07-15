@@ -23,6 +23,9 @@
  */
 namespace Google\Service\FirebaseML\Resource;
 
+use Google\Service\FirebaseML\CancelOperationRequest;
+use Google\Service\FirebaseML\FirebasemlEmpty;
+use Google\Service\FirebaseML\ListOperationsResponse;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

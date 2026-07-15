@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\local\statistics;
 
+use core_question\local\bank\column_base;
+use core_question\statistics\questions\all_calculated_for_qubaid_condition;
+use core_component;
 /**
  * Helper to efficiently load all the statistics for a set of questions.
  *

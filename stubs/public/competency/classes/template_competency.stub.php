@@ -29,6 +29,7 @@
  */
 namespace core_competency;
 
+use stdClass;
 /**
  * Class for loading/storing template_competencies from the DB.
  *

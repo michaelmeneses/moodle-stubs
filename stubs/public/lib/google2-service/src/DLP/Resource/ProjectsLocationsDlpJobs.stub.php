@@ -23,6 +23,14 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2CancelDlpJobRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2CreateDlpJobRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2DlpJob;
+use Google\Service\DLP\GooglePrivacyDlpV2FinishDlpJobRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2HybridInspectDlpJobRequest;
+use Google\Service\DLP\GooglePrivacyDlpV2HybridInspectResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2ListDlpJobsResponse;
+use Google\Service\DLP\GoogleProtobufEmpty;
 /**
  * The "dlpJobs" collection of methods.
  * Typical usage is:

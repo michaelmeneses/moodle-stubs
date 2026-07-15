@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\ConvertRegionPricesRequest;
+use Google\Service\AndroidPublisher\ConvertRegionPricesResponse;
 /**
  * The "monetization" collection of methods.
  * Typical usage is:

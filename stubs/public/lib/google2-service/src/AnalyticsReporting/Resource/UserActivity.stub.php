@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AnalyticsReporting\Resource;
 
+use Google\Service\AnalyticsReporting\SearchUserActivityRequest;
+use Google\Service\AnalyticsReporting\SearchUserActivityResponse;
 /**
  * The "userActivity" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Merchant\Resource;
 
+use Google\Service\Merchant\SearchRequest;
+use Google\Service\Merchant\SearchResponse;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

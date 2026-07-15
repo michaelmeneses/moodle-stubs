@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Storage\Resource;
 
+use Google\Service\Storage\ServiceAccount;
 /**
  * The "serviceAccount" collection of methods.
  * Typical usage is:

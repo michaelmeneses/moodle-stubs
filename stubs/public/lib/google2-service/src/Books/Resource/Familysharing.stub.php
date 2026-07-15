@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\BooksEmpty;
+use Google\Service\Books\FamilyInfo;
 /**
  * The "familysharing" collection of methods.
  * Typical usage is:

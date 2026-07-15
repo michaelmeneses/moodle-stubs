@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\output;
 
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * The activity dates renderable class.
  *

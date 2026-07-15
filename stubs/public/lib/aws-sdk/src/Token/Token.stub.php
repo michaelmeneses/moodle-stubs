@@ -8,6 +8,7 @@
  */
 namespace Aws\Token;
 
+use Aws\Identity\BearerTokenIdentity;
 /**
  * Basic implementation of the AWS Token interface that allows callers to
  * pass in an AWS token in the constructor.

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\WorkloadManager\Resource;
 
+use Google\Service\WorkloadManager\Execution;
+use Google\Service\WorkloadManager\ListExecutionsResponse;
+use Google\Service\WorkloadManager\Operation;
+use Google\Service\WorkloadManager\RunEvaluationRequest;
 /**
  * The "executions" collection of methods.
  * Typical usage is:

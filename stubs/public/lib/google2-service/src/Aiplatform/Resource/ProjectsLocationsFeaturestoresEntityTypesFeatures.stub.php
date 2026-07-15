@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateFeaturesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Feature;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListFeaturesResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "features" collection of methods.
  * Typical usage is:

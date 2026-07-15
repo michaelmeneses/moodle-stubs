@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\EntityUserLink;
+use Google\Service\Analytics\EntityUserLinks;
 /**
  * The "accountUserLinks" collection of methods.
  * Typical usage is:

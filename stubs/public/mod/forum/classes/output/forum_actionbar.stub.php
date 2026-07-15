@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_forum\output;
 
+use renderable;
+use renderer_base;
+use templatable;
+use moodle_url;
+use help_icon;
+use mod_forum\local\entities\forum as forum_entity;
 /**
  * Render activity page for tertiary nav
  *

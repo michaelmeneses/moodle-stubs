@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\ProductStatus;
+use Google\Service\ShoppingContent\ProductstatusesCustomBatchRequest;
+use Google\Service\ShoppingContent\ProductstatusesCustomBatchResponse;
+use Google\Service\ShoppingContent\ProductstatusesListResponse;
 /**
  * The "productstatuses" collection of methods.
  * Typical usage is:

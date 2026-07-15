@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\BulkListAdGroupAssignedTargetingOptionsResponse;
+use Google\Service\DisplayVideo\ListYoutubeAdGroupsResponse;
+use Google\Service\DisplayVideo\YoutubeAdGroup;
 /**
  * The "youtubeAdGroups" collection of methods.
  * Typical usage is:

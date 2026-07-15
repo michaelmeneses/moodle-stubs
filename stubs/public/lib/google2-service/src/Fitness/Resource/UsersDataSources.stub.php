@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Fitness\Resource;
 
+use Google\Service\Fitness\DataSource;
+use Google\Service\Fitness\ListDataSourcesResponse;
 /**
  * The "dataSources" collection of methods.
  * Typical usage is:

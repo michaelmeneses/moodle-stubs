@@ -23,6 +23,13 @@
  */
 namespace Google\Service\ApigeeRegistry\Resource;
 
+use Google\Service\ApigeeRegistry\Api;
+use Google\Service\ApigeeRegistry\ApigeeregistryEmpty;
+use Google\Service\ApigeeRegistry\ListApisResponse;
+use Google\Service\ApigeeRegistry\Policy;
+use Google\Service\ApigeeRegistry\SetIamPolicyRequest;
+use Google\Service\ApigeeRegistry\TestIamPermissionsRequest;
+use Google\Service\ApigeeRegistry\TestIamPermissionsResponse;
 /**
  * The "apis" collection of methods.
  * Typical usage is:

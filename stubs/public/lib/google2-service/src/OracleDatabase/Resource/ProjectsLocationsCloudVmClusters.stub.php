@@ -23,6 +23,9 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\CloudVmCluster;
+use Google\Service\OracleDatabase\ListCloudVmClustersResponse;
+use Google\Service\OracleDatabase\Operation;
 /**
  * The "cloudVmClusters" collection of methods.
  * Typical usage is:

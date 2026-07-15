@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Docs\Resource;
 
+use Google\Service\Docs\BatchUpdateDocumentRequest;
+use Google\Service\Docs\BatchUpdateDocumentResponse;
+use Google\Service\Docs\Document;
 /**
  * The "documents" collection of methods.
  * Typical usage is:

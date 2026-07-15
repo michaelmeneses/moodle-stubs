@@ -8,6 +8,8 @@
  */
 namespace Sabberworm\CSS\Comment;
 
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Renderable;
 class Comment implements Renderable
 {
     /**

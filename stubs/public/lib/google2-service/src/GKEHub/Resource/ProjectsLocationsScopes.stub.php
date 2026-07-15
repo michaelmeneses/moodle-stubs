@@ -23,6 +23,15 @@
  */
 namespace Google\Service\GKEHub\Resource;
 
+use Google\Service\GKEHub\ListBoundMembershipsResponse;
+use Google\Service\GKEHub\ListPermittedScopesResponse;
+use Google\Service\GKEHub\ListScopesResponse;
+use Google\Service\GKEHub\Operation;
+use Google\Service\GKEHub\Policy;
+use Google\Service\GKEHub\Scope;
+use Google\Service\GKEHub\SetIamPolicyRequest;
+use Google\Service\GKEHub\TestIamPermissionsRequest;
+use Google\Service\GKEHub\TestIamPermissionsResponse;
 /**
  * The "scopes" collection of methods.
  * Typical usage is:

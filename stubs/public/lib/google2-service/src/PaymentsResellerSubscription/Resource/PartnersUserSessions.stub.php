@@ -23,6 +23,8 @@
  */
 namespace Google\Service\PaymentsResellerSubscription\Resource;
 
+use Google\Service\PaymentsResellerSubscription\GenerateUserSessionRequest;
+use Google\Service\PaymentsResellerSubscription\GenerateUserSessionResponse;
 /**
  * The "userSessions" collection of methods.
  * Typical usage is:

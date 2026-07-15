@@ -23,6 +23,19 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CopyModelRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportModelRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelVersionCheckpointsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelVersionsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1MergeVersionAliasesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Model;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1UpdateExplanationDatasetRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadModelRequest;
+use Google\Service\Aiplatform\GoogleIamV1Policy;
+use Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Aiplatform\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "models" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ChromePolicy\Resource;
 
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UploadPolicyFileRequest;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UploadPolicyFileResponse;
 /**
  * The "media" collection of methods.
  * Typical usage is:

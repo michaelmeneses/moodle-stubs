@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GoogleAnalyticsAdmin\Resource;
 
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaIosAppDataStream;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListIosAppDataStreamsResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
 /**
  * The "iosAppDataStreams" collection of methods.
  * Typical usage is:

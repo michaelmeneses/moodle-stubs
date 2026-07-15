@@ -23,6 +23,11 @@
  */
 namespace Google\Service\RecaptchaEnterprise\Resource;
 
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FirewallPolicy;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListFirewallPoliciesResponse;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ReorderFirewallPoliciesRequest;
+use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ReorderFirewallPoliciesResponse;
+use Google\Service\RecaptchaEnterprise\GoogleProtobufEmpty;
 /**
  * The "firewallpolicies" collection of methods.
  * Typical usage is:

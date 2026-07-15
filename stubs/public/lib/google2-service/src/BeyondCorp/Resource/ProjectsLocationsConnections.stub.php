@@ -23,6 +23,14 @@
  */
 namespace Google\Service\BeyondCorp\Resource;
 
+use Google\Service\BeyondCorp\Connection;
+use Google\Service\BeyondCorp\GoogleIamV1Policy;
+use Google\Service\BeyondCorp\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\BeyondCorp\GoogleLongrunningOperation;
+use Google\Service\BeyondCorp\ListConnectionsResponse;
+use Google\Service\BeyondCorp\ResolveConnectionsResponse;
 /**
  * The "connections" collection of methods.
  * Typical usage is:

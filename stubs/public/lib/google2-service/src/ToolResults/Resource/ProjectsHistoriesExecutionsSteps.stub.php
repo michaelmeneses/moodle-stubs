@@ -23,6 +23,11 @@
  */
 namespace Google\Service\ToolResults\Resource;
 
+use Google\Service\ToolResults\ListStepAccessibilityClustersResponse;
+use Google\Service\ToolResults\ListStepsResponse;
+use Google\Service\ToolResults\PerfMetricsSummary;
+use Google\Service\ToolResults\PublishXunitXmlFilesRequest;
+use Google\Service\ToolResults\Step;
 /**
  * The "steps" collection of methods.
  * Typical usage is:

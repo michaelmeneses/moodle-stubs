@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\ReturnPolicy as ReturnPolicyModel;
+use Google\Service\ShoppingContent\ReturnpolicyCustomBatchRequest;
+use Google\Service\ShoppingContent\ReturnpolicyCustomBatchResponse;
+use Google\Service\ShoppingContent\ReturnpolicyListResponse;
 /**
  * The "returnpolicy" collection of methods.
  * Typical usage is:

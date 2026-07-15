@@ -23,6 +23,15 @@
  */
 namespace Google\Service\CertificateAuthorityService\Resource;
 
+use Google\Service\CertificateAuthorityService\CaPool;
+use Google\Service\CertificateAuthorityService\FetchCaCertsRequest;
+use Google\Service\CertificateAuthorityService\FetchCaCertsResponse;
+use Google\Service\CertificateAuthorityService\ListCaPoolsResponse;
+use Google\Service\CertificateAuthorityService\Operation;
+use Google\Service\CertificateAuthorityService\Policy;
+use Google\Service\CertificateAuthorityService\SetIamPolicyRequest;
+use Google\Service\CertificateAuthorityService\TestIamPermissionsRequest;
+use Google\Service\CertificateAuthorityService\TestIamPermissionsResponse;
 /**
  * The "caPools" collection of methods.
  * Typical usage is:

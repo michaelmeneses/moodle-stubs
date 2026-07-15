@@ -23,6 +23,9 @@
  */
 namespace Google\Service\YouTubeAnalytics\Resource;
 
+use Google\Service\YouTubeAnalytics\EmptyResponse;
+use Google\Service\YouTubeAnalytics\Group;
+use Google\Service\YouTubeAnalytics\ListGroupsResponse;
 /**
  * The "groups" collection of methods.
  * Typical usage is:

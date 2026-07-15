@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\Issuer as IssuerModel;
+use Google\Service\Walletobjects\IssuerListResponse;
 /**
  * The "issuer" collection of methods.
  * Typical usage is:

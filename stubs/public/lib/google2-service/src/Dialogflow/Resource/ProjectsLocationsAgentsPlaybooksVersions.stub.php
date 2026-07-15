@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListPlaybookVersionsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookVersion;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestorePlaybookVersionRequest;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestorePlaybookVersionResponse;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\ListRelationsResponse;
+use Google\Service\MigrationCenterAPI\Relation;
 /**
  * The "relations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\BeyondCorp\Resource;
 
+use Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1Application;
+use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\BeyondCorp\GoogleLongrunningOperation;
 /**
  * The "applications" collection of methods.
  * Typical usage is:

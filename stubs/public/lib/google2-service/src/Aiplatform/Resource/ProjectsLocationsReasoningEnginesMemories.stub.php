@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateMemoriesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMemoriesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Memory;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1PurgeMemoriesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveMemoriesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveMemoriesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1RollbackMemoryRequest;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "memories" collection of methods.
  * Typical usage is:

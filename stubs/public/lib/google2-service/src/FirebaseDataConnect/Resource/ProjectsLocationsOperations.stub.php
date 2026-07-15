@@ -23,6 +23,10 @@
  */
 namespace Google\Service\FirebaseDataConnect\Resource;
 
+use Google\Service\FirebaseDataConnect\CancelOperationRequest;
+use Google\Service\FirebaseDataConnect\FirebasedataconnectEmpty;
+use Google\Service\FirebaseDataConnect\ListOperationsResponse;
+use Google\Service\FirebaseDataConnect\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

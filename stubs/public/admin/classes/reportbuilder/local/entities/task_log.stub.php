@@ -22,6 +22,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_admin\reportbuilder\local\entities;
 
+use core_reportbuilder\local\filters\date;
+use core_reportbuilder\local\filters\duration;
+use core_reportbuilder\local\filters\number;
+use core_reportbuilder\local\filters\select;
+use core_reportbuilder\local\filters\text;
+use core_reportbuilder\local\filters\autocomplete;
+use core_reportbuilder\local\helpers\format;
+use lang_string;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
+use stdClass;
+use core_collator;
 /**
  * Task log entity class implementation
  *

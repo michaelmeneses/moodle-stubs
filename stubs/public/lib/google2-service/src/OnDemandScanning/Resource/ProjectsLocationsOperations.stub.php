@@ -23,6 +23,9 @@
  */
 namespace Google\Service\OnDemandScanning\Resource;
 
+use Google\Service\OnDemandScanning\ListOperationsResponse;
+use Google\Service\OnDemandScanning\OndemandscanningEmpty;
+use Google\Service\OnDemandScanning\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

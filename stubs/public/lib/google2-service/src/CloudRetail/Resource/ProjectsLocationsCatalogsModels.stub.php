@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudRetail\Resource;
 
+use Google\Service\CloudRetail\GoogleCloudRetailV2ListModelsResponse;
+use Google\Service\CloudRetail\GoogleCloudRetailV2Model;
+use Google\Service\CloudRetail\GoogleCloudRetailV2PauseModelRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2ResumeModelRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2TuneModelRequest;
+use Google\Service\CloudRetail\GoogleLongrunningOperation;
+use Google\Service\CloudRetail\GoogleProtobufEmpty;
 /**
  * The "models" collection of methods.
  * Typical usage is:

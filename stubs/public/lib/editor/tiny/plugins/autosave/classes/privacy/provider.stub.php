@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tiny_autosave\privacy;
 
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\writer;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\approved_userlist;
+use stdClass;
 /**
  * Privacy Subsystem implementation for tiny_autosave.
  *

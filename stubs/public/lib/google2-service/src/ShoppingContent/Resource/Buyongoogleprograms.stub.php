@@ -23,6 +23,11 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\ActivateBuyOnGoogleProgramRequest;
+use Google\Service\ShoppingContent\BuyOnGoogleProgramStatus;
+use Google\Service\ShoppingContent\OnboardBuyOnGoogleProgramRequest;
+use Google\Service\ShoppingContent\PauseBuyOnGoogleProgramRequest;
+use Google\Service\ShoppingContent\RequestReviewBuyOnGoogleProgramRequest;
 /**
  * The "buyongoogleprograms" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AppHub\Resource;
 
+use Google\Service\AppHub\DiscoveredService;
+use Google\Service\AppHub\ListDiscoveredServicesResponse;
+use Google\Service\AppHub\LookupDiscoveredServiceResponse;
 /**
  * The "discoveredServices" collection of methods.
  * Typical usage is:

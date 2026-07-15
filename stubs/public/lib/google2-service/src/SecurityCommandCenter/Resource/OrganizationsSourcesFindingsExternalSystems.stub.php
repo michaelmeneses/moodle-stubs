@@ -23,6 +23,7 @@
  */
 namespace Google\Service\SecurityCommandCenter\Resource;
 
+use Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1ExternalSystem;
 /**
  * The "externalSystems" collection of methods.
  * Typical usage is:

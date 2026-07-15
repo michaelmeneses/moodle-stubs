@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Iam\Resource;
 
+use Google\Service\Iam\LintPolicyRequest;
+use Google\Service\Iam\LintPolicyResponse;
+use Google\Service\Iam\QueryAuditableServicesRequest;
+use Google\Service\Iam\QueryAuditableServicesResponse;
 /**
  * The "iamPolicies" collection of methods.
  * Typical usage is:

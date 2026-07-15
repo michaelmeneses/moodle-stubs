@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\ListTopicsResponse;
+use Google\Service\ManagedKafka\ManagedkafkaEmpty;
+use Google\Service\ManagedKafka\Topic;
 /**
  * The "topics" collection of methods.
  * Typical usage is:

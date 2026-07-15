@@ -23,6 +23,7 @@
  */
 namespace Google\Service\MyBusinessBusinessCalls\Resource;
 
+use Google\Service\MyBusinessBusinessCalls\BusinessCallsSettings;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

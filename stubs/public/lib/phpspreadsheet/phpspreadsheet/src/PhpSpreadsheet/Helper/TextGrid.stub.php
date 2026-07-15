@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Helper;
 
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
 class TextGrid
 {
     private bool $isCli;

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Ideahub\Resource;
 
+use Google\Service\Ideahub\GoogleSearchIdeahubV1betaListAvailableLocalesResponse;
 /**
  * The "locales" collection of methods.
  * Typical usage is:

@@ -23,6 +23,15 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\AcceptProposalRequest;
+use Google\Service\AdExchangeBuyerII\AddNoteRequest;
+use Google\Service\AdExchangeBuyerII\CancelNegotiationRequest;
+use Google\Service\AdExchangeBuyerII\CompleteSetupRequest;
+use Google\Service\AdExchangeBuyerII\ListProposalsResponse;
+use Google\Service\AdExchangeBuyerII\Note;
+use Google\Service\AdExchangeBuyerII\PauseProposalRequest;
+use Google\Service\AdExchangeBuyerII\Proposal;
+use Google\Service\AdExchangeBuyerII\ResumeProposalRequest;
 /**
  * The "proposals" collection of methods.
  * Typical usage is:

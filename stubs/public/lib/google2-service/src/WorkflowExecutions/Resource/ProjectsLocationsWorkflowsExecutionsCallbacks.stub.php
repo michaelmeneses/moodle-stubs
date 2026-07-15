@@ -23,6 +23,7 @@
  */
 namespace Google\Service\WorkflowExecutions\Resource;
 
+use Google\Service\WorkflowExecutions\ListCallbacksResponse;
 /**
  * The "callbacks" collection of methods.
  * Typical usage is:

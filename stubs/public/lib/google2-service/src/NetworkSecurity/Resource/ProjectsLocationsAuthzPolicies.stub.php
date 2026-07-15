@@ -23,6 +23,13 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\AuthzPolicy;
+use Google\Service\NetworkSecurity\GoogleIamV1Policy;
+use Google\Service\NetworkSecurity\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\NetworkSecurity\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\NetworkSecurity\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\NetworkSecurity\ListAuthzPoliciesResponse;
+use Google\Service\NetworkSecurity\Operation;
 /**
  * The "authzPolicies" collection of methods.
  * Typical usage is:

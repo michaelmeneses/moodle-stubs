@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Appengine\Resource;
 
+use Google\Service\Appengine\DebugInstanceRequest;
+use Google\Service\Appengine\Instance;
+use Google\Service\Appengine\ListInstancesResponse;
+use Google\Service\Appengine\Operation;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

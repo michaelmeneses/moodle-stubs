@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Libraryagent\Resource;
 
+use Google\Service\Libraryagent\GoogleExampleLibraryagentV1ListShelvesResponse;
+use Google\Service\Libraryagent\GoogleExampleLibraryagentV1Shelf;
 /**
  * The "shelves" collection of methods.
  * Typical usage is:

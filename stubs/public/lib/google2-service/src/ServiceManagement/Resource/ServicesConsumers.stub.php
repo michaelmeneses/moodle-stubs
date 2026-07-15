@@ -23,6 +23,11 @@
  */
 namespace Google\Service\ServiceManagement\Resource;
 
+use Google\Service\ServiceManagement\GetIamPolicyRequest;
+use Google\Service\ServiceManagement\Policy;
+use Google\Service\ServiceManagement\SetIamPolicyRequest;
+use Google\Service\ServiceManagement\TestIamPermissionsRequest;
+use Google\Service\ServiceManagement\TestIamPermissionsResponse;
 /**
  * The "consumers" collection of methods.
  * Typical usage is:

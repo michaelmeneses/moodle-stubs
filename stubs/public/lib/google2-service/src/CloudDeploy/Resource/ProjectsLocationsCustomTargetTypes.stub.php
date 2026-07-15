@@ -23,6 +23,11 @@
  */
 namespace Google\Service\CloudDeploy\Resource;
 
+use Google\Service\CloudDeploy\CustomTargetType;
+use Google\Service\CloudDeploy\ListCustomTargetTypesResponse;
+use Google\Service\CloudDeploy\Operation;
+use Google\Service\CloudDeploy\Policy;
+use Google\Service\CloudDeploy\SetIamPolicyRequest;
 /**
  * The "customTargetTypes" collection of methods.
  * Typical usage is:

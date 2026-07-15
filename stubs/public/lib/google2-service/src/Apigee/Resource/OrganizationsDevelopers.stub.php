@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1Attributes;
+use Google\Service\Apigee\GoogleCloudApigeeV1Developer;
+use Google\Service\Apigee\GoogleCloudApigeeV1DeveloperBalance;
+use Google\Service\Apigee\GoogleCloudApigeeV1DeveloperMonetizationConfig;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListOfDevelopersResponse;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "developers" collection of methods.
  * Typical usage is:

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_lti\reportbuilder\local\systemreports;
 
+use core\output\html_writer;
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\local\report\column;
+use mod_lti\reportbuilder\local\entities\tool_types;
+use core_reportbuilder\system_report;
 /**
  * Course external tools list system report class implementation.
  *

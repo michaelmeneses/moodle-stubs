@@ -23,6 +23,8 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\ListLocationsResponse;
+use Google\Service\NetAppFiles\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

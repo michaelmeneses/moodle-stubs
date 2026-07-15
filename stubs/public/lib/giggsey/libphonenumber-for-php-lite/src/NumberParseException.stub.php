@@ -8,6 +8,9 @@
  */
 namespace libphonenumber;
 
+use Exception;
+use Stringable;
+use Throwable;
 /**
  * Generic exception class for errors encountered when parsing phone numbers.
  */

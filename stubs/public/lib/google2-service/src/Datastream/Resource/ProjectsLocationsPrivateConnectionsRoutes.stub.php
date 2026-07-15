@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Datastream\Resource;
 
+use Google\Service\Datastream\ListRoutesResponse;
+use Google\Service\Datastream\Operation;
+use Google\Service\Datastream\Route;
 /**
  * The "routes" collection of methods.
  * Typical usage is:

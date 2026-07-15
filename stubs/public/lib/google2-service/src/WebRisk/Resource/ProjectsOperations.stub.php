@@ -23,6 +23,10 @@
  */
 namespace Google\Service\WebRisk\Resource;
 
+use Google\Service\WebRisk\GoogleLongrunningCancelOperationRequest;
+use Google\Service\WebRisk\GoogleLongrunningListOperationsResponse;
+use Google\Service\WebRisk\GoogleLongrunningOperation;
+use Google\Service\WebRisk\GoogleProtobufEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

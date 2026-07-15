@@ -23,6 +23,12 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\DownloadFileResponse;
+use Google\Service\ArtifactRegistry\GoogleDevtoolsArtifactregistryV1File;
+use Google\Service\ArtifactRegistry\ListFilesResponse;
+use Google\Service\ArtifactRegistry\Operation;
+use Google\Service\ArtifactRegistry\UploadFileMediaResponse;
+use Google\Service\ArtifactRegistry\UploadFileRequest;
 /**
  * The "files" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AbusiveExperienceReport\Resource;
 
+use Google\Service\AbusiveExperienceReport\ViolatingSitesResponse;
 /**
  * The "violatingSites" collection of methods.
  * Typical usage is:

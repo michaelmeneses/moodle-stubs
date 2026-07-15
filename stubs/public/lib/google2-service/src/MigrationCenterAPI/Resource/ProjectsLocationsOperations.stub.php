@@ -23,6 +23,10 @@
  */
 namespace Google\Service\MigrationCenterAPI\Resource;
 
+use Google\Service\MigrationCenterAPI\CancelOperationRequest;
+use Google\Service\MigrationCenterAPI\ListOperationsResponse;
+use Google\Service\MigrationCenterAPI\MigrationcenterEmpty;
+use Google\Service\MigrationCenterAPI\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

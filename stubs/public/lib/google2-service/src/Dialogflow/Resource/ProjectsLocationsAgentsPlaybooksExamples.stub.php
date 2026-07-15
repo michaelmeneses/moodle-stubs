@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Example;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListExamplesResponse;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "examples" collection of methods.
  * Typical usage is:

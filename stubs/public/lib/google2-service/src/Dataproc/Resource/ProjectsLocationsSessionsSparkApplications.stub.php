@@ -23,6 +23,27 @@
  */
 namespace Google\Service\Dataproc\Resource;
 
+use Google\Service\Dataproc\AccessSessionSparkApplicationEnvironmentInfoResponse;
+use Google\Service\Dataproc\AccessSessionSparkApplicationJobResponse;
+use Google\Service\Dataproc\AccessSessionSparkApplicationResponse;
+use Google\Service\Dataproc\AccessSessionSparkApplicationSqlQueryResponse;
+use Google\Service\Dataproc\AccessSessionSparkApplicationSqlSparkPlanGraphResponse;
+use Google\Service\Dataproc\AccessSessionSparkApplicationStageAttemptResponse;
+use Google\Service\Dataproc\AccessSessionSparkApplicationStageRddOperationGraphResponse;
+use Google\Service\Dataproc\SearchSessionSparkApplicationExecutorStageSummaryResponse;
+use Google\Service\Dataproc\SearchSessionSparkApplicationExecutorsResponse;
+use Google\Service\Dataproc\SearchSessionSparkApplicationJobsResponse;
+use Google\Service\Dataproc\SearchSessionSparkApplicationSqlQueriesResponse;
+use Google\Service\Dataproc\SearchSessionSparkApplicationStageAttemptTasksResponse;
+use Google\Service\Dataproc\SearchSessionSparkApplicationStageAttemptsResponse;
+use Google\Service\Dataproc\SearchSessionSparkApplicationStagesResponse;
+use Google\Service\Dataproc\SearchSessionSparkApplicationsResponse;
+use Google\Service\Dataproc\SummarizeSessionSparkApplicationExecutorsResponse;
+use Google\Service\Dataproc\SummarizeSessionSparkApplicationJobsResponse;
+use Google\Service\Dataproc\SummarizeSessionSparkApplicationStageAttemptTasksResponse;
+use Google\Service\Dataproc\SummarizeSessionSparkApplicationStagesResponse;
+use Google\Service\Dataproc\WriteSessionSparkApplicationContextRequest;
+use Google\Service\Dataproc\WriteSessionSparkApplicationContextResponse;
 /**
  * The "sparkApplications" collection of methods.
  * Typical usage is:

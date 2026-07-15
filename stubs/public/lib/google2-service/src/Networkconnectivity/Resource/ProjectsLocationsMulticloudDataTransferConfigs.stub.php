@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Networkconnectivity\Resource;
 
+use Google\Service\Networkconnectivity\GoogleLongrunningOperation;
+use Google\Service\Networkconnectivity\ListMulticloudDataTransferConfigsResponse;
+use Google\Service\Networkconnectivity\MulticloudDataTransferConfig;
 /**
  * The "multicloudDataTransferConfigs" collection of methods.
  * Typical usage is:

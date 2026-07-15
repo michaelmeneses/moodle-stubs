@@ -23,6 +23,8 @@
  */
 namespace Google\Service\MapsPlaces\Resource;
 
+use Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextRequest;
+use Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextResponse;
 /**
  * The "Text" collection of methods.
  * Typical usage is:

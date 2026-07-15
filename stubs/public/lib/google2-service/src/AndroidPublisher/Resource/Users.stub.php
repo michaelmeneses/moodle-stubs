@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\ListUsersResponse;
+use Google\Service\AndroidPublisher\User;
 /**
  * The "users" collection of methods.
  * Typical usage is:

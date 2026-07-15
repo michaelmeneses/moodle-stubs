@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\parameters;
 
+use core\param;
+use core\router\schema\parameters\mapped_property_parameter;
+use core\router\schema\referenced_object;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * A return URL parameter referenced in the query parameters.
  *

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\Alias;
+use Google\Service\Directory\Aliases;
 /**
  * The "aliases" collection of methods.
  * Typical usage is:

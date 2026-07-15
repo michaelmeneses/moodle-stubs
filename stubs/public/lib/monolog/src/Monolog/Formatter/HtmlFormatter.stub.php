@@ -16,6 +16,9 @@
  */
 namespace Monolog\Formatter;
 
+use Monolog\Level;
+use Monolog\Utils;
+use Monolog\LogRecord;
 /**
  * Formats incoming records into an HTML table
  *

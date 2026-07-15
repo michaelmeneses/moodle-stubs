@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudSearch\Resource;
 
+use Google\Service\CloudSearch\DataSource;
+use Google\Service\CloudSearch\ListDataSourceResponse;
+use Google\Service\CloudSearch\Operation;
+use Google\Service\CloudSearch\UpdateDataSourceRequest;
 /**
  * The "datasources" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Storagetransfer\Resource;
 
+use Google\Service\Storagetransfer\GoogleServiceAccount;
 /**
  * The "googleServiceAccounts" collection of methods.
  * Typical usage is:

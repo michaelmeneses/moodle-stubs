@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudBuild\Resource;
 
+use Google\Service\CloudBuild\ListBitbucketServerRepositoriesResponse;
 /**
  * The "repos" collection of methods.
  * Typical usage is:

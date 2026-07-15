@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\ListWasmPluginVersionsResponse;
+use Google\Service\NetworkServices\Operation;
+use Google\Service\NetworkServices\WasmPluginVersion;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

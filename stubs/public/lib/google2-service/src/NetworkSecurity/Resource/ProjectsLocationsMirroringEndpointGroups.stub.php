@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\ListMirroringEndpointGroupsResponse;
+use Google\Service\NetworkSecurity\MirroringEndpointGroup;
+use Google\Service\NetworkSecurity\Operation;
 /**
  * The "mirroringEndpointGroups" collection of methods.
  * Typical usage is:

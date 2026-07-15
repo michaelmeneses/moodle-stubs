@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories;
 
+use stdClass;
+use moodle_list;
 /**
  * Class representing a list of question categories.
  *

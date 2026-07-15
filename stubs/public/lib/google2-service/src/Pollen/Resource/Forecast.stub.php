@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Pollen\Resource;
 
+use Google\Service\Pollen\LookupForecastResponse;
 /**
  * The "forecast" collection of methods.
  * Typical usage is:

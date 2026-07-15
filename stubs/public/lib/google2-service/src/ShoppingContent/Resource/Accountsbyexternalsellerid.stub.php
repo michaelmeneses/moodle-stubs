@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\Account;
 /**
  * The "accountsbyexternalsellerid" collection of methods.
  * Typical usage is:

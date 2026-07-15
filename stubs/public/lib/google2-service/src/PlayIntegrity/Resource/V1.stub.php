@@ -23,6 +23,10 @@
  */
 namespace Google\Service\PlayIntegrity\Resource;
 
+use Google\Service\PlayIntegrity\DecodeIntegrityTokenRequest;
+use Google\Service\PlayIntegrity\DecodeIntegrityTokenResponse;
+use Google\Service\PlayIntegrity\DecodePcIntegrityTokenRequest;
+use Google\Service\PlayIntegrity\DecodePcIntegrityTokenResponse;
 /**
  * The "v1" collection of methods.
  * Typical usage is:

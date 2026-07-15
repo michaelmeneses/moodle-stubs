@@ -23,6 +23,12 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Document;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportDocumentsRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListDocumentsResponse;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeDocumentsRequest;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
+use Google\Service\DiscoveryEngine\GoogleProtobufEmpty;
 /**
  * The "documents" collection of methods.
  * Typical usage is:

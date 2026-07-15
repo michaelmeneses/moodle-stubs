@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\CheckoutSettings;
+use Google\Service\ShoppingContent\InsertCheckoutSettingsRequest;
 /**
  * The "checkoutsettings" collection of methods.
  * Typical usage is:

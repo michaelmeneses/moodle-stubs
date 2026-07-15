@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\GoogleCloudRunV2ListWorkerPoolsResponse;
+use Google\Service\CloudRun\GoogleCloudRunV2WorkerPool;
+use Google\Service\CloudRun\GoogleIamV1Policy;
+use Google\Service\CloudRun\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\CloudRun\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\CloudRun\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\CloudRun\GoogleLongrunningOperation;
 /**
  * The "workerPools" collection of methods.
  * Typical usage is:

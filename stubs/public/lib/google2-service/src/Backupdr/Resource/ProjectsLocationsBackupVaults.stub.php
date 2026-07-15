@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\BackupVault;
+use Google\Service\Backupdr\FetchUsableBackupVaultsResponse;
+use Google\Service\Backupdr\ListBackupVaultsResponse;
+use Google\Service\Backupdr\Operation;
+use Google\Service\Backupdr\TestIamPermissionsRequest;
+use Google\Service\Backupdr\TestIamPermissionsResponse;
 /**
  * The "backupVaults" collection of methods.
  * Typical usage is:

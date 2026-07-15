@@ -23,6 +23,15 @@
  */
 namespace Google\Service\AnalyticsHub\Resource;
 
+use Google\Service\AnalyticsHub\GetIamPolicyRequest;
+use Google\Service\AnalyticsHub\ListSubscriptionsResponse;
+use Google\Service\AnalyticsHub\Operation;
+use Google\Service\AnalyticsHub\Policy;
+use Google\Service\AnalyticsHub\RefreshSubscriptionRequest;
+use Google\Service\AnalyticsHub\RevokeSubscriptionRequest;
+use Google\Service\AnalyticsHub\RevokeSubscriptionResponse;
+use Google\Service\AnalyticsHub\SetIamPolicyRequest;
+use Google\Service\AnalyticsHub\Subscription;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

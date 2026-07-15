@@ -23,6 +23,17 @@
  */
 namespace Google\Service\BigQueryDataPolicyService\Resource;
 
+use Google\Service\BigQueryDataPolicyService\AddGranteesRequest;
+use Google\Service\BigQueryDataPolicyService\BigquerydatapolicyEmpty;
+use Google\Service\BigQueryDataPolicyService\CreateDataPolicyRequest;
+use Google\Service\BigQueryDataPolicyService\DataPolicy;
+use Google\Service\BigQueryDataPolicyService\GetIamPolicyRequest;
+use Google\Service\BigQueryDataPolicyService\ListDataPoliciesResponse;
+use Google\Service\BigQueryDataPolicyService\Policy;
+use Google\Service\BigQueryDataPolicyService\RemoveGranteesRequest;
+use Google\Service\BigQueryDataPolicyService\SetIamPolicyRequest;
+use Google\Service\BigQueryDataPolicyService\TestIamPermissionsRequest;
+use Google\Service\BigQueryDataPolicyService\TestIamPermissionsResponse;
 /**
  * The "dataPolicies" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1AppGroup;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListAppGroupsResponse;
 /**
  * The "appgroups" collection of methods.
  * Typical usage is:

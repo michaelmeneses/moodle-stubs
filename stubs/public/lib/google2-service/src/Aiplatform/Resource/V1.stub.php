@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateDatasetRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateInstancesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateInstancesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateInstanceRubricsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateInstanceRubricsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "v1" collection of methods.
  * Typical usage is:

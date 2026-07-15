@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Workflows\Resource;
 
+use Google\Service\Workflows\ListLocationsResponse;
+use Google\Service\Workflows\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

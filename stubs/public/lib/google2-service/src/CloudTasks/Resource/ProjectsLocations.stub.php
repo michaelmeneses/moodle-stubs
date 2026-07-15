@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudTasks\Resource;
 
+use Google\Service\CloudTasks\CmekConfig;
+use Google\Service\CloudTasks\ListLocationsResponse;
+use Google\Service\CloudTasks\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

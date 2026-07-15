@@ -8,6 +8,7 @@
  */
 namespace Aws\Batch;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Batch** service.
  * @method \Aws\Result cancelJob(array $args = [])

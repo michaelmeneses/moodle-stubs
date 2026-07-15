@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\Category;
+use Google\Service\Books\Volume2;
 /**
  * The "onboarding" collection of methods.
  * Typical usage is:

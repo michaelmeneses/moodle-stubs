@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\ConnectCluster;
+use Google\Service\ManagedKafka\ListConnectClustersResponse;
+use Google\Service\ManagedKafka\Operation;
 /**
  * The "connectClusters" collection of methods.
  * Typical usage is:

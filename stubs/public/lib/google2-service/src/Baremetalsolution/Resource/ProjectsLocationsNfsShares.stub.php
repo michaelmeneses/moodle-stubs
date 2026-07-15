@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\ListNfsSharesResponse;
+use Google\Service\Baremetalsolution\NfsShare;
+use Google\Service\Baremetalsolution\Operation;
+use Google\Service\Baremetalsolution\RenameNfsShareRequest;
 /**
  * The "nfsShares" collection of methods.
  * Typical usage is:

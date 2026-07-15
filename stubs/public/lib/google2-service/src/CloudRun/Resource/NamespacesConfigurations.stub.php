@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\Configuration;
+use Google\Service\CloudRun\ListConfigurationsResponse;
 /**
  * The "configurations" collection of methods.
  * Typical usage is:

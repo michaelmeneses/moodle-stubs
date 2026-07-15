@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\ExchangedPeeringRoutesList;
+use Google\Service\Compute\Network;
+use Google\Service\Compute\NetworkList;
+use Google\Service\Compute\NetworksAddPeeringRequest;
+use Google\Service\Compute\NetworksGetEffectiveFirewallsResponse;
+use Google\Service\Compute\NetworksRemovePeeringRequest;
+use Google\Service\Compute\NetworksRequestRemovePeeringRequest;
+use Google\Service\Compute\NetworksUpdatePeeringRequest;
+use Google\Service\Compute\Operation;
 /**
  * The "networks" collection of methods.
  * Typical usage is:

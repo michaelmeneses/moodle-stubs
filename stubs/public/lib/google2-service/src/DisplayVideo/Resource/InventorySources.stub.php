@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\EditInventorySourceReadWriteAccessorsRequest;
+use Google\Service\DisplayVideo\InventorySource;
+use Google\Service\DisplayVideo\InventorySourceAccessors;
+use Google\Service\DisplayVideo\ListInventorySourcesResponse;
 /**
  * The "inventorySources" collection of methods.
  * Typical usage is:

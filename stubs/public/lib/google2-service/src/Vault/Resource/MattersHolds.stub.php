@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Vault\Resource;
 
+use Google\Service\Vault\AddHeldAccountsRequest;
+use Google\Service\Vault\AddHeldAccountsResponse;
+use Google\Service\Vault\Hold;
+use Google\Service\Vault\ListHoldsResponse;
+use Google\Service\Vault\RemoveHeldAccountsRequest;
+use Google\Service\Vault\RemoveHeldAccountsResponse;
+use Google\Service\Vault\VaultEmpty;
 /**
  * The "holds" collection of methods.
  * Typical usage is:

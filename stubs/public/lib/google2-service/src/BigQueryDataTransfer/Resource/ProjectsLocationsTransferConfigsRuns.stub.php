@@ -23,6 +23,9 @@
  */
 namespace Google\Service\BigQueryDataTransfer\Resource;
 
+use Google\Service\BigQueryDataTransfer\BigquerydatatransferEmpty;
+use Google\Service\BigQueryDataTransfer\ListTransferRunsResponse;
+use Google\Service\BigQueryDataTransfer\TransferRun;
 /**
  * The "runs" collection of methods.
  * Typical usage is:

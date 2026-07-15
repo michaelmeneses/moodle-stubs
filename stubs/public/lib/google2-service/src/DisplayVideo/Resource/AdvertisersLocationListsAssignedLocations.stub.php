@@ -23,6 +23,11 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\AssignedLocation;
+use Google\Service\DisplayVideo\BulkEditAssignedLocationsRequest;
+use Google\Service\DisplayVideo\BulkEditAssignedLocationsResponse;
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\ListAssignedLocationsResponse;
 /**
  * The "assignedLocations" collection of methods.
  * Typical usage is:

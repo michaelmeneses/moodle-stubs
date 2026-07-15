@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\Annotationsdata;
+use Google\Service\Books\DictionaryAnnotationdata;
 /**
  * The "annotationData" collection of methods.
  * Typical usage is:

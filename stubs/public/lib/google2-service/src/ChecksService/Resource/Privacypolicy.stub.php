@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ChecksService\Resource;
 
+use Google\Service\ChecksService\AnalyzePrivacyPolicyRequest;
+use Google\Service\ChecksService\AnalyzePrivacyPolicyResponse;
 /**
  * The "privacypolicy" collection of methods.
  * Typical usage is:

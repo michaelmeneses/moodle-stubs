@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\DiskType;
+use Google\Service\Compute\DiskTypeAggregatedList;
+use Google\Service\Compute\DiskTypeList;
 /**
  * The "diskTypes" collection of methods.
  * Typical usage is:

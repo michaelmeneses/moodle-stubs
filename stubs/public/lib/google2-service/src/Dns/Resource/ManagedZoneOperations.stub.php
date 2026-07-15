@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dns\Resource;
 
+use Google\Service\Dns\ManagedZoneOperationsListResponse;
+use Google\Service\Dns\Operation;
 /**
  * The "managedZoneOperations" collection of methods.
  * Typical usage is:

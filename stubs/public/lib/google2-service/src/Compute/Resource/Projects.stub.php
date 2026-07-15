@@ -23,6 +23,19 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\DiskMoveRequest;
+use Google\Service\Compute\InstanceMoveRequest;
+use Google\Service\Compute\Metadata;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Project;
+use Google\Service\Compute\ProjectsDisableXpnResourceRequest;
+use Google\Service\Compute\ProjectsEnableXpnResourceRequest;
+use Google\Service\Compute\ProjectsGetXpnResources;
+use Google\Service\Compute\ProjectsListXpnHostsRequest;
+use Google\Service\Compute\ProjectsSetCloudArmorTierRequest;
+use Google\Service\Compute\ProjectsSetDefaultNetworkTierRequest;
+use Google\Service\Compute\UsageExportLocation;
+use Google\Service\Compute\XpnHostList;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

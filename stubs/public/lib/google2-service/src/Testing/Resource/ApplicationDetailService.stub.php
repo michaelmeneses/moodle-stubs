@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Testing\Resource;
 
+use Google\Service\Testing\FileReference;
+use Google\Service\Testing\GetApkDetailsResponse;
 /**
  * The "applicationDetailService" collection of methods.
  * Typical usage is:

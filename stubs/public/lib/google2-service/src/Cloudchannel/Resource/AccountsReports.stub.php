@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Cloudchannel\Resource;
 
+use Google\Service\Cloudchannel\GoogleCloudChannelV1ListReportsResponse;
+use Google\Service\Cloudchannel\GoogleCloudChannelV1RunReportJobRequest;
+use Google\Service\Cloudchannel\GoogleLongrunningOperation;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

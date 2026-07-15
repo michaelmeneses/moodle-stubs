@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudComposer\Resource;
 
+use Google\Service\CloudComposer\ListImageVersionsResponse;
 /**
  * The "imageVersions" collection of methods.
  * Typical usage is:

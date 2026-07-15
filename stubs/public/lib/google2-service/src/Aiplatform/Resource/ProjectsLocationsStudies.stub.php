@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListStudiesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1LookupStudyRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Study;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "studies" collection of methods.
  * Typical usage is:

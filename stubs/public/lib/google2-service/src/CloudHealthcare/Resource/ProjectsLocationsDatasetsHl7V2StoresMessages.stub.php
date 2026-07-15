@@ -23,6 +23,12 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\CreateMessageRequest;
+use Google\Service\CloudHealthcare\HealthcareEmpty;
+use Google\Service\CloudHealthcare\IngestMessageRequest;
+use Google\Service\CloudHealthcare\IngestMessageResponse;
+use Google\Service\CloudHealthcare\ListMessagesResponse;
+use Google\Service\CloudHealthcare\Message;
 /**
  * The "messages" collection of methods.
  * Typical usage is:

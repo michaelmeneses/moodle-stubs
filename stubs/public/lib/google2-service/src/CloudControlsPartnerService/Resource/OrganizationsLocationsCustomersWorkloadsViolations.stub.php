@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudControlsPartnerService\Resource;
 
+use Google\Service\CloudControlsPartnerService\ListViolationsResponse;
+use Google\Service\CloudControlsPartnerService\Violation;
 /**
  * The "violations" collection of methods.
  * Typical usage is:

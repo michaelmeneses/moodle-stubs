@@ -23,6 +23,17 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\AdministratorWebToken;
+use Google\Service\AndroidEnterprise\AdministratorWebTokenSpec;
+use Google\Service\AndroidEnterprise\Enterprise;
+use Google\Service\AndroidEnterprise\EnterpriseAccount;
+use Google\Service\AndroidEnterprise\EnterprisesListResponse;
+use Google\Service\AndroidEnterprise\EnterprisesSendTestPushNotificationResponse;
+use Google\Service\AndroidEnterprise\GenerateEnterpriseUpgradeUrlResponse;
+use Google\Service\AndroidEnterprise\NotificationSet;
+use Google\Service\AndroidEnterprise\ServiceAccount;
+use Google\Service\AndroidEnterprise\SignupInfo;
+use Google\Service\AndroidEnterprise\StoreLayout;
 /**
  * The "enterprises" collection of methods.
  * Typical usage is:

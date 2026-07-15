@@ -23,6 +23,23 @@
  */
 namespace Google\Service\Spanner\Resource;
 
+use Google\Service\Spanner\AddSplitPointsRequest;
+use Google\Service\Spanner\AddSplitPointsResponse;
+use Google\Service\Spanner\ChangeQuorumRequest;
+use Google\Service\Spanner\CreateDatabaseRequest;
+use Google\Service\Spanner\Database;
+use Google\Service\Spanner\GetDatabaseDdlResponse;
+use Google\Service\Spanner\GetIamPolicyRequest;
+use Google\Service\Spanner\ListDatabasesResponse;
+use Google\Service\Spanner\Operation;
+use Google\Service\Spanner\Policy;
+use Google\Service\Spanner\RestoreDatabaseRequest;
+use Google\Service\Spanner\Scan;
+use Google\Service\Spanner\SetIamPolicyRequest;
+use Google\Service\Spanner\SpannerEmpty;
+use Google\Service\Spanner\TestIamPermissionsRequest;
+use Google\Service\Spanner\TestIamPermissionsResponse;
+use Google\Service\Spanner\UpdateDatabaseDdlRequest;
 /**
  * The "databases" collection of methods.
  * Typical usage is:

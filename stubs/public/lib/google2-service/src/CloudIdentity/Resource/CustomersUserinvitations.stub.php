@@ -23,6 +23,12 @@
  */
 namespace Google\Service\CloudIdentity\Resource;
 
+use Google\Service\CloudIdentity\CancelUserInvitationRequest;
+use Google\Service\CloudIdentity\IsInvitableUserResponse;
+use Google\Service\CloudIdentity\ListUserInvitationsResponse;
+use Google\Service\CloudIdentity\Operation;
+use Google\Service\CloudIdentity\SendUserInvitationRequest;
+use Google\Service\CloudIdentity\UserInvitation;
 /**
  * The "userinvitations" collection of methods.
  * Typical usage is:

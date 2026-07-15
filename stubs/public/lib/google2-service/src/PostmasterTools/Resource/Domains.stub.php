@@ -23,6 +23,8 @@
  */
 namespace Google\Service\PostmasterTools\Resource;
 
+use Google\Service\PostmasterTools\Domain;
+use Google\Service\PostmasterTools\ListDomainsResponse;
 /**
  * The "domains" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Control;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListControlsResponse;
+use Google\Service\DiscoveryEngine\GoogleProtobufEmpty;
 /**
  * The "controls" collection of methods.
  * Typical usage is:

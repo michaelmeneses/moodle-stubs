@@ -23,6 +23,15 @@
  */
 namespace Google\Service\ChromeManagement\Resource;
 
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1CertificateProvisioningProcess;
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessRequest;
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessResponse;
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SetFailureRequest;
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SetFailureResponse;
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SignDataRequest;
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1UploadCertificateRequest;
+use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1UploadCertificateResponse;
+use Google\Service\ChromeManagement\GoogleLongrunningOperation;
 /**
  * The "certificateProvisioningProcesses" collection of methods.
  * Typical usage is:

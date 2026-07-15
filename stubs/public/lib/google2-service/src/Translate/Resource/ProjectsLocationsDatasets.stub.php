@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Translate\Resource;
 
+use Google\Service\Translate\Dataset;
+use Google\Service\Translate\ExportDataRequest;
+use Google\Service\Translate\ImportDataRequest;
+use Google\Service\Translate\ListDatasetsResponse;
+use Google\Service\Translate\Operation;
 /**
  * The "datasets" collection of methods.
  * Typical usage is:

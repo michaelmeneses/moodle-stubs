@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1DeveloperAppKey;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "apiproducts" collection of methods.
  * Typical usage is:

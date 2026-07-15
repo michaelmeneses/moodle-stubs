@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Config\Resource;
 
+use Google\Service\Config\ListResourceDriftsResponse;
+use Google\Service\Config\ResourceDrift;
 /**
  * The "resourceDrifts" collection of methods.
  * Typical usage is:

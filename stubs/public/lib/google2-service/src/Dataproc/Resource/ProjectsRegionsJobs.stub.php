@@ -23,6 +23,17 @@
  */
 namespace Google\Service\Dataproc\Resource;
 
+use Google\Service\Dataproc\CancelJobRequest;
+use Google\Service\Dataproc\DataprocEmpty;
+use Google\Service\Dataproc\GetIamPolicyRequest;
+use Google\Service\Dataproc\Job;
+use Google\Service\Dataproc\ListJobsResponse;
+use Google\Service\Dataproc\Operation;
+use Google\Service\Dataproc\Policy;
+use Google\Service\Dataproc\SetIamPolicyRequest;
+use Google\Service\Dataproc\SubmitJobRequest;
+use Google\Service\Dataproc\TestIamPermissionsRequest;
+use Google\Service\Dataproc\TestIamPermissionsResponse;
 /**
  * The "jobs" collection of methods.
  * Typical usage is:

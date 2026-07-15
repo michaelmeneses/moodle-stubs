@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListSecuritySettingsResponse;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SecuritySettings;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "securitySettings" collection of methods.
  * Typical usage is:

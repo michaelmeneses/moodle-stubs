@@ -23,6 +23,12 @@
  */
 namespace Google\Service\SecretManager\Resource;
 
+use Google\Service\SecretManager\AccessSecretVersionResponse;
+use Google\Service\SecretManager\DestroySecretVersionRequest;
+use Google\Service\SecretManager\DisableSecretVersionRequest;
+use Google\Service\SecretManager\EnableSecretVersionRequest;
+use Google\Service\SecretManager\ListSecretVersionsResponse;
+use Google\Service\SecretManager\SecretVersion;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

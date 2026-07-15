@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ServerlessVPCAccess\Resource;
 
+use Google\Service\ServerlessVPCAccess\ListLocationsResponse;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

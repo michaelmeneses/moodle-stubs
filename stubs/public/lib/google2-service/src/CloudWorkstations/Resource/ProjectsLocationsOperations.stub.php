@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudWorkstations\Resource;
 
+use Google\Service\CloudWorkstations\CancelOperationRequest;
+use Google\Service\CloudWorkstations\GoogleProtobufEmpty;
+use Google\Service\CloudWorkstations\ListOperationsResponse;
+use Google\Service\CloudWorkstations\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

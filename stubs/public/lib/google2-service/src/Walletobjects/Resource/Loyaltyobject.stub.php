@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\AddMessageRequest;
+use Google\Service\Walletobjects\LoyaltyObject as LoyaltyObjectModel;
+use Google\Service\Walletobjects\LoyaltyObjectAddMessageResponse;
+use Google\Service\Walletobjects\LoyaltyObjectListResponse;
+use Google\Service\Walletobjects\ModifyLinkedOfferObjectsRequest;
 /**
  * The "loyaltyobject" collection of methods.
  * Typical usage is:

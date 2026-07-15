@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\ClassroomEmpty;
+use Google\Service\Classroom\ListRubricsResponse;
+use Google\Service\Classroom\Rubric;
 /**
  * The "rubrics" collection of methods.
  * Typical usage is:

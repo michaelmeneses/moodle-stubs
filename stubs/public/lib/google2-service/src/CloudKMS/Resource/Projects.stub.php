@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudKMS\Resource;
 
+use Google\Service\CloudKMS\KeyAccessJustificationsPolicyConfig;
+use Google\Service\CloudKMS\ShowEffectiveAutokeyConfigResponse;
+use Google\Service\CloudKMS\ShowEffectiveKeyAccessJustificationsEnrollmentConfigResponse;
+use Google\Service\CloudKMS\ShowEffectiveKeyAccessJustificationsPolicyConfigResponse;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

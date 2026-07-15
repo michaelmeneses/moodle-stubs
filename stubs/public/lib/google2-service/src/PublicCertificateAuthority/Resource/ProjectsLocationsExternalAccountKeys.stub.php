@@ -23,6 +23,7 @@
  */
 namespace Google\Service\PublicCertificateAuthority\Resource;
 
+use Google\Service\PublicCertificateAuthority\ExternalAccountKey;
 /**
  * The "externalAccountKeys" collection of methods.
  * Typical usage is:

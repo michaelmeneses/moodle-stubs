@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2FileStoreDataProfile;
+use Google\Service\DLP\GooglePrivacyDlpV2ListFileStoreDataProfilesResponse;
+use Google\Service\DLP\GoogleProtobufEmpty;
 /**
  * The "fileStoreDataProfiles" collection of methods.
  * Typical usage is:

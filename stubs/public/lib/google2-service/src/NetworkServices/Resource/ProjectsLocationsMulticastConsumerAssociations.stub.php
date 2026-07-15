@@ -23,6 +23,10 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\Policy;
+use Google\Service\NetworkServices\SetIamPolicyRequest;
+use Google\Service\NetworkServices\TestIamPermissionsRequest;
+use Google\Service\NetworkServices\TestIamPermissionsResponse;
 /**
  * The "multicastConsumerAssociations" collection of methods.
  * Typical usage is:

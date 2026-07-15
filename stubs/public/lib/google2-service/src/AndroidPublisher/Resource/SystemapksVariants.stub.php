@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\SystemApksListResponse;
+use Google\Service\AndroidPublisher\Variant;
 /**
  * The "variants" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\ListPromotionResponse;
+use Google\Service\ShoppingContent\Promotion;
 /**
  * The "promotions" collection of methods.
  * Typical usage is:

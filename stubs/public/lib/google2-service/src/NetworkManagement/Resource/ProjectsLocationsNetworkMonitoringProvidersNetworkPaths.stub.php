@@ -23,6 +23,8 @@
  */
 namespace Google\Service\NetworkManagement\Resource;
 
+use Google\Service\NetworkManagement\ListNetworkPathsResponse;
+use Google\Service\NetworkManagement\NetworkPath;
 /**
  * The "networkPaths" collection of methods.
  * Typical usage is:

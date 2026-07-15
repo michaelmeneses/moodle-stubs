@@ -23,6 +23,8 @@
  */
 namespace Google\Service\PlayIntegrity\Resource;
 
+use Google\Service\PlayIntegrity\WriteDeviceRecallRequest;
+use Google\Service\PlayIntegrity\WriteDeviceRecallResponse;
 /**
  * The "deviceRecall" collection of methods.
  * Typical usage is:

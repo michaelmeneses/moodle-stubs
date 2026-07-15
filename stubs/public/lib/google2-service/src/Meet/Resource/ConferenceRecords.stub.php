@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Meet\Resource;
 
+use Google\Service\Meet\ConferenceRecord;
+use Google\Service\Meet\ListConferenceRecordsResponse;
 /**
  * The "conferenceRecords" collection of methods.
  * Typical usage is:

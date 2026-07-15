@@ -8,6 +8,7 @@
  */
 namespace Aws\SSMGuiConnect;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS SSM-GUIConnect** service.
  * @method \Aws\Result deleteConnectionRecordingPreferences(array $args = [])

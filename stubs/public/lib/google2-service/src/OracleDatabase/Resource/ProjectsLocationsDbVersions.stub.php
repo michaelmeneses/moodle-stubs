@@ -23,6 +23,7 @@
  */
 namespace Google\Service\OracleDatabase\Resource;
 
+use Google\Service\OracleDatabase\ListDbVersionsResponse;
 /**
  * The "dbVersions" collection of methods.
  * Typical usage is:

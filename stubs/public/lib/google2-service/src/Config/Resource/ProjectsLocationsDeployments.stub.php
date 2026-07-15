@@ -23,6 +23,21 @@
  */
 namespace Google\Service\Config\Resource;
 
+use Google\Service\Config\ConfigEmpty;
+use Google\Service\Config\DeleteStatefileRequest;
+use Google\Service\Config\Deployment;
+use Google\Service\Config\ExportDeploymentStatefileRequest;
+use Google\Service\Config\ImportStatefileRequest;
+use Google\Service\Config\ListDeploymentsResponse;
+use Google\Service\Config\LockDeploymentRequest;
+use Google\Service\Config\LockInfo;
+use Google\Service\Config\Operation;
+use Google\Service\Config\Policy;
+use Google\Service\Config\SetIamPolicyRequest;
+use Google\Service\Config\Statefile;
+use Google\Service\Config\TestIamPermissionsRequest;
+use Google\Service\Config\TestIamPermissionsResponse;
+use Google\Service\Config\UnlockDeploymentRequest;
 /**
  * The "deployments" collection of methods.
  * Typical usage is:

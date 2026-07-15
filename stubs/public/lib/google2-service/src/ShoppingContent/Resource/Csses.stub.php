@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\Css;
+use Google\Service\ShoppingContent\LabelIds;
+use Google\Service\ShoppingContent\ListCssesResponse;
 /**
  * The "csses" collection of methods.
  * Typical usage is:

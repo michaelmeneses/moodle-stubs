@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Texttospeech\Resource;
 
+use Google\Service\Texttospeech\Operation;
+use Google\Service\Texttospeech\SynthesizeLongAudioRequest;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

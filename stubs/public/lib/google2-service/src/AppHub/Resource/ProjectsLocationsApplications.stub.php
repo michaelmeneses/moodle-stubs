@@ -23,6 +23,13 @@
  */
 namespace Google\Service\AppHub\Resource;
 
+use Google\Service\AppHub\Application;
+use Google\Service\AppHub\ListApplicationsResponse;
+use Google\Service\AppHub\Operation;
+use Google\Service\AppHub\Policy;
+use Google\Service\AppHub\SetIamPolicyRequest;
+use Google\Service\AppHub\TestIamPermissionsRequest;
+use Google\Service\AppHub\TestIamPermissionsResponse;
 /**
  * The "applications" collection of methods.
  * Typical usage is:

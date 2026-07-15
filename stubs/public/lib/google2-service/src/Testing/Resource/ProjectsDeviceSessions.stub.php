@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Testing\Resource;
 
+use Google\Service\Testing\CancelDeviceSessionRequest;
+use Google\Service\Testing\DeviceSession;
+use Google\Service\Testing\ListDeviceSessionsResponse;
+use Google\Service\Testing\TestingEmpty;
 /**
  * The "deviceSessions" collection of methods.
  * Typical usage is:

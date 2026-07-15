@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Looker\Resource;
 
+use Google\Service\Looker\ExportInstanceRequest;
+use Google\Service\Looker\ImportInstanceRequest;
+use Google\Service\Looker\Instance;
+use Google\Service\Looker\ListInstancesResponse;
+use Google\Service\Looker\Operation;
+use Google\Service\Looker\RestartInstanceRequest;
+use Google\Service\Looker\RestoreInstanceRequest;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

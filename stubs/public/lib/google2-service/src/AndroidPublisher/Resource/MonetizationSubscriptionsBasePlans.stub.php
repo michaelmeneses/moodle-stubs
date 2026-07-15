@@ -23,6 +23,15 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\ActivateBasePlanRequest;
+use Google\Service\AndroidPublisher\BatchMigrateBasePlanPricesRequest;
+use Google\Service\AndroidPublisher\BatchMigrateBasePlanPricesResponse;
+use Google\Service\AndroidPublisher\BatchUpdateBasePlanStatesRequest;
+use Google\Service\AndroidPublisher\BatchUpdateBasePlanStatesResponse;
+use Google\Service\AndroidPublisher\DeactivateBasePlanRequest;
+use Google\Service\AndroidPublisher\MigrateBasePlanPricesRequest;
+use Google\Service\AndroidPublisher\MigrateBasePlanPricesResponse;
+use Google\Service\AndroidPublisher\Subscription;
 /**
  * The "basePlans" collection of methods.
  * Typical usage is:

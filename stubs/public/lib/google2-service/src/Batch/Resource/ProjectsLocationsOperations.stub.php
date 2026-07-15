@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Batch\Resource;
 
+use Google\Service\Batch\BatchEmpty;
+use Google\Service\Batch\CancelOperationRequest;
+use Google\Service\Batch\ListOperationsResponse;
+use Google\Service\Batch\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

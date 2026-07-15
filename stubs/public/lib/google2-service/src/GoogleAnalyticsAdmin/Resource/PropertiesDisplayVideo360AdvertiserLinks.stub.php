@@ -23,6 +23,9 @@
  */
 namespace Google\Service\GoogleAnalyticsAdmin\Resource;
 
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink;
+use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListDisplayVideo360AdvertiserLinksResponse;
+use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
 /**
  * The "displayVideo360AdvertiserLinks" collection of methods.
  * Typical usage is:

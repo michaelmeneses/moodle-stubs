@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Blogger\Resource;
 
+use Google\Service\Blogger\PostUserInfo;
+use Google\Service\Blogger\PostUserInfosList;
 /**
  * The "postUserInfos" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\UserRole;
+use Google\Service\Dfareporting\UserRolesListResponse;
 /**
  * The "userRoles" collection of methods.
  * Typical usage is:

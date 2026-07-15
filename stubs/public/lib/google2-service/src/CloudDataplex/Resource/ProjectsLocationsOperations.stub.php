@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\DataplexEmpty;
+use Google\Service\CloudDataplex\GoogleLongrunningCancelOperationRequest;
+use Google\Service\CloudDataplex\GoogleLongrunningListOperationsResponse;
+use Google\Service\CloudDataplex\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

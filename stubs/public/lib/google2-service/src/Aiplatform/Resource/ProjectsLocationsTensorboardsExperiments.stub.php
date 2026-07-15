@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTensorboardExperimentsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1TensorboardExperiment;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteTensorboardExperimentDataRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteTensorboardExperimentDataResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "experiments" collection of methods.
  * Typical usage is:

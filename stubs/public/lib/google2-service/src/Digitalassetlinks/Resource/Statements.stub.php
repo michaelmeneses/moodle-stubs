@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Digitalassetlinks\Resource;
 
+use Google\Service\Digitalassetlinks\ListResponse;
 /**
  * The "statements" collection of methods.
  * Typical usage is:

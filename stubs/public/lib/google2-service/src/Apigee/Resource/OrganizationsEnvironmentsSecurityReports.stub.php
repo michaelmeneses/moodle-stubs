@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleApiHttpBody;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityReportsResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1SecurityReport;
+use Google\Service\Apigee\GoogleCloudApigeeV1SecurityReportQuery;
+use Google\Service\Apigee\GoogleCloudApigeeV1SecurityReportResultView;
 /**
  * The "securityReports" collection of methods.
  * Typical usage is:

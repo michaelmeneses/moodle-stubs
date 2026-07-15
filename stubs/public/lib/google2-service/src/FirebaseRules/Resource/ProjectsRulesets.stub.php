@@ -23,6 +23,9 @@
  */
 namespace Google\Service\FirebaseRules\Resource;
 
+use Google\Service\FirebaseRules\FirebaserulesEmpty;
+use Google\Service\FirebaseRules\ListRulesetsResponse;
+use Google\Service\FirebaseRules\Ruleset;
 /**
  * The "rulesets" collection of methods.
  * Typical usage is:

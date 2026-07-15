@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\GlobalSetPolicyRequest;
+use Google\Service\Compute\InterconnectGroup;
+use Google\Service\Compute\InterconnectGroupsCreateMembersRequest;
+use Google\Service\Compute\InterconnectGroupsGetOperationalStatusResponse;
+use Google\Service\Compute\InterconnectGroupsListResponse;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "interconnectGroups" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\UserProfile;
 /**
  * The "userProfiles" collection of methods.
  * Typical usage is:

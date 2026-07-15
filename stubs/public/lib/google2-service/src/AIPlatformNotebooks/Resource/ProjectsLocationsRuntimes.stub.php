@@ -23,6 +23,22 @@
  */
 namespace Google\Service\AIPlatformNotebooks\Resource;
 
+use Google\Service\AIPlatformNotebooks\DiagnoseRuntimeRequest;
+use Google\Service\AIPlatformNotebooks\ListRuntimesResponse;
+use Google\Service\AIPlatformNotebooks\Operation;
+use Google\Service\AIPlatformNotebooks\Policy;
+use Google\Service\AIPlatformNotebooks\RefreshRuntimeTokenInternalRequest;
+use Google\Service\AIPlatformNotebooks\RefreshRuntimeTokenInternalResponse;
+use Google\Service\AIPlatformNotebooks\ReportRuntimeEventRequest;
+use Google\Service\AIPlatformNotebooks\ResetRuntimeRequest;
+use Google\Service\AIPlatformNotebooks\Runtime;
+use Google\Service\AIPlatformNotebooks\SetIamPolicyRequest;
+use Google\Service\AIPlatformNotebooks\StartRuntimeRequest;
+use Google\Service\AIPlatformNotebooks\StopRuntimeRequest;
+use Google\Service\AIPlatformNotebooks\SwitchRuntimeRequest;
+use Google\Service\AIPlatformNotebooks\TestIamPermissionsRequest;
+use Google\Service\AIPlatformNotebooks\TestIamPermissionsResponse;
+use Google\Service\AIPlatformNotebooks\UpgradeRuntimeRequest;
 /**
  * The "runtimes" collection of methods.
  * Typical usage is:

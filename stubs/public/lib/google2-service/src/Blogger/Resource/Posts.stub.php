@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Blogger\Resource;
 
+use Google\Service\Blogger\Post;
+use Google\Service\Blogger\PostList;
 /**
  * The "posts" collection of methods.
  * Typical usage is:

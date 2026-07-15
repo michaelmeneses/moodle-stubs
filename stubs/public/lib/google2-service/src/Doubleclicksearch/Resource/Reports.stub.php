@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Doubleclicksearch\Resource;
 
+use Google\Service\Doubleclicksearch\IdMappingFile;
+use Google\Service\Doubleclicksearch\Report;
+use Google\Service\Doubleclicksearch\ReportRequest;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

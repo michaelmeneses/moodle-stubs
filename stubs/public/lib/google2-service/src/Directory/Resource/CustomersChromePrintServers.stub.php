@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\AdminEmpty;
+use Google\Service\Directory\BatchCreatePrintServersRequest;
+use Google\Service\Directory\BatchCreatePrintServersResponse;
+use Google\Service\Directory\BatchDeletePrintServersRequest;
+use Google\Service\Directory\BatchDeletePrintServersResponse;
+use Google\Service\Directory\ListPrintServersResponse;
+use Google\Service\Directory\PrintServer;
 /**
  * The "printServers" collection of methods.
  * Typical usage is:

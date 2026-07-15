@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportSuggestionDenyListEntriesRequest;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeSuggestionDenyListEntriesRequest;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "suggestionDenyListEntries" collection of methods.
  * Typical usage is:

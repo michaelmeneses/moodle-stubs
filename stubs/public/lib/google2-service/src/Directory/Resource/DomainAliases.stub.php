@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\DomainAlias;
+use Google\Service\Directory\DomainAliases as DomainAliasesModel;
 /**
  * The "domainAliases" collection of methods.
  * Typical usage is:

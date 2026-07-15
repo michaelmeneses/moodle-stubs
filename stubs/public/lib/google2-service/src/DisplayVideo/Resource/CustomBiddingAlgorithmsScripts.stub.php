@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\CustomBiddingScript;
+use Google\Service\DisplayVideo\ListCustomBiddingScriptsResponse;
 /**
  * The "scripts" collection of methods.
  * Typical usage is:

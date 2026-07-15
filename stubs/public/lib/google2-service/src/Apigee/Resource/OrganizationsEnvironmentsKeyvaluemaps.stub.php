@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1KeyValueMap;
 /**
  * The "keyvaluemaps" collection of methods.
  * Typical usage is:

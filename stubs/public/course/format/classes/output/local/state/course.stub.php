@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\state;
 
+use core_courseformat\base as course_format;
+use course_modinfo;
+use moodle_url;
+use renderable;
+use stdClass;
 /**
  * Contains the ajax update course structure.
  *

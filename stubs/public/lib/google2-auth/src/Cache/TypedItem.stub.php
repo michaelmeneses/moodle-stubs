@@ -23,6 +23,7 @@
  */
 namespace Google\Auth\Cache;
 
+use Psr\Cache\CacheItemInterface;
 /**
  * A cache item.
  *

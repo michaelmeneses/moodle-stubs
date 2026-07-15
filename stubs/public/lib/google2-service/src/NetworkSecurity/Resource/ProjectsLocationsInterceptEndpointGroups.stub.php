@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\InterceptEndpointGroup;
+use Google\Service\NetworkSecurity\ListInterceptEndpointGroupsResponse;
+use Google\Service\NetworkSecurity\Operation;
 /**
  * The "interceptEndpointGroups" collection of methods.
  * Typical usage is:

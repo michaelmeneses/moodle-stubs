@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCancelPipelineJobsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchDeletePipelineJobsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CancelPipelineJobRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListPipelineJobsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1PipelineJob;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
+use Google\Service\Aiplatform\GoogleProtobufEmpty;
 /**
  * The "pipelineJobs" collection of methods.
  * Typical usage is:

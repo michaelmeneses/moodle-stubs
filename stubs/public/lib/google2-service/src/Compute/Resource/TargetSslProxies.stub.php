@@ -23,6 +23,14 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\SslPolicyReference;
+use Google\Service\Compute\TargetSslProxiesSetBackendServiceRequest;
+use Google\Service\Compute\TargetSslProxiesSetCertificateMapRequest;
+use Google\Service\Compute\TargetSslProxiesSetProxyHeaderRequest;
+use Google\Service\Compute\TargetSslProxiesSetSslCertificatesRequest;
+use Google\Service\Compute\TargetSslProxy;
+use Google\Service\Compute\TargetSslProxyList;
 /**
  * The "targetSslProxies" collection of methods.
  * Typical usage is:

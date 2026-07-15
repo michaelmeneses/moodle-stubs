@@ -8,6 +8,7 @@
  */
 namespace Aws\ARCRegionSwitch;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **ARC - Region switch** service.
  * @method \Aws\Result approvePlanExecutionStep(array $args = [])

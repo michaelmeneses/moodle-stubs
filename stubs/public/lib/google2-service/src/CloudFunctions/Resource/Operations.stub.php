@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudFunctions\Resource;
 
+use Google\Service\CloudFunctions\ListOperationsResponse;
+use Google\Service\CloudFunctions\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

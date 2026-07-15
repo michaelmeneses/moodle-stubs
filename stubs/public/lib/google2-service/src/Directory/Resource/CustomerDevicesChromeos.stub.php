@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\BatchChangeChromeOsDeviceStatusRequest;
+use Google\Service\Directory\BatchChangeChromeOsDeviceStatusResponse;
+use Google\Service\Directory\DirectoryChromeosdevicesIssueCommandRequest;
+use Google\Service\Directory\DirectoryChromeosdevicesIssueCommandResponse;
 /**
  * The "chromeos" collection of methods.
  * Typical usage is:

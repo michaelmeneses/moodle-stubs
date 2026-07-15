@@ -13,6 +13,8 @@
  */
 namespace PhpXmlRpc;
 
+use PhpXmlRpc\Exception\ValueErrorException;
+use PhpXmlRpc\Traits\LoggerAware;
 /**
  * PHPXMLRPC "wrapper" class - generate stubs to transparently access xml-rpc methods as php functions and vice-versa.
  * Note: this class implements the PROXY pattern, but it is not named so to avoid confusion with http proxies.

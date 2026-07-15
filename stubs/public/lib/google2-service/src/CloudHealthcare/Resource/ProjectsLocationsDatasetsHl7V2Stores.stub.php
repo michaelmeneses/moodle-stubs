@@ -23,6 +23,18 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\ExportMessagesRequest;
+use Google\Service\CloudHealthcare\HealthcareEmpty;
+use Google\Service\CloudHealthcare\Hl7V2Store;
+use Google\Service\CloudHealthcare\Hl7V2StoreMetrics;
+use Google\Service\CloudHealthcare\ImportMessagesRequest;
+use Google\Service\CloudHealthcare\ListHl7V2StoresResponse;
+use Google\Service\CloudHealthcare\Operation;
+use Google\Service\CloudHealthcare\Policy;
+use Google\Service\CloudHealthcare\RollbackHl7V2MessagesRequest;
+use Google\Service\CloudHealthcare\SetIamPolicyRequest;
+use Google\Service\CloudHealthcare\TestIamPermissionsRequest;
+use Google\Service\CloudHealthcare\TestIamPermissionsResponse;
 /**
  * The "hl7V2Stores" collection of methods.
  * Typical usage is:

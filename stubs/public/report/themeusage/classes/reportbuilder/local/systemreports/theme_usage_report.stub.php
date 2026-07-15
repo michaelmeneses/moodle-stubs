@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace report_themeusage\reportbuilder\local\systemreports;
 
+use context_system;
+use core_reportbuilder\local\entities\{course, user};
+use core_cohort\reportbuilder\local\entities\cohort;
+use core_course\reportbuilder\local\entities\course_category;
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\system_report;
+use core\output\theme_usage;
+use report_themeusage\reportbuilder\local\entities\theme;
 /**
  * Config changes system report class implementation
  *

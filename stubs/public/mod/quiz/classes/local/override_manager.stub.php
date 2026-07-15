@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\local;
 
+use context_course;
+use core_group\hook\after_group_membership_added;
+use core_group\hook\after_group_membership_removed;
+use mod_quiz\event\group_override_created;
+use mod_quiz\event\group_override_deleted;
+use mod_quiz\event\group_override_updated;
+use mod_quiz\event\user_override_created;
+use mod_quiz\event\user_override_deleted;
+use mod_quiz\event\user_override_updated;
+use mod_quiz\quiz_settings;
 /**
  * Manager class for quiz overrides
  *
@@ -33,8 +43,6 @@ class override_manager
 {
     /** @var array quiz setting keys that can be overwritten **/
     private const OVERRIDEABLE_QUIZ_SETTINGS = ['timeopen', 'timeclose', 'timelimit', 'attempts', 'password'];
-    /** @var array override fields that are numeric and can validly be 0 **/
-    private const OVERRIDE_NUMERIC_FIELDS = ['attempts', 'timelimit', 'timeopen', 'timeclose'];
     /**
      * Create override manager
      *

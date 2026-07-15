@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Ideahub\Resource;
 
+use Google\Service\Ideahub\GoogleSearchIdeahubV1betaIdeaActivity;
 /**
  * The "ideaActivities" collection of methods.
  * Typical usage is:

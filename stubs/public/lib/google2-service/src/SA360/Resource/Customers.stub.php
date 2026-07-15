@@ -23,6 +23,7 @@
  */
 namespace Google\Service\SA360\Resource;
 
+use Google\Service\SA360\GoogleAdsSearchads360V0ServicesListAccessibleCustomersResponse;
 /**
  * The "customers" collection of methods.
  * Typical usage is:

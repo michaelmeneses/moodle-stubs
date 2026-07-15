@@ -23,6 +23,18 @@
  */
 namespace Google\Service\Spanner\Resource;
 
+use Google\Service\Spanner\CreateInstanceRequest;
+use Google\Service\Spanner\GetIamPolicyRequest;
+use Google\Service\Spanner\Instance;
+use Google\Service\Spanner\ListInstancesResponse;
+use Google\Service\Spanner\MoveInstanceRequest;
+use Google\Service\Spanner\Operation;
+use Google\Service\Spanner\Policy;
+use Google\Service\Spanner\SetIamPolicyRequest;
+use Google\Service\Spanner\SpannerEmpty;
+use Google\Service\Spanner\TestIamPermissionsRequest;
+use Google\Service\Spanner\TestIamPermissionsResponse;
+use Google\Service\Spanner\UpdateInstanceRequest;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

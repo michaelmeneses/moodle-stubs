@@ -23,6 +23,20 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\DeidentifyDicomStoreRequest;
+use Google\Service\CloudHealthcare\DicomStore;
+use Google\Service\CloudHealthcare\DicomStoreMetrics;
+use Google\Service\CloudHealthcare\ExportDicomDataRequest;
+use Google\Service\CloudHealthcare\HealthcareEmpty;
+use Google\Service\CloudHealthcare\HttpBody;
+use Google\Service\CloudHealthcare\ImportDicomDataRequest;
+use Google\Service\CloudHealthcare\ListDicomStoresResponse;
+use Google\Service\CloudHealthcare\Operation;
+use Google\Service\CloudHealthcare\Policy;
+use Google\Service\CloudHealthcare\SetBlobStorageSettingsRequest;
+use Google\Service\CloudHealthcare\SetIamPolicyRequest;
+use Google\Service\CloudHealthcare\TestIamPermissionsRequest;
+use Google\Service\CloudHealthcare\TestIamPermissionsResponse;
 /**
  * The "dicomStores" collection of methods.
  * Typical usage is:

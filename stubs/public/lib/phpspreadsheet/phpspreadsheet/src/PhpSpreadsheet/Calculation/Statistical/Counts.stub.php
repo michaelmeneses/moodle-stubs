@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Statistical;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Exception as CalcException;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
 class Counts extends AggregateBase
 {
     /**

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Batch\Resource;
 
+use Google\Service\Batch\ReportAgentStateRequest;
+use Google\Service\Batch\ReportAgentStateResponse;
 /**
  * The "state" collection of methods.
  * Typical usage is:

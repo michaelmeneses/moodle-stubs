@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\task;
 
+use core\local\cli\shutdown;
 /**
  * Task to find questions with no category and delete them
  *

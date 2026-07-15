@@ -23,6 +23,10 @@
  */
 namespace Google\Service\BigtableAdmin\Resource;
 
+use Google\Service\BigtableAdmin\AppProfile;
+use Google\Service\BigtableAdmin\BigtableadminEmpty;
+use Google\Service\BigtableAdmin\ListAppProfilesResponse;
+use Google\Service\BigtableAdmin\Operation;
 /**
  * The "appProfiles" collection of methods.
  * Typical usage is:

@@ -8,6 +8,7 @@
  */
 namespace Aws\WorkspacesInstances;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Workspaces Instances** service.
  * @method \Aws\Result associateVolume(array $args = [])

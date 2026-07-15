@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\AddMessageRequest;
+use Google\Service\Walletobjects\LoyaltyClass as LoyaltyClassModel;
+use Google\Service\Walletobjects\LoyaltyClassAddMessageResponse;
+use Google\Service\Walletobjects\LoyaltyClassListResponse;
 /**
  * The "loyaltyclass" collection of methods.
  * Typical usage is:

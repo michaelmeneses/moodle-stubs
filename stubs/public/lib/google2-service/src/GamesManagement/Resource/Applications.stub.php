@@ -23,6 +23,7 @@
  */
 namespace Google\Service\GamesManagement\Resource;
 
+use Google\Service\GamesManagement\HiddenPlayerList;
 /**
  * The "applications" collection of methods.
  * Typical usage is:

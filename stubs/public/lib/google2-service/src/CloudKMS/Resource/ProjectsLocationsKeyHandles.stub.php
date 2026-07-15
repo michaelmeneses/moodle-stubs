@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudKMS\Resource;
 
+use Google\Service\CloudKMS\KeyHandle;
+use Google\Service\CloudKMS\ListKeyHandlesResponse;
+use Google\Service\CloudKMS\Operation;
 /**
  * The "keyHandles" collection of methods.
  * Typical usage is:

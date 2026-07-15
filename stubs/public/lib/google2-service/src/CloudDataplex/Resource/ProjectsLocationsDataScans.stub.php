@@ -23,6 +23,17 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScan;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1GenerateDataQualityRulesRequest;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1GenerateDataQualityRulesResponse;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataScansResponse;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1RunDataScanRequest;
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1RunDataScanResponse;
+use Google\Service\CloudDataplex\GoogleIamV1Policy;
+use Google\Service\CloudDataplex\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\CloudDataplex\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\CloudDataplex\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\CloudDataplex\GoogleLongrunningOperation;
 /**
  * The "dataScans" collection of methods.
  * Typical usage is:

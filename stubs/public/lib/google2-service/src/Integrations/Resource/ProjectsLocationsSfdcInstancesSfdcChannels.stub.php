@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListSfdcChannelsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSfdcChannel;
+use Google\Service\Integrations\GoogleProtobufEmpty;
 /**
  * The "sfdcChannels" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1DeveloperAppKey;
 /**
  * The "keys" collection of methods.
  * Typical usage is:

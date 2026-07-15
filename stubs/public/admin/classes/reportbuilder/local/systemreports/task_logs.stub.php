@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_admin\reportbuilder\local\systemreports;
 
+use context_system;
+use core_admin\reportbuilder\local\entities\task_log;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\report\action;
+use core_reportbuilder\system_report;
+use html_writer;
+use lang_string;
+use moodle_url;
+use pix_icon;
+use stdClass;
 /**
  * Task logs system report class implementation
  *

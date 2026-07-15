@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\DockerImage;
+use Google\Service\ArtifactRegistry\ListDockerImagesResponse;
 /**
  * The "dockerImages" collection of methods.
  * Typical usage is:

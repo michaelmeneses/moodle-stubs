@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Parallelstore\Resource;
 
+use Google\Service\Parallelstore\ListLocationsResponse;
+use Google\Service\Parallelstore\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

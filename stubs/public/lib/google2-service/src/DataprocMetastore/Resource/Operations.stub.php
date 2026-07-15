@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataprocMetastore\Resource;
 
+use Google\Service\DataprocMetastore\CancelOperationRequest;
+use Google\Service\DataprocMetastore\MetastoreEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

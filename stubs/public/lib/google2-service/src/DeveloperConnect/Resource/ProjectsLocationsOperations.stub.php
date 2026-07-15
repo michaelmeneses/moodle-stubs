@@ -23,6 +23,10 @@
  */
 namespace Google\Service\DeveloperConnect\Resource;
 
+use Google\Service\DeveloperConnect\CancelOperationRequest;
+use Google\Service\DeveloperConnect\DeveloperconnectEmpty;
+use Google\Service\DeveloperConnect\ListOperationsResponse;
+use Google\Service\DeveloperConnect\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

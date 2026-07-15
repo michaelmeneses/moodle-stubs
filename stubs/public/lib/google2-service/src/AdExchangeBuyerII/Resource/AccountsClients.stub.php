@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\Client;
+use Google\Service\AdExchangeBuyerII\ListClientsResponse;
 /**
  * The "clients" collection of methods.
  * Typical usage is:

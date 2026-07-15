@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Drive\Resource;
 
+use Google\Service\Drive\Channel;
 /**
  * The "channels" collection of methods.
  * Typical usage is:

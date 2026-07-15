@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkServices\Resource;
 
+use Google\Service\NetworkServices\LbEdgeExtension;
+use Google\Service\NetworkServices\ListLbEdgeExtensionsResponse;
+use Google\Service\NetworkServices\Operation;
 /**
  * The "lbEdgeExtensions" collection of methods.
  * Typical usage is:

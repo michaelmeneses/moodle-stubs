@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\ChangeLog;
+use Google\Service\Dfareporting\ChangeLogsListResponse;
 /**
  * The "changeLogs" collection of methods.
  * Typical usage is:

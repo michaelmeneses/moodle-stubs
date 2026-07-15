@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Gmail\Resource;
 
+use Google\Service\Gmail\ForwardingAddress;
+use Google\Service\Gmail\ListForwardingAddressesResponse;
 /**
  * The "forwardingAddresses" collection of methods.
  * Typical usage is:

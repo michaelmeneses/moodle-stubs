@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ComputeEnvironmentScoresRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1ComputeEnvironmentScoresResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "environments" collection of methods.
  * Typical usage is:

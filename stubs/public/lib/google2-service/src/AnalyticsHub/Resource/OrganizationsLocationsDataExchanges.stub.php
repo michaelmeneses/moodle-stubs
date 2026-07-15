@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AnalyticsHub\Resource;
 
+use Google\Service\AnalyticsHub\ListOrgDataExchangesResponse;
 /**
  * The "dataExchanges" collection of methods.
  * Typical usage is:

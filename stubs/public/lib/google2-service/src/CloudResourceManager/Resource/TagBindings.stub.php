@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudResourceManager\Resource;
 
+use Google\Service\CloudResourceManager\ListTagBindingsResponse;
+use Google\Service\CloudResourceManager\Operation;
+use Google\Service\CloudResourceManager\TagBinding;
 /**
  * The "tagBindings" collection of methods.
  * Typical usage is:

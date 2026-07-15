@@ -23,6 +23,9 @@
  */
 namespace Google\Service\OrgPolicyAPI\Resource;
 
+use Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ListPoliciesResponse;
+use Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2Policy;
+use Google\Service\OrgPolicyAPI\GoogleProtobufEmpty;
 /**
  * The "policies" collection of methods.
  * Typical usage is:

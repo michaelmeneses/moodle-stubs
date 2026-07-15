@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\ConnectionType;
+use Google\Service\Dfareporting\ConnectionTypesListResponse;
 /**
  * The "connectionTypes" collection of methods.
  * Typical usage is:

@@ -29,6 +29,9 @@
  */
 namespace core\output;
 
+use core\exception\coding_exception;
+use core\context;
+use stdClass;
 /**
  * The chooser_item renderable class.
  *

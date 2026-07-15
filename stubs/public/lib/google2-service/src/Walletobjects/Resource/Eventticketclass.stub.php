@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Walletobjects\Resource;
 
+use Google\Service\Walletobjects\AddMessageRequest;
+use Google\Service\Walletobjects\EventTicketClass as EventTicketClassModel;
+use Google\Service\Walletobjects\EventTicketClassAddMessageResponse;
+use Google\Service\Walletobjects\EventTicketClassListResponse;
 /**
  * The "eventticketclass" collection of methods.
  * Typical usage is:

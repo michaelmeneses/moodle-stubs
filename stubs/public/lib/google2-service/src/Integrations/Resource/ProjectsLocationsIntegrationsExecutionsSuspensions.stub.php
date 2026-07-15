@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLiftSuspensionRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLiftSuspensionResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListSuspensionsResponse;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaResolveSuspensionRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaResolveSuspensionResponse;
 /**
  * The "suspensions" collection of methods.
  * Typical usage is:

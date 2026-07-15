@@ -16,6 +16,7 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\LogRecord;
 /**
  * Interface that all Monolog Handlers must implement
  *

@@ -23,6 +23,24 @@
  */
 namespace Google\Service\DatabaseMigrationService\Resource;
 
+use Google\Service\DatabaseMigrationService\DemoteDestinationRequest;
+use Google\Service\DatabaseMigrationService\GenerateSshScriptRequest;
+use Google\Service\DatabaseMigrationService\GenerateTcpProxyScriptRequest;
+use Google\Service\DatabaseMigrationService\ListMigrationJobsResponse;
+use Google\Service\DatabaseMigrationService\MigrationJob;
+use Google\Service\DatabaseMigrationService\Operation;
+use Google\Service\DatabaseMigrationService\Policy;
+use Google\Service\DatabaseMigrationService\PromoteMigrationJobRequest;
+use Google\Service\DatabaseMigrationService\RestartMigrationJobRequest;
+use Google\Service\DatabaseMigrationService\ResumeMigrationJobRequest;
+use Google\Service\DatabaseMigrationService\SetIamPolicyRequest;
+use Google\Service\DatabaseMigrationService\SshScript;
+use Google\Service\DatabaseMigrationService\StartMigrationJobRequest;
+use Google\Service\DatabaseMigrationService\StopMigrationJobRequest;
+use Google\Service\DatabaseMigrationService\TcpProxyScript;
+use Google\Service\DatabaseMigrationService\TestIamPermissionsRequest;
+use Google\Service\DatabaseMigrationService\TestIamPermissionsResponse;
+use Google\Service\DatabaseMigrationService\VerifyMigrationJobRequest;
 /**
  * The "migrationJobs" collection of methods.
  * Typical usage is:

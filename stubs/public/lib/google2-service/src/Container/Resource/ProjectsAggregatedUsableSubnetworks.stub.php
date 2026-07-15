@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Container\Resource;
 
+use Google\Service\Container\ListUsableSubnetworksResponse;
 /**
  * The "usableSubnetworks" collection of methods.
  * Typical usage is:

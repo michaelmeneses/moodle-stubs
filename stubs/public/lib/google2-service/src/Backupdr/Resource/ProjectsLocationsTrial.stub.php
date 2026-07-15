@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\EndTrialRequest;
+use Google\Service\Backupdr\SubscribeTrialRequest;
+use Google\Service\Backupdr\Trial;
 /**
  * The "trial" collection of methods.
  * Typical usage is:

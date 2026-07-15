@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AppHub\Resource;
 
+use Google\Service\AppHub\ListWorkloadsResponse;
+use Google\Service\AppHub\Operation;
+use Google\Service\AppHub\Workload;
 /**
  * The "workloads" collection of methods.
  * Typical usage is:

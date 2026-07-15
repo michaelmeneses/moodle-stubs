@@ -23,6 +23,8 @@
  */
 namespace Google\Service\GameServices\Resource;
 
+use Google\Service\GameServices\ListLocationsResponse;
+use Google\Service\GameServices\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\Metadata;
 /**
  * The "dictionary" collection of methods.
  * Typical usage is:

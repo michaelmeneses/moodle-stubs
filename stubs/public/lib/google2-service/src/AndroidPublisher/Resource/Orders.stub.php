@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\BatchGetOrdersResponse;
+use Google\Service\AndroidPublisher\Order;
 /**
  * The "orders" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ManufacturerCenter\Resource;
 
+use Google\Service\ManufacturerCenter\ListProductCertificationsResponse;
+use Google\Service\ManufacturerCenter\ManufacturersEmpty;
+use Google\Service\ManufacturerCenter\ProductCertification;
 /**
  * The "productCertifications" collection of methods.
  * Typical usage is:

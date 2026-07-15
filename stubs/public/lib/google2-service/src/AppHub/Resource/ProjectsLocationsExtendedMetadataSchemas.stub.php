@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AppHub\Resource;
 
+use Google\Service\AppHub\ExtendedMetadataSchema;
+use Google\Service\AppHub\ListExtendedMetadataSchemasResponse;
 /**
  * The "extendedMetadataSchemas" collection of methods.
  * Typical usage is:

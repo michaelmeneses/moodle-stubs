@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Advisorynotifications\Resource;
 
+use Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1Settings;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

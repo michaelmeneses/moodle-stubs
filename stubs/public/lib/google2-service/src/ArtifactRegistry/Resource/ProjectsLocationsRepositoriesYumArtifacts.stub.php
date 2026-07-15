@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\ImportYumArtifactsRequest;
+use Google\Service\ArtifactRegistry\Operation;
+use Google\Service\ArtifactRegistry\UploadYumArtifactMediaResponse;
+use Google\Service\ArtifactRegistry\UploadYumArtifactRequest;
 /**
  * The "yumArtifacts" collection of methods.
  * Typical usage is:

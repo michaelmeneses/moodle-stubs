@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\Channel;
+use Google\Service\DisplayVideo\ListChannelsResponse;
 /**
  * The "channels" collection of methods.
  * Typical usage is:

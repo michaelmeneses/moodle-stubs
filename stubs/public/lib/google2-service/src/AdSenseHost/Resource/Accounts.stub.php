@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdSenseHost\Resource;
 
+use Google\Service\AdSenseHost\Account;
+use Google\Service\AdSenseHost\Accounts as AccountsModel;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

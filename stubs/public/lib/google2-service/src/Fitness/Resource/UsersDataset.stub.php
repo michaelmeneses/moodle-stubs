@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Fitness\Resource;
 
+use Google\Service\Fitness\AggregateRequest;
+use Google\Service\Fitness\AggregateResponse;
 /**
  * The "dataset" collection of methods.
  * Typical usage is:

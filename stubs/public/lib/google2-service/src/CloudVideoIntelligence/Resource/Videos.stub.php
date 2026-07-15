@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudVideoIntelligence\Resource;
 
+use Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1AnnotateVideoRequest;
+use Google\Service\CloudVideoIntelligence\GoogleLongrunningOperation;
 /**
  * The "videos" collection of methods.
  * Typical usage is:

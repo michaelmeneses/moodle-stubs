@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CivicInfo\Resource;
 
+use Google\Service\CivicInfo\CivicinfoApiprotosV2DivisionByAddressResponse;
+use Google\Service\CivicInfo\CivicinfoApiprotosV2DivisionSearchResponse;
 /**
  * The "divisions" collection of methods.
  * Typical usage is:

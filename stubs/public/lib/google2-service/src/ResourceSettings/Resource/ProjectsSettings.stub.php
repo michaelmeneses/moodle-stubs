@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ResourceSettings\Resource;
 
+use Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1ListSettingsResponse;
+use Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1Setting;
 /**
  * The "settings" collection of methods.
  * Typical usage is:

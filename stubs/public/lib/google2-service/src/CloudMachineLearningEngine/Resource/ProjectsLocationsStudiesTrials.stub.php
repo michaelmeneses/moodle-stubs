@@ -23,6 +23,17 @@
  */
 namespace Google\Service\CloudMachineLearningEngine\Resource;
 
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AddTrialMeasurementRequest;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1CheckTrialEarlyStoppingStateRequest;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1CompleteTrialRequest;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListOptimalTrialsRequest;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListOptimalTrialsResponse;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListTrialsResponse;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StopTrialRequest;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SuggestTrialsRequest;
+use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Trial;
+use Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation;
+use Google\Service\CloudMachineLearningEngine\GoogleProtobufEmpty;
 /**
  * The "trials" collection of methods.
  * Typical usage is:

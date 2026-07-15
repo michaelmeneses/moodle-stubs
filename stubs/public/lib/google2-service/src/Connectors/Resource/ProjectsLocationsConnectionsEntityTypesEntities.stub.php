@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\ConnectorsEmpty;
+use Google\Service\Connectors\Entity;
+use Google\Service\Connectors\ListEntitiesResponse;
+use Google\Service\Connectors\UpdateEntitiesWithConditionsResponse;
 /**
  * The "entities" collection of methods.
  * Typical usage is:

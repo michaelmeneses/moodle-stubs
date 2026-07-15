@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\Webproperties;
+use Google\Service\Analytics\Webproperty;
 /**
  * The "webproperties" collection of methods.
  * Typical usage is:

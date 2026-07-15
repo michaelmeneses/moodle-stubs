@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\GuardianInvitation;
+use Google\Service\Classroom\ListGuardianInvitationsResponse;
 /**
  * The "guardianInvitations" collection of methods.
  * Typical usage is:

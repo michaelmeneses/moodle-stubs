@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Backupdr\Resource;
 
+use Google\Service\Backupdr\BackupPlan;
+use Google\Service\Backupdr\ListBackupPlansResponse;
+use Google\Service\Backupdr\Operation;
 /**
  * The "backupPlans" collection of methods.
  * Typical usage is:

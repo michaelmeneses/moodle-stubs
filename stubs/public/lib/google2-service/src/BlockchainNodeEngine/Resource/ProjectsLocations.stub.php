@@ -23,6 +23,8 @@
  */
 namespace Google\Service\BlockchainNodeEngine\Resource;
 
+use Google\Service\BlockchainNodeEngine\ListLocationsResponse;
+use Google\Service\BlockchainNodeEngine\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

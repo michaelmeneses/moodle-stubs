@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetAppFiles\Resource;
 
+use Google\Service\NetAppFiles\ActiveDirectory;
+use Google\Service\NetAppFiles\ListActiveDirectoriesResponse;
+use Google\Service\NetAppFiles\Operation;
 /**
  * The "activeDirectories" collection of methods.
  * Typical usage is:

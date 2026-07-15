@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1ListTraceConfigOverridesResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1TraceConfigOverride;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "overrides" collection of methods.
  * Typical usage is:

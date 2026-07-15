@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\AccountUserProfile;
+use Google\Service\Dfareporting\AccountUserProfilesListResponse;
 /**
  * The "accountUserProfiles" collection of methods.
  * Typical usage is:

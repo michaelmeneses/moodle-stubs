@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\HttpHealthCheck;
+use Google\Service\Compute\HttpHealthCheckList;
+use Google\Service\Compute\Operation;
 /**
  * The "httpHealthChecks" collection of methods.
  * Typical usage is:

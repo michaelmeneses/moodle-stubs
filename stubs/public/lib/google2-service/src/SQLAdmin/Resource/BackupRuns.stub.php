@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SQLAdmin\Resource;
 
+use Google\Service\SQLAdmin\BackupRun;
+use Google\Service\SQLAdmin\BackupRunsListResponse;
+use Google\Service\SQLAdmin\Operation;
 /**
  * The "backupRuns" collection of methods.
  * Typical usage is:

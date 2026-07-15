@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Drive\Resource;
 
+use Google\Service\Drive\App;
+use Google\Service\Drive\AppList;
 /**
  * The "apps" collection of methods.
  * Typical usage is:

@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsResponse;
 /**
  * The "securityAssessmentResults" collection of methods.
  * Typical usage is:

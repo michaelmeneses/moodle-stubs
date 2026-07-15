@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudRetail\Resource;
 
+use Google\Service\CloudRetail\GoogleApiHttpBody;
+use Google\Service\CloudRetail\GoogleCloudRetailV2CollectUserEventRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2ImportUserEventsRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2PurgeUserEventsRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2RejoinUserEventsRequest;
+use Google\Service\CloudRetail\GoogleCloudRetailV2UserEvent;
+use Google\Service\CloudRetail\GoogleLongrunningOperation;
 /**
  * The "userEvents" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListQaQuestionTagsResponse;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaQuestionTag;
+use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
 /**
  * The "qaQuestionTags" collection of methods.
  * Typical usage is:

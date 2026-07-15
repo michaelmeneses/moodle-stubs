@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\Link;
+use Google\Service\Logging\ListLinksResponse;
+use Google\Service\Logging\Operation;
 /**
  * The "links" collection of methods.
  * Typical usage is:

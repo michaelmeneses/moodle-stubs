@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardRunsRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardRunsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTensorboardRunsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1TensorboardRun;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteTensorboardRunDataRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteTensorboardRunDataResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "runs" collection of methods.
  * Typical usage is:

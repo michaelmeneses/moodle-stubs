@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Firestore\Resource;
 
+use Google\Service\Firestore\FirestoreEmpty;
+use Google\Service\Firestore\GoogleFirestoreAdminV1BackupSchedule;
+use Google\Service\Firestore\GoogleFirestoreAdminV1ListBackupSchedulesResponse;
 /**
  * The "backupSchedules" collection of methods.
  * Typical usage is:

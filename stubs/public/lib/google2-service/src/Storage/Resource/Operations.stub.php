@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Storage\Resource;
 
+use Google\Service\Storage\AdvanceRelocateBucketOperationRequest;
+use Google\Service\Storage\GoogleLongrunningListOperationsResponse;
+use Google\Service\Storage\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

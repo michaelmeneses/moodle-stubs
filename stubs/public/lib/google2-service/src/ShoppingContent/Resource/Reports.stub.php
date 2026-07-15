@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\SearchRequest;
+use Google\Service\ShoppingContent\SearchResponse;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

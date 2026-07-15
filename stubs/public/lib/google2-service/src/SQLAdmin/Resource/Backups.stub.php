@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SQLAdmin\Resource;
 
+use Google\Service\SQLAdmin\Backup;
+use Google\Service\SQLAdmin\ListBackupsResponse;
+use Google\Service\SQLAdmin\Operation;
 /**
  * The "Backups" collection of methods.
  * Typical usage is:

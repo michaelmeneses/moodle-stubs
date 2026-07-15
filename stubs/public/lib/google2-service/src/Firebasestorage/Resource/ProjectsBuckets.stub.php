@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Firebasestorage\Resource;
 
+use Google\Service\Firebasestorage\AddFirebaseRequest;
+use Google\Service\Firebasestorage\Bucket;
+use Google\Service\Firebasestorage\FirebasestorageEmpty;
+use Google\Service\Firebasestorage\ListBucketsResponse;
+use Google\Service\Firebasestorage\RemoveFirebaseRequest;
 /**
  * The "buckets" collection of methods.
  * Typical usage is:

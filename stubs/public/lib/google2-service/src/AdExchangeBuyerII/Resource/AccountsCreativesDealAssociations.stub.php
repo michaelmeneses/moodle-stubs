@@ -23,6 +23,10 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\AddDealAssociationRequest;
+use Google\Service\AdExchangeBuyerII\Adexchangebuyer2Empty;
+use Google\Service\AdExchangeBuyerII\ListDealAssociationsResponse;
+use Google\Service\AdExchangeBuyerII\RemoveDealAssociationRequest;
 /**
  * The "dealAssociations" collection of methods.
  * Typical usage is:

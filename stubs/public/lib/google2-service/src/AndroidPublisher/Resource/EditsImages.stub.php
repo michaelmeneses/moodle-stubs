@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AndroidPublisher\Resource;
 
+use Google\Service\AndroidPublisher\ImagesDeleteAllResponse;
+use Google\Service\AndroidPublisher\ImagesListResponse;
+use Google\Service\AndroidPublisher\ImagesUploadResponse;
 /**
  * The "images" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\RecommendationsAI\Resource;
 
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest;
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse;
+use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration;
+use Google\Service\RecommendationsAI\GoogleProtobufEmpty;
 /**
  * The "predictionApiKeyRegistrations" collection of methods.
  * Typical usage is:

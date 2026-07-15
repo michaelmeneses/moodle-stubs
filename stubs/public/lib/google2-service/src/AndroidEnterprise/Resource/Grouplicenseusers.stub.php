@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AndroidEnterprise\Resource;
 
+use Google\Service\AndroidEnterprise\GroupLicenseUsersListResponse;
 /**
  * The "grouplicenseusers" collection of methods.
  * Typical usage is:

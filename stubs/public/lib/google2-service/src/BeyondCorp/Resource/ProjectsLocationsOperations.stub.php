@@ -23,6 +23,10 @@
  */
 namespace Google\Service\BeyondCorp\Resource;
 
+use Google\Service\BeyondCorp\BeyondcorpEmpty;
+use Google\Service\BeyondCorp\GoogleLongrunningCancelOperationRequest;
+use Google\Service\BeyondCorp\GoogleLongrunningListOperationsResponse;
+use Google\Service\BeyondCorp\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

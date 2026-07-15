@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AdSenseHost\Resource;
 
+use Google\Service\AdSenseHost\AdCode;
+use Google\Service\AdSenseHost\AdUnit;
+use Google\Service\AdSenseHost\AdUnits;
 /**
  * The "adunits" collection of methods.
  * Typical usage is:

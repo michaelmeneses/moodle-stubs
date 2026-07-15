@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ExportInsightsDataRequest;
+use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
 /**
  * The "insightsdata" collection of methods.
  * Typical usage is:

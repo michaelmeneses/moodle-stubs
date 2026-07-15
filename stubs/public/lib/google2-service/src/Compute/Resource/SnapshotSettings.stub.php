@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\SnapshotSettings as SnapshotSettingsModel;
 /**
  * The "snapshotSettings" collection of methods.
  * Typical usage is:

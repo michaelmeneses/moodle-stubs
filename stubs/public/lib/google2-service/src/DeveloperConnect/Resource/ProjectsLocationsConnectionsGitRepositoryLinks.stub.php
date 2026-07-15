@@ -23,6 +23,19 @@
  */
 namespace Google\Service\DeveloperConnect\Resource;
 
+use Google\Service\DeveloperConnect\DeveloperconnectEmpty;
+use Google\Service\DeveloperConnect\FetchGitRefsResponse;
+use Google\Service\DeveloperConnect\FetchReadTokenRequest;
+use Google\Service\DeveloperConnect\FetchReadTokenResponse;
+use Google\Service\DeveloperConnect\FetchReadWriteTokenRequest;
+use Google\Service\DeveloperConnect\FetchReadWriteTokenResponse;
+use Google\Service\DeveloperConnect\GitRepositoryLink;
+use Google\Service\DeveloperConnect\ListGitRepositoryLinksResponse;
+use Google\Service\DeveloperConnect\Operation;
+use Google\Service\DeveloperConnect\ProcessBitbucketCloudWebhookRequest;
+use Google\Service\DeveloperConnect\ProcessBitbucketDataCenterWebhookRequest;
+use Google\Service\DeveloperConnect\ProcessGitLabEnterpriseWebhookRequest;
+use Google\Service\DeveloperConnect\ProcessGitLabWebhookRequest;
 /**
  * The "gitRepositoryLinks" collection of methods.
  * Typical usage is:

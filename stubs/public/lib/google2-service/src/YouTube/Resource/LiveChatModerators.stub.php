@@ -23,6 +23,8 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\LiveChatModerator;
+use Google\Service\YouTube\LiveChatModeratorListResponse;
 /**
  * The "liveChatModerators" collection of methods.
  * Typical usage is:

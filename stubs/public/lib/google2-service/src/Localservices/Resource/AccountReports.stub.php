@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Localservices\Resource;
 
+use Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse;
 /**
  * The "accountReports" collection of methods.
  * Typical usage is:

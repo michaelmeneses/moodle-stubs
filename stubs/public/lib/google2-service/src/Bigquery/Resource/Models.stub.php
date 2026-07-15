@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Bigquery\Resource;
 
+use Google\Service\Bigquery\ListModelsResponse;
+use Google\Service\Bigquery\Model;
 /**
  * The "models" collection of methods.
  * Typical usage is:

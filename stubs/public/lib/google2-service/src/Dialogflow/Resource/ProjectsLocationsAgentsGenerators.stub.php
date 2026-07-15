@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dialogflow\Resource;
 
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Generator;
+use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListGeneratorsResponse;
+use Google\Service\Dialogflow\GoogleProtobufEmpty;
 /**
  * The "generators" collection of methods.
  * Typical usage is:

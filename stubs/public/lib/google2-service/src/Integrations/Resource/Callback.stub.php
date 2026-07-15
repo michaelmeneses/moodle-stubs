@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Integrations\Resource;
 
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateTokenResponse;
 /**
  * The "callback" collection of methods.
  * Typical usage is:

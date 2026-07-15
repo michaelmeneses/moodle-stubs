@@ -23,6 +23,10 @@
  */
 namespace Google\Service\YouTube\Resource;
 
+use Google\Service\YouTube\Video;
+use Google\Service\YouTube\VideoAbuseReport;
+use Google\Service\YouTube\VideoGetRatingResponse;
+use Google\Service\YouTube\VideoListResponse;
 /**
  * The "videos" collection of methods.
  * Typical usage is:

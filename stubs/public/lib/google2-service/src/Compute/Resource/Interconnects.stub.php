@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\GlobalSetLabelsRequest;
+use Google\Service\Compute\Interconnect;
+use Google\Service\Compute\InterconnectList;
+use Google\Service\Compute\InterconnectsGetDiagnosticsResponse;
+use Google\Service\Compute\InterconnectsGetMacsecConfigResponse;
+use Google\Service\Compute\Operation;
 /**
  * The "interconnects" collection of methods.
  * Typical usage is:

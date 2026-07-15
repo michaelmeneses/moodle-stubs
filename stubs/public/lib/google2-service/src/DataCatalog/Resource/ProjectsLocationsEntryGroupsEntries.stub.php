@@ -23,6 +23,23 @@
  */
 namespace Google\Service\DataCatalog\Resource;
 
+use Google\Service\DataCatalog\DatacatalogEmpty;
+use Google\Service\DataCatalog\GetIamPolicyRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1Contacts;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1EntryOverview;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportEntriesRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListEntriesResponse;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryContactsRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryOverviewRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1StarEntryRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1StarEntryResponse;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryRequest;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryResponse;
+use Google\Service\DataCatalog\Operation;
+use Google\Service\DataCatalog\Policy;
+use Google\Service\DataCatalog\TestIamPermissionsRequest;
+use Google\Service\DataCatalog\TestIamPermissionsResponse;
 /**
  * The "entries" collection of methods.
  * Typical usage is:

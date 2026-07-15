@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Connectors\Resource;
 
+use Google\Service\Connectors\CancelOperationRequest;
+use Google\Service\Connectors\ConnectorsEmpty;
+use Google\Service\Connectors\ListOperationsResponse;
+use Google\Service\Connectors\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

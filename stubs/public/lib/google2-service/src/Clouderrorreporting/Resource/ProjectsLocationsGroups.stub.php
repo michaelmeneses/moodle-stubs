@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Clouderrorreporting\Resource;
 
+use Google\Service\Clouderrorreporting\ErrorGroup;
 /**
  * The "groups" collection of methods.
  * Typical usage is:

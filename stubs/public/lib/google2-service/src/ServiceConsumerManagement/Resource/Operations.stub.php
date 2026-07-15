@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ServiceConsumerManagement\Resource;
 
+use Google\Service\ServiceConsumerManagement\CancelOperationRequest;
+use Google\Service\ServiceConsumerManagement\ListOperationsResponse;
+use Google\Service\ServiceConsumerManagement\Operation;
+use Google\Service\ServiceConsumerManagement\ServiceconsumermanagementEmpty;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

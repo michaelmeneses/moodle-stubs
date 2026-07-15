@@ -23,6 +23,7 @@
  */
 namespace Google\Service\YouTubeReporting\Resource;
 
+use Google\Service\YouTubeReporting\GdataMedia;
 /**
  * The "media" collection of methods.
  * Typical usage is:

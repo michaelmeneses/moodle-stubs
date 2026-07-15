@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Reader\Wrapper;
 
+use OpenSpout\Reader\Exception\XMLProcessingException;
 /**
  * @internal
  */

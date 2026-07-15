@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Engine;
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListEnginesResponse;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "engines" collection of methods.
  * Typical usage is:

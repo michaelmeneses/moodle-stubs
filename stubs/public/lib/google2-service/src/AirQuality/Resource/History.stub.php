@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AirQuality\Resource;
 
+use Google\Service\AirQuality\LookupHistoryRequest;
+use Google\Service\AirQuality\LookupHistoryResponse;
 /**
  * The "history" collection of methods.
  * Typical usage is:

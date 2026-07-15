@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMMigrationService\Resource;
 
+use Google\Service\VMMigrationService\ImageImport;
+use Google\Service\VMMigrationService\ListImageImportsResponse;
+use Google\Service\VMMigrationService\Operation;
 /**
  * The "imageImports" collection of methods.
  * Typical usage is:

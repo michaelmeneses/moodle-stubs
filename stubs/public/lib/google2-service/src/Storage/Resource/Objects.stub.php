@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Storage\Resource;
 
+use Google\Service\Storage\BulkRestoreObjectsRequest;
+use Google\Service\Storage\Channel;
+use Google\Service\Storage\ComposeRequest;
+use Google\Service\Storage\GoogleLongrunningOperation;
+use Google\Service\Storage\Objects as ObjectsModel;
+use Google\Service\Storage\Policy;
+use Google\Service\Storage\RewriteResponse;
+use Google\Service\Storage\StorageObject;
+use Google\Service\Storage\TestIamPermissionsResponse;
 /**
  * The "objects" collection of methods.
  * Typical usage is:

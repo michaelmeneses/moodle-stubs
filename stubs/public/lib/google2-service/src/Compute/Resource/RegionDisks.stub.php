@@ -23,6 +23,21 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\BulkInsertDiskResource;
+use Google\Service\Compute\Disk;
+use Google\Service\Compute\DiskList;
+use Google\Service\Compute\DisksStopGroupAsyncReplicationResource;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\RegionDisksAddResourcePoliciesRequest;
+use Google\Service\Compute\RegionDisksRemoveResourcePoliciesRequest;
+use Google\Service\Compute\RegionDisksResizeRequest;
+use Google\Service\Compute\RegionDisksStartAsyncReplicationRequest;
+use Google\Service\Compute\RegionSetLabelsRequest;
+use Google\Service\Compute\RegionSetPolicyRequest;
+use Google\Service\Compute\Snapshot;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
 /**
  * The "regionDisks" collection of methods.
  * Typical usage is:

@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchReadTensorboardTimeSeriesDataResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTensorboardsResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardSizeResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardUsageResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1Tensorboard;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "tensorboards" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\DnsBindPermission;
+use Google\Service\VMwareEngine\ListLocationsResponse;
+use Google\Service\VMwareEngine\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

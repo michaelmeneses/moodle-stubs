@@ -23,6 +23,7 @@
  */
 namespace Google\Service\CloudDataplex\Resource;
 
+use Google\Service\CloudDataplex\GoogleCloudDataplexV1EntryLink;
 /**
  * The "entryLinks" collection of methods.
  * Typical usage is:

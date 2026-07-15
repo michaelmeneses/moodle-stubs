@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Translate\Resource;
 
+use Google\Service\Translate\ListAdaptiveMtSentencesResponse;
 /**
  * The "adaptiveMtSentences" collection of methods.
  * Typical usage is:

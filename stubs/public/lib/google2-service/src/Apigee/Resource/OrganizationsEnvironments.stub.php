@@ -23,6 +23,20 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1AddonsConfig;
+use Google\Service\Apigee\GoogleCloudApigeeV1ApiSecurityRuntimeConfig;
+use Google\Service\Apigee\GoogleCloudApigeeV1DebugMask;
+use Google\Service\Apigee\GoogleCloudApigeeV1Environment;
+use Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentConfig;
+use Google\Service\Apigee\GoogleCloudApigeeV1SecurityActionsConfig;
+use Google\Service\Apigee\GoogleCloudApigeeV1Subscription;
+use Google\Service\Apigee\GoogleCloudApigeeV1TraceConfig;
+use Google\Service\Apigee\GoogleIamV1Policy;
+use Google\Service\Apigee\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Apigee\GoogleIamV1TestIamPermissionsRequest;
+use Google\Service\Apigee\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\Apigee\GoogleLongrunningOperation;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "environments" collection of methods.
  * Typical usage is:

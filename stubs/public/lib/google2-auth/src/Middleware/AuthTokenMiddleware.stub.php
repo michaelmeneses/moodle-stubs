@@ -23,6 +23,12 @@
  */
 namespace Google\Auth\Middleware;
 
+use Google\Auth\FetchAuthTokenCache;
+use Google\Auth\FetchAuthTokenInterface;
+use Google\Auth\GetQuotaProjectInterface;
+use Google\Auth\UpdateMetadataInterface;
+use GuzzleHttp\Psr7\Utils;
+use Psr\Http\Message\RequestInterface;
 /**
  * AuthTokenMiddleware is a Guzzle Middleware that adds an Authorization header
  * provided by an object implementing FetchAuthTokenInterface.

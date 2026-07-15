@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CloudRun\Resource;
 
+use Google\Service\CloudRun\DomainMapping;
+use Google\Service\CloudRun\ListDomainMappingsResponse;
+use Google\Service\CloudRun\Status;
 /**
  * The "domainmappings" collection of methods.
  * Typical usage is:

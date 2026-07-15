@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AIPlatformNotebooks\Resource;
 
+use Google\Service\AIPlatformNotebooks\Environment;
+use Google\Service\AIPlatformNotebooks\ListEnvironmentsResponse;
+use Google\Service\AIPlatformNotebooks\Operation;
 /**
  * The "environments" collection of methods.
  * Typical usage is:

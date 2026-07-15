@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1CacheConfig;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

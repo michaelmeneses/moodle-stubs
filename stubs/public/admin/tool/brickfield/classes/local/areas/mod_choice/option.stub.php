@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\areas\mod_choice;
 
+use core\event\course_module_created;
+use core\event\course_module_updated;
+use tool_brickfield\area_base;
 /**
  * Choice option observer.
  *

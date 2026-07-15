@@ -8,6 +8,7 @@
  */
 namespace Aws\Evs;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Elastic VMware Service** service.
  * @method \Aws\Result associateEipToVlan(array $args = [])

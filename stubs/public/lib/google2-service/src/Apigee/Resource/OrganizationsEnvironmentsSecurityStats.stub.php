@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1QueryTabularStatsRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1QueryTabularStatsResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1QueryTimeSeriesStatsRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1QueryTimeSeriesStatsResponse;
 /**
  * The "securityStats" collection of methods.
  * Typical usage is:

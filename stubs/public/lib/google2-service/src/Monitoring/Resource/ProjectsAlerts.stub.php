@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\Alert;
+use Google\Service\Monitoring\ListAlertsResponse;
 /**
  * The "alerts" collection of methods.
  * Typical usage is:

@@ -23,6 +23,14 @@
  */
 namespace Google\Service\CertificateAuthorityService\Resource;
 
+use Google\Service\CertificateAuthorityService\ActivateCertificateAuthorityRequest;
+use Google\Service\CertificateAuthorityService\CertificateAuthority;
+use Google\Service\CertificateAuthorityService\DisableCertificateAuthorityRequest;
+use Google\Service\CertificateAuthorityService\EnableCertificateAuthorityRequest;
+use Google\Service\CertificateAuthorityService\FetchCertificateAuthorityCsrResponse;
+use Google\Service\CertificateAuthorityService\ListCertificateAuthoritiesResponse;
+use Google\Service\CertificateAuthorityService\Operation;
+use Google\Service\CertificateAuthorityService\UndeleteCertificateAuthorityRequest;
 /**
  * The "certificateAuthorities" collection of methods.
  * Typical usage is:

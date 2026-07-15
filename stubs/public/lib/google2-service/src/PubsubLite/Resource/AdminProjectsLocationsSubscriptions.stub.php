@@ -23,6 +23,11 @@
  */
 namespace Google\Service\PubsubLite\Resource;
 
+use Google\Service\PubsubLite\ListSubscriptionsResponse;
+use Google\Service\PubsubLite\Operation;
+use Google\Service\PubsubLite\PubsubliteEmpty;
+use Google\Service\PubsubLite\SeekSubscriptionRequest;
+use Google\Service\PubsubLite\Subscription;
 /**
  * The "subscriptions" collection of methods.
  * Typical usage is:

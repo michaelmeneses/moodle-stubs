@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ServerlessVPCAccess\Resource;
 
+use Google\Service\ServerlessVPCAccess\Connector;
+use Google\Service\ServerlessVPCAccess\ListConnectorsResponse;
+use Google\Service\ServerlessVPCAccess\Operation;
 /**
  * The "connectors" collection of methods.
  * Typical usage is:

@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\GoogleBytestreamMedia;
 /**
  * The "media" collection of methods.
  * Typical usage is:

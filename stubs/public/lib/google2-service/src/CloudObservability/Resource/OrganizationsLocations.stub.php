@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudObservability\Resource;
 
+use Google\Service\CloudObservability\Operation;
+use Google\Service\CloudObservability\Settings;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

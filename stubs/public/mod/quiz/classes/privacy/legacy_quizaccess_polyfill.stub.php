@@ -29,6 +29,7 @@
  */
 namespace mod_quiz\privacy;
 
+use core_privacy\local\request\approved_userlist;
 /**
  * The trait used to provide a backwards compatibility for third-party plugins.
  *

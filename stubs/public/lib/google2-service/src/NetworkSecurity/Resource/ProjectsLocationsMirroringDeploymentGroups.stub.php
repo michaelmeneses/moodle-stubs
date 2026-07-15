@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\ListMirroringDeploymentGroupsResponse;
+use Google\Service\NetworkSecurity\MirroringDeploymentGroup;
+use Google\Service\NetworkSecurity\Operation;
 /**
  * The "mirroringDeploymentGroups" collection of methods.
  * Typical usage is:

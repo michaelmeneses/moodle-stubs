@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SecureSourceManager\Resource;
 
+use Google\Service\SecureSourceManager\Hook;
+use Google\Service\SecureSourceManager\ListHooksResponse;
+use Google\Service\SecureSourceManager\Operation;
 /**
  * The "hooks" collection of methods.
  * Typical usage is:

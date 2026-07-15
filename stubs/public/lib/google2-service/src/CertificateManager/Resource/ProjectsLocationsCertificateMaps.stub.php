@@ -23,6 +23,9 @@
  */
 namespace Google\Service\CertificateManager\Resource;
 
+use Google\Service\CertificateManager\CertificateMap;
+use Google\Service\CertificateManager\ListCertificateMapsResponse;
+use Google\Service\CertificateManager\Operation;
 /**
  * The "certificateMaps" collection of methods.
  * Typical usage is:

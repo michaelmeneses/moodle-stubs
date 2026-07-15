@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Firebaseappcheck\Resource;
 
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1DebugToken;
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ListDebugTokensResponse;
+use Google\Service\Firebaseappcheck\GoogleProtobufEmpty;
 /**
  * The "debugTokens" collection of methods.
  * Typical usage is:

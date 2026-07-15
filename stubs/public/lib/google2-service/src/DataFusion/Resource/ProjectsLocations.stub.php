@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataFusion\Resource;
 
+use Google\Service\DataFusion\ListLocationsResponse;
+use Google\Service\DataFusion\Location;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

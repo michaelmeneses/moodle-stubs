@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InterconnectAttachment;
+use Google\Service\Compute\InterconnectAttachmentAggregatedList;
+use Google\Service\Compute\InterconnectAttachmentList;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RegionSetLabelsRequest;
 /**
  * The "interconnectAttachments" collection of methods.
  * Typical usage is:

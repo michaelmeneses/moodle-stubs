@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ChromeManagement\Resource;
 
+use Google\Service\ChromeManagement\GoogleChromeManagementV1ListTelemetryUsersResponse;
+use Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryUser;
 /**
  * The "users" collection of methods.
  * Typical usage is:

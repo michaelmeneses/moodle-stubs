@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1BatchUpdateSecurityIncidentsRequest;
+use Google\Service\Apigee\GoogleCloudApigeeV1BatchUpdateSecurityIncidentsResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityIncidentsResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1SecurityIncident;
 /**
  * The "securityIncidents" collection of methods.
  * Typical usage is:

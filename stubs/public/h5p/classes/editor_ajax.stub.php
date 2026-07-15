@@ -29,6 +29,8 @@
  */
 namespace core_h5p;
 
+use Moodle\H5PEditorAjaxInterface;
+use core\dml\table as dml_table;
 /**
  * Moodle's implementation of the H5P Editor Ajax interface.
  *

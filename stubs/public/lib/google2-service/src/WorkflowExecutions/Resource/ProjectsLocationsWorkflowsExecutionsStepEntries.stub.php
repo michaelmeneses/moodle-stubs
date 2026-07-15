@@ -23,6 +23,8 @@
  */
 namespace Google\Service\WorkflowExecutions\Resource;
 
+use Google\Service\WorkflowExecutions\ListStepEntriesResponse;
+use Google\Service\WorkflowExecutions\StepEntry;
 /**
  * The "stepEntries" collection of methods.
  * Typical usage is:

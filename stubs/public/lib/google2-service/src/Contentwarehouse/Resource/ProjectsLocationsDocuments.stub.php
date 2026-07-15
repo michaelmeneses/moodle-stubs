@@ -23,6 +23,25 @@
  */
 namespace Google\Service\Contentwarehouse\Resource;
 
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CreateDocumentRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CreateDocumentResponse;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DeleteDocumentRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1Document;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FetchAclRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FetchAclResponse;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1GetDocumentRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedSourcesRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedSourcesResponse;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedTargetsRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedTargetsResponse;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1LockDocumentRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SearchDocumentsRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SearchDocumentsResponse;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SetAclRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SetAclResponse;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentRequest;
+use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentResponse;
+use Google\Service\Contentwarehouse\GoogleProtobufEmpty;
 /**
  * The "documents" collection of methods.
  * Typical usage is:

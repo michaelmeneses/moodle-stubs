@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Dataflow\Resource;
 
+use Google\Service\Dataflow\Job;
+use Google\Service\Dataflow\JobExecutionDetails;
+use Google\Service\Dataflow\JobMetrics;
+use Google\Service\Dataflow\ListJobsResponse;
+use Google\Service\Dataflow\Snapshot;
+use Google\Service\Dataflow\SnapshotJobRequest;
 /**
  * The "jobs" collection of methods.
  * Typical usage is:

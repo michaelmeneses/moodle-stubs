@@ -8,6 +8,11 @@
  */
 namespace core_reportbuilder\local\filters;
 
+use context_system;
+use core_user;
+use lang_string;
+use MoodleQuickForm;
+use core_reportbuilder\local\helpers\database;
 /**
  * User report filter
  *

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\RegionUrlMapsValidateRequest;
+use Google\Service\Compute\UrlMap;
+use Google\Service\Compute\UrlMapList;
+use Google\Service\Compute\UrlMapsValidateResponse;
 /**
  * The "regionUrlMaps" collection of methods.
  * Typical usage is:

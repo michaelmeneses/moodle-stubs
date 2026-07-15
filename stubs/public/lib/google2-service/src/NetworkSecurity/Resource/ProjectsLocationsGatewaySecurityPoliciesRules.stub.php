@@ -23,6 +23,9 @@
  */
 namespace Google\Service\NetworkSecurity\Resource;
 
+use Google\Service\NetworkSecurity\GatewaySecurityPolicyRule;
+use Google\Service\NetworkSecurity\ListGatewaySecurityPolicyRulesResponse;
+use Google\Service\NetworkSecurity\Operation;
 /**
  * The "rules" collection of methods.
  * Typical usage is:

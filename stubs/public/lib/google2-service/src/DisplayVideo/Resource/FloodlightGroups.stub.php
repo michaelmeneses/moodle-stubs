@@ -23,6 +23,7 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\FloodlightGroup;
 /**
  * The "floodlightGroups" collection of methods.
  * Typical usage is:

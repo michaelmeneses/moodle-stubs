@@ -23,6 +23,14 @@
  */
 namespace Google\Service\APIhub\Resource;
 
+use Google\Service\APIhub\GoogleCloudApihubV1CollectApiDataRequest;
+use Google\Service\APIhub\GoogleCloudApihubV1LookupRuntimeProjectAttachmentResponse;
+use Google\Service\APIhub\GoogleCloudApihubV1RetrieveApiViewsResponse;
+use Google\Service\APIhub\GoogleCloudApihubV1SearchResourcesRequest;
+use Google\Service\APIhub\GoogleCloudApihubV1SearchResourcesResponse;
+use Google\Service\APIhub\GoogleCloudLocationListLocationsResponse;
+use Google\Service\APIhub\GoogleCloudLocationLocation;
+use Google\Service\APIhub\GoogleLongrunningOperation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

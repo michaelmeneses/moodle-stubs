@@ -16,6 +16,10 @@
  */
 namespace Mustache\Cache;
 
+use Mustache\Cache;
+use Mustache\Exception\InvalidArgumentException;
+use Mustache\Logger;
+use Psr\Log\LoggerInterface;
 /**
  * Abstract Mustache Cache class.
  *

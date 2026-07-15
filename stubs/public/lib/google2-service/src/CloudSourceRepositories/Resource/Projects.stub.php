@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudSourceRepositories\Resource;
 
+use Google\Service\CloudSourceRepositories\ProjectConfig;
+use Google\Service\CloudSourceRepositories\UpdateProjectConfigRequest;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

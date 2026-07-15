@@ -23,6 +23,13 @@
  */
 namespace Google\Service\DatabaseMigrationService\Resource;
 
+use Google\Service\DatabaseMigrationService\ListMigrationJobObjectsResponse;
+use Google\Service\DatabaseMigrationService\LookupMigrationJobObjectRequest;
+use Google\Service\DatabaseMigrationService\MigrationJobObject;
+use Google\Service\DatabaseMigrationService\Policy;
+use Google\Service\DatabaseMigrationService\SetIamPolicyRequest;
+use Google\Service\DatabaseMigrationService\TestIamPermissionsRequest;
+use Google\Service\DatabaseMigrationService\TestIamPermissionsResponse;
 /**
  * The "objects" collection of methods.
  * Typical usage is:

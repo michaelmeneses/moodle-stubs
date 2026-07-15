@@ -23,6 +23,9 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\ListLocationsResponse;
+use Google\Service\ArtifactRegistry\Location;
+use Google\Service\ArtifactRegistry\VPCSCConfig;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

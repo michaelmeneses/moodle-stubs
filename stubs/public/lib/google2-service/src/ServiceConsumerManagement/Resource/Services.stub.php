@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ServiceConsumerManagement\Resource;
 
+use Google\Service\ServiceConsumerManagement\SearchTenancyUnitsResponse;
 /**
  * The "services" collection of methods.
  * Typical usage is:

@@ -8,6 +8,8 @@
  */
 namespace Slim\Routing;
 
+use Slim\Interfaces\DispatcherInterface;
+use function rawurldecode;
 /** @api */
 class RoutingResults
 {

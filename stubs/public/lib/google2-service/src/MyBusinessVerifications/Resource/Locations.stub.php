@@ -23,6 +23,11 @@
  */
 namespace Google\Service\MyBusinessVerifications\Resource;
 
+use Google\Service\MyBusinessVerifications\FetchVerificationOptionsRequest;
+use Google\Service\MyBusinessVerifications\FetchVerificationOptionsResponse;
+use Google\Service\MyBusinessVerifications\VerifyLocationRequest;
+use Google\Service\MyBusinessVerifications\VerifyLocationResponse;
+use Google\Service\MyBusinessVerifications\VoiceOfMerchantState;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

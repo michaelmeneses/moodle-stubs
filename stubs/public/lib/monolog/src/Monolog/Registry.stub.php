@@ -16,6 +16,7 @@
  */
 namespace Monolog;
 
+use InvalidArgumentException;
 /**
  * Monolog log registry
  *

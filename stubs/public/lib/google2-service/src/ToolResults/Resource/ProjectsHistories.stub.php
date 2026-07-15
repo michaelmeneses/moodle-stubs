@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ToolResults\Resource;
 
+use Google\Service\ToolResults\History;
+use Google\Service\ToolResults\ListHistoriesResponse;
 /**
  * The "histories" collection of methods.
  * Typical usage is:

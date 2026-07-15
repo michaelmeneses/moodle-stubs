@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\ListRecentQueriesResponse;
 /**
  * The "recentQueries" collection of methods.
  * Typical usage is:

@@ -8,6 +8,7 @@
  */
 namespace Aws\SimSpaceWeaver;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS SimSpace Weaver** service.
  * @method \Aws\Result createSnapshot(array $args = [])

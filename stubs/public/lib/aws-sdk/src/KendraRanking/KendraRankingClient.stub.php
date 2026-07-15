@@ -8,6 +8,7 @@
  */
 namespace Aws\KendraRanking;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Kendra Intelligent Ranking** service.
  * @method \Aws\Result createRescoreExecutionPlan(array $args = [])

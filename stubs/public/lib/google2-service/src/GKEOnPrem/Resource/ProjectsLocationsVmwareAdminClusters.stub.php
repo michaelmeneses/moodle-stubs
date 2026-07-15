@@ -23,6 +23,14 @@
  */
 namespace Google\Service\GKEOnPrem\Resource;
 
+use Google\Service\GKEOnPrem\EnrollVmwareAdminClusterRequest;
+use Google\Service\GKEOnPrem\ListVmwareAdminClustersResponse;
+use Google\Service\GKEOnPrem\Operation;
+use Google\Service\GKEOnPrem\Policy;
+use Google\Service\GKEOnPrem\SetIamPolicyRequest;
+use Google\Service\GKEOnPrem\TestIamPermissionsRequest;
+use Google\Service\GKEOnPrem\TestIamPermissionsResponse;
+use Google\Service\GKEOnPrem\VmwareAdminCluster;
 /**
  * The "vmwareAdminClusters" collection of methods.
  * Typical usage is:

@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\ImportAptArtifactsRequest;
+use Google\Service\ArtifactRegistry\Operation;
+use Google\Service\ArtifactRegistry\UploadAptArtifactMediaResponse;
+use Google\Service\ArtifactRegistry\UploadAptArtifactRequest;
 /**
  * The "aptArtifacts" collection of methods.
  * Typical usage is:

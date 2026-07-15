@@ -23,6 +23,7 @@
  */
 namespace Google\Service\ChecksService\Resource;
 
+use Google\Service\ChecksService\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

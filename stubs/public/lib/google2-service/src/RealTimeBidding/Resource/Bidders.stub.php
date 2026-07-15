@@ -23,6 +23,8 @@
  */
 namespace Google\Service\RealTimeBidding\Resource;
 
+use Google\Service\RealTimeBidding\Bidder;
+use Google\Service\RealTimeBidding\ListBiddersResponse;
 /**
  * The "bidders" collection of methods.
  * Typical usage is:

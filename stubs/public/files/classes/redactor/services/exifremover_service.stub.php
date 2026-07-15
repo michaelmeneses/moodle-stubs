@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_files\redactor\services;
 
+use admin_setting_configcheckbox;
+use admin_setting_configexecutable;
+use admin_setting_configselect;
+use admin_setting_configtextarea;
+use admin_setting_heading;
+use core\exception\moodle_exception;
+use core\output\html_writer;
 /**
  * Remove EXIF data from supported image files using PHP GD, or ExifTool if it is configured.
  *

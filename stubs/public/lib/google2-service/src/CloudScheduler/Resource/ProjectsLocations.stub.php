@@ -23,6 +23,10 @@
  */
 namespace Google\Service\CloudScheduler\Resource;
 
+use Google\Service\CloudScheduler\CmekConfig;
+use Google\Service\CloudScheduler\ListLocationsResponse;
+use Google\Service\CloudScheduler\Location;
+use Google\Service\CloudScheduler\Operation;
 /**
  * The "locations" collection of methods.
  * Typical usage is:

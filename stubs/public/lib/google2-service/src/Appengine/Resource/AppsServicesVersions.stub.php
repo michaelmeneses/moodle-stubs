@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Appengine\Resource;
 
+use Google\Service\Appengine\ExportAppImageRequest;
+use Google\Service\Appengine\ListVersionsResponse;
+use Google\Service\Appengine\Operation;
+use Google\Service\Appengine\Version;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

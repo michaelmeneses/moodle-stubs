@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DataprocMetastore\Resource;
 
+use Google\Service\DataprocMetastore\ListMetadataImportsResponse;
+use Google\Service\DataprocMetastore\MetadataImport;
+use Google\Service\DataprocMetastore\Operation;
 /**
  * The "metadataImports" collection of methods.
  * Typical usage is:

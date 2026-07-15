@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Css\Resource;
 
+use Google\Service\Css\ListQuotaGroupsResponse;
 /**
  * The "quotas" collection of methods.
  * Typical usage is:

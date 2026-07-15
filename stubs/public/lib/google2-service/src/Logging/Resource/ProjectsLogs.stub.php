@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Logging\Resource;
 
+use Google\Service\Logging\ListLogsResponse;
+use Google\Service\Logging\LoggingEmpty;
 /**
  * The "logs" collection of methods.
  * Typical usage is:

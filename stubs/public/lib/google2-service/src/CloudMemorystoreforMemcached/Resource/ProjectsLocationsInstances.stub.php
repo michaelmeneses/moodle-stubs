@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudMemorystoreforMemcached\Resource;
 
+use Google\Service\CloudMemorystoreforMemcached\ApplyParametersRequest;
+use Google\Service\CloudMemorystoreforMemcached\GoogleCloudMemcacheV1UpgradeInstanceRequest;
+use Google\Service\CloudMemorystoreforMemcached\Instance;
+use Google\Service\CloudMemorystoreforMemcached\ListInstancesResponse;
+use Google\Service\CloudMemorystoreforMemcached\Operation;
+use Google\Service\CloudMemorystoreforMemcached\RescheduleMaintenanceRequest;
+use Google\Service\CloudMemorystoreforMemcached\UpdateParametersRequest;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

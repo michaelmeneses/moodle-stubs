@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ArtifactRegistry\Resource;
 
+use Google\Service\ArtifactRegistry\UploadGoModuleMediaResponse;
+use Google\Service\ArtifactRegistry\UploadGoModuleRequest;
 /**
  * The "goModules" collection of methods.
  * Typical usage is:

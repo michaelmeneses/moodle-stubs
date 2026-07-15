@@ -23,6 +23,8 @@
  */
 namespace Google\Service\RecommendationsAI\Resource;
 
+use Google\Service\RecommendationsAI\GoogleLongrunningListOperationsResponse;
+use Google\Service\RecommendationsAI\GoogleLongrunningOperation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

@@ -23,6 +23,29 @@
  */
 namespace Google\Service\AIPlatformNotebooks\Resource;
 
+use Google\Service\AIPlatformNotebooks\CheckAuthorizationRequest;
+use Google\Service\AIPlatformNotebooks\CheckAuthorizationResponse;
+use Google\Service\AIPlatformNotebooks\CheckInstanceUpgradabilityResponse;
+use Google\Service\AIPlatformNotebooks\Config;
+use Google\Service\AIPlatformNotebooks\DiagnoseInstanceRequest;
+use Google\Service\AIPlatformNotebooks\GenerateAccessTokenRequest;
+use Google\Service\AIPlatformNotebooks\GenerateAccessTokenResponse;
+use Google\Service\AIPlatformNotebooks\Instance;
+use Google\Service\AIPlatformNotebooks\ListInstancesResponse;
+use Google\Service\AIPlatformNotebooks\Operation;
+use Google\Service\AIPlatformNotebooks\Policy;
+use Google\Service\AIPlatformNotebooks\ReportInstanceInfoSystemRequest;
+use Google\Service\AIPlatformNotebooks\ResetInstanceRequest;
+use Google\Service\AIPlatformNotebooks\ResizeDiskRequest;
+use Google\Service\AIPlatformNotebooks\RestoreInstanceRequest;
+use Google\Service\AIPlatformNotebooks\RollbackInstanceRequest;
+use Google\Service\AIPlatformNotebooks\SetIamPolicyRequest;
+use Google\Service\AIPlatformNotebooks\StartInstanceRequest;
+use Google\Service\AIPlatformNotebooks\StopInstanceRequest;
+use Google\Service\AIPlatformNotebooks\TestIamPermissionsRequest;
+use Google\Service\AIPlatformNotebooks\TestIamPermissionsResponse;
+use Google\Service\AIPlatformNotebooks\UpgradeInstanceRequest;
+use Google\Service\AIPlatformNotebooks\UpgradeInstanceSystemRequest;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

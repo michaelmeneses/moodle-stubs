@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\DynamicProfile;
+use Google\Service\Dfareporting\DynamicProfileGenerateCodeResponse;
 /**
  * The "dynamicProfiles" collection of methods.
  * Typical usage is:

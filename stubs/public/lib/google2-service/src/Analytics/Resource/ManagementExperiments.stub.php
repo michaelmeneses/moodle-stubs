@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Analytics\Resource;
 
+use Google\Service\Analytics\Experiment;
+use Google\Service\Analytics\Experiments;
 /**
  * The "experiments" collection of methods.
  * Typical usage is:

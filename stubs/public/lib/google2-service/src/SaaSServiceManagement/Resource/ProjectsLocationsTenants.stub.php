@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SaaSServiceManagement\Resource;
 
+use Google\Service\SaaSServiceManagement\ListTenantsResponse;
+use Google\Service\SaaSServiceManagement\SaasservicemgmtEmpty;
+use Google\Service\SaaSServiceManagement\Tenant;
 /**
  * The "tenants" collection of methods.
  * Typical usage is:

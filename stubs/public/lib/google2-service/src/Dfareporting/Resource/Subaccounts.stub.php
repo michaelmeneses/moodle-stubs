@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\Subaccount;
+use Google\Service\Dfareporting\SubaccountsListResponse;
 /**
  * The "subaccounts" collection of methods.
  * Typical usage is:

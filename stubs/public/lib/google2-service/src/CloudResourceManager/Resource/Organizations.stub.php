@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CloudResourceManager\Resource;
 
+use Google\Service\CloudResourceManager\GetIamPolicyRequest;
+use Google\Service\CloudResourceManager\Organization;
+use Google\Service\CloudResourceManager\Policy;
+use Google\Service\CloudResourceManager\SearchOrganizationsResponse;
+use Google\Service\CloudResourceManager\SetIamPolicyRequest;
+use Google\Service\CloudResourceManager\TestIamPermissionsRequest;
+use Google\Service\CloudResourceManager\TestIamPermissionsResponse;
 /**
  * The "organizations" collection of methods.
  * Typical usage is:

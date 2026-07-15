@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Spanner\Resource;
 
+use Google\Service\Spanner\CreateInstanceConfigRequest;
+use Google\Service\Spanner\InstanceConfig;
+use Google\Service\Spanner\ListInstanceConfigsResponse;
+use Google\Service\Spanner\Operation;
+use Google\Service\Spanner\SpannerEmpty;
+use Google\Service\Spanner\UpdateInstanceConfigRequest;
 /**
  * The "instanceConfigs" collection of methods.
  * Typical usage is:

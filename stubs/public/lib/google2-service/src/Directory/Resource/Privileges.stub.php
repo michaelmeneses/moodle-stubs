@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Directory\Resource;
 
+use Google\Service\Directory\Privileges as PrivilegesModel;
 /**
  * The "privileges" collection of methods.
  * Typical usage is:

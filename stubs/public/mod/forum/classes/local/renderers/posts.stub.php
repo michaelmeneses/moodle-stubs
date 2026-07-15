@@ -29,6 +29,9 @@
  */
 namespace mod_forum\local\renderers;
 
+use mod_forum\local\builders\exported_posts as exported_posts_builder;
+use renderer_base;
+use stdClass;
 /**
  * Posts renderer class.
  *

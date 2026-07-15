@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Monitoring\Resource;
 
+use Google\Service\Monitoring\ListMetricDescriptorsResponse;
+use Google\Service\Monitoring\MetricDescriptor;
+use Google\Service\Monitoring\MonitoringEmpty;
 /**
  * The "metricDescriptors" collection of methods.
  * Typical usage is:

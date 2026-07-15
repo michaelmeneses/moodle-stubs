@@ -23,6 +23,9 @@
  */
 namespace Google\Auth\Middleware;
 
+use Google\Auth\FetchAuthTokenInterface;
+use Google\Auth\GetQuotaProjectInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * ProxyAuthTokenMiddleware is a Guzzle Middleware that adds an Authorization header
  * provided by an object implementing FetchAuthTokenInterface.

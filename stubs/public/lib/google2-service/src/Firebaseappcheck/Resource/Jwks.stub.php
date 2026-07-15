@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Firebaseappcheck\Resource;
 
+use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1PublicJwkSet;
 /**
  * The "jwks" collection of methods.
  * Typical usage is:

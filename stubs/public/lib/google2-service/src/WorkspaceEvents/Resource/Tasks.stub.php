@@ -23,6 +23,9 @@
  */
 namespace Google\Service\WorkspaceEvents\Resource;
 
+use Google\Service\WorkspaceEvents\CancelTaskRequest;
+use Google\Service\WorkspaceEvents\StreamResponse;
+use Google\Service\WorkspaceEvents\Task;
 /**
  * The "tasks" collection of methods.
  * Typical usage is:

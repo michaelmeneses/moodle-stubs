@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Vision\Resource;
 
+use Google\Service\Vision\AsyncBatchAnnotateFilesRequest;
+use Google\Service\Vision\BatchAnnotateFilesRequest;
+use Google\Service\Vision\BatchAnnotateFilesResponse;
+use Google\Service\Vision\Operation;
 /**
  * The "files" collection of methods.
  * Typical usage is:

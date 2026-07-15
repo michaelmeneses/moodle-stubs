@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\UserProfile;
+use Google\Service\Dfareporting\UserProfileList;
 /**
  * The "userProfiles" collection of methods.
  * Typical usage is:

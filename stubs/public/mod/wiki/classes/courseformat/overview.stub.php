@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_wiki\courseformat;
 
+use cm_info;
+use core\url;
+use mod_wiki\manager;
+use core\output\action_link;
+use core\output\renderer_helper;
+use core\output\local\properties\button;
+use core\output\local\properties\text_align;
+use core_courseformat\local\overview\overviewitem;
 /**
  * Wiki overview integration.
  *

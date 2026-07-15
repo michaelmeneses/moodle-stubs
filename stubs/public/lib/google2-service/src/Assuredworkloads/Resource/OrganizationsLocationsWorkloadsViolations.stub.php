@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Assuredworkloads\Resource;
 
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1AcknowledgeViolationRequest;
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1AcknowledgeViolationResponse;
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ListViolationsResponse;
+use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1Violation;
 /**
  * The "violations" collection of methods.
  * Typical usage is:

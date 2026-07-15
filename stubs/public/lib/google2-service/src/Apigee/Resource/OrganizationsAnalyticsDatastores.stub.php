@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleCloudApigeeV1Datastore;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListDatastoresResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1TestDatastoreResponse;
+use Google\Service\Apigee\GoogleProtobufEmpty;
 /**
  * The "datastores" collection of methods.
  * Typical usage is:

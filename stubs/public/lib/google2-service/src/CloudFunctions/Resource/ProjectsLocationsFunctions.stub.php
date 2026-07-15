@@ -23,6 +23,24 @@
  */
 namespace Google\Service\CloudFunctions\Resource;
 
+use Google\Service\CloudFunctions\AbortFunctionUpgradeRequest;
+use Google\Service\CloudFunctions\CloudfunctionsFunction;
+use Google\Service\CloudFunctions\CommitFunctionUpgradeAsGen2Request;
+use Google\Service\CloudFunctions\CommitFunctionUpgradeRequest;
+use Google\Service\CloudFunctions\DetachFunctionRequest;
+use Google\Service\CloudFunctions\GenerateDownloadUrlRequest;
+use Google\Service\CloudFunctions\GenerateDownloadUrlResponse;
+use Google\Service\CloudFunctions\GenerateUploadUrlRequest;
+use Google\Service\CloudFunctions\GenerateUploadUrlResponse;
+use Google\Service\CloudFunctions\ListFunctionsResponse;
+use Google\Service\CloudFunctions\Operation;
+use Google\Service\CloudFunctions\Policy;
+use Google\Service\CloudFunctions\RedirectFunctionUpgradeTrafficRequest;
+use Google\Service\CloudFunctions\RollbackFunctionUpgradeTrafficRequest;
+use Google\Service\CloudFunctions\SetIamPolicyRequest;
+use Google\Service\CloudFunctions\SetupFunctionUpgradeConfigRequest;
+use Google\Service\CloudFunctions\TestIamPermissionsRequest;
+use Google\Service\CloudFunctions\TestIamPermissionsResponse;
 /**
  * The "functions" collection of methods.
  * Typical usage is:

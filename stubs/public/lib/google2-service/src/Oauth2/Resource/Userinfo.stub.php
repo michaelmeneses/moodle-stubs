@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Oauth2\Resource;
 
+use Google\Service\Oauth2\Userinfo as UserinfoModel;
 /**
  * The "userinfo" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DLP\Resource;
 
+use Google\Service\DLP\GooglePrivacyDlpV2ListTableDataProfilesResponse;
+use Google\Service\DLP\GooglePrivacyDlpV2TableDataProfile;
+use Google\Service\DLP\GoogleProtobufEmpty;
 /**
  * The "tableDataProfiles" collection of methods.
  * Typical usage is:

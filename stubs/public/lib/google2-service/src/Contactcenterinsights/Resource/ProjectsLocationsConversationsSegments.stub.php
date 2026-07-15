@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest;
+use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
 /**
  * The "segments" collection of methods.
  * Typical usage is:

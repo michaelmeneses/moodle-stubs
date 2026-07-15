@@ -23,6 +23,8 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\Environment;
+use Google\Service\TagManager\ListEnvironmentsResponse;
 /**
  * The "environments" collection of methods.
  * Typical usage is:

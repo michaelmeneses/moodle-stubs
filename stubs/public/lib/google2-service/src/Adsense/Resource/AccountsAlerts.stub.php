@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Adsense\Resource;
 
+use Google\Service\Adsense\ListAlertsResponse;
 /**
  * The "alerts" collection of methods.
  * Typical usage is:

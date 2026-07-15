@@ -23,6 +23,14 @@
  */
 namespace Google\Service\GKEOnPrem\Resource;
 
+use Google\Service\GKEOnPrem\EnrollVmwareNodePoolRequest;
+use Google\Service\GKEOnPrem\ListVmwareNodePoolsResponse;
+use Google\Service\GKEOnPrem\Operation;
+use Google\Service\GKEOnPrem\Policy;
+use Google\Service\GKEOnPrem\SetIamPolicyRequest;
+use Google\Service\GKEOnPrem\TestIamPermissionsRequest;
+use Google\Service\GKEOnPrem\TestIamPermissionsResponse;
+use Google\Service\GKEOnPrem\VmwareNodePool;
 /**
  * The "vmwareNodePools" collection of methods.
  * Typical usage is:

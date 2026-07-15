@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\FreeListingsProgramStatus;
+use Google\Service\ShoppingContent\RequestReviewFreeListingsRequest;
 /**
  * The "freelistingsprogram" collection of methods.
  * Typical usage is:

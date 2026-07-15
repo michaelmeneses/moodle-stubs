@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\AccountReturnCarrier;
+use Google\Service\ShoppingContent\ListAccountReturnCarrierResponse;
 /**
  * The "returncarrier" collection of methods.
  * Typical usage is:

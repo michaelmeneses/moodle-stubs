@@ -23,6 +23,9 @@
  */
 namespace Google\Service\TagManager\Resource;
 
+use Google\Service\TagManager\ListTagsResponse;
+use Google\Service\TagManager\RevertTagResponse;
+use Google\Service\TagManager\Tag;
 /**
  * The "tags" collection of methods.
  * Typical usage is:

@@ -23,6 +23,20 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1DeleteFeatureValuesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1EntityType;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportFeatureValuesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportFeatureValuesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEntityTypesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamingReadFeatureValuesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteFeatureValuesRequest;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteFeatureValuesResponse;
+use Google\Service\Aiplatform\GoogleIamV1Policy;
+use Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest;
+use Google\Service\Aiplatform\GoogleIamV1TestIamPermissionsResponse;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "entityTypes" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AIPlatformNotebooks\Resource;
 
+use Google\Service\AIPlatformNotebooks\Execution;
+use Google\Service\AIPlatformNotebooks\ListExecutionsResponse;
+use Google\Service\AIPlatformNotebooks\Operation;
 /**
  * The "executions" collection of methods.
  * Typical usage is:

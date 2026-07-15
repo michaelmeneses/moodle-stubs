@@ -30,6 +30,8 @@
  */
 namespace core_form\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\writer;
 /**
  * Implements the privacy API for the core_form subsystem.
  *

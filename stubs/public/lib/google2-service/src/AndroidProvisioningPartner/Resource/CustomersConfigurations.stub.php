@@ -23,6 +23,9 @@
  */
 namespace Google\Service\AndroidProvisioningPartner\Resource;
 
+use Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty;
+use Google\Service\AndroidProvisioningPartner\Configuration;
+use Google\Service\AndroidProvisioningPartner\CustomerListConfigurationsResponse;
 /**
  * The "configurations" collection of methods.
  * Typical usage is:

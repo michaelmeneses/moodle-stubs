@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\DfareportingFile;
+use Google\Service\Dfareporting\FileList;
 /**
  * The "files" collection of methods.
  * Typical usage is:

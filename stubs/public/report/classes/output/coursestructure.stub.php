@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_report\output;
 
+use core\output\local\properties\iconsize;
+use core_course\output\activity_icon;
 /**
  * Course sections, subsections and activities structure for reports.
  *

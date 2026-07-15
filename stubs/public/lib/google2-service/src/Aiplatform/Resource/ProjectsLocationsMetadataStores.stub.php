@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Aiplatform\Resource;
 
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMetadataStoresResponse;
+use Google\Service\Aiplatform\GoogleCloudAiplatformV1MetadataStore;
+use Google\Service\Aiplatform\GoogleLongrunningOperation;
 /**
  * The "metadataStores" collection of methods.
  * Typical usage is:

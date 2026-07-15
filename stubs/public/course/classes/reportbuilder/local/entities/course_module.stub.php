@@ -8,6 +8,11 @@
  */
 namespace core_course\reportbuilder\local\entities;
 
+use core\lang_string;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{boolean_select, date, text};
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Course module entity
  *

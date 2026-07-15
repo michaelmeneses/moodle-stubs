@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_generator\output;
 
+use templatable;
+use tool_generator\local\testscenario\runner;
 /**
  * Class stepsinformation
  *

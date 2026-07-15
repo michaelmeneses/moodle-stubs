@@ -29,6 +29,9 @@
  */
 namespace core_course\search;
 
+use core_course\customfield\course_handler;
+use core_customfield\data_controller;
+use core_customfield\field_controller;
 /**
  * Search area for course custom fields.
  *

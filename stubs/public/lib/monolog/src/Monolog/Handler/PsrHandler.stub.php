@@ -16,6 +16,10 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Psr\Log\LoggerInterface;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\LogRecord;
 /**
  * Proxies log messages to an existing PSR-3 compliant logger.
  *

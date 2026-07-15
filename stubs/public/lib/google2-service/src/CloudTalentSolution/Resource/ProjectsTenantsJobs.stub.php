@@ -23,6 +23,15 @@
  */
 namespace Google\Service\CloudTalentSolution\Resource;
 
+use Google\Service\CloudTalentSolution\BatchCreateJobsRequest;
+use Google\Service\CloudTalentSolution\BatchDeleteJobsRequest;
+use Google\Service\CloudTalentSolution\BatchUpdateJobsRequest;
+use Google\Service\CloudTalentSolution\Job;
+use Google\Service\CloudTalentSolution\JobsEmpty;
+use Google\Service\CloudTalentSolution\ListJobsResponse;
+use Google\Service\CloudTalentSolution\Operation;
+use Google\Service\CloudTalentSolution\SearchJobsRequest;
+use Google\Service\CloudTalentSolution\SearchJobsResponse;
 /**
  * The "jobs" collection of methods.
  * Typical usage is:

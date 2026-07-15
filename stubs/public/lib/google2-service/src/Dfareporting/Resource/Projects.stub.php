@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Dfareporting\Resource;
 
+use Google\Service\Dfareporting\Project;
+use Google\Service\Dfareporting\ProjectsListResponse;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

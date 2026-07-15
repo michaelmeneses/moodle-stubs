@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ManagedKafka\Resource;
 
+use Google\Service\ManagedKafka\CreateVersionRequest;
+use Google\Service\ManagedKafka\CreateVersionResponse;
+use Google\Service\ManagedKafka\HttpBody;
+use Google\Service\ManagedKafka\SchemaVersion;
 /**
  * The "versions" collection of methods.
  * Typical usage is:

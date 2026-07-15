@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\output;
 
+use core\notification;
+use core\output\inplace_editable;
+use html_table;
+use html_writer;
+use mod_bigbluebuttonbn\instance;
+use plugin_renderer_base;
 /**
  * Renderer for the mod_bigbluebuttonbn plugin.
  *

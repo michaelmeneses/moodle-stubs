@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataPortability\Resource;
 
+use Google\Service\DataPortability\DataportabilityEmpty;
+use Google\Service\DataPortability\ResetAuthorizationRequest;
 /**
  * The "authorization" collection of methods.
  * Typical usage is:

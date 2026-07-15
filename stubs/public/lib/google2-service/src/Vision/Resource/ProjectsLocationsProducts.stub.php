@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Vision\Resource;
 
+use Google\Service\Vision\ListProductsResponse;
+use Google\Service\Vision\Operation;
+use Google\Service\Vision\Product;
+use Google\Service\Vision\PurgeProductsRequest;
+use Google\Service\Vision\VisionEmpty;
 /**
  * The "products" collection of methods.
  * Typical usage is:

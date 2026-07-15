@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\route\controller;
 
+use core\router\route;
+use core\router\require_login;
+use core_course\modinfo;
+use core_course\section_info;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Restricted section redirection.
  *

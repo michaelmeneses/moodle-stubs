@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Dataproc\Resource;
 
+use Google\Service\Dataproc\DataprocEmpty;
+use Google\Service\Dataproc\ListOperationsResponse;
+use Google\Service\Dataproc\Operation;
 /**
  * The "operations" collection of methods.
  * Typical usage is:

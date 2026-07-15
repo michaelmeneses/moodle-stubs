@@ -23,6 +23,7 @@
  */
 namespace Google\Service\YouTubeAnalytics\Resource;
 
+use Google\Service\YouTubeAnalytics\QueryResponse;
 /**
  * The "reports" collection of methods.
  * Typical usage is:

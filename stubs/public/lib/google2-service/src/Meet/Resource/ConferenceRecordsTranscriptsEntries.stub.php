@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Meet\Resource;
 
+use Google\Service\Meet\ListTranscriptEntriesResponse;
+use Google\Service\Meet\TranscriptEntry;
 /**
  * The "entries" collection of methods.
  * Typical usage is:

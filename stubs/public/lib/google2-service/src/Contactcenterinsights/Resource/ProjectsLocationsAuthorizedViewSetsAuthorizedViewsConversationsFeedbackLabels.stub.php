@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1FeedbackLabel;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListFeedbackLabelsResponse;
+use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
 /**
  * The "feedbackLabels" collection of methods.
  * Typical usage is:

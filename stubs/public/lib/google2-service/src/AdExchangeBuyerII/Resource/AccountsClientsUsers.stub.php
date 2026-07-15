@@ -23,6 +23,8 @@
  */
 namespace Google\Service\AdExchangeBuyerII\Resource;
 
+use Google\Service\AdExchangeBuyerII\ClientUser;
+use Google\Service\AdExchangeBuyerII\ListClientUsersResponse;
 /**
  * The "users" collection of methods.
  * Typical usage is:

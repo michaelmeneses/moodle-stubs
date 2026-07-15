@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_columnsortorder\external;
 
+use context_system;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_value;
+use qbank_columnsortorder\column_manager;
 /**
  * External qbank_columnsortorder_set_columnbank_order API
  *

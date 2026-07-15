@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Area120Tables\Resource;
 
+use Google\Service\Area120Tables\ListWorkspacesResponse;
+use Google\Service\Area120Tables\Workspace;
 /**
  * The "workspaces" collection of methods.
  * Typical usage is:

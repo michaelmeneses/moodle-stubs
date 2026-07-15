@@ -23,6 +23,12 @@
  */
 namespace Google\Service\GoogleMarketingPlatformAdminAPI\Resource;
 
+use Google\Service\GoogleMarketingPlatformAdminAPI\FindSalesPartnerManagedClientsRequest;
+use Google\Service\GoogleMarketingPlatformAdminAPI\FindSalesPartnerManagedClientsResponse;
+use Google\Service\GoogleMarketingPlatformAdminAPI\ListOrganizationsResponse;
+use Google\Service\GoogleMarketingPlatformAdminAPI\Organization;
+use Google\Service\GoogleMarketingPlatformAdminAPI\ReportPropertyUsageRequest;
+use Google\Service\GoogleMarketingPlatformAdminAPI\ReportPropertyUsageResponse;
 /**
  * The "organizations" collection of methods.
  * Typical usage is:

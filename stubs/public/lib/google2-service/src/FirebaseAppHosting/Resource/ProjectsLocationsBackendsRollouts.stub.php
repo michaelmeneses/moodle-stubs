@@ -23,6 +23,9 @@
  */
 namespace Google\Service\FirebaseAppHosting\Resource;
 
+use Google\Service\FirebaseAppHosting\ListRolloutsResponse;
+use Google\Service\FirebaseAppHosting\Operation;
+use Google\Service\FirebaseAppHosting\Rollout;
 /**
  * The "rollouts" collection of methods.
  * Typical usage is:

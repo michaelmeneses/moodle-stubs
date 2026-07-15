@@ -23,6 +23,8 @@
  */
 namespace Google\Service\TPU\Resource;
 
+use Google\Service\TPU\AcceleratorType;
+use Google\Service\TPU\ListAcceleratorTypesResponse;
 /**
  * The "acceleratorTypes" collection of methods.
  * Typical usage is:

@@ -23,6 +23,9 @@
  */
 namespace Google\Service\SQLAdmin\Resource;
 
+use Google\Service\SQLAdmin\Database;
+use Google\Service\SQLAdmin\DatabasesListResponse;
+use Google\Service\SQLAdmin\Operation;
 /**
  * The "databases" collection of methods.
  * Typical usage is:

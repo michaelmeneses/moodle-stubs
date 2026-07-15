@@ -23,6 +23,9 @@
  */
 namespace Google\Service\Storage\Resource;
 
+use Google\Service\Storage\Folder;
+use Google\Service\Storage\Folders as FoldersModel;
+use Google\Service\Storage\GoogleLongrunningOperation;
 /**
  * The "folders" collection of methods.
  * Typical usage is:

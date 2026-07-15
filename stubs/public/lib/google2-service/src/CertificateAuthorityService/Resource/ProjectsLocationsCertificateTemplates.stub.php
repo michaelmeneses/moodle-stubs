@@ -23,6 +23,13 @@
  */
 namespace Google\Service\CertificateAuthorityService\Resource;
 
+use Google\Service\CertificateAuthorityService\CertificateTemplate;
+use Google\Service\CertificateAuthorityService\ListCertificateTemplatesResponse;
+use Google\Service\CertificateAuthorityService\Operation;
+use Google\Service\CertificateAuthorityService\Policy;
+use Google\Service\CertificateAuthorityService\SetIamPolicyRequest;
+use Google\Service\CertificateAuthorityService\TestIamPermissionsRequest;
+use Google\Service\CertificateAuthorityService\TestIamPermissionsResponse;
 /**
  * The "certificateTemplates" collection of methods.
  * Typical usage is:

@@ -23,6 +23,11 @@
  */
 namespace Google\Service\Apigee\Resource;
 
+use Google\Service\Apigee\GoogleApiHttpBody;
+use Google\Service\Apigee\GoogleCloudApigeeV1ApiProxy;
+use Google\Service\Apigee\GoogleCloudApigeeV1ApiProxyRevision;
+use Google\Service\Apigee\GoogleCloudApigeeV1ListApiProxiesResponse;
+use Google\Service\Apigee\GoogleCloudApigeeV1MoveApiProxyRequest;
 /**
  * The "apis" collection of methods.
  * Typical usage is:

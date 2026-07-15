@@ -23,6 +23,11 @@
  */
 namespace Google\Service\AdSensePlatform\Resource;
 
+use Google\Service\AdSensePlatform\Account;
+use Google\Service\AdSensePlatform\CloseAccountRequest;
+use Google\Service\AdSensePlatform\CloseAccountResponse;
+use Google\Service\AdSensePlatform\ListAccountsResponse;
+use Google\Service\AdSensePlatform\LookupAccountResponse;
 /**
  * The "accounts" collection of methods.
  * Typical usage is:

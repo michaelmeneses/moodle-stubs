@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Firestore\Resource;
 
+use Google\Service\Firestore\FirestoreEmpty;
+use Google\Service\Firestore\GoogleFirestoreAdminV1DisableUserCredsRequest;
+use Google\Service\Firestore\GoogleFirestoreAdminV1EnableUserCredsRequest;
+use Google\Service\Firestore\GoogleFirestoreAdminV1ListUserCredsResponse;
+use Google\Service\Firestore\GoogleFirestoreAdminV1ResetUserPasswordRequest;
+use Google\Service\Firestore\GoogleFirestoreAdminV1UserCreds;
 /**
  * The "userCreds" collection of methods.
  * Typical usage is:

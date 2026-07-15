@@ -23,6 +23,11 @@
  */
 namespace Google\Service\AndroidManagement\Resource;
 
+use Google\Service\AndroidManagement\AndroidmanagementEmpty;
+use Google\Service\AndroidManagement\Enterprise;
+use Google\Service\AndroidManagement\GenerateEnterpriseUpgradeUrlRequest;
+use Google\Service\AndroidManagement\GenerateEnterpriseUpgradeUrlResponse;
+use Google\Service\AndroidManagement\ListEnterprisesResponse;
 /**
  * The "enterprises" collection of methods.
  * Typical usage is:

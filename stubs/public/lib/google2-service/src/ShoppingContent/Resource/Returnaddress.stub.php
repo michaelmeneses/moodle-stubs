@@ -23,6 +23,10 @@
  */
 namespace Google\Service\ShoppingContent\Resource;
 
+use Google\Service\ShoppingContent\ReturnAddress as ReturnAddressModel;
+use Google\Service\ShoppingContent\ReturnaddressCustomBatchRequest;
+use Google\Service\ShoppingContent\ReturnaddressCustomBatchResponse;
+use Google\Service\ShoppingContent\ReturnaddressListResponse;
 /**
  * The "returnaddress" collection of methods.
  * Typical usage is:

@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer\Pdf;
 
+use PhpOffice\PhpSpreadsheet\Worksheet\PageSetup;
+use PhpOffice\PhpSpreadsheet\Writer\Pdf;
 class Mpdf extends Pdf
 {
     public const SIMULATED_BODY_START = '<!-- simulated body start -->';

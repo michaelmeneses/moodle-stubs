@@ -23,6 +23,7 @@
  */
 namespace Google\Service\Dns\Resource;
 
+use Google\Service\Dns\Project;
 /**
  * The "projects" collection of methods.
  * Typical usage is:

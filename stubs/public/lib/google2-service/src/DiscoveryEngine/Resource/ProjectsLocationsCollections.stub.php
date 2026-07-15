@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DiscoveryEngine\Resource;
 
+use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DataConnector;
+use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
 /**
  * The "collections" collection of methods.
  * Typical usage is:

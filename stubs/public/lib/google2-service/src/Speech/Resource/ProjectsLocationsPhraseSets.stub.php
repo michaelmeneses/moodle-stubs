@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Speech\Resource;
 
+use Google\Service\Speech\CreatePhraseSetRequest;
+use Google\Service\Speech\ListPhraseSetResponse;
+use Google\Service\Speech\PhraseSet;
+use Google\Service\Speech\SpeechEmpty;
 /**
  * The "phraseSets" collection of methods.
  * Typical usage is:

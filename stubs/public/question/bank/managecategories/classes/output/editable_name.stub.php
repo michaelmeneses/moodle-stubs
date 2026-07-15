@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories\output;
 
+use core\context;
+use core\output\inplace_editable;
+use core\output\named_templatable;
+use core\output\renderable;
+use core\url;
+use core_external\external_api;
+use core_question\category_manager;
+use core_question\local\bank\question_counts;
+use core_question\output\question_category_selector;
+use qbank_managecategories\helper;
 /**
  * Category name inplace editable
  *

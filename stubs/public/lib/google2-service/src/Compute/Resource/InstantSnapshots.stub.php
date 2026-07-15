@@ -23,6 +23,15 @@
  */
 namespace Google\Service\Compute\Resource;
 
+use Google\Service\Compute\InstantSnapshot;
+use Google\Service\Compute\InstantSnapshotAggregatedList;
+use Google\Service\Compute\InstantSnapshotList;
+use Google\Service\Compute\Operation;
+use Google\Service\Compute\Policy;
+use Google\Service\Compute\TestPermissionsRequest;
+use Google\Service\Compute\TestPermissionsResponse;
+use Google\Service\Compute\ZoneSetLabelsRequest;
+use Google\Service\Compute\ZoneSetPolicyRequest;
 /**
  * The "instantSnapshots" collection of methods.
  * Typical usage is:

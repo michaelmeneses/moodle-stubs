@@ -23,6 +23,8 @@
  */
 namespace Google\Service\CloudHealthcare\Resource;
 
+use Google\Service\CloudHealthcare\HealthcareEmpty;
+use Google\Service\CloudHealthcare\HttpBody;
 /**
  * The "instances" collection of methods.
  * Typical usage is:

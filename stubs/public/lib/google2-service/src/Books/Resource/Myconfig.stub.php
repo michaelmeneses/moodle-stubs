@@ -23,6 +23,10 @@
  */
 namespace Google\Service\Books\Resource;
 
+use Google\Service\Books\DownloadAccesses;
+use Google\Service\Books\RequestAccessData;
+use Google\Service\Books\Usersettings;
+use Google\Service\Books\Volumes as VolumesModel;
 /**
  * The "myconfig" collection of methods.
  * Typical usage is:

@@ -23,6 +23,13 @@
  */
 namespace Google\Service\Contactcenterinsights\Resource;
 
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkDeleteFeedbackLabelsRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkDownloadFeedbackLabelsRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkUploadFeedbackLabelsRequest;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Dataset;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAllFeedbackLabelsResponse;
+use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListDatasetsResponse;
+use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
 /**
  * The "datasets" collection of methods.
  * Typical usage is:

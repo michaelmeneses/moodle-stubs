@@ -23,6 +23,8 @@
  */
 namespace Google\Service\DataPortability\Resource;
 
+use Google\Service\DataPortability\InitiatePortabilityArchiveRequest;
+use Google\Service\DataPortability\InitiatePortabilityArchiveResponse;
 /**
  * The "portabilityArchive" collection of methods.
  * Typical usage is:

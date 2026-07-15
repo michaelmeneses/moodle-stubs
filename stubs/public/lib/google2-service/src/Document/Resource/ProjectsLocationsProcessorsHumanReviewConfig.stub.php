@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Document\Resource;
 
+use Google\Service\Document\GoogleCloudDocumentaiV1ReviewDocumentRequest;
+use Google\Service\Document\GoogleLongrunningOperation;
 /**
  * The "humanReviewConfig" collection of methods.
  * Typical usage is:

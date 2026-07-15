@@ -23,6 +23,8 @@
  */
 namespace Google\Service\Calendar\Resource;
 
+use Google\Service\Calendar\FreeBusyRequest;
+use Google\Service\Calendar\FreeBusyResponse;
 /**
  * The "freebusy" collection of methods.
  * Typical usage is:

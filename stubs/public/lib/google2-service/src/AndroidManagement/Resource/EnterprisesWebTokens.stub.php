@@ -23,6 +23,7 @@
  */
 namespace Google\Service\AndroidManagement\Resource;
 
+use Google\Service\AndroidManagement\WebToken;
 /**
  * The "webTokens" collection of methods.
  * Typical usage is:

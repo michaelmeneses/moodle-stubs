@@ -23,6 +23,7 @@
  */
 namespace Google\Service\GamesConfiguration\Resource;
 
+use Google\Service\GamesConfiguration\ImageConfiguration;
 /**
  * The "imageConfigurations" collection of methods.
  * Typical usage is:

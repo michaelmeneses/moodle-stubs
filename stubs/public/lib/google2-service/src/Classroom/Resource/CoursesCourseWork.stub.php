@@ -23,6 +23,12 @@
  */
 namespace Google\Service\Classroom\Resource;
 
+use Google\Service\Classroom\AddOnContext;
+use Google\Service\Classroom\ClassroomEmpty;
+use Google\Service\Classroom\CourseWork;
+use Google\Service\Classroom\ListCourseWorkResponse;
+use Google\Service\Classroom\ModifyCourseWorkAssigneesRequest;
+use Google\Service\Classroom\Rubric;
 /**
  * The "courseWork" collection of methods.
  * Typical usage is:

@@ -8,6 +8,9 @@
  */
 namespace core_reportbuilder\local\helpers;
 
+use core_collator;
+use core_component;
+use core_reportbuilder\local\aggregation\base;
 /**
  * Helper class for column aggregation related methods
  *

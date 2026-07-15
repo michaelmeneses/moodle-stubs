@@ -23,6 +23,9 @@
  */
 namespace Google\Service\DisplayVideo\Resource;
 
+use Google\Service\DisplayVideo\AssignedTargetingOption;
+use Google\Service\DisplayVideo\DisplayvideoEmpty;
+use Google\Service\DisplayVideo\ListLineItemAssignedTargetingOptionsResponse;
 /**
  * The "assignedTargetingOptions" collection of methods.
  * Typical usage is:

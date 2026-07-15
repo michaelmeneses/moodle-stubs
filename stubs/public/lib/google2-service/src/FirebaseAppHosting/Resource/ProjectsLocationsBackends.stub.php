@@ -23,6 +23,9 @@
  */
 namespace Google\Service\FirebaseAppHosting\Resource;
 
+use Google\Service\FirebaseAppHosting\Backend;
+use Google\Service\FirebaseAppHosting\ListBackendsResponse;
+use Google\Service\FirebaseAppHosting\Operation;
 /**
  * The "backends" collection of methods.
  * Typical usage is:

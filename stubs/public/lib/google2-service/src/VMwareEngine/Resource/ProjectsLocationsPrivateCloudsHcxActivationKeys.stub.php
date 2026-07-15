@@ -23,6 +23,13 @@
  */
 namespace Google\Service\VMwareEngine\Resource;
 
+use Google\Service\VMwareEngine\HcxActivationKey;
+use Google\Service\VMwareEngine\ListHcxActivationKeysResponse;
+use Google\Service\VMwareEngine\Operation;
+use Google\Service\VMwareEngine\Policy;
+use Google\Service\VMwareEngine\SetIamPolicyRequest;
+use Google\Service\VMwareEngine\TestIamPermissionsRequest;
+use Google\Service\VMwareEngine\TestIamPermissionsResponse;
 /**
  * The "hcxActivationKeys" collection of methods.
  * Typical usage is:

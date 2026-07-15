@@ -23,6 +23,8 @@
  */
 namespace Google\Service\ChecksService\Resource;
 
+use Google\Service\ChecksService\GoogleChecksReportV1alphaAnalyzeUploadRequest;
+use Google\Service\ChecksService\Operation;
 /**
  * The "media" collection of methods.
  * Typical usage is:
